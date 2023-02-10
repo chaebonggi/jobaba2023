@@ -1,0 +1,346 @@
+@charset "utf-8";
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.ttf') format("truetype");
+    font-display: swap;
+}
+/* 
+** common 
+*/
+/* background color */
+
+
+/* text color */
+
+
+/* layout */
+.innerSection {
+    padding: 0 20px;
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.forPC {
+    display: none;
+}
+
+
+
+/*
+** contents
+*/
+.eventMain {padding: 60px 0;background: url(../resource/images/eventImg/event01/event_bg01.png) top no-repeat;background-size: cover; } 
+.eventMain .titleWrap {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center; padding: 0 40px;margin-bottom: 32px; } 
+.eventMain .titleWrap > p {width: 100%;margin: 54px 0 70px;text-align: center; } 
+.eventMain .txtWrap .imgWrap { width: calc(100% - 500px);}
+.eventMain .titleWrap strong {display: inline-block;padding: 20px 65px 2px;background: #82fff5;color: #163a79;font-size: 65px;border-radius: 65px;font-family: 'SBAggro';font-weight: 500; } 
+.eventMain .titleWrap .txt {color: #00ff47;font-size: 70px;letter-spacing: 4px; } 
+.eventMain .titleWrap .txt i {position: relative;font-family: 'GmarketSansMedium'; } 
+.eventMain .titleWrap .txt i::after {content: "";position: absolute;top: -28px;left: 50%;width: 18px;height: 18px;background: #00ff47;border-radius: 100%;transform: translateX(-50%); } 
+.eventMain .txtWrap {display: flex;justify-content: space-between;padding: 0 40px; } 
+.eventMain .txtWrap .txt > p {padding: 18px 0 40px;color: #fff;font-size: 32px;font-family: 'SBAggro';font-weight: 300; } 
+.eventMain .txtWrap .txt > p strong {font-family: 'SBAggro';font-weight: 700; } 
+.eventMain .txtWrap .txt ul li {display: flex; } 
+.eventMain .txtWrap .txt ul li strong {min-width: 115px;height: 34px;margin-bottom: 10px;background: #00ff47;color: #282828;font-size: 20px;border-radius: 34px;text-align: center; } 
+.eventMain .txtWrap .txt ul li p {margin-left: 10px;color: #fff;font-size: 20px;font-weight: bold; } 
+.eventMain .txtWrap .imgWrap img {margin-bottom: -95px; margin-left: 40px;} 
+
+.eventContents { padding: 94px 0; background: url(../resource/images/eventImg/event01/event_bg02.png) top no-repeat; } 
+.eventContents .whiteBox { position: relative; padding: 0 50px 50px; background: #fff; text-align: center; border-radius: 10px; z-index: 1; } 
+.eventContents .whiteBox::before { content: ''; display: block; background: rgba(255, 255, 255, 0.78); position: absolute; width: calc(100% + 14px); height: calc(100% + 14px); border-radius: 10px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: -1; } 
+.eventContents .whiteBox .label { position: relative; display: inline-block; min-width: 356px; padding: 18px 0 14px; top: -30px; background: #00c336; color: #fff; font-size: 36px; font-family: 'SBAggro'; border-radius: 36px; } 
+.eventContents .whiteBox .label::before { content: ''; display: block; position: absolute; width: calc(100% + 14px); height: calc(100% + 14px); background: rgba(255, 255, 255, 0.78); left: 50%; top: 50%; border-radius: 36px; transform: translate(-50%,-50%); z-index: -1; } 
+.eventContents .eventStep { text-align: left; }
+.eventContents .eventStep > li { display: flex; margin-bottom: 12px; } 
+.eventContents .eventStep > li strong { min-width: 44px; height: 44px; background: #00c336; color: #000; font-size: 24px; text-align: center; line-height: 44px; border-radius: 100%; } 
+.eventContents .eventStep > li > p { margin-left: 20px; color: #000; font-size: 24px; font-weight: 700; } 
+.eventContents .eventStep > li > p span { font-size: 22px; font-weight: 500; } 
+.eventContents .stepList { display: flex; justify-content: space-between; width: 100%; } 
+.eventContents .stepList li { position: relative; width: calc(100% / 3); text-align: center; } 
+.eventContents .stepList .imageWrap { position: relative; } 
+.eventContents .stepList .imageWrap > span { padding: 5px 10px; position: absolute; bottom: 0; left: 50%; display: inline-block; min-width: 96px; color: #fff; font-size: 17px; background: #003281; border-radius: 25px; transform: translateX(-50%); } 
+.eventContents .stepList li > p { margin-top: 30px; font-size: 18px; font-weight: bold; } 
+.eventContents .stepList li::after { content: ""; position: absolute; right: -10px; top: 80px; background: url(../resource/images/eventImg/event01/event_icon_arrow.png) center no-repeat; width: 18px; height: 26px; } 
+.eventContents .stepList li:last-child::after { content: none; } 
+.eventContents .linkWrap { margin-top: 60px; } 
+.eventContents .linkWrap a { padding: 8px 20px; display: inline-block; color: #fff; font-size: 22px; font-weight: bold; background: #ff4f74; border-radius: 30px; } 
+.eventContents .linkWrap a i { display: inline-block; width: 20px; height: 20px; margin-left: 20px; background: url(../resource/images/eventImg/event01/event_arrow_right.png) no-repeat; } 
+.eventContents .linkWrap p { margin-top: 30px; color: #000; font-size: 20px; } 
+.eventContents .item01 { position: relative; margin-top: 30px; } 
+.eventContents .item01::after { content: ""; position: absolute; bottom: 188px; right: -218px; width: 237px; height: 198px; background: url(../resource/images/eventImg/event01/event_cont_img01.png) center no-repeat; } 
+.eventContents .item01::before { content: ""; position: absolute; top: 85px; left: -140px; width: 135px; height: 125px; background: url(../resource/images/eventImg/event01/event_cont_img02.png) center no-repeat; } 
+.eventContents .item02 { margin: 100px 0 70px; text-align: center; } 
+.eventContents .item02 .imgWrap { position: relative; margin-bottom: 70px; } 
+.eventContents .item02 .card { position: relative; width: 460px; margin-top: 90px; margin-left: 425px; padding: 40px; background: #00c336; text-align: left; border-radius: 20px; box-shadow: rgba(50, 50, 93, 1) -1px 19px 16px -20px; z-index: 2; } 
+.eventContents .item02 .card::before { content: ''; position: absolute; width: 83px; height: 31px; top: -20px; left: 70px; background: url(../resource/images/eventImg/event01/event_item02_img01.png) no-repeat; } 
+.eventContents .item02 .imgWrap::after { content: ''; position: absolute; width: 341px; height: 337px; top: -70px; left: 174px; background: url(../resource/images/eventImg/event01/event_item02_img02.png) no-repeat; z-index: 1; } 
+.eventContents .item02 .card > span { display: flex; align-items: center; justify-content: center; position: absolute; width: 154px; height: 154px; top: -52px; right: -40px; background: url(../resource/images/eventImg/event01/event_icon_04.png) no-repeat; color: #fff; font-size: 40px; font-family: 'GmarketSansMedium'; } 
+.eventContents .item02 .card p { color: #fff; font-size: 80px; font-family: 'SBAggro'; font-weight: 500; text-align: right; } 
+.eventContents .item02 .card p span { font-size: 38px; font-weight: 700; } 
+.eventContents .item02 .textWrap span { position: relative; color: #163a79; font-size: 34px; letter-spacing: -0.75px; z-index: 1; } 
+.eventContents .item02 .textWrap span::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background: #fff; z-index: -1; } 
+.eventContents .item02 .textWrap span b { font-size: 46px; } 
+.eventContents .item03 { position: relative; text-align: center; } 
+.eventContents .item03 .whiteBox > strong { display: inline-block; margin: 70px 0 20px; color: #000; font-size: 48px; font-family: 'GmarketSansBold'; } 
+.eventContents .item03 .whiteBox > p { display: inline-block; padding: 0 20px; margin-bottom: 46px; background: #d8d8d8; color: #000; font-size: 30px; font-family: 'GmarketSansMedium'; } 
+.eventContents .item03 .counselList { display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 782px; margin: 0 auto; } 
+.eventContents .item03 .counselList li strong { color: #5665e5; font-size: 33px; font-family: 'GmarketSansBold'; letter-spacing: -0.5px; } 
+.eventContents .item03 .counselList li p { font-size: 26px; font-family: 'GmarketSansMedium'; letter-spacing: -0.5px; } 
+.eventContents .item03 .counselList li:nth-child(-n + 2) { margin-bottom: 20px; } 
+.eventContents .item03::after { content: ""; position: absolute; top: -4px; left: -488px; width: 727px; height: 764px; background: url(../resource/images/eventImg/event01/event_icon_06.png) center no-repeat; } 
+.eventContents .item03::before { content: ""; position: absolute; bottom: 80px; right: -220px; width: 231px; height: 215px; background: url(../resource/images/eventImg/event01/event_icon_07.png) center no-repeat; } 
+
+.eventWarning { padding: 60px 0; background: #001d4b; } 
+.eventWarning strong { margin: 0 0 20px; display: inline-block; color: #fff; font-size: 24px; font-weight: 700; } 
+.eventWarning .warningList li { padding-left: 10px; color: #fff; font-size: 16px; } 
+.eventWarning .warningList li::before { content: "-"; margin-left: -10px; margin-right: 5px; } 
+
+/*
+** media query
+*/
+@media all and (max-width: 1600px){ 
+    .eventContents .item01::before,
+    .eventContents .item01::after,
+    .eventContents .item03::after,
+    .eventContents .item03::before {
+        content: none;
+    }
+}
+@media all and (max-width: 1024px){
+    .forPC {
+        display: block;
+    }
+    .eventMain .txtWrap .imgWrap img {
+        margin-bottom: 0;
+    }
+    .eventContents {
+        background-size: cover;
+    }
+    .eventContents .item02 .imgWrap::after {
+        left: 34px;
+    }
+    .eventContents .item02 .card {
+        margin-left: 286px;
+    }
+    
+
+
+}
+@media all and (max-width: 860px){
+    .eventMain .titleWrap strong {
+        padding: 12px 65px 2px;
+        font-size: 35px;
+    }
+    .eventMain .txtWrap .imgWrap {
+        display: none;
+    }
+    .eventMain .titleWrap {
+        justify-content: center;
+        padding: 0;
+    }
+    .eventMain .titleWrap .txt {
+        font-size: 60px;
+    }
+    .eventMain .titleWrap .txt i::after {
+        width: 12px;
+        height: 12px;
+    }
+    .eventMain .titleWrap .imgWrap {
+        text-align: center;
+    }
+    .eventMain .titleWrap .imgWrap img {
+        width: 80%;
+    }
+    .eventMain .txtWrap {
+        justify-content: center;
+        padding: 0;
+    }
+    .eventMain .txtWrap .txt > p {
+        font-size: 28px;
+    }
+
+
+    .eventContents {
+        padding: 50px 0;
+    }
+    .eventContents .whiteBox {
+        padding: 0 20px 50px;
+    }
+    .eventContents .eventStep > li {
+        flex-direction: column;
+    }
+    .eventContents .eventStep > li strong {
+        min-width: 100%;
+        margin-bottom: 20px;
+        font-size: 24px;
+        border-radius: 20px;
+    }
+	.eventContents .whiteBox .label {
+        min-width: 290px;
+        font-size: 24px;
+    }
+    .eventContents .stepList li {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .eventContents .stepList li:last-child {
+        margin-bottom: 0;
+    }
+    .eventContents .eventStep > li strong {
+        font-size: 20px;
+    }
+    .eventContents .eventStep > li > p {
+        font-size: 20px;
+    }
+    .eventContents .eventStep > li > p span {
+        font-size: 18px;
+    }
+    .eventContents .stepList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .eventContents .stepList li::after {
+        position: relative;
+        left: 50%;
+        margin-left: -9px;
+        top: auto;
+        bottom: -20px;
+        transform: rotate(90deg);
+        display: flex;
+    }
+    .eventContents .stepList .imageWrap > span {
+        min-width: 80px;
+        font-size: 14px;
+    }
+    .eventContents .stepList li > p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .eventContents .linkWrap {
+        margin-top: 40px;
+    }
+    .eventContents .linkWrap a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .eventContents .linkWrap a i {
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+    }
+    .eventContents .linkWrap p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .eventContents .item02 {
+        margin: 50px 0 50px;
+    }
+    .eventContents .item02 .imgWrap::after,
+    .eventContents .item02 .card::before {
+        display: none;
+    }
+    .eventContents .item02 .imgWrap {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    .eventContents .item02 .card {
+        position: relative;
+        max-width: 460px;
+        width: 100%;
+        margin: 60px auto 0;
+        padding: 40px;
+    }
+    .eventContents .item02 .card > span {
+        width: 100px;
+        height: 110px;
+        top: -30px;
+        right: -30px;
+        color: #fff;
+        font-size: 28px;
+        background-size: contain;
+    }
+    .eventContents .item02 .card p {
+        font-size: 60px;
+    }
+    .eventContents .item02 .textWrap span {
+        font-size: 26px;
+    }
+    .eventContents .item02 .textWrap span b {
+        font-size: 36px;
+    }
+    .eventContents .item03 .whiteBox > strong {
+        margin: 28px 0 20px;
+        font-size: 36px;
+    }
+    .eventContents .item03 .whiteBox > p {
+        font-size: 22px;
+    }
+    .eventContents .item03 .counselList {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .eventContents .item03 .counselList li {
+        margin-bottom: 20px;
+    }
+    .eventContents .item03 .counselList li:last-child {
+        margin-bottom: 0;
+    }
+    .eventContents .item03 .counselList li strong {
+        font-size: 26px;
+    }
+    .eventContents .item03 .counselList li p {
+        font-size: 20px;
+    }
+
+
+}
+@media all and (max-width: 640px){
+	.innerSection {
+			padding: 0 10px;
+	}
+
+    .eventWarning {
+        padding: 20px 0;
+    }
+    .eventWarning strong {
+        margin: 0 0 10px;
+        font-size: 18px;
+    }
+    .eventWarning .warningList li {
+        padding-left: 10px;
+        color: #fff;
+        font-size: 12px;
+    }
+}
