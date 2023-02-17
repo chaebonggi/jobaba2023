@@ -32,6 +32,9 @@
 	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/sub.css?ver=0.1" />
 	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/popup.css?ver=0.2" />
 
+	<!-- 러닝센터 추가 css 2023.02.17 -->
+	<link rel="stylesheet" href="css/newMenu.css">
+
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
@@ -48,238 +51,18 @@
 	<!-- //skip nav -->
 
 	<div id="wrap">
-		<style>
-			header .member_util {
-				text-align: right;
-				border-bottom: 1px solid #ddd;
-			}
-			header .layout {
-				padding: 0;
-			}
-			header .member_util .util li {
-				font-size: 15px;
-				line-height: 45px;
-				display: inline-block;
-				border-right: 1px solid #ddd;
-				font-weight: 400;
-				vertical-align: top;
-			}
-			header .member_util .util li a {
-				display: block;
-				padding:0 22px 0 45px;
-				background-position: center left 20px !important;
-				color: #777;
-				text-decoration: none;
-			}
-			header .member_util .util li.login a {background:url(https://youthedu.jobaba.net/theme/6/img/main/m_login.png) no-repeat; background-size:14px; border-left:1px solid #ddd; }
-			header .member_util .util li.join a {background:url(https://youthedu.jobaba.net/theme/6/img/main/m_join.png) no-repeat; background-size:14px;}
-			header .member_util .util li.search a {padding:0; width:45px; height:45px; background:url(https://youthedu.jobaba.net/theme/6/img/main/search.png) no-repeat; background-position: center !important; cursor: pointer;}
-			
-			header .member_util .util li.name {padding:0 30px 0 25px; color:#222; background:url(https://youthedu.jobaba.net/theme/6/img/main/mypage.png) no-repeat; background-position:center left;}
-			header .member_util .util li.logout a {background:url(https://youthedu.jobaba.net/theme/6/img/main/logout.png) no-repeat;}
-			header .member_util .util li.cart a {background:url(https://youthedu.jobaba.net/theme/6/img/main/cart.png) no-repeat; background-position:center left 15px !important;}
-
-			header .head_wrap {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-			}
-			header .gnb {
-				display: flex;
-				align-items: center;
-			}
-			header .gnb > ul {
-				display: flex;
-				margin-right: 70px;
-			}
-			header .gnb > ul > li {
-				position: relative;
-				margin: 0 35px;
-				
-			}
-			header .gnb > ul > li > a {
-				display: block;
-				padding: 25px 0;		
-				color: #222;
-				font-size: 20px;
-				font-weight: 500;
-				transition: all 0.3s;
-				text-decoration: none;
-			}
-			header .gnb > ul > li > a:hover {
-				color: #1bceb8;
-			}			
-			header .mypage {
-				display: block;
-				width: 150px;
-				height: 45px;
-				padding-left: 53px;
-				background: url(https://youthedu.jobaba.net/theme/6/img/main/mypage_w.png) no-repeat #1bceb8 center left 30px;
-				color: #fff;
-				font-size: 15px;
-				font-weight: 400;
-				box-sizing: border-box;
-				border-radius: 50px;
-				line-height: 45px;
-				text-decoration: none;
-			}
-			header .sub_menu {
-				position: absolute;
-				top: 80px;				
-				left: -30px;	
-				width: 220px;		
-				padding: 30px 0;
-				background: #fff;
-				box-sizing: border-box;
-				border: 1px solid #ddd;
-				opacity: 0;
-				visibility: hidden;
-				transition: all 0.2s;
-				z-index: 10;
-			}
-			header .gnb > ul > li:hover .sub_menu {
-				opacity: 1;
-				visibility: visible;
-			}
-			header .sub_menu::after {
-				content: '';
-				width: 19px;
-				height: 11px;
-				background: url(https://youthedu.jobaba.net/theme/6/img/main/gnbArrow.jpg) no-repeat center;
-				position: absolute;
-				left: 45px;
-				top: -11px;
-			}
-			header .sub_menu li {
-				margin-bottom: 20px;
-			}
-			header .sub_menu li:last-child {
-				margin-bottom: 0;
-			}
-			header .sub_menu li a {
-				color: #777;
-				font-size: 15px;
-				font-weight: 400;
-				line-height: 1;
-				display: block;
-				padding: 0 30px;
-				box-sizing: border-box;				
-				text-decoration: none;
-				transition: all 0.3s;
-			}
-			header .sub_menu li a:hover {
-				color: #1bceb8;
-			}
-			header .gnb_mobile {
-				display: none;
-			}
-			header .m_util {
-				display: none;
-			}
-
-			footer {
-				padding: 45px 0 90px;
-				background: #3c3e40;    			
-			}
-			footer .foot_top {
-				padding-bottom: 30px;				
-				margin-bottom: 40px;
-				border-bottom: 1px solid rgba(255,255,255,0.2);
-			}
-			footer .foot_top a {
-				display: inline-block;
-				margin-right: 35px;			
-				color: #939599;
-				font-size: 15px;
-				letter-spacing: -0.6px;
-				line-height: 1;
-				font-weight: 400;
-				text-decoration: none;
-				transition: .3s;
-			}
-			footer .foot_top a:hover {
-				color: #fff;
-			}
-			footer .foot_top a:last-child {
-				margin-right: 0;
-			}
-			footer .foot_bottom p {
-				color: #777;
-				font-size: 16px;
-				font-weight: 300;
-			}
-			@media screen and (max-width: 750px){
-				header .layout {
-					padding: 0 20px;
-				}
-				header .head_wrap {
-					height: 70px;
-				}
-				header .head_logo img {
-					width: 160px;
-				}
-				header .member_util {
-					display: none;
-				}
-				header .gnb {
-					display: none;
-				}
-				header .gnb_mobile {
-					display: block;
-				}
-				header .m_util {
-					display: flex;
-				}
-				header .m_util li {
-					margin-right: 20px;
-				}
-				header .m_util li:last-child {
-					margin-right: 0;
-				}
-				header .m_util li a img {
-					width: 22px;
-				}
-				footer {
-					padding: 25px 0 40px;
-				}
-				footer .foot_top {
-					padding-bottom: 20px;				
-					margin-bottom: 25px;
-				}
-				footer .foot_top a {
-					margin-right: 15px;
-					font-size: 13px;
-				}
-				footer .foot_bottom p {
-					font-size: 15px;
-					word-break: keep-all;
-				}
-			}
-			@media screen and (max-width: 640px){
-				header .head_logo img {
-					width: 110px;
-				}
-				header .m_util li {
-					margin-right: 15px;
-				}
-				header .m_util li a img {
-					width: 18px;
-				}
-				footer .foot_top {
-					text-align: center;
-				}
-			}
-		</style>
 		<!-- header -->
+		<!-- 러닝 센터 헤더 메뉴 추가 작업 2023.02.17 -->
 		<header>
 			<div class="member_util">
 				<div class="layout">
+					<!-- 로그인 전 -->
 					<ul class="util">
 						<li class="login"><a href="#" class="login">로그인</a></li>
 						<li class="join"><a href="#" class="join">회원가입</a></li>
 						<li class="search showMask"><a></a></li>
 					</ul>
-					<!-- 
+					<!-- 로그인 후
 					<ul class="util">
 						<li class="name">테스트</li>
 						<li class="logout"><a href="#">로그아웃</a></li>
@@ -293,6 +76,7 @@
 				<div class="layout">
 					<div class="head_wrap">
 						<h1 class="head_logo"><a href="/home" target="_self"><img src="https://youthedu.jobaba.net/data/file/8055aa7801339ecc247a6cf7f7e25a21.png" alt="경기도 일자리재단 잡아봐"></a></h1>
+						<!-- pc 메뉴 -->
 						<nav class="gnb">
 							<ul>
 								<li>
@@ -341,134 +125,26 @@
 								<a><img src="https://youthedu.jobaba.net/theme/6/img/main/sitemap_m.png" alt="사이트맵"></a>
 							</li>
 						</ul>
-						<style>	
-						/* #menuArea {position:fixed !important; top:0; right:-400px; width:300px;  z-index:999999999999; height:100%; max-width:100%; transition:all 0.6s; background:#fff;}
-						#menuArea.visible {right:0; transition:all 0.6s;}
-						#menuArea .menuList {position:absolute; height:100%; width:100%; box-sizing:border-box; overflow-y:auto;}
-						#menuArea .menuList h2 {position:relative; padding:27px 25px; box-sizing:border-box; overflow:hidden; font-size:15px; color:#222; font-weight:400; letter-spacing:-0.5pt;}
-						#menuArea .menuList h2 img {width:15px; margin-right:10px;}
-						#menuArea .btnMenu_mClose {display:block; padding:0; margin:0; position:absolute; top:25px; left:-40px; background:none; border:none; z-index:99999999999 !important; cursor:pointer;}
-						#menuArea .btnMenu_mClose img {width:20px;}
-
-						#menuArea .menuList .mem_list {font-size:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
-						#menuArea .menuList .mem_list li {display:inline-block; position:relative; width:50%; border-right:1px solid #ddd; box-sizing:border-box;}
-						#menuArea .menuList .mem_list li:last-child {border-right:0;}
-						#menuArea .menuList .mem_list li a {font-size:13px; letter-spacing:-0.5pt; line-height:35px; font-weight:400; background:#f5f5f5; display:block; text-align:left; background-repeat:no-repeat; box-sizing:border-box;}
-
-
-						#menuArea .menuList .mem_list li.login a {background-image:url('/theme/6/img/main/m_login.png'); background-position:center left 37px; background-size:12px; padding-left:60px;}
-						#menuArea .menuList .mem_list li.join a {background-image:url('/theme/6/img/main/m_join.png'); background-position:center left 35px; background-size:12px; padding-left:55px;}
-						#menuArea .menuList .mem_list li.cart a {background-image:url('/theme/6/img/main/m_cart.png'); background-position:center left 32px; background-size:14px; padding-left:55px;}
-						#menuArea .menuList .mem_list li.logout a {background-image:url('/theme/6/img/main/m_logout.png'); background-position:center left 35px; background-size:11px; padding-left:55px;}
-
-
-						#menuArea .menuList>.list {width:100%;}
-						#menuArea .menuList>.list>li {border-bottom:1px solid #e4e4e4;}
-						#menuArea .menuList>.list>li>a {position:relative; display:block; font-size:15px; color:#222; letter-spacing:-0.5pt; line-height:1; font-weight:500; padding:15px 25px;}
-						#menuArea .menuList>.list>li>a:after{content: ""; position: absolute; right:25px; top: 50%; margin-top:-4px; width:10px; height:8px; background: url('/theme/6/img/main/menu_arrow.png') no-repeat center; background-size:100%;transition:all 0.3s;}
-						#menuArea .menuList>.list>li.active>a:after {transition:all 0.3s; transform:rotate(180deg);}
-						#menuArea .menuList>.list>li.pointColor>a {color:inherit;}
-
-						#menuArea .menuList>.list .sMenu {position: relative;  width:100%;  padding:15px 25px; display:none; box-sizing:border-box; background:#f9f9f9; border-top:1px solid #ddd;}
-						#menuArea .menuList>.list .sMenu>li {}
-						#menuArea .menuList>.list .sMenu>li>a {font-weight:400; display:block; border:none; font-size:13px; letter-spacing:-0.5pt; color:#666; transition:all 0.3s ease; margin-bottom:15px; line-heighT:1;}
-						#menuArea .menuList>.list .sMenu>li>a:hover {transition:all 0.3s ease; text-decoration:underline;}
-						#menuArea .menuList>.list .sMenu li:last-child a {margin-bottom:0}
-
-
-						#grayLayer {width:100%; height:100%; background:rgba(0,0,0,0.9); position:fixed; left:0; top:0; z-index:99999999; overflow-x:hidden; overflow-y:auto; display:none;}
-						#grayLayer > a {display:block;width:100%;height:100%} */
-						header .gnb_mobile {
-							position: fixed;
-							top: 0;
-							right: 0;
-							/* right: -400px; */
-							width: 300px;							
-							height: 100%;
-							max-width: 100%;							
-							background: #fff;
-							transition: all 0.6s;
-							z-index: 9999;
-						}
-						header .gnb_mobile .login_cont {
-							border: 10px solid #f3f7f8;
-						}
-						header .gnb_mobile .name {display: flex; align-items: center; position:relative; padding:27px 25px; box-sizing:border-box; overflow:hidden; font-size:15px; color:#222; font-weight:400; letter-spacing:-0.5pt;}
-						header .gnb_mobile .name img {width:15px; margin-right:10px;}
-						header .gnb_mobile .memu_list {display: flex; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-						header .gnb_mobile .memu_list li {
-							width: 50%;
-							border-right:1px solid #ddd;
-						}
-						header .gnb_mobile .memu_list li:last-child {
-							border-right: 0;
-						}
-						header .gnb_mobile .memu_list li a {color: #777; font-size:13px; letter-spacing:-0.5pt; line-height:35px; font-weight:400; background:#f5f5f5; display:block; text-align:left; background-repeat:no-repeat; box-sizing:border-box;}
-						header .gnb_mobile .memu_list li.login a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_login.png); background-position:center left 37px; background-size:12px; padding-left:60px;}
-						header .gnb_mobile .memu_list li.join a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_join.png); background-position:center left 35px; background-size:12px; padding-left:55px;}
-						header .gnb_mobile .memu_list li.cart a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_cart.png); background-position:center left 32px; background-size:14px; padding-left:55px;}
-						header .gnb_mobile .memu_list li.logout a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_logout.png); background-position:center left 35px; background-size:11px; padding-left:55px;}
-						
-						
-						
-						.mobile_menu > li {
-							border-bottom: 1px solid #e4e4e4;
-						}
-						.mobile_menu > li > a {
-							position: relative;
-							display: block;
-							font-size: 15px;
-							color: #222;
-							letter-spacing: -0.5pt;
-							line-height: 1;
-							font-weight: 500;
-							padding: 15px 25px;
-							text-decoration: none;
-						}
-						.mobile_menu > li > a.active {
-							color: #1bceb8;
-						}
-						.mobile_menu > li > a:after{content: ""; position: absolute; right:25px; top: 50%; margin-top:-4px; width:10px; height:8px; background: url(https://youthedu.jobaba.net/theme/6/img/main/menu_arrow.png) no-repeat center; background-size:100%;transition:all 0.3s;}
-						.mobile_menu > li > a.active:after {transition:all 0.3s; transform:rotate(180deg);}
-						.mobile_menu .sub_mobile {
-							position: relative;
-							width: 100%;
-							padding: 5px 0;
-							display: none;
-							box-sizing: border-box;
-							background: #f9f9f9;
-							border-top: 1px solid #ddd;
-						}
-						
-						.mobile_menu .sub_mobile li a {
-							display: block;							
-							padding: 5px 25px;
-							color: #777;
-							font-size: 13px;
-							text-decoration: none;
-						}
-						.gnb_mobile .btnMenu_mClose {display:block; padding:0; margin:0; position:absolute; top:25px; left:-40px; background:none; border:none; z-index:99999999999 !important; cursor:pointer;}
-						.gnb_mobile .btnMenu_mClose img {width:20px;}
-						</style>
+						<!-- mobile 메뉴 -->
 						<nav class="gnb_mobile">
 							<span class="btnMenu_mClose"><img src="https://youthedu.jobaba.net/theme/6/img/main/btnMenu_mClose.png" alt="닫기"></span>
+							<!-- 로그인 전 -->
 							<div class="login_cont">
 								<h2 class="name"><img src="https://youthedu.jobaba.net/theme/6/img/main/m_name.png">로그인을 해주세요</h2>
 								<ul class="memu_list">
-									<li class="login"><a href="/member/login.jsp">로그인</a></li>
-									<li class="join"><a href="/member/agreement.jsp">회원가입</a></li>
+									<li class="login"><a href="#">로그인</a></li>
+									<li class="join"><a href="#">회원가입</a></li>
 								</ul>
 							</div>
-							<!-- 
+							<!-- 로그인 후
 							<div class="login_cont">
 								<h2 class="name"><img src="https://youthedu.jobaba.net/theme/6/img/main/m_name.png">테스트 님이 로그인하셨습니다.</h2>
 								<ul class="memu_list">
-									<li class="logout"><a href="/member/logout.jsp">로그아웃</a></li>
-									<li class="cart"><a href="/mypage/cart_list.jsp">장바구니</a></li>
+									<li class="logout"><a href="#">로그아웃</a></li>
+									<li class="cart"><a href="#">장바구니</a></li>
 								</ul>
 							</div>
-							-->
-							
+							-->							
 							<ul class="mobile_menu">
 								<li>                    
 									<a href="javascript:;">취업지원교육<span class="icon"></span></a>
@@ -503,28 +179,11 @@
 								</li>						
 							</ul>
 						</nav>
-						<script>
-						$(document).ready(function () {							
-							// tabList
-							$(".mobile_menu > li > a").click(function () {
-								if($(this).hasClass('active')){
-									$(this).next().slideUp('slow');
-									$(this).removeClass('active');
-								}else{
-									$('.mobile_menu').find('.active').next().slideUp('slow');
-									$('.mobile_menu').find('.active').removeClass('active');
-									$(this).next().slideDown('slow');
-									$(this).addClass('active');
-								}     
-							});
-
-						});
-						</script>
-
 					</div>
 				</div>
 			</div>
 		</header>
+		<!-- //러닝 센터 헤더 메뉴 추가 작업 end 2023.02.17 -->
 
 		<!-- container -->
 		<section id="container">
@@ -778,25 +437,59 @@
 					schBanner.slick('slickPlay');
 				}
 			});
+				
+			// 러닝 센터 추가 스크립트 2023.02.17
+			// 모바일 서브 메뉴
+			$(".mobile_menu > li > a").click(function () {
+				if($(this).hasClass('active')){
+					$(this).next().slideUp('slow');
+					$(this).removeClass('active');
+				}else{
+					$('.mobile_menu').find('.active').next().slideUp('slow');
+					$('.mobile_menu').find('.active').removeClass('active');
+					$(this).next().slideDown('slow');
+					$(this).addClass('active');
+				}     
+			});
+			// 모바일 서브 bg
+			$("body").on("click ", ".btnMenu_m", function(){
+				$(".gnb_mobile").addClass('active');
+				$(".btnMenu_mClose").fadeIn(300);
+				$("header .head_wrap").append("<div id='bg'><a href='javascript:;'></a></div>");
+				$("#bg").show();
+			});
+			$("body").on("click ", ".btnMenu_mClose", function(){
+				$(".gnb_mobile").removeClass('active');
+				$(".btnMenu_mClose").fadeOut(300);
+				$("#bg").remove();
+			});
+			$("body").on("click ", "#bg a", function(){
+				$(".gnb_mobile").removeClass('active');
+				$(".btnMenu_mClose").fadeOut(300);
+				$("#bg").remove();
+			});
+			// 러닝 센터 추가 스크립트 end 2023.02.17
 
 		</script>
         <!-- footer -->
+				<!-- 러닝센터 footer 추가 작업 2023.02.17 -->
         <footer>
-			<div class="layout">
-				<div class="foot_top">
-					<a href="#" title="소개 페이지로 이동">소개</a>
-					<a href="#" title="이용약관 페이지로 이동">이용약관</a>
-					<a href="#" title="개인정보처리방침 페이지로 이동" class="txt_white">개인정보처리방침</a>
-					<a href="#" title="환불규정 페이지로 이동">환불규정</a>
-					<a href="#" title="찾아오시는길 페이지로 이동">찾아오시는 길</a>
-				</div>
-				<div class="foot_bottom">
-					<p>경기도 부천시 부천로 143, 4층 (14566) 경기도일자리재단 정보화사업센터</p>
-					<p>잡아바 러닝센터 이용문의 : 031-270-9988  이메일 : youthcenter@gjf.or.kr</p>
-					<p>Copyright (c) Gyeonggido Job Foundation. All Rights Reserved.</p>
-				</div>
-			</div>
+					<div class="layout">
+						<div class="foot_top">
+							<a href="#" title="소개 페이지로 이동">소개</a>
+							<a href="#" title="이용약관 페이지로 이동">이용약관</a>
+							<a href="#" title="개인정보처리방침 페이지로 이동" class="txt_white">개인정보처리방침</a>
+							<a href="#" title="환불규정 페이지로 이동">환불규정</a>
+							<a href="#" title="찾아오시는길 페이지로 이동">찾아오시는 길</a>
+						</div>
+						<div class="foot_bottom">
+							<p>경기도 부천시 부천로 143, 4층 (14566) 경기도일자리재단 정보화사업센터</p>
+							<p>잡아바 러닝센터 이용문의 : 031-270-9988  이메일 : youthcenter@gjf.or.kr</p>
+							<p>Copyright (c) Gyeonggido Job Foundation. All Rights Reserved.</p>
+						</div>
+					</div>
         </footer>
+				<!-- //러닝센터 footer 추가 작업 end 2023.02.17 -->
         <!-- //footer -->
     </div>
 </body>
