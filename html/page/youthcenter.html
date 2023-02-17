@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- meta tag -->
+	<meta charset="utf-8">
+	<meta https-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="naver-site-verification" content="e134ff0fb38de3db22a10467efdf62f620178672">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="경기도 일자리재단 잡아바 청년센터">
+	<meta name="description" content="경기도 일자리재단 잡아바 청년센터 사이트 ">
+	<meta name="keywords" content="경기도 일자리재단 잡아바 청년센터, 경기도일자리재단, 잡아바">
+	<meta property="og:site_name" content="경기도 일자리재단 잡아바 청년센터">
+	<meta property="og:title" content="경기도 일자리재단 잡아바 청년센터">
+	<meta property="og:description" content="경기도 일자리재단 잡아바 청년센터 사이트">
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:image" content="https://youthcenter.jobaba.net/img/og_image_youth.png"/>
+	<meta property="og:url" content="https://youthcenter.jobaba.net"/>
+	<meta name="keywords" content="잡아바,청년센터,청년,youthcenter,교육,취업역량진단,자소서컨설팅,AI면접,경기청년,일자리협업단,경기도일자리재단">
+	<meta property="twitter:card" content="경기도 일자리재단 잡아바 청년센터 사이트">
+	<meta property="twitter:title" content="경기도 일자리재단 잡아바 청년센터">
+	<meta property="twitter:description" content="경기도 일자리재단 잡아바 청년센터 사이트">
+
+	<!-- css / js -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/layout.css?ver=0.5" />
+	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/sub.css?ver=0.1" />
+	<link rel="stylesheet" type="text/css" href="https://youthcenter.jobaba.net/home/css/popup.css?ver=0.2" />
+
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<script src="https://youthcenter.jobaba.net/script/common.js"></script>
+	<title>경기도 일자리재단 잡아바 청년센터</title>
+</head>
+
+<body>
+	<!-- skip nav -->
+	<ul id="skip">
+		<li><a href="#gnb" tabindex="0">주메뉴 바로가기</a></li>
+		<li><a href="#container">본문 바로가기</a></li>
+	</ul>
+	<!-- //skip nav -->
+
+	<div id="wrap">
+		<style>
+			header .member_util {
+				text-align: right;
+				border-bottom: 1px solid #ddd;
+			}
+			header .layout {
+				padding: 0;
+			}
+			header .member_util .util li {
+				font-size: 15px;
+				line-height: 45px;
+				display: inline-block;
+				border-right: 1px solid #ddd;
+				font-weight: 400;
+				vertical-align: top;
+			}
+			header .member_util .util li a {
+				display: block;
+				padding:0 22px 0 45px;
+				background-position: center left 20px !important;
+				color: #777;
+				text-decoration: none;
+			}
+			header .member_util .util li.login a {background:url(https://youthedu.jobaba.net/theme/6/img/main/m_login.png) no-repeat; background-size:14px; border-left:1px solid #ddd; }
+			header .member_util .util li.join a {background:url(https://youthedu.jobaba.net/theme/6/img/main/m_join.png) no-repeat; background-size:14px;}
+			header .member_util .util li.search a {padding:0; width:45px; height:45px; background:url(https://youthedu.jobaba.net/theme/6/img/main/search.png) no-repeat; background-position: center !important; cursor: pointer;}
+			
+			header .member_util .util li.name {padding:0 30px 0 25px; color:#222; background:url(https://youthedu.jobaba.net/theme/6/img/main/mypage.png) no-repeat; background-position:center left;}
+			header .member_util .util li.logout a {background:url(https://youthedu.jobaba.net/theme/6/img/main/logout.png) no-repeat;}
+			header .member_util .util li.cart a {background:url(https://youthedu.jobaba.net/theme/6/img/main/cart.png) no-repeat; background-position:center left 15px !important;}
+
+			header .head_wrap {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			header .gnb {
+				display: flex;
+				align-items: center;
+			}
+			header .gnb > ul {
+				display: flex;
+				margin-right: 70px;
+			}
+			header .gnb > ul > li {
+				position: relative;
+				margin: 0 35px;
+				
+			}
+			header .gnb > ul > li > a {
+				display: block;
+				padding: 25px 0;		
+				color: #222;
+				font-size: 20px;
+				font-weight: 500;
+				transition: all 0.3s;
+				text-decoration: none;
+			}
+			header .gnb > ul > li > a:hover {
+				color: #1bceb8;
+			}			
+			header .mypage {
+				display: block;
+				width: 150px;
+				height: 45px;
+				padding-left: 53px;
+				background: url(https://youthedu.jobaba.net/theme/6/img/main/mypage_w.png) no-repeat #1bceb8 center left 30px;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 400;
+				box-sizing: border-box;
+				border-radius: 50px;
+				line-height: 45px;
+				text-decoration: none;
+			}
+			header .sub_menu {
+				position: absolute;
+				top: 80px;				
+				left: -30px;	
+				width: 220px;		
+				padding: 30px 0;
+				background: #fff;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.2s;
+				z-index: 10;
+			}
+			header .gnb > ul > li:hover .sub_menu {
+				opacity: 1;
+				visibility: visible;
+			}
+			header .sub_menu::after {
+				content: '';
+				width: 19px;
+				height: 11px;
+				background: url(https://youthedu.jobaba.net/theme/6/img/main/gnbArrow.jpg) no-repeat center;
+				position: absolute;
+				left: 45px;
+				top: -11px;
+			}
+			header .sub_menu li {
+				margin-bottom: 20px;
+			}
+			header .sub_menu li:last-child {
+				margin-bottom: 0;
+			}
+			header .sub_menu li a {
+				color: #777;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 1;
+				display: block;
+				padding: 0 30px;
+				box-sizing: border-box;				
+				text-decoration: none;
+				transition: all 0.3s;
+			}
+			header .sub_menu li a:hover {
+				color: #1bceb8;
+			}
+			header .gnb_mobile {
+				display: none;
+			}
+			header .m_util {
+				display: none;
+			}
+
+			footer {
+				padding: 45px 0 90px;
+				background: #3c3e40;    			
+			}
+			footer .foot_top {
+				padding-bottom: 30px;				
+				margin-bottom: 40px;
+				border-bottom: 1px solid rgba(255,255,255,0.2);
+			}
+			footer .foot_top a {
+				display: inline-block;
+				margin-right: 35px;			
+				color: #939599;
+				font-size: 15px;
+				letter-spacing: -0.6px;
+				line-height: 1;
+				font-weight: 400;
+				text-decoration: none;
+				transition: .3s;
+			}
+			footer .foot_top a:hover {
+				color: #fff;
+			}
+			footer .foot_top a:last-child {
+				margin-right: 0;
+			}
+			footer .foot_bottom p {
+				color: #777;
+				font-size: 16px;
+				font-weight: 300;
+			}
+			@media screen and (max-width: 750px){
+				header .layout {
+					padding: 0 20px;
+				}
+				header .head_wrap {
+					height: 70px;
+				}
+				header .head_logo img {
+					width: 160px;
+				}
+				header .member_util {
+					display: none;
+				}
+				header .gnb {
+					display: none;
+				}
+				header .gnb_mobile {
+					display: block;
+				}
+				header .m_util {
+					display: flex;
+				}
+				header .m_util li {
+					margin-right: 20px;
+				}
+				header .m_util li:last-child {
+					margin-right: 0;
+				}
+				header .m_util li a img {
+					width: 22px;
+				}
+				footer {
+					padding: 25px 0 40px;
+				}
+				footer .foot_top {
+					padding-bottom: 20px;				
+					margin-bottom: 25px;
+				}
+				footer .foot_top a {
+					margin-right: 15px;
+					font-size: 13px;
+				}
+				footer .foot_bottom p {
+					font-size: 15px;
+					word-break: keep-all;
+				}
+			}
+			@media screen and (max-width: 640px){
+				header .head_logo img {
+					width: 110px;
+				}
+				header .m_util li {
+					margin-right: 15px;
+				}
+				header .m_util li a img {
+					width: 18px;
+				}
+				footer .foot_top {
+					text-align: center;
+				}
+			}
+		</style>
+		<!-- header -->
+		<header>
+			<div class="member_util">
+				<div class="layout">
+					<ul class="util">
+						<li class="login"><a href="#" class="login">로그인</a></li>
+						<li class="join"><a href="#" class="join">회원가입</a></li>
+						<li class="search showMask"><a></a></li>
+					</ul>
+					<!-- 
+					<ul class="util">
+						<li class="name">테스트</li>
+						<li class="logout"><a href="#">로그아웃</a></li>
+						<li class="cart"><a href="#">장바구니</a></li>
+						<li class="search"><a></a></li>
+					</ul>	 
+					-->
+				</div>			
+			</div>
+			<div class="head">
+				<div class="layout">
+					<div class="head_wrap">
+						<h1 class="head_logo"><a href="/home" target="_self"><img src="https://youthedu.jobaba.net/data/file/8055aa7801339ecc247a6cf7f7e25a21.png" alt="경기도 일자리재단 잡아봐"></a></h1>
+						<nav class="gnb">
+							<ul>
+								<li>
+									<a href="">취업지원교육</a>
+									<ul class="sub_menu">
+										<li><a href="#" target="_self">전체과정</a></li>
+										<li><a href="#" target="_self">추천 과정</a></li>
+										<li><a href="#" target="_self">취업준비과정</a></li>
+										<li><a href="#" target="_self">NCS과정</a></li>
+										<li><a href="#" target="_self">외국어과정</a></li>
+										<li><a href="#" target="_self">자격증과정</a></li>
+										<li><a href="#" target="_self">IT과정</a></li>
+										<li><a href="#" target="_self">자기계발(마이크로과정)</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">비대면 취업지원</a>
+									<ul class="sub_menu">
+										<li><a href="#" target="_self">취업상담컨설팅</a></li>
+										<li><a href="#" target="_self">자기소개서컨설팅</a></li>
+										<li><a href="#" target="_self">AI역량검사</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">참여소통</a>
+									<ul class="sub_menu">
+										<li><a href="#" target="_self">참여소통</a></li>
+										<li><a href="#" target="_self">공지사항</a></li>
+										<li><a href="#" target="_self">QnA</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">소속정보수정</a>
+								</li>
+							</ul>
+							<a href="#" class="mypage">마이페이지</a>
+						</nav>
+						<ul class="m_util">
+							<li class="member">
+								<a href="#"><img src="https://youthedu.jobaba.net/theme/6/img/main/member_m.png" alt="마이페이지"></a>
+							</li>
+							<li class="showMask">
+								<a><img src="https://youthedu.jobaba.net/theme/6/img/main/search_m.png" alt="검색"></a>
+							</li>
+							<li class="btnMenu_m">
+								<a><img src="https://youthedu.jobaba.net/theme/6/img/main/sitemap_m.png" alt="사이트맵"></a>
+							</li>
+						</ul>
+						<style>	
+						/* #menuArea {position:fixed !important; top:0; right:-400px; width:300px;  z-index:999999999999; height:100%; max-width:100%; transition:all 0.6s; background:#fff;}
+						#menuArea.visible {right:0; transition:all 0.6s;}
+						#menuArea .menuList {position:absolute; height:100%; width:100%; box-sizing:border-box; overflow-y:auto;}
+						#menuArea .menuList h2 {position:relative; padding:27px 25px; box-sizing:border-box; overflow:hidden; font-size:15px; color:#222; font-weight:400; letter-spacing:-0.5pt;}
+						#menuArea .menuList h2 img {width:15px; margin-right:10px;}
+						#menuArea .btnMenu_mClose {display:block; padding:0; margin:0; position:absolute; top:25px; left:-40px; background:none; border:none; z-index:99999999999 !important; cursor:pointer;}
+						#menuArea .btnMenu_mClose img {width:20px;}
+
+						#menuArea .menuList .mem_list {font-size:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+						#menuArea .menuList .mem_list li {display:inline-block; position:relative; width:50%; border-right:1px solid #ddd; box-sizing:border-box;}
+						#menuArea .menuList .mem_list li:last-child {border-right:0;}
+						#menuArea .menuList .mem_list li a {font-size:13px; letter-spacing:-0.5pt; line-height:35px; font-weight:400; background:#f5f5f5; display:block; text-align:left; background-repeat:no-repeat; box-sizing:border-box;}
+
+
+						#menuArea .menuList .mem_list li.login a {background-image:url('/theme/6/img/main/m_login.png'); background-position:center left 37px; background-size:12px; padding-left:60px;}
+						#menuArea .menuList .mem_list li.join a {background-image:url('/theme/6/img/main/m_join.png'); background-position:center left 35px; background-size:12px; padding-left:55px;}
+						#menuArea .menuList .mem_list li.cart a {background-image:url('/theme/6/img/main/m_cart.png'); background-position:center left 32px; background-size:14px; padding-left:55px;}
+						#menuArea .menuList .mem_list li.logout a {background-image:url('/theme/6/img/main/m_logout.png'); background-position:center left 35px; background-size:11px; padding-left:55px;}
+
+
+						#menuArea .menuList>.list {width:100%;}
+						#menuArea .menuList>.list>li {border-bottom:1px solid #e4e4e4;}
+						#menuArea .menuList>.list>li>a {position:relative; display:block; font-size:15px; color:#222; letter-spacing:-0.5pt; line-height:1; font-weight:500; padding:15px 25px;}
+						#menuArea .menuList>.list>li>a:after{content: ""; position: absolute; right:25px; top: 50%; margin-top:-4px; width:10px; height:8px; background: url('/theme/6/img/main/menu_arrow.png') no-repeat center; background-size:100%;transition:all 0.3s;}
+						#menuArea .menuList>.list>li.active>a:after {transition:all 0.3s; transform:rotate(180deg);}
+						#menuArea .menuList>.list>li.pointColor>a {color:inherit;}
+
+						#menuArea .menuList>.list .sMenu {position: relative;  width:100%;  padding:15px 25px; display:none; box-sizing:border-box; background:#f9f9f9; border-top:1px solid #ddd;}
+						#menuArea .menuList>.list .sMenu>li {}
+						#menuArea .menuList>.list .sMenu>li>a {font-weight:400; display:block; border:none; font-size:13px; letter-spacing:-0.5pt; color:#666; transition:all 0.3s ease; margin-bottom:15px; line-heighT:1;}
+						#menuArea .menuList>.list .sMenu>li>a:hover {transition:all 0.3s ease; text-decoration:underline;}
+						#menuArea .menuList>.list .sMenu li:last-child a {margin-bottom:0}
+
+
+						#grayLayer {width:100%; height:100%; background:rgba(0,0,0,0.9); position:fixed; left:0; top:0; z-index:99999999; overflow-x:hidden; overflow-y:auto; display:none;}
+						#grayLayer > a {display:block;width:100%;height:100%} */
+						header .gnb_mobile {
+							position: fixed;
+							top: 0;
+							right: 0;
+							/* right: -400px; */
+							width: 300px;							
+							height: 100%;
+							max-width: 100%;							
+							background: #fff;
+							transition: all 0.6s;
+							z-index: 9999;
+						}
+						header .gnb_mobile .login_cont {
+							border: 10px solid #f3f7f8;
+						}
+						header .gnb_mobile .name {display: flex; align-items: center; position:relative; padding:27px 25px; box-sizing:border-box; overflow:hidden; font-size:15px; color:#222; font-weight:400; letter-spacing:-0.5pt;}
+						header .gnb_mobile .name img {width:15px; margin-right:10px;}
+						header .gnb_mobile .memu_list {display: flex; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+						header .gnb_mobile .memu_list li {
+							width: 50%;
+							border-right:1px solid #ddd;
+						}
+						header .gnb_mobile .memu_list li:last-child {
+							border-right: 0;
+						}
+						header .gnb_mobile .memu_list li a {color: #777; font-size:13px; letter-spacing:-0.5pt; line-height:35px; font-weight:400; background:#f5f5f5; display:block; text-align:left; background-repeat:no-repeat; box-sizing:border-box;}
+						header .gnb_mobile .memu_list li.login a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_login.png); background-position:center left 37px; background-size:12px; padding-left:60px;}
+						header .gnb_mobile .memu_list li.join a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_join.png); background-position:center left 35px; background-size:12px; padding-left:55px;}
+						header .gnb_mobile .memu_list li.cart a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_cart.png); background-position:center left 32px; background-size:14px; padding-left:55px;}
+						header .gnb_mobile .memu_list li.logout a {background-image:url(https://youthedu.jobaba.net/theme/6/img/main/m_logout.png); background-position:center left 35px; background-size:11px; padding-left:55px;}
+						
+						
+						
+						.mobile_menu > li {
+							border-bottom: 1px solid #e4e4e4;
+						}
+						.mobile_menu > li > a {
+							position: relative;
+							display: block;
+							font-size: 15px;
+							color: #222;
+							letter-spacing: -0.5pt;
+							line-height: 1;
+							font-weight: 500;
+							padding: 15px 25px;
+							text-decoration: none;
+						}
+						.mobile_menu > li > a.active {
+							color: #1bceb8;
+						}
+						.mobile_menu > li > a:after{content: ""; position: absolute; right:25px; top: 50%; margin-top:-4px; width:10px; height:8px; background: url(https://youthedu.jobaba.net/theme/6/img/main/menu_arrow.png) no-repeat center; background-size:100%;transition:all 0.3s;}
+						.mobile_menu > li > a.active:after {transition:all 0.3s; transform:rotate(180deg);}
+						.mobile_menu .sub_mobile {
+							position: relative;
+							width: 100%;
+							padding: 5px 0;
+							display: none;
+							box-sizing: border-box;
+							background: #f9f9f9;
+							border-top: 1px solid #ddd;
+						}
+						
+						.mobile_menu .sub_mobile li a {
+							display: block;							
+							padding: 5px 25px;
+							color: #777;
+							font-size: 13px;
+							text-decoration: none;
+						}
+						</style>
+						<nav class="gnb_mobile">
+							<div class="login_cont">
+								<h2 class="name"><img src="https://youthedu.jobaba.net/theme/6/img/main/m_name.png">로그인을 해주세요</h2>
+								<ul class="memu_list">
+									<li class="login"><a href="/member/login.jsp">로그인</a></li>
+									<li class="join"><a href="/member/agreement.jsp">회원가입</a></li>
+								</ul>
+							</div>
+							<!-- 
+							<div class="login_cont">
+								<h2 class="name"><img src="https://youthedu.jobaba.net/theme/6/img/main/m_name.png">테스트 님이 로그인하셨습니다.</h2>
+								<ul class="memu_list">
+									<li class="logout"><a href="/member/logout.jsp">로그아웃</a></li>
+									<li class="cart"><a href="/mypage/cart_list.jsp">장바구니</a></li>
+								</ul>
+							</div>
+							-->
+							
+							<ul class="mobile_menu">
+								<li>                    
+									<a href="javascript:;">취업지원교육<span class="icon"></span></a>
+									<ul class="sub_mobile">										
+										<li><a href="#" target="_self">전체과정</a></li>										
+										<li><a href="#" target="_self">추천 과정</a></li>										
+										<li><a href="#" target="_self">취업준비과정</a></li>										
+										<li><a href="#" target="_self">NCS과정</a></li>										
+										<li><a href="#" target="_self">외국어과정</a></li>										
+										<li><a href="#" target="_self">자격증과정</a></li>										
+										<li><a href="#" target="_self">IT과정</a></li>										
+										<li><a href="#" target="_self">자기계발(마이크로과정)</a></li>										
+									</ul>									
+								</li>
+								<li>                    
+									<a href="javascript:;">비대면 취업지원<span class="icon"></span></a>
+									<ul class="sub_mobile">										
+										<li><a href="#" target="_self">취업상담컨설팅</a></li>                        
+										<li><a href="#" target="_self">자기소개서컨설팅</a></li>                        
+										<li><a href="#" target="_self">AI역량검사</a></li>
+									</ul>									
+								</li>
+								<li>                    
+									<a href="javascript:;">참여소통<span class="icon"></span></a>
+									<ul class="sub_mobile">										
+										<li><a href="#" target="_self">공지사항</a></li>                        
+										<li><a href="#" target="_self">QnA</a></li>
+									</ul>									
+								</li>
+								<li>                    
+									<a href="#" target="_blank">소속정보수정<span class="icon"></span></a>									
+								</li>						
+							</ul>
+						</nav>
+						<script>
+						$(document).ready(function () {							
+							// tabList
+							$(".mobile_menu > li > a").click(function () {
+								if($(this).hasClass('active')){
+									$(this).next().slideUp('slow');
+									$(this).removeClass('active');
+								}else{
+									$('.mobile_menu').find('.active').next().slideUp('slow');
+									$('.mobile_menu').find('.active').removeClass('active');
+									$(this).next().slideDown('slow');
+									$(this).addClass('active');
+								}     
+							});
+
+						});
+						</script>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- container -->
+		<section id="container">
+			<article class="sec01">
+				<div class="slider">
+					<div class="slider__cont">
+						<a href="#" target="_self" class="slide01">
+							<p class="hidden">경기청년들의 성공적인 취업을 위한 잡아바 청년센터</p>
+						</a>
+						
+						<a href="https://youthcenter.jobaba.net/home/study.jsp" class="slide02">
+							<p class="hidden">경기도 청년이라면 누구나 무료! 취/창업 역량강화 온라인 강의 지금 바로가기</p>
+						</a>
+					</div>
+					<div class="wrap_pager">
+						<div class="pager">
+							<button class="btn_prev">&lt;<span class="hidden">이전 목록</span></button>
+							<p class="cnt"></p>
+							<button class="btn_next">&gt;<span class="hidden">다음 목록</span></button>
+						</div>
+						<button type="button" class="btn_play">멈춤/재생 버튼</button>
+					</div>
+				</div>
+				<div class="wrap_lms">
+					<div class="layout">
+						<h3 class="sec_tit">
+							취업난을 겪는<br />
+							청년을 위한<br />
+							<b>청년센터 온라인강의</b>
+						</h3>						
+						<a href="/home/study.jsp"><span>온라인강의 바로가기</span></a>
+						<div class="lms_info">
+							<dl>
+								<dt>취업역량강화<br class="pc" />온라인교육과정</dt>
+								<dd>자격증, 취업준비 강의 등 취업역량강화를 위한 다양한 강의를 제공합니다.</dd>
+							</dl>
+							<dl>
+								<dt>청년<br class="pc" />창업지원</dt>
+								<dd>청년창업 활성화를 위한 <br class="pc" />창업 과정 강의 제공</dd>
+							</dl>
+							<dl>
+								<dt>고교 취업<br class="pc" />활성화</dt>
+								<dd>고교 취업 활성화를 위한 <br class="pc" />자격증 과정 운영 및 <br class="pc" />청소년  노동인권교육</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="sec04">
+				<div class="layout">
+					<div class="notice">
+						<h3 class="sec_tit">
+							공지사항
+							<a href="/home/notice_list.jsp" target="_self">전체보기 ></a>
+						</h3>
+                        <ul>		
+                            <li>
+                                <a href="/home/notice_list.jsp?bdMode=view&dataId=BDATA000000010000125" target="_self">[영상]경기청년 일자리협업 우수사례 5편</a>
+                                <div class="txt">
+                                        1. [경기 청년 일자리 협업단] 편(이미지 클릭시 유튜브로 이동합니다) 2.[청년공간 마스터클래스] 편(유튜브채널 잡아바TV 12/24공개) 3.[경기 청년 DIY 아카데미] 편(이미지 클릭시 유튜브로 이동합니다) 4.[메이커스페이스 운영인력 양성과정] 편(유튜브채널 잡아바TV 12/23공개) 5.[드림마스터] 편(유튜브채널 잡아바TV 12/22공개) 
+                                </div>
+                                <p class="date">2022-12-21</p>
+                            </li>
+                            
+                            <li>
+                                <a href="/home/notice_list.jsp?bdMode=view&dataId=BDATA000000010000118" target="_self">잡아바 청년센터 11월 수료증 이벤트 당첨자 안내</a>
+                                <div class="txt">			
+                                        안녕하세요 경기도 일자리재단 잡아바 청년센터입니다. 11월 수료증 이벤트 당첨자 안내 드립니다. 아이패드 9세대 10인치 이름 전화번호 뒷자리 박O령 3329 (이벤트 상품은 발송 후연락드릴 예정입니다.) 1만원 상당의모바일 상품권 이름 전화번호뒷자리 고O미 8732 김O빈 3763 윤O화 1674 정O혜 0556 이O준 3839 김O우 3873 백O현 4269 김O수 8760 조O진 4349 백O현 1309 김O태 4217 김O림 3423 강O호 0473 정O린 2107 차O진 5510 김O윤 8712 민O빈 6927 최O혁 9608 구O비 4431 김O정 9757 (모바일 상품권은 등록하신 전화번호로 발송 예정 입니다.) 다시 한번 이벤트에 참여해주신 모든 분에게 감사드립니다! 				
+                                </div>
+                                <p class="date">2022-12-07</p>
+                            </li>		
+                            <li>
+                                <a href="/home/notice_list.jsp?bdMode=view&dataId=BDATA000000010000111" target="_self">「경기도 청년공간 처우개선 좌담회」개최 및 참여자 모집 안내</a>
+                                <div class="txt">
+                                
+                                        참석 신청 바로가기 
+                                        
+                                    
+                                </div>
+                                <p class="date">2022-12-01</p>
+                            </li>		
+                        </ul>
+					</div>
+					<div class="coworker">
+						<h3 class="sec_tit">
+							청년들이 주체가 되는<br />
+							<b><em>경기청년</em> <em>일자리협업단</em></b>
+						</h3>
+						<p>경기도일자리재단 청년일자리본부 산하 협업단으로서 도내 각 시&middot;군의 청년일자리 관리&middot;행정 사각지대를 해소하도록 도력하는 단체입니다.</p>
+						<a href="/home/coworker.jsp" target="_self">자세히 보기</a>
+					</div>
+				</div>
+			</article>
+			<article class="sec03">
+				<div class="layout">
+					<h3 class="sec_tit">잡아바 청년센터만의 <br class="mobile" /><b>온라인 취업지원</b></h3>
+					<ul>
+						<li>
+							<div class="info">
+								<strong>취업상담 컨설팅</strong>
+								<p class="txt">취업과 관련된 고민상담</p>
+								<p class="tags">
+									<span>#직업상담</span>
+									<span>#취업컨설팅</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="info">
+								<strong>이력서 클리닉</strong>
+								<p class="txt">합격 이력서 완성</p>
+								<p class="tags">
+									<span>#취업준비</span>
+									<span>#자소서클리닉</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="info">
+								<strong>AI 역량검사</strong>
+								<p class="txt">비대면 면접의 핵심</p>
+								<p class="tags">
+									<span>#모의면접</span>
+									<span>#온라인면접</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+					<a href="/home/counsel.jsp">일자리상담실 소개</a>
+				</div>
+			</article>
+			<article class="sec04">
+			<div class="layout">
+					<div class="join">
+						<h3 class="sec_tit">
+							잡아바 청년센터 유관기관
+							<button class="btn_prev">배너 앞으로 이동하기</button>
+							<button class="btn_next">배너 뒤로 이동하기</button>
+							<button class="btn_play">재생/멈춤</button>
+						</h3>
+						<div class="list">
+							<a href="https://www.goe.go.kr/" target="_blank" class="school00">경기도교육청</a>
+							<a href="https://www.hansei.ac.kr/sites/kor/intro.html" target="_blank" class="school01">한세대학교</a>
+							<a href="http://www.kbu.ac.kr/" target="_blank" class="school02">경복대학교</a>
+							<a href="https://ukp.ac.kr/" target="_blank" class="school03">김포대학교</a>
+							<a href="https://www.stu.ac.kr/" target="_blank" class="school04">서울신학대학교</a>
+							<a href="https://www.hs.ac.kr/intro.html" target="_blank" class="school05">한신대학교</a>
+							<a href="https://www.uhs.ac.kr/intro/index.html" target="_blank" class="school06">협성대학교</a>
+							<a href="https://www.hanyang.ac.kr/" target="_blank" class="school07">한양대 에리카</a>
+							<!-- <a href="https://www.gachon.ac.kr/kor/index.do" target="_blank" class="school08">가천대학교</a> -->
+							<a href="https://www.swwu.ac.kr/swwu.do" target="_blank" class="school09">수원여자대학교</a>
+							<a href="https://gm.hs.kr/main" target="_blank" class="school010">경기경영고등학교</a>
+							<a href="https://gtour-h.goeyj.kr/gtour-h/main.do" target="_blank" class="school011">경기관광고등학교</a>
+							<a href="https://gitra.hs.kr/" target="_blank" class="school012">경기국제통상고</a>
+							<a href="https://ggl-h.goept.kr/ggl-h/main.do" target="_blank" class="school013">경기물류고등학교</a>
+							<a href="http://www.gahs.hs.kr/wah/main/index.htm" target="_blank" class="school014">경기항공고등학교</a>
+							<a href="https://samil.hs.kr/main.php" target="_blank" class="school015">삼일상업고등학교</a>
+							<a href="https://snfn-h.goesn.kr/snfn-h/main.do" target="_blank" class="school016">성남금융고등학교</a>
+							<a href="https://sunong-h.goesw.kr/index.do" target="_blank" class="school017">수원농생명과학고</a>
+							<a href="https://ansan-mi.hs.kr/main" target="_blank" class="school018">안산국제비즈니스고등학교</a>
+							<a href="https://i-tax.hs.kr/home/index.do" target="_blank" class="school019">이천세무고등학교</a>
+							<a href="https://ilsanth.hs.kr/home/index.do" target="_blank" class="school020">일산고등학교</a>
+							<a href="https://kcm-h.goedy.kr/kcm-h/main.do" target="_blank" class="school021">한국문화영상고등학교</a>
+							<a href="https://maehyang.hs.kr/home/index.do" target="_blank" class="school022">매향여자고등학교</a>
+							<a href="http://adc.hs.kr/" target="_blank" class="school023">안산디자인문화고등학교</a>
+							<a href="https://sht-h.goesw.kr/index.do" target="_blank" class="school024">수원하이텍고등학교</a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- //container -->
+
+		<script src="https://youthcenter.jobaba.net/home/script/script.js"></script>
+		<script>
+
+			//메인배너 슬라이드
+			const status = $('.cnt');
+			const slickElement = $('.slider__cont');
+
+			slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+				var i = (currentSlide ? currentSlide : 0) + 1;
+				status.html('<b>' + i + '</b> / ' + slick.slideCount);
+
+			});
+
+			slickElement.slick({
+				infinite: true,
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				speed: 500,
+				autoplaySpeed: 7000
+			});
+
+			//이전&다음 슬라이드 버튼, 재생&멈춤 버튼
+			$('.sec01 .btn_prev').click(function(){
+				slickElement.slick('slickPrev');
+			});
+			$('.sec01 .btn_next').click(function(){
+				slickElement.slick('slickNext');
+			});
+
+			$('.sec01 .btn_play').click(function(){
+				let btnPlay = $(this);
+				btnPlay.toggleClass('active')
+
+				if(btnPlay.hasClass('active')){
+					//멈춤
+					slickElement.slick('slickPause');
+				}else{
+					//재생
+					slickElement.slick('slickPlay');
+				}
+			});
+
+
+			// 참여학교 배너 슬라이드
+			let schBanner = $('.join .list').slick({
+				rows: 2,
+				slidesPerRow: 4,
+				arrows: false,
+				dots:false,
+				infinite:true,
+				autoplay: true,
+				responsive: [{
+					breakpoint: 750,
+					settings: {
+						rows: 2,
+						slidesPerRow: 2
+					}
+				}]
+			});
+
+			$('.join .btn_prev').click(function(){
+				schBanner.slick('slickPrev');
+			});
+			$('.join .btn_next').click(function(){
+				schBanner.slick('slickNext');
+			});
+
+			$('.join .btn_play').click(function(){
+				let btnPlay = $(this);
+				btnPlay.toggleClass('active')
+
+				if(btnPlay.hasClass('active')){
+					//멈춤
+					schBanner.slick('slickPause');
+				}else{
+					//재생
+					schBanner.slick('slickPlay');
+				}
+			});
+
+		</script>
+        <!-- footer -->
+        <footer>
+			<div class="layout">
+				<div class="foot_top">
+					<a href="#" title="소개 페이지로 이동">소개</a>
+					<a href="#" title="이용약관 페이지로 이동">이용약관</a>
+					<a href="#" title="개인정보처리방침 페이지로 이동" class="txt_white">개인정보처리방침</a>
+					<a href="#" title="환불규정 페이지로 이동">환불규정</a>
+					<a href="#" title="찾아오시는길 페이지로 이동">찾아오시는 길</a>
+				</div>
+				<div class="foot_bottom">
+					<p>경기도 부천시 부천로 143, 4층 (14566) 경기도일자리재단 정보화사업센터</p>
+					<p>잡아바 러닝센터 이용문의 : 031-270-9988  이메일 : youthcenter@gjf.or.kr</p>
+					<p>Copyright (c) Gyeonggido Job Foundation. All Rights Reserved.</p>
+				</div>
+			</div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
