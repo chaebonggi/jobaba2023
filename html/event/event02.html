@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>취업 상담 이벤트</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+  	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+
+	<!-- 이벤트 추가 css -->
+	<link rel="stylesheet" href="./css/event02.css">
+
+	
+</head>
+<body>
+<div id="page-content">
+	<section class="eventWrap">
+		<div class="innerSection">
+			<div class="imgWrap">
+				<img src="./resource/images/eventImg/event02/event02.png" alt="2023 취업성공 축하이벤트" usemap="#image-map">
+				<map name="image-map">
+					<area target="_blank" alt="취업상담" title="취업상담" href="https://www.jobaba.net/psychology/mainList.do" coords="136,1755,353,1878" shape="rect">
+					<area target="_blank" alt="취업준비도진단" title="취업준비도진단" href="https://www.jobaba.net/epmtDiag/epmtPrep/epmtPrepMain.do" coords="380,1755,599,1880" shape="rect">
+					<area target="_blank" alt="자소서컨설팅" title="자소서컨설팅" href="https://www.jobaba.net/introduction/mainList.do" coords="624,1756,842,1879" shape="rect">
+				</map>
+			</div>
+			<div class="memberWrap">
+				<h3 class="memberTit">회원 정보 입력</h3>
+				<div class="memberAgree">					
+					<span class="comCheckbox">
+						<input type="checkbox" id="termsAgree">
+						<label for="termsAgree">개인정보보호법 제32조에 의거하여 개인정보의 처리(수집, 이용, 제공)에 동의를 합니다.</label>
+						<p>잡아바는 이벤트 참여자가 동의한 목적과 범위 내에서만 개인정보를 수집∙이용하며, 개인정보 보호 관련 법령에 따라 안전하게 관리합니다.
+							아래 기입해주신 개인정보는 이벤트 상품 발송 및 서비스 이용여부 확인, 꿈날개 취업자 통계자료로 사용을 위한 목적으로만 사용됩니다.
+							정보보관은 수집, 이용목적 달성 후 파기됩니다.
+							<br><br>
+							&lt;필수항목 수집동의&gt;<br>
+							- 항목 : 아이디, 이름, 휴대전화번호, 취업처, 취업처 전화번호 직무 분야<br>
+							- 수집목적 : 이벤트 상품 발송 및 서비스 이용여부 확인 , 잡아바 취업자 통계자료
+							<br><br>
+							&lt;개인정보 수집ㆍ이용에 대한 동의&gt;<br>
+							경기도일자리재단 잡아바는 참여자 모집 및 관리를 위해 위와 같이 개인정보를 수집ㆍ이용하고자 합니다. 
+							내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기 바랍니다. 개인정보 활용에 동의하지 않으실 경우에는 뒤로가기 버튼을 눌러주시면 됩니다.<br>
+							※ 위의 개인정보 수집 이용에 대해 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 [취업성공이벤트] 참여에 제한이 있을 수 있습니다.</p>
+					</span>
+				</div>
+				<p class="etc tlt"><strong>필수 입력정보</strong> <em class="fcRed">※ 필수로 입력해 주셔야 하며, 미기재 또는 허위기재 시 당첨이 취소될 수 있습니다.</em></p>
+				<ul class="memberInfo">
+					<li>
+						<span class="field">
+							<label for="ck01">이름</label>
+							<input type="text" placeholder="이름을 입력하세요." id="ck01">
+						</span>
+					</li>
+					<li>
+						<span class="field">
+							<label for="ck02"><em class="fcRed">※</em>아이디</label>
+							<input type="text" placeholder="잡아바 아이디를 입력하세요" id="ck02">
+						</span>
+					</li>
+					<li>
+						<span class="field">
+							<label for="ck03"><em class="fcRed">※</em>전화번호</label>
+							<input type="text" placeholder="예시: 010-0000-0000" id="ck03">
+						</span>
+					</li>
+					<li>
+						<span class="field">
+							<label for="ck04">취업처 명</label>
+							<input type="text" placeholder="취업처 명을 입력하세요" id="ck04">
+						</span>
+					</li>
+					<li>
+						<span class="field">
+							<label for="ck05">취업처 전화번호</label>
+							<input type="text" placeholder="취업처 전화번를 입력하세요" id="ck05">
+						</span>
+					</li>
+				</ul>
+				<p class="etc">※문의 안내 : 경기도일자리재단 잡아바(031-270-9988 / jobaba@gjf.or.kr)</p>
+				<button class="comBtn" type="submit">등록</button>
+			</div>
+
+		</div>
+	</section>
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+<!-- 이벤트 이미지맵 스크립트 추가 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+<script>	
+$(document).ready(function(){
+	$(document).ready(function() {
+		$('img[usemap]').rwdImageMaps();
+	});
+});
+</script>
+</body></html>
