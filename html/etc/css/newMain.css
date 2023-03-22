@@ -32,7 +32,7 @@
 .newMain .serviceList p { font-size: 0.9rem; } 
 .newMain .serviceList .exp { min-height: 48px; color: #a3a3a3; } 
 .newMain .serviceList .serviceItem > span { display: inline-block; padding: 7px 20px; margin-top: 15px; background: #f2f2f2; color: #0093d5; font-size: 0.9rem; font-weight: bold; border-radius: 50px; } 
-.newMain .serviceList li > a { display: inline-block; width: 280px; padding: 15px 0; background-color: #0093d5; color: #fff; font-size: 18px; text-align: center; border-radius: 50px; } 
+.newMain .serviceList li > a { display: inline-block; width: 280px; padding: 15px 0; background-color: #0093d5; color: #fff; font-size: 1.4rem; text-align: center; border-radius: 50px; } 
 
 .newMain .courseList { display: flex; flex-wrap: wrap; } 
 .newMain .courseList li { position: relative; width: calc((100% - 90px) / 4); margin-right: 30px; border: 1px solid #dddddd; border-radius: 10px; box-sizing: border-box; overflow: hidden; } 
@@ -75,6 +75,10 @@
  .newMain .innerSection { padding: 0 10px; } 
  .newMain .mainContens .mainList .thumb { width: 120px; height: auto; } 
  .newMain .courseList .text { padding: 10px 15px; } 
+
+ .newMain .serviceList .serviceItem { padding: 20px 10px;}
+ .newMain .serviceList .imgWrap { height: 60px; margin: 15px 0;}
+ .newMain .serviceList li > a { width: 100%; padding: 10px 0;}
 
  .newMain .courseList li { width: calc((100% - 10px) / 2); } 
  .newMain .courseList li:nth-child(odd) { margin-right: 10px; } 
