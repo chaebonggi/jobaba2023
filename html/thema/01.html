@@ -33,7 +33,7 @@
 			}
 			.themaWrap .mainVisual {
 				padding-top: 86px;
-				margin-bottom: 60px;
+				margin-bottom: 100px;
 			}
 			.themaWrap .mainVisual .tit {
 				text-align: center;
@@ -135,10 +135,29 @@
 				font-size: 34px;	
 			}
 			.themaWrap .employmentInfo .whiteBox {
+				position: relative;
 				padding-top: 50px;
-				background: linear-gradient(  #d2d2f2,#fff 30%);
+				background: linear-gradient(#d2d2f2,#fff 30%);
 				box-shadow: 0px 0px 0 8px rgba(255, 255, 255, 0.1);
 				border-radius: 30px;
+			}
+			.themaWrap .employmentInfo .whiteBox::before {
+				content: '';
+				width: 341px;
+				height: 157px;
+				position: absolute;
+				top: -157px;
+    		left: 90px;
+				background: url(./resource/images/thema/230327/thema_img05.png) no-repeat;
+			}
+			.themaWrap .employmentInfo .whiteBox::after {
+				content: '';
+				width: 341px;
+				height: 157px;
+				position: absolute;
+				top: -157px;
+    		right: 90px;
+				background: url(./resource/images/thema/230327/thema_img05.png) no-repeat;
 			}
 			.themaWrap .employmentInfo .whiteBox .itemWrap {
 				display: flex;
@@ -443,6 +462,24 @@
 				background: url(./resource/images/thema/230327/thema_interview_icon03.png) no-repeat;
 				background-size: contain;
 			}
+			.themaWrap .employmentReview .interviewBox strong.icon04::before {
+				width: 27px;
+				height: 27px;
+				background: url(./resource/images/thema/230327/thema_interview_icon04.png) no-repeat;
+				background-size: contain;
+			}
+			.themaWrap .employmentReview .interviewBox strong.icon05::before {
+				width: 20px;
+				height: 33px;
+				background: url(./resource/images/thema/230327/thema_interview_icon05.png) no-repeat;
+				background-size: contain;
+			}
+			.themaWrap .employmentReview .interviewBox strong.icon06::before {
+				width: 20px;
+				height: 34px;
+				background: url(./resource/images/thema/230327/thema_interview_icon06.png) no-repeat;
+				background-size: contain;
+			}
 			.themaWrap .employmentReview .interviewBox p {
 				color: #575757;
 				word-break: keep-all;
@@ -488,7 +525,70 @@
 							많은 도움이 됐습니다.
 							</p>
 					</div>
-					<!--  -->
+					<style>
+						.themaWrap .employmentReview .reviewWrap {
+							display: flex;
+							align-items: center;
+							margin-bottom: 70px;
+						}
+						.themaWrap .employmentReview .reviewWrap .text {
+							width: 100%;
+							text-align: center;
+						}
+						.themaWrap .employmentReview .reviewWrap .text > p {
+							margin-top: 20px;
+							margin-bottom: 40px;
+						} 
+						.themaWrap .employmentReview .reviewWrap .imgWrap {
+							min-width: 180px;
+							margin-left: 34px;
+						}
+						.themaWrap .employmentReview .reviewWrap .review {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.themaWrap .employmentReview .reviewWrap .review p {
+							position: relative;
+							padding: 20px 28px 16px;
+							margin-right: 28px;
+							background: #fff;
+							box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+						}
+						.themaWrap .employmentReview .reviewWrap .review p::before {
+							content: '';
+							width: 59px;
+							height: 86px;
+							position: absolute;
+							top: 50%;
+							left: -38px;
+							transform: translateY(-50%);
+							background: url(./resource/images/thema/230327/thema_interview_icon07.png) no-repeat;
+						}
+						.themaWrap .employmentReview .reviewWrap .review span {
+							color: #635bff;
+							font-style: italic;
+						}
+					</style>
+					<div class="reviewWrap">
+						<div class="text">
+							<strong><img src="./resource/images/thema/230327/thema_interview04.png" alt="중요한 건 꺾이지 않는 마음"></strong>
+							<p>모든 취준생들이 같은 생각을 할 텐데, 제일 힘든 건 취업 성공에 대한 불확실성인 것 같습니다.<br>
+								하지만 부담감을 가질수록 더 힘들 게 다가오고, 누구에게나 기회는 찾아오니까<br>
+								다들 걱정 말고 준비했으면 좋겠습니다. </p>
+							<div class="review">
+								<p class="f18">좋은 일자리란?</p>
+								<span class="f24">즐기면서 일할 수 있는 곳!</span>
+							</div>
+						</div>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_interview03.png" alt="수원대 4학년 강동욱">
+						</div>
+					</div>
+
+					<div class="contTit">
+						<p class="f14">본 콘텐츠는 비플러스 이보연 부대표님과 인터뷰한 내용을 바탕으로 재구성하였습니다.</p>
+					</div>
 					<div class="interviewInfo">
 						<div class="imgWrap">
 							<img src="./resource/images/thema/230327/thema_interview02.jpg" alt="참여기업  BPLUS">
@@ -500,26 +600,519 @@
 						</div>
 					</div>
 					<div class="interviewBox">
-						<strong class="icon01 f23">취업브리지 사업에 참여한 계기</strong>
-						<p class="f18">졸업을 앞두고서 자격증 같은 것들은 미리 준비한 후, 실무적인 경험을 쌓고 싶었는데 때마침 경기도일자리재단의 
-							취업브리지 사업 참여자 모집 공고를 보고 지원하게 됐습니다.
+						<strong class="icon04 f23">비플러스 기업 소개</strong>
+						<p class="f18">비플러스는 창업 7년 차 투자 플랫폼입니다. 
+							개인 투자자분들의 자금을 모아서 자금 수요를 연결하는 플랫폼 역할을 하고 있으며, 동네 투자자와 개인 사업자를 
+							연결하는 플랫폼인 만큼 “우리동네펀딩”이라는 이름으로 론칭했습니다.
 							</p>
 					</div>
 					<div class="interviewBox">
-						<strong class="icon02 f23">취업브리지의 장점</strong>
-						<p class="f18">일단, 저는 대출 심사 업무를 하고 있는데 금융 관련 분야로 취업을 준비를 하고 있기 때문에 직무 관련 업무를 
-							경험해볼 수 있어서 좋았습니다. 인턴을 준비하는 과정에서 피드백도 많이 받았고 혼자 준비해야하는 부담감에서 
-							많이 벗어날 수 있었습니다. 또, 직무와 관련해 갈피를 잡기 힘든 취준생으로서 직무 관련 경험을 할 수 있어 
-							도움이 많이 되었고, 이 계기로 직무 선택에 대한 확고함을 가지게 됐습니다.
+						<strong class="icon05 f23">취업브리지의 장점</strong>
+						<p class="f18">취업브리지가 좋았던 점은 여러 학교와 연계하여 진행되고 있어 많은 지원자분들과 연결될 수 있고, 취업브리지 
+							참여자는 이미 행정 실습을 받고 출근하기 때문에 업무 습득이 빠르다는 것입니다.  
+							또한, 우리 기업을 알릴 수 있는 계기가 되어 좋았습니다. 
 							</p>
 					</div>
 					<div class="interviewBox">
-						<strong class="icon03 f23">취업을 위해 참여했던 대외활동</strong>
-						<p class="f18">신용회복위원회 서포터즈, 금융감독원 금융소비자리포터, 삼성증권 투자스쿨 서포터즈와 같은 대외활동에 
-							참여한 적이 있습니다. 대외활동은 부담을 가지지 않고 임하였고, 활동비를 제공하는 대외활동도 있어서 
-							많은 도움이 됐습니다.
+						<strong class="icon06 f23">비플러스의 자랑거리</strong>
+						<p class="f18">법인이나 정부 주도 사업으로 진행되어 왔던 영역에서 개인 투자자가 투자를 할 수 있는 창구를 만들었다는 점이 
+							가장 큰 자랑일 것 같습니다. 근무 환경면에서는 자유롭게 일하는 분위기와 수평적인 분위기가 장점이며, 
+							점심식사도 제공하고 있습니다.
 							</p>
 					</div>
+					<div class="reviewWrap">
+						<div class="text">
+							<strong><img src="./resource/images/thema/230327/thema_interview05.png" alt="자신감 있게 도전하자"></strong>
+							<p>좀 더 자신감 있게! 망설이지 말고 도전하셨으면 좋겠습니다.</p>
+							<div class="review">
+								<p class="f18">좋은 일자리란?</p>
+								<span class="f24">일자리는 살면서 중요한 부분인 만큼, 기업과 개인이 함께<br>
+									성장할 수 있는 일자리가 좋은 일자리라고 생각합니다.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.themaWrap .participate {
+				margin-bottom: 120px;
+			}
+			.themaWrap .participate .partiWrap {
+				position: relative;
+				padding: 48px 40px;
+				background: #fff;
+				border: 6px solid #cfcdff;
+				border-radius: 30px;
+			}
+			.themaWrap .participate .partiWrap .partiBox {
+				display: flex;
+				align-items: flex-start;
+				padding: 34px 30px;				
+				margin-bottom: 24px;
+				background: #efefef;
+				border: 1px solid #d6d6d6;
+				border-radius: 20px;
+			}
+			.themaWrap .participate .partiWrap .partiBox:last-child {
+				margin-bottom: 0;
+			}
+			.themaWrap .participate .partiWrap .imgWrap {
+				margin-right: 10px;
+			}
+			.themaWrap .participate .partiWrap .imgWrap strong {
+				display: block;
+				width: 142px;
+				position: relative;
+				padding: 14px 26px 10px;
+				background: #3d3d3d;
+				color: #fff;
+				border-radius: 30px;
+				text-align: center;
+			}
+			.themaWrap .participate .partiWrap .imgWrap strong::before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 80px;
+				transform: translateX(-50%);
+			}
+			.themaWrap .participate .partiWrap .imgWrap strong.icon08::before {
+				width: 75px;
+				height: 78px;
+				background: url(./resource/images/thema/230327/thema_interview_icon08.png) no-repeat;
+			}
+			.themaWrap .participate .partiWrap .imgWrap strong.icon09::before {
+				width: 81px;
+				height: 73px;
+				background: url(./resource/images/thema/230327/thema_interview_icon09.png) no-repeat;
+			}
+			.themaWrap .participate .partiWrap .imgWrap strong.icon10::before {
+				width: 73px;
+				height: 86px;
+				background: url(./resource/images/thema/230327/thema_interview_icon10.png) no-repeat;
+			}
+			.themaWrap .participate .partiBox .text div {
+				display: flex;
+				margin-bottom: 12px;
+				word-break: keep-all;
+			}
+			.themaWrap .participate .partiBox .text div:last-child {
+				margin-bottom: 0;
+			}
+			.themaWrap .participate .partiBox .text div:last-child strong {
+				color: #5ef6ff;
+			}
+			.themaWrap .participate .partiBox .text strong {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+				width: 58px;
+				height: 58px;
+				margin-right: 14px;
+				background: #3d3d3d;
+				color: #f2ff28;
+				border-radius: 100%;
+			}
+		</style>
+		<article class="participate">
+			<div class="innerSection02">
+				<div class="partiWrap">
+					<div class="partiBox">
+						<div class="imgWrap">
+							<strong class="icon08 f22">참여대상</strong>
+						</div>
+						<div class="text">
+							<div>
+								<strong class="f18">개인</strong>
+								<p class="f18">주민등록상 경기도 내 1년 이상 거주 중인 대학 졸업예정자 또는 
+									졸업유예자 중 현장실습 참여 희망자 </p>
+							</div>
+							<div class="right">
+								<strong class="f18">기업</strong>
+								<p class="f18">교육부 ‘대학생 현장실습학기제 운영 규정‘ 제8조 3항을 충족하고 
+									신청자격 제외 대상에 해당하지 않는 기업<br>
+									현장실습 참여자에게 실습수당(해당연도 기준 최저임금액 이상/월) 지급 
+									및 4대보험 사용자 부담금 지급 가능 기업</p>
+							</div>
+						</div>
+					</div>
+					<div class="partiBox">
+						<div class="imgWrap">
+							<strong class="icon09 f22">참여혜택</strong>
+						</div>
+						<div class="text">
+							<div>
+								<strong class="f18">개인</strong>
+								<p class="f18">직장 적응 교육 제공(스트레스 관리, 노동법, OA 교육 등)<br>
+									현장실습 기업 내 현직자 멘토링 제공<br>
+									현장실습 기업 취업 시, 취업성공수당 50만원 지급</p>
+							</div>
+							<div class="right">
+								<strong class="f18">기업</strong>
+								<p class="f18">기업 - 우수실습생 매칭 및 지원<br>
+									현장실습 참여자에 대한 월 운영지원금 지급<br>
+									현장실습 참여자 관리를 위한 참여자 1인당 소정의 멘토비 지원</p>
+							</div>
+						</div>
+					</div>
+					<style>
+						.themaWrap .participate .partiBox.way .text div {
+							align-items: center;
+						}
+						.themaWrap .participate .partiBox.way .text ul {
+							display: flex;
+						}
+						.themaWrap .participate .partiBox.way .text li {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 108px;
+							height: 108px;
+							position: relative;
+							margin-right: 16px;
+							background: linear-gradient(#77c9f2,#898cf8);
+							color: #fff;
+							font-family: 'GmarketSansBold';
+							border: 2px solid #fff;
+							border-radius: 100%;
+							text-align: center;
+						}
+						.themaWrap .participate .partiBox.way .text li:last-child {
+							margin-right: 0;
+						}
+						.themaWrap .participate .partiBox.way .text li::after {
+							content: '';
+							width: 14px;
+							height: 16px;
+							position: absolute;
+							top: 50%;
+							right: -18px;
+							transform: translateY(-50%);
+							background: url(./resource/images/thema/230327/icon_arrow.png) no-repeat;
+						}
+						.themaWrap .participate .partiBox.way .text li:last-child:after {
+							content: none;
+						}
+						.themaWrap .participate .partiBox.way .text .right li {
+							background: #fff;
+							color: #000;
+							border: 2px solid transparent;
+							background-image:linear-gradient(#fff, #fff),linear-gradient(0deg, #77c9f2 0%, #898cf8 100%);
+							background-origin: border-box;
+							background-clip: content-box, border-box;
+						}
+					</style>
+					<div class="partiBox way">
+						<div class="imgWrap">
+							<strong class="icon10 f22">참여대상</strong>
+						</div>
+						<div class="text">
+							<div>
+								<strong class="f18">개인</strong>
+								<ul class="f18">
+									<li>모집공고</li>
+									<li>서류접수</li>
+									<li>기업별 면접<br>
+										및 선발</li>
+									<li>직장<br>
+										적응 교육</li>
+									<li>근무 시작</li>
+								</ul>
+							</div>
+							<div class="right">
+								<strong class="f18">기업</strong>
+								<ul class="f18">
+									<li>모집공고</li>
+									<li>서류심사</li>
+									<li>현장실사</li>
+									<li>심의위원회</li>
+									<li>최종선정</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<style>
+						.themaWrap .btnWrap {
+							margin-top: 50px;
+							text-align: center;
+						}
+						.themaWrap .btnWrap a {
+							display: inline-block;
+							padding: 12px 30px;
+							background: linear-gradient(to right, #7bff47,#f6ff00);
+							color: #000;
+							font-family: 'GmarketSansBold';
+							border: 1px solid #000;
+							border-radius: 30px;
+							box-shadow: 0 6px 0 #000;
+						}
+						.themaWrap .btnWrap.type01 {
+							margin-top: 0;
+						}
+						.themaWrap .btnWrap.type01 a {							
+							position: absolute;
+							left: 50%;
+							bottom: -30px;
+							transform: translateX(-50%);	
+						}
+					</style>
+					<div class="btnWrap type01">
+						<a href="" class="f18">취업브리지 신청하러 가기 ▷</a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.themaWrap .employmentGift {
+				margin-bottom: 115px;
+			}
+			.themaWrap .employmentGift .tit {
+				position: relative;
+				margin-bottom: 100px;
+				text-align: center;
+				z-index: 1;
+			}
+			.themaWrap .employmentGift .tit::before {
+				content: '';
+				width: 976px;
+				height: 272px;
+				position: absolute;
+				top: -60px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/230327/thema_gift02.png) no-repeat;
+				z-index: -1;
+			}
+			.themaWrap .employmentGift .giftWrap {
+				text-align: center;
+			}
+			.themaWrap .employmentGift .giftWrap p {
+				display: inline-block;
+				padding: 10px 54px;
+				margin: 50px 0;
+				background: #f0f0f0;
+				border: 2px dotted #000;
+				border-radius: 30px;
+				box-shadow: 0 6px 0 #000;
+			}
+			.themaWrap .employmentGift .giftWrap p span {
+				color: #ff005a;
+				font-family: 'GmarketSansBold';
+			}
+			.themaWrap .employmentGift .giftList {
+				display: flex;
+				justify-content: space-between;
+			}
+			.themaWrap .employmentGift .giftList li {
+				flex: 1;
+				position: relative;
+				padding: 10px 5px;
+				margin-right: 18px;
+				border: 1px solid #a160ff;
+				border-radius: 20px;
+				overflow: hidden;
+				text-align: center;
+				box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+			.themaWrap .employmentGift .giftList li:last-child {
+				margin-right: 0;
+			}
+			.themaWrap .employmentGift .giftList li::before {
+				content: '';
+				width: 100%;
+				height: 30px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #d6b9ff;
+				z-index: -1;
+			}
+			.themaWrap .employmentGift .giftList li span {
+				color: #8400ff;
+			}
+			
+		</style>
+		<article class="employmentGift">
+			<div class="innerSection02">
+				<div class="tit">
+					<img src="./resource/images/thema/230327/thema_gift01.png" alt="지원은 경기도가 취업은 경기청년이">
+				</div>
+				<div class="giftWrap">
+					<strong class="f26">현장실습, 기업 매칭, 자격증 취득, 면접 준비, 복지포인트까지 !</strong>
+					<p class="f18">경기도 청년이라면 절대 놓치면 안되는 <span class="f23">청년 혜택</span> 확인하고 가세요.</p>
+				</div>
+				<ul class="giftList">
+					<li>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_list01.png" alt="혜택1">
+						</div>
+						<div class="text">
+							<p>만 24세<br>
+								경기 청년이라면<br>
+								<span>청년 기본소득<br>
+								지원 사업</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_list02.png" alt="혜택2">
+						</div>
+						<div class="text">
+							<p><span>취업 준비부터<br>
+								취업 후 사후관리까지</span><br>
+								경기청년 맞춤형<br>
+								채용지원 서비스></p>
+						</div>
+					</li>
+					<li>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_list03.png" alt="혜택3">
+						</div>
+						<div class="text">
+							<p><span>면접! 걱정 말고<br>
+								준비하세요!</span><br>
+								경기청년 면접수당<br>
+								지원 및 면접정장<br>
+								무료 대여 사업</p>
+						</div>
+					</li>
+					<li>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_list04.png" alt="혜택4">
+						</div>
+						<div class="text">
+							<p><span>자격증 응시료<br>
+								최대 30만원 지원!</span><br>
+								경기청년 역량강화<br>
+								기회 지원 사업</p>
+						</div>
+					</li>
+					<li>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_list05.png" alt="혜택5">
+						</div>
+						<div class="text">
+							<p>사회초년생을 위한<br>
+								똑똑한 포인트!<br>
+								<span>경기청년 복지포인트</span><br>
+								지원 사업</p>
+						</div>
+					</li>
+				</ul>
+				<div class="btnWrap">
+					<a href="" class="f18">THE 다양한 청년 지원 사업이 궁금하다면? ▷</a>
+				</div>
+			</div>
+		</article>
+		<article>
+
+		</article>
+		<style>
+			.themaWrap .freeCourse {
+				text-align: center;
+			}
+			.themaWrap .freeCourse .imgWrap {
+				margin-bottom: 30px;
+			}
+			.themaWrap .freeCourse .courseList {
+				display: flex;
+				padding: 48px 42px;
+				margin-top: 44px;
+				background: #f5f5f5;
+				border-radius: 40px;
+				text-align: center;
+			}
+			.themaWrap .freeCourse .courseList li {
+				flex: 1;
+			}
+			.themaWrap .freeCourse .courseList span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 110px;
+				height: 110px;
+				margin: 0 auto 20px;
+				background: #fff;
+				border: 3px solid #9577e1;
+				border-radius: 100%;
+			}
+			.themaWrap .freeCourse .courseList span::before {
+				content: '';
+				display: flex;
+			}
+			.themaWrap .freeCourse .courseList span.couse01::before {
+				width: 47px;
+				height: 42px;
+				background: url(./resource/images/thema/230327/icon_course01.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList span.couse02::before {
+				width: 47px;
+				height: 44px;
+				background: url(./resource/images/thema/230327/icon_course02.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList span.couse03::before {
+				width: 47px;
+				height: 40px;
+				background: url(./resource/images/thema/230327/icon_course03.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList span.couse04::before {
+				width: 47px;
+				height: 47px;
+				background: url(./resource/images/thema/230327/icon_course04.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList span.couse05::before {
+				width: 53px;
+				height: 43px;
+				background: url(./resource/images/thema/230327/icon_course05.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList span.couse06::before {
+				width: 47px;
+				height: 44px;
+				background: url(./resource/images/thema/230327/icon_course06.png) no-repeat;
+			}
+			.themaWrap .freeCourse .courseList li strong {
+				color: #672ed6;
+			}
+		</style>
+		<article class="freeCourse">
+			<div class="innerSection02">
+				<div class="imgWrap">
+					<img src="./resource/images/thema/230327/thema_course01.png" alt="원하는 주제 필요한 강의만 쏙쏙">
+				</div>
+				<span class="f18"><strong>NCS, 직무, 자격증, 어학 등</strong> 원하는 강의를 자유롭게!<br>
+					완강 및 경제적 부담 없이 다양한 취업 교육을 잡아바에서 <strong class="f22">무료로 수강하세요!</strong></span>
+				<ul class="courseList">
+					<li>
+						<span class="couse01"></span>
+						<strong class="f22">취업교육</strong>
+					</li>
+					<li>
+						<span class="couse02"></span>
+						<strong class="f22">자격증과정</strong>
+					</li>
+					<li>
+						<span class="couse03"></span>
+						<strong class="f22">IT교육</strong>
+					</li>
+					<li>
+						<span class="couse04"></span>
+						<strong class="f22">외국어과정</strong>
+					</li>
+					<li>
+						<span class="couse05"></span>
+						<strong class="f22">비즈니스<br>
+							과정</strong>
+					</li>
+					<li>
+						<span class="couse06"></span>
+						<strong class="f22">창업 및 기타</strong>
+					</li>
+				</ul>
+				<div class="btnWrap">
+					<a href="" class="f18">러닝센터 둘러보기 ▷</a>
 				</div>
 			</div>
 		</article>
