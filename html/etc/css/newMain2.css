@@ -21,7 +21,8 @@
 .newMain .mainContens .notifyList { display: flex; flex-wrap: wrap; } 
 .newMain .mainContens .notifyList li { width: calc((100% - 20px) / 3); margin-right: 10px; } 
 .newMain .mainContens .notifyList li:last-child { margin-right: 0; } 
-.newMain .mainContens .notifyList a { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; color: #000; font-size: 0.824rem; background: #fff; border-radius: 20px; } 
+.newMain .mainContens .notifyList a { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; color: #000; font-size: 0.824rem; background: #fff; border-radius: 20px; transition: 0.3s;} 
+.newMain .mainContens .notifyList a:hover {  background: #ffea00; font-weight: bold;}
 .newMain .mainContens .notifyList a::after { content: ''; display: block; width: 16px; height: 16px; background: url(../theme/images/icon_arrow.png) no-repeat; } 
 .newMain .infoWrap { padding: 30px 0; } 
 .newMain .infoWrap .txt strong { display: block; margin-bottom: 26px; color: #fff; font-size: 1.176rem; } 
