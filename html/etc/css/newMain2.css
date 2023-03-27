@@ -6,6 +6,8 @@
 .bgBlue { background: #0093d5 } 
 
 #header .member_util .topLogo { position: absolute; left: 0; top: 50%; transform: translateY(-50%); border: none; } 
+#header .member_util .topLogo a {padding: 0;}
+
 .newMain .innerSection { position: relative; max-width: 1230px; height: 100%; margin: 0 auto; padding: 0 20px; } 
 .newMain .mainContens { margin-top: 141px; } 
 .newMain .mainContens { width: 100%; height: 445px; position: relative; padding: 45px 0; background: url(../theme/images/main_bg.jpg) center no-repeat; background-size: cover; } 

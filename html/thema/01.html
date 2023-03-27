@@ -29,10 +29,11 @@
 		<style>
 			.themaWrap {
 				background: blue;
-				height: 100vh;
+				height: 200vh;
 			}
 			.themaWrap .mainVisual {
 				padding-top: 86px;
+				margin-bottom: 60px;
 			}
 			.themaWrap .mainVisual .tit {
 				text-align: center;
@@ -116,10 +117,76 @@
 				</div>
 			</div>
 		</article>
-
-		<article>
-			<div class="innerSection">
-				
+		<style>
+			.themaWrap .employmentInfo .tit {
+				width: 441px;
+				height: 50px;
+				background: url(./resource/images/thema/230327/thema_img02.png) no-repeat;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.themaWrap .employmentInfo .tit strong {
+				display: inline-block;
+				margin-top: -30px;
+				color: #fff;
+				font-size: 34px;	
+			}
+			.themaWrap .employmentInfo .whiteBox {
+				box-shadow: 0px 0px 0 8px rgba(255, 255, 255, 0.1);
+			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap {
+				display: flex;
+				justify-content: center;
+			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item {
+				display: flex;
+			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item + .item {
+				flex-direction:row-reverse;
+			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item .title {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 120px;
+				height: 120px;
+				border: 1px solid red;
+				border-radius: 100%;
+			}
+			.themaWrap .employmentInfo .whiteBox .item strong {
+				color: #00b2f4;
+				font-size: 22px;
+			}
+		</style>
+		<article class="employmentInfo">
+			<div class="innerSection01">
+				<div class="tit">
+					<strong>취업브리지 참여 혜택</strong>
+				</div>
+				<div class="whiteBox">
+					<div class="itemWrap">
+						<div class="item">
+							<div class="title">
+								<strong>참여기업</strong>
+							</div>
+							<ul>
+								<li>실습 운영지원금 제공</li>
+								<li>대학생 학기제 현장실습생<br> (4개월)</li>
+								<li>멘토지원금 제공</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="title">
+								<strong>실습<br> 참여자</strong>
+							</div>
+							<ul>
+								<li>실습수당 지급</li>
+								<li>현장실습 및 취업 기회</li>
+								<li>취업성공수당 지급</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</article>
 	</div>
