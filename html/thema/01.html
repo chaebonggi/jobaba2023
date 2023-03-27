@@ -28,8 +28,8 @@
 	<div class="themaWrap">
 		<style>
 			.themaWrap {
-				background: blue;
-				height: 200vh;
+				background: url(./resource/images/thema/230327/thema_bg.jpg) top no-repeat;
+				height: 2000vh;
 			}
 			.themaWrap .mainVisual {
 				padding-top: 86px;
@@ -118,6 +118,9 @@
 			</div>
 		</article>
 		<style>
+			.themaWrap .employmentInfo {
+				margin-bottom: 260px;
+			}
 			.themaWrap .employmentInfo .tit {
 				width: 441px;
 				height: 50px;
@@ -133,21 +136,25 @@
 			}
 			.themaWrap .employmentInfo .whiteBox {
 				padding-top: 50px;
-				background: linear-gradient(  #d2d2f2,#fff 17%);
+				background: linear-gradient(  #d2d2f2,#fff 30%);
 				box-shadow: 0px 0px 0 8px rgba(255, 255, 255, 0.1);
 				border-radius: 30px;
-				height: 1000px;
 			}
 			.themaWrap .employmentInfo .whiteBox .itemWrap {
 				display: flex;
 				justify-content: center;
+				flex-wrap: wrap;
 			}
 			.themaWrap .employmentInfo .whiteBox .itemWrap .item {
 				display: flex;
 				align-items: center;
+				position: relative;
+				margin-right: 30px;
+				z-index: 1;
 			}
-			.themaWrap .employmentInfo .whiteBox .itemWrap .item + .item {
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item.right {
 				flex-direction:row-reverse;
+				margin-right: 0;
 			}
 			.themaWrap .employmentInfo .whiteBox .itemWrap .item .title {
 				display: flex;
@@ -155,15 +162,60 @@
 				justify-content: center;
 				width: 120px;
 				height: 120px;
+				position: relative;
 				margin-right: 52px;
 				background: #fff;
 				border: 2px solid #00b2f4;
 				border-radius: 100%;
 				text-align: center;
+				box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+			.themaWrap .employmentInfo .whiteBox .item::after {
+				content: '';
+				width: 282px;
+				height: 190px;
+				position: absolute;
+				left: 100px;
+				top: 50%;
+				transform: translateY(-50%);
+				background: url(./resource/images/thema/230327/thema_item01.png) no-repeat;
+				z-index: -1;
+			}
+			.themaWrap .employmentInfo .whiteBox .item.item.right::after {
+				left: unset;
+				right: 100px;
+				background: url(./resource/images/thema/230327/thema_item02.png) no-repeat;
+			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item.right .title {
+				border: 2px dotted #672ed6;
+				margin-right: 0;
+				margin-left: 52px;	
 			}
 			.themaWrap .employmentInfo .whiteBox .item strong {
+				position: relative;
 				color: #00b2f4;
 				font-size: 22px;
+			}
+			.themaWrap .employmentInfo .whiteBox .item strong::before {
+				content: '';
+				width: 50px;
+				height: 5px;
+				position: absolute;
+				top: 50%;
+				left: -65px;
+				transform: translateY(-50%);
+				background: #00b2f4;
+			}
+			.themaWrap .employmentInfo .whiteBox .item.right strong::before {
+				height: 0;
+				left: unset;
+				right: -82px;
+				background: transparent;
+				border: 1px dashed #672ed6;
+			}
+			.themaWrap .employmentInfo .whiteBox .item.right strong {
+				color: #672ed6;
 			}
 			.themaWrap .employmentInfo .whiteBox .itemWrap .item ul li {
 				display: flex;
@@ -180,9 +232,42 @@
 				border: 3px solid #fff;
 				text-align: center;
 				letter-spacing: -1.5px;
+				box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
 			}
+			.themaWrap .employmentInfo .whiteBox .itemWrap .item.right ul li {
+				background: #672ed6;
+			}	
 			.themaWrap .employmentInfo .whiteBox .itemWrap .item ul li:last-child {
 				margin-bottom: 0;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				margin-top: 28px;
+				text-align: center;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox .infoItem {
+				max-width: 346px;
+				margin-right: 20px;
+				padding: 28px 16px;
+				border: 3px dotted #0095e2;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox .infoItem strong {
+				color: #0095e2;
+				font-size: 22px;
+				line-height: 1.2;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox .infoItem.right strong {
+				color: #672ed6;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox .infoItem p {
+				font-size: 18px;
+				letter-spacing: -1px;
+			}
+			.themaWrap .employmentInfo .whiteBox .infoBox .infoItem.right {
+				margin-right: 0;
+				border-color: #672ed6;
 			}
 		</style>
 		<article class="employmentInfo">
@@ -202,7 +287,7 @@
 								<li>멘토지원금 제공</li>
 							</ul>
 						</div>
-						<div class="item">
+						<div class="item right">
 							<div class="title">
 								<strong>실습<br> 참여자</strong>
 							</div>
@@ -212,6 +297,183 @@
 								<li>취업성공수당 지급</li>
 							</ul>
 						</div>
+						<div class="infoBox">
+							<div class="infoItem">
+								<strong>직무 역량을 갖춘 직원을<br>
+									채용하고 싶은 기업!</strong>
+								<p>우리 회사에 필요한 실무 인재를 양성하고<br>
+									연계 채용까지!</p>
+							</div>
+							<div class="infoItem right">
+								<strong>직무 역량을 갖춘 직원을<br>
+									채용하고 싶은 기업!</strong>
+								<p>우리 회사에 필요한 실무 인재를 양성하고<br>
+									연계 채용까지!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.themaWrap .employmentReview {
+				line-height: 1.2;
+			}
+			.themaWrap .employmentReview .tit {
+				margin-bottom: 80px;
+				text-align: center;
+			}
+			.themaWrap .employmentReview .tit strong {
+				position: relative;
+				padding: 20px 74px;
+				background: #fff;
+				border: 1px solid #000;
+				box-shadow: 6px 6px 0 #000;
+				box-sizing: border-box;
+				z-index: 1;
+			}
+			.themaWrap .employmentReview .tit strong::before {
+				content: '';
+				width: 1156px;
+				height: 176px;
+				position: absolute;
+				top: -240px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/230327/thema_img04.png) no-repeat;
+			}
+			.themaWrap .employmentReview .tit strong::after {
+				content: '';
+				width: 398px;
+				height: 275px;
+				position: absolute;
+				top: -210px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/230327/thema_img03.png) no-repeat;
+				z-index: -1;
+			}
+			.themaWrap .employmentReview .contTit {
+				position: relative;
+				margin-bottom: 66px;
+				text-align: center;
+				z-index: 1;
+			}
+			.themaWrap .employmentReview .contTit::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 50%;
+				transform: translateY(- 50%);
+				border: 2px dashed #d3d3d3;
+				z-index: -1;
+			}
+			.themaWrap .employmentReview .contTit p {
+				display: inline-block;
+				position: relative;
+				padding: 12px 20px 12px 60px;
+				background: #d3d3d3;
+				border-radius: 30px;
+			}
+			.themaWrap .employmentReview .contTit p::before {
+				content: '';
+				width: 30px;
+				height: 43px;
+				position: absolute;
+				left: 20px;
+				top: -10px;
+				background: url(./resource/images/thema/230327/icon_mike.png) no-repeat;
+			}
+			.themaWrap .employmentReview .interviewInfo {
+				display: flex;
+				align-items: center;
+				margin-bottom: 40px;
+			}
+			.themaWrap .employmentReview .interviewInfo .imgWrap {
+				width: 230px;
+				height: 164px;
+				margin-right: 30px;
+				border: 5px solid #857ffd;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			.themaWrap .employmentReview .interviewInfo .text p {
+				display: block;
+				width: 384px;
+				padding: 14px 20px 10px;
+				margin-bottom: 20px;
+				background: #857ffd;
+				color: #fff;
+				text-align: center;
+				border-radius: 30px;
+			}
+			.themaWrap .employmentReview .interviewBox {
+				padding: 30px 36px;
+				margin-bottom: 40px;
+				border: 1px solid #d8d8d8;
+				border-radius: 20px;
+				box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+			}
+			.themaWrap .employmentReview .interviewBox strong {
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			.themaWrap .employmentReview .interviewBox strong::before {
+				content: '';
+				display: inline-block;				
+				padding-right: 12px;				
+				vertical-align: middle;
+			}
+			.themaWrap .employmentReview .interviewBox strong.icon01::before {
+				width: 25px;
+				height: 25px;
+				background: url(./resource/images/thema/230327/thema_interview_icon01.png) no-repeat;
+			}
+			.themaWrap .employmentReview .interviewBox p {
+				color: #575757;
+				word-break: keep-all;
+			}
+		</style>
+		<article class="employmentReview">
+			<div class="innerSection02">
+				<div class="tit">
+					<strong class="f30">취업브리지 참여 후기</strong>
+				</div>
+				<div class="contTit">
+					<p class="f14">본 콘텐츠는 강동욱님과 인터뷰한 내용을 바탕으로 재구성하였습니다.</p>
+				</div>
+				<div class="interviewWrap">
+					<div class="interviewInfo">
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230327/thema_interview01.jpg" alt="수원대 4학년 강동욱">
+						</div>
+						<div class="text">
+							<p class="f24">수원대 4학년 강동욱</p>
+							<span class="f23">안녕하세요. 잡아바 회원 여러분. 저는 수원대학교 4학년,<br>
+								현재 비플러스라는 회사에 인턴으로 근무 중인 강동욱 입니다.</span>
+						</div>
+					</div>
+					<div class="interviewBox">
+						<strong class="icon01 f23">취업브리지 사업에 참여한 계기</strong>
+						<p class="f18">졸업을 앞두고서 자격증 같은 것들은 미리 준비한 후, 실무적인 경험을 쌓고 싶었는데 때마침 경기도일자리재단의 
+							취업브리지 사업 참여자 모집 공고를 보고 지원하게 됐습니다.
+							</p>
+					</div>
+					<div class="interviewBox">
+						<strong class="icon02 f23">취업브리지의 장점</strong>
+						<p class="f18">일단, 저는 대출 심사 업무를 하고 있는데 금융 관련 분야로 취업을 준비를 하고 있기 때문에 직무 관련 업무를 
+							경험해볼 수 있어서 좋았습니다. 인턴을 준비하는 과정에서 피드백도 많이 받았고 혼자 준비해야하는 부담감에서 
+							많이 벗어날 수 있었습니다. 또, 직무와 관련해 갈피를 잡기 힘든 취준생으로서 직무 관련 경험을 할 수 있어 
+							도움이 많이 되었고, 이 계기로 직무 선택에 대한 확고함을 가지게 됐습니다.
+							</p>
+					</div>
+					<div class="interviewBox">
+						<strong class="icon03 f23">취업을 위해 참여했던 대외활동</strong>
+						<p class="f18">신용회복위원회 서포터즈, 금융감독원 금융소비자리포터, 삼성증권 투자스쿨 서포터즈와 같은 대외활동에 
+							참여한 적이 있습니다. 대외활동은 부담을 가지지 않고 임하였고, 활동비를 제공하는 대외활동도 있어서 
+							많은 도움이 됐습니다.
+							</p>
 					</div>
 				</div>
 			</div>

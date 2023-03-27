@@ -3,9 +3,15 @@
 
 .themaWrap * { font-family: 'GmarketSansMedium';} 
 .themaWrap .innerSection01 { position: relative; padding: 0 20px; max-width: 1540px; height: 100%; margin: 0 auto;}
-.themaWrap .innerSection02 { position: relative; padding: 0 20px; max-width: 1200px; height: 100%; margin: 0 auto;}
+.themaWrap .innerSection02 { position: relative; padding: 0 20px; max-width: 1000px; height: 100%; margin: 0 auto;}
 .themaWrap img { object-fit: cover; height: inherit; } 
 .themaWrap strong { font-family: 'GmarketSansBold'; } 
+
+.f30 {font-size: 30px;}
+.f24 {font-size: 24px;}
+.f23 {font-size: 23px;}
+.f18 {font-size: 18px;}
+.f14 {font-size: 14px;}
 @media all and (max-width:1160px) {
 
 }
