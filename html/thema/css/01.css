@@ -126,7 +126,8 @@
 .themaWrap .employmentGift .giftWrap p { display: inline-block; padding: 10px 54px; margin: 50px 0; background: #f0f0f0; border: 2px dotted #000; border-radius: 30px; box-shadow: 0 6px 0 #000; } 
 .themaWrap .employmentGift .giftWrap p span { color: #ff005a; font-family: 'GmarketSansBold'; } 
 .themaWrap .employmentGift .giftList { display: flex; justify-content: space-between; } 
-.themaWrap .employmentGift .giftList li { width: calc((100% - 72px) / 5); position: relative; padding: 10px 5px; margin-right: 18px; background: #fff; border: 1px solid #a160ff; border-radius: 20px; overflow: hidden; text-align: center; box-shadow: 1px 2px 5px rgba(0,0,0,0.2); z-index: 1; } 
+.themaWrap .employmentGift .giftList li { width: calc((100% - 72px) / 5); position: relative; padding: 10px 5px; margin-right: 18px; background: #fff; border: 1px solid #a160ff; border-radius: 20px; overflow: hidden; text-align: center; box-shadow: 1px 2px 5px rgba(0,0,0,0.2); z-index: 1; transition: 0.3s;} 
+.themaWrap .employmentGift .giftList li:hover { border: 1px solid #ff7272; transform: translateY(-10px); }
 .themaWrap .employmentGift .giftList li:last-child { margin-right: 0; } 
 .themaWrap .employmentGift .giftList li::before { content: ''; width: 100%; height: 30px; position: absolute; top: 0; left: 0; background: #d6b9ff; z-index: -1; } 
 .themaWrap .employmentGift .giftList li span { color: #8400ff; } 
@@ -164,7 +165,8 @@
 .themaWrap .freeCourse .imgWrap { margin-bottom: 30px; } 
 .themaWrap .freeCourse .courseList { display: flex; padding: 48px 42px; margin: 44px 0 75px; background: #f5f5f5; border-radius: 40px; text-align: center; } 
 .themaWrap .freeCourse .courseList li { flex: 1; } 
-.themaWrap .freeCourse .courseList span { display: flex; align-items: center; justify-content: center; width: 110px; height: 110px; margin: 0 auto 20px; background: #fff; border: 3px solid #9577e1; border-radius: 100%; } 
+.themaWrap .freeCourse .courseList li:hover span { border: 3px solid #ff7272; transform: translateY(-10px); } 
+.themaWrap .freeCourse .courseList span { display: flex; align-items: center; justify-content: center; width: 110px; height: 110px; margin: 0 auto 20px; background: #fff; border: 3px solid #9577e1; border-radius: 100%; transition: 0.3s; } 
 .themaWrap .freeCourse .courseList span::before { content: ''; display: flex; } 
 .themaWrap .freeCourse .courseList span.couse01::before { width: 47px; height: 42px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/icon_course01.png) no-repeat; } 
 .themaWrap .freeCourse .courseList span.couse02::before { width: 47px; height: 44px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/icon_course02.png) no-repeat; } 
