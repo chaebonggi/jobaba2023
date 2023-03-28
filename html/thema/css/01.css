@@ -158,7 +158,9 @@
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineCourse li::before { content: ''; min-width: 23px; height: 21px; margin-right: 6px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/icon_check.png) no-repeat; vertical-align: middle; word-break: keep-all; } 
 .themaWrap .onlineEducation .onlineWrap .onlineBox p { padding: 14px 10px; margin: 24px 0 15px; background: #fff; border: 3px solid #5ae3cf; border-radius: 40px; text-align: center; } 
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList { display: flex; justify-content: space-between; } 
-.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li { display: flex; justify-content: center; align-items: center; width: 100px; height: 88px; background: #fff; color: #7867ff; font-family: 'GmarketSansBold'!important; border: 3px solid #5ae3cf; border-radius: 20px; text-align: center; } 
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li { border-radius: 20px;} 
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li:hover a { border: 3px solid #ff7272; transform: translateY(-10px); }
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li a { display: flex; justify-content: center; align-items: center; width: 100px; height: 88px; background: #fff; border-radius: 20px; border: 3px solid #5ae3cf; text-align: center; color: #7867ff; font-family: 'GmarketSansBold'!important; transition: 0.3s;}
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineImg { margin-top: 24px; text-align: right; } 
 
 .themaWrap .freeCourse { margin-top: -80px; text-align: center; } 
