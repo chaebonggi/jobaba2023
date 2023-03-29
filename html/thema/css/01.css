@@ -35,7 +35,7 @@
 
 .themaWrap .employmentInfo { margin-bottom: 260px; } 
 .themaWrap .employmentInfo .tit { width: 441px; height: 50px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_img02.png) no-repeat; text-align: center; margin: 0 auto; } 
-.themaWrap .employmentInfo .tit strong { display: inline-block; margin-top: -30px; color: #fff; } 
+.themaWrap .employmentInfo .tit strong { display: inline-block; margin-top: -30px; color: #fff; font-family: 'Noto Sans KR', sans-serif !important; } 
 .themaWrap .employmentInfo .whiteBox { position: relative; padding: 50px 10px; background: linear-gradient(#d2d2f2,#fff 30%); box-shadow: 0px 0px 0 8px rgba(255, 255, 255, 0.1); border-radius: 30px; } 
 .themaWrap .employmentInfo .whiteBox::before { content: ''; width: 341px; height: 157px; position: absolute; top: -157px; left: 90px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_img05.png) no-repeat; } 
 .themaWrap .employmentInfo .whiteBox::after { content: ''; width: 341px; height: 157px; position: absolute; top: -157px; right: 90px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_img05.png) no-repeat; } 
@@ -74,8 +74,8 @@
 .themaWrap .employmentReview .interviewInfo .text { width: 100%; } 
 .themaWrap .employmentReview .interviewInfo .text p { display: block; width: 384px; padding: 14px 20px 10px; margin-bottom: 20px; background: #857ffd; color: #fff; text-align: center; border-radius: 30px; } 
 .themaWrap .employmentReview .interviewBox { padding: 30px 36px; margin-bottom: 40px; border: 1px solid #d8d8d8; border-radius: 20px; box-shadow: 1px 2px 5px rgba(0,0,0,0.1); } 
-.themaWrap .employmentReview .interviewBox strong { display: inline-block; margin-bottom: 20px; } 
-.themaWrap .employmentReview .interviewBox strong::before { content: ''; display: inline-block; padding-right: 12px; vertical-align: middle; } 
+.themaWrap .employmentReview .interviewBox strong { display: flex; align-items: center; margin-bottom: 20px; } 
+.themaWrap .employmentReview .interviewBox strong::before { content: ''; margin-right: 12px; vertical-align: middle; } 
 .themaWrap .employmentReview .interviewBox strong.icon01::before { width: 25px; height: 25px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_interview_icon01.png) no-repeat; background-size: contain; } 
 .themaWrap .employmentReview .interviewBox strong.icon02::before { width: 23px; height: 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_interview_icon02.png) no-repeat; background-size: contain; } 
 .themaWrap .employmentReview .interviewBox strong.icon03::before { width: 27px; height: 33px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_interview_icon03.png) no-repeat; background-size: contain; } 
@@ -83,7 +83,8 @@
 .themaWrap .employmentReview .interviewBox strong.icon05::before { width: 20px; height: 33px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_interview_icon05.png) no-repeat; background-size: contain; } 
 .themaWrap .employmentReview .interviewBox strong.icon06::before { width: 20px; height: 34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_interview_icon06.png) no-repeat; background-size: contain; } 
 .themaWrap .employmentReview .interviewBox p { color: #575757; word-break: keep-all; } 
-
+/* 
+content: ''; min-width: 23px; height: 21px; margin-right: 6px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/icon_check.png) no-repeat; vertical-align: middle; word-break: keep-all;*/
 .themaWrap .employmentReview .reviewWrap { display: flex; align-items: center; margin-bottom: 70px; } 
 .themaWrap .employmentReview .reviewWrap .text { width: 100%; text-align: center; } 
 .themaWrap .employmentReview .reviewWrap .text > p { margin-top: 20px; margin-bottom: 40px; } 
@@ -123,11 +124,11 @@
 .themaWrap .employmentGift .tit { position: relative; margin-bottom: 100px; text-align: center; z-index: 1; } 
 .themaWrap .employmentGift .tit::before { content: ''; width: 976px; height: 272px; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/thema_gift02.png) no-repeat; z-index: -1; } 
 .themaWrap .employmentGift .giftWrap { text-align: center; } 
-.themaWrap .employmentGift .giftWrap p { display: inline-block; padding: 10px 54px; margin: 50px 0; background: #f0f0f0; border: 2px dotted #000; border-radius: 30px; box-shadow: 0 6px 0 #000; } 
+.themaWrap .employmentGift .giftWrap p { display: inline-block; padding: 10px 54px; margin: 50px 0; background: #f0f0f0; border: 2px dotted #000; border-radius: 30px; box-shadow: 0 6px 0 #000; word-break: keep-all; } 
 .themaWrap .employmentGift .giftWrap p span { color: #ff005a; font-family: 'GmarketSansBold'!important; } 
 .themaWrap .employmentGift .giftList { display: flex; justify-content: space-between; } 
-.themaWrap .employmentGift .giftList li { width: calc((100% - 72px) / 5); position: relative; padding: 10px 5px; margin-right: 18px; background: #fff; border: 1px solid #a160ff; border-radius: 20px; overflow: hidden; text-align: center; box-shadow: 1px 2px 5px rgba(0,0,0,0.2); z-index: 1; transition: 0.3s;} 
-.themaWrap .employmentGift .giftList li:hover { border: 1px solid #ff7272; transform: translateY(-10px); }
+.themaWrap .employmentGift .giftList li { width: calc((100% - 72px) / 5); position: relative; padding: 10px 5px; margin-right: 18px; background: #fff; border: 1px solid #a160ff; border-radius: 20px; overflow: hidden; text-align: center; box-shadow: 1px 2px 5px rgba(0,0,0,0.2); z-index: 1; transition: 0.3s; } 
+.themaWrap .employmentGift .giftList li:hover { border: 1px solid #ff7272; transform: translateY(-10px); } 
 .themaWrap .employmentGift .giftList li:last-child { margin-right: 0; } 
 .themaWrap .employmentGift .giftList li::before { content: ''; width: 100%; height: 30px; position: absolute; top: 0; left: 0; background: #d6b9ff; z-index: -1; } 
 .themaWrap .employmentGift .giftList li span { color: #8400ff; } 
@@ -158,9 +159,9 @@
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineCourse li::before { content: ''; min-width: 23px; height: 21px; margin-right: 6px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230327/icon_check.png) no-repeat; vertical-align: middle; word-break: keep-all; } 
 .themaWrap .onlineEducation .onlineWrap .onlineBox p { padding: 14px 10px; margin: 24px 0 15px; background: #fff; border: 3px solid #5ae3cf; border-radius: 40px; text-align: center; } 
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList { display: flex; justify-content: space-between; } 
-.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li { border-radius: 20px;} 
-.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li:hover a { border: 3px solid #ff7272; transform: translateY(-10px); }
-.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li a { display: flex; justify-content: center; align-items: center; width: 100px; height: 88px; background: #fff; border-radius: 20px; border: 3px solid #5ae3cf; text-align: center; color: #7867ff; font-family: 'GmarketSansBold'!important; transition: 0.3s;}
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li { border-radius: 20px; width: 100px; height: 88px; } 
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li:hover a { border: 3px solid #ff7272; transform: translateY(-10px); } 
+.themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li a { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: #fff; border-radius: 20px; border: 3px solid #5ae3cf; text-align: center; color: #7867ff; font-family: 'GmarketSansBold'!important; transition: 0.3s; } 
 .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineImg { margin-top: 24px; text-align: right; } 
 
 .themaWrap .freeCourse { margin-top: -80px; text-align: center; } 
@@ -216,6 +217,8 @@
  .themaWrap .participate .partiBox.way .text li::after { top: auto; bottom: -20px; left: 50%; transform: translateX(-50%) rotate(90deg); } 
  }
 @media all and (max-width:860px){
+ .themaWrap .innerSection01 { padding: 0 10px; } 
+ .themaWrap .innerSection02 { padding: 0 10px; } 
  .themaWrap .onlineEducation .educationWrap { padding: 30px 20px 40px; } 
  .themaWrap .onlineEducation .educationWrap .tit::before { content: none; } 
  .themaWrap .onlineEducation .educationWrap .tit > strong { display: block; position: static; font-size: 32px; transform: none; } 
@@ -229,20 +232,22 @@
  .themaWrap .onlineEducation .onlineWrap .onlineTit { margin-bottom: 20px; display: flex; justify-content: center; } 
  .themaWrap .onlineEducation .onlineWrap .imgWrap { margin-bottom: 0; } 
  .themaWrap .onlineEducation .onlineWrap .text { display: none; } 
- .themaWrap .participate .partiWrap { padding: 30px 20px; } 
- .themaWrap .participate .partiWrap .partiBox { padding: 26px 14px; } 
+ .themaWrap .participate { margin-bottom: 50px; } 
+ .themaWrap .participate .partiWrap { padding: 30px 10px; } 
+ .themaWrap .participate .partiWrap .partiBox { padding: 26px 10px; } 
  .themaWrap .participate .partiBox.way .text li { width: 90px; height: 90px; } 
+ .themaWrap .employmentInfo .whiteBox .infoBox .infoItem { width: calc(( 100% - 10px ) / 2); margin-right: 10px; padding: 20px 10px; } 
  }
 @media all and (max-width:768px){
- .f34 { font-size: 28px; } 
+ .f34 { font-size: 26px; } 
  .f30 { font-size: 22px; } 
  .f26 { font-size: 18px; } 
  .f24 { font-size: 16px; } 
  .f23 { font-size: 16px; } 
- .f22 { font-size: 16px; } 
- .f20 { font-size: 14px; } 
- .f18 { font-size: 14px; } 
- .f16 { font-size: 14px; } 
+ .f22 { font-size: 12px; } 
+ .f20 { font-size: 12px; } 
+ .f18 { font-size: 12px; } 
+ .f16 { font-size: 12px; } 
 
  .themaWrap .mainVisual { padding-top: 40px; margin-bottom: 70px; } 
  .themaWrap .mainVisual .tit strong { font-size: 40px; word-break: keep-all; } 
@@ -264,12 +269,13 @@
  .themaWrap .employmentReview .reviewWrap .imgWrap { display: none; } 
  .themaWrap .employmentReview .reviewWrap .review { flex-direction: column; } 
  .themaWrap .employmentReview .reviewWrap .review p { margin-right: 0; margin-bottom: 20px; } 
- .themaWrap .employmentReview .reviewWrap .review p::before { width: 40px; height: 60px; background-size: contain; } 
+ .themaWrap .employmentReview .reviewWrap .review p::before { width: 40px; height: 60px; left: -22px; background-size: contain; } 
  .themaWrap .employmentReview .reviewWrap { margin-bottom: 30px; } 
  .themaWrap .employmentReview .tit { margin-bottom: 48px; } 
  .themaWrap .employmentReview .contTit { margin-bottom: 40px; } 
 
- .themaWrap .employmentGift .tit { margin-bottom: 40px; } 
+ .themaWrap .employmentGift .tit { margin-bottom: 20px; } 
+ .themaWrap .employmentGift .tit img { width: 90%; } 
 
  .themaWrap .employmentGift .giftList { flex-wrap: wrap; justify-content: center; } 
  .themaWrap .employmentGift .giftList li { width: calc((100% - 36px) / 3); margin-bottom: 20px; } 
@@ -277,11 +283,13 @@
  .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineList li { width: calc((100% - 5px ) / 2); margin-bottom: 10px; } 
  .themaWrap .onlineEducation .onlineWrap::before { content: none; } 
  
- .themaWrap .freeCourse .courseList { flex-wrap: wrap; justify-content: space-between; } 
+ .themaWrap .freeCourse .courseList { flex-wrap: wrap; justify-content: space-between; padding: 20px 10px; } 
  .themaWrap .freeCourse .courseList li { width: calc((100% - 30px) / 3); flex: none; } 
- .themaWrap .freeCourse .courseList span { width: 90px; height: 90px; } 
+ .themaWrap .freeCourse .courseList span { width: 90px; height: 90px; margin-bottom: 10px; } 
  .themaWrap .btnWrap a { width: 100%; padding: 12px 10px; } 
  .themaWrap .btnWrap.type01 a { position: static; transform: none; } 
+ .themaWrap .participate .partiBox .text strong { width: 40px; height: 40px; margin-right: 8px; } 
+ .themaWrap .onlineEducation .onlineWrap .onlineBox .onlineItem { padding: 20px 10px; } 
  }
 
 @media all and (max-width:480px){
