@@ -5,21 +5,36 @@
  url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
  url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype"); font-display: swap; } 
 
-.themaWrap * { font-family: 'GmarketSansMedium'; } 
-.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto; } 
+.themaWrap * { font-family: 'GmarketSansMedium'; word-break: keep-all; } 
+.themaWrap .innerSection { padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto; } 
 .themaWrap img { object-fit: cover; height: inherit; } 
 
-.f34 { font-size: 34px; } 
-.f30 { font-size: 30px; } 
-.f26 { font-size: 26px; } 
-.f24 { font-size: 24px; } 
-.f23 { font-size: 23px; } 
-.f22 { font-size: 22px; } 
-.f20 { font-size: 20px; } 
-.f18 { font-size: 18px; } 
-.f16 { font-size: 16px; } 
-.f14 { font-size: 14px; } 
-
+.f120 {font-size: 120px;}
+.f110 {font-size: 110px;}
+.f82 {font-size: 82px;}
+.f48 {font-size: 48px;}
+.f34 {font-size: 34px;}
+.f30 {font-size: 30px;}
+.f24 {font-size: 24px;}
+.f20 {font-size: 20px;}
+.f18 {font-size: 18px;}
+.mb40 {margin-bottom: 40px;}
+.mt10 {margin-top: 10px;}
+.mr60 {margin-right: 60px;}
+.ml60 {margin-left: 60px;}
+.tct {text-align: center;}
+.trt {text-align: right;}
+.tlt {text-align: left;}
+.fcBlack {color: #000;}
+.fcBlue {color: #016af3;}
+.fcMint {color: #7cfaff;}
+.fcWhite {color: #fff;}
+.fcPurple {color: #ad7cff;}
+.fcGray {color: #575757;}
+.fcGray02 {color: #a0a0a0;}
+.fcPink {color: #ff55c1;}
+.fcYellow {color: #ff9c00;}
+.fcSkyBlue {color: #8588e7;}
 
 
 @media all and (max-width:1500px) {}
@@ -28,16 +43,8 @@
 @media all and (max-width:1024px) { }
 @media all and (max-width:860px) { }
 @media all and (max-width:768px){
- .f34 { font-size: 26px; } 
- .f30 { font-size: 22px; } 
- .f26 { font-size: 18px; } 
- .f24 { font-size: 16px; } 
- .f23 { font-size: 16px; } 
- .f22 { font-size: 12px; } 
- .f20 { font-size: 12px; } 
- .f18 { font-size: 12px; } 
- .f16 { font-size: 12px; } 
 
- }
+
+}
 
 @media all and (max-width:480px) { }
