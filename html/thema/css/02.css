@@ -1,0 +1,43 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'Pretendard'; font-weight: 900; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot'); src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+ url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+ url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+ url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype"); font-display: swap; } 
+
+.themaWrap * { font-family: 'GmarketSansMedium'; } 
+.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto; } 
+.themaWrap img { object-fit: cover; height: inherit; } 
+
+.f34 { font-size: 34px; } 
+.f30 { font-size: 30px; } 
+.f26 { font-size: 26px; } 
+.f24 { font-size: 24px; } 
+.f23 { font-size: 23px; } 
+.f22 { font-size: 22px; } 
+.f20 { font-size: 20px; } 
+.f18 { font-size: 18px; } 
+.f16 { font-size: 16px; } 
+.f14 { font-size: 14px; } 
+
+
+
+@media all and (max-width:1500px) {}
+@media all and (max-width:1160px) { }
+
+@media all and (max-width:1024px) { }
+@media all and (max-width:860px) { }
+@media all and (max-width:768px){
+ .f34 { font-size: 26px; } 
+ .f30 { font-size: 22px; } 
+ .f26 { font-size: 18px; } 
+ .f24 { font-size: 16px; } 
+ .f23 { font-size: 16px; } 
+ .f22 { font-size: 12px; } 
+ .f20 { font-size: 12px; } 
+ .f18 { font-size: 12px; } 
+ .f16 { font-size: 12px; } 
+
+ }
+
+@media all and (max-width:480px) { }
