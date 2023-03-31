@@ -72,10 +72,10 @@
 .themaWrap .section02 .jobList .txtBox { position: relative; padding: 3px 0px 3px 3px; margin-bottom: 30px; background: linear-gradient(-45deg, #83e7ff 0%, #d394ff 100%); border-radius: 24px 0 0 24px; text-align: center; } 
 .themaWrap .section02 .jobList li:nth-child(even) .txtBox { padding: 3px 3px 3px 0px; border-radius: 0 24px 24px 0; } 
 .themaWrap .section02 .jobList .txtBox::before { content: ''; position: absolute; } 
-.themaWrap .section02 .jobList .txtBox.icon01::before { width: 221px; height: 289px; top: -74px; right: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img02.png) no-repeat; } 
-.themaWrap .section02 .jobList .txtBox.icon02::before { width: 229px; height: 192px; top: -26px; left: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img03.png) no-repeat; } 
-.themaWrap .section02 .jobList .txtBox.icon03::before { width: 196px; height: 235px; top: 0; right: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img04.png) no-repeat; } 
-.themaWrap .section02 .jobList .txtBox.icon04::before { width: 207px; height: 222px; top: -56px; left: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img05.png) no-repeat; } 
+.themaWrap .section02 .jobList .txtBox.icon01::before { width: 221px; height: 289px; top: -74px; right: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .section02 .jobList .txtBox.icon02::before { width: 229px; height: 192px; top: -26px; left: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .section02 .jobList .txtBox.icon03::before { width: 196px; height: 235px; top: 0; right: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img04.png) no-repeat; background-size: contain; } 
+.themaWrap .section02 .jobList .txtBox.icon04::before { width: 207px; height: 222px; top: -56px; left: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_s02_img05.png) no-repeat; background-size: contain; } 
 .themaWrap .section02 .jobList .txtBox p { min-height: 163px; padding: 14px 20px; background: #f6f6f6; border-radius: 24px 0 0 24px; text-align: left; } 
 .themaWrap .section02 .jobList li:nth-child(even) .txtBox p { border-radius: 0 24px 24px 0; text-align: right; } 
 
@@ -85,7 +85,9 @@
 .themaWrap .section03 .guideTit { display: flex; align-items: center; justify-content: center; margin-bottom: 200px; } 
 .themaWrap .section03 .guideTit .imgWrap { margin-right: 25px; } 
 
- .themaWrap .section03 .leftMenu { position: absolute; top: 460px; left: 100px; } 
+.themaWrap .section03 .leftMenu { position: absolute; top: 460px; left: 100px; } 
+.themaWrap .section03 .leftMenu::after { content: ''; width: 15px; height: 15px; background: #fff; border: 3px solid #67c3be; position: absolute; border-radius: 100%; top: -10px; left: 50%; transform: translateX(-50%); } 
+.themaWrap .section03 .leftMenu::before { content: ''; width: 100px; height: 59px; position: absolute; right: 0; bottom: -36px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230330/thema_left05.png); } 
 .themaWrap .section03 .leftMenu.fixed { position: fixed; top: 100px; z-index: 1; } 
 .themaWrap .section03 .leftMenu .menuList { padding: 28px 22px; background: #fff; border: 2px solid #67c3be; border-radius: 20px; text-align: center; } 
 .themaWrap .section03 .leftMenu .menuList li { margin-bottom: 10px; } 
@@ -194,11 +196,13 @@
 .themaWrap .section01 .imgWrap { margin-right: 0; margin-bottom: 20px; text-align: center; } 
 .themaWrap .section01 .imgWrap img { width: 80%; } 
 .themaWrap .section01 .textWrap .title { justify-content: center; margin-bottom: 20px; } 
-
-
+/* */
+.themaWrap .section02 .jobList { flex-direction: column; } 
+.themaWrap .section02 .jobList li { width: 100%; } 
+.themaWrap .section02 .jobList li:nth-child(odd) { margin-top: 20px; } 
 /* */
 .themaWrap .section04 { padding: 20px 0; } 
-.themaWrap .section04 .tipWrap { padding: 20px 30px; } 
+.themaWrap .section04 .tipWrap { padding: 20px 20px; } 
 .themaWrap .section04 .imgWrap img { width: 70%; } 
 /* */
 .themaWrap .section04 .tipItem::before { position: static; display: block; width: 50px; height: 50px; margin-top: 20px; } 
@@ -215,15 +219,25 @@
 .themaWrap .section03 .guideTit .imgWrap { margin-right: 0; margin-bottom: 20px; } 
 
 
-
-
-
-}
+.themaWrap .section02 .jobList .txtBox.icon01::before { width: 153px; top: -18px; } 
+.themaWrap .section02 .jobList .txtBox.icon02::before { width: 140px; top: 18px; } 
+.themaWrap .section02 .jobList .txtBox.icon03::before { width: 114px; top: 60px; } 
+.themaWrap .section02 .jobList .txtBox.icon04::before { width: 130px; top: 27px; } 
+ }
 @media all and (max-width:680px){
  .themaWrap .section01 .textWrap .title p span { width: 100%; } 
  .themaWrap .section01 .textWrap .title p { margin-left: 10px; } 
  .themaWrap .section05 .title { border-radius: initial; padding: 20px 10px; } 
  .themaWrap .section03 .guideBox .guideTit strong { width: 100%; } 
- }
 
+ .themaWrap .section03 .btnWrap a { display: block; margin-bottom: 10px; } 
+ .themaWrap .section03 .btnWrap a + a { margin-left: 0; } 
+
+ .themaWrap .section03 .guideBox .guideTit span { width: 100%; left: auto; transform: none; } 
+ .themaWrap .section03 .guideBox .guideTit span br { display: none; } 
+ .themaWrap .section03 .guideBox.icon01 .guideTit strong::before { width: 88px; top: -57px; background-size: contain; } 
+ .themaWrap .section03 .guideBox.icon02 .guideTit strong::before { width: 88px; top: -74px; background-size: contain; } 
+.themaWrap .section03 .guideBox.icon03 .guideTit strong::before { width: 88px; top: -66px; background-size: contain; } 
+.themaWrap .section03 .guideBox.icon04 .guideTit strong::before { width: 82px; top: -74px; background-size: contain; } 
+}
 @media all and (max-width:480px) { } 
