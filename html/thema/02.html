@@ -202,8 +202,8 @@
 						</p>
 					</div>
 				</div>
-
-				<div class="guideBox icon01" id="moveTo01">
+				
+				<div class="guideBox icon01" id="moveTo01" data-link="moveTo01">
 					<div class="guideTit">
 						<span class="fcWhite f18">대한민국 IT 취업시장의 <br>
 							전망에 대해서 알려줘</span>
@@ -241,7 +241,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon01">
+				<div class="guideBox icon01" data-link="moveTo01">
 					<div class="guideTit">
 						<span class="fcWhite f18">행정학과 졸업생이 전공을 살려서<br>
 							취업할 수 있는 분야를 알려줘
@@ -279,7 +279,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon02" id="moveTo02">
+				
+				<div class="guideBox icon02" id="moveTo02" data-link="moveTo02">
 					<div class="guideTit">
 						<span class="fcWhite f18">웹디자이너 취업을 위해<br>
 							필요한 역량이 무엇인지 알려줘</span>
@@ -315,7 +316,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon02">
+				<div class="guideBox icon02" data-link="moveTo02">
 					<div class="guideTit">
 						<span class="fcWhite f18">저의 강점은~~ 입니다.<br>
 							위 내용은 내 자기소개서 일부분인데,<br>
@@ -352,7 +353,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon02">
+				<div class="guideBox icon02" data-link="moveTo02">
 					<div class="guideTit">
 						<span class="fcWhite f18">국제 무역 영업사원 면접에서<br>
 							나올 만한 면접예상질문 뽑아줘</span>
@@ -386,7 +387,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon02">
+				<div class="guideBox icon02" data-link="moveTo02">
 					<div class="guideTit">
 						<span class="fcWhite f18">기업 내 세무회계 담당자로  취업하기<br>
 							위해서 필요한 자격증은 어떤게 있어?</span>
@@ -422,7 +423,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon02">
+				<div class="guideBox icon02" data-link="moveTo02">
 					<div class="guideTit">
 						<span class="fcWhite f18">공연기획자 취업에 도움되는<br>
 							아르바이트는 뭐가 있는지 알려줘</span>
@@ -457,7 +458,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon03" id="moveTo03">
+				<div class="guideBox icon03" id="moveTo03" data-link="moveTo03">
 					<div class="guideTit">
 						<span class="fcWhite f18">제품 기획 분야에 취업지원을 하려고 하는데,<br>
 							연봉순으로 10개 기업 나열해줘</span>
@@ -494,7 +495,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon04" id="moveTo04">
+				<div class="guideBox icon04" id="moveTo04" data-link="moveTo04">
 					<div class="guideTit">
 						<span class="fcWhite f18">취업한지 3개월 되었는데, 직장에<br>
 							쉽게 적응할 수 있는 방법을 알려줘</span>
@@ -530,7 +531,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="guideBox icon04">
+				<div class="guideBox icon04" data-link="moveTo04">
 					<div class="guideTit">
 						<span class="fcWhite f18">IT 기획자로서 취업 이후에 커리어를<br>
 							키워나갈 수 있는 방법을 알려줘</span>
@@ -671,9 +672,15 @@
 				}else {
 					$('.leftMenu').removeClass('fixed');
 				}
+				articles.each(function(){
+					const winTop = $(this).offset().top - menuHight;
+					const winBottom = winTop + $(this).outerHeight();
+					if (winScroll >= winTop && winScroll <= winBottom) {
+						menu.find("a").parent().removeClass('on');
+						menu.find('a[href="#' + $(this).attr('data-link') + '"]').parent().addClass("on");
+					}
+				});	
 			});
-
-
 
 		});
 	</script>
