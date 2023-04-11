@@ -74,7 +74,56 @@
             font-size: 13px;
             line-height: 1;
         }
-        
+        #newHeader .h-cont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            margin-top: 25px;
+        }
+        #newHeader .h-cont .logo {
+            margin-top: -20px;
+        }
+        #newHeader .h-gnb {
+            display: flex;
+            align-items: center;
+        }
+        #newHeader .h-gnb li {
+            width: calc(100% / 5);
+        }
+        #newHeader .h-gnb li a {
+            display: block;
+            height: 70px;
+            padding: 0 30px;
+            color: #000;
+            font-size: 22px;
+            line-height: 70px;
+        }
+        #newHeader .header-bottom {
+                background: #fff;
+                border-bottom: 1px solid #dadada;
+            }
+        #newHeader .h-ui {
+            display: flex;
+            align-items: center;
+        }
+        #newHeader .h-menu {
+            position: relative;
+            width: 26px;
+            height: 16px;
+            cursor: pointer;
+        }
+        #newHeader .h-menu span { position: absolute; width: 26px; height: 4px; display: block; background-color: #000; transition: all 0.2s ease-in; }
+        #newHeader .h-menu span:first-child { top: 0; }
+        #newHeader .h-menu span:nth-child(2) { top: 50%; }
+        #newHeader .h-menu span:last-child { top: 100%; }
+        #newHeader .h-menu.on span:first-child { top: 50%; transform: rotate(45deg);}
+        #newHeader .h-menu.on span:nth-child(2) { width: 0; }
+        #newHeader .h-menu.on span:last-child { top: 50%; transform: rotate(-45deg); }
+        #newHeader .h-search {
+            margin-left: 34px;
+            flex-shrink: 0;
+        }    
     </style>
     <header id="newHeader">
         <div class="header-top">
@@ -122,12 +171,6 @@
                 </div>
             </div>
         </div>
-        <style>
-            #newHeader .header-bottom {
-                background: #fff;
-                border-bottom: 1px solid #dadada;
-            }
-        </style>
         <div class="header-bottom">
             <div class="innerSection">
                 <div class="h-cont">
@@ -164,11 +207,13 @@
                         </li>
                     </ul>
                     <div class="h-ui">
-                        <div class="h-search">
-
-                        </div>
                         <div class="h-menu">
-
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h-search">
+                            <button><img src="./images/main/icon_search.png" alt="검색"></button>
                         </div>
                     </div>
                 </div>
@@ -179,10 +224,76 @@
         <article>
 
         </article>
-        <article>
-            
-          </article>
     </main>
+    <style>
+        #newFooter .footer-top {
+            background: #444;
+        }
+        #newFooter .f-util {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 0;
+        }
+        #newFooter .f-nav {
+            display: flex;
+        }
+        #newFooter .f-nav li + li {
+            margin-left: 30px;
+        }
+        #newFooter .f-nav li a {
+            color: #fff;
+            font-size: 14px;
+        }
+        #newFooter .f-sns {
+            display: flex;
+            margin-left: auto;
+        }
+        #newFooter .f-sns li {
+            margin-right: 22px;
+        }
+        #newFooter .f-sns li a {
+            display: block;
+            width: 25px;
+            height: 26px;
+            text-indent: -9999px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        #newFooter .f-sns li a.face {
+            background-image: url(./images/main/icon_face.png);
+        }
+        #newFooter .f-sns li a.insta {
+            background-image: url(./images/main/icon_insta.png);
+        }
+        #newFooter .f-sns li a.youtu {
+            background-image: url(./images/main/icon_youtube.png);
+        }
+        #newFooter .f-sns li a.app {
+            background-image: url(./images/main/icon_appstore.png);
+        }
+        #newFooter .f-sns li a.play {
+            background-image: url(./images/main/icon_playstore.png);
+        }
+        #newFooter .f-family {
+            width: 270px;
+        }
+        #newFooter .f-family select {
+            width: 100%;
+            height: 42px;
+            padding: 0 20px;
+            background: #ededed url(./images/main/icon_f_arrow.png) right 20px center no-repeat;
+            color: #5c5c5c;
+            font-size: 14px;
+            font-weight: 700;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #newFooter .f-family select option {
+            background: #fff;
+        }
+    </style>
     <footer id="newFooter">
         <div class="footer-top">
             <div class="innerSection">
@@ -200,7 +311,7 @@
                         </li>
                         <li>
                             <a href="" target="_blank">
-                                개인정보처리방침
+                                <strong>개인정보처리방침</strong>
                             </a>
                         </li>
                         <li>
@@ -209,25 +320,71 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="f-sns">
-                        <a href=""><span class="hidden">잡아바 페이스북</span></a>
+
+                    <ul class="f-sns">
+                        <li>
+                            <a href="" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                        </li>
+                        <li>
+                            <a href="" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                        </li>
+                        <li>
+                            <a href="" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                        </li>
+                        <li>
+                            <a href="" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                        </li>
+                    </ul>
+
+                    <div class="f-family">
+                        <select onchange="window.open(value,'_blank');" title="패밀리 사이트 선택">
+                            <option value="">Family Site</option>
+                            <option value="https://www.gjf.or.kr/">경기도일자리재단</option>
+                            <option value="https://apply.jobaba.net/bsns/bsnsListView.do">잡아바어플라이</option>
+                            <option value="https://youth.jobaba.net/introduction">청년노동자지원사업·청년몰</option>
+                            <option value="https://www.dream.go.kr/dream/index.do">꿈날개</option>
+                            <option value="https://www.dreammaru.or.kr/www/index.do">꿈마루</option>
+                            <option value="https://www.gjf.or.kr/web/gti/main">경기도기술학교</option>
+                            <option value="https://13b.gg.go.kr">경기도 워라밸 링크</option>
+                            <option value="https://youthcenter.jobaba.net/">잡아바 청년센터</option>
+                        </select>
                     </div>
-                    <select class="f-family" onchange="window.open(value,'_blank');" title="패밀리 사이트 선택">
-                        <option value="">Family Site</option>
-                        <option value="https://www.gjf.or.kr/">경기도일자리재단</option>
-                        <option value="https://apply.jobaba.net/bsns/bsnsListView.do">잡아바어플라이</option>
-                        <option value="https://youth.jobaba.net/introduction">청년노동자지원사업·청년몰</option>
-                        <option value="https://www.dream.go.kr/dream/index.do">꿈날개</option>
-                        <option value="https://www.dreammaru.or.kr/www/index.do">꿈마루</option>
-                        <option value="https://www.gjf.or.kr/web/gti/main">경기도기술학교</option>
-                        <option value="https://13b.gg.go.kr">경기도 워라밸 링크</option>
-                        <option value="https://youthcenter.jobaba.net/">잡아바 청년센터</option>
-                    </select>
                 </div>
             </div>
         </div>
+        <style>
+            #newFooter .f-business {
+                display: flex;
+                padding: 32px 0;
+                border-bottom: 2px solid #eeeeee;
+            }
+            #newFooter .f-business .f-slogan {
+                margin-left: auto;
+                margin-right: 38px;
+            }
+        </style>
         <div class="footer-mid">
-
+            <div class="innerSection">
+                <div class="f-business">
+                    <h1 class="f-logo">
+                        <img src="./images/main/jababa_logo.png" alt="잡아바 로고">
+                    </h1>
+                    <div class="f-bswrap">
+                        <dl>
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div class="f-slogan">
+                        <a href="" target="_blank" title="경기도 도청 이동">
+                            <img src="./images/main/gyeonggi_slogan.png" alt="변화의 중심 기회의 경기">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
 
