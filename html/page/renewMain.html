@@ -4,131 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>New Main</title>
-	<!-- 잡아바 css-->
+
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery_ui.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font_awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe_icon_7_stroke.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
-	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
-    <link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
-    <link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/newMain.css?ver=20221031">
-	<!-- //잡아바 css-->
-	<!--추가 css-->
-    <!-- <link rel="stylesheet" href="./css/newMain2.css"> -->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/newMain.css?ver=20221031">
+
+	<!-- 추가 css -->
+    <link rel="stylesheet" href="./css/renewMain.css">
 </head>
 
 <body>
-    <style>
-        .innerSection {
-            max-width: 1300px;
-            height: 100%;
-            padding: 0 20px;
-            margin: 0 auto;
-        }
-        #newHeader .header-top {
-            background: #008ae0;
-        }
-        #newHeader .h-util {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 50px;
-        }
-        #newHeader .h-util ul {
-            display: flex;
-        }
-        #newHeader .h-util ul li {
-            position: relative;
-            margin-right: 14px;
-            padding-right: 14px;
-        }
-        #newHeader .h-util ul li:last-child {
-            margin-right: 0;
-            padding-right: 0;
-        }
-        #newHeader .h-util ul li:last-child::before {
-            content: none;
-        }
-        #newHeader .h-util ul li::before {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 11px;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            background: #ddd;
-            transform: translateY(-50%);            
-        }
-        #newHeader .h-util ul li a {
-            display: block;
-            color: #fff;
-            font-size: 13px;
-            line-height: 1;
-        }
-        #newHeader .h-cont {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 70px;
-            margin-top: 25px;
-        }
-        #newHeader .h-cont .logo {
-            margin-top: -20px;
-        }
-        #newHeader .h-gnb {
-            display: flex;
-            align-items: center;
-        }
-        #newHeader .h-gnb li {
-            width: calc(100% / 5);
-        }
-        #newHeader .h-gnb li a {
-            display: block;
-            height: 70px;
-            padding: 0 30px;
-            color: #000;
-            font-size: 22px;
-            line-height: 70px;
-        }
-        #newHeader .header-bottom {
-                background: #fff;
-                border-bottom: 1px solid #dadada;
-            }
-        #newHeader .h-ui {
-            display: flex;
-            align-items: center;
-        }
-        #newHeader .h-menu {
-            position: relative;
-            width: 26px;
-            height: 16px;
-            cursor: pointer;
-        }
-        #newHeader .h-menu span { position: absolute; width: 26px; height: 4px; display: block; background-color: #000; transition: all 0.2s ease-in; }
-        #newHeader .h-menu span:first-child { top: 0; }
-        #newHeader .h-menu span:nth-child(2) { top: 50%; }
-        #newHeader .h-menu span:last-child { top: 100%; }
-        #newHeader .h-menu.on span:first-child { top: 50%; transform: rotate(45deg);}
-        #newHeader .h-menu.on span:nth-child(2) { width: 0; }
-        #newHeader .h-menu.on span:last-child { top: 50%; transform: rotate(-45deg); }
-        #newHeader .h-search {
-            margin-left: 34px;
-            flex-shrink: 0;
-        }    
-    </style>
+
     <header id="newHeader">
-        <div class="header-top">
+        <div class="nheader_top">
             <div class="innerSection">
-                <div class="h-util">
+                <div class="h_util">
                     <ul>
                         <li>
                             <a href="#" target="_blank" title="경기도일자리재단 이동">
@@ -171,15 +73,15 @@
                 </div>
             </div>
         </div>
-        <div class="header-bottom">
+        <div class="nheader_bottom">
             <div class="innerSection">
-                <div class="h-cont">
+                <div class="h_cont">
                     <h1 class="logo">
                         <a href="#">
                             <img src="./images/main/logo.png" alt="잡아바 로고">
                         </a>
                     </h1>
-                    <ul class="h-gnb">
+                    <ul class="h_gnb">
                         <li>
                             <a href="">
                                 정책정보
@@ -206,13 +108,13 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="h-ui">
-                        <div class="h-menu">
+                    <div class="h_ui">
+                        <div class="h_menu">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <div class="h-search">
+                        <div class="h_search">
                             <button><img src="./images/main/icon_search.png" alt="검색"></button>
                         </div>
                     </div>
@@ -221,84 +123,161 @@
         </div>
     </header>
     <main id="newMain">
-        <article>
+        <article class="m_eduCenter">
+            <div class="innerSection">
+                <div class="m_eduWrap">
+                    <div class="m_edutxt">
+                        <h2>잡아바 러닝센터</h2>
+                        <p>청년 맞춤형 온라인 취업지원서비스</p>
+                        <p>
+                            청년 취업 역량강화,<br>
+                            구직 단념 청년의 취직 욕구 <br>
+                            고취를 위한 경기도 일자리재단의 <br>
+                            취업지원 사업입니다.
+                        </p>
+                    </div>
+                    <div class="m_educont">
 
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="m_useful">
+            <div class="innerSection">
+                <div class="m_useful_wrap">
+                    <h2>아주 유용한 꿀팁</h2>
+                    <ul class="m_useful_btn">
+                        <li class="active" data-tab="useful01">전체</li>
+                        <li data-tab="useful02">일자리</li>
+                        <li data-tab="useful03">주거/자산</li>
+                        <li data-tab="useful04">생활/문화</li>
+                        <li data-tab="useful05">취업성공수지</li>
+                        <li data-tab="useful06">자격증</li>
+                        <li data-tab="useful07">잡아바펀</li>
+                    </ul>
+                    <div class="m_useful_cont active" data-tab="useful01">
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략dddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                                <strong>취업코치의 꿀팁 대방출dddddddddddddddddddddddddddddddddddddd</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="m_useful_cont" data-tab="useful02">
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>2222222222222222222222222222222222222222222222222222</p>
+                                <strong>222222222222222222222222222222222222222222222222222222222222222</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="m_useful_cont" data-tab="useful03">
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>33333333333333333333333333333333333333333333333333333333333</p>
+                                <strong>333333333333333333333333333333333333333333333333333333d</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="m_useful_thumb">
+                                <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                            </div>                                  
+                            <div class="m_useful_txt">
+                                <p>자기개발 > 취/창업 > 취업전략</p>
+                                <strong>취업코치의 꿀팁 대방출</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </article>
     </main>
-    <style>
-        #newFooter .footer-top {
-            background: #444;
-        }
-        #newFooter .f-util {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 13px 0;
-        }
-        #newFooter .f-nav {
-            display: flex;
-        }
-        #newFooter .f-nav li + li {
-            margin-left: 30px;
-        }
-        #newFooter .f-nav li a {
-            color: #fff;
-            font-size: 14px;
-        }
-        #newFooter .f-sns {
-            display: flex;
-            margin-left: auto;
-        }
-        #newFooter .f-sns li {
-            margin-right: 22px;
-        }
-        #newFooter .f-sns li a {
-            display: block;
-            width: 25px;
-            height: 26px;
-            text-indent: -9999px;
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-        #newFooter .f-sns li a.face {
-            background-image: url(./images/main/icon_face.png);
-        }
-        #newFooter .f-sns li a.insta {
-            background-image: url(./images/main/icon_insta.png);
-        }
-        #newFooter .f-sns li a.youtu {
-            background-image: url(./images/main/icon_youtube.png);
-        }
-        #newFooter .f-sns li a.app {
-            background-image: url(./images/main/icon_appstore.png);
-        }
-        #newFooter .f-sns li a.play {
-            background-image: url(./images/main/icon_playstore.png);
-        }
-        #newFooter .f-family {
-            width: 270px;
-        }
-        #newFooter .f-family select {
-            width: 100%;
-            height: 42px;
-            padding: 0 20px;
-            background: #ededed url(./images/main/icon_f_arrow.png) right 20px center no-repeat;
-            color: #5c5c5c;
-            font-size: 14px;
-            font-weight: 700;
-            outline: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #newFooter .f-family select option {
-            background: #fff;
-        }
-    </style>
     <footer id="newFooter">
-        <div class="footer-top">
+        <div class="nfooter_top">
             <div class="innerSection">
-                <div class="f-util">
-                    <ul class="f-nav">
+                <div class="f_util">
+                    <ul class="f_nav">
                         <li>
                             <a href="" target="_blank">
                                 경기도일자리재단
@@ -321,7 +300,7 @@
                         </li>
                     </ul>
 
-                    <ul class="f-sns">
+                    <ul class="f_sns">
                         <li>
                             <a href="" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
                         </li>
@@ -339,7 +318,7 @@
                         </li>
                     </ul>
 
-                    <div class="f-family">
+                    <div class="f_family">
                         <select onchange="window.open(value,'_blank');" title="패밀리 사이트 선택">
                             <option value="">Family Site</option>
                             <option value="https://www.gjf.or.kr/">경기도일자리재단</option>
@@ -355,30 +334,50 @@
                 </div>
             </div>
         </div>
-        <style>
-            #newFooter .f-business {
-                display: flex;
-                padding: 32px 0;
-                border-bottom: 2px solid #eeeeee;
-            }
-            #newFooter .f-business .f-slogan {
-                margin-left: auto;
-                margin-right: 38px;
-            }
-        </style>
-        <div class="footer-mid">
-            <div class="innerSection">
-                <div class="f-business">
-                    <h1 class="f-logo">
+        <div class="nfooter_mid">
+            <div class="innerSection"> 
+                <div class="f_business">
+                    <h1 class="f_logo">
                         <img src="./images/main/jababa_logo.png" alt="잡아바 로고">
                     </h1>
-                    <div class="f-bswrap">
-                        <dl>
-                            <dt></dt>
-                            <dd></dd>
-                        </dl>
+                    <div class="f_enquiry">
+                        <div>
+                            <strong>사업별 문의안내</strong>
+                            <p>
+                                평일 : 09 : 00 ~ 18 : 00<br>
+                                토, 일요일 및 법정공휴일 휴무
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="f_enquiry_tit">경기도 청년노동자 지원사업</span>
+                                <span class="f_enquiry_number">1577 - 0014</span>
+                            </p>
+                            <p>
+                                <span class="f_enquiry_tit">경기도 일자리재단 사업문의</span>
+                                <span class="f_enquiry_number">031 - 270 - 9600</span>
+                            </p>
+                            <p>
+                                <span class="f_enquiry_tit">경기 여성 취업지원금 문의</span>
+                                <span class="f_enquiry_number">1522 - 3582</span>
+                            </p>
+                            <p>
+                                <span class="f_enquiry_tit">청년면접수당</span>
+                                <span class="f_enquiry_number">1877 - 2046</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="f_enquiry_tit">청년기본소득 시업문의</span>
+                                <span class="f_enquiry_number">031 - 120</span>
+                            </p>
+                            <p>
+                                <span class="f_enquiry_tit">경기지역화폐 카드문의</span>
+                                <span class="f_enquiry_number">1899 - 7997</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="f-slogan">
+                    <div class="f_slogan">
                         <a href="" target="_blank" title="경기도 도청 이동">
                             <img src="./images/main/gyeonggi_slogan.png" alt="변화의 중심 기회의 경기">
                         </a>
@@ -386,8 +385,31 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-
+        <div class="nfooter_bottom">
+            <div class="innerSection">
+                <div class="f_addwrap">
+                    <div class="f_gyeonggi_logo">
+                        <a href="" target="_blank" title="경기도일자리재단 이동">
+                            <img src="./images/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
+                        </a>
+                    </div>
+                    <div class="f_address">
+                        <p>경기도 부천시 부천로 136번길 27, 3층 (14566) 경기도일자리재단 서부사업본부</p>
+                        <p><span>잡아바 이용문의 : 031 - 270 - 9988</span> <span>이메일 : jobaba@gjf.or.kr</span></p>
+                        <p>Copyright  ⓒ Gyeonggido Job Foundation. All Rights Reserved.</p>
+                        <ul>
+                            <li class="award">2020, 2019, 2018 아시아태평양<br>
+                                스티비어워드 3년 연속수상</li>
+                            <li class="ieco">2018 인터넷어워드<br>
+                                일자리창출 분야 대상</li>
+                            <li class="ksci">2019, 2018 한국소비자만족지수<br>
+                                공공서비스부문 2년 연속 1위</li>
+                            <li class="rankey">공공취업·창업분야 1위<br>
+                                랭키닷컴 2021, 2020, 2019, 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -395,26 +417,34 @@
 
     
 
-<!--잡아바 js-->
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+<!-- 잡아바 js -->
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery-ui_1.11.4.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.validate_1.14.0.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/imgLiquid_min.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/jquery.vticker_min.js"></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script>
 
+
+    $('.m_useful .m_useful_btn li').click(function(){
+	    var useful = $(this).attr('data-tab');
+	    $('.m_useful .m_useful_btn li').removeClass('active');
+	    $(this).addClass('active');
+	    $('.m_useful .m_useful_cont').removeClass('active');
+	    $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
+	});
     
 
 
