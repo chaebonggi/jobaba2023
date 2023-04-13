@@ -123,13 +123,33 @@
         </div>
     </header>
     <main id="newMain">
+        <style>
+            #newMain .m_eduCenter .m_edutxt p {
+                color: #666666;
+                font-size: 16px;
+            }
+            #newMain .slick-prev, #newMain .slick-next{width:21px;height:41px;background:url(https://jb22.kgoon.pw/html/images/newMain/arrow_slick.png);}
+            #newMain .slick-prev:before, #newMain .slick-next:before{content:"";}
+            #newMain .slick-next{background-position:-21px 0;}
+            .m_eduWrap {
+                display: flex;
+                justify-content: space-between;
+                padding: 45px 68px 45px 40px;
+                background: #dbeefb;
+                border-radius: 20px;
+            }
+            .m_educont {
+                width: calc(100% - 340px);
+                border: 1px solid red;
+            }
+        </style>
         <article class="m_eduCenter">
             <div class="innerSection">
                 <div class="m_eduWrap">
                     <div class="m_edutxt">
                         <h2>잡아바 러닝센터</h2>
                         <p>청년 맞춤형 온라인 취업지원서비스</p>
-                        <p>
+                        <p class="mt20">
                             청년 취업 역량강화,<br>
                             구직 단념 청년의 취직 욕구 <br>
                             고취를 위한 경기도 일자리재단의 <br>
@@ -137,7 +157,23 @@
                         </p>
                     </div>
                     <div class="m_educont">
-
+                        <div class="m_edu_slide">
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <div class="m_edu_img">
+                                        <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                    </div>
+                                    <div class="m_edu_txt">
+                                        <span class="state">HOT</span>
+                                        <strong>경기도기술학교 무료 교육생</strong>
+                                        <p class="date">2023.01.30.(월) ~ 2023.04.28.(금)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">2</div>
+                            <div class="swiper-slide">3</div>
+                            <div class="swiper-slide">4</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -445,7 +481,35 @@
 	    $('.m_useful .m_useful_cont').removeClass('active');
 	    $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
 	});
-    
+    $('.m_edu_slide').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // responsive: [
+        //     {
+        //         breakpoint: 1024,
+        //         settings: {
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1,
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 820,
+        //         settings: {
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1,
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 640,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             slidesToScroll: 1,
+        //         }
+        //     }
+        // ]
+    });
 
 
     
