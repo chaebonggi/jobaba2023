@@ -28,7 +28,7 @@
 /* */
 #newMain { padding: 24px 0; } 
 #newMain h2 { color: #000; font-size: 24px; } 
-#newMain .m_useful .m_useful_wrap { padding: 28px 30px; margin-bottom: 62px; background: #f0f0f0; border-radius: 20px; } 
+#newMain .m_useful .m_useful_wrap { padding: 28px 36px; margin-bottom: 62px; background: #f0f0f0; border-radius: 20px; } 
 #newMain .m_useful .m_useful_btn { display: flex; margin: 16px 0; } 
 #newMain .m_useful .m_useful_btn li { padding: 4px 20px; color: #666666; font-size: 16px; font-weight: 600; cursor: pointer; border-radius: 20px; } 
 #newMain .m_useful .m_useful_btn li.active { color: #fff; background: #003281; } 
