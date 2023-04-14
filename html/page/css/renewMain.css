@@ -39,7 +39,7 @@
 #newMain .m_useful .m_useful_thumb { height: 190px; border: 2px solid #fff; border-radius: 15px; overflow: hidden; } 
 #newMain .m_useful .m_useful_thumb img { width: 100%; height: 100%; object-fit: cover; } 
 #newMain .m_useful .m_useful_txt { padding: 14px 10px; } 
-#newMain .m_useful .m_useful_txt p { color: #808080; font-size: 12px; text-overflow: ellipsis;overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
+#newMain .m_useful .m_useful_txt p {margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis;overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
 #newMain .m_useful .m_useful_txt strong {color: #000; font-size: 14px; text-overflow: ellipsis;overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
 /* */
 #newFooter .nfooter_top { background: #444; } 
