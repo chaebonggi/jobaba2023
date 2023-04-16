@@ -1,5 +1,5 @@
 .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; } 
-.mt20 {margin-top: 20px;}
+.mt20 { margin-top: 20px; } 
 
 #newHeader .nheader_top { background: #008ae0; } 
 #newHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 50px; } 
@@ -28,20 +28,41 @@
 /* */
 #newMain { padding: 24px 0; } 
 #newMain h2 { color: #000; font-size: 24px; } 
+#newMain .state { display: inline-block; padding: 0 10px; margin-bottom: 8px; font-size: 10px; border-style: solid; border-width: 1px; border-radius: 10px; } 
+#newMain .state.orange { color: #ff4200; border-color: #ff4200; } 
+#newMain .state.mint { color: #44adb3; border-color: #44adb3; } 
+
+/* 잡아바 러닝센터 */
+#newMain .m_educenter .m_eduwrap { position: relative; display: flex; justify-content: space-between; padding: 45px 30px 45px 40px; margin-bottom: 50px; background: #dbeefb; border-radius: 20px; } 
+#newMain .m_educenter .m_eduwrap::before { content: ''; width: 201px; height: 85px; position: absolute; bottom: 40px; left: 33px; background: url(./images/main/educenter_img01.png); } 
+#newMain .m_educenter .m_edutxt p { color: #666666; font-size: 16px; } 
+#newMain .m_educenter .swiper-slide a {display: block; background: #fff; border: 2px solid #fff; border-radius: 20px; overflow: hidden; } 
+#newMain .m_educenter .swiper-button-next { right: 0; left: initial !important; color: #9facb6; } 
+#newMain .m_educenter .swiper-button-prev { left: 0; color: #9facb6; } 
+#newMain .m_educenter .m_edu_img { height: 186px; } 
+#newMain .m_educenter .m_edu_img img { width: 100%; height: 100%; object-fit: cover; } 
+#newMain .m_educenter .m_edu_txt { padding: 8px 15px; } 
+#newMain .m_educenter .m_edu_txt .tit { color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
+#newMain .m_educenter .m_edu_txt .date { color: #666666; font-size: 12px; font-weight: 300; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
+#newMain .m_educenter .swiper-container { width: calc(100% - 76px); } 
+#newMain .m_educenter .m_educont { position: relative; width: calc(100% - 300px); overflow: hidden; }
+#newMain .m_educenter .swiper-slide { display: flex; } 
+#newMain .m_educenter .swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover; } 
+/* 유용한 꿀팁 */
 #newMain .m_useful .m_useful_wrap { padding: 28px 36px; margin-bottom: 62px; background: #f0f0f0; border-radius: 20px; } 
 #newMain .m_useful .m_useful_btn { display: flex; margin: 16px 0; } 
 #newMain .m_useful .m_useful_btn li { padding: 4px 20px; color: #666666; font-size: 16px; font-weight: 600; cursor: pointer; border-radius: 20px; } 
 #newMain .m_useful .m_useful_btn li.active { color: #fff; background: #003281; } 
-#newMain .m_useful .m_useful_cont { display: none;}
+#newMain .m_useful .m_useful_cont { display: none; } 
 #newMain .m_useful .m_useful_cont.active { display: flex; justify-content: center; } 
 #newMain .m_useful .m_useful_cont a { width: calc((100% - 42px) / 4); } 
 #newMain .m_useful .m_useful_cont a + a { margin-left: 14px; } 
 #newMain .m_useful .m_useful_thumb { height: 190px; border: 2px solid #fff; border-radius: 15px; overflow: hidden; } 
 #newMain .m_useful .m_useful_thumb img { width: 100%; height: 100%; object-fit: cover; } 
 #newMain .m_useful .m_useful_txt { padding: 14px 10px; } 
-#newMain .m_useful .m_useful_txt p {margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis;overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
-#newMain .m_useful .m_useful_txt strong {color: #000; font-size: 14px; text-overflow: ellipsis;overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
-/* */
+#newMain .m_useful .m_useful_txt p { margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+#newMain .m_useful .m_useful_txt strong { color: #000; font-size: 14px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+/*  */
 #newFooter .nfooter_top { background: #444; } 
 #newFooter .f_util { display: flex; align-items: center; justify-content: space-between; padding: 13px 0; } 
 #newFooter .f_nav { display: flex; } 
