@@ -125,93 +125,16 @@
     <main id="newMain">
         <article class="m_visual">
             <div class="innerSection">
-                <style>
-                    #newMain .m_visual {
-                        margin-bottom: 50px;
-                    }
-                    #newMain .m_visual_wrap {
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    #newMain .m_visual .m_visual_cont {
-                        width: calc(100% - 360px);
-                        padding: 40px 40px;
-                        background: #dbeefb;
-                        border-radius: 5px;
-                    }
-                    #newMain .m_visual .m_visual_items {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding: 0 16px;
-                    }
-                    #newMain .m_visual .m_visual_items li {
-                        width: calc(100% / 6 - 20px);
-                        height: 112px;
-                        box-sizing: border-box;
-                    }
-                    #newMain .m_visual .m_visual_items li a {
-                        display: block;
-                        height: 100%;
-                        color: #000;
-                        font-size: 16px;                        
-                        text-align: center;
-                    }
-                    #newMain .m_visual .m_visual_items li a::before {
-                        display: block;
-                        content: '';
-                        width: 84px;
-                        height: 78px;
-                        margin: 0 auto 10px auto;
-                        border-radius: 20px;
-                        background-color: #fff;
-                        background-position: center center;
-                        background-repeat: no-repeat;
-                        background-size: auto;
-                        transition: all 0.3s;
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item01::before {
-                        background-image: url(./images/main/icon_item01.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item02::before {
-                        background-image: url(./images/main/icon_item02.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item03::before {
-                        background-image: url(./images/main/icon_item03.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item04::before {
-                        background-image: url(./images/main/icon_item04.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item05::before {
-                        background-image: url(./images/main/icon_item05.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a.m_item06::before {
-                        background-image: url(./images/main/icon_item06.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover::before {
-                        background-color: #008ae0;
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item01::before {
-                        background-image: url(./images/main/icon_item01_on.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item02::before {
-                        background-image: url(./images/main/icon_item02_on.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item03::before {
-                        background-image: url(./images/main/icon_item03_on.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item04::before {
-                        background-image: url(./images/main/icon_item04_on.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item05::before {
-                        background-image: url(./images/main/icon_item05_on.png);
-                    }
-                    #newMain .m_visual .m_visual_items li a:hover.m_item06::before {
-                        background-image: url(./images/main/icon_item06_on.png);
-                    }
-                </style>
                 <div class="m_visual_wrap">
                     <div class="m_visual_cont">
+                        <div class="m_visual_search">
+                            <style>
+                                .m_visual_search {
+                                    height: 172px;
+                                    border: 1px solid red
+                                }
+                            </style>
+                        </div>
                         <ul class="m_visual_items">
                             <li>
                                 <a href="#" target="_blank" title="" class="m_item01">자소서첨삭</a>
@@ -232,185 +155,28 @@
                                 <a href="#" target="_blank" title="" class="m_item06">탐나는기업관</a>
                             </li>
                         </ul>
-                        <style>
-                        #newMain .m_visual .m_visual_notice {
-
-                        }
-                        #newMain .m_visual .m_notice_slide {
-                            display: flex;
-                            position: relative;
-                            background: #fff;
-                            border-radius: 5px;
-                        }
-                        #newMain .m_visual .m_notice_slide .swiper-container {
-                            height: 48px;
-                        }
-                        </style>
                         <div class="m_visual_notice">
-                            <div class="m_notice_slide">
+                            <div class="m_notice_wrap">
                                 <strong>공지사항</strong>
-                                <div class="swiper-container">
-                                    <ul>
-                                        <li>
+                                <div class="swiper-container m_notice_slide">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
                                             <a href="" target="_blank">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
                                         </li>
-                                        <li>
+                                        <li class="swiper-slide">
                                             <a href="" target="_blank">22222222222222222222222</a>
                                         </li>
-                                        <li>
+                                        <li class="swiper-slide">
                                             <a href="" target="_blank">33333333333333333333333333333</a>
                                         </li>
-                                        <li>
+                                        <li class="swiper-slide">
                                             <a href="" target="_blank">444444444444444444444444444444444444444444</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><span class="hidden">공지사항 이전 공지</span></div>
-                                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><span class="hidden">공지사항 다음 공지</span></div>
+                                <div class="swiper-button-prev"><span class="hidden">공지사항 이전 공지</span></div>
+                                <div class="swiper-button-next"><span class="hidden">공지사항 다음 공지</span></div>
                             </div>
-                        </div>
-                        <div>
-                            <!--  -->
-                            <style>
-                                .rolling_box{
-                                        display: none;
-                                        position:relative;
-                                        bottom:40px;
-                                        left:50%;
-                                        width:100%;
-                                        max-width:1280px;
-                                        transform:translateX(-50%);
-                                        z-index:10;
-                                    }
-                                    .rolling_slide{
-                                        position:relative;
-                                        display:flex;
-                                        float:left;
-                                        max-width:calc(50% - 20px);
-                                        width:50%;
-                                        background:#fff;
-                                        border-radius: 12px;
-                                        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
-                                        box-sizing: border-box;
-                                        padding:16px 0 16px 24px;
-                                    }
-                                    .rolling_slide strong {
-                                        margin-right:24px;
-                                        font-size:16px;
-                                        line-height:24px;
-                                    }
-                                    .rolling_slide .swiper-container{
-                                        height:24px;
-                                        padding-right:92px;
-                                        flex:1 0 0;
-                                    }
-                                    .rolling_slide .swiper-slide a{
-                                        display:block;
-                                        width:100%;
-                                        color:#666;
-                                        font-size:16px;
-                                        line-height:24px;
-                                        overflow:hidden;
-                                        white-space:nowrap;
-                                        text-overflow:ellipsis;
-                                    }
-                                    .rolling_slide .swiper-button-next,
-                                    .rolling_slide .swiper-button-prev{
-                                        width:36px;
-                                        height:36px;
-                                        top:50%;
-                                        margin-top:-18px;
-                                    }
-                                    .rolling_slide .swiper-button-next{
-                                        right:46px;
-                                        background:url("https://www.culture.go.kr/assets/images/common_new/slide_rolling_prev.png") no-repeat 0 0;
-                                    }
-                                    .rolling_slide .swiper-button-prev{
-                                        left:auto;
-                                        right:10px;
-                                        background:url("https://www.culture.go.kr/assets/images/common_new/slide_rolling_next.png") no-repeat 0 0;
-                                    }
-                                    .rolling_slide.rolling_slide_culture .swiper-slide a{
-                                        font-size:0;
-                                    }
-                                    .rolling_slide.rolling_slide_culture .swiper-slide a .sale{
-                                        display:inline-block;
-                                        width:55px;
-                                        background:#e42c01;
-                                        border-radius:12px;
-                                        color:#fff;
-                                        font-size:13px;
-                                        line-height:24px;
-                                        text-align:center;
-                                        vertical-align:top;
-                                        font-weight:400;
-                                        font-family:'montserrat';
-                                    }
-                                    .rolling_slide.rolling_slide_culture .swiper-slide a .sale em{
-                                        color:#fff;
-                                        font-weight:700;
-                                        font-family:'montserrat';
-                                    }
-                                    .rolling_slide.rolling_slide_culture .swiper-slide a p{
-                                        display:inline-block;
-                                        width:calc(100% - 185px);
-                                        padding:0 9px 0 4px;
-                                        vertical-align:top;
-                                        font-size:16px;
-                                        line-height:24px;
-                                        overflow:hidden;
-                                        white-space:nowrap;
-                                        text-overflow:ellipsis;
-                                        box-sizing:border-box;
-                                    }
-                                    .rolling_slide.rolling_slide_culture .swiper-slide a .date{
-                                        display:inline-block;
-                                        width:130px;
-                                        text-align:right;
-                                        font-size:12px;
-                                        line-height:24px;
-                                        font-weight:400;
-                                        font-family:'montserrat';
-                                        vertical-align:top;
-                                }
-                            </style>
-                            <div class="rolling_box">
-                                <div class="rolling_slide slider-0">
-                                    <strong>공지사항</strong>
-                                    <div class="swiper-container">
-                                        <ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, -48px, 0px);"><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6031&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
-                                            </li>
-                                        
-                                            <li class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6048&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2023년 2월 23일(목), 18:00 ~ 19:00)</a>
-                                            </li>
-                                        
-                                            <li class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6039&amp;cPage=1">[공지] 문화포털이 신규서비스와 함께 더욱 더 새로워집니다!</a>
-                                            </li>
-                                        
-                                            <li class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6037&amp;cPage=1">[공지] 오픈API 예술용어사전 조회서비스 중단 안내</a>
-                                            </li>
-                                        
-                                            <li class="swiper-slide" data-swiper-slide-index="3" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6035&amp;cPage=1">[공지]  문화포털 사이트 개편 및 점검으로 인한 일시중단 안내(2023년 1월 18일(수)18:00 ~ 22:00)</a>
-                                            </li>
-                                        
-                                            <li class="swiper-slide" data-swiper-slide-index="4" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6031&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
-                                            </li>
-                                        
-                                        <li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="height: 24px;">
-                                                <a href="/news/noticeView.do?seq=6048&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2023년 2월 23일(목), 18:00 ~ 19:00)</a>
-                                            </li></ul>
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><span class="hidden">공지사항 이전 공지</span></div>
-                                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><span class="hidden">공지사항 다음 공지</span></div>
-                                </div>
-                            </div>
-                            <!--  -->
                         </div>
                     </div>
                     <div class="m_login_form">
@@ -448,6 +214,113 @@
                     </div>
                 </div>
             </div>
+        </article>
+        <article class="m_banner">
+            <style>
+               .m_banner .swiper-container {
+          position: relative;
+          width: 100%;
+          padding: 0 0 60px;
+          margin-bottom: 50px;
+          box-sizing: border-box;
+        }
+        .m_banner .swiper-wrapper {
+          margin-left: -184px;
+          
+        }
+        .m_banner .swiper-slide {
+          width: 275px;
+          margin-right: 30px;
+          background: #eee;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s;
+          box-sizing: border-box;
+        }
+        
+        .m_banner .swiper-slide .imgWrap {
+          font-size: 0;
+        }
+        .m_banner .swiper-slide.swiper-slide-active {
+          width: 670px;
+          background: yellow;
+        }
+        .m_banner .swiper-slide .imgWrap .x2 {
+          display: none;
+        }
+        .m_banner .swiper-slide.swiper-slide-active .x1 {
+          display: none;
+        }
+        .m_banner .swiper-slide.swiper-slide-active .x2 {
+          display: block;
+          height: 260px;
+        }
+        .m_banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            width: 70px;
+            border-radius: 10px;
+            background: #003280;
+        }
+            </style>
+            <div class="swiper-container swiper02">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
+                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </article>
         <article class="m_policy">
             <div class="innerSection">
@@ -605,7 +478,39 @@
                 </div>
             </div>
         </article>
-
+        <article class="m_employ">
+            <div class="innerSection">
+                <div>
+                    <style>
+                        .m_employ {
+                            position: relative;
+                            border: 1px solid red;
+                        }
+                        .m_employ::before {
+                            content: '';
+                            width: 100%;
+                            height: 240px;
+                            top: 0;
+                            position: absolute;
+                            z-index: -1;
+                            background-color: #38bab2;
+                        }
+                        .m_employ .a {
+                            border: 1px solid blue;
+                            width: 500px;
+                            height: 400px;
+                            background: #fff;
+                        }
+                    </style>
+                    <div class="a">
+                        채용중인 탐나는 기업
+                    </div>
+                    <div class="b">
+                        채용정보
+                    </div>
+                </div>
+            </div>
+        </article>
         <article class="m_educenter">
             <div class="innerSection">
                 <div class="m_eduwrap">
@@ -998,7 +903,21 @@
             },
         });
     });
-
+    
+    var noticeSwiper = new Swiper(".m_notice_slide", {
+        initialSlide: -1, 
+        slidesPerView: 1,
+        direction: "vertical",
+        loop:true,
+        navigation: {
+            nextEl: ".m_notice_wrap .swiper-button-next",
+            prevEl: ".m_notice_wrap .swiper-button-prev",
+        },
+        autoplay:{
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
     // var policySwiper = new Swiper(".m_policy_slide", {
     //     slidesPerView: 4,
     //     spaceBetween: 15,
@@ -1007,36 +926,20 @@
     //         prevEl: ".m_policy .swiper-button-prev",
     //     },
     //     loop: true,
-    // });
-    // $(".rolling_box .rolling_slide").each(function(index){
-	// 		var $this = $(this);
-	// 		$this.addClass("slider-" + index);
-
-	// 		swiper = new Swiper('.slider-' + index + ' .swiper-container', {
-    //             initialSlide: -1, 
-	// 			slidesPerView: 1,
-	// 			direction: "vertical",
-	// 			loop:true,
-    //             autoplay:{
-	// 				delay: 5000,
-	// 				disableOnInteraction: false,
-	// 			},
-	// 			navigation: {
-	// 				nextEl: $('.slider-' + index).find('.swiper-button-next'),
-	// 				prevEl: $('.slider-' + index).find('.swiper-button-prev'),
-	// 			},
-	// 			on: {
-	// 				init: function () {
-	// 					slideInx = this.realIndex; //현재 슬라이드 index 갱신
-	// 				},
-	// 				activeIndexChange: function () {
-	// 					slideInx = this.realIndex; //현재 슬라이드 index 갱신
-	// 				}
-	// 			},
-	// 		});
-	// 	});
-    
-
+    // });    
+    var bannerSwiper = new Swiper('.swiper-container.swiper02', {
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },     
+    });
     
     var eduSwiper = new Swiper(".m_edu_slide", {
         slidesPerView: 3,
