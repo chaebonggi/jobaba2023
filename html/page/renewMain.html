@@ -123,120 +123,351 @@
         </div>
     </header>
     <main id="newMain">
-        <style>
-            #newMain .m_policy {
-                margin-bottom: 67px;
-            }
-            #newMain .m_policy h2 {
-                margin-left: 15px;
-                margin-top: 36px;
-            }
-            #newMain .m_policy .m_policy_info {
-                position: relative;
-                display: flex;
-                justify-content: space-between;
-            }
-            #newMain .m_policy .m_policy_btn {
-                position: absolute;
-                top: 80px;
-                left: 8px;
-            }
-            #newMain .m_policy .m_policy_btn li {
-                width: 110px;
-                padding: 3px 0 3px 24px;
-                color: #666666;
-                font-size: 16px;
-                border: 1px solid #cccccc;
-                border-radius: 20px;
-                cursor: pointer;
-            }
-            #newMain .m_policy .m_policy_btn li + li {
-                margin-top: 6px;
-            }
-            #newMain .m_policy .m_policy_btn li.active {
-                color: #003281;
-                border-width: 2px;
-                border-color: #003281;
-            }
-            #newMain .m_policy .m_policycont {
-                position: relative;
-                width: calc(100% - 176px);
-                overflow: hidden;
-            }
-            #newMain .m_policy .swiper-container {
-                width: calc(100% - 76px);
-            }
-            #newMain .m_policy .swiper-button-next {
-                right: 0;
-                left: initial !important;
-                color: #9facb6;
-            }
-            #newMain .m_policy .swiper-button-prev {
-                left: 0;
-                color: #9facb6;
-            }
-            #newMain .m_policy .swiper-slide a {
-                display: block;
-                position: relative;
-                background: #fff;
-                border: 1px solid #dddddd;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-            #newMain .m_policy .swiper-slide img {
-                height: 140px;
-            }
-            #newMain .m_policy .badge_wrap {
-                position: absolute;
-            }
-            #newMain .m_policy .m_policy_txt {
-                padding: 18px 20px;
-            }
-            #newMain .m_policy .m_policy_txt .tit {
-                height: 48px;
-                color: #000;
-                font-size: 16px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                word-break: break-all;
-                letter-spacing: -0.5px;
-            }
-            #newMain .m_policy .m_policy_txt .date {
-                margin-top: 8px;
-                color: #777777;
-                font-size: 16px;
-                font-weight: 300;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-                word-break: break-all;
-                letter-spacing: -0.5px;
-            }
-        </style>
+        <article class="m_visual">
+            <div class="innerSection">
+                <style>
+                    #newMain .m_visual {
+                        margin-bottom: 50px;
+                    }
+                    #newMain .m_visual_wrap {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    #newMain .m_visual .m_visual_cont {
+                        width: calc(100% - 360px);
+                        padding: 40px 40px;
+                        background: #dbeefb;
+                        border-radius: 5px;
+                    }
+                    #newMain .m_visual .m_visual_items {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding: 0 16px;
+                    }
+                    #newMain .m_visual .m_visual_items li {
+                        width: calc(100% / 6 - 20px);
+                        height: 112px;
+                        box-sizing: border-box;
+                    }
+                    #newMain .m_visual .m_visual_items li a {
+                        display: block;
+                        height: 100%;
+                        color: #000;
+                        font-size: 16px;                        
+                        text-align: center;
+                    }
+                    #newMain .m_visual .m_visual_items li a::before {
+                        display: block;
+                        content: '';
+                        width: 84px;
+                        height: 78px;
+                        margin: 0 auto 10px auto;
+                        border-radius: 20px;
+                        background-color: #fff;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        transition: all 0.3s;
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item01::before {
+                        background-image: url(./images/main/icon_item01.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item02::before {
+                        background-image: url(./images/main/icon_item02.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item03::before {
+                        background-image: url(./images/main/icon_item03.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item04::before {
+                        background-image: url(./images/main/icon_item04.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item05::before {
+                        background-image: url(./images/main/icon_item05.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a.m_item06::before {
+                        background-image: url(./images/main/icon_item06.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover::before {
+                        background-color: #008ae0;
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item01::before {
+                        background-image: url(./images/main/icon_item01_on.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item02::before {
+                        background-image: url(./images/main/icon_item02_on.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item03::before {
+                        background-image: url(./images/main/icon_item03_on.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item04::before {
+                        background-image: url(./images/main/icon_item04_on.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item05::before {
+                        background-image: url(./images/main/icon_item05_on.png);
+                    }
+                    #newMain .m_visual .m_visual_items li a:hover.m_item06::before {
+                        background-image: url(./images/main/icon_item06_on.png);
+                    }
+                </style>
+                <div class="m_visual_wrap">
+                    <div class="m_visual_cont">
+                        <ul class="m_visual_items">
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item01">자소서첨삭</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item02">AI역량검사</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item03">취업상담</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item04">러닝센터</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item05">온라인박람회</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="" class="m_item06">탐나는기업관</a>
+                            </li>
+                        </ul>
+                        <style>
+                        #newMain .m_visual .m_visual_notice {
+
+                        }
+                        #newMain .m_visual .m_notice_slide {
+                            display: flex;
+                            position: relative;
+                            background: #fff;
+                            border-radius: 5px;
+                        }
+                        #newMain .m_visual .m_notice_slide .swiper-container {
+                            height: 48px;
+                        }
+                        </style>
+                        <div class="m_visual_notice">
+                            <div class="m_notice_slide">
+                                <strong>공지사항</strong>
+                                <div class="swiper-container">
+                                    <ul>
+                                        <li>
+                                            <a href="" target="_blank">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
+                                        </li>
+                                        <li>
+                                            <a href="" target="_blank">22222222222222222222222</a>
+                                        </li>
+                                        <li>
+                                            <a href="" target="_blank">33333333333333333333333333333</a>
+                                        </li>
+                                        <li>
+                                            <a href="" target="_blank">444444444444444444444444444444444444444444</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><span class="hidden">공지사항 이전 공지</span></div>
+                                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><span class="hidden">공지사항 다음 공지</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <!--  -->
+                            <style>
+                                .rolling_box{
+                                        display: none;
+                                        position:relative;
+                                        bottom:40px;
+                                        left:50%;
+                                        width:100%;
+                                        max-width:1280px;
+                                        transform:translateX(-50%);
+                                        z-index:10;
+                                    }
+                                    .rolling_slide{
+                                        position:relative;
+                                        display:flex;
+                                        float:left;
+                                        max-width:calc(50% - 20px);
+                                        width:50%;
+                                        background:#fff;
+                                        border-radius: 12px;
+                                        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+                                        box-sizing: border-box;
+                                        padding:16px 0 16px 24px;
+                                    }
+                                    .rolling_slide strong {
+                                        margin-right:24px;
+                                        font-size:16px;
+                                        line-height:24px;
+                                    }
+                                    .rolling_slide .swiper-container{
+                                        height:24px;
+                                        padding-right:92px;
+                                        flex:1 0 0;
+                                    }
+                                    .rolling_slide .swiper-slide a{
+                                        display:block;
+                                        width:100%;
+                                        color:#666;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        overflow:hidden;
+                                        white-space:nowrap;
+                                        text-overflow:ellipsis;
+                                    }
+                                    .rolling_slide .swiper-button-next,
+                                    .rolling_slide .swiper-button-prev{
+                                        width:36px;
+                                        height:36px;
+                                        top:50%;
+                                        margin-top:-18px;
+                                    }
+                                    .rolling_slide .swiper-button-next{
+                                        right:46px;
+                                        background:url("https://www.culture.go.kr/assets/images/common_new/slide_rolling_prev.png") no-repeat 0 0;
+                                    }
+                                    .rolling_slide .swiper-button-prev{
+                                        left:auto;
+                                        right:10px;
+                                        background:url("https://www.culture.go.kr/assets/images/common_new/slide_rolling_next.png") no-repeat 0 0;
+                                    }
+                                    .rolling_slide.rolling_slide_culture .swiper-slide a{
+                                        font-size:0;
+                                    }
+                                    .rolling_slide.rolling_slide_culture .swiper-slide a .sale{
+                                        display:inline-block;
+                                        width:55px;
+                                        background:#e42c01;
+                                        border-radius:12px;
+                                        color:#fff;
+                                        font-size:13px;
+                                        line-height:24px;
+                                        text-align:center;
+                                        vertical-align:top;
+                                        font-weight:400;
+                                        font-family:'montserrat';
+                                    }
+                                    .rolling_slide.rolling_slide_culture .swiper-slide a .sale em{
+                                        color:#fff;
+                                        font-weight:700;
+                                        font-family:'montserrat';
+                                    }
+                                    .rolling_slide.rolling_slide_culture .swiper-slide a p{
+                                        display:inline-block;
+                                        width:calc(100% - 185px);
+                                        padding:0 9px 0 4px;
+                                        vertical-align:top;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        overflow:hidden;
+                                        white-space:nowrap;
+                                        text-overflow:ellipsis;
+                                        box-sizing:border-box;
+                                    }
+                                    .rolling_slide.rolling_slide_culture .swiper-slide a .date{
+                                        display:inline-block;
+                                        width:130px;
+                                        text-align:right;
+                                        font-size:12px;
+                                        line-height:24px;
+                                        font-weight:400;
+                                        font-family:'montserrat';
+                                        vertical-align:top;
+                                }
+                            </style>
+                            <div class="rolling_box">
+                                <div class="rolling_slide slider-0">
+                                    <strong>공지사항</strong>
+                                    <div class="swiper-container">
+                                        <ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, -48px, 0px);"><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6031&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6048&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2023년 2월 23일(목), 18:00 ~ 19:00)</a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6039&amp;cPage=1">[공지] 문화포털이 신규서비스와 함께 더욱 더 새로워집니다!</a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6037&amp;cPage=1">[공지] 오픈API 예술용어사전 조회서비스 중단 안내</a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide" data-swiper-slide-index="3" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6035&amp;cPage=1">[공지]  문화포털 사이트 개편 및 점검으로 인한 일시중단 안내(2023년 1월 18일(수)18:00 ~ 22:00)</a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide" data-swiper-slide-index="4" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6031&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2022년 12월 29일(목)18:00 ~ 30일(금) 06:00)</a>
+                                            </li>
+                                        
+                                        <li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="height: 24px;">
+                                                <a href="/news/noticeView.do?seq=6048&amp;cPage=1">[공지] 문화포털 사이트 서비스 일시 중단 안내(2023년 2월 23일(목), 18:00 ~ 19:00)</a>
+                                            </li></ul>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><span class="hidden">공지사항 이전 공지</span></div>
+                                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><span class="hidden">공지사항 다음 공지</span></div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                    <div class="m_login_form">
+                        <div class="m_login_wrap">
+                            <ul>
+                                <li>
+                                    <input type="text" id="usrId" name="usrId" class="m_login_input mgb10" autocomplete="no" placeholder="아이디" title="아이디">
+                                </li>
+                                <li>
+                                    <input type="password" id="pswd" name="pswd" class="m_login_input mgb10" autocomplete="no" placeholder="비밀번호" title="비밀번호">
+                                </li>
+                            </ul>
+                            <button type="submit" class="m_login_btn mgb10">로그인</button>
+                            <div class="m_login_sub">
+                                <a href="#" class="m_login_look">아이디/비밀번호 찾기</a>
+                                <a href="#" class="m_login_join">회원가입</a>                                
+                            </div>
+                        </div>
+                        <div class="m_counseling_wrap">
+                            <a href="#" target="_blank" class="m_counseling_chat">
+                                실시간 채팅상담 서비스<br>
+                                <span>도와줘요!<strong>잡아바!</strong></span>
+                            </a>
+                            <div class="m_counseling_box">
+                                <a href="#" target="_blank" class="m_counseling_job">
+                                    <span>내게 딱 맞는 일자리 찾기</span>
+                                    <strong>구직신청</strong>
+                                </a>
+                                <a href="#" target="_blank" class="m_counseling_recruit">
+                                    <span>우리 회사 맞춤인재 채용</span>
+                                    <strong>채용공고</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
         <article class="m_policy">
             <div class="innerSection">
                 <div class="m_policy_info">
                     <h2>정책정보</h2>
                     <div class="m_policy_btn">
                         <ul>
-                            <li class="active">경기도</li>
-                            <li>중앙부처</li>
-                            <li>시군</li>
+                            <li class="active" data-tab="policy01">경기도</li>
+                            <li data-tab="policy02">중앙부처</li>
+                            <li data-tab="policy03">시군</li>
                         </ul>
                     </div>
-                    <div class="m_policycont">
-                        <div class="swiper-container m_policy_slide">
+                    <div class="m_policy_cont active" data-tab="policy01">
+                        <div class="swiper-container m_policy_slide p1">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
-                                            <span>D-0</span>
-                                            <span>청년</span>
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge blue">청년</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -250,45 +481,116 @@
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
-                                            <span>D-0</span>
-                                            <span>청년</span>
+                                            <span class="badge days">D-110</span>
+                                            <span class="badge gray">중장년</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생</strong>
-                                            <p class="date">2023.01.30.(월) ~ 2023.04.28.(금)</p>
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
-                                            <span>D-0</span>
-                                            <span>청년</span>
+                                            <span class="badge days">D-0111</span>
+                                            <span class="badge pink">여성</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생</strong>
-                                            <p class="date">2023.01.30.(월) ~ 2023.04.28.(금)</p>
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
-                                            <span>D-0</span>
-                                            <span>청년</span>
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge blue">청년</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생</strong>
-                                            <p class="date">2023.01.30.(월) ~ 2023.04.28.(금)</p>
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="m_policy_cont" data-tab="policy02">
+                        <div class="swiper-container m_policy_slide p2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge blue">청년</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">22222222222222222 22222222222222222222222</strong>
+                                            <p class="date">22222222222222222222222222222222222222222222</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-110</span>
+                                            <span class="badge gray">중장년</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0111</span>
+                                            <span class="badge pink">여성</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge blue">청년</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
@@ -526,6 +828,9 @@
 
                     <ul class="f_sns">
                         <li>
+                            <a href="" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                        </li>
+                        <li>
                             <a href="" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
                         </li>
                         <li>
@@ -660,8 +965,15 @@
 <script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/jquery.vticker_min.js"></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script>
-
-
+    // 정책정보
+    $('.m_policy .m_policy_btn li').click(function(){
+	    var policy = $(this).attr('data-tab');
+	    $('.m_policy .m_policy_btn li').removeClass('active');
+	    $(this).addClass('active');
+	    $('.m_policy .m_policy_cont').removeClass('active');
+	    $('.m_policy .m_policy_cont[data-tab='+policy+']').addClass('active');
+	});
+    // 아주 유용한 꿀팁
     $('.m_useful .m_useful_btn li').click(function(){
 	    var useful = $(this).attr('data-tab');
 	    $('.m_useful .m_useful_btn li').removeClass('active');
@@ -669,15 +981,63 @@
 	    $('.m_useful .m_useful_cont').removeClass('active');
 	    $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
 	});
-    var policySwiper = new Swiper(".m_policy_slide", {
+
+    var $slider = $('.m_policy_cont');
+    $slider.find('.m_policy_slide').each(function(i){
+        var $this = $(this);
+        $this.siblings().addClass("type" + i);
+        var policySwiper = new Swiper($(this), {
         slidesPerView: 4,
         spaceBetween: 15,
-        navigation: {
-            nextEl: ".m_policy .swiper-button-next",
-            prevEl: ".m_policy .swiper-button-prev",
-        },
+        observer: true,
+        observeParents: true,        
         loop: true,
+        navigation: {
+                nextEl: $('.type' + i).find('.swiper-button-next'),
+                prevEl: $('.type' + i).find('.swiper-button-prev'),
+            },
+        });
     });
+
+    // var policySwiper = new Swiper(".m_policy_slide", {
+    //     slidesPerView: 4,
+    //     spaceBetween: 15,
+    //     navigation: {
+    //         nextEl: ".m_policy .swiper-button-next",
+    //         prevEl: ".m_policy .swiper-button-prev",
+    //     },
+    //     loop: true,
+    // });
+    // $(".rolling_box .rolling_slide").each(function(index){
+	// 		var $this = $(this);
+	// 		$this.addClass("slider-" + index);
+
+	// 		swiper = new Swiper('.slider-' + index + ' .swiper-container', {
+    //             initialSlide: -1, 
+	// 			slidesPerView: 1,
+	// 			direction: "vertical",
+	// 			loop:true,
+    //             autoplay:{
+	// 				delay: 5000,
+	// 				disableOnInteraction: false,
+	// 			},
+	// 			navigation: {
+	// 				nextEl: $('.slider-' + index).find('.swiper-button-next'),
+	// 				prevEl: $('.slider-' + index).find('.swiper-button-prev'),
+	// 			},
+	// 			on: {
+	// 				init: function () {
+	// 					slideInx = this.realIndex; //현재 슬라이드 index 갱신
+	// 				},
+	// 				activeIndexChange: function () {
+	// 					slideInx = this.realIndex; //현재 슬라이드 index 갱신
+	// 				}
+	// 			},
+	// 		});
+	// 	});
+    
+
+    
     var eduSwiper = new Swiper(".m_edu_slide", {
         slidesPerView: 3,
         spaceBetween: 15,
