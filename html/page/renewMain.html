@@ -127,96 +127,6 @@
             <div class="innerSection">
                 <div class="m_visual_wrap">
                     <div class="m_visual_cont">
-                        <style>
-                            #newMain .m_visual .m_visual_search {
-                                position: relative;
-                            }
-                            #newMain .m_visual .m_visual_search ul {
-                                display: inline-flex;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                background: #008ae0;
-                                border-radius: 20px;
-                            }
-                            #newMain .m_visual .m_visual_search ul li {
-                                width: 70px;
-                                padding: 3px 0;
-                                margin: 4px;
-                                color: #fff;
-                                font-size: 14px;
-                                font-weight: 600;
-                                border-radius: 20px;
-                                text-align: center;
-                                cursor: pointer;
-                                transition: all 0.2s;
-                            }
-                            #newMain .m_visual .m_visual_search ul li.active {
-                                background: #fff;
-                                color: #000;
-                            }
-                            #newMain .m_visual .m_search_cont .tit {
-                                margin-bottom: 20px;
-                                margin-left: 180px;
-                                color: #343434;
-                                font-size: 24px;
-                                font-weight: 300;
-                            }
-                            #newMain .m_visual .m_search_cont .search_btn {
-                                position: relative;
-                                display: block;
-                                width: 660px;
-                                padding: 14px 20px;
-                                margin-bottom: 14px;
-                                background: #fff;
-                                color: #888888;
-                                font-size: 24px;
-                                font-weight: 300;
-                                border-radius: 10px;
-                            }
-                            #newMain .m_visual .m_search_cont .search_btn::after {
-                                content: '';
-                                width: 24px;
-                                height: 24px;
-                                position: absolute;
-                                top: 50%;
-                                right: 20px;
-                                transform: translateY(-50%);
-                                background: url(./images/main/icon_search.png) no-repeat;
-                                background-size: contain;
-                            }
-                            #newMain .m_visual .m_search_cont .m_visual_keyword {
-                                position: relative;
-                                padding-left: 52px;
-                                margin-bottom: 24px;
-                            }
-                            #newMain .m_visual .m_search_cont .m_visual_keyword::before {
-                                content: '';
-                                width: 20px;
-                                height: 20px;
-                                position: absolute;
-                                left: 22px;
-                                top: 4px;
-                                background: url(./images/main/icon_keyword.png) no-repeat;
-                                background-size: contain;
-                            }
-                            #newMain .m_visual .m_search_cont .m_visual_keyword span {
-                                display: inline-block;
-                                margin-top: -20px;
-                                color: #464646;
-                                font-size: 14px;
-                                font-weight: 300;
-                            }
-                            #newMain .m_visual .m_search_cont .m_visual_keyword span + span {
-                                margin-left: 2px;
-                            }
-                            #newMain .m_visual .m_search_cont {
-                                display: none;
-                            }
-                            #newMain .m_visual .m_search_cont.active {
-                                display: block;
-                            }
-                        </style>
                         <div class="m_visual_search">
                             <ul>
                                 <li class="active" data-tab="search01">정책</li>
@@ -1238,6 +1148,13 @@
                 </div>
             </div>
         </article>
+        <article class="m_banner for_mo">
+            <div class="innerSection">
+                <div class="m_banner_mobile">
+                    <img src="./images/main/mobile_banner.png" alt="">
+                </div>
+            </div>
+        </article>
     </main>
     <footer id="newFooter">
         <div class="nfooter_top">
@@ -1306,12 +1223,35 @@
         <div class="nfooter_mid">
             <div class="innerSection"> 
                 <div class="f_business">
-                    <h1 class="f_logo">
+                    <div class="f_logo">
                         <img src="./images/main/jababa_logo.png" alt="잡아바 로고">
-                    </h1>
+                        <a href="" target="_blank" title="경기도일자리재단 이동" class="for_mo">
+                            <img src="./images/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
+                        </a>
+                        <ul class="f_sns for_mo">
+                            <li>
+                                <a href="" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                            </li>
+                            <li>
+                                <a href="" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                            </li>
+                            <li>
+                                <a href="" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                            </li>
+                            <li>
+                                <a href="" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                            </li>
+                            <li>
+                                <a href="" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                            </li>
+                            <li>
+                                <a href="" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="f_enquiry">
                         <div>
-                            <strong>사업별 문의안내</strong>
+                            <strong><span>사업별</span> 문의안내</strong>
                             <p>
                                 평일 : 09 : 00 ~ 18 : 00<br>
                                 토, 일요일 및 법정공휴일 휴무
@@ -1351,6 +1291,12 @@
                             <img src="./images/main/gyeonggi_slogan.png" alt="변화의 중심 기회의 경기">
                         </a>
                     </div>
+                    <div class="f_tel for_mo">
+                        <a href="tel:031-270-9600">
+                            <p>경기도일자리재단 사업문의</p>
+                            <strong>031-270-9600</strong>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1387,22 +1333,22 @@
     
 
 <!-- 잡아바 js -->
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery-ui_1.11.4.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.validate_1.14.0.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/common.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/imgLiquid_min.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
-<script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/jquery.vticker_min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui_1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate_1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid_min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker_min.js"></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script>
     // 검색
@@ -1477,31 +1423,26 @@
             disableOnInteraction: false,
         },
     });
-    // var policySwiper = new Swiper(".m_policy_slide", {
-    //     slidesPerView: 4,
-    //     spaceBetween: 15,
-    //     navigation: {
-    //         nextEl: ".m_policy .swiper-button-next",
-    //         prevEl: ".m_policy .swiper-button-prev",
-    //     },
-    //     loop: true,
-    // });    
+    
     var bannerSwiper = new Swiper('.swiper-container.swiper02', {
         spaceBetween: 0,
         slidesPerView: 'auto',
         centeredSlides: true, 
         loop: true,
+        autoHeight: true,
         pagination: {
         el: ".swiper-pagination",
         },
+        autoplay:{
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         onSlideChangeEnd:function(e){
-            bannerSwiper.update(true);
+            bannerSwiper.update(e);
         }
     });
-    bannerSwiper.update();
-    swiper.update();
     
-    // 
+    
     var $slider = $('.m_employ_items01');
     $slider.find('.m_employ_slide').each(function(){
         var employSwiper = new Swiper($(this), {
