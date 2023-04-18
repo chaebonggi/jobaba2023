@@ -127,13 +127,119 @@
             <div class="innerSection">
                 <div class="m_visual_wrap">
                     <div class="m_visual_cont">
+                        <style>
+                            #newMain .m_visual .m_visual_search {
+                                position: relative;
+                            }
+                            #newMain .m_visual .m_visual_search ul {
+                                display: inline-flex;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: #008ae0;
+                                border-radius: 20px;
+                            }
+                            #newMain .m_visual .m_visual_search ul li {
+                                width: 70px;
+                                padding: 3px 0;
+                                margin: 4px;
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: 600;
+                                border-radius: 20px;
+                                text-align: center;
+                                cursor: pointer;
+                                transition: all 0.2s;
+                            }
+                            #newMain .m_visual .m_visual_search ul li.active {
+                                background: #fff;
+                                color: #000;
+                            }
+                            #newMain .m_visual .m_search_cont .tit {
+                                margin-bottom: 20px;
+                                margin-left: 180px;
+                                color: #343434;
+                                font-size: 24px;
+                                font-weight: 300;
+                            }
+                            #newMain .m_visual .m_search_cont .search_btn {
+                                position: relative;
+                                display: block;
+                                width: 660px;
+                                padding: 14px 20px;
+                                margin-bottom: 14px;
+                                background: #fff;
+                                color: #888888;
+                                font-size: 24px;
+                                font-weight: 300;
+                                border-radius: 10px;
+                            }
+                            #newMain .m_visual .m_search_cont .search_btn::after {
+                                content: '';
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                top: 50%;
+                                right: 20px;
+                                transform: translateY(-50%);
+                                background: url(./images/main/icon_search.png) no-repeat;
+                                background-size: contain;
+                            }
+                            #newMain .m_visual .m_search_cont .m_visual_keyword {
+                                position: relative;
+                                padding-left: 52px;
+                                margin-bottom: 24px;
+                            }
+                            #newMain .m_visual .m_search_cont .m_visual_keyword::before {
+                                content: '';
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                                left: 22px;
+                                top: 4px;
+                                background: url(./images/main/icon_keyword.png) no-repeat;
+                                background-size: contain;
+                            }
+                            #newMain .m_visual .m_search_cont .m_visual_keyword span {
+                                display: inline-block;
+                                margin-top: -20px;
+                                color: #464646;
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                            #newMain .m_visual .m_search_cont .m_visual_keyword span + span {
+                                margin-left: 2px;
+                            }
+                            #newMain .m_visual .m_search_cont {
+                                display: none;
+                            }
+                            #newMain .m_visual .m_search_cont.active {
+                                display: block;
+                            }
+                        </style>
                         <div class="m_visual_search">
-                            <style>
-                                .m_visual_search {
-                                    height: 172px;
-                                    border: 1px solid red
-                                }
-                            </style>
+                            <ul>
+                                <li class="active" data-tab="search01">정책</li>
+                                <li data-tab="search02">채용</li>
+                            </ul>
+                            <div class="m_search_cont active" data-tab="search01">
+                                <p class="tit">관심있는 <strong>지원정책</strong>을 찾아보세요</p>
+                                <a href="#" class="search_btn">청년기본소득</a>
+                                <div class="m_visual_keyword">
+                                    <span>#취업상담</span>
+                                    <span>#러닝센터</span>
+                                    <span>#역량강화사업</span>
+                                </div>
+                            </div>
+                            <div class="m_search_cont" data-tab="search02">
+                                <p class="tit">관심있는 <strong>채용정보</strong>를 찾아보세요</p>
+                                <a href="#" class="search_btn">채용정보</a>
+                                <div class="m_visual_keyword">
+                                    <span>#채용상담</span>
+                                    <span>#러닝센터</span>
+                                    <span>#역량강화사업</span>
+                                </div>
+                            </div>
                         </div>
                         <ul class="m_visual_items">
                             <li>
@@ -478,112 +584,18 @@
                 </div>
             </div>
         </article>
-        <style>
-             #newMain .m_employ {
-                position: relative;
-                padding-top: 50px;
-                margin-bottom: 50px;
-            }
-            #newMain .m_employ::before {
-                content: '';
-                width: 100%;
-                height: 240px;
-                top: 0;
-                position: absolute;
-                z-index: -1;
-                background-color: #38bab2;
-            }
-            #newMain .m_employ .m_employ_wrap {
-                position: relative;
-                display: flex;
-                justify-content: space-between;
-            }
-            #newMain .m_employ .m_employ_wrap::before {
-                content: '';
-                width: 268px;
-                height: 113px;
-                left: -250px;
-                top: 70px;
-                position: absolute;
-                background: url(./images/main/icon_employ_img01.png) no-repeat;
-                background-size: contain;
-            }
-            #newMain .m_employ .m_employ_wrap::after {
-                content: '';
-                width: 269px;
-                height: 104px;
-                right: -252px;
-                top: 80px;
-                position: absolute;
-                background: url(./images/main/icon_employ_img02.png) no-repeat;
-                background-size: contain;
-                z-index: -1;
-            }
-            #newMain .m_employ .m_employ_wrap .m_employ_box {
-                width: calc((100% - 30px) / 2);
-                position: relative;
-                padding: 40px 40px 60px;
-                background: #fff;
-                border: 1px solid #dddddd;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-            #newMain .m_employ .m_employ_tit {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            #newMain .m_employ .m_employ_tit ul {
-                display: flex;
-            }
-            #newMain .m_employ .m_employ_tit ul li {
-                position: relative;
-                color: #666666;
-                font-size: 14px;
-                font-weight: 600;
-                cursor: pointer;
-            }
-            #newMain .m_employ .m_employ_tit ul li + li {
-                margin-left: 30px;
-            }
-            #newMain .m_employ .m_employ_tit ul li.active {
-                color: #38bab2;
-            }
-            #newMain .m_employ .m_employ_tit ul li.active::after {
-                content: '';
-                width: 100%;
-                height: 1px;
-                position: absolute;
-                bottom: -4px;
-                left: 0;
-                background: #38bab2;
-            }
-
-
-            #newMain .m_employ .m_employ_slide {
-                overflow: hidden;
-            }
-            #newMain .m_employ .swiper-slide {
-                position: relative;
-                border: 1px solid #dddddd;
-                border-radius: 10px;
-                height: 185px;
-            }
-
-           
-        </style>
         <article class="m_employ">
             <div class="innerSection">
                 <div class="m_employ_wrap">                    
                     <div class="m_employ_box">
                         <div class="m_employ_tit">
                             <h2>채용중인 탐나는 기업</h2>
-                            <ul>
-                                <li class="active">탐나는 기업추천</li>
-                                <li>탐나는기업채용공고</li>
+                            <ul class="m_employ_btn01">
+                                <li class="active" data-tab="emp1_01">탐나는 기업추천</li>
+                                <li data-tab="emp1_02">탐나는기업채용공고</li>
                             </ul>
                         </div>
-                        <div>
+                        <div class="m_employ_items01 active" data-tab="emp1_01">
                             <div class="m_employ_slide">
                                 <div class="swiper-wrapper">
                                     <a href="" class="swiper-slide">
@@ -592,15 +604,59 @@
                                             <span class="badge area">남양주</span>
                                         </div>
                                         <div class="m_employ_img">
-                                            <img src="./images/main/aero_logo.png" alt="에어로맥스">
+                                            <img src="./images/main/test_logo1.png" alt="에어로맥스">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">(주)에어로멕스</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">기타 공업기계설치ㆍ정비원 4,000~5,000만원</p>
                                         </div>
                                     </a>
-                                    <a href="" class="swiper-slide">2</a>
-                                    <a href="" class="swiper-slide">3</a>
-                                    <a href="" class="swiper-slide">4</a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-4</span>
+                                            <span class="badge area">수원시</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo2.png" alt="경기도농업기술원">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">경기도농업기술원</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">광주과학기술원 국제환경연구소 연구직 채용 공고</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo1.png" alt="에어로맥스">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">(주)에어로멕스</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">기타 공업기계설치ㆍ정비원 4,000~5,000만원</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-4</span>
+                                            <span class="badge area">수원시</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo2.png" alt="경기도농업기술원">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">(주)에어로멕스</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">기타 공업기계설치ㆍ정비원 4,000~5,000만원</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="m_employ_items">
+                            <div>
                                 <div class="m_employ_list">
                                     <div class="m_employ_item">
                                         <p class="tit">(주)아이쿼드</p>
@@ -645,13 +701,347 @@
                                 </div>
                             </div>
                             <div class="m_employ_more">
-                                <a href="">더보기</a>
+                                <a href="" target="_blank">더보기</a>
+                            </div>
+                        </div>
+                        <div class="m_employ_items01" data-tab="emp1_02">
+                            <div class="m_employ_slide">
+                                <div class="swiper-wrapper">
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo1.png" alt="에어로맥스">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">22222222222222222222</p>
+                                            <p class="date">2222222222</p>
+                                            <p class="etc">22222222222222222222222222222</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-4</span>
+                                            <span class="badge area">수원시</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo2.png" alt="경기도농업기술원">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">경기도농업기술원</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">광주과학기술원 국제환경연구소 연구직 채용 공고</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo1.png" alt="에어로맥스">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">(주)에어로멕스</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">기타 공업기계설치ㆍ정비원 4,000~5,000만원</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="swiper-slide">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-4</span>
+                                            <span class="badge area">수원시</span>
+                                        </div>
+                                        <div class="m_employ_img">
+                                            <img src="./images/main/test_logo2.png" alt="경기도농업기술원">
+                                        </div>
+                                        <div class="e_employ_txt">
+                                            <p class="tit">(주)에어로멕스</p>
+                                            <p class="date">2023.03.02.(목) ~ 03.31.(금)</p>
+                                            <p class="etc">기타 공업기계설치ㆍ정비원 4,000~5,000만원</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p>~06.02(목)</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_employ_more">
+                                <a href="" target="_blank">더보기</a>
                             </div>
                         </div>
                     </div>
-                    <!--  -->
                     <div class="m_employ_box">
-                        <h2>채용정보</h2>
+                        <div class="m_employ_tit">
+                            <h2>채용정보</h2>
+                            <ul class="m_employ_btn02">
+                                <li class="active" data-tab="emp2_01">채용공고</li>
+                                <li data-tab="emp2_02">일경험채용관</li>
+                                <li data-tab="emp2_03">공공일자리</li>
+                            </ul>
+                        </div>
+                        <div class="m_employ_items02 active" data-tab="emp2_01">
+                            <div class="e_employ_info">
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-262</span>
+                                        <span class="badge area">이천시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">(유)나이키코리아</p>
+                                        <p class="txt">나이키코리아 직영점(이천NFS) 정규직 채용 (40FT, 30PT, 20P)직영점(이천NFS)</p>
+                                        <p class="etc">3000 ~ 4000 만원 ㅣ 정규직,계약직</p>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-4</span>
+                                        <span class="badge area">구리시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">크리스탈</p>
+                                        <p class="txt">[쇼핑몰/워라밸] 웹디자이너 채용 공고</p>
+                                        <p class="etc">2500 ~ 3000 만원 ㅣ 정규직</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p>~06.02(목)</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_employ_more">
+                                <a href="" target="_blank">더보기</a>
+                            </div>
+                        </div>
+                        <div class="m_employ_items02" data-tab="emp2_02">
+                            <div class="e_employ_info">
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-262</span>
+                                        <span class="badge area">이천시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">222222</p>
+                                        <p class="txt">22222222222222222222222222</p>
+                                        <p class="etc">2222222222222222222222</p>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-4</span>
+                                        <span class="badge area">구리시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">크리스탈</p>
+                                        <p class="txt">[쇼핑몰/워라밸] 웹디자이너 채용 공고</p>
+                                        <p class="etc">2500 ~ 3000 만원 ㅣ 정규직</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p>~06.02(목)</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_employ_more">
+                                <a href="" target="_blank">더보기</a>
+                            </div>
+                        </div>
+                        <div class="m_employ_items02" data-tab="emp2_03">
+                            <div class="e_employ_info">
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-262</span>
+                                        <span class="badge area">이천시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">333333333</p>
+                                        <p class="txt">333333333333333333333333</p>
+                                        <p class="etc">3333333333333333333</p>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="badge_wrap">
+                                        <span class="badge days">D-4</span>
+                                        <span class="badge area">구리시</span>
+                                    </div>
+                                    <div class="e_employ_txt">
+                                        <p class="tit">크리스탈</p>
+                                        <p class="txt">[쇼핑몰/워라밸] 웹디자이너 채용 공고</p>
+                                        <p class="etc">2500 ~ 3000 만원 ㅣ 정규직</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p>~06.02(목)</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시, 하남시, 하남시, 하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                                <div class="m_employ_list">
+                                    <div class="m_employ_item">
+                                        <p class="tit">(주)아이쿼드</p>
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-day</span>
+                                            <span class="badge area">하남시</span>
+                                        </div>
+                                        <p class="txt">상황실/미디어월(영상/ 음향) 현장 관리 A/S 신입 및 경력 채용</p>
+                                    </div>
+                                    <div class="m_employ_item right">
+                                        <p class="end">오늘마감</p>
+                                        <a href="#" target="_blank">자세히</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_employ_more">
+                                <a href="" target="_blank">더보기</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1015,6 +1405,14 @@
 <script type="text/javascript" charset="utf_8" src="https://www.jobaba.net/resource/js/main/jquery.vticker_min.js"></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script>
+    // 검색
+    $('.m_visual_search li').click(function(){
+	    var search = $(this).attr('data-tab');
+	    $('.m_visual_search li').removeClass('active');
+	    $(this).addClass('active');
+        $('.m_search_cont').removeClass('active');
+	    $('.m_search_cont[data-tab='+search+']').addClass('active');
+	});
     // 정책정보
     $('.m_policy .m_policy_btn li').click(function(){
 	    var policy = $(this).attr('data-tab');
@@ -1022,6 +1420,22 @@
 	    $(this).addClass('active');
 	    $('.m_policy .m_policy_cont').removeClass('active');
 	    $('.m_policy .m_policy_cont[data-tab='+policy+']').addClass('active');
+	});
+    // 채용중인 탐나는 기업
+    $('.m_employ .m_employ_btn01 li').click(function(){
+	    var employ = $(this).attr('data-tab');
+	    $('.m_employ .m_employ_btn01 li').removeClass('active');
+	    $(this).addClass('active');
+	    $('.m_employ .m_employ_items01').removeClass('active');
+	    $('.m_employ .m_employ_items01[data-tab='+employ+']').addClass('active');
+	});
+    // 채용정보
+    $('.m_employ .m_employ_btn02 li').click(function(){
+	    var employ = $(this).attr('data-tab');
+	    $('.m_employ .m_employ_btn02 li').removeClass('active');
+	    $(this).addClass('active');
+	    $('.m_employ .m_employ_items02').removeClass('active');
+	    $('.m_employ .m_employ_items02[data-tab='+employ+']').addClass('active');
 	});
     // 아주 유용한 꿀팁
     $('.m_useful .m_useful_btn li').click(function(){
@@ -1075,15 +1489,28 @@
     var bannerSwiper = new Swiper('.swiper-container.swiper02', {
         spaceBetween: 0,
         slidesPerView: 'auto',
-        centeredSlides: true,
+        centeredSlides: true, 
         loop: true,
         pagination: {
         el: ".swiper-pagination",
-        },     
+        },
+        onSlideChangeEnd:function(e){
+            bannerSwiper.update(true);
+        }
     });
-    var employSwiper = new Swiper('.m_employ_slide', {
-        spaceBetween: 20,
-        slidesPerView: 2,  
+    bannerSwiper.update();
+    swiper.update();
+    
+    // 
+    var $slider = $('.m_employ_items01');
+    $slider.find('.m_employ_slide').each(function(){
+        var employSwiper = new Swiper($(this), {
+            spaceBetween: 20,
+            slidesPerView: 2,
+            touchRatio: 0,
+            observer: true,
+            observeParents: true,        
+        });
     });
     
     var eduSwiper = new Swiper(".m_edu_slide", {
@@ -1095,6 +1522,8 @@
         },
         loop: true,
     });
+    
+
 
     
 </script>
