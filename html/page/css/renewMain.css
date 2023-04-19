@@ -108,6 +108,7 @@
 #newMain .m_policy h2 { margin-left: 15px; margin-top: 36px; } 
 #newMain .m_policy .m_policy_info { position: relative; display: flex; justify-content: space-between; } 
 #newMain .m_policy .m_policy_btn { position: absolute; top: 80px; left: 8px; } 
+#newMain .m_policy .m_policy_more { display: none; } 
 #newMain .m_policy .m_policy_btn li { width: 110px; padding: 3px 0 3px 24px; color: #666666; font-size: 16px; border: 1px solid #cccccc; border-radius: 20px; cursor: pointer; } 
 #newMain .m_policy .m_policy_btn li + li { margin-top: 6px; } 
 #newMain .m_policy .m_policy_btn li.active { color: #003281; border-width: 2px; border-color: #003281; } 
@@ -291,7 +292,8 @@
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_info { flex-direction: column; } 
  #newMain .m_policy .m_policy_btn { width: 290px; position: relative; top: initial; left: initial; margin: 20px auto 0; order: 2; } 
- #newMain .m_policy .m_policy_btn button { width: 100%; height: 50px; font-size: 18px; border: 1px solid #dcdcdc; border-radius: 10px; } 
+ #newMain .m_policy .m_policy_more { position: relative; display: block; width: 100%; height: 50px; font-size: 18px; border: 1px solid #dcdcdc; border-radius: 10px; } 
+ #newMain .m_policy .m_policy_more::after { content: '>'; position: absolute; right: 20px; transform: rotate(90deg); } 
  #newMain .m_policy h2 { margin: 0 0 20px 20px; } 
  #newMain .m_policy .m_policy_btn ul { position: absolute; top: 60px; left: 0; right: 0; display: block; background: #fff; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1); z-index: 10; } 
  #newMain .m_policy .m_policy_btn ul li { width: 100%; padding: 6px 0 6px 24px; border: none; border-radius: initial; } 
@@ -327,7 +329,7 @@
  /* 모바일 배너 */
  #newMain .m_banner { display: block; } 
  /* footer */
- #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
+
  #newFooter .f_nav li { position: relative; } 
  #newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
  #newFooter .f_nav li + li::before { content: ''; display: block; width: 1px; height: 8px; position: absolute; top: 10px; left: 0; background: #ddd; } 
@@ -348,8 +350,16 @@
  #newFooter .f_enquiry > div:first-child p { margin-top: 0; margin-left: 10px; } 
  #newFooter .f_addwrap { padding: 20px 0; } 
  }
-@media screen and (max-width: 640px) { /* 헤더 */
+@media screen and (max-width: 640px) { 
+    /* 헤더 */
+ #newHeader .h_cont { margin-top: 0; } 
+ #newHeader .h_cont .logo { margin-top: 0; } 
+ #newHeader .h_cont .logo img { width: 80px; } 
  #newHeader .h_gnb li a { height: 50px; font-size: 18px; line-height: 50px; } 
+ #newHeader .h_menu { width: 20px; height: 12px; } 
+ #newHeader .h_menu span { width: 20px; height: 2px; } 
+ #newHeader .h_search { margin-left: 12px; } 
+ #newHeader .h_search img { width: 20px; } 
  /* footer */
  #newFooter .f_nav li a,
  #newFooter .f_enquiry > div:first-child strong,
@@ -359,7 +369,7 @@
  #newFooter .f_business .f_logo > a img { width: 100px; } 
  #newFooter .f_sns li a { width: 20px; height: 18px; background-size: contain; } 
  #newFooter .f_business .f_sns li + li { margin-left: 4px; } 
- #newFooter .f_business .f_sns { width: 100%; margin-top: 20px; } 
+
  #newFooter .f_tel a { width: 184px; } 
  #newFooter .f_tel a strong { font-size: 14px; } 
  #newFooter .f_tel a::after { width: 25px; height: 22px; } 
@@ -369,4 +379,7 @@
  @media screen and (max-width: 480px) { /* 헤더 */
  #newHeader .nheader_bottom .innerSection { padding: 0; } 
  #newHeader .h_gnb li a { font-size: 14px; } 
+ /* footer */
+ #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
+ #newFooter .f_business .f_sns { width: 100%; margin-top: 20px; } 
  }

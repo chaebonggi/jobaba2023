@@ -125,6 +125,171 @@
                 </ul>
             </div>
         </div>
+        <div class="h_mobile">
+            <style>
+                #newHeader .h_mobile {
+                    width: 900px;
+                    background: #fff;
+                    border: 1px solid red;
+                }
+                #newHeader .h_mobile_top {
+                    border-top: 4px solid #008ae0;
+                }
+                #newHeader .h_mobile_top .h_mobile_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 17px 15px;
+                    border-bottom: 1px solid #cecece;
+                }
+                #newHeader .h_mobile_top .h_mobile_btn h1 img {
+                    width: 60px;
+                }
+                #newHeader .h_mobile_top .h_mobile_btn span:first-child {
+                    width: 13px;
+                    height: 2px;
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+                #newHeader .h_mobile_top .h_mobile_btn span:last-child {
+                    width: 13px;
+                    height: 2px;
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+                #newHeader .h_mobile_top .h_mobile_login {
+                    margin-top: 20px;
+                    padding: 0 15px;
+                }
+                #newHeader .h_mobile_top .h_mobile_login a {
+                    display: block;
+                    padding: 15px 0;
+                    background: #ececec;
+                    color: #000;
+                    font-size: 12px;
+                    border: 1px solid #d0d0d0;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+                #newHeader .h_mobile_top .h_mobile_login a + a {
+                    margin-top: 8px;
+                    background: #003281;
+                    color: #fff;                    
+                    border: 1px solid #003281;
+                }
+                #newHeader .h_mobile_top .h_mobile_info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin: 20px 0 15px;
+                }
+                #newHeader .h_mobile_top .h_mobile_info li {
+                    width: calc(100% / 3);
+                }
+                #newHeader .h_mobile_top .h_mobile_info li a {
+                    display: block;
+                    height: 100%;
+                    color: #000;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                #newHeader .h_mobile_top .h_mobile_info li a::before {
+                    display: block;
+                    content: '';
+                    width: 38px;
+                    height: 35px;
+                    margin: 0 auto 10px auto;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon01::before {
+                    background-image: url(./images/main/mobile_info_icon01.png);
+                }
+                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon02::before {
+                    background-image: url(./images/main/mobile_info_icon02.png);
+                }
+                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon03::before {
+                    background-image: url(./images/main/mobile_info_icon03.png);
+                }
+                #newHeader .h_mobile_mid {
+                    border-top: 8px solid #eeeeee;
+                    border-bottom: 8px solid #eeeeee;
+                }
+                #newHeader .h_mobile_mid > div {
+                    padding: 16px 30px;
+                    border-top: 1px solid #eeeeee;
+                    border-bottom: 1px solid #eeeeee;
+                }
+            </style>
+            <div class="h_mobile_top">
+                <div class="h_mobile_btn">
+                    <h1><img src="./images/main/mobile_logo.png" alt="잡아바 로고"></h1>
+                    <div class="h_menu">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="h_mobile_login">
+                    <a href="#" target="_blank">로그인</a>
+                    <a href="#" target="_blank">회원가입</a>
+                </div>
+                <ul class="h_mobile_info">
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon01">
+                            잡아바<br> 어플라이
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon02">
+                            청년지원사업<br> 청년몰
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon03">
+                            잡아바<br> 러닝센터
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_mid">
+                <div>
+                    <strong>정책정보</strong>
+                    <a href="#" target="_blank">지원정책</a>
+                    <a href="#" target="_blank">신청하기</a>
+                    <a href="#" target="_blank">정책등록</a>
+                </div>
+                <div>
+                    <strong>취업준비</strong>
+                    <a href="#" target="_blank">취업진로진단</a>
+                    <a href="#" target="_blank">진로 취업상담</a>
+                    <a href="#" target="_blank">자기소개서 첨삭</a>
+                    <a href="#" target="_blank">AI 역량검사</a>
+                </div>
+                <div>
+                    <strong>러닝센터</strong>
+                    <a href="#" target="_blank">알아보기</a>
+                    <a href="#" target="_blank">동영상교육</a>
+                    <a href="#" target="_blank">연계 신청</a>
+                </div>
+                <div>
+                    <strong>채용정보</strong>
+                    <a href="#" target="_blank">채용공고</a>
+                    <a href="#" target="_blank">탐나는 기업</a>
+                    <a href="#" target="_blank">온라인 박람회</a>
+                </div>
+                <div>
+                    <strong>참여소통</strong>
+                    <a href="#" target="_blank">공지사항</a>
+                    <a href="#" target="_blank">이벤트</a>
+                    <a href="#" target="_blank">Q&A</a>
+                    <a href="#" target="_blank">정책활용 꿀팁</a>
+                </div>
+            </div>
+            <div class="h_mobile_bottom">
+
+            </div>
+        </div>
     </header>
     <main id="newMain">
         <article class="m_visual">
@@ -347,7 +512,7 @@
                 <div class="m_policy_info">
                     <h2>정책정보</h2>
                     <div class="m_policy_btn">
-                        <button>정책정보 더보기</button>
+                        <button class="m_policy_more">정책정보 더보기</button>
                         <ul>
                             <li class="active" data-tab="policy01">경기도</li>
                             <li data-tab="policy02">중앙부처</li>
@@ -1447,7 +1612,7 @@
     // 메인 배너 슬라이드
     var bannerSwiper = new Swiper('.swiper-container.swiper02', {
         spaceBetween: 0,
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         centeredSlides: true,
         loop: true,
         autoHeight: true,
@@ -1461,13 +1626,13 @@
         onSlideChangeEnd:function(e){
             bannerSwiper.update(e);
         },
-        breakpoints: {
-            1024: {
-                slidesPerView: 'auto',
-                centeredSlides: true,
+        // breakpoints: {
+        //     1024: {
+        //         slidesPerView: 'auto',
+        //         centeredSlides: true,
                  
-            },
-        }
+        //     },
+        // }
     });
     
     // 채용공고 슬라이드
