@@ -82,7 +82,12 @@
                         </a>
                     </h1>
                     <div class="h_ui">
-                        <div class="h_menu">
+                        <div class="h_menu" onclick="pcMenu();">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h_menu mobile_menu" onclick="mobileMenu();">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -128,9 +133,18 @@
         <div class="h_mobile">
             <style>
                 #newHeader .h_mobile {
-                    width: 900px;
+                    width: 100%;
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
                     background: #fff;
-                    border: 1px solid red;
+                    transition: all 0.3s;
+                    z-index: 999;
+                }
+                #newHeader .h_mobile.show {
+                    right: 0;
+                    height: 100vh;
+                    overflow-y: auto;
                 }
                 #newHeader .h_mobile_top {
                     border-top: 4px solid #008ae0;
@@ -145,16 +159,24 @@
                 #newHeader .h_mobile_top .h_mobile_btn h1 img {
                     width: 60px;
                 }
-                #newHeader .h_mobile_top .h_mobile_btn span:first-child {
-                    width: 13px;
+                #newHeader .h_mobile_top .h_mobile_close {
+                    position: relative;
+                    width: 16px;
+                    height: 8px;
+                    cursor: pointer;
+                }
+                #newHeader .h_mobile_top .h_mobile_close span {
+                    display: block;
+                    width: 16px;
                     height: 2px;
-                    top: 50%;
+                    position: absolute;
+                    top: 50%;                    
+                    background-color: #000;
+                }
+                #newHeader .h_mobile_top .h_mobile_close span:first-child {
                     transform: rotate(45deg);
                 }
-                #newHeader .h_mobile_top .h_mobile_btn span:last-child {
-                    width: 13px;
-                    height: 2px;
-                    top: 50%;
+                #newHeader .h_mobile_top .h_mobile_close span:last-child {
                     transform: rotate(-45deg);
                 }
                 #newHeader .h_mobile_top .h_mobile_login {
@@ -217,15 +239,118 @@
                     border-bottom: 8px solid #eeeeee;
                 }
                 #newHeader .h_mobile_mid > div {
+                    display: flex;
+                    flex-wrap: wrap;
                     padding: 16px 30px;
                     border-top: 1px solid #eeeeee;
                     border-bottom: 1px solid #eeeeee;
+                }
+                #newHeader .h_mobile_mid > div strong {
+                    display: block;
+                    margin-bottom: 12px;
+                    width: 100%;
+                    color: #000;
+                    font-size: 15px;
+                }
+                #newHeader .h_mobile_mid > div a {
+                    color: #000;
+                    font-size: 13px;
+                }
+                #newHeader .h_mobile_mid > div.wd2 a {
+                    width: calc(100% / 2);
+                }
+                #newHeader .h_mobile_mid > div.wd2 a:nth-child(-n + 3) {
+                    margin-bottom: 6px;
+                }
+                #newHeader .h_mobile_mid > div.wd3 a {
+                    width: calc(100% / 3);
+                }
+                #newHeader .h_mobile_mid > div.wd4 a {
+                    width: calc(100% / 4);
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family {
+                    padding: 20px 26px;
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family strong {
+                    display: block;
+                    margin: 0 0 10px 4px;
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family ul {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family li {
+                    width: calc((100% - 15px) / 4);
+                    height: 62px;
+                    border: 3px solid #e2e2e2;
+                    border-radius: 15px;
+                    text-align: center;
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                #newHeader .h_mobile_bottom .h_mobile_family li img {
+                    transform: scale(0.7);
+                }
+                #newHeader .h_mobile_sns {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 0;
+                    background: #eeeeee;
+                }
+                #newHeader .h_mobile_sns li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fff;
+                    border-radius: 50%;
+                }
+                #newHeader .h_mobile_sns li + li {
+                    margin-left: 10px;
+                }
+                #newHeader .h_mobile_sns li a {
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    text-indent: -9999px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    transform: scale(0.8);
+                }
+
+                #newHeader .h_mobile_sns li a.blog {
+                    background-image: url(./images/main/icon_blog.png);
+                }
+
+                #newHeader .h_mobile_sns li a.face {
+                    background-image: url(./images/main/icon_face.png);
+                }
+
+                #newHeader .h_mobile_sns li a.insta {
+                    background-image: url(./images/main/icon_insta.png);
+                }
+
+                #newHeader .h_mobile_sns li a.youtu {
+                    background-image: url(./images/main/icon_youtube.png);
+                }
+
+                #newHeader .h_mobile_sns li a.app {
+                    background-image: url(./images/main/icon_appstore.png);
+                }
+
+                #newHeader .h_mobile_sns li a.play {
+                    background-image: url(./images/main/icon_playstore.png);
                 }
             </style>
             <div class="h_mobile_top">
                 <div class="h_mobile_btn">
                     <h1><img src="./images/main/mobile_logo.png" alt="잡아바 로고"></h1>
-                    <div class="h_menu">
+                    <div class="h_mobile_close">
                         <span></span>
                         <span></span>
                     </div>
@@ -253,32 +378,32 @@
                 </ul>
             </div>
             <div class="h_mobile_mid">
-                <div>
+                <div class="wd3">
                     <strong>정책정보</strong>
                     <a href="#" target="_blank">지원정책</a>
                     <a href="#" target="_blank">신청하기</a>
                     <a href="#" target="_blank">정책등록</a>
                 </div>
-                <div>
+                <div class="wd2">
                     <strong>취업준비</strong>
                     <a href="#" target="_blank">취업진로진단</a>
                     <a href="#" target="_blank">진로 취업상담</a>
                     <a href="#" target="_blank">자기소개서 첨삭</a>
                     <a href="#" target="_blank">AI 역량검사</a>
                 </div>
-                <div>
+                <div class="wd3">
                     <strong>러닝센터</strong>
                     <a href="#" target="_blank">알아보기</a>
                     <a href="#" target="_blank">동영상교육</a>
                     <a href="#" target="_blank">연계 신청</a>
                 </div>
-                <div>
+                <div class="wd3">
                     <strong>채용정보</strong>
                     <a href="#" target="_blank">채용공고</a>
                     <a href="#" target="_blank">탐나는 기업</a>
                     <a href="#" target="_blank">온라인 박람회</a>
                 </div>
-                <div>
+                <div class="wd4">
                     <strong>참여소통</strong>
                     <a href="#" target="_blank">공지사항</a>
                     <a href="#" target="_blank">이벤트</a>
@@ -287,7 +412,51 @@
                 </div>
             </div>
             <div class="h_mobile_bottom">
-
+                <div class="h_mobile_family">
+                    <strong>패밀리 사이트 바로가기</strong>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main/mobile_logo01.png" alt="경기도일자리재단">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main/mobile_logo02.png" alt="꿈마루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main/mobile_logo03.png" alt="꿈날개">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main/mobile_logo04.png" alt="잡아바러닝센터">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="h_mobile_sns">
+                    <li>
+                        <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -1569,8 +1738,8 @@
         var $this = $(this);
         $this.siblings().addClass("type" + i);
         var policySwiper = new Swiper($(this), {
-            slidesPerView: 1.5,
-            spaceBetween: 15,
+            slidesPerView: 2.5,
+            spaceBetween: 10,
             observer: true,
             observeParents: true,        
             loop: true,
@@ -1587,9 +1756,6 @@
                 },
                 768: {
                     slidesPerView: 2,
-                },
-                480: {
-                    slidesPerView: 2.5,
                 },
             },
         });
@@ -1640,7 +1806,7 @@
     $slider.find('.m_employ_slide').each(function(){
         var employSwiper = new Swiper($(this), {
             spaceBetween: 20,
-            slidesPerView: 1.5,
+            slidesPerView: 2.5,
             touchRatio: 1,
             observer: true,
             loop: true,
@@ -1650,9 +1816,6 @@
                 slidesPerView: 2,
                 touchRatio: 0,
             },
-            480: {
-                    slidesPerView: 2.5,
-                },
         },
         });
     });
@@ -1676,8 +1839,20 @@
         },
     });
     
+    // 모바일
+    function pcMenu() {
 
+    }
+    function mobileMenu() {
+        $('.h_mobile').toggleClass('show'); 
+    }
+    
 
     
+    $('.h_mobile_close').click(function(){
+		$('.h_mobile').removeClass('show');
+	});
+
+
 </script>
 </body></html>
