@@ -131,222 +131,6 @@
             </div>
         </div>
         <div class="h_mobile">
-            <style>
-                #newHeader .h_mobile {
-                    width: 100%;
-                    position: fixed;
-                    top: 0;
-                    right: -100%;
-                    background: #fff;
-                    transition: all 0.3s;
-                    z-index: 999;
-                }
-                #newHeader .h_mobile.show {
-                    right: 0;
-                    height: 100vh;
-                    overflow-y: auto;
-                }
-                #newHeader .h_mobile_top {
-                    border-top: 4px solid #008ae0;
-                }
-                #newHeader .h_mobile_top .h_mobile_btn {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 17px 15px;
-                    border-bottom: 1px solid #cecece;
-                }
-                #newHeader .h_mobile_top .h_mobile_btn h1 img {
-                    width: 60px;
-                }
-                #newHeader .h_mobile_top .h_mobile_close {
-                    position: relative;
-                    width: 16px;
-                    height: 8px;
-                    cursor: pointer;
-                }
-                #newHeader .h_mobile_top .h_mobile_close span {
-                    display: block;
-                    width: 16px;
-                    height: 2px;
-                    position: absolute;
-                    top: 50%;                    
-                    background-color: #000;
-                }
-                #newHeader .h_mobile_top .h_mobile_close span:first-child {
-                    transform: rotate(45deg);
-                }
-                #newHeader .h_mobile_top .h_mobile_close span:last-child {
-                    transform: rotate(-45deg);
-                }
-                #newHeader .h_mobile_top .h_mobile_login {
-                    margin-top: 20px;
-                    padding: 0 15px;
-                }
-                #newHeader .h_mobile_top .h_mobile_login a {
-                    display: block;
-                    padding: 15px 0;
-                    background: #ececec;
-                    color: #000;
-                    font-size: 12px;
-                    border: 1px solid #d0d0d0;
-                    border-radius: 10px;
-                    text-align: center;
-                }
-                #newHeader .h_mobile_top .h_mobile_login a + a {
-                    margin-top: 8px;
-                    background: #003281;
-                    color: #fff;                    
-                    border: 1px solid #003281;
-                }
-                #newHeader .h_mobile_top .h_mobile_info {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    margin: 20px 0 15px;
-                }
-                #newHeader .h_mobile_top .h_mobile_info li {
-                    width: calc(100% / 3);
-                }
-                #newHeader .h_mobile_top .h_mobile_info li a {
-                    display: block;
-                    height: 100%;
-                    color: #000;
-                    font-size: 12px;
-                    text-align: center;
-                }
-                #newHeader .h_mobile_top .h_mobile_info li a::before {
-                    display: block;
-                    content: '';
-                    width: 38px;
-                    height: 35px;
-                    margin: 0 auto 10px auto;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon01::before {
-                    background-image: url(./images/main/mobile_info_icon01.png);
-                }
-                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon02::before {
-                    background-image: url(./images/main/mobile_info_icon02.png);
-                }
-                #newHeader .h_mobile_top .h_mobile_info li a.mobile_icon03::before {
-                    background-image: url(./images/main/mobile_info_icon03.png);
-                }
-                #newHeader .h_mobile_mid {
-                    border-top: 8px solid #eeeeee;
-                    border-bottom: 8px solid #eeeeee;
-                }
-                #newHeader .h_mobile_mid > div {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 16px 30px;
-                    border-top: 1px solid #eeeeee;
-                    border-bottom: 1px solid #eeeeee;
-                }
-                #newHeader .h_mobile_mid > div strong {
-                    display: block;
-                    margin-bottom: 12px;
-                    width: 100%;
-                    color: #000;
-                    font-size: 15px;
-                }
-                #newHeader .h_mobile_mid > div a {
-                    color: #000;
-                    font-size: 13px;
-                }
-                #newHeader .h_mobile_mid > div.wd2 a {
-                    width: calc(100% / 2);
-                }
-                #newHeader .h_mobile_mid > div.wd2 a:nth-child(-n + 3) {
-                    margin-bottom: 6px;
-                }
-                #newHeader .h_mobile_mid > div.wd3 a {
-                    width: calc(100% / 3);
-                }
-                #newHeader .h_mobile_mid > div.wd4 a {
-                    width: calc(100% / 4);
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family {
-                    padding: 20px 26px;
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family strong {
-                    display: block;
-                    margin: 0 0 10px 4px;
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family ul {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family li {
-                    width: calc((100% - 15px) / 4);
-                    height: 62px;
-                    border: 3px solid #e2e2e2;
-                    border-radius: 15px;
-                    text-align: center;
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                }
-                #newHeader .h_mobile_bottom .h_mobile_family li img {
-                    transform: scale(0.7);
-                }
-                #newHeader .h_mobile_sns {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 15px 0;
-                    background: #eeeeee;
-                }
-                #newHeader .h_mobile_sns li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #fff;
-                    border-radius: 50%;
-                }
-                #newHeader .h_mobile_sns li + li {
-                    margin-left: 10px;
-                }
-                #newHeader .h_mobile_sns li a {
-                    display: block;
-                    width: 32px;
-                    height: 32px;
-                    text-indent: -9999px;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    transform: scale(0.8);
-                }
-
-                #newHeader .h_mobile_sns li a.blog {
-                    background-image: url(./images/main/icon_blog.png);
-                }
-
-                #newHeader .h_mobile_sns li a.face {
-                    background-image: url(./images/main/icon_face.png);
-                }
-
-                #newHeader .h_mobile_sns li a.insta {
-                    background-image: url(./images/main/icon_insta.png);
-                }
-
-                #newHeader .h_mobile_sns li a.youtu {
-                    background-image: url(./images/main/icon_youtube.png);
-                }
-
-                #newHeader .h_mobile_sns li a.app {
-                    background-image: url(./images/main/icon_appstore.png);
-                }
-
-                #newHeader .h_mobile_sns li a.play {
-                    background-image: url(./images/main/icon_playstore.png);
-                }
-            </style>
             <div class="h_mobile_top">
                 <div class="h_mobile_btn">
                     <h1><img src="./images/main/mobile_logo.png" alt="잡아바 로고"></h1>
@@ -580,39 +364,76 @@
         }
         .m_slide_banner .swiper-wrapper {
           margin-left: -184px;
-          
         }
         .m_slide_banner .swiper-slide {
           width: 275px;
           margin-right: 30px;
-          background: #eee;
           align-items: center;
           justify-content: center;
           transition: all .3s;
           box-sizing: border-box;
+          border-radius: 20px;
+        overflow: hidden;
         }
         
         .m_slide_banner .swiper-slide .imgWrap {
           font-size: 0;
+          height: 260px;
+        }
+        .m_slide_banner .swiper-slide .imgWrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .m_slide_banner .swiper-slide.swiper-slide-active {
           width: 670px;
-          background: yellow;
         }
         .m_slide_banner .swiper-slide .imgWrap .x2 {
           display: none;
+
         }
         .m_slide_banner .swiper-slide.swiper-slide-active .x1 {
           display: none;
         }
         .m_slide_banner .swiper-slide.swiper-slide-active .x2 {
           display: block;
-          height: 260px;
+          height: 100%;
         }
         .m_slide_banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
             width: 70px;
             border-radius: 10px;
             background: #003280;
+        }
+        @media screen and (max-width: 860px) { 
+            .m_slide_banner .swiper-wrapper {
+                margin-left: 0;
+            }
+            .m_slide_banner .swiper-slide {
+                margin-right: 0;
+            }
+            .m_slide_banner .swiper-slide.swiper-slide-active .x2 {
+                display: none;
+            }
+            .m_slide_banner .swiper-slide.swiper-slide-active .x1 {
+                display: block;
+            }
+            .m_slide_banner .swiper-slide .imgWrap .x1 {
+                display: block;
+                
+            }
+            .m_slide_banner .swiper-slide .imgWrap .x2 {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px){
+            .m_slide_banner .swiper-container {
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (max-width: 640px){
+            .m_slide_banner .swiper-slide .imgWrap {
+                /* height: 165px; */
+            }
         }
             </style>
             <div class="swiper-container swiper02">
@@ -620,58 +441,35 @@
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
+                      <img src="./images/main/main_img01.jpg" alt="" class="x1">
+                      <img src="./images/main/main_img01_on.jpg" alt="" class="x2">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
+                      <img src="./images/main/main_img02.jpg" alt="" class="x1">
+                      <img src="./images/main/main_img02_on.jpg" alt="" class="x2">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
+                      <img src="./images/main/main_img03.jpg" alt="" class="x1">
+                      <img src="./images/main/main_img03_on.jpg" alt="" class="x2">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
+                      <img src="./images/main/main_img04.jpg" alt="" class="x1">
+                      <img src="./images/main/main_img04_on.jpg" alt="" class="x2">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
+                      <img src="./images/main/main_img05.jpg" alt="" class="x1">
+                      <img src="./images/main/main_img05_on.jpg" alt="" class="x2">
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduoiEp%2Fbtr8uTyu9YO%2Fdc541fhsqGZVHaYUSMxwb0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjudwr%2Fbtr8u2a2JMA%2Fgc5ZKOeGwlYzyU1kBYxAdK%2Fimg.jpg" alt="" class="x2">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZLzAm%2Fbtr8vxPocZI%2FX2LKohDia4A38vN8TPfu1k%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm96Ht%2Fbtr8vHEi0ub%2FkkktN8rh5NBFO6nBK7uggk%2Fimg.jpg" alt="" class="x2">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="imgWrap">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHhAN0%2Fbtr8lNMPBKy%2FM61OKE9yWubAPHvbepFRq0%2Fimg.jpg" alt="" class="x1">
-                      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUqYSK%2Fbtr8tDQhy0C%2FiuT3uCT2SxUBParQf6jaxk%2Fimg.jpg" alt="" class="x2">
-                    </div>
-                  </div>
+                 
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -698,7 +496,7 @@
                                             <span class="badge blue">청년</span>
                                         </div>
                                         <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                            <img src="./images/main/policy_img01.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
@@ -713,7 +511,7 @@
                                             <span class="badge gray">중장년</span>
                                         </div>
                                         <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                            <img src="./images/main/policy_img02.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
@@ -728,7 +526,7 @@
                                             <span class="badge pink">여성</span>
                                         </div>
                                         <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                            <img src="./images/main/policy_img03.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
@@ -743,7 +541,7 @@
                                             <span class="badge blue">청년</span>
                                         </div>
                                         <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                            <img src="./images/main/policy_img04.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
                                         <div class="m_policy_txt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
@@ -1739,7 +1537,7 @@
         $this.siblings().addClass("type" + i);
         var policySwiper = new Swiper($(this), {
             slidesPerView: 2.5,
-            spaceBetween: 10,
+            spaceBetween: 8,
             observer: true,
             observeParents: true,        
             loop: true,
@@ -1750,12 +1548,14 @@
             breakpoints: {
                 1024: {
                     slidesPerView: 4,
+                    spaceBetween: 20,
                 },
                 860: {
                     slidesPerView: 3,
                 },
                 768: {
                     slidesPerView: 2,
+                    
                 },
             },
         });
@@ -1777,35 +1577,38 @@
     });
     // 메인 배너 슬라이드
     var bannerSwiper = new Swiper('.swiper-container.swiper02', {
-        spaceBetween: 0,
-        slidesPerView: 'auto',
+        spaceBetween: 10,
+        slidesPerView: 1.5,
         centeredSlides: true,
         loop: true,
         autoHeight: true,
         pagination: {
         el: ".swiper-pagination",
         },
-        // autoplay:{
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
-        onSlideChangeEnd:function(e){
-            bannerSwiper.update(e);
+        autoplay:{
+            delay: 5000,
+            disableOnInteraction: false,
         },
-        // breakpoints: {
-        //     1024: {
-        //         slidesPerView: 'auto',
-        //         centeredSlides: true,
-                 
-        //     },
-        // }
+        onSlideChangeEnd:function(e){
+            bannerSwiper.update();
+        },
+        breakpoints: {
+            860: {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+        }
     });
     
     // 채용공고 슬라이드
     var $slider = $('.m_employ_items01');
     $slider.find('.m_employ_slide').each(function(){
         var employSwiper = new Swiper($(this), {
-            spaceBetween: 20,
+            spaceBetween: 8,
             slidesPerView: 2.5,
             touchRatio: 1,
             observer: true,
@@ -1815,6 +1618,7 @@
             768: {
                 slidesPerView: 2,
                 touchRatio: 0,
+                spaceBetween: 20,
             },
         },
         });
