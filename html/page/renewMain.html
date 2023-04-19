@@ -231,20 +231,20 @@
                 </div>
             </div>
         </article>
-        <article class="m_banner">
+        <article class="m_slide_banner">
             <style>
-               .m_banner .swiper-container {
+               .m_slide_banner .swiper-container {
           position: relative;
           width: 100%;
           padding: 0 0 60px;
           margin-bottom: 50px;
           box-sizing: border-box;
         }
-        .m_banner .swiper-wrapper {
+        .m_slide_banner .swiper-wrapper {
           margin-left: -184px;
           
         }
-        .m_banner .swiper-slide {
+        .m_slide_banner .swiper-slide {
           width: 275px;
           margin-right: 30px;
           background: #eee;
@@ -254,24 +254,24 @@
           box-sizing: border-box;
         }
         
-        .m_banner .swiper-slide .imgWrap {
+        .m_slide_banner .swiper-slide .imgWrap {
           font-size: 0;
         }
-        .m_banner .swiper-slide.swiper-slide-active {
+        .m_slide_banner .swiper-slide.swiper-slide-active {
           width: 670px;
           background: yellow;
         }
-        .m_banner .swiper-slide .imgWrap .x2 {
+        .m_slide_banner .swiper-slide .imgWrap .x2 {
           display: none;
         }
-        .m_banner .swiper-slide.swiper-slide-active .x1 {
+        .m_slide_banner .swiper-slide.swiper-slide-active .x1 {
           display: none;
         }
-        .m_banner .swiper-slide.swiper-slide-active .x2 {
+        .m_slide_banner .swiper-slide.swiper-slide-active .x2 {
           display: block;
           height: 260px;
         }
-        .m_banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        .m_slide_banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
             width: 70px;
             border-radius: 10px;
             background: #003280;
@@ -1148,7 +1148,7 @@
                 </div>
             </div>
         </article>
-        <article class="m_banner for_mo">
+        <article class="m_banner">
             <div class="innerSection">
                 <div class="m_banner_mobile">
                     <img src="./images/main/mobile_banner.png" alt="">
@@ -1225,7 +1225,7 @@
                 <div class="f_business">
                     <div class="f_logo">
                         <img src="./images/main/jababa_logo.png" alt="잡아바 로고">
-                        <a href="" target="_blank" title="경기도일자리재단 이동" class="for_mo">
+                        <a href="" target="_blank" title="경기도일자리재단 이동" class="f_gyeonggi_logo">
                             <img src="./images/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
                         </a>
                         <ul class="f_sns for_mo">
@@ -1391,20 +1391,28 @@
 	    $('.m_useful .m_useful_cont').removeClass('active');
 	    $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
 	});
-
+    // 정책정보 슬라이드
     var $slider = $('.m_policy_cont');
     $slider.find('.m_policy_slide').each(function(i){
         var $this = $(this);
         $this.siblings().addClass("type" + i);
         var policySwiper = new Swiper($(this), {
-        slidesPerView: 4,
-        spaceBetween: 15,
-        observer: true,
-        observeParents: true,        
-        loop: true,
-        navigation: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            observer: true,
+            observeParents: true,        
+            loop: true,
+            navigation: {
                 nextEl: $('.type' + i).find('.swiper-button-next'),
                 prevEl: $('.type' + i).find('.swiper-button-prev'),
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
             },
         });
     });
@@ -1423,7 +1431,7 @@
             disableOnInteraction: false,
         },
     });
-    
+    // 메인 배너 슬라이드
     var bannerSwiper = new Swiper('.swiper-container.swiper02', {
         spaceBetween: 0,
         slidesPerView: 'auto',
@@ -1442,7 +1450,7 @@
         }
     });
     
-    
+    // 채용공고 슬라이드
     var $slider = $('.m_employ_items01');
     $slider.find('.m_employ_slide').each(function(){
         var employSwiper = new Swiper($(this), {
@@ -1454,14 +1462,23 @@
         });
     });
     
+    // 러닝센터 슬라이드
     var eduSwiper = new Swiper(".m_edu_slide", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 15,
+        loop: true,
         navigation: {
             nextEl: ".m_educenter .swiper-button-next",
             prevEl: ".m_educenter .swiper-button-prev",
         },
-        loop: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            860: {
+                slidesPerView: 2,
+            },
+        },
     });
     
 

@@ -1,6 +1,5 @@
 .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; } 
 .mt20 { margin-top: 20px; } 
-.for_mo { display: none !important; } 
 
 #newHeader .nheader_top { background: #008ae0; } 
 #newHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 50px; } 
@@ -62,7 +61,7 @@
 #newMain .m_visual .m_visual_items li a:hover.m_item06::before { background-image: url(../images/main/icon_item06_on.png); } 
 
 #newMain .m_visual .m_visual_search { position: relative; } 
-#newMain .m_visual .m_visual_search ul { display: inline-flex; position: absolute; top: 0; left: 0; background: #008ae0; border-radius: 20px; } 
+#newMain .m_visual .m_visual_search ul { display: inline-flex; position: absolute; top: 0; left: 0; background: #008ae0; border-radius: 20px; z-index: 1; } 
 #newMain .m_visual .m_visual_search ul li { width: 70px; padding: 3px 0; margin: 4px; color: #fff; font-size: 14px; font-weight: 600; border-radius: 20px; text-align: center; cursor: pointer; transition: all 0.2s; } 
 #newMain .m_visual .m_visual_search ul li.active { background: #fff; color: #000; } 
 #newMain .m_visual .m_search_cont { position: relative; } 
@@ -200,6 +199,7 @@
 #newMain .m_useful .m_useful_txt p { margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
 #newMain .m_useful .m_useful_txt strong { color: #000; font-size: 14px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
 /* 모바일 배너 */
+#newMain .m_banner { display: none; } 
 #newMain .m_banner .m_banner_mobile { max-width: 750px; position: relative; margin: auto; } 
 #newMain .m_banner .m_banner_mobile::after { content: ''; width: 193px; height: 167px; position: absolute; top: -15px; right: 25px; background: url(../images/main/mobile_banner_img01.png) no-repeat; background-size: contain; } 
 /* */
@@ -223,7 +223,9 @@
 #newFooter .f_business { display: flex; padding: 32px 0; border-bottom: 2px solid #eeeeee; } 
 #newFooter .f_business .f_slogan { flex-shrink: 0; margin-left: auto; margin-right: 38px; } 
 #newFooter .f_business .f_logo { flex-shrink: 0; margin-right: 62px; margin-top: 10px; } 
-#newFooter .f_business .f_sns li a { width: 40px; height: 38px; border: 1px solid #dddddd; border-radius: 10px; } 
+#newFooter .f_business .f_sns li { margin-right: 0; } 
+#newFooter .f_business .f_sns li + li { margin-left: 10px; } 
+#newFooter .f_business .f_sns li a { padding: 18px; border: 1px solid #dddddd; border-radius: 10px; } 
 #newFooter .f_enquiry { display: flex; flex-wrap: wrap; } 
 #newFooter .f_enquiry > div:first-child strong { color: #000; font-size: 16px; font-weight: 600; } 
 #newFooter .f_enquiry > div:first-child p { margin-top: 10px; color: #838282; font-size: 13px; } 
@@ -245,3 +247,112 @@
 #newFooter .f_tel a { display: block; width: 200px; position: relative; padding: 8px 10px; background: #444444; color: #f5f5f5; font-size: 11px; border-radius: 10px; } 
 #newFooter .f_tel a strong { font-size: 18px; } 
 #newFooter .f_tel a::after { content: ''; width: 33px; height: 30px; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: url(../images/main/icon_tel.png) no-repeat; background-size: contain; } 
+#newFooter .f_tel { display: none; } 
+#newFooter .f_business .f_sns { display: none; } 
+#newFooter .f_business .f_gyeonggi_logo { display: none; margin-left: 20px; } 
+
+@media screen and (max-width: 1700px){
+
+ #newMain .m_employ .m_employ_wrap::before,
+ #newMain .m_employ .m_employ_wrap::after { content: none; } 
+}
+@media screen and (max-width: 1200px){
+    /* 메인 메뉴 */
+    #newMain .m_visual .m_search_cont .search_btn {
+        width: 100%;
+    }
+    #newMain .m_visual .m_search_cont::before {
+        width: 80px;
+        top: -8px;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* 메인 메뉴 */
+    #newMain .m_visual .m_visual_search ul {
+        position: static;
+    }
+    #newMain .m_visual .m_search_cont .tit {
+        margin: 10px 0 20px 20px;
+        font-size: 18px;
+    }
+    #newMain .m_visual .m_visual_items li {
+        width: calc(100% / 3);
+    }
+    #newMain .m_visual .m_visual_items li:nth-child(-n + 3) {
+        margin-bottom: 10px;
+    }
+    #newMain .m_visual .m_visual_items li a::before {
+        margin: 0 auto 2px auto;
+    }
+    #newMain .m_visual .m_search_cont::before {
+        top: -20px;
+    }
+    /* 채용정보 */
+    #newMain .m_employ .m_employ_wrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #newMain .m_employ .m_employ_wrap .m_employ_box {
+        width: 100%;
+    }
+    #newMain .m_employ .m_employ_wrap .m_employ_box + div {
+        margin-top: 20px;
+    }
+    /* footer */
+    #newFooter .f_sns { display: none; } 
+ }
+ @media screen and (max-width: 860px){
+    /* 헤더 */
+    #newHeader .h_util {
+        height: 8px;
+    }
+    #newHeader .h_util ul {
+        display: none;
+    }
+    /* 메인 메뉴 */
+    #newMain .m_visual .innerSection {
+        padding: 0;
+    }
+    #newMain .m_visual .m_login_form {
+        display: none;
+    }
+    #newMain .m_visual .m_visual_cont {
+        width: 100%;
+    }
+ }
+@media screen and (max-width: 768px){ 
+    /* 잡아바 러닝 센터 */
+    #newMain .m_educenter { display: none;}
+    /* 아주 유용한 꿀팁 */
+    #newMain .m_useful {display: none;}
+    /* 모바일 배너 */
+    #newMain .m_banner {display: block;}
+    /* footer */
+    #newFooter .f_nav li { position: relative; } 
+    #newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
+    #newFooter .f_nav li + li::before { content: ''; display: block; width: 1px; height: 8px; position: absolute; top: 10px; left: 0; background: #ddd; } 
+    #newFooter .f_family,
+    #newFooter .f_business .f_slogan,
+    #newFooter .f_enquiry div + div,
+    #newFooter .f_gyeonggi_logo,
+    #newFooter .f_address ul { display: none; } 
+    #newFooter .f_business { border: none; padding: 32px 0 0; } 
+    #newFooter .f_business .f_logo { display: flex; align-items: flex-start; margin-right: 0; } 
+    #newFooter .f_business .f_logo > a { margin-left: 20px; } 
+    #newFooter .f_business { flex-direction: column; } 
+    #newFooter .f_business .f_sns { display: flex; } 
+    #newFooter .f_tel { margin-top: 16px; display: block; } 
+    #newFooter .f_business .f_gyeonggi_logo { display: block; } 
+    #newFooter .f_enquiry > div { display: flex; align-items: center; margin-right: 0; margin-top: 20px; } 
+    #newFooter .f_enquiry > div span { display: block; } 
+    #newFooter .f_enquiry > div:first-child p { margin-top: 0; margin-left: 10px; } 
+    #newFooter .f_addwrap { padding: 20px 0; } 
+ }
+@media screen and (max-width: 480px){ 
+    /* footer */
+    #newFooter .f_nav li a,
+    #newFooter .f_enquiry > div:first-child strong,
+    #newFooter .f_enquiry > div:first-child p { font-size: 12px; } 
+ }
