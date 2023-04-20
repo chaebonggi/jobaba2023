@@ -368,9 +368,11 @@
     #newMain .m_policy .m_policy_more::after { content: '>'; position: absolute; right: 20px; transform: rotate(90deg); } 
     #newMain .m_policy h2 { margin: 0 0 20px 20px; } 
     #newMain .m_policy .m_policy_btn ul { position: absolute; top: 60px; left: 0; right: 0; display: none; background: #fff; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1); z-index: 10; } 
-    #newMain .m_policy .m_policy_btn ul li { width: 100%; padding: 6px 0 6px 24px; border: none; border-radius: initial; } 
+    #newMain .m_policy .m_policy_btn ul li { width: 100%; padding: 6px 0 6px 42px; border: none; border-radius: initial; } 
     #newMain .m_policy .m_policy_btn ul li + li { border-top: 1px solid #dcdcdc; } 
-    #newMain .m_policy .m_policy_btn li + li.active { border-top: 1px solid #dcdcdc; } 
+    #newMain .m_policy .m_policy_btn li + li.active { border-top: 1px solid #dcdcdc; }
+    #newMain .m_policy .m_policy_btn li.active {position: relative;}
+    #newMain .m_policy .m_policy_btn li.active::before {content: ''; width: 15px; height: 14px; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); background: url(../images/main/icon_check.png) no-repeat; background-size: contain;}
     #newMain .m_policy .m_policy_cont .swiper-navigation { display: none; } 
     #newMain .m_policy .m_policy_cont { width: 100%; } 
     #newMain .m_policy .swiper-container { width: 100%; margin-left: 20px; } 
