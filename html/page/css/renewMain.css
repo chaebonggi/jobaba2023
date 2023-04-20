@@ -430,7 +430,7 @@
     #newHeader .h_cont { margin-top: 0; } 
     #newHeader .h_cont .logo { margin-top: 0; } 
     #newHeader .h_cont .logo img { width: 80px; } 
-    #newHeader .h_gnb li a { height: 50px; font-size: 18px; line-height: 50px; } 
+    #newHeader .h_gnb li a { height: 50px; font-size: 14px; line-height: 50px; } 
     #newHeader .h_menu { width: 20px; height: 12px; } 
     #newHeader .h_menu span { width: 20px; height: 2px; } 
     #newHeader .h_search { margin-left: 12px; } 
@@ -504,7 +504,6 @@
 @media screen and (max-width: 480px) { 
     /* 헤더 */
     #newHeader .nheader_bottom .innerSection { padding: 0; } 
-    #newHeader .h_gnb li a { font-size: 14px; } 
     /* footer */
     #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
     #newFooter .f_business .f_sns { width: 100%; margin-top: 20px; } 
