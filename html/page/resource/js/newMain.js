@@ -84,13 +84,17 @@
             disableOnInteraction: false,
         },
     });
+
+
+    
     // 메인 배너 슬라이드
-    var bannerSwiper = new Swiper('.m_slider', {
+   var bannerSwiper = new Swiper('.m_slider', {
         spaceBetween: 10,
         slidesPerView: 1.5,
         centeredSlides: true,
+        // observer: true,
+        // observeParents: true,
         loop: true,
-        autoHeight: true,
         pagination: {
         el: ".swiper-pagination",
         },
@@ -112,6 +116,8 @@
             },
         }
     });
+
+    
     
     // 채용공고 슬라이드
     var $slider = $('.m_employ_items01');
@@ -121,8 +127,8 @@
             slidesPerView: 2.5,
             touchRatio: 1,
             observer: true,
-            loop: true,
             observeParents: true,
+            loop: true,
             breakpoints: {
             768: {
                 slidesPerView: 2,
