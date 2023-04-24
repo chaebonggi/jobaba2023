@@ -82,7 +82,7 @@
 .eventWrap .eventCont .itemBox::after { width: 78px; top: -50px; } 
 .eventWrap .eventCont .itemBox::before { width: 90px; top: -22px; } 
 .eventWrap .eventCont .eventInfo { padding: 20px 10px; } 
-.eventWrap .eventCont .eventInfo::before { width: 60px; } 
+.eventWrap .eventCont .eventInfo::before { width: 50px; top: -30px;} 
 .eventWrap .eventCont .eventInfo .tit p { width: 100%; padding: 8px 0 6px; margin-right: 0; font-size: 16px; } 
 .eventWrap .eventCont .eventInfo .txt { font-size: 14px; } 
 .eventWrap .eventCont .eventInfo .txt span { font-size: 12px; } 
