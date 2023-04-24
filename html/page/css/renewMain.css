@@ -220,11 +220,11 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newMain .m_employ .m_employ_slide .e_employ_txt .etc { padding: 0 18px; color: #808080; font-size: 14px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; } 
 #newMain .m_employ .m_employ_list { display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #f0f0f0; } 
 #newMain .m_employ .m_employ_list:last-child { border-bottom: none; } 
-#newMain .m_employ .m_employ_item .tit { display: inline-block; margin-right: 10px; color: #808080; font-size: 16px; } 
+#newMain .m_employ .m_employ_item .tit { display: inline-block; margin-right: 10px; color: #808080; font-size: 14px; } 
 #newMain .m_employ .m_employ_item .badge_wrap { display: inline-block; } 
 #newMain .m_employ .m_employ_item .badge_wrap .badge { display: inline-block; padding: 0 6px; font-size: 12px; border-radius: 10px; text-align: center; } 
 #newMain .m_employ .m_employ_item .badge_wrap span + span { margin-left: 4px; } 
-#newMain .m_employ .m_employ_item .txt { margin-bottom: 6px; color: #008ae0; font-size: 14px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+#newMain .m_employ .m_employ_item .txt { margin-bottom: 6px; color: #008ae0; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
 #newMain .m_employ .m_employ_item.right { text-align: right; flex-shrink: 0; } 
 #newMain .m_employ .m_employ_item.right span { display: block; color: #808080; font-size: 16px; } 
 #newMain .m_employ .m_employ_item.right span + span { display: none; } 
