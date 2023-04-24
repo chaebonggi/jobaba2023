@@ -4,16 +4,15 @@
 .fcBlue { color: #2a46d6; } 
 .eventWrap * { font-family: 'GmarketSansMedium'; } 
 .eventWrap strong { font-family: 'GmarketSansBold'; } 
-.eventWrap { position: relative; padding: 80px 0 130px; background: url(../resource/images/eventImg/event03/event03_bg.jpg) #0074ff top no-repeat; } 
-.eventWrap .innerSection { max-width: 1020px; padding: 0 10px; margin: 0 auto; } 
+.eventWrap { position: relative; padding: 42px 0 95px; background: url(../resource/images/eventImg/event03/event03_bg02.jpg) #0074ff top no-repeat; } 
+.eventWrap .innerSection { position: relative; max-width: 1020px; padding: 0 10px; margin: 0 auto; } 
 
-.eventWrap .eventLogo { position: absolute; top: 60px; left: 80px; } 
+.eventWrap .eventLogo { position: absolute; top: 60px; left: 80px; z-index: 10; } 
+.eventWrap .eventMain .innerSection::after { content: ''; width: 122px; height: 100px; position: absolute; top: 28px; right: -224px; background: url(../resource/images/eventImg/event03/event03_img08.png) no-repeat; background-size: contain; } 
 .eventWrap .eventMain { position: relative; } 
 .eventWrap .eventMain .mainTitle::before { content: ''; width: 281px; height: 239px; position: absolute; bottom: 60px; left: -390px; background: url(../resource/images/eventImg/event03/event03_img03.png) no-repeat; background-size: contain;; } 
 .eventWrap .eventMain .mainTitle::after { content: ''; width: 324px; height: 312px; position: absolute; bottom: -124px; right: -348px; background: url(../resource/images/eventImg/event03/event03_img04.png) no-repeat; background-size: contain; } 
 .eventWrap .eventMain .mainTitle { position: relative; text-align: center; margin-bottom: 260px; z-index: 1; } 
-/* .eventWrap .eventMain .mainTitle::before { content: ''; width: 803px; height: 563px; position: absolute; top: -334px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event03/event03_img01.png) no-repeat; background-size: contain; z-index: -1; } */
-/* .eventWrap .eventMain .mainTitle::after { content: ''; width: 295px; height: 264px; position: absolute; top: -136px; right: 10px; background: url(../resource/images/eventImg/event03/event03_img02.png) no-repeat; background-size: contain; z-index: 2; } */
 
 .eventWrap .eventCont { position: relative; } 
 .eventWrap .eventCont::after { content: ''; width: 269px; height: 400px; position: absolute; bottom: -86px; right: 136px; background: url(../resource/images/eventImg/event03/event03_img05.png) no-repeat; background-size: contain; } 
@@ -30,53 +29,62 @@
 .eventWrap .eventCont .itemBox ul li:nth-child(3) div { background: #bddd6e; } 
 .eventWrap .eventCont .itemBox ul li:nth-child(4) div { background: #f6c967; } 
 .eventWrap .eventCont .itemBox ul li p { display: flex; align-items: center; justify-content: center; height: 100%; background: #fff; border-radius: 100%; box-shadow: 1px 2px 5px rgba(0,0,0,0.2); line-height: 1.2; letter-spacing: -0.5px; } 
-.eventWrap .eventCont .eventInfo { padding-left: 100px; margin: 58px 0 80px; } 
+.eventWrap .eventCont .eventInfo { position: relative; padding: 65px 0 120px 90px; margin: 58px 0 0; background: #fff; border: 5px solid #00fffc; border-radius: 15px; } 
+.eventWrap .eventCont .eventInfo::before { content: ''; width: 141px; height: 167px; position: absolute; top: -36px; right: 10px; background: url(../resource/images/eventImg/event03/event03_img09.png) no-repeat; background-size: contain;}
 .eventWrap .eventCont .eventInfo li { display: flex; margin-bottom: 10px; } 
 .eventWrap .eventCont .eventInfo .tit p { width: 138px; padding: 12px 0 8px; margin-right: 20px; font-size: 24px; background: #00d8ff; text-align: center; border-radius: 30px; line-height: 1; } 
 .eventWrap .eventCont .eventInfo .txt { color: #000; font-size: 30px; word-break: keep-all; } 
 .eventWrap .eventCont .eventInfo .txt span { font-size: 20px; } 
-.eventWrap .eventCont .btnWrap { text-align: center; } 
+.eventWrap .eventCont .btnWrap { position: relative; margin-top: -50px; text-align: center; z-index: 1; } 
 .eventWrap .eventCont .btnWrap a { display: inline-block; width: 530px; padding: 22px 10px; background: #ffe400; color: #000; font-size: 36px; border: 1px solid #000; border-radius: 50px; box-shadow: 0 6px 0 #000; text-align: center; } 
 
-@media all and (max-width: 1700px) {.eventWrap .eventMain .mainTitle::before,
+@media all and (max-width: 1700px){
+ .eventWrap .eventMain .mainTitle::before,
 .eventWrap .eventMain .mainTitle::after,
-.eventWrap .eventCont::after {content: none; } 
-}
+.eventWrap .eventCont::after,
+.eventWrap .eventMain .innerSection::after { content: none; } 
+.eventWrap .eventLogo { position: static; display: flex; margin-left: 20px; } 
+ }
 
-@media all and (max-width: 1024px) {.eventWrap .eventLogo {position: absolute;top: 30px;left: 40px; } 
-.eventWrap .eventMain .mainTitle img {width: 80%; } 
-.eventWrap .eventMain .mainTitle {margin-bottom: 130px; } 
-.eventWrap .eventCont .itemBox {padding: 30px 20px; } 
-.eventWrap .eventCont .itemBox::before {width: 174px;top: -84px; } 
-.eventWrap .eventCont .itemBox ul {flex-wrap: wrap; } 
-.eventWrap .eventCont .itemBox ul li {width: calc(100% / 2); } 
-.eventWrap .eventCont .itemBox ul li:nth-child(-n + 2) {margin-bottom: 20px; } 
-.eventWrap .eventCont .itemBox .tit {position: static;margin-bottom: 20px; } 
-.eventWrap .eventCont .itemBox::after {width: 150px;top: -124px; } 
+@media all and (max-width: 1024px) { 
+.eventWrap .eventLogo img { width: 80%; } 
+.eventWrap .eventMain .mainTitle img { width: 80%; } 
+.eventWrap .eventMain .mainTitle { margin-bottom: 130px; } 
+.eventWrap .eventCont .itemBox { padding: 30px 20px; } 
+.eventWrap .eventCont .itemBox::before { width: 174px; top: -84px; } 
+.eventWrap .eventCont .itemBox ul { flex-wrap: wrap; } 
+.eventWrap .eventCont .itemBox ul li { width: calc(100% / 2); } 
+.eventWrap .eventCont .itemBox ul li:nth-child(-n + 2) { margin-bottom: 20px; } 
+.eventWrap .eventCont .itemBox .tit { position: static; margin-bottom: 20px; } 
+.eventWrap .eventCont .itemBox::after { width: 150px; top: -124px; } 
 .eventWrap .eventCont .itemBox { position: relative; width: 100%; padding: 30px 20px; background: rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 15px; z-index: 1; } 
 
-.eventWrap .eventCont .eventInfo {padding: 0 40px; } 
-.eventWrap .eventCont .eventInfo li {flex-direction: column; } 
-.eventWrap .eventCont .eventInfo .tit {margin-bottom: 10px; } 
+.eventWrap .eventCont .eventInfo { padding: 40px; } 
+.eventWrap .eventCont .eventInfo li { flex-direction: column; } 
+.eventWrap .eventCont .eventInfo .tit { margin-bottom: 10px; } 
+.eventWrap .eventCont .eventInfo::before { width: 100px; } 
+.eventWrap .eventCont .btnWrap { margin-top: 20px; } 
  }
-@media all and (max-width: 768px) {.eventWrap .eventCont .eventInfo {margin: 30px 0; } 
-.eventWrap .eventCont .itemBox .tit {padding: 10px; } 
-.eventWrap .eventCont .itemBox .tit p {padding: 10px;font-size: 16px;word-break: keep-all; } 
-.eventWrap .eventCont .itemBox ul li div {width: 160px;height: 160px;padding: 10px;font-size: 16px; } 
-.eventWrap .eventCont .eventInfo .txt {font-size: 20px; } 
-.eventWrap .eventCont .btnWrap a {width: 90%;padding: 12px 10px; font-size: 26px; } 
+@media all and (max-width: 768px){
+ .eventWrap .eventCont .eventInfo { margin: 30px 0; } 
+.eventWrap .eventCont .itemBox .tit { padding: 10px; } 
+.eventWrap .eventCont .itemBox .tit p { padding: 10px; font-size: 16px; word-break: keep-all; } 
+.eventWrap .eventCont .itemBox ul li div { width: 160px; height: 160px; padding: 10px; font-size: 16px; } 
+.eventWrap .eventCont .eventInfo .txt { font-size: 20px; } 
+.eventWrap .eventCont .btnWrap a { width: 90%; padding: 12px 10px; font-size: 26px; } 
  }
-@media all and (max-width: 640px) {.eventWrap {padding: 20px 0; } 
-.eventWrap .eventLogo {top: 10px;left: 20px; } 
-.eventWrap .eventMain .mainTitle {margin-bottom: 40px; } 
-.eventWrap .eventLogo img {width: 50%; } 
-.eventWrap .eventCont .itemBox .tit p {font-size: 13px; } 
-.eventWrap .eventCont .itemBox ul li div {width: 120px;height: 120px;font-size: 13px; } 
-.eventWrap .eventCont .itemBox::after {width: 78px;top: -50px; } 
-.eventWrap .eventCont .itemBox::before {width: 90px;top: -22px; } 
-.eventWrap .eventCont .eventInfo {padding: 0 10px; } 
-.eventWrap .eventCont .eventInfo .tit p {width: 100%;padding: 8px 0 6px;margin-right: 0;font-size: 16px; } 
-.eventWrap .eventCont .eventInfo .txt {font-size: 14px; } 
-.eventWrap .eventCont .eventInfo .txt span {font-size: 12px; } 
-.eventWrap .eventCont .btnWrap a {padding: 10px 10px;font-size: 16px; } 
+@media all and (max-width: 640px){
+.eventWrap { padding: 20px 0; } 
+.eventWrap .eventMain .mainTitle { margin-bottom: 40px; } 
+.eventWrap .eventLogo img { width: 40%; } 
+.eventWrap .eventCont .itemBox .tit p { font-size: 13px; } 
+.eventWrap .eventCont .itemBox ul li div { width: 120px; height: 120px; font-size: 13px; } 
+.eventWrap .eventCont .itemBox::after { width: 78px; top: -50px; } 
+.eventWrap .eventCont .itemBox::before { width: 90px; top: -22px; } 
+.eventWrap .eventCont .eventInfo { padding: 20px 10px; } 
+.eventWrap .eventCont .eventInfo::before { width: 60px; } 
+.eventWrap .eventCont .eventInfo .tit p { width: 100%; padding: 8px 0 6px; margin-right: 0; font-size: 16px; } 
+.eventWrap .eventCont .eventInfo .txt { font-size: 14px; } 
+.eventWrap .eventCont .eventInfo .txt span { font-size: 12px; } 
+.eventWrap .eventCont .btnWrap a { padding: 10px 10px; font-size: 16px; } 
  }
