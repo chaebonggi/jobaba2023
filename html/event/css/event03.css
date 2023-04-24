@@ -4,10 +4,10 @@
 .fcBlue { color: #2a46d6; } 
 .eventWrap * { font-family: 'GmarketSansMedium'; } 
 .eventWrap strong { font-family: 'GmarketSansBold'; } 
-.eventWrap { position: relative; padding: 42px 0 95px; background: url(../resource/images/eventImg/event03/event03_bg02.jpg) #0074ff top no-repeat; } 
+.eventWrap { position: relative; padding: 22px 0 95px; background: url(../resource/images/eventImg/event03/event03_bg02.jpg) #0074ff top no-repeat; } 
 .eventWrap .innerSection { position: relative; max-width: 1020px; padding: 0 10px; margin: 0 auto; } 
 
-.eventWrap .eventLogo { position: absolute; top: 60px; left: 80px; z-index: 10; } 
+.eventWrap .eventLogo { position: absolute; top: 40px; left: 80px; z-index: 10; } 
 .eventWrap .eventMain .innerSection::after { content: ''; width: 122px; height: 100px; position: absolute; top: 28px; right: -224px; background: url(../resource/images/eventImg/event03/event03_img08.png) no-repeat; background-size: contain; } 
 .eventWrap .eventMain { position: relative; } 
 .eventWrap .eventMain .mainTitle::before { content: ''; width: 281px; height: 239px; position: absolute; bottom: 60px; left: -390px; background: url(../resource/images/eventImg/event03/event03_img03.png) no-repeat; background-size: contain;; } 
