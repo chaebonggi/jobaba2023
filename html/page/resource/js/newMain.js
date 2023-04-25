@@ -70,6 +70,7 @@
           });
       });
       
+    // 공지사항 슬라이드
       var noticeSwiper = new Swiper(".m_notice_slide", {
           initialSlide: -1, 
           slidesPerView: 1,
@@ -84,9 +85,6 @@
               disableOnInteraction: false,
           },
       });
-  
-  
-      
      
       // 메인 슬라이드
       var bannerSwiper = new Swiper(".m_slider", {
@@ -106,15 +104,15 @@
           }, 
           on: {
             init: function () {
-              $('.swiper-slide').addClass('changed');
+              $('.m_slider .swiper-slide').addClass('changed');
             },
             slideChangeTransitionStart : function() {
-              $('.swiper-slide').addClass('changing');
-              $('.swiper-slide').removeClass('changed');
+              $('.m_slider .swiper-slide').addClass('changing');
+              $('.m_slider .swiper-slide').removeClass('changed');
             },
             slideChangeTransitionEnd : function() {
-              $('.swiper-slide').removeClass('changing');
-              $('.swiper-slide').addClass('changed');
+              $('.m_slider .swiper-slide').removeClass('changing');
+              $('.m_slider .swiper-slide').addClass('changed');
             }
           },
           breakpoints: {
@@ -150,25 +148,44 @@
   
       
       
-      // 채용공고 슬라이드
-      var $slider = $('.m_employ_items01');
-      $slider.find('.m_employ_slide').each(function(){
-          var employSwiper = new Swiper($(this), {
-              spaceBetween: 8,
+      // 탐나는기업 슬라이드
+    //   var $slider = $('.m_employ_items01');
+    //   $slider.find('.m_employ_slide').each(function(){
+    //       var employSwiper = new Swiper($(this), {
+    //           spaceBetween: 8,
+    //           slidesPerView: 2.5,
+    //           touchRatio: 1,
+    //           observer: true,
+    //           observeParents: true,
+    //           loop: true,
+    //           breakpoints: {
+    //           768: {
+    //               slidesPerView: 2,
+    //               touchRatio: 0,
+    //               spaceBetween: 20,
+    //           },
+    //       },
+    //       });
+    //   });
+          
+        // 탐나는기업 슬라이드
+          var employSwiper = new Swiper(".m_employ_slide", {
+              spaceBetween: 8,              
               slidesPerView: 2.5,
+              slidesPerColumn: 1,
               touchRatio: 1,
-              observer: true,
-              observeParents: true,
-              loop: true,
               breakpoints: {
-              768: {
-                  slidesPerView: 2,
-                  touchRatio: 0,
-                  spaceBetween: 20,
-              },
-          },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    slidesPerGroup: 4,
+                    slidesPerColumnFill: 'row',
+                    spaceBetween: 20,
+                    touchRatio: 0,
+                },
+            },            
           });
-      });
+
       
       // 러닝센터 슬라이드
       var eduSwiper = new Swiper(".m_edu_slide", {

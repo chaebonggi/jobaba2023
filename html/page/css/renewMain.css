@@ -79,7 +79,6 @@
 #newMain .badge.pink { color: #fff; background: #ff64c6; } 
 #newMain .badge.days { color: #ff007e; background: #fff; border: 1px solid #ff007e; } 
 #newMain .badge.area { color: #808080; background: #fff; border: 1px solid #c9c9c9; } 
-
 /* 메인 메뉴 */
 #newMain .m_visual { margin-bottom: 50px; } 
 #newMain .m_visual_wrap { display: flex; justify-content: space-between; } 
@@ -208,16 +207,23 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newMain .m_employ .m_employ_tit ul li.active { color: #38bab2; } 
 #newMain .m_employ .m_employ_tit ul li.active::after { content: ''; width: 100%; height: 1px; position: absolute; bottom: -4px; left: 0; background: #38bab2; } 
 #newMain .m_employ .m_employ_slide { overflow: hidden; } 
-#newMain .m_employ .swiper-slide { position: relative; padding: 10px; border: 1px solid #dddddd; background: #fff; border-radius: 10px; height: 185px; } 
-#newMain .m_employ .m_employ_slide .badge_wrap,
-#newMain .m_employ .e_employ_info .badge_wrap { display: flex; justify-content: space-between; } 
-#newMain .m_employ .m_employ_slide .badge_wrap .badge,
-#newMain .m_employ .e_employ_info .badge_wrap .badge { min-width: 46px; padding: 0 6px; font-size: 12px; border-radius: 10px; text-align: center; } 
-#newMain .m_employ .m_employ_slide .m_employ_img { display: flex; align-items: center; justify-content: center; height: 55px; text-align: center; overflow: hidden; } 
-#newMain .m_employ .m_employ_slide .e_employ_txt { text-align: center; } 
+#newMain .m_employ .swiper-slide { position: relative; padding-bottom: 10px;  background: #fff; border-radius: 10px; height: auto; border: 1px solid #dddddd; overflow: hidden;}
+#newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 20px;}
+#newMain .m_employ .m_employ_slide .badge_wrap { position: absolute; top: 4px; right: 10px; left: 10px; text-align: right;}
+#newMain .m_employ .m_employ_slide .m_employ_img {height: 110px; overflow: hidden;}
+#newMain .m_employ .m_employ_slide .m_employ_img img {width: 100%; height: 100%; object-fit: cover; object-position: top;}
+/* #newMain .m_employ .m_employ_slide .m_employ_img { display: flex; align-items: center; justify-content: center; height: 55px; text-align: center; overflow: hidden; }  */
+#newMain .m_employ .m_employ_slide .e_employ_txt {position: relative; padding: 30px 10px 0; } 
+#newMain .m_employ .m_employ_slide .e_employ_txt .employLogo {width: 150px; height: 50px; position: absolute; top: -25px; left: 50%; background: #fff; transform: translateX(-50%); overflow: hidden;}
+#newMain .m_employ .m_employ_slide .e_employ_txt .employLogo img { width: 100%; height: 100%; object-fit: contain;}
 #newMain .m_employ .m_employ_slide .e_employ_txt .tit { color: #000; font-size: 18px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
-#newMain .m_employ .m_employ_slide .e_employ_txt .date { color: #808080; font-size: 16px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
-#newMain .m_employ .m_employ_slide .e_employ_txt .etc { padding: 0 18px; color: #808080; font-size: 14px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; } 
+#newMain .m_employ .m_employ_slide .e_employ_txt .txt { color: #808080; font-size: 14px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; } 
+/* #newMain .m_employ .m_employ_slide .e_employ_txt .date { color: #808080; font-size: 16px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; }  */
+/* #newMain .m_employ .m_employ_slide .e_employ_txt .etc { padding: 0 18px; color: #808080; font-size: 14px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }  */
+#newMain .m_employ .m_employ_slide .e_employ_etc {padding: 0 10px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+#newMain .m_employ .m_employ_slide .e_employ_etc span {background: #c6e7f0; padding: 0 4px; font-size: 12px; border-radius: 5px;}
+#newMain .m_employ .m_employ_slide .e_employ_etc span + span { margin-left: 2px;}
+
 #newMain .m_employ .m_employ_list { display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #f0f0f0; } 
 #newMain .m_employ .m_employ_list:last-child { border-bottom: none; } 
 #newMain .m_employ .m_employ_item .tit { display: inline-block; margin-right: 10px; color: #808080; font-size: 14px; } 
@@ -238,6 +244,9 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newMain .m_employ .e_employ_info .e_employ_txt .tit { margin-bottom: 10px; color: #888888; font-size: 15px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
 #newMain .m_employ .e_employ_info .e_employ_txt .txt { height: 48px; margin: 20px 0 10px; color: #000; font-size: 16px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; } 
 #newMain .m_employ .e_employ_info .e_employ_txt .etc { color: #888888; font-size: 13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+#newMain .m_employ .m_employ_slide .badge_wrap .badge,
+#newMain .m_employ .e_employ_info .badge_wrap .badge { min-width: 46px; padding: 0 6px; font-size: 12px; border-radius: 10px; text-align: center; } 
+#newMain .m_employ .e_employ_info .badge_wrap { display: flex; justify-content: space-between; } 
 #newMain .m_employ .m_employ_items01, #newMain .m_employ .m_employ_items02 { display: none; } 
 #newMain .m_employ .m_employ_items01.active, #newMain .m_employ .m_employ_items02.active { display: block; } 
 /* 잡아바 러닝센터 */
@@ -408,7 +417,8 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_employ .m_employ_more { position: static; background: none; margin-top: 20px; } 
     #newMain .m_employ .m_employ_more a { position: relative; width: 290px; margin: 0 auto; text-indent: -9999px; border: 1px solid #dcdcdc; border-radius: 10px; overflow: hidden; } 
     #newMain .m_employ .m_employ_items01 .m_employ_more a::before { content: '채용중인 탐나는 기업 더보기 >'; width: 100%; height: 50px; position: absolute; top: 0; bottom: 0; left: 50%; background: #fff; transform: translateX(-50%); text-indent: initial; line-height: 50px; } 
-    #newMain .m_employ .m_employ_slide { margin-left: 20px; } 
+    #newMain .m_employ .m_employ_slide { margin-left: 20px; }
+    #newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 0;}
     /* 채용정보 */
     #newMain .m_employ .e_employ_info { display: none; } 
     #newMain .m_employ .m_employ_wrap .m_employ_box + div { padding: 20px 0; background: #f5f5f5; border-radius: initial; } 
