@@ -39,37 +39,7 @@
         $('.m_useful .m_useful_cont').removeClass('active');
         $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
     });
-      // 정책정보 슬라이드
-      var $slider = $('.m_policy_cont');
-      $slider.find('.m_policy_slide').each(function(i){
-          var $this = $(this);
-          $this.siblings().addClass("type" + i);
-          var policySwiper = new Swiper($(this), {
-              slidesPerView: 2.5,
-              spaceBetween: 8,
-              observer: true,
-              observeParents: true,        
-              loop: true,
-              navigation: {
-                  nextEl: $('.type' + i).find('.swiper-button-next'),
-                  prevEl: $('.type' + i).find('.swiper-button-prev'),
-              },
-              breakpoints: {
-                  1024: {
-                      slidesPerView: 4,
-                      spaceBetween: 20,
-                  },
-                  860: {
-                      slidesPerView: 3,
-                  },
-                  768: {
-                      slidesPerView: 2,
-                      
-                  },
-              },
-          });
-      });
-      
+     
     // 공지사항 슬라이드
       var noticeSwiper = new Swiper(".m_notice_slide", {
           initialSlide: -1, 
@@ -145,47 +115,69 @@
   
       window.addEventListener('resize', handleResize);
   
-  
+       // 정책정보 슬라이드
+       var $slider = $('.m_policy_cont');
+       $slider.find('.m_policy_slide').each(function(i){
+           var $this = $(this);
+           $this.siblings().addClass("type" + i);
+           var policySwiper = new Swiper($(this), {
+               slidesPerView: 1.5,
+               spaceBetween: 8,
+               observer: true,
+               observeParents: true,        
+               loop: true,
+               navigation: {
+                   nextEl: $('.type' + i).find('.swiper-button-next'),
+                   prevEl: $('.type' + i).find('.swiper-button-prev'),
+               },
+               breakpoints: {
+                   1024: {
+                       slidesPerView: 4,
+                       spaceBetween: 20,
+                   },
+                   860: {
+                       slidesPerView: 3,
+                   },
+                   768: {
+                       slidesPerView: 2,
+                       
+                   },
+                   460: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 8,                    
+                },
+               },
+           });
+       });
       
       
       // 탐나는기업 슬라이드
-    //   var $slider = $('.m_employ_items01');
-    //   $slider.find('.m_employ_slide').each(function(){
-    //       var employSwiper = new Swiper($(this), {
-    //           spaceBetween: 8,
-    //           slidesPerView: 2.5,
-    //           touchRatio: 1,
-    //           observer: true,
-    //           observeParents: true,
-    //           loop: true,
-    //           breakpoints: {
-    //           768: {
-    //               slidesPerView: 2,
-    //               touchRatio: 0,
-    //               spaceBetween: 20,
-    //           },
-    //       },
-    //       });
-    //   });
-          
-        // 탐나는기업 슬라이드
-          var employSwiper = new Swiper(".m_employ_slide", {
-              spaceBetween: 8,              
-              slidesPerView: 2.5,
-              slidesPerColumn: 1,
-              touchRatio: 1,
-              breakpoints: {
+      var $slider = $('.m_employ_items01');
+      $slider.find('.m_employ_slide').each(function(){
+          var employSwiper = new Swiper($(this), {
+            spaceBetween: 8,              
+            slidesPerView: 1.5,
+            observer: true,
+            observeParents: true,
+            breakpoints: {
                 768: {
                     slidesPerView: 2,
                     slidesPerColumn: 2,
-                    slidesPerGroup: 4,
-                    slidesPerColumnFill: 'row',
                     spaceBetween: 20,
                     touchRatio: 0,
+                    slidesPerColumnFill: "row",
                 },
-            },            
+                460: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 8,
+                    slidesPerColumnFill: "column",
+                    slidesPerColumn: 1,
+                    touchRatio: 1,
+                },
+            },
           });
-
+      });
+        
       
       // 러닝센터 슬라이드
       var eduSwiper = new Swiper(".m_edu_slide", {

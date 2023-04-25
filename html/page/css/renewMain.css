@@ -208,7 +208,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newMain .m_employ .m_employ_tit ul li.active::after { content: ''; width: 100%; height: 1px; position: absolute; bottom: -4px; left: 0; background: #38bab2; } 
 #newMain .m_employ .m_employ_slide { overflow: hidden; } 
 #newMain .m_employ .swiper-slide { position: relative; padding-bottom: 10px;  background: #fff; border-radius: 10px; height: auto; border: 1px solid #dddddd; overflow: hidden;}
-#newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 20px;}
+/* #newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 20px;} */
 #newMain .m_employ .m_employ_slide .badge_wrap { position: absolute; top: 4px; right: 10px; left: 10px; text-align: right;}
 #newMain .m_employ .m_employ_slide .m_employ_img {height: 110px; overflow: hidden;}
 #newMain .m_employ .m_employ_slide .m_employ_img img {width: 100%; height: 100%; object-fit: cover; object-position: top;}
@@ -418,7 +418,8 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_employ .m_employ_more a { position: relative; width: 290px; margin: 0 auto; text-indent: -9999px; border: 1px solid #dcdcdc; border-radius: 10px; overflow: hidden; } 
     #newMain .m_employ .m_employ_items01 .m_employ_more a::before { content: '채용중인 탐나는 기업 더보기 >'; width: 100%; height: 50px; position: absolute; top: 0; bottom: 0; left: 50%; background: #fff; transform: translateX(-50%); text-indent: initial; line-height: 50px; } 
     #newMain .m_employ .m_employ_slide { margin-left: 20px; }
-    #newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 0;}
+    #newMain .m_employ .swiper-slide {margin-top: 0 !important;}
+    /* #newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 0;} */
     /* 채용정보 */
     #newMain .m_employ .e_employ_info { display: none; } 
     #newMain .m_employ .m_employ_wrap .m_employ_box + div { padding: 20px 0; background: #f5f5f5; border-radius: initial; } 
@@ -508,12 +509,16 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     /* 채용중인 탐나는 기업 */
     #newMain .m_employ .m_employ_tit { margin-bottom: 10px; } 
     #newMain .m_employ .m_employ_slide .badge_wrap .badge, #newMain .m_employ .e_employ_info .badge_wrap .badge { min-width: 40px; font-size: 10px; } 
-    #newMain .m_employ .swiper-slide { height: auto; } 
+    #newMain .m_employ .m_employ_slide .e_employ_txt {padding: 10px 10px 0; }
     #newMain .m_employ .m_employ_slide .e_employ_txt .tit { font-size: 14px; } 
-    #newMain .m_employ .m_employ_slide .e_employ_txt .date { font-size: 14px; } 
-    #newMain .m_employ .m_employ_slide .e_employ_txt .etc { font-size: 14px; } 
+    #newMain .m_employ .m_employ_slide .e_employ_txt .employLogo {width: 100%; position: static; transform: none; text-align: center;}
+    #newMain .m_employ .m_employ_slide .e_employ_txt .employLogo img { width: 50%;}
+    /* #newMain .m_employ .m_employ_slide .e_employ_txt .date { font-size: 14px; }  */
+    /* #newMain .m_employ .m_employ_slide .e_employ_txt .etc { font-size: 14px; }  */
+    
     #newMain .m_employ .m_employ_more a { width: 90%; } 
-    #newMain .m_employ .m_employ_items01 .m_employ_more a::before { font-size: 16px; } 
+    #newMain .m_employ .m_employ_items01 .m_employ_more a::before { font-size: 16px; }
+    
     /* 채용정보 */
     #newMain .m_employ .m_employ_items02 .m_employ_more a::before { font-size: 16px; } 
     #newMain .m_employ .m_employ_item .tit { font-size: 16px; } 
