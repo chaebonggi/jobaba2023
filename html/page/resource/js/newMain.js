@@ -4,8 +4,8 @@
         var search = $(this).attr('data-tab');
         $('.m_visual_search li').removeClass('active');
         $(this).addClass('active');
-          $('.m_search_cont').removeClass('active');
-        $('.m_search_cont[data-tab='+search+']').addClass('active');
+        // $('.m_search_cont').removeClass('active');
+        // $('.m_search_cont[data-tab='+search+']').addClass('active');
     });
       // 정책정보
       $('.m_policy .m_policy_btn li').click(function(){
