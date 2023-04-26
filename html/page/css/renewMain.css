@@ -10,7 +10,7 @@
 #newHeader .h_util ul li::before { content: ''; display: block; width: 1px; height: 11px; position: absolute; top: 50%; right: 0; background: #ddd; transform: translateY(-50%); } 
 #newHeader .h_util ul li a { display: block; color: #fff; font-size: 13px; line-height: 1; } 
 #newHeader .h_cont { display: flex; align-items: center; justify-content: space-between; height: 70px; margin-top: 25px; } 
-#newHeader .h_cont .logo { height: 100%; padding-bottom: 4px; }
+#newHeader .h_cont .logo { height: 100%; padding-bottom: 10px; }
 #newHeader .h_cont .logo a {display: block; width: 100%; height: 100%;}
 #newHeader .h_cont .logo a img {width: 100%; height: 100%; object-fit: contain;}
 #newHeader .nheader_mid { background: #fff; border-bottom: 1px solid #dadada; } 
