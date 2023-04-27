@@ -5,10 +5,63 @@
 .eventWrap * { font-family: 'GmarketSansMedium'; } 
 .eventWrap strong { font-family: 'GmarketSansBold'; } 
 .eventWrap .innerSection { position: relative; max-width: 812px; margin: 0 auto; } 
-.eventWrap .fcPink { color: #ff5273; } 
+.eventWrap .fcPink { color: #ff54ba; } 
 
-.eventWrap .eventMain {padding: 85px 0 100px; background: url(../resource/images/eventImg/event04/event04_bg01.jpg) top no-repeat; background-size: cover;}
+.eventWrap .eventMain { padding: 85px 0 100px; background: url(../resource/images/eventImg/event04/event04_bg01.jpg) top no-repeat; background-size: cover; } 
+.eventWrap .eventMain .mainTitle { text-align: right; margin-bottom: 40px; } 
+.eventWrap .eventMain .mainTxt { margin-bottom: 50px; } 
+.eventWrap .eventMain .mainTxt p { color: #fff82d; font-size: 22px; font-family: 'jalnan'; text-align: center; } 
+.eventWrap .eventMain .mainTxt strong { font-size: 30px; } 
+.eventWrap .eventMain .mainEvent { display: flex; padding: 0 20px; margin-bottom: 50px; } 
+.eventWrap .eventMain .mainEvent .imgWrap { margin-right: 40px; } 
+.eventWrap .eventMain .mainEvent ul li { display: flex; align-items: baseline; color: #fff; font-size: 24px; } 
+.eventWrap .eventMain .mainEvent ul li > span { min-width: 120px; text-align: justify; font-size: 0; } 
+.eventWrap .eventMain .mainEvent ul li > span::after { content: ''; display: inline-block; width: 100%; } 
+.eventWrap .eventMain .mainEvent ul li .siner { font-size: 24px; } 
+.eventWrap .eventMain .mainEvent ul li p::before { content: ':'; margin-left: -10px; margin-right: 5px; } 
+.eventWrap .eventMain .mainEvent ul li p { margin-left: 14px; font-weight: 600; } 
+.eventWrap .eventMain .mainEvent ul li p span { font-size: 16px; } 
+.eventWrap .eventMain .itemBox { padding: 60px 45px 68px; background: #0056ae; border-radius: 20px; } 
+.eventWrap .eventMain .itemBox .titWrap { position: relative; padding-left: 34px; margin-bottom: 30px; } 
+.eventWrap .eventMain .itemBox .titWrap::after { content: ''; width: 91px; height: 128px; position: absolute; top: -12px; right: 0px; background: url(../resource/images/eventImg/event04/event04_img03.png) no-repeat; background-size: cover; } 
+.eventWrap .eventMain .itemBox .titWrap strong::before { content: ''; width: 49px; height: 45px; position: absolute; top: -14px; left: -46px; background: url(../resource/images/eventImg/event04/event04_img02.png) no-repeat; background-size: cover; } 
+.eventWrap .eventMain .itemBox .titWrap strong { position: relative; color: #54fff9; font-size: 32px; font-family: 'jalnan'; } 
+.eventWrap .eventMain .itemBox .titWrap p { color: #fff; font-size: 24px; } 
+.eventWrap .eventMain .itemBox .titWrap span { color: #fff; font-size: 18px; } 
+.eventWrap .eventMain .itemBox ul { display: flex; justify-content: space-between; margin-bottom: 26px; } 
+.eventWrap .eventMain .itemBox ul li { position: relative; padding: 20px 26px; background: #fff; color: #004387; font-size: 22px; font-family: 'jalnan'; text-align: center; border-radius: 20px; } 
+.eventWrap .eventMain .itemBox ul li + li::before { content: ''; width: 35px; height: 31px; position: absolute; left: -44px; top: 50%; transform: translateY(-50%); background: url(../resource/images/eventImg/event04/event04_img08.png) no-repeat; background-size: cover; } 
+.eventWrap .eventMain .itemBox ul li span { font-family: 'jalnan'; } 
+.eventWrap .eventMain .itemBox > p { color: #fff; font-size: 16px; } 
+.eventWrap .eventMain .btnWrap { margin-top: -36px; text-align: center; } 
+.eventWrap .eventMain .btnWrap a { display: inline-block; width: 420px; position: relative; padding: 10px 10px 10px 46px; background: #ff54ba; color: #fff; font-size: 28px; font-family: 'jalnan'; border: 1px solid #000; border-radius: 40px; box-shadow: 0 6px 0 #000; text-align: left; } 
+.eventWrap .eventMain .btnWrap a::after { content: ''; width: 61px; height: 70px; position: absolute; right: 0; top: 14px; background: url(../resource/images/eventImg/event04/event04_img04.png) no-repeat; background-size: cover; } 
 
+.eventWrap .event04 { padding: 85px 0 120px; background: url(../resource/images/eventImg/event04/event04_bg02.jpg) top no-repeat; background-size: cover; } 
+.eventWrap .event04 .title { position: relative; padding: 0 154px; margin-bottom: 46px; } 
+.eventWrap .event04 .title::before { content: ''; width: 89px; height: 85px; position: absolute; right: 252px; top: -26px; background: url(../resource/images/eventImg/event04/event04_img05.png) no-repeat; background-size: cover; } 
+.eventWrap .event04 .title p { font-size: 40px; font-family: 'jalnan'; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; } 
+.eventWrap .event04 .title p:nth-child(1) { color: #0017c0; } 
+.eventWrap .event04 .title p:nth-child(2) { color: #0e3573; text-align: right; } 
+.eventWrap .event04 .counsel { padding: 55px 20px 0 50px; margin-bottom: 46px; background: #9ee7ff; border: 2px dotted #fff; border-radius: 20px; overflow: hidden; } 
+.eventWrap .event04 .counsel .tit p { margin-bottom: 36px; color: #0017c0; font-size: 30px; font-style: italic; font-family: 'jalnan'; } 
+.eventWrap .event04 .counsel ul { display: flex; margin-bottom: 36px; } 
+.eventWrap .event04 .counsel ul li { width: 185px; padding: 12px 10px; font-size: 22px; font-weight: 600; border: 2px solid #fff; border-radius: 20px; text-align: center; } 
+.eventWrap .event04 .counsel ul li + li { margin-left: 12px; } 
+.eventWrap .event04 .counsel .counselBox { display: flex; } 
+.eventWrap .event04 .counsel .counselBox .txt { width: 363px; margin-right: 10px; } 
+.eventWrap .event04 .counsel .counselBox p { font-size: 26px; word-break: keep-all; } 
+
+.eventWrap .event04 .register { background: rgba(255, 255, 255, 0.7); border: 2px solid #fff; border-radius: 20px; overflow: hidden; } 
+.eventWrap .event04 .register .tit { position: relative; padding-left: 170px; background: rgba(22, 112, 252, 0.3); } 
+.eventWrap .event04 .register .tit::before { content: ''; width: 89px; height: 99px; position: absolute; left: 54px; top: 28px; background: url(../resource/images/eventImg/event04/event04_img07.png) no-repeat; background-size: cover; } 
+.eventWrap .event04 .register .tit strong { display: inline-block; padding: 40px 10px 26px; color: #010101; font-size: 26px; font-family: 'jalnan'; } 
+.eventWrap .event04 .register .txt { padding: 36px 10px 76px; text-align: center; } 
+.eventWrap .event04 .register .txt p { color: #000; font-size: 24px; font-family: 'jalnan'; } 
+.eventWrap .event04 .register .txt p span { display: inline-block; padding: 0 12px; margin-bottom: 20px; background: #00a2ff; color: #fff; font-size: 24px; font-family: 'jalnan'; border-radius: 20px; } 
+.eventWrap .event04 .btnWrap { margin-top: -36px; text-align: center; } 
+.eventWrap .event04 .btnWrap a { display: inline-block; width: 330px; position: relative; padding: 10px 10px 10px 46px; background: #ff54ba; color: #fff; font-size: 24px; font-family: 'jalnan'; border: 1px solid #000; border-radius: 40px; box-shadow: 0 6px 0 #000; text-align: left; } 
+.eventWrap .event04 .btnWrap a::after { content: ''; width: 61px; height: 70px; position: absolute; right: 0; top: 14px; background: url(../resource/images/eventImg/event04/event04_img04.png) no-repeat; background-size: cover; } 
 
 
 
