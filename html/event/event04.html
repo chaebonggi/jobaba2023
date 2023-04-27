@@ -77,14 +77,26 @@
 		</article>
 		<style>
 			.eventWrap .eventReview { padding: 158px 0 138px; background: url(./resource/images/eventImg/event04/event04_bg02.jpg) top no-repeat; } 
-			.eventWrap .eventReview .eventTalk .tit {
+			.eventWrap .eventReview .eventTalk .titWrap {
+				position: relative;
+				padding-left: 38px;
+				margin-bottom: 20px;
 				font-size: 48px;
-				text-align: center;
 			}
-			.eventWrap .eventReview .eventTalk .tit span {
+			.eventWrap .eventReview .eventTalk .titWrap::before {
+				content: '';
+				width: 130px;
+				height: 148px;
+				position: absolute;
+				top: -84px;
+				right: 0;
+				background: url(./resource/images/eventImg/event04/event04_img05.png) no-repeat;
+				background-size: cover;
+			}
+			.eventWrap .eventReview .eventTalk .titWrap span {
 				position: relative;
 			}
-			.eventWrap .eventReview .eventTalk .tit span::before {
+			.eventWrap .eventReview .eventTalk .titWrap span::before {
 				content: '';
 				width: 14px;
 				height: 14px;
@@ -94,26 +106,311 @@
 				transform: translateX(-50%);
 				border-radius: 100%;
 			}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(1)::before {background: #faac48;}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(2)::before {background: #55bbc7;}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(3)::before {background: #46a4d9;}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(4)::before {background: #8d85ac;}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(5)::before {background: #48e9fa;}
-			.eventWrap .eventReview .eventTalk .tit span:nth-of-type(6)::before {background: #c7557e;}
-			
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(1)::before {background: #faac48;}
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(2)::before {background: #55bbc7;}
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(3)::before {background: #46a4d9;}
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(4)::before {background: #8d85ac;}
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(5)::before {background: #48e9fa;}
+			.eventWrap .eventReview .eventTalk .titWrap span:nth-of-type(6)::before {background: #c7557e;}
+			.eventWrap .eventReview .eventTalk .txtWrap {
+				display: flex;
+				align-items: center;
+				margin-bottom: 100px;
+			}
+			.eventWrap .eventReview .eventTalk .txtWrap .imgWrap {
+				flex-shrink: 0;
+				padding: 0 30px;
+			}
+			.eventWrap .eventReview .eventTalk .txtWrap p {				
+				font-size: 25px;
+			}
 		</style>
 		<article class="eventReview">
 			<div class="innerSection">
 				<div class="eventTalk">
-					<div class="tit">
+					<div class="titWrap">
 						<strong class="fcPink">잡아바 채널톡</strong>이 <span>새</span><span>로</span><span>워</span><span>졌</span><span>어</span><span>요</span>!
 					</div>
-					<div class="txt">
+					<div class="txtWrap">
 						<div class="imgWrap">
-
+							<img src="./resource/images/eventImg/event04/event04_img06.png" alt="핸드폰">
+						</div>
+						<div class="txt">
+							<p>	
+								언제 어디서나 로그인 없이, 클릭만 해도 
+								실시간 상담이 가능합니다.<br>
+								전문상담사가 빠르고 정확하게 원하는 정보를 
+								제공해드립니다.<br>
+								깊이있는 개인별 맞춤 상담으로 
+								잡아바와 함께 취업에 더 가까워지세요!
+							</p>
 						</div>
 					</div>
 				</div>
+				<style>
+					.eventWrap .eventReview .reviewWrap .titWrap {
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+						padding-left: 38px;
+						margin-bottom: 40px;
+					}
+					.eventWrap .eventReview .reviewWrap .titWrap strong {
+						font-size: 48px;
+					}
+					.eventWrap .eventReview .reviewWrap .titWrap strong span {
+						font-family: 'GmarketSansBold';
+					}
+					.eventWrap .eventReview .reviewWrap .titWrap p {
+						font-size: 18px;
+					}
+					.eventWrap .eventReview .reviewWrap .btnWrap {
+						text-align: center;
+					}
+					.eventWrap .eventReview .reviewWrap .btnWrap a {
+						display: inline-block;
+						width: 360px;
+						padding: 10px 10px;
+						margin-bottom: 70px;
+						background: #ff54ba;
+						color: #fff;
+						font-size: 30px;
+						border: 1px solid #000;
+						border-radius: 50px;
+						box-shadow: 0 6px 0 #000;
+						text-align: center;
+					}
+					.eventWrap .eventReview .reviewWrap .btnWrap ul {
+						padding: 20px 35px;
+						background: #d6d6d6;
+						text-align: left;
+						border-radius: 10px;
+					}
+					.eventWrap .eventReview .reviewWrap .btnWrap ul li::before {
+						content: '·';
+						margin-left: -10px;
+						margin-right: 5px;
+					}
+					.eventWrap .eventReview .reviewWrap .btnWrap ul li {
+						color: #000;
+						font-size: 18px;
+					}
+					.eventWrap .eventReview .eventList {
+						display: flex;
+						margin-bottom: 38px;
+						height: 233px;
+						background: url(./resource/images/eventImg/event04/event04_img14.png) no-repeat;
+						background-size: cover;
+					}
+					.eventWrap .eventReview .eventList li {
+						position: relative;
+						width: calc((100% - 116px) / 3);
+						padding: 48px 10px 20px;
+						text-align: center;
+						z-index: 1;
+
+					}
+					.eventWrap .eventReview .eventList li + li {
+						margin-left: 58px;
+					}
+					.eventWrap .eventReview .eventList li .imgWrap {
+						margin-bottom: 26px;
+					}
+					.eventWrap .eventReview .eventList .txt {
+						font-size: 22px;
+						word-break: keep-all;
+						letter-spacing: -1px;
+					}
+					.eventWrap .eventReview .eventList .txt span {
+						color: #ff0000;
+						font-family: 'GmarketSansBold';
+					}
+				</style>
+				<div class="reviewWrap">
+					<div class="titWrap">
+						<strong><span class="fcPink">리뷰이벤트</span> 참여하기</strong>
+						<p>현재 총 <span class="fcPink">50명</span> 참여 중</p>
+					</div>
+					<ul class="eventList">
+						<li>
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event04/event04_img10.png" alt="숫자1">
+							</div>
+							<div class="txt">
+								<strong>잡아바 <span>채널톡으로</span><br> 취업진로<br> <span>상담</span>진행</strong>
+							</div>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event04/event04_img11.png" alt="숫자2">
+							</div>
+							<div class="txt">
+								<strong>잡아바 상담완료 후 <span>이벤트 URL</span> 받아<br> 접속</strong>
+							</div>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event04/event04_img12.png" alt="숫자3">
+							</div>
+							<div class="txt">
+								<strong><span>리뷰 작성</span>후<br> 제출</strong>
+							</div>
+						</li>
+					</ul>
+					<div class="btnWrap">
+						<a href=""><strong>이벤트 참여</strong></a>
+						<ul>
+							<li>현재 상담이 진행 중이신 분들께서는 상담 종료 후 상담자에게 이벤트 참여 URL을 전달받으실 수 있습니다. </li>
+							<li>이미 상담이 종료되어 채널톡을 종료하신 경우에는 새로 상담을 신청해주세요.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="eventReg">
+			<style>
+				.themaWrap .section03 .guideBox.icon01 {
+					background: linear-gradient(-45deg, #83e7ff 0%, #d394ff 100%);
+				}
+				.eventWrap .eventReg { padding: 160px 0 106px; background: url(./resource/images/eventImg/event04/event04_bg03.jpg) top no-repeat; } 
+				.eventWrap .eventReg .txtWrap {
+					position: relative;
+					margin-bottom: 30px;
+					padding-left: 190px;
+					color: #000;
+					font-size: 30px;
+				}
+				.eventWrap .eventReg .txtWrap::before {
+					content: '';
+					width: 129px;
+					height: 123px;
+					position: absolute;
+					left: 50%;
+					top: -218px;
+					transform: translateX(-50%);
+					background: url(./resource/images/eventImg/event04/event04_img07.png) no-repeat;
+					background-size: cover;
+				}
+				.eventWrap .eventReg .titWrap {
+					position: relative;
+					padding: 40px 10px;
+					background: #fff;
+					border-radius: 150px;
+					text-align: center;
+				}
+				.eventWrap .eventReg .titWrap::after {
+					content: '';
+					width: 156px;
+					height: 172px;
+					position: absolute;
+					top: -125px;
+					left: 20px;
+					background: url(./resource/images/eventImg/event04/event04_img08.png) no-repeat;
+					background-size: cover;
+				}
+				.eventWrap .eventReg .titWrap::before {
+					content: "";
+					position: absolute;
+					inset: 0;
+					border-radius: 150px; 
+					padding: 10px; 
+					background:linear-gradient(45deg,#51c6f6,#5d98f5); 
+					-webkit-mask: 
+						linear-gradient(#fff 0 0) content-box, 
+						linear-gradient(#fff 0 0);
+					-webkit-mask-composite: xor;
+							mask-composite: exclude; 
+				}
+				.eventWrap .eventReg .titWrap p {
+					font-size: 40px;
+				}
+				.eventWrap .eventReg .titWrap p span {
+					display: inline-block;
+					padding: 8px 16px 0;
+					background: #ff54ba;
+					color: #fff;
+					border-radius: 30px;
+				}
+				.eventWrap .eventReg .titWrap .btnWrap {
+					margin-top: 30px;
+				}
+				.eventWrap .eventReg .titWrap .btnWrap a {
+					position: relative;
+					display: inline-block;
+					width: 288px;
+					padding: 8px 10px 8px 20px;					
+					font-size: 24px;
+					border: 2px solid #bababa;
+					border-radius: 30px;
+					text-align: left;
+				}
+				.eventWrap .eventReg .titWrap .btnWrap a::after {
+					content: '';
+					width: 61px;
+					height: 70px;
+					position: absolute;
+					top: 10px;
+					right: 0;
+					background: url(./resource/images/eventImg/event04/event04_img09.png) no-repeat;
+					background-size: cover;
+				}
+			</style>
+			<div class="innerSection">
+				<div class="txtWrap">
+					<span>채널톡으로 취업 상담 후<br>
+						취업 <strong>성공률을 높이는 빠른 방법</strong>을 알려드려요!</span>
+				</div>
+				<div class="titWrap">
+					<p>
+						<span>구인등록</span>을 하시면<br>
+						<strong>기업이력서 열람 및 면접제의</strong>를<br>
+						추천 받을 수 있습니다.
+					</p>
+					<div class="btnWrap">
+						<a href="">구인등록 하러가기</a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.eventWrap .eventWarning {
+				padding: 56px 0;
+				background: #001d4b;
+			}
+			.eventWrap .eventWarning strong {
+				color: #fff;
+				font-size: 24px;
+			}
+			.eventWrap .eventWarning .warningList {
+				margin-top: 15px;
+			}
+			.eventWrap .eventWarning .warningList li {
+				color: #fff;
+				font-size: 16px;
+			}
+			.eventWrap .eventWarning .warningList li::before {
+				content: '-';
+				margin-left: -10px;
+				margin-right: 5px;
+			}
+		</style>
+		<article class="eventWarning">
+			<div class="innerSection">
+				<strong>이벤트 참여 유의사항</strong>
+				<ul class="warningList">
+					<li>본 이벤트는 로그인 후 참여 가능합니다</li>
+					<li>이벤트에 응모하신 내용에 대한 소유권 및 사용권은 잡아바에 귀속되며 수정*보완하여 사용할 수 있습니다.</li>
+					<li>반말/욕설/은어 등의 사용은 당첨에서 제외됩니다.</li>
+					<li>허위작성을 통한 부정수급 적발시 당첨취소 될 수 있습니다.</li>
+					<li>비정상적이거나 불법적인 방법으로 이벤트에 참여하신 경우 응모이력 삭제 또는 당첨자 선정 대상에서</li>
+					<li>제외 될수 있으며,지개하신 정보가 다를 경우에도 당첨취소 될수 있습니다.</li>
+					<li>이벤트 참여 횟수는 1인 1회로 제한되며, 경품은 중복담첨되지 않습니다.</li>
+					<li>개인 정보 오기입으로 인한 경품 미수령시  재발송 되지 않습니다.</li>
+					<li>경품은 당첨자 발표 후 5일이내 일괄 발송될 예정입니다.</li>
+					<li>이벤트 참여시 입력하신 정보는 경품 당첨을 위해 사용되며 이벤트 종료 후 파기됩니다.</li>
+					<li>당첨된 경품은 양도/양수가 되지 않으며,타 상품으로 교환 및 환불이 불가능 합니다.</li>
+					<li>이벤트에 응모하는 경우 상기 내용에 모두 동의하는 것으로 간주합니다.</li>
+				</ul>
 			</div>
 		</article>
 	</section>
