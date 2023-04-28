@@ -39,8 +39,8 @@
 
 .eventWrap .event04 { padding: 85px 0 120px; background: url(../resource/images/eventImg/event04/event04_bg02.jpg) top no-repeat; background-size: cover; } 
 .eventWrap .event04 .title { position: relative; padding: 0 154px; margin-bottom: 46px; } 
-.eventWrap .event04 .title::before { content: ''; width: 89px; height: 85px; position: absolute; right: 252px; top: -26px; background: url(../resource/images/eventImg/event04/event04_img05.png) no-repeat; background-size: cover; } 
-.eventWrap .event04 .title p { font-size: 40px; font-family: 'jalnan'; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; } 
+.eventWrap .event04 .title p:nth-child(1)::before { content: ''; width: 89px; height: 85px; position: absolute; right: 95px; top: -26px; background: url(../resource/images/eventImg/event04/event04_img05.png) no-repeat; background-size: cover; } 
+.eventWrap .event04 .title p { position: relative; font-size: 40px; font-family: 'jalnan'; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; } 
 .eventWrap .event04 .title p:nth-child(1) { color: #0017c0; } 
 .eventWrap .event04 .title p:nth-child(2) { color: #0e3573; text-align: right; } 
 .eventWrap .event04 .counsel { padding: 55px 20px 0 50px; margin-bottom: 46px; background: #9ee7ff; border: 2px dotted #fff; border-radius: 20px; overflow: hidden; } 
@@ -51,6 +51,7 @@
 .eventWrap .event04 .counsel .counselBox { display: flex; } 
 .eventWrap .event04 .counsel .counselBox .txt { width: 363px; margin-right: 10px; } 
 .eventWrap .event04 .counsel .counselBox p { font-size: 26px; word-break: keep-all; } 
+.eventWrap .event04 .counsel .counselBox .imgWrap { display: flex; align-items: flex-end; justify-content: center; } 
 
 .eventWrap .event04 .register { background: rgba(255, 255, 255, 0.7); border: 2px solid #fff; border-radius: 20px; overflow: hidden; } 
 .eventWrap .event04 .register .tit { position: relative; padding-left: 170px; background: rgba(22, 112, 252, 0.3); } 
@@ -63,13 +64,118 @@
 .eventWrap .event04 .btnWrap a { display: inline-block; width: 330px; position: relative; padding: 10px 10px 10px 46px; background: #ff54ba; color: #fff; font-size: 24px; font-family: 'jalnan'; border: 1px solid #000; border-radius: 40px; box-shadow: 0 6px 0 #000; text-align: left; } 
 .eventWrap .event04 .btnWrap a::after { content: ''; width: 61px; height: 70px; position: absolute; right: 0; top: 14px; background: url(../resource/images/eventImg/event04/event04_img04.png) no-repeat; background-size: cover; } 
 
-
-
-
-
-
 .eventWrap .eventWarning { padding: 56px 0; background: #001d4b; } 
 .eventWrap .eventWarning strong { color: #fff; font-size: 24px; } 
-.eventWrap .eventWarning .warningList { margin-top: 15px; } 
+.eventWrap .eventWarning .warningList { margin-top: 15px; padding: 0 10px; } 
 .eventWrap .eventWarning .warningList li { color: #fff; font-size: 16px; } 
 .eventWrap .eventWarning .warningList li::before { content: '-'; margin-left: -10px; margin-right: 5px; } 
+
+.not_scroll { overflow: hidden; overflow: hidden; width: 100%; height: 100%; } 
+.shadow { background: rgba(0, 0, 0, 0.33); width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; display: none; } 
+.eventPopup { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 99999; max-width: 400px; width: calc(100% - 40px); border-radius: 20px; overflow: hidden; display: none; } 
+.eventPopup .pop_head { background: #000; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; font-size: 16px; } 
+.eventPopup .pop_head .close_btn { background: url(../resource/images/eventImg/event04/pop_close.png) no-repeat; width: 18px; height: 18px; text-indent: -9999px; } 
+.eventPopup .pop_cont { background: #fff; padding: 30px 60px; max-height: calc(100vh - 100px); overflow-y: auto; text-align: center; } 
+.eventPopup .pop_cont p { font-size: 18px; } 
+.eventPopup .modalBtn { border: 0; width: 100%; display: block; margin-top: 30px; padding: 15px; background: #000; color: #fff; border-radius: 5px; font-size: 18px; font-weight: 400; border: 0; }
+.eventPopup .modalBtn.forMobile {display: none;}
+
+@media all and (max-width: 768px){
+ .eventWrap .innerSection { padding: 0 10px; } 
+ .eventWrap .eventMain { padding: 40px 0 50px; } 
+ .eventWrap .eventMain .mainTitle { text-align: center; margin-left: 40px; } 
+ .eventWrap .eventMain .mainTitle img { width: 90%; } 
+ .eventWrap .eventMain .mainTxt p { font-size: 18px; word-break: keep-all; } 
+ .eventWrap .eventMain .mainTxt strong { font-size: 22px; } 
+
+ /* 네이버페이 */
+ .eventWrap .eventMain .mainEvent { flex-direction: column; text-align: center; padding: 0; margin-bottom: 20px; } 
+ .eventWrap .eventMain .mainEvent .imgWrap { margin-right: 0; margin-bottom: 20px; } 
+ .eventWrap .eventMain .mainEvent .imgWrap img { width: 50%; } 
+ .eventWrap .eventMain .mainEvent ul { padding: 20px; background: #0056ae; border-radius: 20px; } 
+ .eventWrap .eventMain .mainEvent ul li { flex-direction: column; align-items: center; } 
+ .eventWrap .eventMain .mainEvent ul li + li { margin-top: 10px; } 
+ .eventWrap .eventMain .mainEvent ul li > span { max-width: 100%; width: 100%; padding: 2px 0; margin-bottom: 4px; border-radius: 20px; background: #00a2ff; text-align: center; border-radius: 20px; } 
+ .eventWrap .eventMain .mainEvent ul li p::before { content: none; } 
+ /* 이벤트 참여 */
+ .eventWrap .eventMain .itemBox ul { flex-direction: column; } 
+ .eventWrap .eventMain .itemBox ul li + li { margin-top: 50px; } 
+ .eventWrap .eventMain .itemBox ul li + li::before { left: 50%; top: -40px; transform: translateX(-50%) rotate(90deg); } 
+ .eventWrap .eventMain .itemBox .titWrap::after { content: none; } 
+ .eventWrap .eventMain .btnWrap { margin-top: 20px; } 
+ .eventWrap .eventMain .btnWrap a { width: 90%; padding: 10px; text-align: center; } 
+ /* 잡아바 상담톡 */
+ .eventWrap .event04 { padding: 50px 0 60px; } 
+ .eventWrap .event04 .title { padding: 0; margin-bottom: 20px; text-align: center; } 
+ .eventWrap .event04 .title p:nth-child(1) { display: inline-block; } 
+ .eventWrap .event04 .title p:nth-child(1)::before { width: 54px; height: 50px; right: -42px; } 
+ .eventWrap .event04 .title p:nth-child(2) { text-align: center; } 
+ .eventWrap .event04 .counsel { padding: 20px 10px 0; text-align: center; } 
+ .eventWrap .event04 .counsel ul { flex-direction: column; justify-content: center; align-items: center; } 
+ .eventWrap .event04 .counsel ul li + li { margin-left: 0; margin-top: 10px; } 
+ .eventWrap .event04 .counsel .counselBox { flex-direction: column; align-items: center; } 
+ .eventWrap .event04 .counsel .counselBox .txt { width: 100%; margin-right: 0; margin-bottom: 10px; } 
+ .eventWrap .event04 .counsel .counselBox .imgWrap img { width: 70%; } 
+ /* 구인등록 */
+ .eventWrap .event04 .register .tit { padding: 0; text-align: center; } 
+ .eventWrap .event04 .register .tit strong { padding: 20px 10px 20px; } 
+ .eventWrap .event04 .register .tit::before { width: 55px; height: 60px; left: 10px; top: 12px; } 
+ .eventWrap .event04 .btnWrap { margin-top: 20px; } 
+ .eventWrap .event04 .btnWrap a { width: 90%; padding: 10px; text-align: center; } 
+ }
+
+@media all and (max-width: 640px){
+ .eventWrap .event04 .title p:nth-child(1)::before,
+ .eventWrap .event04 .register .tit::before { content: none; } 
+ /* 메인 */
+ .eventWrap .eventMain .mainTitle { margin-bottom: 20px; margin-left: 20px; } 
+ .eventWrap .eventMain .mainTxt { margin-bottom: 20px; } 
+ .eventWrap .eventMain .mainTxt p { font-size: 14px; } 
+ .eventWrap .eventMain .mainTxt strong { font-size: 16px; } 
+ .eventWrap .eventMain .mainEvent ul li .siner { font-size: 16px; } 
+ .eventWrap .eventMain .mainEvent ul li { font-size: 18px; } 
+ .eventWrap .eventMain .mainEvent ul li p { margin-left: 0; }
+ .eventWrap .eventMain .mainEvent ul li p span {
+    font-size: 14px;
+} 
+ /* 이벤트 참여 */
+ .eventWrap .eventMain .itemBox { padding: 20px; } 
+ .eventWrap .eventMain .itemBox .titWrap { padding: 0; } 
+ .eventWrap .eventMain .itemBox .titWrap strong { padding-left: 10px; font-size: 18px; } 
+ .eventWrap .eventMain .itemBox .titWrap strong::before { width: 25px; height: 23px; top: -7px; left: -15px; } 
+ .eventWrap .eventMain .itemBox .titWrap p { font-size: 16px; } 
+ .eventWrap .eventMain .itemBox .titWrap span { font-size: 14px; } 
+ .eventWrap .eventMain .itemBox ul li { padding: 10px 10px; font-size: 16px; } 
+ .eventWrap .eventMain .itemBox > p { font-size: 14px; } 
+ .eventWrap .eventMain .btnWrap { padding: 0; } 
+ .eventWrap .eventMain .btnWrap a { width: 100%; font-size: 18px; } 
+ .eventWrap .eventMain .btnWrap a::after { width: 40px; height: 46px; right: 14px; top: 14px; } 
+ .eventWrap .eventMain .itemBox ul li + li { margin-top: 30px; } 
+ .eventWrap .eventMain .itemBox ul li + li::before { width: 20px; height: 18px; top: -25px; } 
+ /* 상담톡 */
+ .eventWrap .event04 .title p { font-size: 22px; } 
+ .eventWrap .event04 .counsel .tit p { margin-bottom: 20px; font-size: 18px; } 
+ .eventWrap .event04 .counsel ul { margin-bottom: 20px; } 
+ .eventWrap .event04 .counsel ul li { width: 100%; padding: 10px 10px; font-size: 16px; } 
+ .eventWrap .event04 .counsel .counselBox p { font-size: 14px; } 
+ /* 구인등록 */
+ .eventWrap .event04 .register .txt { padding: 20px 10px; } 
+ .eventWrap .event04 .register .tit strong { padding: 15px 10px; font-size: 16px; } 
+ .eventWrap .event04 .register .txt p { font-size: 16px; } 
+ .eventWrap .event04 .register .txt p span { padding: 0 10px; margin-bottom: 10px; font-size: 16px; } 
+ .eventWrap .event04 .btnWrap { padding: 0; } 
+ .eventWrap .event04 .btnWrap a { width: 100%; font-size: 18px; } 
+ .eventWrap .event04 .btnWrap a::after { width: 40px; height: 46px; right: 14px; top: 14px; } 
+ .eventWrap .event04 .itemBox ul li + li { margin-top: 30px; } 
+ .eventWrap .event04 .itemBox ul li + li::before { width: 20px; height: 18px; top: -25px; } 
+ /* footer */
+ .eventWrap .eventWarning strong { font-size: 16px; } 
+ .eventWrap .eventWarning .warningList li { font-size: 14px; } 
+
+ /* 팝업 */
+ .eventPopup .modalBtn.forMobile {display: block;}
+ .eventPopup .modalBtn.forPc {display: none;}
+.eventPopup .pop_cont { padding: 15px 20px; } 
+.eventPopup .pop_cont p { font-size: 16px; } 
+.eventPopup .modalBtn { margin-top: 20px; padding: 8px; font-size: 16px; }
+ }

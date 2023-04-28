@@ -145,7 +145,7 @@
 					</div>
 				</div>
 				<div class="btnWrap">
-					<a href="">구인등록 바로가기</a>
+					<a href="https://www.jobaba.net/mber/myPage/resume/jbhntRegForm.do" target="_blank">구인등록 바로가기</a>
 				</div>
 			</div>
 		</article>
@@ -171,71 +171,7 @@
 		</article>
 	</section>
 	<style>
-		.not_scroll {
-    overflow: hidden;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-		.shadow {
-			background: rgba(0, 0, 0, 0.33);
-			width: 100%;
-			height: 100vh;
-			position: fixed;
-			top: 0;
-			left: 0;
-			z-index: 9999;
-			display: none;
-		}
-		.eventPopup {
-			position: fixed;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
-			z-index: 99999;
-			max-width: 400px;
-			width: calc(100% - 40px);
-			display: none;
-	}
-	.eventPopup .pop_head {
-    background: #000;
-    color: #fff;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-}
-.eventPopup .pop_head .close_btn {
-    background: url(./resource/images/eventImg/event04/pop_close.png) no-repeat;
-    width: 18px;
-    height: 18px;
-    text-indent: -9999px;
-}
-.eventPopup .pop_cont {
-    background: #fff;
-    padding: 50px 60px;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-		text-align: center;
-}
-.eventPopup .pop_cont p {
-	font-size: 18px;
-}
-	
-.eventPopup .modalBtn {
-    border: 0;
-    width: 100%;
-    display: block;
-    margin-top: 30px;
-    padding: 15px;
-		background: #000;
-		color: #fff;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 400;
-    border: 0;
-}
+		
 
 	</style>
 	<div class="shadow"></div>
@@ -247,7 +183,7 @@
 		<div class="pop_cont">
 				<p>이벤트 참여를 원하시나요</p>
 				<p>잡아바 상담톡을 통해<br> 상담을 하신 후<br> 참여 가능 합니다.</p>
-				<!-- <button type="submit" class="modalBtn forPc" onclick="chatOpen();">상담하기</button> -->
+				<button type="submit" class="modalBtn forPc" onclick="chatOpen();">상담하기</button>
 				<button type="submit" class="modalBtn forMobile" onclick="mochatOpen();">상담하기</button>
 		</div>
 	</div>
@@ -275,17 +211,18 @@
 
 
 <script>	
-function chatOpen(){
-		var nWidth = "700";
-		var nHeight = "820";
+	// 이벤트 추가 script
+	function chatOpen(){
+		var nWidth = "500";
+		var nHeight = "700";
 		var xPos = (document.body.clientWidth / 2) - (nWidth / 2); 
-		xPos += window.screenLeft;	 //듀얼 모니터
+		xPos += window.screenLeft;
 		var yPos = (screen.availHeight / 2) - (nHeight / 2);
-		window.open("http://www.naver.com","chatOpen","width="+nWidth+",height="+nHeight+", left="+xPos+", top="+yPos+", toolbars=no, resizable=no, scrollbars=no");
+		window.open("https://jobaba.channel.io/support-bots/64708","chatOpen","width="+nWidth+",height="+nHeight+", left="+xPos+", top="+yPos+", toolbars=no, resizable=no, scrollbars=no");
 		close_pop();
 	}
 	function mochatOpen(){
-		window.open("http://www.naver.com");
+		window.open("https://jobaba.channel.io/support-bots/64708");
 		close_pop();
 	}
 	function openModal(modalname) {
@@ -299,6 +236,5 @@ function chatOpen(){
 		$('body').removeClass('not_scroll');
 		$('.shadow').hide();
 	};
-
 </script>
 </body></html>
