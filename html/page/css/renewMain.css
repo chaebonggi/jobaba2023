@@ -331,6 +331,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_tel { display: none; } 
 #newFooter .f_business .f_sns { display: none; } 
 #newFooter .f_business .f_gyeonggi_logo { display: none; margin-left: 20px; } 
+#newFooter .f_btn_wrap {display: none;}
 
 @media screen and (max-width: 1700px){
     #newMain .m_employ .m_employ_wrap::before,
@@ -437,6 +438,9 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     /* 모바일 배너 */
     #newMain .m_banner { display: block; } 
     /* footer */
+    #newFooter .nfooter_top {background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;}
+    #newFooter .f_nav li a {color: #444;}
+    #newFooter .f_nav li + li::before {background: #444;}
     #newFooter .f_nav li { position: relative; } 
     #newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
     #newFooter .f_nav li + li::before { content: ''; display: block; width: 1px; height: 8px; position: absolute; top: 10px; left: 0; background: #ddd; } 
@@ -457,6 +461,13 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newFooter .f_enquiry > div span { display: block; } 
     #newFooter .f_enquiry > div:first-child p { margin-top: 0; margin-left: 10px; } 
     #newFooter .f_addwrap { padding: 20px 0; } 
+    #newFooter .f_btn_wrap { display: block; text-align: center;} 
+    #newFooter .f_btn_wrap .footer_btn { display: block; width: 100%; padding: 10px 0; border: none;}
+    #newFooter .f_btn_wrap .footer_btn span {position: relative; color: #000; font-size: 14px;}
+    #newFooter .f_btn_wrap .footer_btn span + span {margin-left: 60px;}
+    #newFooter .f_btn_wrap .footer_btn span + span::before { content: ''; display: block; width: 12px; height: 7px; position: absolute; top: 50%; left: -35px; transform: translateY(-50%); background: url(../images/main/icon_arrow.png) no-repeat; transition: all 0.3s;}
+    #newFooter .f_btn_wrap .footer_btn.active span + span::before {transform: rotate(180deg); margin-top: -5px;}
+    #newFooter .footer_wrap { display: none;}
 }
 @media screen and (max-width: 640px){ 
     .innerSection {padding: 0 10px;}

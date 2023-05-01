@@ -214,4 +214,8 @@
       $('.m_policy_btn ul li').click(function(){
           $('.m_policy_more').removeClass('active');
     });
-  
+    //footer 메뉴
+    $('.footer_btn').click(function () {
+        $(this).toggleClass('active');
+        $('.footer_wrap').slideToggle(300);
+    });
