@@ -315,7 +315,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_business .f_sns li a.app{ background-image: url(../images/main/icon_test05.png);}
 #newFooter .f_business .f_sns li a.play{ background-image: url(../images/main/icon_test06.png);}
 #newFooter .f_enquiry { display: flex; flex-wrap: wrap; } 
-#newFooter .f_enquiry > div:first-child p { margin-top: 10px; color: #838282; font-size: 13px; } 
+#newFooter .f_enquiry > div:first-child p { margin-top: 10px;} 
 #newFooter .f_enquiry > div:first-child p span {display: block;}
 #newFooter .f_enquiry > div { margin-right: 55px; margin-top: 12px; } 
 #newFooter .f_enquiry_tit { display: inline-block; width: 154px; color: #838282; font-size: 13px; } 
@@ -339,7 +339,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 /* footer 모바일 pc 적용 */
 #newFooter .f_util {justify-content: center;}
 #newFooter .nfooter_top {background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;}
-#newFooter .f_nav li a {color: #444;font-size: 13px;}
+#newFooter .f_nav li a {color: #444;font-size: 14px;}
 #newFooter .f_nav li + li::before {background: #444;}
 #newFooter .f_nav li { position: relative; } 
 #newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
@@ -359,10 +359,10 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_enquiry {margin-top: 20px; padding: 20px; background: #F7F7F7; border-radius: 10px;}
 #newFooter .f_enquiry > div { display: flex; width: 100%; margin: 0;} 
 #newFooter .f_enquiry > div strong span { display: none; } 
-#newFooter .f_enquiry > div strong {flex-shrink: 0; min-width: 88px; font-size: 13px;}
+#newFooter .f_enquiry > div strong {flex-shrink: 0; min-width: 88px;}
 #newFooter .f_enquiry > div:first-child p {margin-top: 0;}
 #newFooter .f_enquiry > div:first-child p span {display: inline-block;}
-#newFooter .f_enquiry > div p { margin-top: 0; margin-left: 10px; font-size: 13px;}
+#newFooter .f_enquiry > div p { margin-top: 0; margin-left: 10px;}
 #newFooter .f_enquiry > div + div {margin-top: 10px;}
 #newFooter .f_enquiry .f_tel {display: block; width: 100%; }
 #newFooter .f_enquiry .f_tel a {display: flex; }
@@ -370,7 +370,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_addwrap { padding: 20px 0; } 
 #newFooter .f_btn_wrap { display: block; text-align: center;} 
 #newFooter .f_btn_wrap .footer_btn { display: block; width: 100%; padding: 10px 0; border: none;}
-#newFooter .f_btn_wrap .footer_btn span {position: relative; color: #000; font-size: 14px;}
+#newFooter .f_btn_wrap .footer_btn span {position: relative; color: #000;}
 #newFooter .f_btn_wrap .footer_btn span + span {margin-left: 60px;}
 #newFooter .f_btn_wrap .footer_btn span + span::before { content: ''; display: block; width: 12px; height: 7px; position: absolute; top: 50%; left: -35px; transform: translateY(-50%); background: url(../images/main/icon_arrow.png) no-repeat; transition: all 0.3s;}
 #newFooter .f_btn_wrap .footer_btn.active span + span::before {transform: rotate(180deg); margin-top: -5px;}
@@ -590,6 +590,10 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newFooter .f_business .f_logo > a img { width: 100px; } 
     #newFooter .f_sns li a { width: 20px; height: 18px; background-size: contain; } 
     #newFooter .f_address p { font-size: 13px; letter-spacing: -1px;} 
+    
+    #newFooter .f_enquiry > div strong {font-size: 13px;}
+    #newFooter .f_enquiry > div p {font-size: 13px;}
+    #newFooter .f_btn_wrap .footer_btn span {font-size: 14px;}
 }
 @media screen and (max-width: 480px) { 
     /* 헤더 */
