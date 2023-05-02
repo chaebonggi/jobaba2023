@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Document</title>
+	<title>취업브리지 팝업</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
@@ -19,69 +19,28 @@
 
 	<!--추가 css-->
 	<style>
-/* 회원탈퇴 팝업 */
-.wd800{width: 800px !important;}
-.secessionPop_wrap.modal .modal-body{padding: 0 !important;}
-.secessionPop {background: #003281;padding: 20px;}
-.secessionPop .f18{font-size: 18px}
-.secessionPop .f16{font-size: 16px}
-.secessionPop .f14{font-size: 14px !important}
-.secessionPop  .tlt{text-align: left}
-.secessionPop .bold{font-weight: bold}
-.secessionPop .bar_list li{position: relative;font-size: 16px;margin-top: 5px;padding-left: 10px}
-.secessionPop .bar_list li:nth-child(1){margin-top: 0}
-.secessionPop .bar_list li:before{content: '-';display: block;position: absolute;left: 0;top: 0}
-.secessionPop .blue{color: #003281}
-.secessionPop .logo{display: block;margin: 0 auto 30px auto}
-.secessionPop .top_txt{font-size: 22px;font-weight: bold;color: #fff;}
-.secessionPop .top_txt span{color: #ffef39}
-.secessionPop .top_txt em{color: #ffef39;font-size: 16px;font-weight: 500;font-style: normal;margin-left: 10px}
-.secessionPop .white_box{background: #fff;padding: 30px 20px;margin-top: 20px;border-radius: 15px;border: 5px solid #4d70a7}
-.secessionPop .reason{background: #f3f3f3;border: 1px solid #dbdbdb;padding:  20px}
-
-
-.secessionPop .checks {position: relative;} 
-.secessionPop .checks label{font-weight: 500}
-.secessionPop .checks input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0 }
-.secessionPop .checks input[type="checkbox"] + label { display: inline-block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; } 
-.secessionPop .checks input[type="checkbox"] + label:before {  content: ' '; display: inline-block; width: 21px; height: 21px;  line-height: 21px; margin: -2px 8px 0 0; text-align: center; vertical-align: middle; background: #fff; border: 1px solid #dbdbdb;  } 
-.secessionPop .checks input[type="checkbox"] + label:after{content: '';display: block;background: url(http://jobaba.net/resource/images/web/2022/01/19/1642554484495_0164904531.png) no-repeat;width: 24px;height: 18px;position: absolute;left: 2px;top: 2px;opacity: 0}
-.secessionPop .secessionPop .checks input[type="checkbox"] + label:active:after, 
-.secessionPop .checks input[type="checkbox"]:checked + label:active:after {opacity: 1} 
-.secessionPop .checks input[type="checkbox"]:checked + label:after{ opacity: 1}
-.secessionPop .checks input[type="text"]{background: #fff;border:1px solid #dbdbdb;border-radius: 0;margin-left: 10px;width: calc(100% - 100px)}
-
-
-.secessionPop .checks02 {position: relative;color: #fff;font-size: 16px;} 
-.secessionPop .checks02 label{font-weight: 500}
-.secessionPop .checks02 input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0 }
-.secessionPop .checks02 input[type="checkbox"] + label { display: inline-block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; } 
-.secessionPop .checks02 input[type="checkbox"] + label:before {  content: ' '; display: inline-block; width: 21px; height: 21px;  line-height: 21px; margin: -2px 8px 0 0; text-align: center; vertical-align: middle; border: 2px solid #fff;  } 
-.secessionPop .checks02 input[type="checkbox"] + label:after{content: '';display: block;background: url(http://jobaba.net/resource/images/web/2022/01/19/1642554484495_0164904531.png) no-repeat;width: 24px;height: 18px;position: absolute;left: 2px;top: 2px;opacity: 0}
-.secessionPop .secessionPop .checks02 input[type="checkbox"] + label:active:after, 
-.secessionPop .checks02 input[type="checkbox"]:checked + label:active:after {opacity: 1} 
-.secessionPop .checks02 input[type="checkbox"]:checked + label:after{ opacity: 1}
-.secessionPop .checks02 input[type="text"]{background: #fff;border:1px solid #dbdbdb;border-radius: 0;margin-left: 10px;width: calc(100% - 100px)}
-.secessionPop .btn_wrap{text-align: center;}
-.secessionPop .ssPopBtn{background: #ffef39;max-width: 320px;width: 90%; padding: 10px;font-size: 20px;font-weight: 500;border-radius: 15px}
-
-
-@media all and (max-width:1024px){
-	.wd800{width: 90% !important}
-}
-
-@media all and (max-width:480px){
-	.secessionPop .checks input[type="text"]{width: 100%;display: block;margin-left: 0;margin-top: 5px}
-	.board-view-tp02 tbody tr th{padding-left: 0 !important;text-align: center !important}
-}
-
-
 
 	</style>
 </head>
 
 <body>
-	<div class="modal secessionPop_wrap" style="display: block;">
+	<div class="modal fade" role="dialog" aria-labelledby="scrapLayerModalLabel" id="scrapLayerModal" style="display:block;" aria-hidden="false">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header header-primary">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="scrapLayerModalLabel">스크랩</h4>
+				</div>
+				<div class="modal-body" style="max-height: 757px;">
+					<div class="container-fluid">마이페이지&gt;관심등록 정보에서<br>스크랩 정보를 확인할 수 있습니다.</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" id="scrapBtn" onclick="onMyPage()">결과확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="modal secessionPop_wrap" style="display: block;">
 		<div class="modal-dialog wd800">
 			<div class="modal-content">
 				<div class="modal-header header-primary">
@@ -217,5 +176,5 @@
 				
 			</div>
 		</div>
-	</div>
+	</div> -->
 </body></html>

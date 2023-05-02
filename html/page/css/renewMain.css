@@ -70,7 +70,7 @@
 #newHeader .h_mobile_sns li a.app { background-image: url(../images/main/icon_appstore.png); } 
 #newHeader .h_mobile_sns li a.play { background-image: url(../images/main/icon_playstore.png); } 
 /* */
-#newMain { padding: 24px 0; } 
+#newMain { padding: 24px 0 0; } 
 #newMain h2 { color: #000; font-size: 24px; } 
 #newMain .end { color: #ff007e !important; } 
 #newMain .state { display: inline-block; padding: 0 10px; margin-bottom: 8px; font-size: 10px; border-style: solid; border-width: 1px; border-radius: 10px; } 
@@ -315,8 +315,8 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_business .f_sns li a.app{ background-image: url(../images/main/icon_test05.png);}
 #newFooter .f_business .f_sns li a.play{ background-image: url(../images/main/icon_test06.png);}
 #newFooter .f_enquiry { display: flex; flex-wrap: wrap; } 
-#newFooter .f_enquiry > div:first-child strong { color: #000; font-size: 16px; font-weight: 600; } 
 #newFooter .f_enquiry > div:first-child p { margin-top: 10px; color: #838282; font-size: 13px; } 
+#newFooter .f_enquiry > div:first-child p span {display: block;}
 #newFooter .f_enquiry > div { margin-right: 55px; margin-top: 12px; } 
 #newFooter .f_enquiry_tit { display: inline-block; width: 154px; color: #838282; font-size: 13px; } 
 #newFooter .f_enquiry_number { display: inline-block; margin-left: 10px; color: #000; font-size: 13px; font-weight: 600; } 
@@ -332,13 +332,51 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
 #newFooter .f_address ul li.ieco::before { background-image: url(../images/main/icon_ieco.png); } 
 #newFooter .f_address ul li.ksci::before { background-image: url(../images/main/icon_ksci.png); } 
 #newFooter .f_address ul li.rankey::before { background-image: url(../images/main/icon_rankey.png); } 
-/* #newFooter .f_tel a { display: block; width: 200px; position: relative; padding: 8px 10px; background: #fff; color: #444444; font-size: 11px; border: 2px solid #444444; border-radius: 10px; } 
-#newFooter .f_tel a strong { font-size: 18px; } 
-#newFooter .f_tel a::after { content: ''; width: 33px; height: 30px; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: url(../images/main/icon_tel02.png) no-repeat; background-size: contain; } 
-#newFooter .f_tel { display: none; }  */
+/* #newFooter .f_enquiry .f_tel {display: none;}
 #newFooter .f_business .f_sns { display: none; } 
 #newFooter .f_business .f_gyeonggi_logo { display: none; margin-left: 20px; } 
-#newFooter .f_btn_wrap {display: none;}
+#newFooter .f_btn_wrap {display: none;} */
+/* footer 모바일 pc 적용 */
+#newFooter .f_util {justify-content: center;}
+#newFooter .nfooter_top {background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;}
+#newFooter .f_nav li a {color: #444;font-size: 13px;}
+#newFooter .f_nav li + li::before {background: #444;}
+#newFooter .f_nav li { position: relative; } 
+#newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
+#newFooter .f_nav li + li::before { content: ''; display: block; width: 1px; height: 8px; position: absolute; top: 10px; left: 0; background: #ddd; } 
+#newFooter .f_family,
+#newFooter .f_business .f_slogan,
+#newFooter .f_enquiry div + div,
+#newFooter .f_gyeonggi_logo,
+#newFooter .f_address ul { display: none; } 
+#newFooter .f_business { border: none; padding: 32px 0 0; } 
+#newFooter .f_business .f_logo { display: flex; flex-wrap: wrap; align-items: center; margin-right: 0; } 
+#newFooter .f_business .f_logo > a { margin-left: 10px; margin-right: 0; } 
+#newFooter .f_business { flex-direction: column; } 
+#newFooter .f_business .f_sns { display: flex; } 
+
+#newFooter .f_business .f_gyeonggi_logo { display: block; } 
+#newFooter .f_enquiry {margin-top: 20px; padding: 20px; background: #F7F7F7; border-radius: 10px;}
+#newFooter .f_enquiry > div { display: flex; width: 100%; margin: 0;} 
+#newFooter .f_enquiry > div strong span { display: none; } 
+#newFooter .f_enquiry > div strong {flex-shrink: 0; min-width: 88px; font-size: 13px;}
+#newFooter .f_enquiry > div:first-child p {margin-top: 0;}
+#newFooter .f_enquiry > div:first-child p span {display: inline-block;}
+#newFooter .f_enquiry > div p { margin-top: 0; margin-left: 10px; font-size: 13px;}
+#newFooter .f_enquiry > div + div {margin-top: 10px;}
+#newFooter .f_enquiry .f_tel {display: block; width: 100%; }
+#newFooter .f_enquiry .f_tel a {display: flex; }
+#newFooter .f_enquiry .f_tel a strong {flex-shrink: 0; font-weight: 500;}
+#newFooter .f_addwrap { padding: 20px 0; } 
+#newFooter .f_btn_wrap { display: block; text-align: center;} 
+#newFooter .f_btn_wrap .footer_btn { display: block; width: 100%; padding: 10px 0; border: none;}
+#newFooter .f_btn_wrap .footer_btn span {position: relative; color: #000; font-size: 14px;}
+#newFooter .f_btn_wrap .footer_btn span + span {margin-left: 60px;}
+#newFooter .f_btn_wrap .footer_btn span + span::before { content: ''; display: block; width: 12px; height: 7px; position: absolute; top: 50%; left: -35px; transform: translateY(-50%); background: url(../images/main/icon_arrow.png) no-repeat; transition: all 0.3s;}
+#newFooter .f_btn_wrap .footer_btn.active span + span::before {transform: rotate(180deg); margin-top: -5px;}
+#newFooter .footer_wrap { display: none;}
+#newFooter .f_address .f_email,
+#newFooter .f_address .f_copy {display: none;}
 
 @media screen and (max-width: 1700px){
     #newMain .m_employ .m_employ_wrap::before,
@@ -427,7 +465,6 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_employ .m_employ_items01 .m_employ_more a::before { content: '채용중인 탐나는 기업 더보기 >'; width: 100%; height: 50px; position: absolute; top: 0; bottom: 0; left: 50%; background: #fff; transform: translateX(-50%); text-indent: initial; line-height: 50px; } 
     #newMain .m_employ .m_employ_slide { margin-left: 20px; }
     #newMain .m_employ .swiper-slide {margin-top: 0 !important;}
-    /* #newMain .m_employ .swiper-slide:nth-child(-n + 2) { margin-bottom: 0;} */
     /* 채용정보 */
     #newMain .m_employ .e_employ_info { display: none; } 
     #newMain .m_employ .m_employ_wrap .m_employ_box + div { padding: 20px 0; background: #f5f5f5; border-radius: initial; } 
@@ -445,11 +482,9 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     /* 모바일 배너 */
     #newMain .m_banner { display: block; } 
     /* footer */
-    #newFooter .f_nav li a,
-    #newFooter .f_enquiry > div:first-child strong,
-    #newFooter .f_enquiry > div:first-child p { font-size: 13px; } 
+    /* #newFooter .f_util {justify-content: center;}
     #newFooter .nfooter_top {background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;}
-    #newFooter .f_nav li a {color: #444;}
+    #newFooter .f_nav li a {color: #444;font-size: 13px;}
     #newFooter .f_nav li + li::before {background: #444;}
     #newFooter .f_nav li { position: relative; } 
     #newFooter .f_nav li + li { margin-left: 15px; padding-left: 15px; } 
@@ -460,17 +495,23 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newFooter .f_gyeonggi_logo,
     #newFooter .f_address ul { display: none; } 
     #newFooter .f_business { border: none; padding: 32px 0 0; } 
-    #newFooter .f_business .f_logo { display: flex; flex-wrap: wrap; align-items: flex-start; margin-right: 0; } 
+    #newFooter .f_business .f_logo { display: flex; flex-wrap: wrap; align-items: center; margin-right: 0; } 
     #newFooter .f_business .f_logo > a { margin-left: 10px; margin-right: 0; } 
     #newFooter .f_business { flex-direction: column; } 
     #newFooter .f_business .f_sns { display: flex; } 
-    #newFooter .f_tel {width: 100%; }
-    #newFooter .f_tel a { display: flex;}
-    #newFooter .f_enquiry > div:first-child strong { flex-shrink: 0; min-width: 96px;}
+    
     #newFooter .f_business .f_gyeonggi_logo { display: block; } 
-    #newFooter .f_enquiry > div { display: flex; flex-wrap: wrap; align-items: center; width: 100%; padding: 20px; margin-right: 0; margin-top: 20px; background: #F7F7F7; border-radius: 10px;} 
-    #newFooter .f_enquiry > div span { display: none; } 
-    #newFooter .f_enquiry > div:first-child p { margin-top: 0; margin-left: 10px; } 
+    #newFooter .f_enquiry {margin-top: 20px; padding: 20px; background: #F7F7F7; border-radius: 10px;}
+    #newFooter .f_enquiry > div { display: flex; width: 100%; margin: 0;} 
+    #newFooter .f_enquiry > div strong span { display: none; } 
+    #newFooter .f_enquiry > div strong {flex-shrink: 0; min-width: 88px; font-size: 13px;}
+    #newFooter .f_enquiry > div:first-child p {margin-top: 0;}
+    #newFooter .f_enquiry > div:first-child p span {display: inline-block;}
+    #newFooter .f_enquiry > div p { margin-top: 0; margin-left: 10px; font-size: 13px;}
+    #newFooter .f_enquiry > div + div {margin-top: 10px;}
+    #newFooter .f_enquiry .f_tel {display: block; width: 100%; }
+    #newFooter .f_enquiry .f_tel a {display: flex; }
+    #newFooter .f_enquiry .f_tel a strong {flex-shrink: 0; font-weight: 500;}
     #newFooter .f_addwrap { padding: 20px 0; } 
     #newFooter .f_btn_wrap { display: block; text-align: center;} 
     #newFooter .f_btn_wrap .footer_btn { display: block; width: 100%; padding: 10px 0; border: none;}
@@ -480,7 +521,7 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newFooter .f_btn_wrap .footer_btn.active span + span::before {transform: rotate(180deg); margin-top: -5px;}
     #newFooter .footer_wrap { display: none;}
     #newFooter .f_address .f_email,
-    #newFooter .f_address .f_copy {display: none;}
+    #newFooter .f_address .f_copy {display: none;} */
 
 }
 @media screen and (max-width: 640px){ 
@@ -502,9 +543,6 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_visual .m_search_cont .tit { margin: 10px; font-size: 15px; } 
     #newMain .m_visual .m_search_cont .search_btn { padding: 4px 20px; font-size: 16px; } 
     #newMain .m_visual .m_search_cont .search_btn::after { width: 16px; height: 16px; } 
-    /* #newMain .m_visual .m_search_cont .m_visual_keyword { padding-left: 40px; margin-bottom: 14px; }  */
-    /* #newMain .m_visual .m_search_cont .m_visual_keyword::before { width: 14px; height: 14px; left: 20px; top: 7px; }  */
-    /* #newMain .m_visual .m_search_cont .m_visual_keyword span { font-size: 14px; }  */
     #newMain .m_visual .m_visual_items { margin-bottom: 15px; } 
     #newMain .m_visual .m_visual_items li a::before { transform: scale(0.8); } 
     #newMain .m_visual .m_visual_items li a { font-size: 14px; } 
@@ -537,8 +575,6 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_employ .m_employ_slide .e_employ_txt .tit { font-size: 14px; } 
     #newMain .m_employ .m_employ_slide .e_employ_txt .employLogo {width: 100%; position: static; transform: none; text-align: center;}
     #newMain .m_employ .m_employ_slide .e_employ_txt .employLogo img { width: 50%;}
-    /* #newMain .m_employ .m_employ_slide .e_employ_txt .date { font-size: 14px; }  */
-    /* #newMain .m_employ .m_employ_slide .e_employ_txt .etc { font-size: 14px; }  */
     
     #newMain .m_employ .m_employ_more a { width: 90%; } 
     #newMain .m_employ .m_employ_items01 .m_employ_more a::before { font-size: 16px; }
@@ -549,19 +585,10 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newMain .m_employ .m_employ_item .badge_wrap .badge { font-size: 10px; } 
     #newMain .m_employ .m_employ_item.right span { font-size: 13px; } 
     /* footer */
-    #newFooter .f_enquiry > div {padding: 10px 5px;}
     #newFooter .f_business .f_logo > img { width: 80px; } 
     #newFooter .f_business { padding: 10px 0 0; } 
     #newFooter .f_business .f_logo > a img { width: 100px; } 
     #newFooter .f_sns li a { width: 20px; height: 18px; background-size: contain; } 
-    
-    /* #newFooter .f_business .f_sns {flex-wrap: wrap; justify-content: space-between; max-width: 100px;} */
-    /* #newFooter .f_business .f_sns li { width: calc((100% - 8px) / 3);}
-    #newFooter .f_business .f_sns li + li { margin-left: 0; } 
-    #newFooter .f_business .f_sns li:nth-child(-n + 3) { margin-bottom: 4px;} */
-    /* #newFooter .f_tel a { width: 100%; } 
-    #newFooter .f_tel a strong { font-size: 16px; } 
-    #newFooter .f_tel a::after { width: 25px; height: 22px; }  */
     #newFooter .f_address p { font-size: 13px; letter-spacing: -1px;} 
 }
 @media screen and (max-width: 480px) { 
