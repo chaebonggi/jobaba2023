@@ -479,6 +479,9 @@ transform: scaleX(2.44); border-radius: 10px / 20px; }
     #newFooter .f_btn_wrap .footer_btn span + span::before { content: ''; display: block; width: 12px; height: 7px; position: absolute; top: 50%; left: -35px; transform: translateY(-50%); background: url(../images/main/icon_arrow.png) no-repeat; transition: all 0.3s;}
     #newFooter .f_btn_wrap .footer_btn.active span + span::before {transform: rotate(180deg); margin-top: -5px;}
     #newFooter .footer_wrap { display: none;}
+    #newFooter .f_address .f_email,
+    #newFooter .f_address .f_copy {display: none;}
+
 }
 @media screen and (max-width: 640px){ 
     .innerSection {padding: 0 10px;}
