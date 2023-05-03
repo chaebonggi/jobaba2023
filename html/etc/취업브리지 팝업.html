@@ -1,37 +1,127 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>취업브리지 팝업</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css?v=20220824_1">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css?v=20220628">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css?20200528">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css?v=20220628">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css?v=20220901" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css?v=20230427">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css?v=20220628">
 
 	<!--추가 css-->
 	<style>
+		.modal .radio input[type=radio] { position: absolute; left: -9999px; cursor: pointer;opacity: 0;}
+		.modal .radio input[type=radio]~.text {position: relative; padding-left: 26px; font-size: 14px; line-height: 1.2;}
+		.modal .radio input[type=radio]~.text:before {width: 20px;height: 20px; position: absolute; left: 0; background-color: #fff;border-radius: 3px;box-shadow: none; box-sizing: border-box; outline: none;}
+		.modal .radio input[type="radio"]:checked ~ .text::before {background: #38bab2 url(https://www.jobaba.net/resource/images/member/ico_check.png) 50% 50% no-repeat;}
+		.modal .radio input[type="radio"] + span::after{content: none;}
+		.modal .modal-body {max-height: 100%;}
+		.modal .checkList .radio label {display: block; margin: 10px 0;}
+		.modal .checkList li {margin-bottom: 20px;}
+		.modal .checkList .fcRed { color: #FF4545;}
+		
 
+		@media only screen and (max-width: 768px){
+			.modal .modal-body {
+				max-height: 440px;
+			}
+		}
 	</style>
 </head>
 
 <body>
-	<div class="modal fade in" role="dialog" aria-labelledby="joinLayerModalLabel" id="joinLayerModal" style="display:block;" aria-hidden="false">
+	<div id="joinLayerModal" class="modal fade in" role="dialog" aria-labelledby="joinLayerModalLabel" style="display:block;" aria-hidden="false">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header header-primary">
+				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-					<h4 class="modal-title" id="joinLayerModalLabel">사업 참여조건 확인</h4>
+					<h4 class="modal-title">사업 참여조건 확인</h4>
 				</div>
 				<div class="modal-body">
-					<div class="container-fluid">마이페이지&gt;관심등록 정보에서<br>스크랩 정보를 확인할 수 있습니다.</div>
+					<p class="txt2">2023 대학생 취업브리지 사업 사전 Check List</p>
+					<hr>
+					<ul class="checkList">
+						<li>
+							<div class="radio">
+								<strong>1. 학년 기준</strong>
+								<label for="check01_1">
+									<input type="radio" name="check01" id="check01_1">
+									<span class="text">① 4년제 대학의 3,4학년 재학생</span>
+								</label>
+								<label for="check01_2">
+									<input type="radio" name="check01" id="check01_2">
+									<span class="text">② 2~3년제 대학의 2,3학년 재학생</span>
+								</label>
+								<label for="check01_3">
+									<input type="radio" name="check01" id="check01_3">
+									<span class="text">③ 졸업예정(유예자)</span>
+								</label>
+								<label for="check01_4">
+									<input type="radio" name="check01" id="check01_4">
+									<span class="text fcRed">④ 해당되지 않음(사업 참여 불가)</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="radio">
+								<strong>2. 경기도 거주 기준</strong>
+								<label for="check02_1">
+									<input type="radio" name="check02" id="check02_1">
+									<span class="text">① 도내 소재지 대학생<br>② 도외 소재지 대학생</span>
+								</label>
+								<label for="check02_2">
+									<input type="radio" name="check02" id="check02_2">
+									<span class="text">②-1. 신청공고일(23.5.12.)기준 1년 이상 경기도에 주민등록이 되어 있는 자</span>
+								</label>
+								<label for="check02_3">
+									<input type="radio" name="check02" id="check02_3">
+									<span class="text">②-2. 신청공고일(23.5.12.)기준 경기도에 주민등록이 되어 있고 기간의 합산이 10년 이상인 자</span>
+								</label>
+								<label for="check02_4">
+									<input type="radio" name="check02" id="check02_4">
+									<span class="text fcRed">③ 해당되지 않음(사업 참여 불가)</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="radio">
+								<strong>3. 사업 참여 불가 대상자에 해당</strong>
+								<label for="check03_1">
+									<input type="radio" name="check03" id="check03_1">
+									<span class="text fcRed">① 휴학생</span>
+								</label>
+								<label for="check03_2">
+									<input type="radio" name="check03" id="check03_2">
+									<span class="text fcRed">② 산업체 재직자</span>
+								</label>
+								<label for="check03_3">
+									<input type="radio" name="check03" id="check03_3">
+									<span class="text fcRed">③ 중앙정부 및 타 지자체 인턴지원사업 및 유사사업 기참여자 및 참여중인 자<br> ※ 취업브리지 사업 기 참여자 중복지원 불가</span>
+								</label>
+								<label for="check03_4">
+									<input type="radio" name="check03" id="check03_4">
+									<span class="text">④ 참여불가에 대한 해당사항 없음</span>
+								</label>
+							</div>
+						</li>						
+					</ul>
+					<hr>
+					<p class="txt3">※관련한 문의사항은 취업브리지 대표번호(031-270-9901)로 문의<br> (영업시간 09:00 ~ 18:00시)
+					</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-success" data-dismiss="modal">결과확인</button>
@@ -39,141 +129,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="modal secessionPop_wrap" style="display: block;">
-		<div class="modal-dialog wd800">
-			<div class="modal-content">
-				<div class="modal-header header-primary">
-					<button type="button" class="close"><span id="_popupClose">×</span></button>
-					<h4 class="modal-title">회원탈퇴</h4>
-				</div>
-				<div class="modal-body">
-					<div class="container-fluid">
-
-						<div class="secessionPop">
-							<img src="http://jobaba.net/resource/images/web/2022/01/19/1642554457177_7596137569.png" alt="경기도일자리재단 잡아바" class="logo">
-
-							<p class="top_txt">
-								일자리플랫폼 잡아바 <span>탈퇴 안내</span> <em>회원탈퇴를 신청하기 전에 안내 사항을 꼭 확인해주세요.</em>
-							</p>
-
-							<div class="white_box">
-								<p class="f18 blue bold">탈퇴 후에도 게시판형 서비스에 등록한 게시물은 그대로 남아 있습니다.</p>
-								<ul class="bar_list mgt10">
-									<li>삭제를 원하는 게시글이 있다면 반드시 탈퇴 전 삭제하시기 바랍니다.</li>
-									<li>탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없어, 게시글을 임의로 삭제해
-										드릴 수 없습니다.</li>
-								</ul>
-
-								<p class="f16 bold mgt30">* 게시판형 서비스</p>
-								<table class="board-view-tp02 mgt10">
-									<caption>게시판형 서비스</caption>
-									<colgroup>
-										<col style="width: 35%">
-										<col>
-									</colgroup>
-									<tbody>
-										<tr>
-											<th scope="row" class="f14 tlt pdl20">고객센터 Q&amp;A 게시판
-											</th>
-											<td class="f14">게시판 작성 내용</td>
-										</tr>
-										<tr>
-											<th scope="row" class="f14 tlt pdl20">이벤트 페이지</th>
-											<td class="f14">댓글, 첨부파일 등</td>
-										</tr>
-									</tbody>
-								</table>
-
-
-								<p class="f18 blue bold mgt50">
-									탈퇴 후엔 잡아바 이용내역(취업 활동, 회원 활동)은 모두 삭제됩니다.
-								</p>
-								<ul class="bar_list mgt10">
-									<li> 탈퇴 후에 이용내역 복원은 불가합니다.</li>
-								</ul>
-
-								<p class="f16 bold mgt30">* 이용 내역</p>
-								<table class="board-view-tp02 mgt10">
-									<caption>이용 내역</caption>
-									<colgroup>
-										<col style="width: 35%">
-										<col>
-									</colgroup>
-									<tbody>
-										<tr>
-											<th scope="row" class="f14 tlt pdl20">취업 활동
-
-											</th>
-											<td class="f14">
-												<ul class="bar_list">
-													<li class="f14">이력서 내용</li>
-													<li class="f14">입사지원 이력</li>
-													<li class="f14">입사제의 및 추천 이력</li>
-													<li class="f14">온라인 면접 이력</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row" class="f14 tlt pdl20">회원 활동
-
-
-											</th>
-											<td class="f14">
-												<ul class="bar_list">
-													<li class="f14">취업역량강화(취업진단서비스 및 취업지원서비스)이력</li>
-													<li class="f14">직업상담사 상담이력</li>
-													<li class="f14">이벤트 참여이력</li>
-													<li class="f14">1:1 문의내역</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-
-								<p class="f18 blue bold mgt50">잡아바와 청년 노동자 지원사업 사이트(마이스터 통장 / 청년 복지포인트 / 청년 연금)는 통합
-									아이디를 사용하므로, 잡아바 탈퇴 후엔 청년 노동자 지원사업 관련 정보도 모두 삭제됩니다.</p>
-
-								<p class="f16 bold mgt30">* 회원탈퇴 사유를 선택해 주세요.</p>
-								<div class="reason mgt10">
-									<ul>
-										<li>  
-										    <div class="checks"> <input type="checkbox" id="ex_chk01"> <label for="ex_chk01" class="f14">정보 부족</label> </div>
-										</li>
-										<li class="mgt10">  
-										    <div class="checks"> <input type="checkbox" id="ex_chk02"> <label for="ex_chk02" class="f14">서비스 이용 불편</label> </div>
-										</li>
-										<li class="mgt10">  
-										    <div class="checks"> <input type="checkbox" id="ex_chk03"> <label for="ex_chk03" class="f14">방문횟수 거의 없음</label> </div>
-										</li>
-										<li class="mgt10">  
-										    <div class="checks"> <input type="checkbox" id="ex_chk04"> <label for="ex_chk04" class="f14">개인정보 및 보안 우려</label> </div>
-										</li>
-										<li class="mgt10">  
-										    <div class="checks"> <input type="checkbox" id="ex_chk05"> <label for="ex_chk05" class="f14">사생활 기록 삭제 목적</label> </div>
-										</li>
-										<li class="mgt10">  
-										    <div class="checks"> <input type="checkbox" id="ex_chk06"> <label for="ex_chk06" class="f14">기타</label>
-										    <input type="text"> </div>
-										</li>
-										
-									</ul>
-								</div>
-							</div>
-							
-							<div class="checks02 mgt20">
-								<input type="checkbox" id="ex_chk07"> <label for="ex_chk07" class="f14">안내 사항을 모두 확인하였으며, 이에 동의합니다.</label>
-							</div>
-							
-							<div class="btn_wrap mgt50">
-								<button type="button" class="ssPopBtn" id="_popupCloseBtn">확인</button>
-								</div>
-						</div>
-
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-	</div> -->
+	
 </body></html>
