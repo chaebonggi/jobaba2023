@@ -30,7 +30,7 @@ p {margin:0;}
 
 #theme > div.area_title01 {padding: 98px 0 0;}
 .area_title01 {height: 944px;background: url(https://www.jobaba.net/resource/images/thema/210927/img_bg.png) 50% 0 no-repeat;position: relative;}
-.area_title01 .title01_con {width: 82%;border-radius: 50px 0 50px 0;background: #1f79f1;padding: 25px 0;margin: 55px auto 0;box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, .2);}
+.area_title01 .title01_con {width: 82%;border-radius: 50px 0 50px 0;background: #1f79f1;padding: 25px 10px;margin: 55px auto 0;box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, .2);}
 
 
 .area_title03 {background: #5c4bd8;position: relative;}
@@ -39,7 +39,7 @@ p {margin:0;}
 .area_title03 .conBox2 {border-radius: 30px;border: 2px solid #a29ae6;margin: 30px 0;padding: 50px;position: relative;}
 .area_title03 .conBox2 .etc {margin-top: 50px;position: relative;color: #fff;}
 .area_title03 .conBox2 .etc strong {font-size: 24px;}
-.area_title03 .conBox2 .etc strong span {color: #ffe42f;}
+.area_title03 .conBox2 .etc span {color: #ffe42f; font-size: 24px; font-weight: bold;}
 .area_title03 .conBox2 .etc .txtSet {font-size: 18px;position: absolute;top: 30px;right: 20px;}
 .area_title03 .point {font-size: 16px;color: #ffe42f;padding-top: 20px;padding-bottom: 30px;}
 .area_title03 .tit3 {position: absolute;top: 87px;left: 136px;}
