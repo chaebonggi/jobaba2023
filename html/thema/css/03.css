@@ -1,84 +1,87 @@
 /* theme common */
-html,body{margin:0;padding:0;box-sizing:border-box; }
-img{max-width:100%;}
-.center{text-align:center;}
-ul,ol,dl{margin:0;list-style:none;padding:0;}
-p {margin:0;}
+html,body { margin:0; padding:0; box-sizing:border-box; } 
+img { max-width:100%; } 
+.center { text-align:center; } 
+ul,ol,dl { margin:0; list-style:none; padding:0; } 
+p { margin:0; } 
 
 
-.container1-full{position:relative;width:100%;padding:0;/*height: 100%;*/}
-.container1{position:relative;max-width:1120px;width: 100%;margin:0 auto;}
+.container1-full { position:relative; width:100%; padding:0; /*height: 100%; */ } 
+.container1 { position:relative; max-width:1120px; width: 100%; margin:0 auto; } 
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; } 
 
-#theme {overflow: hidden;}
-#theme h3 {clear: both;font-size: 42px;color: #222;font-weight: 700;padding: 0;margin-bottom: 35px;}
-#theme h4 {font-size: 22px;margin-bottom: 20px;}
-#theme h4 span.i {display: inline-block;padding: 2px 15px;font-size: 20px;background: #8634eb;color: #fff;border-radius: 30px;}
-#theme h4 span.tit {color: #0057d5;font-size: 36px;display: block;padding-top: 15px;}
+#theme { overflow: hidden; } 
+#theme h3 { clear: both; font-size: 42px; color: #222; font-weight: 700; padding: 0; margin-bottom: 35px; } 
+#theme h4 { font-size: 22px; margin-bottom: 20px; } 
+#theme h4 span.i { display: inline-block; padding: 2px 15px; font-size: 20px; background: #8634eb; color: #fff; border-radius: 30px; } 
+#theme h4 span.tit { color: #0057d5; font-size: 36px; display: block; padding-top: 15px; } 
 
-#theme > div {padding: 100px 0;}
-
-
-
-.theme_container p {font-size: 20px;font-weight: 500;}
-
-.theme_container .wait {background: #402fbd;border-radius: 30px;padding: 30px;position: relative;margin-top: 50px;}
-.theme_container .wait::before {content: "";display: inline-block;width: 100%;height: 79px;position: absolute;top: -45px;left: 0;background: url(https://www.jobaba.net/resource/images/thema/210927/area_ico1.png) 50% 50% no-repeat;}
-.theme_container .wait .title {font-weight: 600;font-size: 24px;text-align: center;color: #ffe42f;padding-top: 20px;}
-.theme_container .wait .txt {color: #fff;font-size: 18px;/*min-height: 124px;*/vertical-align: middle;background: url(https://www.jobaba.net/resource/images/thema/210927/area_ico2.png) 20px 50% no-repeat;margin: 0 auto;line-height: 1.8;padding: 30px 0 30px 150px;margin-top: 20px;letter-spacing: -1px;}
-
-#theme > div.area_title01 {padding: 98px 0 0;}
-.area_title01 {height: 944px;background: url(https://www.jobaba.net/resource/images/thema/210927/img_bg.png) 50% 0 no-repeat;position: relative; background-size: cover;}
-.area_title01 .title01_con {width: 82%;border-radius: 50px 0 50px 0;background: #1f79f1;padding: 25px 10px;margin: 55px auto 0;box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, .2);}
-
-
-.area_title03 {background: #5c4bd8;position: relative;}
-.area_title03 .tit1 {color: #fff;font-size: 18px;line-height: 1.7;}
-.area_title03 .tit2 {color: #ffe42f;font-size: 24px;font-weight: 600;padding-top: 10px;line-height: 1.7;}
-.area_title03 .conBox2 {border-radius: 30px;border: 2px solid #a29ae6;margin: 30px 0;padding: 50px;position: relative;}
-.area_title03 .conBox2 .etc {margin-top: 50px;position: relative;color: #fff;}
-.area_title03 .conBox2 .etc strong {font-size: 24px;}
-.area_title03 .conBox2 .etc span {color: #ffe42f; font-size: 24px; font-weight: bold;}
-.area_title03 .conBox2 .etc .txtSet {font-size: 18px;position: absolute;top: 30px;right: 20px;}
-.area_title03 .conBox2 .etc .txtSet li {height: 38px; line-height: 38px; }
-.area_title03 .point {font-size: 16px;color: #ffe42f;padding-top: 20px;padding-bottom: 30px;}
-.area_title03 .tit3 {position: absolute;top: 87px;left: 136px;}
-.area_title03 .tit4 {position: absolute;top: 87px;right: 136px;}
-
-.area_title03 .conBox2::after {content: "";display: inline-block;position: absolute;top: -180px;left: 30px;width: 121px;height: 277px;background: url(https://www.jobaba.net/resource/images/thema/210927/area_title_img2.png) 0 0 no-repeat;}
-.area_title03 .conBox2::before {content: "";display: inline-block;position: absolute;top: -182px;right: 30px;width: 109px;height: 276px;background: url(https://www.jobaba.net/resource/images/thema/210927/area_title_img3.png) 0 0 no-repeat;}
-
-
-#theme > div::before {content: "";display: inline-block;width: 100%;position: absolute;top: -43px;left: 0;height: 83px;}
+#theme > div { padding: 100px 0; } 
 
 
 
-@media screen and (max-width: 768px){
+.theme_container p { font-size: 20px; font-weight: 500; } 
 
-	.container1{width:90%;}
-	.area_title{padding:0;}
-	.area_title .container1-full {height: auto;padding-bottom: 80px;}
-	.theme_container .tit {font-size: 25px;}
+.theme_container .wait { background: #402fbd; border-radius: 30px; padding: 30px; position: relative; margin-top: 50px; } 
+.theme_container .wait::before { content: ""; display: inline-block; width: 100%; height: 79px; position: absolute; top: -45px; left: 0; background: url(https://www.jobaba.net/resource/images/thema/210927/area_ico1.png) 50% 50% no-repeat; } 
+.theme_container .wait .title { font-weight: 600; font-size: 24px; text-align: center; color: #ffe42f; padding-top: 20px; } 
+.theme_container .wait .txt { color: #fff; font-size: 18px; /*min-height: 124px; */vertical-align: middle; background: url(https://www.jobaba.net/resource/images/thema/210927/area_ico2.png) 20px 50% no-repeat; margin: 0 auto; line-height: 1.8; padding: 30px 0 30px 150px; margin-top: 20px; letter-spacing: -1px; } 
 
-	#theme > div {padding: 30px 0;}
-
-	#theme > div.area_title01 {padding: 30px 0;}
-
-	.area_title01 {height: auto;}
-	.area_title03 .tit3, .area_title03 .tit4,
-	.area_title03 .conBox2::after, .area_title03 .conBox2::before {display: none;}
-
-	.area_title01 .title01_con {width: 98%;}
+#theme > div.area_title01 { padding: 98px 0 0; } 
+.area_title01 { height: 944px; background: url(https://www.jobaba.net/resource/images/thema/210927/img_bg.png) 50% 0 no-repeat; position: relative; background-size: cover; } 
+.area_title01 .title01_con { width: 82%; border-radius: 50px 0 50px 0; background: #1f79f1; padding: 25px 10px; margin: 55px auto 0; box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, .2); } 
 
 
-	.area_title03 .conBox2 {padding: 20px;}
-	.area_title03 .conBox2 .etc .txtSet {position: static;margin-top: 20px;}
-	.area_title03 .conBox2 .etc .txtSet li {height: auto;}
+.area_title03 { background: #5c4bd8; position: relative; } 
+.area_title03 .tit1 { color: #fff; font-size: 18px; line-height: 1.7; } 
+.area_title03 .tit2 { color: #ffe42f; font-size: 24px; font-weight: 600; padding-top: 10px; line-height: 1.7; } 
+.area_title03 .conBox2 { border-radius: 30px; border: 2px solid #a29ae6; margin: 30px 0; padding: 50px; position: relative; } 
+.area_title03 .conBox2 .etc { margin-top: 50px; position: relative; color: #fff; } 
+.area_title03 .conBox2 .etc strong { font-size: 24px; } 
+.area_title03 .conBox2 .etc span { color: #ffe42f; font-size: 24px; font-weight: bold; } 
+.area_title03 .conBox2 .etc .txtSet { font-size: 18px; position: absolute; top: 30px; right: 20px; } 
+.area_title03 .conBox2 .etc .txtSet li { height: 38px; line-height: 38px; } 
+.area_title03 .point { font-size: 16px; color: #ffe42f; padding-top: 20px; padding-bottom: 30px; } 
+.area_title03 .tit3 { position: absolute; top: 87px; left: 136px; } 
+.area_title03 .tit4 { position: absolute; top: 87px; right: 136px; } 
 
-	.theme_container .wait .txt {background: none;padding: 0;}
+.area_title03 .conBox2::after { content: ""; display: inline-block; position: absolute; top: -180px; left: 30px; width: 121px; height: 277px; background: url(https://www.jobaba.net/resource/images/thema/210927/area_title_img2.png) 0 0 no-repeat; } 
+.area_title03 .conBox2::before { content: ""; display: inline-block; position: absolute; top: -182px; right: 30px; width: 109px; height: 276px; background: url(https://www.jobaba.net/resource/images/thema/210927/area_title_img3.png) 0 0 no-repeat; } 
+
+#theme .btnWrap { margin-top: 50px; text-align: center; } 
+#theme .btnWrap a { display: inline-block; width: 396px; padding: 11px 10px; background: #ffe42f; color: #000; font-size: 34px; font-weight: bold; border-radius: 50px; letter-spacing: -1.5px; } 
+#theme .btnWrap a::after { content: ''; display: inline-block; width: 27px; height: 26px; margin-left: 20px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230504/theme_img04.png) center no-repeat; background-size: cover; } 
+
+#theme > div::before { content: ""; display: inline-block; width: 100%; position: absolute; top: -43px; left: 0; height: 83px; } 
 
 
 
+@media screen and (max-width: 768px) {.container1 { width:90%; } 
+.area_title { padding:0; } 
+.area_title .container1-full { height: auto; padding-bottom: 80px; } 
+.theme_container .tit { font-size: 25px; } 
 
-}
+#theme > div { padding: 30px 0; } 
+
+#theme > div.area_title01 { padding: 30px 0; } 
+
+.area_title01 { height: auto; } 
+.area_title03 .tit3, .area_title03 .tit4,
+.area_title03 .conBox2::after, .area_title03 .conBox2::before { display: none; } 
+
+.area_title01 .title01_con { width: 98%; } 
+
+
+.area_title03 .conBox2 { padding: 20px; } 
+.area_title03 .conBox2 .etc .txtSet { position: static; margin-top: 20px; } 
+.area_title03 .conBox2 .etc .txtSet li { height: auto; } 
+
+.theme_container .wait .txt { background: none; padding: 0; } 
+ }
+
+@media screen and (max-width: 640px) {
+	#theme .btnWrap {margin-top: 20px; } 
+	#theme .btnWrap a {width: 95%;font-size: 18px; } 
+	#theme .btnWrap a::after {width: 13px;height: 13px;margin-left: 10px; } 
+ }

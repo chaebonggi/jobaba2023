@@ -80,7 +80,9 @@
 							</p>
 						</div>
 					</div>
-	
+					<div class="btnWrap">
+						<a href="https://www.jobaba.net/mber/myPage/resume/jbhntRegForm.do" target="_blank">구직등록 바로가기</a>
+					</div>
 				</div>
 			</div>
 		</div>	
@@ -107,42 +109,6 @@
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
 	<script>
 		
-		$(document).ready(function() {
-			
-			
-
-				
-
-			$('.menuList a').click(function(e){
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
-				menu.find("a").parent().removeClass('on');
-				$(this).parent().addClass("on");
-				e.preventDefault();
-			});
-			const menuOffset =  $('.leftMenu').offset();
-			const menu = $('.menuList')
-			const menuHight = menu.outerHeight();
-			const articles = $('.guideBox');
-			
-			$(document).scroll(function(){
-				const winScroll = $(this).scrollTop();
-
-				if( winScroll > menuOffset.top) {
-					$('.leftMenu').addClass('fixed');
-				}else {
-					$('.leftMenu').removeClass('fixed');
-				}
-				articles.each(function(){
-					const winTop = $(this).offset().top - menuHight;
-					const winBottom = winTop + $(this).outerHeight();
-					if (winScroll >= winTop && winScroll <= winBottom) {
-						menu.find("a").parent().removeClass('on');
-						menu.find('a[href="#' + $(this).attr('data-link') + '"]').parent().addClass("on");
-					}
-				});	
-			});
-
-		});
 	</script>
 
 </body>
