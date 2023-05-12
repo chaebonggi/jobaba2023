@@ -179,6 +179,6 @@
  .themaWrap .event05 .txtWrap p { font-size: 18px; } 
  .themaWrap .event05 .txtWrap > strong { font-size: 20px; } 
  .themaWrap .event05 .btnWrap { position: static; margin-top: 20px; transform: none; } 
- .themaWrap .event05 .btnWrap a { width: 100%; padding: 10px 10px 6px; font-size: 20px; } 
+ .themaWrap .event05 .btnWrap a { width: 100%; padding: 10px 10px 6px; font-size: 20px;box-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px 2px 0 #000, 1px 2px 0 #000; } 
  .themaWrap .event05 .btnWrap strong::after { width: 33px; height: 38px; right: -40px; bottom: -26px; } 
  }
