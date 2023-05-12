@@ -1,8 +1,183 @@
 @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
-@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; } 
-.themaWrap * { font-family: 'GmarketSansMedium' !important; font-weight: 600; word-break: keep-all;}
-.themaWrap strong { font-family: 'GmarketSansBold' !important;}
-.themaWrap {background: url(../resource/images/thema/230511/theme_bg.jpg) top center no-repeat; background-size: cover;}
+.themaWrap * { font-family: 'GmarketSansMedium' !important; font-weight: 600; word-break: keep-all; } 
+.themaWrap strong { font-family: 'GmarketSansBold' !important; } 
+.themaWrap { padding: 80px 0 250px; background: url(../resource/images/thema/230511/theme_bg.jpg) top center #AAFFF7 no-repeat; background-size: inherit; } 
 .themaWrap .innerSection { padding: 0 20px; max-width: 1040px; height: 100%; margin: 0 auto; } 
 .themaWrap img { object-fit: cover; height: inherit; } 
+
+.themaWrap .event01 ul { position: relative; padding: 40px; margin-top: 128px; background: rgba(255, 255, 255, 0.2); border: 2px dotted #fff; border-radius: 20px; } 
+.themaWrap .event01 ul::before { content: ''; width: 577px; height: 262px; position: absolute; top: -250px; right: 210px; background: url(../resource/images/thema/230511/theme_imt01.png) no-repeat; background-size: cover; } 
+.themaWrap .event01 ul li { position: relative; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); } 
+.themaWrap .event01 ul li + li { margin-top: 20px; } 
+.themaWrap .event01 ul li a { display: flex; padding: 16px 20px; } 
+.themaWrap .event01 ul li::after { position: absolute; right: 0; bottom: -26px; color: #b5ece7; font-size: 120px; font-family: 'jalnan'; font-style: italic; line-height: 1; } 
+.themaWrap .event01 ul li:nth-child(1)::after { content: '1'; } 
+.themaWrap .event01 ul li:nth-child(2)::after { content: '2'; } 
+.themaWrap .event01 ul li:nth-child(3)::after { content: '3'; } 
+
+.themaWrap .event01 .titWrap p { display: flex; align-items: center; margin-right: 20px; color: #000; font-size: 26px; text-align: center; line-height: 1.2; } 
+.themaWrap .event01 .titWrap p::before { display: inline-block; flex-shrink: 0; content: ''; width: 100px; height: 100px; margin-right: 20px; background-position: center center; background-repeat: no-repeat; background-size: auto; border-radius: 50%; box-sizing: border-box; } 
+.themaWrap .event01 li:nth-child(1) .titWrap p::before { background-color: #d4d4d4; background-image: url(../resource/images/thema/230511/theme_ev01_img01.png); border: 6px solid #fff; outline: 2px dotted #d4d4d4; } 
+.themaWrap .event01 li:nth-child(2) .titWrap p::before { background-color: #ffe794; background-image: url(../resource/images/thema/230511/theme_ev01_img02.png); border: 6px solid #fff; outline: 2px dotted #ffe794; } 
+.themaWrap .event01 li:nth-child(3) .titWrap p::before { background-color: #9aff97; background-image: url(../resource/images/thema/230511/theme_ev01_img03.png); border: 6px solid #fff; outline: 2px dotted #9aff97; } 
+.themaWrap .event01 .txtWrap { z-index: 1; } 
+.themaWrap .event01 .txtWrap strong { display: block; margin-bottom: 10px; color: #00ad9c; font-size: 24px; } 
+.themaWrap .event01 .txtWrap p { color: #000; font-size: 18px; font-weight: 300; } 
+
+.themaWrap .itemBox { position: relative; padding: 0 50px 40px; margin-top: 140px; background: rgba(255, 255, 255, 0.7); border-radius: 30px; } 
+.themaWrap .itemBox .itemTop .imgWrap { margin-bottom: 36px; text-align: center; } 
+.themaWrap .itemBox .itemTop .imgWrap img { margin-top: -87px; } 
+.themaWrap .itemBox .itemTop .txtWrap { display: inline-flex; flex-direction: column; align-items: center; width: 100%; } 
+.themaWrap .itemBox .itemTop .txtWrap span { position: relative; color: #000; font-size: 24px; z-index: 2; } 
+.themaWrap .itemBox .itemTop .txtWrap span::after { content: ''; height: 1px; position: absolute; left: 0; right: 0; bottom: 6px; background: #000; } 
+.themaWrap .itemBox .itemTop .txtWrap .tit { position: relative; margin-top: 16px; color: #000; font-size: 48px; z-index: 1; } 
+.themaWrap .itemBox .itemTop .txtWrap .tit::before { content: ''; width: 84px; height: 71px; position: absolute; top: -38px; left: -52px; background: url(../resource/images/thema/230511/theme_mark.png) no-repeat; background-size: cover; z-index: -1; } 
+.themaWrap .itemBox .itemTop .txtWrap .txt { padding: 12px 32px 6px; margin-top: 16px; background: #00ad9c; color: #fff; font-size: 18px; font-weight: 500; border-radius: 30px; text-align: center; } 
+.themaWrap .itemBox .whiteBox { position: relative; margin-top: 74px; padding: 0 88px 46px; background: #fff; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); border-radius: 20px; } 
+.themaWrap .itemBox .whiteBox .tit { width: 100%; position: absolute; top: -16px; left: 50%; transform: translateX(-50%); text-align: center; } 
+.themaWrap .itemBox .whiteBox .tit strong { padding: 12px 40px 8px; background: #636363; color: #fcff00; font-size: 24px; border: 2px solid #000; outline: 4px solid #fff; } 
+.themaWrap .itemBox .whiteBox .txt { padding-top: 70px; padding-left: 25px; letter-spacing: -1px; } 
+.themaWrap .itemBox .whiteBox .txt > strong { display: block; margin-bottom: 20px; color: #000; font-size: 30px; line-height: 1.3; } 
+.themaWrap .itemBox .whiteBox .txt > strong span { color: #00ad9c; font-family: 'GmarketSansBold' !important; border-bottom: 1px solid #00ad9c; } 
+.themaWrap .itemBox .whiteBox .txt > strong em { font-size: 18px; } 
+.themaWrap .itemBox .whiteBox .txt p { margin-bottom: 24px; color: #000; font-size: 20px; font-weight: 500; } 
+.themaWrap .itemBox .whiteBox .infoList { position: relative; padding: 35px 66px; background: #fff; border: 2px dotted #b9b9b9; border-radius: 30px; } 
+.themaWrap .itemBox .whiteBox .infoList li { display: flex; align-items: baseline; letter-spacing: -1px; } 
+.themaWrap .itemBox .whiteBox .infoList li + li { margin-top: 10px; } 
+.themaWrap .itemBox .whiteBox .infoList li > span { display: inline-block; flex-shrink: 0; width: 100px; padding-top: 4px; margin-right: 20px; background: #636363; color: #fff; font-size: 18px; font-weight: 500; text-align: center; } 
+.themaWrap .itemBox .whiteBox .infoList li p { color: #000; font-size: 18px; font-weight: 500; } 
+.themaWrap .itemBox .whiteBox .infoList li p span { font-size: 14px; font-weight: 500; } 
+.themaWrap .itemBox .whiteBox .btnWrap { margin-top: 30px; text-align: center; } 
+.themaWrap .itemBox .whiteBox .btnWrap a { display: inline-block; width: 220px; padding: 10px 10px 6px; background: linear-gradient(to bottom, #00cdb9, #009d8e); color: #fff; font-size: 24px; border: 4px solid #fff; border-radius: 30px; box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2); } 
+.themaWrap .itemBox::before,
+.themaWrap .itemBox::after { content: ''; position: absolute; background-size: cover; } 
+.themaWrap .itemBox.box01::before { width: 137px; height: 164px; top: -34px; left: 23px; background: url(../resource/images/thema/230511/theme_box01_img01.png) no-repeat; } 
+.themaWrap .itemBox.box01::after { width: 222px; height: 186px; top: 26px; right: 0; background: url(../resource/images/thema/230511/theme_box01_img02.png) no-repeat; } 
+.themaWrap .itemBox.box02::before { width: 177px; height: 202px; top: -60px; left: 0; background: url(../resource/images/thema/230511/theme_box02_img01.png) no-repeat; } 
+.themaWrap .itemBox.box02::after { width: 314px; height: 168px; top: -20px; right: -82px; background: url(../resource/images/thema/230511/theme_box02_img02.png) no-repeat; } 
+.themaWrap .itemBox.box03::before { width: 138px; height: 137px; top: -60px; left: 36px; background: url(../resource/images/thema/230511/theme_box03_img01.png) no-repeat; } 
+.themaWrap .itemBox.box03::after { width: 375px; height: 246px; top: -56px; right: 0; background: url(../resource/images/thema/230511/theme_box03_img02.png) no-repeat; } 
+.themaWrap .itemBox .whiteBox .infoList::after { content: ''; position: absolute; background-size: cover; right: 0; } 
+.themaWrap .itemBox .whiteBox .infoList.list01::after { width: 244px; height: 160px; top: -161px; background: url(../resource/images/thema/230511/theme_list01_img.png) no-repeat; } 
+.themaWrap .itemBox .whiteBox .infoList.list02::after { width: 199px; height: 199px; top: -177px; background: url(../resource/images/thema/230511/theme_list02_img.png) no-repeat; } 
+.themaWrap .itemBox .whiteBox .infoList.list03::after { width: 242px; height: 187px; top: -210px; background: url(../resource/images/thema/230511/theme_list03_img.png) no-repeat; } 
+.themaWrap .itemBox .whiteBox .infoList.list04::after { width: 247px; height: 234px; top: -236px; background: url(../resource/images/thema/230511/theme_list04_img.png) no-repeat; } 
+
+.themaWrap .event05 { margin-top: 360px; } 
+.themaWrap .event05 .titWrap { position: relative; margin-bottom: 50px; text-align: center; } 
+.themaWrap .event05 .titWrap::before { content: ''; width: 207px; height: 184px; position: absolute; left: 50%; top: -250px; transform: translateX(-50%); background: url(../resource/images/thema/230511/theme_ev05_img01.png) no-repeat; background-size: cover; } 
+.themaWrap .event05 .titWrap strong { color: #fff; font-size: 50px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,2px 2px 0 #000, -2px 4px 0 #000, 2px 4px 0 #000; line-height: 1.2; } 
+.themaWrap .event05 .titWrap span { color: #08fffb; font-family: 'GmarketSansBold' !important; } 
+.themaWrap .event05 .txtWrap { position: relative; padding: 60px 10px 90px; background: #fff; border-radius: 20px; text-align: center; } 
+.themaWrap .event05 .txtWrap p { color: #003181; font-size: 42px; font-weight: 500; } 
+.themaWrap .event05 .txtWrap > strong { color: #003181; font-size: 48px; } 
+.themaWrap .event05 .txtWrap > strong span { font-weight: 500; } 
+.themaWrap .event05 .btnWrap { width: 100%; position: absolute; left: 50%; bottom: -40px; transform: translateX(-50%); } 
+.themaWrap .event05 .btnWrap a { display: inline-block; width: 426px; padding: 14px 10px 6px; background: #003181; color: #fff; font-size: 40px; border-radius: 40px; } 
+.themaWrap .event05 .btnWrap strong { position: relative; } 
+.themaWrap .event05 .btnWrap strong::after { content: ''; width: 73px; height: 84px; position: absolute; right: -84px; bottom: -54px; background: url(../resource/images/thema/230511/theme_ev05_img02.png) no-repeat; background-size: cover; } 
+
+.themaWrap .itemBox .whiteBox02 { position: relative; margin-top: 74px; padding: 46px 40px; background: #fff; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); border-radius: 20px; } 
+.themaWrap .itemBox .whiteBox02 .btnWrap { margin-top: 30px; text-align: center; } 
+.themaWrap .itemBox .whiteBox02 .btnWrap a { display: inline-block; width: 220px; padding: 10px 10px 6px; background: linear-gradient(to bottom, #2a5be7, #0f35a2); color: #fff; font-size: 24px; border: 4px solid #fff; border-radius: 30px; box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2); } 
+.themaWrap .itemBox .whiteBox02 .boxWrap { display: flex; justify-content: space-between; } 
+.themaWrap .itemBox .whiteBox02 .boxWrap > div { width: calc((100% - 20px) / 2); } 
+.themaWrap .itemBox .whiteBox02 .txt { margin-bottom: 20px; min-height: 212px; } 
+.themaWrap .itemBox .whiteBox02 .txt strong { display: inline-block; margin-bottom: 20px; color: #000; font-size: 30px; line-height: 1.2; } 
+.themaWrap .itemBox .whiteBox02 .txt strong span { color: #00ad9c; } 
+.themaWrap .itemBox .whiteBox02 .txt p { font-size: 20px; font-weight: 500; line-height: 1.2; } 
+.themaWrap .itemBox .whiteBox02 .txt p span { display: block; margin-bottom: 10px; color: #00ad9c; font-size: 24px; } 
+.themaWrap .itemBox .whiteBox02 .infoList { position: relative; min-height: 272px; padding: 20px; background: #fff; border: 2px dotted #00ad9c; border-radius: 20px; } 
+.themaWrap .itemBox .whiteBox02 .infoList.box::after { content: ''; width: 171px; height: 131px; position: absolute; right: 0; top: -154px; background: url(../resource/images/thema/230511/theme_ev04_img01.png) no-repeat; background-size: cover; } 
+.themaWrap .itemBox .whiteBox02 .infoList li + li { margin-top: 10px; } 
+.themaWrap .itemBox .whiteBox02 .infoList span { display: block; width: 90px; padding: 4px 10px 0; margin-bottom: 10px; background: #00ad9c; color: #fff; font-size: 18px; border-radius: 20px; text-align: center; } 
+.themaWrap .itemBox .whiteBox02 .infoList p { padding-left: 10px; color: #000; font-size: 18px; font-weight: 500; letter-spacing: -1px; } 
+.themaWrap .itemBox .whiteBox02 > p { margin-top: 20px; font-size: 24px; font-weight: 500; text-align: center; } 
+
+@media all and (max-width:1200px){
+ .themaWrap .itemBox::after,
+ .themaWrap .itemBox::before { content: none; } 
+ }
+@media all and (max-width:1024px){
+ .themaWrap .innerSection { padding: 0 10px; } 
+ .themaWrap .event01 ul::before { width: 510px; height: 231px; top: -185px; left: 50%; right: initial; transform: translateX(-50%); } 
+ .themaWrap .itemBox .whiteBox .infoList::after { content: none; } 
+ }
+@media all and (max-width:860px){
+ .themaWrap .itemBox .itemTop .txtWrap .tit { font-size: 38px; } 
+ .themaWrap .itemBox .itemTop .txtWrap span { font-size: 22px; } 
+ .themaWrap .itemBox .itemTop .txtWrap .tit::before { width: 64px; height: 51px; top: -24px; left: -40px; } 
+ .themaWrap .itemBox .whiteBox02 { padding: 30px 20px; } 
+ .themaWrap .itemBox .whiteBox02 .boxWrap { flex-direction: column; align-items: center; } 
+ .themaWrap .itemBox .whiteBox02 .boxWrap > div { width: 100%; } 
+ .themaWrap .itemBox .whiteBox02 .boxWrap > div + div { margin-top: 20px; } 
+ .themaWrap .itemBox .whiteBox02 .txt { min-height: auto; } 
+ .themaWrap .itemBox .whiteBox02 .infoList { min-height: auto; } 
+ .themaWrap .event05 { margin-top: 200px; } 
+.themaWrap .event05 .titWrap::before { width: 157px; height: 134px; top: -170px; } 
+.themaWrap .event05 .titWrap strong { font-size: 40px; } 
+.themaWrap .event05 .txtWrap p { font-size: 30px; } 
+.themaWrap .event05 .txtWrap > strong { font-size: 36px; } 
+.themaWrap .event05 .btnWrap a { font-size: 36px; } 
+ }
+@media all and (max-width:768px){
+ .themaWrap .event01 ul::before { content: none; } 
+ .themaWrap .event01 ul { margin-top: 20px; padding: 20px; } 
+ .themaWrap .event01 ul li a { flex-direction: column; } 
+ .themaWrap .event01 .titWrap p { margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .event01 .titWrap p br { display: none; } 
+ .themaWrap .event01 .titWrap p::before { width: 80px; height: 80px; } 
+ .themaWrap .itemBox { padding: 0 20px 60px } 
+ .themaWrap .itemBox .whiteBox { padding: 0 10px 40px; } 
+ .themaWrap .itemBox .whiteBox .infoList { padding: 20px 20px; } 
+ }
+@media all and (max-width:640px){
+ .themaWrap { padding: 30px 0; } 
+ .themaWrap .event01 ul { padding: 10px; } 
+ .themaWrap .event01 .titWrap p::before { width: 50px; height: 50px; background-size: contain; } 
+ .themaWrap .event01 .titWrap p { font-size: 20px; } 
+ .themaWrap .event01 .txtWrap strong { font-size: 18px; } 
+ .themaWrap .event01 .txtWrap p { font-size: 14px; } 
+ .themaWrap .itemBox { margin-top: 80px; padding: 0 10px 20px; } 
+ .themaWrap .itemBox .itemTop .imgWrap { margin-bottom: 15px; } 
+ .themaWrap .itemBox .itemTop .imgWrap img { width: 80px; margin-top: -44px; } 
+ .themaWrap .itemBox .itemTop .txtWrap span { font-size: 14px; } 
+ .themaWrap .itemBox .itemTop .txtWrap .tit::before { content: none; } 
+ .themaWrap .itemBox .itemTop .txtWrap .tit { margin-top: 0; font-size: 20px; } 
+ .themaWrap .itemBox .itemTop .txtWrap .txt { padding: 12px 10px 6px; margin-top: 10px; font-size: 14px; } 
+ .themaWrap .itemBox .whiteBox { padding: 20px 10px 20px; margin-top: 30px; } 
+ .themaWrap .itemBox .whiteBox .tit { position: static; transform: none; } 
+ .themaWrap .itemBox .whiteBox .tit strong { display: block; width: 100%; font-size: 20px; } 
+ .themaWrap .itemBox .whiteBox .txt { padding-top: 26px; padding-left: 0; } 
+ .themaWrap .itemBox .whiteBox .txt > strong { margin-bottom: 10px; font-size: 20px; } 
+ .themaWrap .itemBox .whiteBox .txt p { margin-bottom: 20px; font-size: 14px; } 
+ .themaWrap .itemBox .whiteBox .infoList li { flex-direction: column; } 
+ .themaWrap .itemBox .whiteBox .infoList li > span { width: 100%; padding-top: 4px; margin-bottom: 10px; font-size: 16px; } 
+ .themaWrap .itemBox .whiteBox .infoList li p { font-size: 14px; } 
+ .themaWrap .itemBox .whiteBox .btnWrap { margin-top: 20px; } 
+ .themaWrap .itemBox .whiteBox .btnWrap a { width: 100%; font-size: 20px; } 
+ /* */
+ .themaWrap .itemBox .whiteBox02 { padding: 20px 10px; margin-top: 26px; } 
+ .themaWrap .itemBox .whiteBox02 .txt strong { margin-bottom: 10px; font-size: 20px; } 
+ .themaWrap .itemBox .whiteBox02 .txt p span { font-size: 18px; } 
+ .themaWrap .itemBox .whiteBox02 .txt p { font-size: 14px; } 
+ .themaWrap .itemBox .whiteBox02 .infoList span { width: 100%; font-size: 16px; } 
+.themaWrap .itemBox .whiteBox02 .infoList p { padding-left: 0; font-size: 14px; } 
+.themaWrap .itemBox .whiteBox02 .infoList.box::after { content: none; } 
+.themaWrap .itemBox .whiteBox02 > p { margin-top: 20px; font-size: 16px; } 
+.themaWrap .itemBox .whiteBox02 .btnWrap { margin-top: 10px; } 
+.themaWrap .itemBox .whiteBox02 .btnWrap a { width: 100%; padding: 8px 10px 4px; font-size: 20px; } 
+ /* */
+ .themaWrap .event05 { margin-top: 120px; } 
+ .themaWrap .event05 .titWrap::before { width: 80px; height: 71px; top: -90px; } 
+ .themaWrap .event05 .titWrap { margin-bottom: 20px; } 
+ .themaWrap .event05 .titWrap strong { font-size: 20px; } 
+ .themaWrap .event05 .txtWrap { padding: 30px 10px; } 
+ .themaWrap .event05 .txtWrap p { font-size: 18px; } 
+ .themaWrap .event05 .txtWrap > strong { font-size: 20px; } 
+ .themaWrap .event05 .btnWrap { position: static; margin-top: 20px; transform: none; } 
+ .themaWrap .event05 .btnWrap a { width: 100%; padding: 10px 10px 6px; font-size: 20px; } 
+ .themaWrap .event05 .btnWrap strong::after { width: 33px; height: 38px; right: -40px; bottom: -26px; } 
+ }

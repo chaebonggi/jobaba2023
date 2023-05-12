@@ -27,9 +27,6 @@
 </head>
 <body>
 	<div class="themaWrap">
-		<style>
-			.themaWrap .mainVisual {padding-top: 80px;}
-		</style>
 		<article class="mainVisual">
 			<div class="innerSection">
 				<div class="title">
@@ -37,315 +34,51 @@
 				</div>
 			</div>
 		</article>
-		<style>
-			.themaWrap .event01 ul {
-				position: relative;
-				padding: 40px;
-				margin-top: 128px;
-				background: rgba(255, 255, 255, 0.2);
-				border: 2px dotted #fff;
-				border-radius: 20px;
-			}
-			.themaWrap .event01 ul::before {
-				content: '';
-				width: 577px;
-				height: 262px;
-				position: absolute;
-				top: -250px;
-			    right: 210px;
-				background: url(./resource/images/thema/230511/theme_imt01.png) no-repeat;
-				background-size: cover;
-			}
-			.themaWrap .event01 ul li {
-				display: flex;
-				position: relative;
-				padding: 16px 20px;
-				background: #fff;
-				border-radius: 30px;
-				overflow: hidden;
-				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-			}
-			.themaWrap .event01 ul li + li {
-				margin-top: 20px;
-			}
-			.themaWrap .event01 ul li::after {				
-				position: absolute;
-				right: 0;
-				bottom: -26px;
-				color: #b5ece7;
-				font-size: 120px;
-				font-family: 'jalnan';
-				font-style: italic;
-				line-height: 1;
-			}
-			.themaWrap .event01 ul li:nth-child(1)::after {
-				content: '1';
-			}
-			.themaWrap .event01 ul li:nth-child(2)::after {
-				content: '2';
-			}
-			.themaWrap .event01 ul li:nth-child(3)::after {
-				content: '3';
-			}
-
-			.themaWrap .event01 .titWrap p {
-				display: flex;
-				align-items: center;
-				margin-right: 20px;
-				color: #000;
-				font-size: 26px;
-				text-align: center;
-				line-height: 1.2;
-			}
-			.themaWrap .event01 .titWrap p::before {
-				display: inline-block;
-				content: '';
-				width: 100px;
-				height: 100px;
-				margin-right: 20px;							
-				background-position: center center;
-    		background-repeat: no-repeat;
-				background-size: auto;
-				border-radius: 50%;
-				box-sizing: border-box;
-			}
-			.themaWrap .event01 li:nth-child(1) .titWrap p::before {
-				background-color: #d4d4d4;	
-				background-image: url(./resource/images/thema/230511/theme_ev01_img01.png);
-				border: 6px solid #fff;
-				outline: 2px dotted #d4d4d4;				
-			}
-			.themaWrap .event01 li:nth-child(2) .titWrap p::before {
-				background-color: #ffe794;	
-				background-image: url(./resource/images/thema/230511/theme_ev01_img02.png);
-				border: 6px solid #fff;
-				outline: 2px dotted #ffe794;				
-			}
-			.themaWrap .event01 li:nth-child(3) .titWrap p::before {
-				background-color: #9aff97;	
-				background-image: url(./resource/images/thema/230511/theme_ev01_img03.png);
-				border: 6px solid #fff;
-				outline: 2px dotted #9aff97;				
-			}
-			.themaWrap .event01 .txtWrap {
-				z-index: 1;
-			}
-			.themaWrap .event01 .txtWrap strong {
-				display: block;
-				margin-bottom: 10px;
-				color: #00ad9c;
-				font-size: 24px;
-			}
-			.themaWrap .event01 .txtWrap p {
-				color: #000;
-				font-size: 18px;
-				font-weight: 300;
-			}
-		</style>
 		<article class="event01">
 			<div class="innerSection">
-				<ul>
+				<ul class="eventList">
 					<li>
-						<div class="titWrap">
-							<p>취업밀착<br> 지원</p>
-						</div>
-						<div class="txtWrap">
-							<strong>취업준비를 밀착 지원하기 위한 정책</strong>
-							<p><span>면접수당 지원 :</span> 1인 최대 50만원 지역화폐 지원 (면접 1회 5만원, 최대 10회)</p>
-							<p><span>어학·자격시험 응시료 지원 :</span> 취업 기회 제공을 위한 취업 준비 비용 지원</p>
-						</div>
+						<a href="#moveTo01" title="취업밀착 이동">
+							<div class="titWrap">
+								<p>취업밀착<br> 지원</p>
+							</div>
+							<div class="txtWrap">
+								<strong>취업준비를 밀착 지원하기 위한 정책</strong>
+								<p><span>면접수당 지원 :</span> 1인 최대 50만원 지역화폐 지원 (면접 1회 5만원, 최대 10회)</p>
+								<p><span>어학·자격시험 응시료 지원 :</span> 취업 기회 제공을 위한 취업 준비 비용 지원</p>
+							</div>
+						</a>
 					</li>
 					<li>
-						<div class="titWrap">
-							<p>체험기회<br> 제공</p>
-						</div>
-						<div class="txtWrap">
-							<strong>해외연수 및 다양한 체험의 기회</strong>
-							<p><span>청년사다리 :</span> 중국 상하이 푸단대학교 해외 연수기회</p>
-							<p><span>청년갭이어 :</span> 일 탐색 및 도전을 위한 체험활동, 자기발견 프로그램</p>
-						</div>
+						<a href="#moveTo02" title="체험기회 이동">
+							<div class="titWrap">
+								<p>체험기회<br> 제공</p>
+							</div>
+							<div class="txtWrap">
+								<strong>해외연수 및 다양한 체험의 기회</strong>
+								<p><span>청년사다리 :</span> 중국 상하이 푸단대학교 해외 연수기회</p>
+								<p><span>청년갭이어 :</span> 일 탐색 및 도전을 위한 체험활동, 자기발견 프로그램</p>
+							</div>
+						</a>
 					</li>
 					<li>
-						<div class="titWrap">
-							<p>재직복지<br> 지원</p>
-						</div>
-						<div class="txtWrap">
-							<strong>경기도 중소기업 청년 재직자를 위한 지원</strong>
-							<p><span>청년 노동자 지원사업 :</span> 2년간 최대 480만원 지역화폐 지급</p>
-							<p><span>청년복지포인트 :</span> 1년간 최대 120만원 복지포인트 지급</p>
-						</div>
+						<a href="#moveTo03" title="재직복지 이동">
+							<div class="titWrap">
+								<p>재직복지<br> 지원</p>
+							</div>
+							<div class="txtWrap">
+								<strong>경기도 중소기업 청년 재직자를 위한 지원</strong>
+								<p><span>청년 노동자 지원사업 :</span> 2년간 최대 480만원 지역화폐 지급</p>
+								<p><span>청년복지포인트 :</span> 1년간 최대 120만원 복지포인트 지급</p>
+							</div>
+						</a>
 					</li>
 				</ul>
 			</div>
 		</article>
-		<style>
-			.themaWrap .itemBox {
-				position: relative;
-				padding: 0 50px 68px;
-				margin-top: 140px;
-				background: rgba(255, 255, 255, 0.7);
-				border-radius: 30px;
-
-			}
-			.themaWrap .itemBox .itemTop .imgWrap {
-				margin-bottom: 36px;
-				text-align: center;
-			}
-			.themaWrap .itemBox .itemTop .imgWrap img {
-				margin-top: -87px;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap {
-				display: inline-flex;
-				flex-direction: column;
-				align-items: center;
-				width: 100%;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap span {
-				position: relative;
-				color: #000;
-				font-size: 24px;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap span::after {
-				content: '';
-				height: 1px;
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 6px;
-				background: #000;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap .tit {
-				position: relative;
-				margin-top: 16px;
-				color: #000;
-				font-size: 48px;
-				z-index: 1;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap .tit::before {
-				content: '';
-				width: 84px;
-				height: 71px;
-				position: absolute;
-				top: -38px;
-    		left: -52px;
-				background: url(./resource/images/thema/230511/theme_mark.png) no-repeat;
-				background-size: cover;
-				z-index: -1;
-			}
-			.themaWrap .itemBox .itemTop .txtWrap .txt {
-				padding: 12px 32px 6px;
-				margin-top: 16px;
-				background: #00ad9c;
-				color: #fff;
-				font-size: 18px;
-				font-weight: 500;
-				border-radius: 30px;
-				text-align: center;
-			}
-			.themaWrap .itemBox .whiteBox {
-				position: relative;
-				margin-top: 74px;
-				padding: 0 88px 46px;
-				background: #fff;
-				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-				border-radius: 20px;
-			}
-			.themaWrap .itemBox .whiteBox .tit {
-				width: 100%;
-				position: absolute;
-				top: -16px;
-				left: 50%;
-				transform: translateX(-50%);
-				text-align: center;
-			}
-			.themaWrap .itemBox .whiteBox .tit strong {
-				padding: 12px 40px 8px;
-				background: #636363;
-				color: #fcff00;
-				font-size: 24px;
-				border: 2px solid #000;
-				outline: 4px solid #fff;
-			}
-			.themaWrap .itemBox .whiteBox .txt {
-				padding-top: 70px;
-				padding-left: 25px;
-				letter-spacing: -1px;
-			}
-			.themaWrap .itemBox .whiteBox .txt > strong {
-				display: block;
-				margin-bottom: 20px;
-				color: #000;
-				font-size: 30px;
-				line-height: 1.3;
-			}
-			.themaWrap .itemBox .whiteBox .txt > strong span {
-				color: #00ad9c;
-				font-family: 'GmarketSansBold' !important;
-				border-bottom: 1px solid #00ad9c;
-			}
-			.themaWrap .itemBox .whiteBox .txt > strong em {
-				font-size: 18px;
-			}
-			.themaWrap .itemBox .whiteBox .txt p {
-				margin-bottom: 24px;
-				color: #000;
-				font-size: 20px;
-				font-weight: 500;
-			}
-			.themaWrap .itemBox .whiteBox .infoList {
-				padding: 35px 66px;
-				background: #fff;
-				border: 2px dotted #b9b9b9;
-				border-radius: 30px;
-			}
-			.themaWrap .itemBox .whiteBox .infoList li {
-				display: flex;
-				align-items: baseline;
-				letter-spacing: -1px;
-			}
-			.themaWrap .itemBox .whiteBox .infoList li + li {
-				margin-top: 10px;
-			}
-			.themaWrap .itemBox .whiteBox .infoList li > span {
-				display: inline-block;
-				flex-shrink: 0;
-				width: 100px;
-				padding-top: 4px;
-				margin-right: 20px;
-				background: #636363;
-				color: #fff;
-				font-size: 18px;
-				font-weight: 500;
-				text-align: center;
-			}
-			.themaWrap .itemBox .whiteBox .infoList li p {
-				color: #000;
-				font-size: 18px;
-				font-weight: 500;
-			}
-			.themaWrap .itemBox .whiteBox .infoList li p span {
-				font-size: 14px;
-				font-weight: 500;
-			}
-			.themaWrap .itemBox .whiteBox .btnWrap {
-				margin-top: 30px;
-				text-align: center;
-			}
-			.themaWrap .itemBox .whiteBox .btnWrap a {
-				display: inline-block;
-				width: 220px;
-				padding: 10px 10px 6px;
-				background: linear-gradient(to bottom, #00cdb9, #009d8e);
-				color: #fff;
-				font-size: 24px;
-				border: 4px solid #fff;
-				border-radius: 30px;
-				box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
-			}
-		</style>
-		<article class="event02">
+		<article class="event02" id="moveTo01">
 			<div class="innerSection">
-				<div class="itemBox">
+				<div class="itemBox box01">
 					<div class="itemTop">
 						<div class="imgWrap">
 							<img src="./resource/images/thema/230511/theme_num01.png" alt="1번 리스트">
@@ -367,7 +100,7 @@
 								‘경기도 청년 면접수당’ <strong>지금 바로 신청하세요.</strong>
 							</p>
 						</div>
-						<ul class="infoList">
+						<ul class="infoList list01">
 							<li>
 								<span>신청기간</span>
 								<p>2023. 5. 10.(수) 9시 ~ 6. 16.(금) 18시</p>
@@ -392,7 +125,7 @@
 							</li>
 						</ul>
 						<div class="btnWrap">
-							<a href="#" target="_blank"><strong>신청하기</strong></a>
+							<a href="https://www.jobaba.net/sprtPlcy/info/view2020.do?seq=10543" target="_blank"><strong>신청하기</strong></a>
 						</div>
 					</div>
 					<div class="whiteBox">
@@ -407,7 +140,7 @@
 								국가공인 민간자격 95종에 대한 <strong>응시료를 지원합니다.</strong> 
 							</p>
 						</div>
-						<ul class="infoList">
+						<ul class="infoList list02">
 							<li>
 								<span>신청기간</span>								
 								<p>2023.05.01(월)~06.30.(금)  <span>※ 일부 시군 하반기(10~11월) 추진</span></p>
@@ -434,15 +167,15 @@
 							</li>
 						</ul>
 						<div class="btnWrap">
-							<a href="#" target="_blank"><strong>신청하기</strong></a>
+							<a href="https://www.jobaba.net/sprtPlcy/info/view2020.do?seq=10272" target="_blank"><strong>신청하기</strong></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</article>
-		<article class="event03">
+		<article class="event03" id="moveTo02">
 			<div class="innerSection">
-				<div class="itemBox">
+				<div class="itemBox box02">
 					<div class="itemTop">
 						<div class="imgWrap">
 							<img src="./resource/images/thema/230511/theme_num02.png" alt="2번 리스트">
@@ -466,7 +199,7 @@
 								경기도가 기회 사다리를 제공합니다. 
 							</p>
 						</div>
-						<ul class="infoList">
+						<ul class="infoList list03">
 							<li>
 								<span>모집기간</span>
 								<p>2023. 4. 28.(금) 9시 ~ 5. 16.(화) 18시</p>
@@ -493,7 +226,7 @@
 							</li>
 						</ul>
 						<div class="btnWrap">
-							<a href="#" target="_blank"><strong>신청하기</strong></a>
+							<a href="https://www.jobaba.net/sprtPlcy/10613" target="_blank"><strong>신청하기</strong></a>
 						</div>
 					</div>
 					<div class="whiteBox">
@@ -509,7 +242,7 @@
 								체험활동과 자기발견 프로그램을 제공합니다.  
 							</p>
 						</div>
-						<ul class="infoList">
+						<ul class="infoList list04">
 							<li>
 								<span>모집기간</span>								
 								<p>2023.05.12.(수) ~ 5.31.(수) 17시</p>
@@ -541,27 +274,98 @@
 							</li>
 						</ul>
 						<div class="btnWrap">
-							<a href="#" target="_blank"><strong>신청하기</strong></a>
+							<a href="https://www.jobaba.net/sprtPlcy/10603" target="_blank"><strong>신청하기</strong></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</article>
-		<article class="event04">
+		<article class="event04" id="moveTo03">
 			<div class="innerSection">
-				<div class="itemBox">
+				<div class="itemBox box03">
 					<div class="itemTop">
 						<div class="imgWrap">
 							<img src="./resource/images/thema/230511/theme_num03.png" alt="3번 리스트">
 						</div>
 						<div class="txtWrap">
-							<span>경기도 청년들을 위한 전용 쇼핑몰</span>
-							<p class="tit">중소기업 청년을 위한 경기 청년몰</p>
-							<p class="txt">할인된 가격으로 인기 유명브랜드부터 건강관리와 자기계발, 문화생활까지<br>
-								<strong>복지포인트를 활용</strong>해 더 많은 혜택을 누려보세요~</p>
+							<span>경기도 중소기업 청년 재직자를 위한 지원</span>
+							<p class="tit">청년 노동자 지원사업</p>
+							<p class="txt">경기도 청년노동자의 복지향상을 위한 두가지 지원 사업!</p>
 						</div>
 					</div>
-
+					<div class="whiteBox02">
+						<div class="boxWrap">
+							<div>
+								<div class="txt">
+									<strong>2년간 최대 480만원<br> 지역화폐지급!</strong>
+									<p>
+										<span>중소기업 청년노동자 지원사업</span>
+										경기도내 중소기업 재직중인 청년을 위해<br>
+										지원합니다. 
+									</p>
+								</div>
+								<ul class="infoList">
+									<li>
+										<span>신청대상</span>								
+										<p>경기도 내 거주 또는 경기도 내<br>
+											중소기업 재직자 만 18세 ~ 34세 이하</p>
+									</li>
+									<li>
+										<span>신청기간</span>
+										<p>
+											· 1차 : 2023.05.01.(월) ~ 05.15.(월)<br>
+											· 2차 : 2023.09.01.(금) ~ 09.15.(금)
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<div class="txt">
+									<strong>취업 후 <span>청년복지포인트</span>로<br> 할인받고 구매하자!</strong>
+									<p>
+										일하는<br>
+										중소기업 청년들을 위해<br>
+										복지포인트로 원하는<br>
+										제품을 구매할 수<br>
+										있습니다. 
+									</p>
+								</div>
+								<ul class="infoList box">
+									<li>
+										<span>신청대상</span>								
+										<p>경기도 내 주민등록상 주소지<br>
+											(만 19세 ~ 34세 청년)</p>
+									</li>
+									<li>
+										<span>신청기간</span>
+										<p>
+											· 1차 : 2023.04.01.(토) ~ 04.17.(월) <strong>(마감)</strong><br>
+											· 2차 : 2023.07.01.(토) ~ 07.17.(월)<br>
+											· 3차 : 2023.11.01.(수) ~ 11.15.(수)
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<p>문의처 : 1577-0014</p>
+						<div class="btnWrap">
+							<a href=""><strong>알아보기</strong></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="event05">
+			<div class="innerSection">
+				<div class="titWrap">
+					<strong>취업상담 후 <span>취업 성공률</span>을 높이는<br> 빠른 방법!</strong>
+				</div>
+				<div class="txtWrap">
+					<p>구직등록을 하시면</p>
+					<strong>기업이력서 열람 및 면접제의<span>를</span><br> 추천 받을 수 있습니다.</strong>
+					<div class="btnWrap">
+						<a href="https://www.jobaba.net/thema/themeInfoAdm.do?seq=112&uri=https%3A%2F%2Fadst.jobaba.net" target="_blank"><strong>구직등록 바로가기</strong></a>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -589,12 +393,10 @@
 	<script>
 		
 		$(document).ready(function() {
-			
-			
-
-				
-
-			
+			$('.eventList a').click(function(e){
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+				e.preventDefault();
+			});	
 
 		});
 	</script>
