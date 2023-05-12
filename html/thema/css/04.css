@@ -134,6 +134,7 @@
  .themaWrap .itemBox .whiteBox .infoList { padding: 20px 20px; } 
  }
 @media all and (max-width:640px){
+  .themaWrap .noneMobile {display: none;}
  .themaWrap { padding: 30px 0; } 
  .themaWrap .event01 ul { padding: 10px; } 
  .themaWrap .event01 .titWrap p::before { width: 50px; height: 50px; background-size: contain; } 
