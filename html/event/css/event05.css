@@ -77,9 +77,7 @@
 .eventWrap .evGuide li a.item07::before { background-image: url(../resource/images/eventImg/event05/event_icon_item07.png); } 
 .eventWrap .evGuide li a.item08::before { background-image: url(../resource/images/eventImg/event05/event_icon_item08.png); } 
 .eventWrap .evGuide li a.item09::before { background-image: url(../resource/images/eventImg/event05/event_icon_item09.png); } 
-.eventWrap .evGuide .guideSlide .swiper-pagination {
-  display: none;
-}
+.eventWrap .evGuide .guideSlide .swiper-pagination { display: none; } 
 
 .eventWrap .cont06 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
 .eventWrap .evFooter .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
@@ -92,151 +90,87 @@
 
 
 @media all and (max-width: 1160px){
-  .eventWrap .mainVisual::after {
-    content: none;
-  }
-  .eventWrap .evInfo ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .eventWrap .evInfo ul li {
-    margin-bottom: 20px;
-  }
-  .eventWrap .evInfo ul li + li {
-    margin-left: 20px;
-  }
-  .eventWrap .evBanner::after {
-    content: none;
-  }
-}
+ .eventWrap .mainVisual::after { content: none; } 
+ .eventWrap .evInfo ul { flex-wrap: wrap; justify-content: center; } 
+ .eventWrap .evInfo ul li { margin-bottom: 20px; } 
+ .eventWrap .evBanner::after { content: none; } 
+ }
 @media all and (max-width: 1024px){
-  .eventWrap .mainVisual::before {
-    content: none;
-  }
-  .eventWrap .mainVisual {
-    padding-left: 0;
-  }
-  .eventWrap .eventMain {
-    height: auto;
-    text-align: center;
-  }
-  .eventWrap .evJob .titWrap {
-    position: static;
-    transform: none;
-  }
-  .eventWrap .evJob .itemWrap {
-    padding: 20px 10px 45px;
-  }
-  .eventWrap .evJob .titWrap strong {
-    margin-bottom: 50px;
-  }
-  .eventWrap .evIntroduce .boxWrap {
-    flex-direction: column;
-  }
-  .eventWrap .evIntroduce .evBox {
-    width: 100%;
-  }
-  .eventWrap .evIntroduce .evBox + .evBox {
-    margin-top: 40px;
-  }
-  .eventWrap .evIntroduce .txtWrap {
-    height: auto;
-  }
-  .eventWrap .evGuide li {
-    width: calc(100% / 3 - 20px);
-  }
-}
+ .eventWrap .mainVisual::before { content: none; } 
+ .eventWrap .mainVisual { padding-left: 0; } 
+ .eventWrap .eventMain { height: auto; text-align: center; } 
+ .eventWrap .evJob .titWrap { position: static; transform: none; } 
+ .eventWrap .evJob .itemWrap { padding: 20px 10px 45px; } 
+ .eventWrap .evJob .titWrap strong { margin-bottom: 50px; } 
+ .eventWrap .evIntroduce .boxWrap { flex-direction: column; } 
+ .eventWrap .evIntroduce .evBox { width: 100%; } 
+ .eventWrap .evIntroduce .evBox + .evBox { margin-top: 40px; } 
+ .eventWrap .evIntroduce .txtWrap { height: auto; } 
+ .eventWrap .evGuide li { width: calc(100% / 3 - 20px); } 
+ }
 @media all and (max-width: 860px){
-  .eventWrap .eventMain {
-    padding: 60px 0;
-  }
-  .eventWrap .mainVisual strong {
-    font-size: 38px;
-  }
-  
-  .eventWrap .mainVisual p {
-    font-size: 20px;
-  }
-  
-  .eventWrap .evJob .titWrap strong {
-    padding: 10px 60px;
-    font-size: 36px;
-  }
-  .eventWrap .evJob .titWrap strong::before {
-    bottom: -24px;
-    border-top: 24px solid #fff;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
-  .eventWrap .evJob .txtWrap p strong {
-    font-size: 26px;
-  }
-  .eventWrap .evJob .txtWrap p {
-    font-size: 20px;
-  }
-  .eventWrap .evJob .txtWrap > strong {
-    font-size: 24px;
-  }
-  .eventWrap .cont02 {
-    padding: 60px 0 60px;
-  }
-  .eventWrap .tit strong {
-    padding: 16px 10px;
-    font-size: 28px;
-  }
-  .eventWrap .evInfo ul li a {
-    width: 180px;
-    height: 180px;
-  }
-  .eventWrap .evBanner strong {
-    font-size: 34px;
-  }
-  .eventWrap .evBanner p {
-    font-size: 20px;
-  }
-  .eventWrap .cont05 {
-    padding: 50px 0 50px;
-}
-  .eventWrap .evGuide .titWrap strong {
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-  .eventWrap .evGuide .titWrap p {
-    font-size: 22px;
-  }
-  .eventWrap .evGuide .guideSlide {
-    overflow: hidden;
-  }
-  .eventWrap .evGuide ul {
-    flex-wrap: initial;
-    justify-content: initial;
-  }
-  .eventWrap .evGuide .guideSlide .swiper-pagination {
-    display: block;
-  }
-  .eventWrap .evFooter .titWrap {
-    position: static;
-    transform: none;
-    margin-bottom: 40px;
-  }
-  .eventWrap .evFooter .titWrap p::after {
-    width: 300px;
-    height: 94px;
-    top: -78px;
-  }
-  .eventWrap .evFooter .titWrap p {
-    padding: 26px 50px;
-    font-size: 26px;
-  }
-  .eventWrap .evFooter .txtWrap p {
-    font-size: 26px;
-  }
-  .eventWrap .evFooter .txtWrap p::after {
-    width: 110px;
-    height: 34px;
-  }
-
-}
+ .eventWrap .eventMain { padding: 60px 0; } 
+ .eventWrap .mainVisual strong { font-size: 38px; } 
+ 
+ .eventWrap .mainVisual p { font-size: 20px; } 
+ 
+ .eventWrap .evJob .titWrap strong { padding: 10px 60px; font-size: 36px; } 
+ .eventWrap .evJob .titWrap strong::before { bottom: -24px; border-top: 24px solid #fff; border-left: 20px solid transparent; border-right: 20px solid transparent; } 
+ .eventWrap .evJob .txtWrap p strong { font-size: 26px; } 
+ .eventWrap .evJob .txtWrap p { font-size: 20px; } 
+ .eventWrap .evJob .txtWrap > strong { font-size: 24px; } 
+ .eventWrap .cont02 { padding: 60px 0 60px; } 
+ .eventWrap .tit strong { padding: 16px 10px; font-size: 28px; } 
+ .eventWrap .evInfo ul li a { width: 180px; height: 180px; } 
+ .eventWrap .evBanner strong { font-size: 34px; } 
+ .eventWrap .evBanner p { font-size: 20px; } 
+ .eventWrap .cont05 { padding: 50px 0 50px; } 
+ .eventWrap .evGuide .titWrap strong { margin-bottom: 10px; font-size: 30px; } 
+ .eventWrap .evGuide .titWrap p { font-size: 22px; } 
+ .eventWrap .evGuide .guideSlide { overflow: hidden; } 
+ .eventWrap .evGuide ul { flex-wrap: initial; justify-content: initial; } 
+ .eventWrap .evGuide .guideSlide .swiper-pagination { display: block; } 
+ .eventWrap .evFooter .titWrap { position: static; transform: none; margin-bottom: 40px; } 
+ .eventWrap .evFooter .titWrap p::after { width: 300px; height: 94px; top: -78px; } 
+ .eventWrap .evFooter .titWrap p { padding: 26px 50px; font-size: 26px; } 
+ .eventWrap .evFooter .txtWrap p { font-size: 26px; } 
+ .eventWrap .evFooter .txtWrap p::after { width: 110px; height: 34px; } 
+ }
 @media all and (max-width: 640px){
-
-}
+ .eventWrap .innerSection { padding: 0 10px; } 
+ .eventWrap .eventMain { padding: 30px 0; } 
+.eventWrap .mainVisual strong { font-size: 30px; } 
+.eventWrap .mainVisual p { font-size: 18px; } 
+.eventWrap .cont01 { padding: 40px 0 30px; } 
+.eventWrap .evJob .itemWrap::after { width: 60px; height: 41px; top: -32px; } 
+.eventWrap .evJob .titWrap strong { width: 100%; margin-bottom: 30px; font-size: 22px; } 
+.eventWrap .evJob .titWrap strong::after { width: 16px; height: 24px; } 
+.eventWrap .evJob .txtWrap p { font-size: 16px; } 
+.eventWrap .evJob .txtWrap p strong { font-size: 18px; } 
+.eventWrap .evJob .txtWrap > strong { font-size: 18px; } 
+.eventWrap .cont02 { padding: 30px 0; } 
+.eventWrap .tit strong { width: 100%; padding: 8px 10px; font-size: 20px; } 
+.eventWrap .evInfo ul li a { width: 110px; height: 110px; box-shadow: 0 4px 0 rgba(0,0,0,0.05); } 
+.eventWrap .cont03 { padding: 30px 0 35px; } 
+.eventWrap .evIntroduce .slideWrap { flex-direction: column; } 
+.eventWrap .evIntroduce .swiper { width: 100%; } 
+.eventWrap .evIntroduce .txtWrap strong { margin-bottom: 10px; font-size: 20px; } 
+.eventWrap .evIntroduce .txtWrap p { color: #787878; font-size: 14px; } 
+.eventWrap .evIntroduce .swiper strong { font-size: 16px; } 
+.eventWrap .evIntroduce .swiper p { font-size: 14px; } 
+.eventWrap .evBanner { padding: 20px 10px; } 
+.eventWrap .evBanner strong { font-size: 20px; } 
+.eventWrap .evBanner p { font-size: 14px; } 
+.eventWrap .cont05 { padding: 30px 0 30px; } 
+.eventWrap .evGuide .titWrap strong { font-size: 20px; } 
+.eventWrap .evGuide .titWrap p { font-size: 14px; } 
+.eventWrap .evGuide .titWrap { margin-bottom: 25px; } 
+.eventWrap .evGuide li a { font-size: 16px; } 
+.eventWrap .evGuide li a::before { width: 120px; height: 100px; } 
+.eventWrap .evFooter .titWrap p::after { width: 230px; height: 72px; top: -58px; } 
+.eventWrap .evFooter .titWrap { margin-bottom: 20px; } 
+.eventWrap .evFooter .titWrap p { padding: 15px 10px; width: 100%; font-size: 20px; } 
+.eventWrap .evFooter .txtWrap p { font-size: 18px; } 
+.eventWrap .evFooter .txtWrap p::after { width: 70px; height: 22px; } 
+.eventWrap .evIntroduce .imgWrap.noneImg::before { width: 72px; height: 54px;} 
+ }

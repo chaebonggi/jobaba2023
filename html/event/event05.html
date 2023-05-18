@@ -443,12 +443,18 @@
 	function initSwiper() {
 		if (ww < 860 && guideSlide == undefined) {
 			guideSlide = new Swiper(".guideSlide", {
-				slidesPerView: 3,
+				slidesPerView: 2,
 				spaceBetween: 10,
 				loop: true,
 				pagination: {
 					el: ".guideSlide .swiper-pagination",
 				},
+				breakpoints: {
+              480: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+              },
+          },
 			});
 		} else if (ww >= 860 && guideSlide != undefined) {
 			guideSlide.destroy();
