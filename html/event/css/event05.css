@@ -5,7 +5,7 @@
 .eventWrap .mainVisual::before { content: ''; width: 575px; height: 186px; position: absolute; bottom: -254px; left: 100px; background: url(../resource/images/eventImg/event05/event_main_img01.png) no-repeat; background-size: cover; } 
 .eventWrap .mainVisual::after { content: ''; width: 446px; height: 383px; position: absolute; bottom: -244px; right: 0; background: url(../resource/images/eventImg/event05/event_main_img02.png) no-repeat; background-size: cover; } 
 .eventWrap .mainVisual strong { color: #1c4d97; font-size: 50px; } 
-.eventWrap .mainVisual p { color: #3c7c97; font-size: 24px; } 
+.eventWrap .mainVisual p { color: #3c7c97; font-size: 24px; word-break: keep-all;} 
 
 .eventWrap .cont01 { padding: 130px 0 90px; background: #f4f4f4; } 
 .eventWrap .evJob .itemWrap { position: relative; padding: 100px 10px 45px; background: linear-gradient(to bottom, #56c3bd, #4986ba); border-radius: 30px; } 
@@ -81,10 +81,10 @@
 
 .eventWrap .cont06 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
 .eventWrap .evFooter .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
-.eventWrap .evFooter .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; } 
+.eventWrap .evFooter .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; word-break: keep-all; } 
 .eventWrap .evFooter .titWrap p::after { content: ''; width: 433px; height: 136px; position: absolute; top: -112px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event05/event_cont06_img01.png) no-repeat; background-size: cover; } 
 .eventWrap .evFooter .titWrap p::before { content: ''; position: absolute; left: 0; bottom: -6px; border-top: 34px solid #00aef0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-bottom: 0 solid transparent; transform: rotate(45deg); } 
-.eventWrap .evFooter .txtWrap p { color: #003281; font-size: 32px; text-align: center; } 
+.eventWrap .evFooter .txtWrap p { color: #003281; font-size: 32px; text-align: center; word-break: keep-all;} 
 .eventWrap .evFooter .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../resource/images/eventImg/event05/event_cont06_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 
 .eventWrap .evFooter .txtWrap strong.mint { color: #3da8a2; } 
 
@@ -107,6 +107,9 @@
  .eventWrap .evIntroduce .evBox + .evBox { margin-top: 40px; } 
  .eventWrap .evIntroduce .txtWrap { height: auto; } 
  .eventWrap .evGuide li { width: calc(100% / 3 - 20px); } 
+ .eventWrap .evInfo ul {
+  padding: 0;
+ }
  }
 @media all and (max-width: 860px){
  .eventWrap .eventMain { padding: 60px 0; } 
@@ -115,7 +118,7 @@
  .eventWrap .mainVisual p { font-size: 20px; } 
  
  .eventWrap .evJob .titWrap strong { padding: 10px 60px; font-size: 36px; } 
- .eventWrap .evJob .titWrap strong::before { bottom: -24px; border-top: 24px solid #fff; border-left: 20px solid transparent; border-right: 20px solid transparent; } 
+ .eventWrap .evJob .titWrap strong::before { bottom: -22px; border-top: 24px solid #fff; border-left: 20px solid transparent; border-right: 20px solid transparent; } 
  .eventWrap .evJob .txtWrap p strong { font-size: 26px; } 
  .eventWrap .evJob .txtWrap p { font-size: 20px; } 
  .eventWrap .evJob .txtWrap > strong { font-size: 24px; } 
@@ -173,4 +176,7 @@
 .eventWrap .evFooter .txtWrap p { font-size: 18px; } 
 .eventWrap .evFooter .txtWrap p::after { width: 70px; height: 22px; } 
 .eventWrap .evIntroduce .imgWrap.noneImg::before { width: 72px; height: 54px;} 
+.eventWrap .evFooter .titWrap p::before {
+  content: none;
+}
  }
