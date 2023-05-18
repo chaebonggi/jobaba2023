@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>잡아바 상담톡 open 리뷰이벤트</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+  	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+
+	<!-- 이벤트 추가 css -->
+	<link rel="stylesheet" href="./css/event05.css">
+
+	
+</head>
+<body>
+<div id="page-content">
+	<section class="eventWrap">
+		<style>
+			.eventWrap .eventMain {
+				padding: 80px 0;
+				background: url(./resource/images/eventImg/event05/event_main_bg.jpg) no-repeat center;
+				background-size: cover;
+				height: 495px;
+			}
+			.eventWrap .mainVisual {
+				position: relative;
+				padding-left: 100px;
+			}
+			.eventWrap .mainVisual::before {
+				content: '';
+				width: 575px;
+				height: 186px;
+				position: absolute;
+				bottom: -254px;
+			    left: 100px;
+				background: url(./resource/images/eventImg/event05/event_main_img01.png) no-repeat;
+				background-size: cover;
+			}
+			.eventWrap .mainVisual::after {
+				content: '';
+				width: 446px;
+				height: 383px;
+				position: absolute;
+				bottom: -244px;
+				right: 0;
+				background: url(./resource/images/eventImg/event05/event_main_img02.png) no-repeat;
+				background-size: cover;
+			}
+			.eventWrap .mainVisual strong {
+				color: #1c4d97;
+				font-size: 50px;
+			}
+			.eventWrap .mainVisual p {
+				color: #3c7c97;
+				font-size: 24px;
+			}
+		</style>
+		<article class="eventMain">
+			<div class="innerSection">
+				<div class="mainVisual">
+					<strong>탐나는 일자리정보관</strong>
+					<p>
+						대기업 협력사, 금융사 추천 기업 등 경기도 내 모든 추천 일자리!<br>
+						잡아바 탐나는 일자리정보관에서 확인 해 보세요!
+					</p>
+				</div>
+			</div>
+		</article>
+		<style>
+			.eventWrap .cont01 {
+				padding: 130px 0 90px;
+				background: #f4f4f4;
+			}
+			.eventWrap .evJob .itemWrap {
+				position: relative;
+				padding: 100px 10px 45px;
+				background: linear-gradient(to bottom, #56c3bd, #4986ba);
+				border-radius: 30px;
+			}
+			.eventWrap .evJob .itemWrap::after {
+				content: '';
+				width: 128px;
+				height: 87px;
+				position: absolute;
+				right: 62px;
+			    top: -69px;
+				background: url(./resource/images/eventImg/event05/event_cont01_img02.png) no-repeat;
+				background-size: cover;
+			}
+			.eventWrap .evJob .titWrap {
+				width: 100%;
+				position: absolute;
+				top: -30px;
+				left: 50%;
+				transform: translateX(-50%);
+				text-align: center;
+			}
+			.eventWrap .evJob .titWrap strong {				
+				display: inline-block;
+				position: relative;
+				padding: 10px 90px;
+				background: #fff;
+				color: #003281;
+				font-size: 48px;
+				line-height: 1;
+				border-radius: 60px;
+				box-shadow: 0 -4px 0 #5da7c5;
+			}
+			.eventWrap .evJob .titWrap strong::after {
+				content: '';
+				display: inline-block;
+				width: 33px;
+				height: 49px;
+				margin-left: 10px;
+				background: url(./resource/images/eventImg/event05/event_cont01_img01.png) no-repeat;
+				background-size: cover;
+				vertical-align: top;				
+			}
+			.eventWrap .evJob .titWrap strong::before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: -34px;
+				border-top: 34px solid #fff;
+				border-left: 28px solid transparent;
+				border-right: 28px solid transparent;
+				border-bottom: 0 solid transparent;
+			}
+			.eventWrap .evJob .txtWrap {
+				color: #fff;
+				text-align: center;
+			}
+			.eventWrap .evJob .txtWrap p {
+				margin-bottom: 20px;
+				font-size: 28px;
+			}
+			.eventWrap .evJob .txtWrap p strong {
+				font-size: 32px;
+			}
+			.eventWrap .evJob .txtWrap > strong {
+				font-size: 30px;
+			}
+			.eventWrap .evJob .txtWrap > strong span {
+				color: #ffde42;
+			}
+		</style>
+		<article class="cont01">
+			<div class="innerSection">
+				<div class="evJob">
+					<div class="itemWrap">
+						<div class="titWrap">
+							<strong>탐나는 일자리정보관이란</strong>
+						</div>
+						<div class="txtWrap">
+							<p>
+								<strong>잡아바 ‘탐나는 일자리정보관’은</strong><br>
+								대기업 협력사, 금융사 추천기업, 정부기관 추천 기업 등<br>
+								경기도내 각 기관의 추천 일자리를 한눈에 확인할 수 있는 채용 정보관 입니다.
+							</p>
+							<strong><span>‘탐나는 일자리정보관’</span>에서 추천 일자리 정보를 확인하고 성공 취업에 도전하세요!</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.eventWrap .cont02 {
+				padding: 90px 0 80px;
+				background: url(./resource/images/eventImg/event05/event_cont02_bg.jpg) no-repeat center;
+				background-size: cover;
+			}
+			.eventWrap .tit {
+				margin-bottom: 40px;
+				text-align: center;
+			}
+			.eventWrap .tit strong {
+				display: inline-block;
+				width: 536px;
+				padding: 20px 10px;
+				background: #00a6cc;
+				color: #fff;
+				font-size: 36px;
+				border: 3px solid #fff;
+				border-radius: 50px;
+				box-shadow: 0 12px 0 rgba(0,0,0,0.1);
+			}
+			.eventWrap .evInfo ul {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 28px;
+			}
+			.eventWrap .evInfo ul li a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 220px;
+				height: 220px;
+				background: #fff;
+				border: 5px solid #cee3ea;
+				border-radius: 50%;
+				box-shadow: 0 12px 0 rgba(0,0,0,0.05);
+			}
+			.eventWrap .evInfo li .imgWrap {
+				padding: 0 10px;
+			}
+		</style>
+		<article class="cont02">
+			<div class="innerSection">
+				<div class="evInfo">
+					<div class="tit">
+						<strong>2023년 탐나는 일자리정보관</strong>
+					</div>
+					<ul>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo05.png" alt="경기도재단로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo01.png" alt="ibk로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo02.png" alt="삼성로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo03.png" alt="lg전자로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo04.jpg" alt="참괜찮은중소기업로고">
+							</div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<style>
+		.eventWrap .cont03 {
+			padding: 100px 0 35px;
+			background: #fff;
+		}
+
+		.eventWrap .cont04 {
+			background: #fff;
+		}
+		.eventWrap .evBanner {
+			position: relative;
+			padding: 70px 60px;
+			background: url(./resource/images/eventImg/event05/event_cont04_bg.jpg) no-repeat center;
+			background-size: cover;
+			border-radius: 10px;
+		}
+		.eventWrap .evBanner::after {
+			content: '';
+			width: 535px;
+			height: 277px;
+			position: absolute;
+			top: 0;
+			right: 88px;
+			background: url(./resource/images/eventImg/event05/event_cont04_img01.png) no-repeat;
+			background-size: cover;
+		}
+		.eventWrap .evBanner strong {
+			display: block;
+			margin-bottom: 20px;
+			color: #fff;
+			font-size: 42px;
+		}
+		.eventWrap .evBanner p {
+			color: #fff;
+			font-size: 24px;
+		}
+		</style>
+		<article class="cont03">
+			<div class="innerSection">
+				<div class="evIntroduce">
+					<div class="tit">
+						<strong>추천 채용관 소개</strong>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="cont04">
+			<div class="innerSection">
+				<div class="evBanner">
+					<strong>다음 추천일자리 제공 기업은?</strong>
+					<p>잡아바 탐나는 일자리정보관에는<br>
+						더 많은 추천 기업들이 추가될 예정입니다!</p>
+				</div>
+			</div>
+		</article>
+		<style>
+		.eventWrap .cont05 {
+			position: relative;
+			padding: 100px 0 290px;
+			background: #fff;
+		}
+		.eventWrap .evGuide .titWrap {
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		.eventWrap .evGuide .titWrap strong {
+			display: block;
+			margin-bottom: 20px;
+			color: #000;
+			font-size: 36px;
+		}
+		.eventWrap .evGuide .titWrap p {
+			color: #000;
+			font-size: 26px;
+		}
+		.eventWrap .evGuide ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px 10px 50px;
+			background: #d4ece9;
+			border-radius: 30px;
+			text-align: center;
+		}
+		.eventWrap .evGuide li {
+			width: calc(100% / 5 - 20px);
+			margin-top: 30px;
+		}
+		.eventWrap .evGuide li a {
+			color: #000;
+			font-size: 22px;
+		}
+		.eventWrap .evGuide li a::before {
+			display: block;
+			content: '';
+			width: 186px;
+			height: 130px;
+			margin: 0 auto 10px auto;
+			border-radius: 20px;
+			background-color: #fff;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: auto;
+			transition: all 0.3s;
+		}
+		.eventWrap .evGuide li a.item01::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item01.png);
+		}
+		.eventWrap .evGuide li a.item02::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item02.png);
+		}
+		.eventWrap .evGuide li a.item03::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item03.png);
+		}
+		.eventWrap .evGuide li a.item04::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item04.png);
+		}
+		.eventWrap .evGuide li a.item05::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item05.png);
+		}
+		.eventWrap .evGuide li a.item06::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item06.png);
+		}
+		.eventWrap .evGuide li a.item07::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item07.png);
+		}
+		.eventWrap .evGuide li a.item08::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item08.png);
+		}
+		.eventWrap .evGuide li a.item09::before {
+			background-image: url(./resource/images/eventImg/event05/event_icon_item09.png);
+		}
+		</style>
+		<article class="cont05">
+			<div class="innerSection">
+				<div class="evGuide">
+					<div class="titWrap">
+						<strong>취업성공을 위한 잡아바 활용 가이드</strong>
+						<p>성공적인 취업을 위해 잡아바에서 다양한 프로그램을 무료로 지원하고 있습니다.</p>
+					</div>
+					<div class="swiper-container m_slider">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item01">
+									취업진로 진단검사
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item02">
+									자기소개서첨삭
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item03">
+									AI 역량검사
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item04">
+									취업/진로 컨설팅
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item05">
+									NCS직업역량진단
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item06">
+									잡아바러닝센터
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item07">
+									탐나는 기업관
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item08">
+									상시 채용관
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" target="_blank" class="item09">
+									지원정책 안내
+								</a>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+
+				</div>
+			</div>
+		</article>
+		<style>
+		.eventWrap .cont06 {
+			position: relative;
+			padding: 100px 0 30px;
+			background: #e3f1f4;
+		}
+		.eventWrap .evFooter .titWrap {
+			width: 100%;
+			position: absolute;
+			top: -85px;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+		.eventWrap .evFooter .titWrap p {
+			display: inline-block;
+			position: relative;
+			padding: 34px 54px;		
+			background: #00aef0;
+			color: #fff;
+			font-size: 30px;
+			border-radius: 80px;
+		}
+		.eventWrap .evFooter .titWrap p::after {
+			content: '';
+			width: 433px;
+			height: 136px;
+			position: absolute;
+			top: -112px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: url(./resource/images/eventImg/event05/event_cont06_img01.png) no-repeat;
+			background-size: cover;
+		}
+		.eventWrap .evFooter .titWrap p::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -6px;
+			border-top: 34px solid #00aef0;
+			border-left: 16px solid transparent;
+			border-right: 16px solid transparent;
+			border-bottom: 0 solid transparent;
+			transform: rotate(45deg);
+		}
+		.eventWrap .evFooter .txtWrap p {
+			color: #003281;
+			font-size: 32px;
+			text-align: center;
+		}
+		.eventWrap .evFooter .txtWrap p::after {
+			content: '';
+			display: inline-block;
+			width: 139px;
+			height: 43px;
+			margin-left: 10px;
+			background: url(./resource/images/eventImg/event05/event_cont06_img02.png) no-repeat;
+			background-size: cover;
+			vertical-align: bottom;
+		}
+		.eventWrap .evFooter .txtWrap strong.mint {
+			color: #3da8a2;
+		}
+		</style>
+		<article class="cont06">
+			<div class="innerSection">
+				<div class="evFooter">
+					<div class="titWrap">
+						<p>
+							성공적인 취업을 위해<br>
+							<strong>잡아바가 구직자 여러분들과 함께합니다.</strong>
+						</p>
+					</div>
+					<div class="txtWrap">
+						<p><strong>취업은</strong> 혼자 준비하는 게 아니야! <strong class="mint">당신의 취업 메이트</strong></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+
+
+<script>	
+	
+</script>
+</body></html>
