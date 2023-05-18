@@ -1,1 +1,242 @@
 .eventWrap .innerSection { max-width: 1260px; padding: 0 20px; margin: 0 auto; } 
+
+.eventWrap .eventMain { padding: 80px 0; background: url(../resource/images/eventImg/event05/event_main_bg.jpg) no-repeat center; background-size: cover; height: 495px; } 
+.eventWrap .mainVisual { position: relative; padding-left: 100px; } 
+.eventWrap .mainVisual::before { content: ''; width: 575px; height: 186px; position: absolute; bottom: -254px; left: 100px; background: url(../resource/images/eventImg/event05/event_main_img01.png) no-repeat; background-size: cover; } 
+.eventWrap .mainVisual::after { content: ''; width: 446px; height: 383px; position: absolute; bottom: -244px; right: 0; background: url(../resource/images/eventImg/event05/event_main_img02.png) no-repeat; background-size: cover; } 
+.eventWrap .mainVisual strong { color: #1c4d97; font-size: 50px; } 
+.eventWrap .mainVisual p { color: #3c7c97; font-size: 24px; } 
+
+.eventWrap .cont01 { padding: 130px 0 90px; background: #f4f4f4; } 
+.eventWrap .evJob .itemWrap { position: relative; padding: 100px 10px 45px; background: linear-gradient(to bottom, #56c3bd, #4986ba); border-radius: 30px; } 
+.eventWrap .evJob .itemWrap::after { content: ''; width: 128px; height: 87px; position: absolute; right: 62px; top: -69px; background: url(../resource/images/eventImg/event05/event_cont01_img02.png) no-repeat; background-size: cover; } 
+.eventWrap .evJob .titWrap { width: 100%; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); text-align: center; } 
+.eventWrap .evJob .titWrap strong { display: inline-block; position: relative; padding: 10px 90px; background: #fff; color: #003281; font-size: 48px; line-height: 1; border-radius: 60px; box-shadow: 0 -4px 0 #5da7c5; } 
+.eventWrap .evJob .titWrap strong::after { content: ''; display: inline-block; width: 33px; height: 49px; margin-left: 10px; background: url(../resource/images/eventImg/event05/event_cont01_img01.png) no-repeat; background-size: cover; vertical-align: top; } 
+.eventWrap .evJob .titWrap strong::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -34px; border-top: 34px solid #fff; border-left: 28px solid transparent; border-right: 28px solid transparent; border-bottom: 0 solid transparent; } 
+.eventWrap .evJob .txtWrap { color: #fff; text-align: center; } 
+.eventWrap .evJob .txtWrap p { margin-bottom: 20px; font-size: 28px; } 
+.eventWrap .evJob .txtWrap p strong { font-size: 32px; } 
+.eventWrap .evJob .txtWrap > strong { font-size: 30px; } 
+.eventWrap .evJob .txtWrap > strong span { color: #ffde42; } 
+
+.eventWrap .cont02 { padding: 90px 0 80px; background: url(../resource/images/eventImg/event05/event_cont02_bg.jpg) no-repeat center; background-size: cover; } 
+.eventWrap .tit { margin-bottom: 60px; text-align: center; } 
+.eventWrap .tit strong { display: inline-block; width: 536px; padding: 20px 10px; background: #00a6cc; color: #fff; font-size: 36px; border: 3px solid #fff; border-radius: 50px; box-shadow: 0 12px 0 rgba(0,0,0,0.1); } 
+.eventWrap .evInfo ul { display: flex; justify-content: space-between; padding: 0 28px; } 
+.eventWrap .evInfo ul li a { display: flex; justify-content: center; align-items: center; width: 220px; height: 220px; background: #fff; border: 5px solid #cee3ea; border-radius: 50%; box-shadow: 0 12px 0 rgba(0,0,0,0.05); } 
+.eventWrap .evInfo li .imgWrap { padding: 0 10px; } 
+
+.eventWrap .cont03 { padding: 100px 0 35px; background: #fff; } 
+.eventWrap .evIntroduce .boxWrap { display: flex; justify-content: space-between; background: #fff; } 
+
+.eventWrap .evIntroduce .boxWrap + .boxWrap { margin-top: 40px; } 
+.eventWrap .evIntroduce .evBox { width: calc(100% / 2 - 20px); padding: 0 28px 30px; position: relative; border: 2px solid #c1c1c1; border-top: none; border-radius: 0 0 20px 20px; } 
+.eventWrap .evIntroduce .evBox::before { content: ''; position: absolute; top: -10px; left: -2px; right: -2px; height: 10px; border-radius: 20px 20px 0 0; } 
+.eventWrap .evIntroduce .evBox.box01::before { background-color: #92b122; } 
+.eventWrap .evIntroduce .evBox.box02::before { background-color: #0099da; } 
+.eventWrap .evIntroduce .evBox.box03::before { background-color: #a51b37; } 
+.eventWrap .evIntroduce .evBox.box04::before { background-color: #d12338; } 
+.eventWrap .evIntroduce .logoWrap { width: 100%; height: 110px; padding: 25px 0 25px; border-bottom: 2px solid #e1e1e1; text-align: center; } 
+.eventWrap .evIntroduce .logoWrap img { height: 100%; object-fit: scale-down; } 
+.eventWrap .evIntroduce .txtWrap { height: 220px; padding: 20px 0 25px; text-align: center; } 
+.eventWrap .evIntroduce .txtWrap strong { display: block; margin-bottom: 20px; color: #000; font-size: 27px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
+.eventWrap .evIntroduce .txtWrap p { color: #787878; font-size: 20px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; word-break: keep-all; } 
+.eventWrap .evIntroduce .imgWrap { width: 100%; height: 190px; position: relative; background: #ededed; border-radius: 20px; overflow: hidden; } 
+.eventWrap .evIntroduce .imgWrap.noneImg::before { content: ''; width: 146px; height: 109px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../resource/images/eventImg/event05/event_none_img.png) no-repeat; background-size: cover; } 
+.eventWrap .evIntroduce .slideWrap { display: flex; justify-content: space-between; } 
+.eventWrap .evIntroduce .swiper { width: calc(100% / 2 - 10px); position: relative; padding-bottom: 30px; overflow: hidden; } 
+.eventWrap .evIntroduce .swiper-pagination-bullet-active { background: #000; } 
+.eventWrap .evIntroduce .swiper-slide a { display: block; padding: 15px 16px; background: #efefef; border-radius: 20px; } 
+.eventWrap .evIntroduce .badgeWrap { display: flex; justify-content: space-between; margin-bottom: 20px; color: #8d8d8d; font-size: 14px; } 
+.eventWrap .evIntroduce .badgeWrap span.badge { display: inline-block; padding: 0 12px; background: #8d8d8d; color: #fff; border-radius: 10px; } 
+.eventWrap .evIntroduce .swiper strong { display: block; margin-bottom: 10px; color: #000; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
+.eventWrap .evIntroduce .swiper p { color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: keep-all; } 
+
+.eventWrap .cont04 { background: #fff; } 
+.eventWrap .evBanner { position: relative; padding: 70px 60px; background: url(../resource/images/eventImg/event05/event_cont04_bg.jpg) no-repeat center; background-size: cover; border-radius: 10px; } 
+.eventWrap .evBanner::after { content: ''; width: 535px; height: 277px; position: absolute; top: 0; right: 88px; background: url(../resource/images/eventImg/event05/event_cont04_img01.png) no-repeat; background-size: cover; } 
+.eventWrap .evBanner strong { display: block; margin-bottom: 20px; color: #fff; font-size: 42px; } 
+.eventWrap .evBanner p { color: #fff; font-size: 24px; } 
+.eventWrap .cont05 { position: relative; padding: 100px 0 290px; background: #fff; } 
+.eventWrap .evGuide .titWrap { margin-bottom: 50px; text-align: center; } 
+.eventWrap .evGuide .titWrap strong { display: block; margin-bottom: 20px; color: #000; font-size: 36px; } 
+.eventWrap .evGuide .titWrap p { color: #000; font-size: 26px; } 
+.eventWrap .evGuide .guideSlide { padding: 20px 10px 50px; background: #d4ece9; border-radius: 30px; } 
+.eventWrap .evGuide ul { display: flex; flex-wrap: wrap; justify-content: center; text-align: center; } 
+.eventWrap .evGuide li { width: calc(100% / 5 - 20px); margin-top: 30px; } 
+.eventWrap .evGuide li a { color: #000; font-size: 22px; } 
+.eventWrap .evGuide li a:hover::before { border: 3px solid #00aef0; } 
+.eventWrap .evGuide li a::before { display: block; content: ''; width: 186px; height: 130px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; } 
+.eventWrap .evGuide li a.item01::before { background-image: url(../resource/images/eventImg/event05/event_icon_item01.png); } 
+.eventWrap .evGuide li a.item02::before { background-image: url(../resource/images/eventImg/event05/event_icon_item02.png); } 
+.eventWrap .evGuide li a.item03::before { background-image: url(../resource/images/eventImg/event05/event_icon_item03.png); } 
+.eventWrap .evGuide li a.item04::before { background-image: url(../resource/images/eventImg/event05/event_icon_item04.png); } 
+.eventWrap .evGuide li a.item05::before { background-image: url(../resource/images/eventImg/event05/event_icon_item05.png); } 
+.eventWrap .evGuide li a.item06::before { background-image: url(../resource/images/eventImg/event05/event_icon_item06.png); } 
+.eventWrap .evGuide li a.item07::before { background-image: url(../resource/images/eventImg/event05/event_icon_item07.png); } 
+.eventWrap .evGuide li a.item08::before { background-image: url(../resource/images/eventImg/event05/event_icon_item08.png); } 
+.eventWrap .evGuide li a.item09::before { background-image: url(../resource/images/eventImg/event05/event_icon_item09.png); } 
+.eventWrap .evGuide .guideSlide .swiper-pagination {
+  display: none;
+}
+
+.eventWrap .cont06 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
+.eventWrap .evFooter .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
+.eventWrap .evFooter .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; } 
+.eventWrap .evFooter .titWrap p::after { content: ''; width: 433px; height: 136px; position: absolute; top: -112px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event05/event_cont06_img01.png) no-repeat; background-size: cover; } 
+.eventWrap .evFooter .titWrap p::before { content: ''; position: absolute; left: 0; bottom: -6px; border-top: 34px solid #00aef0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-bottom: 0 solid transparent; transform: rotate(45deg); } 
+.eventWrap .evFooter .txtWrap p { color: #003281; font-size: 32px; text-align: center; } 
+.eventWrap .evFooter .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../resource/images/eventImg/event05/event_cont06_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 
+.eventWrap .evFooter .txtWrap strong.mint { color: #3da8a2; } 
+
+
+@media all and (max-width: 1160px){
+  .eventWrap .mainVisual::after {
+    content: none;
+  }
+  .eventWrap .evInfo ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .eventWrap .evInfo ul li {
+    margin-bottom: 20px;
+  }
+  .eventWrap .evInfo ul li + li {
+    margin-left: 20px;
+  }
+  .eventWrap .evBanner::after {
+    content: none;
+  }
+}
+@media all and (max-width: 1024px){
+  .eventWrap .mainVisual::before {
+    content: none;
+  }
+  .eventWrap .mainVisual {
+    padding-left: 0;
+  }
+  .eventWrap .eventMain {
+    height: auto;
+    text-align: center;
+  }
+  .eventWrap .evJob .titWrap {
+    position: static;
+    transform: none;
+  }
+  .eventWrap .evJob .itemWrap {
+    padding: 20px 10px 45px;
+  }
+  .eventWrap .evJob .titWrap strong {
+    margin-bottom: 50px;
+  }
+  .eventWrap .evIntroduce .boxWrap {
+    flex-direction: column;
+  }
+  .eventWrap .evIntroduce .evBox {
+    width: 100%;
+  }
+  .eventWrap .evIntroduce .evBox + .evBox {
+    margin-top: 40px;
+  }
+  .eventWrap .evIntroduce .txtWrap {
+    height: auto;
+  }
+  .eventWrap .evGuide li {
+    width: calc(100% / 3 - 20px);
+  }
+}
+@media all and (max-width: 860px){
+  .eventWrap .eventMain {
+    padding: 60px 0;
+  }
+  .eventWrap .mainVisual strong {
+    font-size: 38px;
+  }
+  
+  .eventWrap .mainVisual p {
+    font-size: 20px;
+  }
+  
+  .eventWrap .evJob .titWrap strong {
+    padding: 10px 60px;
+    font-size: 36px;
+  }
+  .eventWrap .evJob .titWrap strong::before {
+    bottom: -24px;
+    border-top: 24px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+  .eventWrap .evJob .txtWrap p strong {
+    font-size: 26px;
+  }
+  .eventWrap .evJob .txtWrap p {
+    font-size: 20px;
+  }
+  .eventWrap .evJob .txtWrap > strong {
+    font-size: 24px;
+  }
+  .eventWrap .cont02 {
+    padding: 60px 0 60px;
+  }
+  .eventWrap .tit strong {
+    padding: 16px 10px;
+    font-size: 28px;
+  }
+  .eventWrap .evInfo ul li a {
+    width: 180px;
+    height: 180px;
+  }
+  .eventWrap .evBanner strong {
+    font-size: 34px;
+  }
+  .eventWrap .evBanner p {
+    font-size: 20px;
+  }
+  .eventWrap .cont05 {
+    padding: 50px 0 50px;
+}
+  .eventWrap .evGuide .titWrap strong {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .eventWrap .evGuide .titWrap p {
+    font-size: 22px;
+  }
+  .eventWrap .evGuide .guideSlide {
+    overflow: hidden;
+  }
+  .eventWrap .evGuide ul {
+    flex-wrap: initial;
+    justify-content: initial;
+  }
+  .eventWrap .evGuide .guideSlide .swiper-pagination {
+    display: block;
+  }
+  .eventWrap .evFooter .titWrap {
+    position: static;
+    transform: none;
+    margin-bottom: 40px;
+  }
+  .eventWrap .evFooter .titWrap p::after {
+    width: 300px;
+    height: 94px;
+    top: -78px;
+  }
+  .eventWrap .evFooter .titWrap p {
+    padding: 26px 50px;
+    font-size: 26px;
+  }
+  .eventWrap .evFooter .txtWrap p {
+    font-size: 26px;
+  }
+  .eventWrap .evFooter .txtWrap p::after {
+    width: 110px;
+    height: 34px;
+  }
+
+}
+@media all and (max-width: 640px){
+
+}
