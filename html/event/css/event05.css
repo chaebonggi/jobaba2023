@@ -58,7 +58,9 @@
 .eventWrap .evIntroduce .imgWrap.noneImg::before { content: ''; width: 146px; height: 109px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../resource/images/eventImg/event05/event_none_img.png) no-repeat; background-size: cover; } 
 .eventWrap .evIntroduce .slideWrap { display: flex; justify-content: space-between; } 
 .eventWrap .evIntroduce .swiper { width: calc(100% / 2 - 10px); position: relative; padding-bottom: 30px; overflow: hidden; } 
+.eventWrap .evIntroduce .swiper-pagination {bottom: -6px;}
 .eventWrap .evIntroduce .swiper-pagination-bullet-active { background: #000; } 
+.eventWrap .evIntroduce .swiper-pagination-bullet {width: 14px; height: 14px;}
 .eventWrap .evIntroduce .swiper-slide a { display: block; padding: 15px 16px; background: #efefef; border-radius: 20px; } 
 .eventWrap .evIntroduce .badgeWrap { display: flex; justify-content: space-between; margin-bottom: 20px; color: #8d8d8d; font-size: 14px; } 
 .eventWrap .evIntroduce .badgeWrap span.badge { display: inline-block; padding: 0 12px; background: #8d8d8d; color: #fff; border-radius: 10px; } 
