@@ -416,25 +416,13 @@
 
 
 <script>	
-	var swiper01 = new Swiper(".slide01", {
-      pagination: {
-        el: ".slide01 .swiper-pagination",
-      },
-    });
-	var swiper02 = new Swiper(".slide02", {
-		pagination: {
-			el: ".slide02 .swiper-pagination",
-		},
-	});
-	var swiper03 = new Swiper(".slide03", {
-		pagination: {
-			el: ".slide03 .swiper-pagination",
-		},
-	});
-	var swiper04 = new Swiper(".slide04", {
-		pagination: {
-			el: ".slide04 .swiper-pagination",
-		},
+	var slideContainers = [".slide01", ".slide02", ".slide03", ".slide04"];
+	slideContainers.forEach(function(container){
+		var swiper = new Swiper(container, {
+			pagination: {
+				el: container + " .swiper-pagination",
+			},
+		});
 	});
 	
 	var ww = $(window).width();
