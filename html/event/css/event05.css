@@ -42,7 +42,8 @@
 .eventWrap .evIntroduce .evBox.box01::before { background-color: #92b122; } 
 .eventWrap .evIntroduce .evBox.box02::before { background-color: #0099da; } 
 .eventWrap .evIntroduce .evBox.box03::before { background-color: #a51b37; } 
-.eventWrap .evIntroduce .evBox.box04::before { background-color: #d12338; } 
+.eventWrap .evIntroduce .evBox.box04::before { background-color: #0054A5; } 
+.eventWrap .evIntroduce .evBox.box05::before { background-color: #000; } 
 .eventWrap .evIntroduce .logoWrap { width: 100%; height: 110px; padding: 25px 0 25px; border-bottom: 2px solid #e1e1e1; text-align: center; } 
 .eventWrap .evIntroduce .logoWrap img { height: 100%; object-fit: scale-down; } 
 .eventWrap .evIntroduce .txtWrap { height: 220px; padding: 20px 0 25px; text-align: center; } 
