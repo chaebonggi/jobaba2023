@@ -3,7 +3,7 @@
 @font-face { font-family: 'SCoreDream'; font-weight: 600; font-style: normal; src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff2) format('woff2'),
  url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff) format('woff'); font-display: swap; } 
  @font-face { font-family: 'GangwonEdu'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff'); font-weight: normal; font-style: normal; } 
- .eventWrap * { font-family: 'GmarketSansMedium';}
+ .eventWrap * { font-family: 'GmarketSansMedium'; } 
 .eventWrap .innerSection { max-width: 1260px; padding: 0 20px; margin: 0 auto; } 
 
 .eventWrap .eventMain { padding: 80px 0; background: url(../resource/images/eventImg/event05/event_main_bg.jpg) no-repeat center; background-size: cover; height: 495px; } 
@@ -17,13 +17,13 @@
 .eventWrap .evJob .itemWrap { position: relative; padding: 100px 10px 45px; background: linear-gradient(to bottom, #56c3bd, #4986ba); border-radius: 30px; } 
 .eventWrap .evJob .itemWrap::after { content: ''; width: 128px; height: 87px; position: absolute; right: 62px; top: -69px; background: url(../resource/images/eventImg/event05/event_cont01_img02.png) no-repeat; background-size: cover; } 
 .eventWrap .evJob .titWrap { width: 100%; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); text-align: center; } 
-.eventWrap .evJob .titWrap strong { display: inline-block; position: relative; padding: 16px 90px 10px ; background: #fff; color: #003281; font-size: 48px; font-family: 'GangwonEdu'; line-height: 1; border-radius: 60px; box-shadow: 0 -4px 0 #5da7c5; } 
+.eventWrap .evJob .titWrap strong { display: inline-block; position: relative; padding: 16px 90px 10px; background: #fff; color: #003281; font-size: 48px; font-family: 'GangwonEdu'; line-height: 1; border-radius: 60px; box-shadow: 0 -4px 0 #5da7c5; } 
 .eventWrap .evJob .titWrap strong::after { content: ''; display: inline-block; width: 33px; height: 49px; margin-left: 10px; background: url(../resource/images/eventImg/event05/event_cont01_img01.png) no-repeat; background-size: cover; vertical-align: text-bottom; } 
 .eventWrap .evJob .titWrap strong::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -34px; border-top: 34px solid #fff; border-left: 28px solid transparent; border-right: 28px solid transparent; border-bottom: 0 solid transparent; } 
 .eventWrap .evJob .txtWrap { color: #fff; text-align: center; } 
 .eventWrap .evJob .txtWrap p { margin-bottom: 20px; font-size: 28px; } 
-.eventWrap .evJob .txtWrap p strong { font-size: 32px; font-family: 'GmarketSansBold';} 
-.eventWrap .evJob .txtWrap > strong { font-size: 30px; font-family: 'GmarketSansBold';} 
+.eventWrap .evJob .txtWrap p strong { font-size: 32px; font-family: 'GmarketSansBold'; } 
+.eventWrap .evJob .txtWrap > strong { font-size: 30px; font-family: 'GmarketSansBold'; } 
 .eventWrap .evJob .txtWrap > strong span { color: #ffde42; } 
 
 .eventWrap .cont02 { padding: 90px 0 80px; background: url(../resource/images/eventImg/event05/event_cont02_bg.jpg) no-repeat center; background-size: cover; } 
@@ -38,6 +38,11 @@
 
 .eventWrap .evIntroduce .boxWrap + .boxWrap { margin-top: 40px; } 
 .eventWrap .evIntroduce .evBox { width: calc(100% / 2 - 20px); padding: 0 28px 30px; position: relative; border: 2px solid #c1c1c1; border-top: none; border-radius: 0 0 20px 20px; } 
+.eventWrap .evIntroduce .evBox.banner { margin-top: -10px; padding: 45px 28px 30px; background: url(../resource/images/eventImg/event05/event_banner_bg.jpg) no-repeat; background-size: cover; border: 10px solid #c5e5ef; border-radius: 20px; } 
+.eventWrap .evIntroduce .evBox.banner::after { content: ''; width: 539px; height: 489px; position: absolute; top:0; right: 20px; background: url(../resource/images/eventImg/event05/event_banner_img01.png) no-repeat; background-size: cover; } 
+.eventWrap .evIntroduce .evBox.banner::before { content: none; } 
+.eventWrap .evIntroduce .evBox.banner strong { display: block; margin-bottom: 20px; color: #fff; font-size: 44px; font-family: 'GmarketSansBold'; } 
+.eventWrap .evIntroduce .evBox.banner p { color: #fff; font-size: 24px; letter-spacing: -1px; } 
 .eventWrap .evIntroduce .evBox::before { content: ''; position: absolute; top: -10px; left: -2px; right: -2px; height: 10px; border-radius: 20px 20px 0 0; } 
 .eventWrap .evIntroduce .evBox.box01::before { background-color: #92b122; } 
 .eventWrap .evIntroduce .evBox.box02::before { background-color: #0099da; } 
@@ -63,7 +68,7 @@
 .eventWrap .cont04 { background: #fff; } 
 .eventWrap .evBanner { position: relative; padding: 70px 60px; background: url(../resource/images/eventImg/event05/event_cont04_bg.jpg) no-repeat center; background-size: cover; border-radius: 10px; } 
 .eventWrap .evBanner::after { content: ''; width: 535px; height: 277px; position: absolute; top: 0; right: 88px; background: url(../resource/images/eventImg/event05/event_cont04_img01.png) no-repeat; background-size: cover; } 
-.eventWrap .evBanner strong { display: block; margin-bottom: 20px; color: #fff; font-size: 42px; font-family: 'GmarketSansBold';} 
+.eventWrap .evBanner strong { display: block; margin-bottom: 20px; color: #fff; font-size: 42px; font-family: 'GmarketSansBold'; } 
 .eventWrap .evBanner p { color: #fff; font-size: 24px; } 
 .eventWrap .cont05 { position: relative; padding: 100px 0 290px; background: #fff; } 
 .eventWrap .evGuide .titWrap { margin-bottom: 50px; text-align: center; } 
@@ -101,6 +106,9 @@
  .eventWrap .evInfo ul { flex-wrap: wrap; justify-content: center; } 
  .eventWrap .evInfo ul li { margin-bottom: 20px; } 
  .eventWrap .evBanner::after { content: none; } 
+ .eventWrap .evIntroduce .evBox.banner::after {
+    content: none;
+ }
  }
 @media all and (max-width: 1024px){
  .eventWrap .mainVisual::before { content: none; } 
@@ -119,7 +127,6 @@
 @media all and (max-width: 860px){
  .eventWrap .eventMain { padding: 60px 0; } 
  .eventWrap .mainVisual strong { font-size: 38px; } 
- 
  .eventWrap .mainVisual p { font-size: 20px; } 
  
  .eventWrap .evJob .titWrap strong { padding: 10px 60px; font-size: 36px; } 
@@ -130,8 +137,9 @@
  .eventWrap .cont02 { padding: 60px 0 60px; } 
  .eventWrap .tit strong { padding: 16px 10px; font-size: 28px; } 
  .eventWrap .evInfo ul li a { width: 180px; height: 180px; } 
- .eventWrap .evBanner strong { font-size: 34px; } 
- .eventWrap .evBanner p { font-size: 20px; } 
+
+ .eventWrap .evIntroduce .evBox.banner strong { font-size: 34px; } 
+ .eventWrap .evIntroduce .evBox.banner p { font-size: 20px; } 
  .eventWrap .cont05 { padding: 50px 0 50px; } 
  .eventWrap .evGuide .titWrap strong { margin-bottom: 10px; font-size: 30px; } 
  .eventWrap .evGuide .titWrap p { font-size: 22px; } 
@@ -166,9 +174,9 @@
 .eventWrap .evIntroduce .txtWrap p { color: #787878; font-size: 14px; } 
 .eventWrap .evIntroduce .swiper strong { font-size: 16px; } 
 .eventWrap .evIntroduce .swiper p { font-size: 14px; } 
-.eventWrap .evBanner { padding: 20px 10px; } 
-.eventWrap .evBanner strong { font-size: 20px; } 
-.eventWrap .evBanner p { font-size: 14px; } 
+.eventWrap .evIntroduce .evBox.banner { padding: 20px 10px; } 
+.eventWrap .evIntroduce .evBox.banner strong { font-size: 20px; } 
+.eventWrap .evIntroduce .evBox.banner p { font-size: 14px; } 
 .eventWrap .cont05 { padding: 30px 0 30px; } 
 .eventWrap .evGuide .titWrap strong { font-size: 20px; } 
 .eventWrap .evGuide .titWrap p { font-size: 14px; } 
