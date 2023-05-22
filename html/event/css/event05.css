@@ -3,7 +3,7 @@
 @font-face { font-family: 'SCoreDream'; font-weight: 600; font-style: normal; src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff2) format('woff2'),
  url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream6.woff) format('woff'); font-display: swap; } 
  @font-face { font-family: 'GangwonEdu'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff'); font-weight: normal; font-style: normal; } 
- .eventWrap * { font-family: 'GmarketSansMedium'; word-break: keep-all; } 
+ .eventWrap * { font-family: 'GmarketSansMedium';} 
 .eventWrap .innerSection { max-width: 1260px; padding: 0 20px; margin: 0 auto; } 
 
 .eventWrap .eventMain { padding: 80px 0; background: url(../resource/images/eventImg/event05/event_main_bg.jpg) no-repeat center; background-size: cover; height: 495px; } 
@@ -16,7 +16,7 @@
 .eventWrap .cont01 { padding: 130px 0 90px; background: #f4f4f4; } 
 .eventWrap .evJob .itemWrap { position: relative; padding: 100px 10px 45px; background: linear-gradient(to bottom, #56c3bd, #4986ba); border-radius: 30px; } 
 .eventWrap .evJob .itemWrap::after { content: ''; width: 128px; height: 87px; position: absolute; right: 62px; top: -69px; background: url(../resource/images/eventImg/event05/event_cont01_img02.png) no-repeat; background-size: cover; } 
-.eventWrap .evJob .titWrap { width: 100%; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); text-align: center; } 
+.eventWrap .evJob .titWrap { width: 100%; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); text-align: center; word-break: keep-all;} 
 .eventWrap .evJob .titWrap strong { display: inline-block; position: relative; padding: 16px 90px 10px; background: #fff; color: #003281; font-size: 48px; font-family: 'GangwonEdu'; line-height: 1; border-radius: 60px; box-shadow: 0 -4px 0 #5da7c5;word-break: keep-all; } 
 .eventWrap .evJob .titWrap strong::after { content: ''; display: inline-block; width: 33px; height: 49px; margin-left: 10px; background: url(../resource/images/eventImg/event05/event_cont01_img01.png) no-repeat; background-size: cover; vertical-align: text-bottom; } 
 .eventWrap .evJob .titWrap strong::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -34px; border-top: 34px solid #fff; border-left: 28px solid transparent; border-right: 28px solid transparent; border-bottom: 0 solid transparent; } 
