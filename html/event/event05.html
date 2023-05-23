@@ -340,64 +340,62 @@
 			</div>
 		</article> -->
 		<article class="cont05">
-			<div class="innerSection">
-				<div class="evGuide">
-					<div class="titWrap">
-						<strong>취업성공을 위한 잡아바 활용 가이드</strong>
-						<p>성공적인 취업을 위해 잡아바에서 다양한 프로그램을 무료로 지원하고 있습니다.</p>
-					</div>
-					<div class="swiper guideSlide">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item01">
-									취업진로 진단검사
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item02">
-									자기소개서첨삭
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item03">
-									AI 역량검사
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item04">
-									취업/진로 컨설팅
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item05">
-									NCS직업역량진단
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item06">
-									잡아바러닝센터
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item07">
-									탐나는 기업관
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item08">
-									상시 채용관
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#" target="_blank" class="item09">
-									지원정책 안내
-								</a>
-							</li>
-						</ul>
-						<div class="swiper-pagination"></div>
-					</div>
-
+			<div class="evGuide">
+				<div class="titWrap">
+					<strong>취업성공을 위한 잡아바 활용 가이드</strong>
+					<p>성공적인 취업을 위해 잡아바에서 다양한 프로그램을 무료로 지원하고 있습니다.</p>
 				</div>
+				<div class="swiper guideSlide">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item01">
+								취업진로 진단검사
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item02">
+								자기소개서첨삭
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item03">
+								AI 역량검사
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item04">
+								취업/진로 컨설팅
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item05">
+								NCS직업역량진단
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item06">
+								잡아바러닝센터
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item07">
+								탐나는 기업관
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item08">
+								상시 채용관
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" class="item09">
+								지원정책 안내
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+
 			</div>
 		</article>
 		<article class="cont06">
@@ -463,17 +461,12 @@
 			guideSlide = new Swiper(".guideSlide", {
 				slidesPerView: 3,
 				spaceBetween: 5,
+				slidesPerGroup: 3,
 				loop: true,
 				pagination: {
 					el: ".guideSlide .swiper-pagination",
 					clickable: true,
-				},
-				breakpoints: {
-              480: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-              },
-          },
+				},				
 			});
 		} else if (ww >= 860 && guideSlide != undefined) {
 			guideSlide.destroy();

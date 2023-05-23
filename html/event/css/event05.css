@@ -76,9 +76,10 @@
 .eventWrap .evBanner p { color: #fff; font-size: 24px; } 
 .eventWrap .cont05 { position: relative; padding: 100px 0 290px; background: #fff; } 
 .eventWrap .evGuide .titWrap { margin-bottom: 50px; text-align: center; } 
-.eventWrap .evGuide .titWrap strong { display: block; margin-bottom: 20px; color: #000; font-size: 36px; } 
-.eventWrap .evGuide .titWrap p { color: #000; font-size: 26px; } 
-.eventWrap .evGuide .guideSlide { padding: 20px 10px 50px; background: #d4ece9; border-radius: 30px; } 
+.eventWrap .evGuide .titWrap strong { display: block; margin-bottom: 20px; color: #000; font-size: 36px;word-break: keep-all; } 
+.eventWrap .evGuide .titWrap p { color: #000; font-size: 26px; word-break: keep-all; } 
+/* .eventWrap .cont05 {background: #d4ece9;} */
+.eventWrap .evGuide .guideSlide { padding: 20px 10px 50px; background: #d4ece9; } 
 .eventWrap .evGuide ul { display: flex; flex-wrap: wrap; justify-content: center; text-align: center; } 
 .eventWrap .evGuide li { width: calc(100% / 5 - 20px); margin-top: 30px; } 
 .eventWrap .evGuide li a { color: #000; font-size: 22px; } 
