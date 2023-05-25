@@ -143,19 +143,20 @@
 				background: url(./resource/images/thema/05/thema_ev01_bg.png) no-repeat top;
 				background-size: cover;
 			}
-			.themaWrap .event01 ul {
+			.themaWrap .event01 .linkList {
 				display: flex;
 				justify-content: space-between;
 				padding: 0 50px;
+				margin-bottom: 70px;
 			}
-			.themaWrap .event01 li a {
+			.themaWrap .event01 .linkList a {
 				display: flex;
 				align-items: center;
 				color: #fff;
 				font-size: 30px;
 				letter-spacing: -2px;
 			}
-			.themaWrap .event01 li a::before {
+			.themaWrap .event01 .linkList a::before {
 				content: '';
 				display: block;
 				flex-shrink: 0;
@@ -168,25 +169,25 @@
 				background-size: auto;
 				border-radius: 50%;
 			}
-			.themaWrap .event01 li a.item01::before {
+			.themaWrap .event01 .linkList a.item01::before {
 				background-image: url(./resource/images/thema/05/thema_ev01_item01.png);
 			}
-			.themaWrap .event01 li a.item02::before {
+			.themaWrap .event01 .linkList a.item02::before {
 				background-image: url(./resource/images/thema/05/thema_ev01_item02.png);
 			}
-			.themaWrap .event01 li a.item03::before {
+			.themaWrap .event01 .linkList a.item03::before {
 				background-image: url(./resource/images/thema/05/thema_ev01_item03.png);
 			}
-			.themaWrap .event01 li a p {
+			.themaWrap .event01 .linkList a p {
 				line-height: 1.2;
 			}
-			.themaWrap .event01 li a strong {				
+			.themaWrap .event01 .linkList a strong {				
 				font-family: 'GmarketSansBold' !important;
 			}
 		</style>
 		<article class="event01">
 			<div class="innerSection">
-				<ul>
+				<ul class="linkList">
 					<li>
 						<a href="#moveTo01" title="" class="item01">
 							<p>
@@ -210,14 +211,310 @@
 							<p>
 								취업의 시작은<br>
 								<strong>상담톡으로!</strong>
-							</p>
-							
+							</p>							
 						</a>
 					</li>
 				</ul>
+				<style>
+					.themaWrap .event01 .boxWrap {
+						padding: 72px 110px 54px;
+						background: rgba(255,255,255, 0.1);
+						border: 2px dotted #fff;
+						border-radius: 20px;
+					}
+					.themaWrap .event01 .boxWrap .titWrap {
+						position: relative;
+						padding-left: 200px;
+					}
+					.themaWrap .event01 .boxWrap .titWrap::before {
+						content: '';
+						width: 147px;
+						height: 168px;
+						position: absolute;
+						top: -36px;
+						left: 10px;
+						background: url(./resource/images/thema/05/thema_ev01_img01.png) no-repeat;
+						background-size: cover;
+					}
+					.themaWrap .event01 .boxWrap .titWrap strong {
+						color: #a1f4ff;
+						font-size: 42px;
+						font-family: 'GmarketSansBold' !important;
+						text-shadow: -2px 4px 0 #000, -2px -2px 0 #000, 2px 4px 0 #000, 2px -2px 0 #000;
+						line-height: 1.2;
+						text-transform: uppercase;
+						letter-spacing: -2px;
+					}
+					.themaWrap .event01 .boxWrap .titWrap strong::after {
+						content: '';
+						display: inline-block;
+						width: 96px;
+						height: 54px;
+						margin-left: 20px;						
+						background: url(./resource/images/thema/05/thema_ev01_img02.png) no-repeat;
+						background-size: cover;
+						vertical-align: baseline;
+					}
+					.themaWrap .event01 .boxWrap .titWrap p {
+						color: #fff;
+						font-size: 64px;
+						font-weight: 300;
+						letter-spacing: -5px;
+					}
+					.themaWrap .event01 .boxWrap li {
+						padding: 20px 55px 14px;
+						background: #fff;
+						border-radius: 30px;
+						border: 3px solid #5decff;
+					}
+					.themaWrap .event01 .boxWrap li + li {
+						margin-top: 14px;
+					}
+					.themaWrap .event01 .boxWrap li p {
+						color: #000;
+						font-size: 30px;
+						letter-spacing: -0.5px;
+						line-height: 1.2;
+						word-break: keep-all;
+					}
+					.themaWrap .event01 .boxWrap a {
+						display: block;
+						padding: 14px 40px;
+						margin-top: 18px;
+						background: #dcdcdc;
+						color: #000;
+						font-size: 24px;
+						border-radius: 20px;
+					}
+					.themaWrap .event01 .boxWrap a span {
+						color: #000;
+						font-size: 18px;
+					}
+				</style>
+				<div class="boxWrap">
+					<div class="titWrap">
+						<strong>잡아바 상담 talk !</strong>
+						<p>이렇게 바뀌었습니다.</p>
+					</div>
+					<ul>
+						<li>
+							<p>
+								로그인할 필요 없이 연령대, 취업희망직종,<br>
+								희망근무지 등만 입력하면 곧바로 1:1 맞춤상담 진행!
+							</p>
+						</li>
+						<li>
+							<p>
+								잡아바 전문 상담사가 대기하고 있습니다!<br>
+								기다리지 말고 상담 받으세요!
+							</p>
+							<a href="#">
+								상담가능시간 : 월-금 09:00~18:00<br>
+								<span>※ 주말 및 법정공휴일, 점심시간(12:00~13:00) 제외</span>
+							</a>
+						</li>
+						<li>
+							<p>
+								지원사업 상세 안내 및 신청방법까지 자세하게 
+								안내 받으세요!
+							</p>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
 		</article>
-		
+		<style>
+			.themaWrap .event02 {
+				padding: 130px 0 98px;
+			}
+			.themaWrap .event02 .titWrap {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.themaWrap .event02 .titWrap p {
+				color: #013382;
+				font-size: 48px;
+				font-family: 'GmarketSansBold' !important;
+				line-height: 1;
+			}
+			.themaWrap .event02 .titWrap strong {
+				color: #a1f4ff;
+				font-size: 60px;
+				font-family: 'GmarketSansBold' !important;
+				text-shadow: -2px 4px 0 #000, -2px -2px 0 #000, 2px 4px 0 #000, 2px -2px 0 #000;
+			}
+			.themaWrap .event02 .titWrap strong span {
+				color: #fff;
+				font-family: 'GmarketSansBold' !important;
+			}
+			.themaWrap .event02 .boxWrap {
+				padding: 50px;
+				background: rgba(0,0,0, 0.06);
+				border-radius: 20px;
+			}
+			.themaWrap .event02 .boxWrap ul {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 40px;
+			}
+			.themaWrap .event02 .boxWrap li {
+				width: calc(100% / 4 - 24px);
+			}
+			.themaWrap .event02 .boxWrap a {
+				display: block;
+				height: 260px;
+				position: relative;
+				padding: 24px 10px;
+				background: #fff;
+				color: #000;
+				font-size: 20px;
+				border: 3px solid #67c3be;
+				border-radius: 20px;
+				text-align: center;
+				letter-spacing: -1px;
+				line-height: 1.6;
+				word-break: keep-all;
+				overflow: hidden;
+			}
+			.themaWrap .event02 .boxWrap li:last-child a {
+				line-height: 1.2;
+			}
+			.themaWrap .event02 .boxWrap a::before {
+				content: '';				
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				background-size: cover;
+			}
+			.themaWrap .event02 .boxWrap a.item01::before {
+				width: 89px;
+				height: 144px;
+				bottom: -24px;
+				background: url(./resource/images/thema/05/thema_ev02_item01.png) no-repeat;
+			}
+			.themaWrap .event02 .boxWrap a.item02::before {
+				width: 93px;
+				height: 146px;
+				bottom: -24px;
+				background: url(./resource/images/thema/05/thema_ev02_item02.png) no-repeat;
+			}
+			.themaWrap .event02 .boxWrap a.item03::before {
+				width: 116px;
+				height: 123px;
+				bottom: 4px;
+				background: url(./resource/images/thema/05/thema_ev02_item03.png) no-repeat;
+			}
+			.themaWrap .event02 .boxWrap a.item04::before {
+				width: 133px;
+				height: 116px;
+				bottom: 4px;
+				background: url(./resource/images/thema/05/thema_ev02_item04.png) no-repeat;
+			}
+			.themaWrap .event02 .boxWrap > p {
+				color: #003281;
+				font-size: 36px;
+				text-align: center;
+				letter-spacing: -2px;
+			}
+			.themaWrap .event02 .boxWrap > p strong {
+				color: #000;
+				font-family: 'GmarketSansBold' !important;
+			}
+		</style>
+		<article class="event02">
+			<div class="innerSection">
+				<div class="titWrap">
+					<p>하나라도 해당된다면</p>
+					<strong>잡아바 상담톡 <span>신청</span></strong>
+				</div>
+				<div class="boxWrap">
+					<ul>
+						<li>
+							<a href="" class="item01">
+								많은 지원정책 중
+								내게 맞는 지원정책만 
+								알고 싶다면?
+							</a>
+						</li>
+						<li>
+							<a href="" class="item02">
+								뭘 배워야 하지?
+								취업맞춤 교육을 
+								찾는다면?
+							</a>
+						</li>
+						<li>
+							<a href="" class="item03">
+								차별화된 
+								취업면접준비가 
+								필요하다면?
+							</a>
+						</li>
+						<li>
+							<a href="" class="item04">
+								쏟아지는<br>
+								채용정보 말고 
+								내게 맞는 정보만 
+								알고 싶다면?
+							</a>
+						</li>
+					</ul>
+					<p><strong>자신감, 목표를 찾기 위한</strong> 취업 첫걸음의 시작</p>
+				</div>
+			</div>
+		</article>
+		<style>
+			.themaWrap .event03 {
+				padding: 100px 0;
+			}
+			.themaWrap .event03 .titWrap {
+				text-align: center;
+			}
+			.themaWrap .event03 .titWrap p {
+				color: #a1f4ff;
+				font-size: 60px;
+				font-family: 'GmarketSansBold' !important;
+				text-shadow: -2px 4px 0 #000, -2px -2px 0 #000, 2px 4px 0 #000, 2px -2px 0 #000;
+				line-height: 1;
+			}
+			.themaWrap .event03 .titWrap strong {
+				color: #fff;
+				font-size: 70px;
+				font-family: 'GmarketSansBold' !important;
+				text-shadow: -2px 4px 0 #000, -2px -2px 0 #000, 2px 4px 0 #000, 2px -2px 0 #000;
+			}
+		</style>
+		<article class="event03">
+			<div class="innerSection">
+				<div class="titWrap">
+					<p>잡아바 상담톡</p>
+					<strong>진로, 취업상담</strong>
+				</div>
+				<div class="stepWrap">
+					<div class="step">
+						<div class="stepTit">
+							<span>Step 01</span>
+							<strong>상담 신청하기!</strong>
+						</div>
+						<div class="stepBox">
+							<div class="imgWrap">
+								<img src="./resource/images/thema/05/thema_ev03_img01.png" alt="잡아바 직업상담사">
+							</div>
+							<div class="txtWrap">
+								<strong>잡아바 우측하단 챗봇 열고<br> <span>진로 취업상담 클릭!</span></strong>
+								<p>
+									상담 횟수 제한 없이 신청 가능합니다!<br>
+									취업준비 혼자서 하지 말고<br>
+									잡아바와 함께 해요! 😊
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
 	</div>
 
 
