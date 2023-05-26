@@ -9,4 +9,4 @@
 @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; } 
 .themaWrap * { font-family: 'GmarketSans' !important; } 
-.themaWrap .innerSection { padding: 0 20px; max-width: 1040px; height: 100%; margin: 0 auto; } 
+.themaWrap .innerSection {position: relative; padding: 0 20px; max-width: 1040px; height: 100%; margin: 0 auto; } 
