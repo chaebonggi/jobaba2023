@@ -18,7 +18,7 @@
 .themaWrap .mainVisual .txtWrap::before { content: ''; width: 16px; height: 16px; position: absolute; top: 20px; background: url(../resource/images/thema/05/thema_main_img02.png) no-repeat; background-size: cover; } 
 .themaWrap .mainVisual .txtWrap::after { left: 20px; } 
 .themaWrap .mainVisual .txtWrap::before { right: 20px; } 
-.themaWrap .mainVisual .txtWrap > p { margin-bottom: 20px; color: #000; font-size: 36px; word-break: keep-all;} 
+.themaWrap .mainVisual .txtWrap > p { margin-bottom: 20px; color: #000; font-size: 36px; word-break: keep-all; } 
 .themaWrap .mainVisual .txtWrap > span { color: #000; font-size: 48px; } 
 .themaWrap .mainVisual .txtWrap > span::before { content: ''; display: inline-block; width: 250px; height: 41px; margin-right: 26px; background: url(../resource/images/thema/05/thema_main_img03.png) no-repeat; background-size: cover; vertical-align: text-top; } 
 .themaWrap .mainVisual .txtWrap ul { display: flex; justify-content: space-between; margin-top: 20px; } 
@@ -83,7 +83,7 @@
 .themaWrap .event03 .stepItem > .txtWrap { position: absolute; bottom: 60px; right: 85px; } 
 
 .themaWrap .event03 .bannerWrap { height: 249px; margin-top: 68px; padding: 50px 0 20px 40px; background: url(../resource/images/thema/05/thema_ev03_banner.png) no-repeat; background-size: cover; } 
-.themaWrap .event03 .bannerTit { margin-bottom: 20px; } 
+.themaWrap .event03 .ebannerTit { margin-bottom: 20px; } 
 .themaWrap .event03 .bannerTxt { padding-left: 54px; } 
 .themaWrap .event03 .bannerTxt p { color: #000; font-size: 30px; } 
 .themaWrap .event03 .bannerTxt span { color: #000; font-size: 20px; } 
@@ -132,225 +132,216 @@
 .themaWrap .event06 .btnWrap a { display: flex; justify-content: center; align-items: center; position: relative; width: 136px; height: 136px; background: #003281; color: #fff; font-size: 24px; letter-spacing: -1px; border-radius: 50%; } 
 .themaWrap .event06 .btnWrap a::before { content: ''; width: 141px; height: 102px; position: absolute; top: 20px; left: -164px; background: url(../resource/images/thema/05/thema_ev06_img01.png) no-repeat; background-size: cover; } 
 
-
+.themaWrap .event03 .stepItem.flex { display: flex; justify-content: space-between; } 
+.themaWrap .event03 .txtWrap p.list { margin-top: 60px; padding-left: 50px; color: #4d4c4c; font-size: 16px; } 
+.themaWrap .event03 .txtWrap p.list::before { content: '※'; margin-left: -20px; } 
+.themaWrap .event03 .stepItem.flex .txtWrap { margin: 40px 0 35px } 
 
 @media all and (max-width:1024px){
-    .themaWrap .event01 .boxWrap {
-        padding: 72px 10px 54px;
-    }
-
-
+ .themaWrap .event01 .boxWrap { padding: 72px 10px 54px; } 
+ .themaWrap .event03 .bannerWrap { height: auto; margin-top: 30px; background: #fff; border: 6px solid #D6E8EA; border-radius: 20px; } 
+ .themaWrap .event04 .boxWrap { flex-direction: column; } 
+.themaWrap .event04 .btnWrap { width: 100%; margin-top: 20px; } 
 
 }
 
 @media all and (max-width:860px){
-    .themaWrap .mainVisual .txtWrap {
-        margin: 0;
-        padding: 30px;
-    }
-    .themaWrap .mainVisual .txtWrap ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .themaWrap .mainVisual .txtWrap li {
-        width: calc(100% / 3 - 10px);
-        margin-bottom: 10px;
-    }
-    .themaWrap .mainVisual .txtWrap li + li {
-        margin-left: 10px;
-    }
-    .themaWrap .mainVisual .txtWrap li:nth-child(4) {
-        margin-left: 0;
-    }
-    .themaWrap .mainVisual .txtWrap > p {
-        font-size: 26px;
-    }
-    .themaWrap .mainVisual .txtWrap > span {
-        font-size: 28px;
-    }
-    .themaWrap .mainVisual .txtWrap > span::before {
-        width: 150px;
-        height: 24px;
-        margin-right: 14px;
-    }
-    .themaWrap .mainVisual .txtWrap li p {
-        font-size: 18px;
-    }
-    .themaWrap .mainVisual .txtWrap li strong {
-        font-size: 22px;
-    }
-    /*  */
-    .themaWrap .event01 {
-        padding: 40px 0 50px;
-        background-color: #677DD3;
-    }
-    .themaWrap .event01 .linkList {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .themaWrap .event01 .linkList li {
-        max-width: 300px;
-        width: 100%;
-    }
-    .themaWrap .event01 .linkList li + li {
-        margin-top: 10px;
-    }
-    .themaWrap .event01 .boxWrap {
-        padding: 30px 10px 54px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap {
-        padding-left: 118px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap::before {
-        width: 100px;
-        height: 114px;
-        top: 14px;
-        left: 10px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap strong {
-        font-size: 32px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap p {
-        font-size: 50px;
-    }
-    .themaWrap .event01 .boxWrap li p {
-        font-size: 22px;
-    }
-    .themaWrap .event01 .boxWrap a {
-        margin-top: 12px;
-        font-size: 20px;
-    }
-    .themaWrap .event01 .boxWrap a span {
-        font-size: 14px;
-    }
-    /*  */
-    .themaWrap .event02 {
-        padding: 30px 0 30px;
-        margin-top: 0;
-    }
-    .themaWrap .event02 .titWrap p {
-        font-size: 38px;
-    }
-    .themaWrap .event02 .titWrap strong {
-        font-size: 46px;
-    }
-    .themaWrap .event02 .boxWrap {
-        padding: 30px;
-    }
-    .themaWrap .event02 .boxWrap ul {
-        flex-wrap: wrap;
-    }
-    .themaWrap .event02 .boxWrap li {
-        width: calc(100% / 2 - 2px);
-    }
-    .themaWrap .event02 .boxWrap li:nth-child(-n + 2) {
-        margin-bottom: 10px;
-    }
-    .themaWrap .event02 .boxWrap > p {
-        font-size: 26px;
-    }
+ .themaWrap .mainVisual .txtWrap { margin: 0; padding: 30px; } 
+ .themaWrap .mainVisual .txtWrap ul { flex-wrap: wrap; justify-content: center; } 
+ .themaWrap .mainVisual .txtWrap li { width: calc(100% / 3 - 10px); margin-bottom: 10px; } 
+ .themaWrap .mainVisual .txtWrap li + li { margin-left: 10px; } 
+ .themaWrap .mainVisual .txtWrap li:nth-child(4) { margin-left: 0; } 
+ .themaWrap .mainVisual .txtWrap > p { font-size: 26px; } 
+ .themaWrap .mainVisual .txtWrap > span { font-size: 28px; } 
+ .themaWrap .mainVisual .txtWrap > span::before { width: 150px; height: 24px; margin-right: 14px; } 
+ .themaWrap .mainVisual .txtWrap li p { font-size: 18px; } 
+ .themaWrap .mainVisual .txtWrap li strong { font-size: 22px; } 
+ /* */
+ .themaWrap .event01 { padding: 40px 0 50px; background-color: #677DD3; } 
+ .themaWrap .event01 .linkList { flex-direction: column; align-items: center; margin-bottom: 30px; } 
+ .themaWrap .event01 .linkList li { max-width: 300px; width: 100%; } 
+ .themaWrap .event01 .linkList li + li { margin-top: 10px; } 
+ .themaWrap .event01 .boxWrap { padding: 30px 10px 54px; } 
+ .themaWrap .event01 .boxWrap .titWrap { padding-left: 118px; } 
+ .themaWrap .event01 .boxWrap .titWrap::before { width: 100px; height: 114px; top: 14px; left: 10px; } 
+ .themaWrap .event01 .boxWrap .titWrap strong { font-size: 32px; } 
+ .themaWrap .event01 .boxWrap .titWrap p { font-size: 50px; } 
+ .themaWrap .event01 .boxWrap li p { font-size: 22px; } 
+ .themaWrap .event01 .boxWrap a { margin-top: 12px; font-size: 20px; } 
+ .themaWrap .event01 .boxWrap a span { font-size: 14px; } 
+ /* */
+ .themaWrap .event02 { padding: 30px 0 30px; margin-top: 0; } 
+ .themaWrap .event02 .titWrap p { font-size: 38px; } 
+ .themaWrap .event02 .titWrap strong { font-size: 46px; } 
+ .themaWrap .event02 .boxWrap { padding: 30px; } 
+ .themaWrap .event02 .boxWrap ul { flex-wrap: wrap; } 
+ .themaWrap .event02 .boxWrap li { width: calc(100% / 2 - 2px); } 
+ .themaWrap .event02 .boxWrap li:nth-child(-n + 2) { margin-bottom: 10px; } 
+ .themaWrap .event02 .boxWrap > p { font-size: 26px; } 
+ /* */
+ .themaWrap .event03 { padding: 30px 0; } 
+.themaWrap .event03 .titWrap { margin-bottom: 20px; } 
+.themaWrap .event03 .titWrap p { font-size: 45px; } 
+.themaWrap .event03 .titWrap strong { font-size: 55px; } 
+
+.themaWrap .event03 .stepTit span::before { content: none; } 
+.themaWrap .event03 .stepItem > .txtWrap { margin-top: 20px; position: static; } 
+.themaWrap .event03 .stepTit strong { display: block; margin-top: 10px; font-size: 26px; text-align: center; } 
+.themaWrap .event03 .stepTit { margin-left: 0; margin-bottom: 20px; } 
+.themaWrap .event03 .stepTit span { width: 100%; margin-right: 0; padding: 8px 0 3px; text-align: center; } 
+.themaWrap .event03 .stepItem { flex-direction: column; align-items: center; } 
+.themaWrap .event03 .txtWrap p.list { margin-top: 10px; font-size: 14px; } 
+.themaWrap .event03 .stepItem.flex .txtWrap { margin: 10px 0 20px; } 
+.themaWrap .event03 .bannerWrap { padding: 20px 10px; text-align: center; } 
+.themaWrap .event03 .bannerTxt { padding-left: 0; } 
+.themaWrap .event04 { padding: 20px 0; } 
+.themaWrap .event04 .titWrap { position: static; transform: none; } 
+.themaWrap .event04 .tit { margin-bottom: 20px; } 
+.themaWrap .event04 .boxWrap { padding: 20px 10px; } 
+.themaWrap .event04 .titWrap p { width: 100%; padding: 16px 0 12px; margin-bottom: 20px; font-size: 30px; } 
+.themaWrap .event04 li::before { width: 30px; height: 25px; } 
+.themaWrap .event04 li { font-size: 22px; } 
+.themaWrap .event04 .btnWrap { padding: 20px 0; } 
+.themaWrap .event04 .btnWrap .imgWrap { width: 80px; height: 74px; } 
+.themaWrap .event05 .boxWrap.item01::before,
+.themaWrap .event05 .boxWrap.item02::before {
+    content: none;
+}
+.themaWrap .event05 .tit {
+    padding-left: 10px;
+    margin: 30px 0;
+}
+.themaWrap .event05 .tit strong {
+    font-size: 24px;
+}
+.themaWrap .event05 .tit li {
+    font-size: 16px;
+}
+.themaWrap .event05 .boxWrap {
+    margin: 0;
+}
+.themaWrap .event06 {
+    padding: 30px 0 35px;
+}
+.themaWrap .event06 .btnWrap {
+    position: static;
+}
+.themaWrap .event06 .titWrap {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.themaWrap .event06 .titWrap p {
+    margin-top: 20px;
+}
+.themaWrap .event06 .btnWrap a {
+    margin: 0 auto;
+}
+
+
 }
 
 @media all and (max-width:640px){
-    .themaWrap .innerSection {
-        padding: 0 10px;
-    }
-    .themaWrap .mainVisual {
-        padding: 20px 0 20px;
-    }
-    .themaWrap .mainVisual .txtWrap::after, .themaWrap .mainVisual .txtWrap::before {
-        width: 10px;
-        height: 10px;
-        top: 10px
-    }
-    .themaWrap .mainVisual .txtWrap {
-        padding: 30px 10px;
-    }
-    .themaWrap .mainVisual .txtWrap > p {
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-    .themaWrap .mainVisual .txtWrap > span {
-        font-size: 18px;
-    }
-    .themaWrap .mainVisual .txtWrap > span::before {
-        width: 90px;
-        height: 14px;
-        margin-right: 10px
-    }
-    .themaWrap .mainVisual .txtWrap li p {
-        font-size: 14px;
-    }
-    .themaWrap .mainVisual .txtWrap li strong {
-        font-size: 16px;
-    }
-    /*  */
-    .themaWrap .event01 {
-        margin-top: -2px;
-        padding: 30px 0 30px;
-    }
-    .themaWrap .event01 .linkList {
-        padding: 0;
-    }
-    .themaWrap .event01 .linkList li {
-        max-width: 200px;
-    }
-    .themaWrap .event01 .linkList a::before {
-        width: 50px;
-        height: 50px;
-        background-size: auto 50%;
-    }
-    .themaWrap .event01 .linkList a {
-        font-size: 20px;
-    }
-    .themaWrap .event01 .boxWrap {
-        padding: 30px 10px 30px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap::before {
-        content: none;
-    }
-    .themaWrap .event01 .boxWrap .titWrap {
-        padding-left: 10px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap strong {
-        font-size: 22px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap strong::after {
-        width: 45px;
-        height: 25px;
-        margin-left: 15px;
-    }
-    .themaWrap .event01 .boxWrap .titWrap p {
-        font-size: 28px;
-    }
-    .themaWrap .event01 .boxWrap li {
-        padding: 20px 10px 14px;
-    }
-    .themaWrap .event01 .boxWrap li p {
-        font-size: 16px;
-    }
-    .themaWrap .event01 .boxWrap a {
-        padding: 14px 10px;
-        font-size: 16px;
-    }
-    .themaWrap .event01 .boxWrap a span {
-        font-size: 12px;
-    }
-    /*  */
-    .themaWrap .event02 .titWrap p {
-        font-size: 20px;
-    }
-    .themaWrap .event02 .titWrap strong {
-        font-size: 26px;
-        text-shadow: -1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
-    }
-    .themaWrap .event02 .boxWrap {
-        padding: 20px 10px;
-    }
-    .themaWrap .event02 .boxWrap a {
-        height: 180px;
-        padding: 15px 10px;
-        font-size: 14px;
-    }
+ .themaWrap .innerSection { padding: 0 10px; } 
+ .themaWrap .mainVisual { padding: 20px 0 20px; } 
+ .themaWrap .mainVisual .txtWrap::after, .themaWrap .mainVisual .txtWrap::before { width: 10px; height: 10px; top: 10px } 
+ .themaWrap .mainVisual .txtWrap { padding: 30px 10px; } 
+ .themaWrap .mainVisual .txtWrap > p { margin-bottom: 10px; font-size: 16px; } 
+ .themaWrap .mainVisual .txtWrap > span { font-size: 18px; } 
+ .themaWrap .mainVisual .txtWrap > span::before { width: 90px; height: 14px; margin-right: 10px } 
+ .themaWrap .mainVisual .txtWrap li p { font-size: 14px; } 
+ .themaWrap .mainVisual .txtWrap li strong { font-size: 16px; } 
+ /* */
+ .themaWrap .event01 { margin-top: -2px; padding: 30px 0 30px; } 
+ .themaWrap .event01 .linkList { padding: 0; } 
+ .themaWrap .event01 .linkList li { max-width: 200px; } 
+ .themaWrap .event01 .linkList a::before { width: 50px; height: 50px; background-size: auto 50%; } 
+ .themaWrap .event01 .linkList a { font-size: 20px; } 
+ .themaWrap .event01 .boxWrap { padding: 30px 10px 30px; } 
+ .themaWrap .event01 .boxWrap .titWrap::before { content: none; } 
+ .themaWrap .event01 .boxWrap .titWrap { padding-left: 10px; } 
+ .themaWrap .event01 .boxWrap .titWrap strong { font-size: 22px; } 
+ .themaWrap .event01 .boxWrap .titWrap strong::after { width: 45px; height: 25px; margin-left: 15px; } 
+ .themaWrap .event01 .boxWrap .titWrap p { font-size: 28px; } 
+ .themaWrap .event01 .boxWrap li { padding: 20px 10px 14px; } 
+ .themaWrap .event01 .boxWrap li p { font-size: 16px; } 
+ .themaWrap .event01 .boxWrap a { padding: 14px 10px; font-size: 16px; } 
+ .themaWrap .event01 .boxWrap a span { font-size: 12px; } 
+ /* */
+ .themaWrap .event02 .titWrap p { font-size: 20px; } 
+ .themaWrap .event02 .titWrap strong { font-size: 26px; text-shadow: -1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000; } 
+ .themaWrap .event02 .boxWrap { padding: 20px 10px; } 
+ .themaWrap .event02 .boxWrap ul { margin-bottom: 20px; } 
+ .themaWrap .event02 .boxWrap a { height: 180px; padding: 15px 10px; font-size: 14px; } 
+ .themaWrap .event02 .boxWrap a.item01::before { width: 60px; height: 90px; background-size: cover; } 
+ .themaWrap .event02 .boxWrap a.item02::before { width: 60px; height: 92px; background-size: cover; } 
+ .themaWrap .event02 .boxWrap a.item03::before { width: 60px; height: 63px; background-size: cover; } 
+ .themaWrap .event02 .boxWrap a.item04::before { width: 60px; height: 52px; background-size: cover; } 
+ .themaWrap .event02 .boxWrap > p { font-size: 16px; } 
+ /* */
+ .themaWrap .event03 .stepWrap { padding: 20px 10px; background: #f5fafa; border: 5px solid #ffffff; border-radius: 20px; } 
+.themaWrap .event03 .titWrap p { font-size: 26px; text-shadow: -1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000; } 
+.themaWrap .event03 .titWrap strong { font-size: 30px; text-shadow: -1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000; } 
+.themaWrap .event03 .stepTit span { font-size: 18px; } 
+.themaWrap .event03 .stepTit strong { font-size: 20px; word-break: keep-all; } 
+.themaWrap .event03 .stepItem { padding: 20px 10px; border-radius: 20px; } 
+.themaWrap .event03 .txtWrap strong { font-size: 18px; word-break: keep-all; } 
+.themaWrap .event03 .txtWrap p { font-size: 14px; } 
+.themaWrap .event03 .txtWrap p.list { padding-left: 20px; text-align: center; } 
+.themaWrap .event03 .ebannerTit img { width: 80%; } 
+.themaWrap .event03 .bannerTxt p { margin-bottom: 10px; font-size: 18px; } 
+.themaWrap .event03 .bannerTxt span { font-size: 14px; } 
+/* */
+.themaWrap .event04 .tit strong { margin-right: 10px; font-size: 20px; } 
+.themaWrap .event04 .tit span { font-size: 30px; } 
+.themaWrap .event04 .titWrap p { padding: 10px 0 6px; margin-bottom: 20px; font-size: 18px; } 
+.themaWrap .event04 li::before { width: 20px; height: 16px; } 
+.themaWrap .event04 li { font-size: 14px; word-break: keep-all; } 
+.themaWrap .event04 .btnWrap a { width: 100%; font-size: 18px; } 
+.themaWrap .event05 .titWrap::after,
+.themaWrap .event05 .titWrap::before {
+    content: none;
 }
+.themaWrap .event05 .titWrap span {
+    padding: 4px 10px 2px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.themaWrap .event05 .titWrap strong {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.themaWrap .event05 .tit strong {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.themaWrap .event05 .tit li {
+    font-size: 12px;
+}
+.themaWrap .event05 .boxWrap {
+    padding: 20px 10px;
+}
+.themaWrap .event05 .boxWrap li strong {
+    font-size: 16px;
+
+}
+.themaWrap .event05 .boxWrap li p {
+    padding-left: 22px;
+    font-size: 14px;
+}
+.themaWrap .event06 .titWrap span {
+    font-size: 26px;
+}
+.themaWrap .event06 .titWrap strong {
+    font-size: 24px;
+}
+.themaWrap .event06 .titWrap p {
+    font-size: 16px;
+}
+.themaWrap .event06 .btnWrap a::before{
+    content: none;
+}
+
+
+
+}
+
