@@ -1,24 +1,44 @@
 
-
-    function handleTabClick($btn, $items, tabAttr) {
-        $btn.click(function() {
-          var tab = $(this).attr(tabAttr);
-          $btn.removeClass('active');
-          $(this).addClass('active');
-          $items.removeClass('active');
-          $items.filter('[data-tab="' + tab + '"]').addClass('active');
-        });
-      }
-      //정책/채용
-      handleTabClick($('.m_visual_search li'), $('.m_visual_search li'), 'data-tab');
+    // 검색
+    $('.m_visual_search li').click(function(){
+        var search = $(this).attr('data-tab');
+        $('.m_visual_search li').removeClass('active');
+        $(this).addClass('active');
+        // $('.m_search_cont').removeClass('active');
+        // $('.m_search_cont[data-tab='+search+']').addClass('active');
+    });
       // 정책정보
-      handleTabClick($('.m_policy .m_policy_btn li'), $('.m_policy .m_policy_cont'), 'data-tab');      
+      $('.m_policy .m_policy_btn li').click(function(){
+        var policy = $(this).attr('data-tab');
+        $('.m_policy .m_policy_btn li').removeClass('active');
+        $(this).addClass('active');
+        $('.m_policy .m_policy_cont').removeClass('active');
+        $('.m_policy .m_policy_cont[data-tab='+policy+']').addClass('active');
+    });
       // 채용중인 탐나는 기업
-      handleTabClick($('.m_employ .m_employ_btn01 li'), $('.m_employ .m_employ_items01'), 'data-tab');      
+      $('.m_employ .m_employ_btn01 li').click(function(){
+        var employ = $(this).attr('data-tab');
+        $('.m_employ .m_employ_btn01 li').removeClass('active');
+        $(this).addClass('active');
+        $('.m_employ .m_employ_items01').removeClass('active');
+        $('.m_employ .m_employ_items01[data-tab='+employ+']').addClass('active');
+    });
       // 채용정보
-      handleTabClick($('.m_employ .m_employ_btn02 li'), $('.m_employ .m_employ_items02'), 'data-tab');      
+      $('.m_employ .m_employ_btn02 li').click(function(){
+        var employ = $(this).attr('data-tab');
+        $('.m_employ .m_employ_btn02 li').removeClass('active');
+        $(this).addClass('active');
+        $('.m_employ .m_employ_items02').removeClass('active');
+        $('.m_employ .m_employ_items02[data-tab='+employ+']').addClass('active');
+    });
       // 아주 유용한 꿀팁
-      handleTabClick($('.m_useful .m_useful_btn li'), $('.m_useful .m_useful_cont'), 'data-tab');
+      $('.m_useful .m_useful_btn li').click(function(){
+        var useful = $(this).attr('data-tab');
+        $('.m_useful .m_useful_btn li').removeClass('active');
+        $(this).addClass('active');
+        $('.m_useful .m_useful_cont').removeClass('active');
+        $('.m_useful .m_useful_cont[data-tab='+useful+']').addClass('active');
+    });
      
     // 공지사항 슬라이드
       var noticeSwiper = new Swiper(".m_notice_slide", {
