@@ -501,7 +501,7 @@
  #newMain .m_policy .m_policy_txt { padding: 10px; } 
  #newMain .m_policy .m_policy_txt .tit { height: auto; font-size: 14px; } 
  #newMain .m_policy .m_policy_txt .date { margin-top: 4px; font-size: 14px; } 
- #newMain .m_policy .m_tag { height: 30px; margin: 20px 10px 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 20px; order:2; } 
+ #newMain .m_policy .m_tag { height: 30px; margin: 20px 10px 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 10px; order:2; } 
  #newMain .m_policy .m_tag a { margin-right: 6px; padding: 2px 0; font-size: 14px; } 
  #newMain .m_policy .m_tag .m_tag_btn { width: 14px; height: 12px; top: 8px; right: 10px; } 
  #newMain .m_policy .btnWrap { order: 3; } 
