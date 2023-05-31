@@ -326,10 +326,81 @@
                                 <a href="#" class="m_login_join">회원가입</a>                                
                             </div>
                         </div>
+                        <style>
+                            #newMain .m_counseling_chat {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; padding: 16px 20px; background: linear-gradient(-45deg, #008ae0 40%, #fff 40%); color: #003281; font-size: 18px; border: 3px solid #008ae0; border-radius: 10px; }
+                            #newMain .m_counseling_chat > p {
+                                width: 100%;
+                                margin-bottom: 15px;
+                                color: #30a4c7;
+                                font-size: 16px;
+                                letter-spacing: -0.75px;
+                            }
+                            #newMain .m_counseling_chat .chatTalk strong {
+                                display: flex;
+                                align-items: center;
+                                font-size: 22px;
+                                line-height: 1;
+                                letter-spacing: -0.5px;
+                            }
+                            #newMain .m_counseling_chat .chatTalk strong::before {
+                                content: '';
+                                display: inline-block;
+                                width: 57px;
+                                height: 53px;
+                                margin-right: 6px;
+                                background: url(./images/main/icon_chat04.png) no-repeat;
+                                background-size: cover;
+                            }
+                            #newMain .m_counseling_chat .chatLive {
+                                position: relative;
+                            }
+                            #newMain .m_counseling_chat .chatLive::before {
+                                content: '';
+                                width: 56px;
+                                height: 49px;
+                                position: absolute;
+                                top: -52px;
+                                right: 4px;
+                                background: url(./images/main/icon_chat05.png) no-repeat;
+                                background-size: cover;
+                            }
+                            #newMain .m_counseling_chat .chatLive strong {
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                color: #ffff00;
+                                font-size: 16px;
+                                font-family: 'GmarketSans';
+                            }
+                            #newMain .m_counseling_chat .chatLive strong::before {
+                                content: '';
+                                width: 18px;
+                                height: 11px;
+                                position: absolute;
+                                top: -10px;
+                                left: 3px;
+                                background: url(./images/main/icon_chat06.png) no-repeat;
+                                background-size: cover;
+                            }
+                            #newMain .m_counseling_chat .chatLive strong::after {
+                                content: '';
+                                display: inline-block;
+                                width: 12px;
+                                height: 13px;
+                                margin-left: 4px;
+                                background: url(./images/main/icon_chat07.png) no-repeat;
+                                background-size: cover;
+                            }
+                        </style>
                         <div class="m_counseling_wrap">
                             <a href="#" target="_blank" class="m_counseling_chat">
-                                실시간 채팅상담 서비스<br>
-                                <span>도와줘요!<strong>잡아바!</strong></span>
+                                <p>실시간 진로·취업상담 서비스</p>
+                                <div class="chatTalk">
+                                    <strong>잡아바<br>상담톡!</strong>
+                                </div>
+                                <div class="chatLive">
+                                    <strong>Live Chat</strong>
+                                </div>
                             </a>
                             <div class="m_counseling_box">
                                 <a href="#" target="_blank" class="m_counseling_job">
@@ -398,23 +469,56 @@
         <article class="m_policy">
             <div class="innerSection">
                 <div class="m_policy_info">
-                    <h2>정책정보</h2>
-                    <div class="m_policy_btn">
-                        <button class="m_policy_more">정책정보 더보기</button>
-                        <ul>
-                            <li class="active" data-tab="policy01">경기도</li>
-                            <li data-tab="policy02">중앙부처</li>
-                            <li data-tab="policy03">시군</li>
+                    <div class="m_policy_tit">
+                        <h2>정책정보</h2>
+                        <ul class="m_policy_btn">
+                            <li class="active" data-tab="policy01">청년</li>
+                            <li data-tab="policy02">여성</li>
+                            <li data-tab="policy03">중장년</li>
                         </ul>
+                        <a href="#"><img src="./images/main/icon_ai.png" alt="ai추천"></a>
                     </div>
+                    
+
                     <div class="m_policy_cont active" data-tab="policy01">
+                        <div class="m_tag">
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                        </div>
                         <div class="swiper-container m_policy_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="./images/main/policy_img01.jpg" alt="로봇과 체험하며 배우는 코딩">
@@ -429,7 +533,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-110</span>
-                                            <span class="badge gray">중장년</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="./images/main/policy_img02.jpg" alt="로봇과 체험하며 배우는 코딩">
@@ -444,7 +548,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0111</span>
-                                            <span class="badge pink">여성</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="./images/main/policy_img03.jpg" alt="로봇과 체험하며 배우는 코딩">
@@ -459,7 +563,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="./images/main/policy_img04.jpg" alt="로봇과 체험하며 배우는 코딩">
@@ -473,19 +577,52 @@
 
                             </div>
                         </div>
-                        <div class="swiper-navigation">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                        <div class="btnWrap">
+                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
+                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
+                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
                         </div>
+
                     </div>
                     <div class="m_policy_cont" data-tab="policy02">
+                        <div class="m_tag">
+                            <a href="#">#전체2</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                        </div>
                         <div class="swiper-container m_policy_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">구리시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -500,7 +637,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-110</span>
-                                            <span class="badge gray">중장년</span>
+                                            <span class="badge area">구리시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -515,7 +652,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0111</span>
-                                            <span class="badge pink">여성</span>
+                                            <span class="badge area">구리시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -530,7 +667,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">구리시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -544,19 +681,51 @@
 
                             </div>
                         </div>
-                        <div class="swiper-navigation">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                        <div class="btnWrap">
+                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
+                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
+                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
                         </div>
                     </div>
                     <div class="m_policy_cont" data-tab="policy03">
+                        <div class="m_tag">
+                            <a href="#">#전체3</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                        </div>
                         <div class="swiper-container m_policy_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">이천시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -571,7 +740,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-110</span>
-                                            <span class="badge gray">중장년</span>
+                                            <span class="badge area">이천시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -586,7 +755,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0111</span>
-                                            <span class="badge pink">여성</span>
+                                            <span class="badge area">이천시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -601,7 +770,7 @@
                                     <a href="#" target="_blank">
                                         <div class="badge_wrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge blue">청년</span>
+                                            <span class="badge area">이천시</span>
                                         </div>
                                         <div class="m_policy_img">
                                             <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
@@ -615,9 +784,10 @@
 
                             </div>
                         </div>
-                        <div class="swiper-navigation">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                        <div class="btnWrap">
+                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
+                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
+                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
                         </div>
                     </div>
                 </div>
