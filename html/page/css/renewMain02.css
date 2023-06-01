@@ -145,6 +145,23 @@
 #newMain .m_visual .m_login_sub a + a { margin-left: 10px; padding-left: 10px; } 
 #newMain .m_visual .m_login_sub a + a::before { content: ''; display: flex; width: 1px; height: 14px; position: absolute; top: 50%; left: 0; background: #666666; transform: translateY(-50%); } 
 #newMain .m_visual .m_counseling_wrap { margin-top: 20px; } 
+#newMain .m_counseling_chat { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; padding: 16px 20px; background: linear-gradient(-45deg, #008ae0 40%, #fff 40%); color: #003281; font-size: 18px; border: 3px solid #008ae0; border-radius: 10px; } 
+#newMain .m_counseling_chat:hover .chatLive::before { animation: move 3s infinite; } 
+ @keyframes move { 
+    0% { transform: rotate(0deg)}
+    25% { transform: rotate(-8deg); } 
+    50% { transform: rotate(8deg); } 
+    75% { transform: rotate(-8deg); } 
+    100% { transform: rotate(0deg); } 
+ }
+ #newMain .m_counseling_chat > p { width: 100%; margin-bottom: 15px; color: #30a4c7; font-size: 16px; letter-spacing: -0.75px; } 
+ #newMain .m_counseling_chat .chatTalk strong { display: flex; align-items: center; font-size: 22px; line-height: 1; letter-spacing: -0.5px; } 
+ #newMain .m_counseling_chat .chatTalk strong::before { content: ''; display: inline-block; width: 57px; height: 53px; margin-right: 6px; background: url(../images/main/icon_chat04.png) no-repeat; background-size: cover; } 
+ #newMain .m_counseling_chat .chatLive { position: relative; } 
+ #newMain .m_counseling_chat .chatLive::before { content: ''; width: 56px; height: 49px; position: absolute; top: -52px; right: 4px; background: url(../images/main/icon_chat05.png) no-repeat; background-size: cover; } 
+ #newMain .m_counseling_chat .chatLive strong { display: flex; align-items: center; position: relative; color: #ffff00; font-size: 16px; font-family: 'GmarketSans'; } 
+ #newMain .m_counseling_chat .chatLive strong::before { content: ''; width: 18px; height: 11px; position: absolute; top: -10px; left: 3px; background: url(../images/main/icon_chat06.png) no-repeat; background-size: cover; } 
+ #newMain .m_counseling_chat .chatLive strong::after { content: ''; display: inline-block; width: 12px; height: 13px; margin-left: 4px; background: url(../images/main/icon_chat07.png) no-repeat; background-size: cover; } 
 /* #newMain .m_visual .m_counseling_chat { position: relative; display: block; padding: 32px 28px; background: #fff; color: #003281; font-size: 18px; border: 2px solid #003281; border-radius: 5px; } 
 #newMain .m_visual .m_counseling_chat::before { content: ''; width: 90px; height: 86px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../images/main/icon_chat03.png) no-repeat; background-size: contain; } 
 #newMain .m_visual .m_counseling_chat span { color: #003281; font-size: 20px; } */
@@ -183,10 +200,12 @@
 #newMain .m_policy { margin-bottom: 67px; } 
 #newMain .m_policy .m_policy_tit { display: flex; align-items: center; margin-bottom: 26px; margin-right: 10px; } 
 #newMain .m_policy .m_policy_tit a { margin-left: auto; } 
-#newMain .m_policy .m_policy_tit h2 { margin: 0 26px 0 10px; } 
+#newMain .m_policy .m_policy_tit h2 { margin: 0 40px 0 10px; } 
 #newMain .m_policy .m_policy_btn { display: flex; } 
-#newMain .m_policy .m_policy_btn li { position: relative; color: #666666; font-size: 18px; cursor: pointer; } 
-#newMain .m_policy .m_policy_btn li + li { margin-left: 48px; } 
+#newMain .m_policy .m_policy_btn li { position: relative; color: #666666; font-size: 18px; font-weight: 300; cursor: pointer; } 
+#newMain .m_policy .m_policy_btn li + li { margin-left: 20px; } 
+#newMain .m_policy .m_policy_btn li + li::before { content: '/'; position: absolute; left: -14px; } 
+#newMain .m_policy .m_policy_btn li.active::before { color: #666666; font-weight: 300; } 
 #newMain .m_policy .m_policy_btn li.active { color: #3c9e99; font-weight: bold; } 
 #newMain .m_policy .m_policy_btn li.active::after { content: ''; width: 100%; height: 2px; position: absolute; bottom: -4px; left: 0; background: #3c9e99; } 
 /* #newMain .m_policy .m_policy_info { position: relative; display: flex; justify-content: space-between; } */
@@ -210,11 +229,11 @@
 #newMain .m_policy .m_policy_txt .date { margin-top: 8px; color: #777777; font-size: 16px; font-weight: 300; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
 
 
-#newMain .m_policy .m_tag { height: 58px; position: relative; margin-bottom: 26px; padding: 10px 40px; background: #eaeaea; border-radius: 30px; overflow: hidden; } 
+#newMain .m_policy .m_tag { height: 50px; position: relative; margin-bottom: 26px; padding: 8px 40px; background: #f3f3f3; border-radius: 30px; overflow: hidden; } 
 #newMain .m_policy .m_tag.active { height: auto; } 
-#newMain .m_policy .m_tag .m_tag_btn { width: 18px; height: 15px; position: absolute; top: 24px; right: 20px; background: url(../images/main/icon_arrow02.png) no-repeat; background-size: cover; transition: all 0.3s; text-indent: -9999px; border: none; } 
+#newMain .m_policy .m_tag .m_tag_btn { width: 12px; height: 7px; position: absolute; top: 22px; right: 20px; background: url(../images/main/icon_arrow.png) no-repeat; background-size: cover; transition: all 0.3s; text-indent: -9999px; border: none; } 
 #newMain .m_policy .m_tag.active .m_tag_btn { transform: rotate(-180deg) } 
-#newMain .m_policy .m_tag a { display: inline-block; padding: 6px 0; margin-right: 26px; color: #4e4e4e; font-size: 18px; font-weight: 300; } 
+#newMain .m_policy .m_tag a { display: inline-block; padding: 4px 0; margin-right: 26px; color: #4e4e4e; font-size: 16px; font-weight: 300; } 
 #newMain .m_policy .m_tag a:last-child { margin-right: 0; } 
 
 #newMain .m_policy .btnWrap { display: flex; justify-content: space-between; margin-top: 30px; } 
@@ -226,7 +245,7 @@
 
 /* 채용정보 */
 #newMain .m_employ { position: relative; padding-top: 50px; margin-bottom: 50px; } 
-#newMain .m_employ::before { content: ''; width: 100%; height: 240px; top: 0; position: absolute; z-index: -1; background-color: #38bab2; } 
+#newMain .m_employ::before { content: ''; width: 100%; height: 240px; top: 0; position: absolute; z-index: -1; background-color: #97e1a5; } 
 #newMain .m_employ .m_employ_wrap { position: relative; display: flex; justify-content: space-between; } 
 #newMain .m_employ .m_employ_wrap::before { content: ''; width: 268px; height: 113px; left: -250px; top: 70px; position: absolute; background: url(../images/main/icon_employ_img01.png) no-repeat; background-size: contain; } 
 #newMain .m_employ .m_employ_wrap::after { content: ''; width: 269px; height: 104px; right: -252px; top: 80px; position: absolute; background: url(../images/main/icon_employ_img02.png) no-repeat; background-size: contain; z-index: -1; } 
@@ -356,14 +375,12 @@
 @media screen and (max-width: 1700px){
  #newMain .m_employ .m_employ_wrap::before,
  #newMain .m_employ .m_employ_wrap::after { content: none; } 
-}
-@media screen and (max-width: 1200px) { 
- /* 메인 메뉴 */
+ }
+@media screen and (max-width: 1200px) { /* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .search_btn { width: 100%; } 
  #newMain .m_visual .m_search_cont::before { width: 80px; top: -8px; transform: none; } 
-}
-@media screen and (max-width: 1024px) { 
-    /* 메인 메뉴 */
+ }
+@media screen and (max-width: 1024px) { /* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .tit { margin: 10px 0 20px 20px; font-size: 18px; } 
  #newMain .m_visual .m_visual_items li { width: calc(100% / 3); } 
  #newMain .m_visual .m_visual_items li:nth-child(-n + 3) { margin-bottom: 10px; } 
@@ -373,9 +390,8 @@
  #newMain .m_employ .m_employ_wrap { flex-direction: column; justify-content: center; } 
  #newMain .m_employ .m_employ_wrap .m_employ_box { width: 100%; } 
  #newMain .m_employ .m_employ_wrap .m_employ_box + div { margin-top: 20px; } 
-}
-@media screen and (max-width: 860px) { 
-    /* 헤더 */
+ }
+@media screen and (max-width: 860px) { /* 헤더 */
  #newHeader .h_util { height: 8px; } 
  #newHeader .h_util ul { display: none; } 
  #newHeader .h_menu { display: none; } 
@@ -402,8 +418,7 @@
  #newMain .m_slide_banner .changing.swiper-slide-active, 
  #newMain .m_slide_banner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
  }
-@media screen and (max-width: 768px) { 
-    /* 정책정보 */
+@media screen and (max-width: 768px) { /* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit a { display: none; } 
@@ -460,7 +475,7 @@
  #newFooter .f_business .f_sns { display: flex; } 
  #newFooter .f_business .f_addr { display: none; } 
  #newFooter .f_address .f_addr { display: block; } 
-}
+ }
 @media screen and (max-width: 640px){
  .innerSection { padding: 0 10px; } 
  /* 헤더 */
@@ -503,8 +518,9 @@
  #newMain .m_policy .m_policy_txt .date { margin-top: 4px; font-size: 14px; } 
  #newMain .m_policy .m_tag { height: 30px; margin: 20px 10px 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 10px; order:2; } 
  #newMain .m_policy .m_tag a { margin-right: 6px; padding: 2px 0; font-size: 14px; } 
- #newMain .m_policy .m_tag .m_tag_btn { width: 14px; height: 12px; top: 8px; right: 10px; } 
+ #newMain .m_policy .m_tag .m_tag_btn { top: 12px; right: 14px; } 
  #newMain .m_policy .btnWrap { order: 3; } 
+ #newMain .m_policy .m_policy_btn li + li::before { content: none; } 
 
  /* #newMain .m_policy .m_policy_more { font-size: 16px; } */
  #newMain .m_policy .m_policy_btn { width: 100%; justify-content: space-between; } 
@@ -533,8 +549,7 @@
  #newFooter .f_business .f_logo > a img { width: 100px; } 
  #newFooter .f_enquiry dl { font-size: 13px; } 
  }
-@media screen and (max-width: 480px) { 
-    /* 헤더 */
+@media screen and (max-width: 480px) { /* 헤더 */
  #newHeader .nheader_bottom .innerSection { padding: 0; } 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
