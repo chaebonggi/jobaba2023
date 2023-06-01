@@ -119,7 +119,7 @@
 #newMain .m_visual .m_search_cont ul { display: inline-flex; background: #008ae0; border-radius: 20px; z-index: 1; } 
 #newMain .m_visual .m_search_cont ul li { width: 70px; padding: 3px 0; margin: 4px; color: #fff; font-size: 14px; font-weight: 600; border-radius: 20px; text-align: center; cursor: pointer; transition: all 0.2s; } 
 #newMain .m_visual .m_search_cont ul li.active { background: #fff; color: #000; } 
-#newMain .m_visual .m_search_cont .search_btn a { display: block; width: 100%; margin-left: 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
+#newMain .m_visual .m_search_cont .search_btn a { display: block; width: 100%; margin-left: 10px; overflow: hidden; text-indent: -9999px; } 
 #newMain .m_visual .m_search_cont .search_btn::after { content: ''; width: 24px; height: 24px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../images/main/icon_search.png) no-repeat; background-size: contain; cursor: pointer; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword { position: relative; padding-left: 52px; margin-bottom: 24px; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword::before { content: ''; width: 20px; height: 20px; position: absolute; left: 22px; top: 4px; background: url(../images/main/icon_keyword.png) no-repeat; background-size: contain; } 
