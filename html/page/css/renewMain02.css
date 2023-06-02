@@ -94,7 +94,7 @@
 #newMain .m_visual .m_visual_cont { width: calc(100% - 360px); padding: 36px 40px; background: #dbeefb; border-radius: 5px; } 
 #newMain .m_visual .m_visual_items { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 16px; margin-bottom: 30px; } 
 #newMain .m_visual .m_visual_items li { width: calc(100% / 6); height: 112px; box-sizing: border-box; } 
-#newMain .m_visual .m_visual_items li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px;} 
+#newMain .m_visual .m_visual_items li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all;} 
 #newMain .m_visual .m_visual_items li a::before { display: block; content: ''; width: 84px; height: 78px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; } 
 #newMain .m_visual .m_visual_items li a.m_item01::before { background-image: url(../images/main/icon_item01.png); } 
 #newMain .m_visual .m_visual_items li a.m_item02::before { background-image: url(../images/main/icon_item02.png); } 
