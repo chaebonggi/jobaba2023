@@ -178,13 +178,28 @@
           },
       });
       
-      // 모바일
-      function pcMenu() {
-    
+      // gnb menu
+      function allMenu() {
+        if(window.innerWidth < 860) {
+            $('.h_mobile').toggleClass('show');
+        } else {
+            $('.h_gnb_menu').slideToggle(300);
+            $('.h_gnb_menu').mouseleave(function () {
+                $('.h_gnb_menu').stop().slideUp(300);
+            });
+        }
       }
-      function mobileMenu() {
-          $('.h_mobile').toggleClass('show'); 
+      if(window.innerWidth > 860) {
+        $('.h_gnb').mouseenter(function () {
+    		$('.h_gnb_menu').stop().slideDown(300)
+    	});
+        $('.h_gnb_menu').mouseleave(function () {
+            $('.h_gnb_menu').stop().slideUp(300);
+        });
       }
+    //   function mobileMenu() {
+    //       $('.h_mobile').toggleClass('show'); 
+    //   }
     $('.h_mobile_close').click(function(){
       $('.h_mobile').removeClass('show');
     });

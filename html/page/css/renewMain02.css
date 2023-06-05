@@ -28,9 +28,22 @@
 #newHeader .h_menu span:nth-child(2) { top: 50%; } 
 #newHeader .h_menu span:last-child { top: 100%; } 
 #newHeader .h_search { margin-left: 34px; flex-shrink: 0; } 
-#newHeader .h_gnb { display: flex; align-items: center; max-width: 706px; width: 100%; position: absolute; top: 75px; left: 50%; transform: translateX(-50%); } 
-#newHeader .h_gnb li { width: calc(100% / 5); text-align: center; } 
-#newHeader .h_gnb li a { display: block; height: 70px; padding: 0 30px; color: #000; font-size: 22px; line-height: 70px; } 
+#newHeader .h_gnb { display: flex; align-items: center; max-width: 700px; width: 100%; position: absolute; top: 75px; left: 50%; transform: translateX(-50%); } 
+#newHeader .h_gnb li { width: 140px; text-align: center; } 
+#newHeader .h_gnb li a { display: block; height: 70px; color: #000; font-size: 22px; line-height: 70px; } 
+/* 헤더 메뉴 */
+#newHeader .h_gnb_menu { display: none; position: absolute; width: 100%; background: #fff; border-bottom: 1px solid #d5d5d5; z-index: 10;} 
+#newHeader .mainMenu { display: flex; width: 700px; margin: 0 auto; } 
+#newHeader .mainMenu > li { display: flex; flex-direction: column; align-items: flex-start; width: 140px; padding: 20px 0 36px 30px; transition: all 0.25s; } 
+#newHeader .mainMenu > li:hover { background: #f2f2f2; } 
+#newHeader .mainMenu > li > p { padding: 9px 0 0; color: #000; font-size: 15px; font-weight: 500; } 
+#newHeader .mainMenu > li > a { display: inline-block; position: relative; padding: 9px 0; color: #000; font-size: 15px; font-weight: 500; transition: all 0.25s; } 
+#newHeader .mainMenu > li > a:hover { color: #008ae0; } 
+#newHeader .mainMenu > li > a::after { content: ''; width: 0; height: 1px; position: absolute; bottom: 0; left: 0; background: #008ae0; transition: width 0.25s ease-out; } 
+#newHeader .mainMenu > li > a:hover::after { width: 100%; } 
+#newHeader .subMenu li { line-height: 1; } 
+#newHeader .subMenu a { display: inline-block; padding: 6px 0; color: #666666; font-size: 12px; font-weight: 300; transition: all 0.25s; } 
+#newHeader .subMenu a:hover { color: #008ae0; } 
 /* 헤더 모바일 */
 #newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
@@ -94,7 +107,7 @@
 #newMain .m_visual .m_visual_cont { width: calc(100% - 360px); padding: 36px 40px; background: #dbeefb; border-radius: 5px; } 
 #newMain .m_visual .m_visual_items { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 16px; margin-bottom: 30px; } 
 #newMain .m_visual .m_visual_items li { width: calc(100% / 6); height: 112px; box-sizing: border-box; } 
-#newMain .m_visual .m_visual_items li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all;} 
+#newMain .m_visual .m_visual_items li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all; } 
 #newMain .m_visual .m_visual_items li a::before { display: block; content: ''; width: 84px; height: 78px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; } 
 #newMain .m_visual .m_visual_items li a.m_item01::before { background-image: url(../images/main/icon_item01.png); } 
 #newMain .m_visual .m_visual_items li a.m_item02::before { background-image: url(../images/main/icon_item02.png); } 
@@ -147,26 +160,26 @@
 #newMain .m_visual .m_counseling_wrap { margin-top: 20px; } 
 #newMain .m_counseling_chat { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; padding: 16px 20px; background: linear-gradient(-45deg, #008ae0 40%, #fff 40%); color: #003281; font-size: 18px; border: 3px solid #008ae0; border-radius: 10px; } 
 /* #newMain .m_counseling_chat:hover .chatLive::before { animation: move 3s infinite; } 
-#newMain .m_counseling_chat:hover .chatLive strong::before { animation: fade 3s infinite; }  */
-@keyframes fade {
-    0% { opacity: 1; }
-    50% { opacity: 0; }  
-    100% { opacity: 1;}
-}
+#newMain .m_counseling_chat:hover .chatLive strong::before { animation: fade 3s infinite; } */
+@keyframes fade { 
+ 0% { opacity: 1; } 
+ 50% { opacity: 0; } 
+ 100% { opacity: 1; } 
+ }
 @keyframes move { 
-    0% { transform: rotate(0deg)}
-    25% { transform: rotate(-8deg); } 
-    50% { transform: rotate(8deg); } 
-    75% { transform: rotate(-8deg); } 
-    100% { transform: rotate(0deg); } 
+ 0% { transform: rotate(0deg) } 
+ 25% { transform: rotate(-8deg); } 
+ 50% { transform: rotate(8deg); } 
+ 75% { transform: rotate(-8deg); } 
+ 100% { transform: rotate(0deg); } 
  }
  #newMain .m_counseling_chat > p { width: 100%; margin-bottom: 15px; color: #30a4c7; font-size: 16px; letter-spacing: -0.75px; } 
  #newMain .m_counseling_chat .chatTalk strong { display: flex; align-items: center; font-size: 22px; line-height: 1; letter-spacing: -0.5px; } 
  #newMain .m_counseling_chat .chatTalk strong::before { content: ''; display: inline-block; width: 57px; height: 53px; margin-right: 6px; background: url(../images/main/icon_chat04.png) no-repeat; background-size: cover; } 
  #newMain .m_counseling_chat .chatLive { position: relative; } 
- #newMain .m_counseling_chat .chatLive::before { content: ''; width: 56px; height: 49px; position: absolute; top: -52px; right: 4px; background: url(../images/main/icon_chat05.png) no-repeat; background-size: cover; animation: move 3s infinite;} 
+ #newMain .m_counseling_chat .chatLive::before { content: ''; width: 56px; height: 49px; position: absolute; top: -52px; right: 4px; background: url(../images/main/icon_chat05.png) no-repeat; background-size: cover; animation: move 3s infinite; } 
  #newMain .m_counseling_chat .chatLive strong { display: flex; align-items: center; position: relative; color: #ffff00; font-size: 16px; font-family: 'GmarketSans'; } 
- #newMain .m_counseling_chat .chatLive strong::before { content: ''; width: 18px; height: 11px; position: absolute; top: -10px; left: 3px; background: url(../images/main/icon_chat06.png) no-repeat; background-size: cover; animation: fade 3s infinite;} 
+ #newMain .m_counseling_chat .chatLive strong::before { content: ''; width: 18px; height: 11px; position: absolute; top: -10px; left: 3px; background: url(../images/main/icon_chat06.png) no-repeat; background-size: cover; animation: fade 3s infinite; } 
  #newMain .m_counseling_chat .chatLive strong::after { content: ''; display: inline-block; width: 12px; height: 13px; margin-left: 4px; background: url(../images/main/icon_chat07.png) no-repeat; background-size: cover; } 
 /* #newMain .m_visual .m_counseling_chat { position: relative; display: block; padding: 32px 28px; background: #fff; color: #003281; font-size: 18px; border: 2px solid #003281; border-radius: 5px; } 
 #newMain .m_visual .m_counseling_chat::before { content: ''; width: 90px; height: 86px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../images/main/icon_chat03.png) no-repeat; background-size: contain; } 
@@ -206,20 +219,42 @@
 #newMain .m_policy { margin-bottom: 67px; } 
 #newMain .m_policy .m_policy_tit { display: flex; align-items: center; margin-bottom: 26px; margin-right: 10px; } 
 #newMain .m_policy .m_policy_tit a { margin-left: auto; } 
-#newMain .m_policy .m_policy_tit h2 { margin: 0 40px 0 10px; } 
-#newMain .m_policy .m_policy_btn { display: flex; } 
-#newMain .m_policy .m_policy_btn li { position: relative; color: #666666; font-size: 18px; font-weight: 300; cursor: pointer; } 
-#newMain .m_policy .m_policy_btn li + li { margin-left: 20px; } 
-#newMain .m_policy .m_policy_btn li + li::before { content: '/'; position: absolute; left: -14px; } 
-#newMain .m_policy .m_policy_btn li.active::before { color: #666666; font-weight: 300; } 
-#newMain .m_policy .m_policy_btn li.active { color: #3c9e99; font-weight: bold; } 
-#newMain .m_policy .m_policy_btn li.active::after { content: ''; width: 100%; height: 2px; position: absolute; bottom: -4px; left: 0; background: #3c9e99; } 
-/* #newMain .m_policy .m_policy_info { position: relative; display: flex; justify-content: space-between; } */
-/* #newMain .m_policy .m_policy_btn { position: absolute; top: 80px; left: 8px; } */
-/* #newMain .m_policy .m_policy_more { display: none; } */
-/* #newMain .m_policy .m_policy_btn li { width: 110px; padding: 3px 0 3px 24px; color: #666666; font-size: 16px; border: 1px solid #cccccc; border-radius: 20px; cursor: pointer; } */
-/* #newMain .m_policy .m_policy_btn li + li { margin-top: 6px; } */
-/* #newMain .m_policy .m_policy_btn li.active { color: #003281; border-width: 2px; border-color: #003281; } */
+#newMain .m_policy .m_policy_tit h2 { margin: 0 40px 0 10px; flex-shrink: 0;} 
+#newMain .m_policy .m_policy_btn { display: flex; width: 100%;} 
+#newMain .m_policy .m_policy_btn li { display: flex; align-items: center; width: 90px; height: 38px; padding: 3px 5px;background: #f5f5f5; color: #4e4e4e; font-size: 14px; font-weight: 500; letter-spacing: -0.5px; cursor: pointer; border-radius: 20px; box-sizing: border-box; } 
+#newMain .m_policy .m_policy_btn li::before {
+    content: ''; 
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+#newMain .m_policy .m_policy_btn li.icon01::before {
+    background: url(../images/main/icon_policy_btn01.png) no-repeat;
+    background-size: cover;
+}
+#newMain .m_policy .m_policy_btn li.icon02::before {
+    background: url(../images/main/icon_policy_btn02.png) no-repeat;
+    background-size: cover;
+}
+#newMain .m_policy .m_policy_btn li.icon03::before {
+    background: url(../images/main/icon_policy_btn03.png) no-repeat;
+    background-size: cover;
+}
+#newMain .m_policy .m_policy_btn li.icon01.active {
+    background: #147dff;
+    color: #fff;
+}
+#newMain .m_policy .m_policy_btn li.icon02.active {
+    background: #ff007e;
+    color: #fff;
+}
+#newMain .m_policy .m_policy_btn li.icon03.active {
+    background: #003281;
+    color: #fff;
+}
+#newMain .m_policy .m_policy_btn li + li { margin-left: 10px; } 
+
 #newMain .m_policy .m_policy_cont { display: none; position: relative; width: 100%; overflow: hidden; } 
 #newMain .m_policy .m_policy_cont.active { display: flex; flex-direction: column; } 
 #newMain .m_policy .swiper-container { width: 100% } 
@@ -251,11 +286,11 @@
 
 /* 채용정보 */
 #newMain .m_employ { position: relative; padding-top: 50px; margin-bottom: 50px; } 
-#newMain .m_employ::before { content: ''; width: 100%; height: 240px; top: 0; position: absolute; z-index: -1; background: radial-gradient(80.99% 100% at 50% 0%, #00FF0A 0%, #36008E 100%), radial-gradient(50% 123.47% at 50% 50%, #EFE7C8 0%, #36008E 100%), linear-gradient(301.28deg, #FF006B 0%, #48DD9E 100%), linear-gradient(294.84deg, #5A60E4 0%, #D30000 100%), linear-gradient(52.29deg, #000000 0%, #00FF85 100%), radial-gradient(100% 138.69% at 100% 0%, #0007A5 0%, #FF7A00 100%), radial-gradient(70.41% 100% at 50% 0%, #D5B300 0%, #2200AA 100%);
-    background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal; } 
+#newMain .m_employ::before { content: ''; width: 100%; height: 348px; top: 0; position: absolute; z-index: -1; background: url(../images/main/employ_bg.jpg) no-repeat; background-size: cover;} 
+/* #newMain .m_employ::before { content: ''; width: 100%; height: 240px; top: 0; position: absolute; z-index: -1; background: radial-gradient(80.99% 100% at 50% 0%, #00FF0A 0%, #36008E 100%), radial-gradient(50% 123.47% at 50% 50%, #EFE7C8 0%, #36008E 100%), linear-gradient(301.28deg, #FF006B 0%, #48DD9E 100%), linear-gradient(294.84deg, #5A60E4 0%, #D30000 100%), linear-gradient(52.29deg, #000000 0%, #00FF85 100%), radial-gradient(100% 138.69% at 100% 0%, #0007A5 0%, #FF7A00 100%), radial-gradient(70.41% 100% at 50% 0%, #D5B300 0%, #2200AA 100%); background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal; }  */
 #newMain .m_employ .m_employ_wrap { position: relative; display: flex; justify-content: space-between; } 
-#newMain .m_employ .m_employ_wrap::before { content: ''; width: 268px; height: 113px; left: -250px; top: 70px; position: absolute; background: url(../images/main/icon_employ_img01.png) no-repeat; background-size: contain; } 
-#newMain .m_employ .m_employ_wrap::after { content: ''; width: 269px; height: 104px; right: -252px; top: 80px; position: absolute; background: url(../images/main/icon_employ_img02.png) no-repeat; background-size: contain; z-index: -1; } 
+/* #newMain .m_employ .m_employ_wrap::before { content: ''; width: 268px; height: 113px; left: -250px; top: 70px; position: absolute; background: url(../images/main/icon_employ_img01.png) no-repeat; background-size: contain; } 
+#newMain .m_employ .m_employ_wrap::after { content: ''; width: 269px; height: 104px; right: -252px; top: 80px; position: absolute; background: url(../images/main/icon_employ_img02.png) no-repeat; background-size: contain; z-index: -1; }  */
 #newMain .m_employ .m_employ_wrap .m_employ_box { width: calc((100% - 30px) / 2); position: relative; padding: 40px 40px 60px; background: #fff; border: 1px solid #dddddd; border-radius: 20px; overflow: hidden; } 
 #newMain .m_employ .m_employ_tit { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; } 
 #newMain .m_employ .m_employ_tit ul { display: flex; } 
@@ -380,8 +415,8 @@
 #newFooter .footer_wrap { display: none; } 
 
 @media screen and (max-width: 1700px){
- #newMain .m_employ .m_employ_wrap::before,
- #newMain .m_employ .m_employ_wrap::after { content: none; } 
+ /* #newMain .m_employ .m_employ_wrap::before,
+ #newMain .m_employ .m_employ_wrap::after { content: none; }  */
  }
 @media screen and (max-width: 1200px) { /* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .search_btn { width: 100%; } 
@@ -398,13 +433,13 @@
  #newMain .m_employ .m_employ_wrap .m_employ_box { width: 100%; } 
  #newMain .m_employ .m_employ_wrap .m_employ_box + div { margin-top: 20px; } 
  }
-@media screen and (max-width: 860px) { /* 헤더 */
+@media screen and (max-width: 860px) { 
+/* 헤더 */
  #newHeader .h_util { height: 8px; } 
  #newHeader .h_util ul { display: none; } 
- #newHeader .h_menu { display: none; } 
- #newHeader .h_menu.mobile_menu { display: block; } 
  #newHeader .h_gnb { max-width: 100%; position: static; transform: none; } 
- #newHeader .h_gnb li a { padding: 0; } 
+ #newHeader .h_gnb li a { padding: 0; }
+ #newHeader .h_gnb_menu { display: none !important;}
  /* 메인 메뉴 */
  #newMain { padding: 0 0 24px; } 
  #newMain .m_visual .innerSection { padding: 0; } 
@@ -425,22 +460,13 @@
  #newMain .m_slide_banner .changing.swiper-slide-active, 
  #newMain .m_slide_banner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
  }
-@media screen and (max-width: 768px) { /* 정책정보 */
+@media screen and (max-width: 768px) { 
+    
+/* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit a { display: none; } 
  #newMain .m_policy .m_policy_info { flex-direction: column; } 
- /* #newMain .m_policy .m_policy_btn { width: 290px; position: relative; top: initial; left: initial; margin: 20px auto 0; order: 2; } */
- /* #newMain .m_policy .m_policy_more { position: relative; display: block; width: 100%; height: 50px; font-size: 18px; border: 1px solid #dcdcdc; border-radius: 10px; } 
- #newMain .m_policy .m_policy_more.active + ul { display: block; } 
- #newMain .m_policy .m_policy_more::after { content: '>'; position: absolute; right: 20px; transform: rotate(90deg); } */
- /* #newMain .m_policy h2 { margin: 0 0 20px 20px; } */
- /* #newMain .m_policy .m_policy_btn ul { position: absolute; top: 60px; left: 0; right: 0; display: none; background: #fff; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1); z-index: 10; } 
- #newMain .m_policy .m_policy_btn ul li { width: 100%; padding: 6px 0 6px 42px; border: none; border-radius: initial; } 
- #newMain .m_policy .m_policy_btn ul li + li { border-top: 1px solid #dcdcdc; } 
- #newMain .m_policy .m_policy_btn li + li.active { border-top: 1px solid #dcdcdc; } */
- /* #newMain .m_policy .m_policy_btn li.active { position: relative; } */
- /* #newMain .m_policy .m_policy_btn li.active::before { content: ''; width: 15px; height: 14px; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); background: url(../images/main/icon_check.png) no-repeat; background-size: contain; } */
  #newMain .m_policy .m_policy_cont .swiper-navigation { display: none; } 
  #newMain .m_policy .m_policy_cont { width: 100%; } 
  #newMain .m_policy .swiper-container { width: 100%; margin-left: 20px; } 
@@ -527,14 +553,7 @@
  #newMain .m_policy .m_tag a { margin-right: 6px; padding: 2px 0; font-size: 14px; } 
  #newMain .m_policy .m_tag .m_tag_btn { top: 12px; right: 14px; } 
  #newMain .m_policy .btnWrap { order: 3; } 
- #newMain .m_policy .m_policy_btn li + li::before { content: none; } 
 
- /* #newMain .m_policy .m_policy_more { font-size: 16px; } */
- #newMain .m_policy .m_policy_btn { width: 100%; justify-content: space-between; } 
- #newMain .m_policy .m_policy_btn li { width: calc(100% / 3 - 2px); padding: 2px 0; color: #000; font-size: 16px; text-align: center; border: 1px solid #d5d5d5; border-radius: 20px; } 
- #newMain .m_policy .m_policy_btn li + li { margin-left: 0; } 
- #newMain .m_policy .m_policy_btn li.active::after { content: none; } 
- #newMain .m_policy .m_policy_btn li.active { background: #67c3be; color: #fff; } 
  /* 채용중인 탐나는 기업 */
  #newMain .m_employ .m_employ_tit { margin-bottom: 10px; } 
  #newMain .m_employ .m_employ_slide .badge_wrap .badge, #newMain .m_employ .e_employ_info .badge_wrap .badge { min-width: 40px; font-size: 10px; } 
@@ -556,8 +575,18 @@
  #newFooter .f_business .f_logo > a img { width: 100px; } 
  #newFooter .f_enquiry dl { font-size: 13px; } 
  }
-@media screen and (max-width: 480px) { /* 헤더 */
+@media screen and (max-width: 480px) { 
+    
+/* 헤더 */
  #newHeader .nheader_bottom .innerSection { padding: 0; } 
+ #newMain .m_policy .m_policy_tit h2 {margin: 0 15px 0 10px;}
+ #newMain .m_policy .m_policy_btn li {width: calc(100% / 3); height: 30px; padding: 1px 4px 2px; font-size: 12px;}
+ #newMain .m_policy .m_policy_btn li + li {margin-left: 2px;}
+ #newMain .m_policy .m_policy_btn li::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+ }
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
  }
