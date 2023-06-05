@@ -222,7 +222,7 @@
 #newMain .m_policy .m_policy_tit h2 { margin: 0 40px 0 10px; flex-shrink: 0; } 
 #newMain .m_policy .m_policy_btn { display: flex; width: 100%; } 
 #newMain .m_policy .m_policy_btn li { display: flex; align-items: center; justify-content: center; width: 90px; position: relative; height: 38px; padding-left: 30px; background: #f5f5f5; color: #4e4e4e; font-size: 14px; font-weight: 500; letter-spacing: -0.5px; cursor: pointer; border-radius: 20px; box-sizing: border-box; } 
-#newMain .m_policy .m_policy_btn li::before { content: ''; width: 30px; height: 30px; position: absolute; top: 50%; left: 2px; transform: translateY(-50%); } 
+#newMain .m_policy .m_policy_btn li::before { content: ''; width: 30px; height: 30px; position: absolute; top: 50%; left: 4px; transform: translateY(-50%); } 
 #newMain .m_policy .m_policy_btn li.icon01::before { background: url(../images/main/icon_policy_btn01.png) no-repeat; background-size: cover; } 
 #newMain .m_policy .m_policy_btn li.icon02::before { background: url(../images/main/icon_policy_btn02.png) no-repeat; background-size: cover; } 
 #newMain .m_policy .m_policy_btn li.icon03::before { background: url(../images/main/icon_policy_btn03.png) no-repeat; background-size: cover; } 
@@ -553,7 +553,7 @@
  #newMain .m_policy .m_policy_tit h2 { margin: 0 15px 0 10px; } 
  #newMain .m_policy .m_policy_btn li { width: calc(100% / 3); height: 30px; padding: 1px 0 2px 20px; font-size: 12px; } 
  #newMain .m_policy .m_policy_btn li + li { margin-left: 2px; } 
- #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px; left: 4px; } 
+ #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px;} 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
  }
