@@ -43,7 +43,7 @@
 #newHeader .mainMenu > li > a:hover::after { width: 100%; } 
 #newHeader .subMenu li { line-height: 1; } 
 #newHeader .subMenu a { display: inline-block; padding: 6px 0; color: #666666; font-size: 12px; font-weight: 300; transition: all 0.25s; } 
-#newHeader .subMenu a:hover { color: #008ae0; } 
+#newHeader .subMenu a:hover { color: #008ae0; font-weight: bold; } 
 /* 헤더 모바일 */
 #newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
