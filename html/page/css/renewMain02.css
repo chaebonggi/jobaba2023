@@ -157,10 +157,18 @@
 #newMain .m_visual .m_login_sub a { position: relative; color: #666666; font-size: 14px; } 
 #newMain .m_visual .m_login_sub a + a { margin-left: 10px; padding-left: 10px; } 
 #newMain .m_visual .m_login_sub a + a::before { content: ''; display: flex; width: 1px; height: 14px; position: absolute; top: 50%; left: 0; background: #666666; transform: translateY(-50%); } 
+/* 로그인 후 */
+#newMain .m_login_wrap.login { padding: 28px 26px 20px; border: 1px solid #d0d0d0; border-radius: 10px; } 
+#newMain .m_login_wrap.login .txtWrap { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; } 
+#newMain .m_login_wrap.login .txtWrap p { color: #000000; font-size: 14px; font-weight: 500; } 
+#newMain .m_login_wrap.login .txtWrap a { display: inline-block; width: 80px; padding: 5px; background: #797979; color: #fff; font-size: 12px; font-weight: bold; text-align: center; } 
+#newMain .m_login_wrap.login .loginList { display: flex; flex-wrap: wrap; } 
+#newMain .m_login_wrap.login .loginList li { width: calc(100% / 2); margin: 3px 0; } 
+#newMain .m_login_wrap.login .loginList a { display: inline-flex; align-items: center; color: #000000; font-size: 14px; font-weight: 500; } 
+#newMain .m_login_wrap.login .loginList a span { display: inline-block; margin-left: 12px; color: #008ae0; font-size: 18px; font-weight: bold; } 
+
 #newMain .m_visual .m_counseling_wrap { margin-top: 20px; } 
 #newMain .m_counseling_chat { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; padding: 16px 20px; background: linear-gradient(-45deg, #008ae0 40%, #fff 40%); color: #003281; font-size: 18px; border: 3px solid #008ae0; border-radius: 10px; } 
-/* #newMain .m_counseling_chat:hover .chatLive::before { animation: move 3s infinite; } 
-#newMain .m_counseling_chat:hover .chatLive strong::before { animation: fade 3s infinite; } */
 @keyframes fade { 
  0% { opacity: 1; } 
  50% { opacity: 0; } 
@@ -391,7 +399,7 @@
 #newFooter .footer_wrap { display: none; } 
 
 @media screen and (max-width: 1700px) { /* #newMain .m_employ .m_employ_wrap::before,
- #newMain .m_employ .m_employ_wrap::after { content: none; } */}
+ #newMain .m_employ .m_employ_wrap::after { content: none; } */ } 
 @media screen and (max-width: 1200px) { /* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .search_btn { width: 100%; } 
  #newMain .m_visual .m_search_cont::before { width: 80px; top: -8px; transform: none; } 
@@ -407,7 +415,7 @@
  #newMain .m_employ .m_employ_wrap .m_employ_box { width: 100%; } 
  #newMain .m_employ .m_employ_wrap .m_employ_box + div { margin-top: 20px; } 
  }
-@media screen and (max-width: 860px) {/* 헤더 */
+@media screen and (max-width: 860px) { /* 헤더 */
  #newHeader .h_util { height: 8px; } 
  #newHeader .h_util ul { display: none; } 
  #newHeader .h_gnb { max-width: 100%; position: static; transform: none; } 
@@ -433,8 +441,7 @@
  #newMain .m_slide_banner .changing.swiper-slide-active, 
  #newMain .m_slide_banner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
  }
-@media screen and (max-width: 768px) { 
-/* 정책정보 */
+@media screen and (max-width: 768px) {/* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit a { display: none; } 
@@ -547,13 +554,12 @@
  #newFooter .f_business .f_logo > a img { width: 100px; } 
  #newFooter .f_enquiry dl { font-size: 13px; } 
  }
-@media screen and (max-width: 480px) { 
-/* 헤더 */
+@media screen and (max-width: 480px) {/* 헤더 */
  #newHeader .nheader_bottom .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit h2 { margin: 0 15px 0 10px; } 
  #newMain .m_policy .m_policy_btn li { width: calc(100% / 3); height: 30px; padding: 1px 0 2px 20px; font-size: 12px; } 
  #newMain .m_policy .m_policy_btn li + li { margin-left: 2px; } 
- #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px;} 
+ #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px; } 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
  }
