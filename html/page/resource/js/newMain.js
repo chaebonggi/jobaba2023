@@ -19,7 +19,21 @@
       handleTabClick($('.m_employ .m_employ_btn02 li'), $('.m_employ .m_employ_items02'), 'data-tab');      
       // 아주 유용한 꿀팁
       handleTabClick($('.m_useful .m_useful_btn li'), $('.m_useful .m_useful_cont'), 'data-tab');
-     
+    
+      //정책채용
+      
+        $('.m_search_cont li').click(function() {
+          var selectedTab = $(this).data('tab');
+          if (selectedTab === 'search01') {
+            $('.m_search_cont .tit').html('관심있는 <strong>지원정책</strong>을 찾아보세요');
+          } else if (selectedTab === 'search02') {
+            $('.m_search_cont .tit').html('관심있는 <strong>채용정보</strong>를 찾아보세요');
+          }
+        });
+
+
+
+
     // 공지사항 슬라이드
       var noticeSwiper = new Swiper(".m_notice_slide", {
           initialSlide: -1, 
@@ -214,7 +228,19 @@
         $(this).parent().toggleClass('active');
     });
     //footer 메뉴
+    // $('.footer_btn').click(function () {
+    //     $(this).toggleClass('active');
+    //     $('.footer_wrap').slideToggle(300);
+    // });
     $('.footer_btn').click(function () {
         $(this).toggleClass('active');
-        $('.footer_wrap').slideToggle(300);
+        var footerWrap = $('.footer_wrap');
+        
+        footerWrap.slideToggle(300, function() {
+            if (footerWrap.is(':visible')) {
+                // Scroll to the bottom of the screen
+                $('html, body').animate({scrollTop: $(document).height()}, 300);
+            }
+        });
     });
+    
