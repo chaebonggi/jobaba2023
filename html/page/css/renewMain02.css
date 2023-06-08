@@ -72,7 +72,7 @@
 #newHeader .h_mobile_mid .mobile_menu > li::before { content: ''; width: 2px; height: calc(100% - 30px); background: #f3eeee; position: absolute; top: 26px; left: -17px; } 
 /* #newHeader .h_mobile_mid .mobile_menu > li:last-child::before { content: none; } */
 #newHeader .h_mobile_mid .mobile_menu > li > a { display: block; position: relative; color: #000; font-size: 16px; font-weight: bold; } 
-#newHeader .h_mobile_mid .mobile_menu > li > a::before { content: ''; height: 14px; width: 16px; position: absolute; left: -24px; top: 50%; background: #fff; transform: translateY(-50%); border: 4px solid #9ea9ff; border-radius: 50%; box-sizing: border-box; } 
+#newHeader .h_mobile_mid .mobile_menu > li > a::before { content: ''; height: 14px; width: 14px; position: absolute; left: -24px; top: 50%; background: #fff; transform: translateY(-50%); border: 4px solid #9ea9ff; border-radius: 50%; box-sizing: border-box; } 
 #newHeader .h_mobile_mid .mobileGnb { padding: 10px 0; } 
 #newHeader .h_mobile_mid .mobileGnb li > a { display: block; padding: 5px 0; color: #000; font-size: 16px; } 
 #newHeader .h_mobile_mid .mobileSub { display: flex; flex-wrap: wrap; margin-bottom: 10px; background: #fafafa; } 
