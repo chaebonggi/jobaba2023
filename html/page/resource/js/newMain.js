@@ -65,6 +65,7 @@
           },
           pagination: {
               el: ".swiper-pagination",
+              clickable: true,
           }, 
           on: {
             init: function () {
@@ -120,10 +121,6 @@
                observer: true,
                observeParents: true,        
                loop: true,
-            //    navigation: {
-            //        nextEl: $('.type' + i).find('.swiper-button-next'),
-            //        prevEl: $('.type' + i).find('.swiper-button-prev'),
-            //    },
                breakpoints: {
                    1024: {
                        slidesPerView: 5,
@@ -211,27 +208,19 @@
             $('.h_gnb_menu').stop().slideUp(300);
         });
       }
-    //   function mobileMenu() {
-    //       $('.h_mobile').toggleClass('show'); 
-    //   }
+
     $('.h_mobile_close').click(function(){
       $('.h_mobile').removeClass('show');
     });
-    //   $('.m_policy_more').click(function(){
-    //       $(this).toggleClass('active');
-    // });
-      $('.m_policy_btn ul li').click(function(){
-          $('.m_policy_more').removeClass('active');
+    $('.m_policy_btn ul li').click(function(){
+        $('.m_policy_more').removeClass('active');
     });
+    
     // tag 메뉴
     $('.m_tag_btn').click(function () {
         $(this).parent().toggleClass('active');
     });
     //footer 메뉴
-    // $('.footer_btn').click(function () {
-    //     $(this).toggleClass('active');
-    //     $('.footer_wrap').slideToggle(300);
-    // });
     $('.footer_btn').click(function () {
         $(this).toggleClass('active');
         var footerWrap = $('.footer_wrap');
