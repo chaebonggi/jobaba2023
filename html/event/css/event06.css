@@ -38,7 +38,7 @@
 .eventWrap .event01 .boxWrap li + li { margin-top: 40px; } 
 .eventWrap .event01 .boxWrap li > strong::before { content: '·'; margin-left: -10px; margin-right: 5px; } 
 .eventWrap p.listDot::before { content: '·'; margin-left: -10px; margin-right: 5px; } 
-.eventWrap .event01 .boxWrap li .txtWrap { margin-left: 40px; } 
+.eventWrap .event01 .boxWrap li .txtWrap { margin-left: 40px; word-break: keep-all;} 
 .eventWrap .event01 .boxWrap li .txtWrap strong { display: inline-block; padding: 0 12px; color: #2579c7; font-size: 25px; background: #fff000; } 
 .eventWrap .event01 .boxWrap li .txtWrap span { display: block; color: #000; font-size: 20px; } 
 .eventWrap .event01 .boxWrap li .txtWrap a { color: #2579c7; font-weight: bold; border-bottom: 2px solid #2579c7; } 
@@ -85,7 +85,7 @@
 
 .eventWrap .event04 { padding: 60px 0; background: #4f504e; } 
 .eventWrap .event04 h3 { padding-bottom: 20px; margin-bottom: 20px; color: #ffffff; font-size: 30px; border-bottom: 1px solid #fff; } 
-.eventWrap .event04 li { padding-left: 10px; color: #ffffff; font-size: 16px; letter-spacing: -0.5px; line-height: 1.5; } 
+.eventWrap .event04 li { padding-left: 10px; color: #ffffff; font-size: 16px; letter-spacing: -0.5px; line-height: 1.5; word-break: keep-all;} 
 .eventWrap .event04 li::before { content: '·'; margin-right: 5px; margin-left: -10px; } 
 
 
