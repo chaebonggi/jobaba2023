@@ -9,7 +9,7 @@
 .eventWrap .innerSection { max-width: 1040px; position: relative; padding: 0 20px; margin: 0 auto; } 
 .eventWrap .mb10 { margin-bottom: 10px; } 
 
-.eventWrap .eventMain { padding: 85px 0 27px; background: url(../resource/images/eventImg/event06/event_main_bg.jpg) top no-repeat; background-size: cover; } 
+.eventWrap .eventMain { padding: 85px 0 27px; background: url(../resource/images/eventImg/event06/event_main_bg.jpg) top #45b882 no-repeat; background-size: cover; } 
 .eventWrap .mainVisual { text-align: center; } 
 .eventWrap .mainVisual p::before { content: ''; display: inline-block; width: 100px; height: 30px; margin-right: 4px; background: url(../resource/images/eventImg/event06/event_main_img01.png) no-repeat; background-size: cover; vertical-align: middle; } 
 .eventWrap .mainVisual p { display: inline-block; padding: 12px 24px; margin-bottom: 30px; background: #001366; color: #fff; font-size: 30px; word-break: keep-all; } 
