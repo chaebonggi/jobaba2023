@@ -201,10 +201,13 @@
         }
       }
       if(window.innerWidth > 860) {
-        $('.h_gnb').mouseenter(function () {
-    		$('.h_gnb_menu').stop().slideDown(300)
-    	});
+        $('.h_gnb').on('mouseenter focusin', function() {
+            $('.h_gnb_menu').stop().slideDown(300);
+        });
         $('.h_gnb_menu').mouseleave(function () {
+            $('.h_gnb_menu').stop().slideUp(300);
+        });
+        $('.h_gnb_menu').find('a').last().on('focusout' ,function () {
             $('.h_gnb_menu').stop().slideUp(300);
         });
       }
