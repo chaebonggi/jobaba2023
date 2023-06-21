@@ -53,7 +53,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .subMenu a:hover,
 #newHeader .subMenu a:focus { color: #008ae0; font-weight: bold; } 
 /* 헤더 모바일 */
-#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: 0; background: #fff; transition: all 0.3s; z-index: 999; } 
+#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
 #newHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #newHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
@@ -434,8 +434,10 @@ a:focus, button:focus { outline: thin dotted; }
  #newMain .m_employ .m_employ_wrap .m_employ_box { width: 100%; } 
  #newMain .m_employ .m_employ_wrap .m_employ_box + div { margin-top: 20px; } 
  }
-@media screen and (max-width: 860px) {/* 헤더 */
- #newHeader .h_util { height: 8px; } 
+@media screen and (max-width: 860px) { 
+    
+/* 헤더 */
+ #newHeader .h_util { height: 4px; } 
  #newHeader .h_util ul { display: none; } 
  #newHeader .h_gnb { max-width: 100%; position: static; transform: none; } 
  #newHeader .h_gnb li a { padding: 0; } 
@@ -466,7 +468,8 @@ a:focus, button:focus { outline: thin dotted; }
 #newFooter .f_business .f_addr { display: none; } 
 #newFooter .f_address .f_addr { display: block; } 
  }
-@media screen and (max-width: 768px) { /* 정책정보 */
+@media screen and (max-width: 768px){
+/* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit a { display: none; } 
