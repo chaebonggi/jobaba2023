@@ -1,18 +1,109 @@
-@font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+.gBold { font-family: 'GmarketSansBold','Noto Sans KR'; } 
+.gMedium { font-family: 'GmarketSansMedium','Noto Sans KR'; } 
 
-.gBold{font-family: 'GmarketSansBold','Noto Sans KR';}
-.gMedium{font-family: 'GmarketSansMedium','Noto Sans KR';}
+.centerEdu .innerSection { max-width: 1260px; margin: 0 auto; } 
+.centerEdu .fcWhite { color: #fff; } 
+.centerEdu .fcBlue { color: #334a98; } 
+.centerEdu .fcSkyBlue { color: #4194d3; } 
+.centerEdu .fcBrown { color: #a28064; } 
+.centerEdu .fcMint { color: #3cbca4; } 
+.centerEdu .bcSky { background: #c8edfd; } 
+.centerEdu .bcYellow { background: #fbecbf; } 
+.centerEdu .bcPurple { background: #ecdefb; } 
 
-.centerEdu .innerSection { max-width: 1260px; margin: 0 auto;}
-.centerEdu .fcWhite {color: #fff;}
+.centerEdu .eduMain { background: #66c2bd; } 
+.centerEdu .eduMain .innerSection { position: relative; padding: 60px 0 40px 70px; overflow: hidden; } 
+.centerEdu .eduMain .innerSection::after { content: ''; width: 100%; height: 100%; position: absolute; top: 0; right: 0; background: url(../images/centerEdu/main_bg.png) no-repeat top right 70px; opacity: 0.3; z-index: 1; } 
+.centerEdu .eduMain .innerSection::before { content: ''; width: 442px; height: 276px; position: absolute; right: 0; bottom: -40px; background: url(../images/centerEdu/main_img02.png) no-repeat; z-index: 2; } 
+.centerEdu .mainWrap { position: relative; z-index: 10; } 
+.centerEdu .eduMain .imgWrap { margin-bottom: 25px; } 
+.centerEdu .eduMain .txtWrap p { margin-bottom: 30px; color: #fff; font-size: 42px; line-height: 1.2; } 
+.centerEdu .eduMain .txtWrap p span { display: inherit; font-size: 24px; } 
+.centerEdu .eduMain .btnWrap { padding-left: 170px; } 
+.centerEdu .eduMain .btnWrap a { display: inline-block; padding: 6px 30px 8px; background: #003281; color: #fff; font-size: 24px; border-radius: 30px; } 
+.centerEdu h2 { color: #000; font-size: 48px; text-align: center; } 
+
+.centerEdu .eduCont01 .innerSection { padding: 100px 0 130px; } 
+.centerEdu .eduCont01 .slideLink { min-height: 570px; padding: 40px 38px; border-radius: 30px; } 
+.centerEdu .eduCont01 .serviceSlide { margin-top: 70px; padding-bottom: 70px; } 
+.centerEdu .eduCont01 .slideLink::before { content: ''; display: block; width: 100%; height: 187px; margin: 0 auto 50px; background-position: center; background-repeat: no-repeat; background-size: auto; } 
+.centerEdu .eduCont01 .slideLink.icon01::before { background-image: url(../images/centerEdu/eduCont01_icon01.png); } 
+.centerEdu .eduCont01 .slideLink.icon02::before { background-image: url(../images/centerEdu/eduCont01_icon02.png); } 
+.centerEdu .eduCont01 .slideLink.icon03::before { background-image: url(../images/centerEdu/eduCont01_icon03.png); } 
+.centerEdu .eduCont01 .slideLink strong { display: block; margin-bottom: 30px; color: #000; font-size: 38px; line-height: 1.2; } 
+.centerEdu .eduCont01 .slideLink p { color: #000; font-size: 24px; font-weight: 300; line-height: 1.3; letter-spacing: -1.7px; } 
+.centerEdu .eduCont01 .swiper-pagination-bullet-active { background: #5a5a5a; } 
+.centerEdu .eduCont01 .swiper-pagination-bullet { width: 18px; height: 18px; } 
+
+.centerEdu .eduCont02 { background: #6b788b; } 
+.centerEdu .eduCont02 .innerSection { max-width: 1840px; padding: 100px 0; position: relative; } 
+.centerEdu .eduCont02 .whiteBox { height: 595px; position: relative; padding: 90px 40px 100px; margin-bottom: 36px; background: #fff; border-radius: 48px; box-shadow: 0px 30px 30px 0px rgba(52, 28, 28, 0.1); } 
+.centerEdu .eduCont02 .whiteBox li { color: #000; font-size: 24px; letter-spacing: -1px; } 
+.centerEdu .eduCont02 .whiteBox li + li { margin-top: 10px; } 
+.centerEdu .eduCont02 .whiteBox li::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap { position: absolute; width: 100%; padding: 0 40px; left: 0; bottom: 130px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong { display: block; position: relative; font-size: 48px; line-height: 1; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { content: ''; position: absolute; right: 0; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon01::after { width: 167px; height: 110px; top: -25px; background: url(../images/centerEdu/eduCont02_icon01.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon02::after { width: 134px; height: 134px; top: -60px; background: url(../images/centerEdu/eduCont02_icon02.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon03::after { width: 173px; height: 131px; top: -50px; background: url(../images/centerEdu/eduCont02_icon03.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon04::after { width: 152px; height: 120px; top: -50px; background: url(../images/centerEdu/eduCont02_icon04.png) no-repeat; } 
+.centerEdu .eduCont02 .slideLink { height: 720px; } 
+.centerEdu .eduCont02 .slideLink:hover .tagMenu { display: flex; } 
+.centerEdu .eduCont02 .tagMenu { display: none; align-items: center; justify-content: center; background: #2a3a51; border-radius: 40px; box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3); } 
+.centerEdu .eduCont02 .tagMenu a { display: inline-block; padding: 18px 0; color: #fff; font-size: 24px; } 
+.centerEdu .eduCont02 .tagMenu li + li { margin-left: 10px; } 
+.centerEdu .eduCont02 .guideSlide { margin-top: 100px; } 
+.centerEdu .eduCont02 .swiper-button-prev,
+.centerEdu .eduCont02 .swiper-button-next { width: 92px; height: 92px; position: absolute; top: 50%; background: url(../images/centerEdu/eduCont02_arrow.png) no-repeat; cursor: pointer; opacity: 1; z-index: 90; } 
+.centerEdu .eduCont02 .swiper-button-prev { left: 30px; transform: rotate(180deg); } 
+.centerEdu .eduCont02 .swiper-button-next { left: initial !important; right: 30px; } 
+.swiper-button-prev:after, .swiper-button-next:after { content: none; } 
+.centerEdu .eduCont02 .btn_arrow:before { content: ''; position: absolute; top: 0; left: 0; background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/05/naverdetails_newpc/img/sp_newpc.png); -webkit-background-size: 348px 328px; background-size: 348px 328px; background-position: -130px -164px; width: 60px; height: 60px; } 
+.centerEdu .eduCont02 .btn_arrow:after { content: ''; position: absolute; top: 0; left: 0; width: 60px; height: 60px; background-color: #3C3D3F; opacity: 0.3; -webkit-border-radius: 50%; border-radius: 50%; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); } 
+.centerEdu .eduCont02 .btn_arrow:hover:before { background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/05/naverdetails_newpc/img/sp_newpc.png); -webkit-background-size: 348px 328px; background-size: 348px 328px; background-position: -164px -75px; width: 60px; height: 60px; z-index: 10; } 
+
+.centerEdu .eduCont03 { padding: 150px 0 50px; } 
+.centerEdu .eduCont03 .tabMenu { display: flex; align-items: center; max-width: 980px; width: 100%; margin: 60px auto 50px; padding: 16px; background: #f3f3f3; border-radius: 10px; } 
+.centerEdu .eduCont03 .tabMenu li { width: calc(100% / 8); color: #000; font-size: 20px; text-align: center; cursor: pointer; } 
+.centerEdu .eduCont03 .tabMenu li.active { padding: 8px 0; background: #4ba7a9; color: #fff; border-radius: 10px; box-shadow: 0px 0px 7px 0px rgba(0, 132, 134, 0.5); } 
+.centerEdu .eduCont03 .tabWrap { background: url(../images/centerEdu/eduCont03_bg.jpg) no-repeat; background-size: cover; } 
+.centerEdu .eduCont03 .innerSection { max-width: 980px; padding: 70px 0; } 
+.centerEdu .eduCont03 .tabBox { display: none; } 
+.centerEdu .eduCont03 .tabBox.active { display: block; } 
+.centerEdu .eduCont03 .tabBox .txtWrap { position: relative; padding: 60px 60px; background: url(../images/centerEdu/eduCont03_img01.png) no-repeat #fff top -200px right; border-radius: 20px; box-shadow: 0px 20px 20px 0px rgba(52, 28, 28, 0.05); } 
+.centerEdu .eduCont03 .tabBox .txtWrap::after { content: ''; width: 407px; height: 303px; position: absolute; right: -32px; bottom: -20px; background: url(../images/centerEdu/eduCont03_img02.png) no-repeat; } 
+.centerEdu .eduCont03 .tabBox .txtWrap strong { color: #000; font-size: 48px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap ul { margin-top: 20px; padding-left: 10px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 24px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li + li { margin-top: 10px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap a { display: inline-block; background: #e6f1f6; margin-top: 40px; padding: 20px 26px; color: #3e5a9b; font-size: 26px; font-weight: bold; border-radius: 20px; box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.28); } 
+.centerEdu .eduCont03 .tabBox .btnWrap { display: flex; justify-content: space-between; margin-top: 66px; } 
+.centerEdu .eduCont03 .tabBox .btnWrap a { display: block; width: calc(100% / 2 - 20px); padding: 26px 0; background: #3e5a9b; color: #fff; font-size: 26px; font-weight: bold; text-align: center; border-radius: 10px; transition: all 0.35s; } 
+.centerEdu .eduCont03 .tabBox .btnWrap a:hover { color: #a8f6ff; } 
+
+.centerEdu .eduCont04 { padding: 100px 0 300px; } 
+.centerEdu .eduCont04 .qnaList { margin-top: 40px; } 
+.centerEdu .eduCont04 .qnaList a { display: block; padding: 16px 0 18px 80px; position: relative; color: #696969; font-size: 22px; border-top: 1px solid #999999; } 
+.centerEdu .eduCont04 .qnaList li:last-child a { border-bottom: 1px solid #999999; } 
+.centerEdu .eduCont04 .qnaList a::before,
+.centerEdu .eduCont04 .qnaList a::after { content: ''; width: 22px; height: 5px; position: absolute; top: 50%; left: 26px; transform: translateY(-50%); background: #bcbcbc; border-radius: 10px; transition: all 0.5s ease; } 
+.centerEdu .eduCont04 .qnaList li.active a,
+.centerEdu .eduCont04 .qnaList li a:hover { color: #000; } 
+.centerEdu .eduCont04 .qnaList li.active a::before,
+.centerEdu .eduCont04 .qnaList li.active a::after { background: #81d4d5; } 
+.centerEdu .eduCont04 .qnaList li.active a::after { transform: translateY(-50%) rotate(-90deg); } 
+.centerEdu .eduCont04 .qnaList .answerWrap { display: none; padding: 20px 10px 40px 80px; background: #f3f8f8; border-top: 1px solid #999999; } 
+.centerEdu .eduCont04 .qnaList li:last-child .answerWrap { border-top: none; border-bottom: 1px solid #999999; } 
+.centerEdu .eduCont04 .qnaList .answerWrap p { color: #000; font-size: 20px; } 
+
+.centerEdu .eduCont05 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
+.centerEdu .eduCont05 .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
+.centerEdu .eduCont05 .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; word-break: keep-all; } 
+.centerEdu .eduCont05 .titWrap p::after { content: ''; width: 433px; height: 136px; position: absolute; top: -112px; left: 50%; transform: translateX(-50%); background: url(../images/centerEdu/eduCont05_img01.png) no-repeat; background-size: cover; } 
+.centerEdu .eduCont05 .titWrap p::before { content: ''; position: absolute; left: 0; bottom: -6px; border-top: 34px solid #00aef0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-bottom: 0 solid transparent; transform: rotate(45deg); } 
+.centerEdu .eduCont05 .txtWrap p { color: #003281; font-size: 32px; text-align: center; word-break: keep-all; } 
+.centerEdu .eduCont05 .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../images/centerEdu/eduCont05_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>러닝센터연계신청</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+
+	<!-- 이벤트 추가 css -->
+	<link rel="stylesheet" href="./css/centerJoin.css">
+
+	
+</head>
+<body>
+<div id="page-content">
+	<section class="centerJoin">
+		<article class="joinMain">
+			<div class="innerSection">
+				<style>
+					.centerEdu .eduMain {
+						background: #66c2bd;
+					}
+					.centerEdu .eduMain .innerSection {
+						position: relative;
+						padding: 60px 0 40px 70px;
+						overflow: hidden;
+					}
+					.centerEdu .eduMain .innerSection::after {
+						content: '';
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						right: 0;
+						background: url(./images/centerEdu/main_bg.png) no-repeat top right 70px;
+						opacity: 0.3;
+						z-index: 1;
+					}
+					.centerEdu .eduMain .innerSection::before {
+						content: '';
+						width: 442px;
+						height: 276px;
+						position: absolute;
+						right: 0;
+						bottom: -40px;
+						background: url(./images/centerEdu/main_img02.png) no-repeat;
+						z-index: 2;
+					}
+					.centerEdu .mainWrap {
+						position: relative;
+						z-index: 10;
+					}
+					.centerEdu .eduMain .imgWrap {
+						margin-bottom: 25px;
+					}
+					.centerEdu .eduMain .txtWrap p {
+						margin-bottom: 30px;
+						color: #fff;
+						font-size: 42px;
+						line-height: 1.2;
+					}
+					.centerEdu .eduMain .txtWrap p span {
+						display: inherit;
+						font-size: 24px;
+					}
+					.centerEdu .eduMain .btnWrap {
+						padding-left: 170px;
+					}
+					.centerEdu .eduMain .btnWrap a {
+						display: inline-block;
+						padding: 6px 30px 8px;
+						background: #003281;
+						color: #fff;
+						font-size: 24px;
+						border-radius: 30px;
+					}
+					.centerEdu h2 {
+						color: #000;
+						font-size: 48px;
+						text-align: center;
+					}
+				</style>
+				<div class="mainWrap">
+					<div class="imgWrap">
+						<img src="./images/centerEdu/main_img01.png" alt="잡아바 러닝센터">
+					</div>
+					<div class="txtWrap">
+						<p class="gMedium">
+							취업준비, 자격증, 외국어 등 <strong class="gBold">취업지원 교육!</strong><br>
+							<span>잡아바 러닝센터에서 온라인 교육 수강하고 <strong>취업·직업 역량강화</strong> 성공!</span>
+						</p>
+					</div>
+					<div class="btnWrap">
+						<a href="#"><span class="gMedium">잡아바 러닝센터 바로가기</span></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="joinCont01">
+			<div class="innerSection">
+				<style>
+					.centerEdu .eduCont01 .innerSection {
+						padding: 100px 0 130px;
+					}
+					.centerEdu .eduCont01 .slideLink {
+						min-height: 570px;
+						padding: 40px 38px;
+						border-radius: 30px;						
+					}
+					.centerEdu .eduCont01 .serviceSlide {
+						margin-top: 70px;
+						padding-bottom: 70px;
+					}
+					.centerEdu .eduCont01 .slideLink::before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 187px;
+						margin: 0 auto 50px;
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: auto;
+					}
+					.centerEdu .eduCont01 .slideLink.icon01::before {
+						background-image: url(./images/centerEdu/eduCont01_icon01.png);						
+					}
+					.centerEdu .eduCont01 .slideLink.icon02::before {
+						background-image: url(./images/centerEdu/eduCont01_icon02.png);
+					}
+					.centerEdu .eduCont01 .slideLink.icon03::before {
+						background-image: url(./images/centerEdu/eduCont01_icon03.png);
+					}
+					.centerEdu .eduCont01 .slideLink strong {
+						display: block;
+						margin-bottom: 30px;
+						color: #000;
+						font-size: 38px;
+						line-height: 1.2;
+					}
+					.centerEdu .eduCont01 .slideLink p {
+						color: #000;
+						font-size: 24px;
+						font-weight: 300;
+						line-height: 1.3;
+						letter-spacing: -1.7px;
+					}
+					.centerEdu .eduCont01 .swiper-pagination-bullet-active {
+						background: #5a5a5a;
+					}
+
+					.centerEdu .eduCont01 .swiper-pagination-bullet {
+						width: 18px;
+						height: 18px;
+					}
+				</style>
+				<div class="contWrap">
+					<h2>잡아바 러닝센터를 선택해야 하는 이유!</h2>
+					<div class="swiper-container serviceSlide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slideLink icon01 bcSky">
+								<strong>무료로 이용하는<br> 온라인 서비스</strong>
+								<p>잡아바 러닝센터는<br>
+									모든 온라인  교육 수강과<br>
+									비대면 취업지원을 무료로 <br>
+									제공합니다.</p>
+							</div>
+							<div class="swiper-slide slideLink icon02 bcPurple">
+								<strong>다양한<br> 최신 강의 보유</strong>
+								<p>잡아바 러닝센터는<br>
+									약 400여개의 다양한 최신강의를<br>
+									보유하고 있으며, 매년 새로운 <br>
+									최신 강의를 도입합니다.</p>
+							</div>
+							<div class="swiper-slide slideLink icon03 bcYellow">
+								<strong>무료로 이용하는<br> 온라인 서비스</strong>
+								<p>취업/진로 상담, 자기소개서 컨설팅,<br>
+									AI모의면접 등 비대면 취업지원<br> 
+									서비스를 무료로 제공합니다.</p>
+							</div>
+							<div class="swiper-slide slideLink icon01 bcSky">
+								<strong>편리한<br> 학습시스템</strong>
+								<p>PC와 모바일 모든 환경에서<br>
+									쾌적한 학습 시스템을 제공합니다.</p>
+							</div>
+							<div class="swiper-slide slideLink icon02 bcPurple">
+								<strong>다양한<br> 운영방식 선택</strong>
+								<p>일반적인 자율운영뿐만 아니라<br>
+									학점연계,과제대체 등<br> 원하는 방법으로 수강·운영이<br> 가능합니다.
+								</p>
+							</div>
+							<div class="swiper-slide slideLink icon03 bcYellow">
+								<strong>체험 형<br> 프로그램 진행</strong>
+								<p>현직자 멘토링, 우수기업 탐방 등<br>  취업과 진로설정에 도움이 되는<br> 체험 형 프로그램에 참여가<br> 가능합니다</p>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="joinCont04">
+			<style>
+				.centerJoin .joinCont04 {
+					position: relative;
+					padding: 100px 0 30px;
+					background: #e3f1f4;
+				}
+				.centerJoin .joinCont04 .titWrap {
+					width: 100%;
+					position: absolute;
+					top: -85px;
+					left: 50%;
+					transform: translateX(-50%);
+					text-align: center;
+				}
+
+				.centerJoin .joinCont04 .titWrap p {
+					display: inline-block;
+					position: relative;
+					padding: 34px 54px;
+					background: #00aef0;
+					color: #fff;
+					font-size: 30px;
+					border-radius: 80px;
+					word-break: keep-all;
+				}
+
+				.centerJoin .joinCont04 .titWrap p::after {
+					content: '';
+					width: 433px;
+					height: 136px;
+					position: absolute;
+					top: -112px;
+					left: 50%;
+					transform: translateX(-50%);
+					background: url(./images/centerEdu/joinCont04_img01.png) no-repeat;
+					background-size: cover;
+				}
+
+				.centerJoin .joinCont04 .titWrap p::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -6px;
+					border-top: 34px solid #00aef0;
+					border-left: 16px solid transparent;
+					border-right: 16px solid transparent;
+					border-bottom: 0 solid transparent;
+					transform: rotate(45deg);
+				}
+
+				.centerJoin .joinCont04 .txtWrap p {
+					color: #003281;
+					font-size: 32px;
+					text-align: center;
+					word-break: keep-all;
+				}
+
+				.centerJoin .joinCont04 .txtWrap p::after {
+					content: '';
+					display: inline-block;
+					width: 139px;
+					height: 43px;
+					margin-left: 10px;
+					background: url(./images/centerEdu/joinCont04_img02.png) no-repeat;
+					background-size: cover;
+					vertical-align: bottom;
+				}
+			</style>
+			<div class="innerSection">
+				<div class="contWrap">
+					<div class="titWrap">
+						<p>
+							성공적인 취업을 위해<br>
+							<strong>잡아바가 구직자 여러분들과 함께합니다.</strong>
+						</p>
+					</div>
+					<div class="txtWrap">
+						<p><strong>취업은</strong> 혼자 준비하는 게 아니야!<br> <strong class="fcMint">당신의 취업 메이트</strong></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+
+
+<script>
+		
+	$(document).ready(function() {
+
+		
+
+	});
+</script>
+</body></html>
