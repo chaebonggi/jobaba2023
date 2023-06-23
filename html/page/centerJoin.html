@@ -32,25 +32,15 @@
 		<article class="joinMain">
 			<div class="innerSection">
 				<style>
-					.centerEdu .eduMain {
-						background: #66c2bd;
+					.centerJoin .joinMain {
+						background: url(./images/centerJoin/main_bg.jpg) no-repeat;
+						background-size: cover;
 					}
-					.centerEdu .eduMain .innerSection {
+					.centerJoin .joinMain .innerSection {
 						position: relative;
-						padding: 60px 0 40px 70px;
+						padding: 90px 0 75px;
 						overflow: hidden;
-					}
-					.centerEdu .eduMain .innerSection::after {
-						content: '';
-						width: 100%;
-						height: 100%;
-						position: absolute;
-						top: 0;
-						right: 0;
-						background: url(./images/centerEdu/main_bg.png) no-repeat top right 70px;
-						opacity: 0.3;
-						z-index: 1;
-					}
+					}					
 					.centerEdu .eduMain .innerSection::before {
 						content: '';
 						width: 442px;
@@ -61,52 +51,30 @@
 						background: url(./images/centerEdu/main_img02.png) no-repeat;
 						z-index: 2;
 					}
-					.centerEdu .mainWrap {
-						position: relative;
-						z-index: 10;
+					.centerJoin .joinMain .imgWrap {
+						margin-bottom: 40px;
 					}
-					.centerEdu .eduMain .imgWrap {
-						margin-bottom: 25px;
-					}
-					.centerEdu .eduMain .txtWrap p {
+					.centerJoin .joinMain .txtWrap p {
 						margin-bottom: 30px;
-						color: #fff;
-						font-size: 42px;
+						color: #000;
+						font-size: 40px;
 						line-height: 1.2;
 					}
-					.centerEdu .eduMain .txtWrap p span {
-						display: inherit;
-						font-size: 24px;
-					}
-					.centerEdu .eduMain .btnWrap {
-						padding-left: 170px;
-					}
-					.centerEdu .eduMain .btnWrap a {
-						display: inline-block;
-						padding: 6px 30px 8px;
-						background: #003281;
-						color: #fff;
-						font-size: 24px;
-						border-radius: 30px;
-					}
-					.centerEdu h2 {
+					.centerJoin h2 {
 						color: #000;
 						font-size: 48px;
 						text-align: center;
-					}
+					}					
 				</style>
 				<div class="mainWrap">
 					<div class="imgWrap">
-						<img src="./images/centerEdu/main_img01.png" alt="잡아바 러닝센터">
+						<img src="./images/centerJoin/main_title.png" alt="잡아바 러닝센터 연계신청">
 					</div>
 					<div class="txtWrap">
 						<p class="gMedium">
-							취업준비, 자격증, 외국어 등 <strong class="gBold">취업지원 교육!</strong><br>
-							<span>잡아바 러닝센터에서 온라인 교육 수강하고 <strong>취업·직업 역량강화</strong> 성공!</span>
+							<strong class="gBold fcMint">취업준비부터 학점연계, 자기개발</strong>까지!<br>
+							잡아바 러닝센터가 답이다!
 						</p>
-					</div>
-					<div class="btnWrap">
-						<a href="#"><span class="gMedium">잡아바 러닝센터 바로가기</span></a>
 					</div>
 				</div>
 			</div>
@@ -114,102 +82,193 @@
 		<article class="joinCont01">
 			<div class="innerSection">
 				<style>
-					.centerEdu .eduCont01 .innerSection {
-						padding: 100px 0 130px;
+					.centerJoin .joinCont01 .innerSection {
+						padding: 100px 0;
 					}
-					.centerEdu .eduCont01 .slideLink {
-						min-height: 570px;
-						padding: 40px 38px;
-						border-radius: 30px;						
+					
+					.centerJoin .joinCont01 ul {
+						display: flex;
+						justify-content: space-between;
+						margin-top: 50px;
 					}
-					.centerEdu .eduCont01 .serviceSlide {
-						margin-top: 70px;
-						padding-bottom: 70px;
+					.centerJoin .joinCont01 ul li {
+						width: calc(100% / 3 - 46px);
 					}
-					.centerEdu .eduCont01 .slideLink::before {
-						content: '';
-						display: block;
-						width: 100%;
-						height: 187px;
-						margin: 0 auto 50px;
-						background-position: center;
-						background-repeat: no-repeat;
-						background-size: auto;
+					.centerJoin .joinCont01 .whiteBox {
+						min-height: 472px;
+						padding: 70px 20px;
+						background: #fff;
+						border-radius: 20px;
+						border: 10px solid #e7e7e7;
+						box-sizing: border-box;
+						text-align: center;
 					}
-					.centerEdu .eduCont01 .slideLink.icon01::before {
-						background-image: url(./images/centerEdu/eduCont01_icon01.png);						
-					}
-					.centerEdu .eduCont01 .slideLink.icon02::before {
-						background-image: url(./images/centerEdu/eduCont01_icon02.png);
-					}
-					.centerEdu .eduCont01 .slideLink.icon03::before {
-						background-image: url(./images/centerEdu/eduCont01_icon03.png);
-					}
-					.centerEdu .eduCont01 .slideLink strong {
-						display: block;
-						margin-bottom: 30px;
+					.centerJoin .joinCont01 .whiteBox strong {
 						color: #000;
-						font-size: 38px;
-						line-height: 1.2;
+						font-size: 30px;
 					}
-					.centerEdu .eduCont01 .slideLink p {
+					.centerJoin .joinCont01 .whiteBox p {
+						margin-top: 25px;
 						color: #000;
 						font-size: 24px;
-						font-weight: 300;
-						line-height: 1.3;
-						letter-spacing: -1.7px;
+						letter-spacing: -1.2px;
 					}
-					.centerEdu .eduCont01 .swiper-pagination-bullet-active {
-						background: #5a5a5a;
+					.centerJoin .joinCont01 .whiteBox::before {
+						content: '';
+						display: block;
+						width: 132px;
+						height: 115px;
+						margin: 0 auto 40px;
+						border-radius: 30px;
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: auto;
 					}
-
-					.centerEdu .eduCont01 .swiper-pagination-bullet {
-						width: 18px;
-						height: 18px;
+					.centerJoin .joinCont01 .whiteBox.icon01::before {
+						background-image: url(./images/centerJoin/joinCont01_icon01.png);
+						background-color: #fbd4e1;
 					}
+					.centerJoin .joinCont01 .whiteBox.icon02::before {
+						background-image: url(./images/centerJoin/joinCont01_icon02.png);
+						background-color: #cbeeeb;
+					}
+					.centerJoin .joinCont01 .whiteBox.icon03::before {
+						background-image: url(./images/centerJoin/joinCont01_icon03.png);
+						background-color: #e1d9ed;
+					}
+					
 				</style>
 				<div class="contWrap">
-					<h2>잡아바 러닝센터를 선택해야 하는 이유!</h2>
-					<div class="swiper-container serviceSlide">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide slideLink icon01 bcSky">
-								<strong>무료로 이용하는<br> 온라인 서비스</strong>
-								<p>잡아바 러닝센터는<br>
-									모든 온라인  교육 수강과<br>
-									비대면 취업지원을 무료로 <br>
-									제공합니다.</p>
-							</div>
-							<div class="swiper-slide slideLink icon02 bcPurple">
-								<strong>다양한<br> 최신 강의 보유</strong>
-								<p>잡아바 러닝센터는<br>
-									약 400여개의 다양한 최신강의를<br>
-									보유하고 있으며, 매년 새로운 <br>
-									최신 강의를 도입합니다.</p>
-							</div>
-							<div class="swiper-slide slideLink icon03 bcYellow">
-								<strong>무료로 이용하는<br> 온라인 서비스</strong>
-								<p>취업/진로 상담, 자기소개서 컨설팅,<br>
-									AI모의면접 등 비대면 취업지원<br> 
-									서비스를 무료로 제공합니다.</p>
-							</div>
-							<div class="swiper-slide slideLink icon01 bcSky">
-								<strong>편리한<br> 학습시스템</strong>
-								<p>PC와 모바일 모든 환경에서<br>
-									쾌적한 학습 시스템을 제공합니다.</p>
-							</div>
-							<div class="swiper-slide slideLink icon02 bcPurple">
-								<strong>다양한<br> 운영방식 선택</strong>
-								<p>일반적인 자율운영뿐만 아니라<br>
-									학점연계,과제대체 등<br> 원하는 방법으로 수강·운영이<br> 가능합니다.
-								</p>
-							</div>
-							<div class="swiper-slide slideLink icon03 bcYellow">
-								<strong>체험 형<br> 프로그램 진행</strong>
-								<p>현직자 멘토링, 우수기업 탐방 등<br>  취업과 진로설정에 도움이 되는<br> 체험 형 프로그램에 참여가<br> 가능합니다</p>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
+					<h2>잡아바 러닝센터와 함께라면</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<div class="whiteBox icon01">
+									<strong>학교(대학교, 고등학교)</strong>
+									<p>전공 보충 및 취업준비 과정<br>
+										완벽 보완.<br>
+										학점연계, 자율과정,<br>
+										과제대체를 활용한<br>
+										다양한 교육프로그램 진행.</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="whiteBox icon02">
+									<strong>유관기관</strong>
+									<p>구성원들의 직무역량 및<br>
+										자기개발을 위한<br>
+										교육프로그램 진행.<br>
+										기관 내 구성원들의 역할 및<br>
+										만족도 향상.</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="whiteBox icon03">
+									<strong>비대면 취업지원 서비스</strong>
+									<p>취업/진로 상담,<br>
+										자기소개서 컨설팅, AI모의면접 등<br>
+										비대면 취업지원 서비스 제공.<br>
+										온라인 교육과의 시너지로<br>
+										취업률 향상</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="joinCont02">
+			<div class="innerSection">
+				<style>
+					.joinCont02 {
+						background: #cef5f5;
+					}
+					.joinCont02 .innerSection {
+						padding: 100px 0 0;
+					}
+					.section_various_wrap .pin-spacer {
+						width: 100% !important;
+						max-width: 100%;
+					}
+					.section_various {
+						overflow: hidden;
+						will-change: contents;
+						background-color: #cef5f5;
+					}
+
+					.section_various .inner {
+						padding: 50px 0 140px;
+					}
+					.section_various .card_wrap {
+						margin-top: 100px;
+						animation-delay: 0.3s;
+					}
+					.section_various .card_wrap .card_box {
+						position: relative;
+						height: 482px;
+					}
+					.section_various .card_wrap .card_item {
+						will-change: transform;
+						overflow: hidden;
+						position: absolute;
+						width: 100%;
+						top: 0px;
+						height: 482px;
+						-webkit-border-radius: 20px;
+						-ms-border-radius: 20px;
+						border-radius: 20px;
+						filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05));
+					}
+					.section_various .card_wrap .card_01 {
+						background-color: #eee;
+					}
+					.section_various .card_wrap .card_item img {
+						width: 100%;
+					}
+
+				</style>
+				<div class="contWrap">
+					<h2>잡아바 러닝센터 연계 사례</h2>
+					<!--  -->
+					<div class="section_various_wrap">
+						<div class="pin-spacer">
+							<section id="section_various" class="section_various">
+								<div class="inner">
+									<h3 class="section_title">
+										
+									</h3>
+									<div class="card_wrap">
+										<div class="card_box">
+											<div class="card_item card_01">
+												<img src="./images/centerJoin/test01.png" alt="">
+											</div>
+											<div class="card_item card_02">
+												<img src="./images/centerJoin/test02.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</section></div>
 					</div>
+					<!--  -->
+				</div>
+			</div>
+		</article>
+		<article class="joinCont03">
+			<div class="innerSection">
+				<style>
+					.centerJoin .joinCont03 .innerSection {
+						padding: 100px 0 280px;
+					}
+					
+				</style>
+				<div class="contWrap">
+					<h2>신청 정보</h2>
+					
 				</div>
 			</div>
 		</article>
@@ -249,7 +308,7 @@
 					top: -112px;
 					left: 50%;
 					transform: translateX(-50%);
-					background: url(./images/centerEdu/joinCont04_img01.png) no-repeat;
+					background: url(./images/centerJoin/joinCont04_img01.png) no-repeat;
 					background-size: cover;
 				}
 
@@ -278,7 +337,7 @@
 					width: 139px;
 					height: 43px;
 					margin-left: 10px;
-					background: url(./images/centerEdu/joinCont04_img02.png) no-repeat;
+					background: url(./images/centerJoin/joinCont04_img02.png) no-repeat;
 					background-size: cover;
 					vertical-align: bottom;
 				}
@@ -320,12 +379,62 @@
 <script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
 <script>
 		
 	$(document).ready(function() {
+		gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.config({
+            limitCallbacks: true,
+            ignoreMobileResize: true,
+        })
+        gsap.utils.toArray('.section_various .section_title').forEach(function (el, index) {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
+                    start: () => window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '-100px top' : '-55px top',
+                    pin: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
+                    end: "+=200%",
+                    scrub: 1,
+                    invalidateOnResize: true,
+                    invalidateOnRefresh: true,
+                },
+            })
+            if(window.innerWidth <= 1024){
+                tl.to('.card_01', { yPercent: 0})
+                    .from('.card_02', { yPercent: 200})
+                    .to('.card_01', { scale: 0.95, yPercent: -4.5 }, 0.6)
+                    .to('.card_02', { yPercent: 0})
+                    .from('.card_03', { yPercent: 200})
+                    .to('.card_02', { scale: 0.95, yPercent: -5.5 }, "-=0.6")
+                    .to('.card_01', { scale: 0.90, yPercent: -10}, "-=0.6") // 1번 카드의 스케일을 0.85로 변경
+                    .to('.card_03', { yPercent: 0 })
+                    .from('.card_04', { yPercent: 200})
+                    .to('.card_01', { scale: 0.86, yPercent: -14}, "-=0.6") // 1번 카드의 스케일을 0.85로 변경
+                    .to('.card_03', { scale: 0.95, yPercent: -5 }, "-=0.6")
+                    .to('.card_02', { scale: 0.9, yPercent: -10 }, "-=0.6") // 2번 카드의 스케일을 0.9로 변경
+                    .to('.card_04', { yPercent: 0 });
+            } else {
+                tl.to('.card_01', { yPercent: 0})
+                    .from('.card_02', { yPercent: 200})
+                    .to('.card_01', { scale: 0.95, yPercent: -7.5 }, 0.6)
+                    .to('.card_02', { yPercent: 0})
+                    .from('.card_03', { yPercent: 200})
+                    .to('.card_02', { scale: 0.95, yPercent: -8 }, "-=0.6")
+                    .to('.card_01', { scale: 0.90, yPercent: -15}, "-=0.6") // 1번 카드의 스케일을 0.85로 변경
+                    .to('.card_03', { yPercent: 0 })
+                    .from('.card_04', { yPercent: 200})
+                    .to('.card_01', { scale: 0.86, yPercent: -21}, "-=0.6") // 1번 카드의 스케일을 0.85로 변경
+                    .to('.card_03', { scale: 0.95, yPercent: -8 }, "-=0.6")
+                    .to('.card_02', { scale: 0.9, yPercent: -15 }, "-=0.6") // 2번 카드의 스케일을 0.9로 변경
+                    .to('.card_04', { yPercent: 0 });
+            }
 
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
 		
 
 	});

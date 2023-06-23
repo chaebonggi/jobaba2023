@@ -3,12 +3,12 @@
 .gBold { font-family: 'GmarketSansBold','Noto Sans KR'; } 
 .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR'; } 
 
-.centerEdu .innerSection { max-width: 1260px; margin: 0 auto; } 
-.centerEdu .fcWhite { color: #fff; } 
-.centerEdu .fcBlue { color: #334a98; } 
-.centerEdu .fcSkyBlue { color: #4194d3; } 
-.centerEdu .fcBrown { color: #a28064; } 
-.centerEdu .fcMint { color: #3cbca4; } 
-.centerEdu .bcSky { background: #c8edfd; } 
-.centerEdu .bcYellow { background: #fbecbf; } 
-.centerEdu .bcPurple { background: #ecdefb; } 
+.centerJoin .innerSection { max-width: 1260px; margin: 0 auto; } 
+.centerJoin .fcWhite { color: #fff; } 
+.centerJoin .fcBlue { color: #334a98; } 
+.centerJoin .fcSkyBlue { color: #4194d3; } 
+.centerJoin .fcBrown { color: #a28064; } 
+.centerJoin .fcMint { color: #66c1bc; } 
+.centerJoin .bcSky { background: #c8edfd; } 
+.centerJoin .bcYellow { background: #fbecbf; } 
+.centerJoin .bcPurple { background: #ecdefb; } 
