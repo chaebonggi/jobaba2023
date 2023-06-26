@@ -154,9 +154,12 @@
 .centerEdu .eduCont02 .tagMenu { display: flex; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 38px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong::after { transform: scale(0.8); } 
-.centerEdu .eduCont02 .tagMenu li { padding: 12px 0; font-size: 20px; } 
+.centerEdu .eduCont02 .tagMenu li { padding: 12px 0; font-size: 18px; } 
 
 .centerEdu .eduCont03 { padding: 30px 0 0; } 
+.centerEdu .eduCont03 .tabMenu {
+    margin: 30px auto 20px;
+}
 .centerEdu .eduCont03 .tabBox .txtWrap strong { font-size: 36px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 20px; word-break: keep-all; } 
 .centerEdu .eduCont03 .tabBox .txtWrap a { padding: 10px 26px; font-size: 20px; } 
@@ -165,6 +168,7 @@
 .centerEdu .eduCont03 .tabBox .btnWrap a { width: 100%; padding: 22px 0; font-size: 22px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a + a { margin-top: 10px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap { background: url(../images/centerEdu/eduCont03_img01.png) no-repeat #fff top -224px right -150px; } 
+
 
 .centerEdu .eduCont04 { padding: 30px 0 50px; } 
 .centerEdu .eduCont04 .qnaList a { font-size: 20px; word-break: keep-all; } 
