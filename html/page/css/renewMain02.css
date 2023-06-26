@@ -18,8 +18,8 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_util ul li::before { content: ''; display: block; width: 1px; height: 11px; position: absolute; top: 50%; right: 0; background: #ddd; transform: translateY(-50%); } 
 #newHeader .h_util ul li a { display: block; color: #fff; font-size: 13px; line-height: 1; } 
 #newHeader .h_cont { display: flex; align-items: center; justify-content: space-between; height: 70px; margin-top: 25px; } 
-#newHeader .h_cont .logo { height: 100%; padding: 5px 0; } 
-#newHeader .h_cont .logo a { display: block; width: 100%; height: 100%; padding: 5px 0; } 
+#newHeader .h_cont .logo { height: 100%; } 
+#newHeader .h_cont .logo a { display: block; width: 100%; height: 100%; padding: 10px 0; } 
 #newHeader .h_cont .logo img { width: 100%; height: 100%; object-fit: contain; } 
 #newHeader .nheader_mid { background: #fff; border-bottom: 1px solid #dadada; } 
 #newHeader .h_ui { display: flex; align-items: center; } 
@@ -57,8 +57,9 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
 #newHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #newHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
-#newHeader .h_mobile_btn h1 { height: 100%; padding: 10px 0; } 
-#newHeader .h_mobile_btn h1 img { height: 100%; } 
+#newHeader .h_mobile_btn .logo { height: 100%;} 
+#newHeader .h_mobile_btn .logo a {display: block; width: 100%; height: 100%; padding: 15px 0;}
+#newHeader .h_mobile_btn .logo img { height: 100%; } 
 #newHeader .h_mobile_close { position: relative; width: 16px; height: 8px; cursor: pointer; } 
 #newHeader .h_mobile_close span { display: block; width: 16px; height: 2px; position: absolute; top: 50%; background-color: #000; } 
 #newHeader .h_mobile_close span:first-child { transform: rotate(45deg); } 
@@ -515,8 +516,8 @@ a:focus, button:focus { outline: thin dotted; }
  .innerSection { padding: 0 10px; } 
  /* 헤더 */
  #newHeader .h_cont { margin-top: 0; } 
- #newHeader .h_cont .logo { padding: 0; } 
- #newHeader .h_cont .logo img { width: 80%; } 
+ #newHeader .h_cont .logo a {padding: 15px 0;}
+ /* #newHeader .h_cont .logo img { width: 80%; }  */
  #newHeader .h_gnb li a { height: 50px; font-size: 16px; line-height: 50px; } 
  #newHeader .h_menu { width: 20px; height: 12px; } 
  #newHeader .h_menu span { width: 20px; height: 2px; } 
