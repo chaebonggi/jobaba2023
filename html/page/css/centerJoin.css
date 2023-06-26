@@ -136,6 +136,7 @@
 .centerJoin .joinCont03 .checkItem { text-align: center; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 10px; } 
 .centerJoin .joinCont03 .comCheckBox { text-align: center; } 
+.centerJoin .joinCont03 .comCheckBox label { font-size: 14px;}
 .centerJoin .joinCont03 .btnWrap { margin-top: 20px; padding: 0; } 
 .centerJoin .joinCont03 .btnWrap a { padding: 10px 0; font-size: 26px; } 
 .centerJoin .joinCont03 .infoBox { justify-content: flex-start; background: #fff; border-right: none; padding: 10px; } 
