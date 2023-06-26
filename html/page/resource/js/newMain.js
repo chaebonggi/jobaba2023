@@ -188,6 +188,7 @@
               },
           },
       });
+
       
       // gnb menu
       function allMenu() {
@@ -235,4 +236,10 @@
             }
         });
     });
-    
+
+    // 로고 랜덤 생성
+    const logoImages = document.querySelectorAll('h1.logo img');
+    logoImages.forEach((image) => {
+        let randomNumber = Math.floor(Math.random() * 8) + 1;
+        image.setAttribute('src', `./images/main/logo_0${randomNumber}.png`);
+    });
