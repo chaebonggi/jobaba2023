@@ -36,16 +36,16 @@
 .centerJoin .joinCont01 .whiteBox.icon02::before { background-image: url(../images/centerJoin/joinCont01_icon02.png); background-color: #cbeeeb; } 
 .centerJoin .joinCont01 .whiteBox.icon03::before { background-image: url(../images/centerJoin/joinCont01_icon03.png); background-color: #e1d9ed; } 
 
-.joinCont02 { background: #cef5f5; /* background: url(../images/centerJoin/joinCont02_bg.jpg) no-repeat; background-size: cover; */ } 
+.joinCont02 { background: url(../images/centerJoin/joinCont02_bg.jpg) top center no-repeat; background-size: cover; } 
 .joinCont02 .innerSection { padding: 100px 20px 0; } 
 .section_various_wrap .pin-spacer { width: 100% !important; max-width: 100%; } 
 .section_various { overflow: hidden; will-change: contents; } 
 .section_various .card_wrap { margin-top: 100px; animation-delay: 0.3s; } 
 .section_various .card_wrap .card_box { position: relative; height: 550px; } 
-.section_various .card_wrap .card_item { padding: 60px 50px; will-change: transform; overflow: hidden; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05)); } 
-.section_various .card_wrap .card_item h3 { display: inline-block; padding: 10px 28px; margin-bottom: 30px; background: #4f5660; color: #fff; font-size: 34px; border-radius: 40px; } 
+.section_various .card_wrap .card_item { padding: 50px 50px; will-change: transform; overflow: hidden; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05)); } 
+.section_various .card_wrap .card_item h3 { display: inline-block; padding: 10px 28px; margin-bottom: 25px; background: #4f5660; color: #fff; font-size: 34px; border-radius: 40px; } 
 .section_various .card_wrap .card_item strong { display: block; color: #4f5660; font-size: 30px; } 
-.section_various .card_wrap .card_item p { margin-top: 20px; color: #4f5660; font-size: 18px; } 
+.section_various .card_wrap .card_item p { margin-top: 10px; color: #4f5660; font-size: 18px; } 
 .section_various .card_wrap .card_01 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #ffffff bottom -30px right -30px; } 
 .section_various .card_wrap .card_02 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #797979 bottom -30px right -30px; } 
 
@@ -53,7 +53,7 @@
 .centerJoin .joinCont03 .joinWrap > p { margin: 40px 0 10px; color: #ff0000; font-size: 24px; text-align: right; } 
 .centerJoin .joinCont03 .item { display: flex; border: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
-.centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px; font-size: 18px; border: 1px solid #666666; box-sizing: border-box; } 
+.centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px; font-size: 18px; border: 1px solid #c8c8c8; box-sizing: border-box; } 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 280px; background: #f5f5f5; font-size: 24px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 280px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 34px 40px; } 
@@ -68,7 +68,9 @@
 .centerJoin .joinCont03 .contBox .txtWrap li p { font-weight: 300; word-break: keep-all; } 
 .centerJoin .joinCont03 .btnWrap { margin-top: 50px; } 
 .centerJoin .joinCont03 .btnWrap a { display: block; width: 400px; padding: 14px 0; margin: 0 auto; background: #3e5a9b; color: #fff; font-size: 32px; text-align: center; border-radius: 15px; } 
-.centerJoin .joinCont03 .comCheckBox input[type="checkbox"] { position: relative; left: initial; width: 20px; height: 20px; margin-right: 4px; background: #fff; border: 1px solid #9ea4aa; border-radius: 3px; vertical-align: middle; opacity: 1; } 
+.centerJoin .joinCont03 .comCheckBox input[type="checkbox"] { display: none; } 
+.centerJoin .joinCont03 .comCheckBox input[type="checkbox"] + label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 4px; background: #fff; border: 1px solid #9ea4aa; border-radius: 3px; vertical-align: bottom; box-sizing: border-box; } 
+.centerJoin .joinCont03 .comCheckBox input[type="checkbox"]:checked + label::before { content: ''; background-color: #67c3be; background-image: url(../images/centerJoin/check_btn.png); background-repeat: no-repeat; background-position: 50%; border-color: #67c3be;}
 .centerJoin .joinCont03 .checkItem { margin-top: 20px; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 20px; } 
 
@@ -136,12 +138,12 @@
 .centerJoin .joinCont03 .checkItem { text-align: center; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 10px; } 
 .centerJoin .joinCont03 .comCheckBox { text-align: center; } 
-.centerJoin .joinCont03 .comCheckBox label { font-size: 14px;}
+.centerJoin .joinCont03 .comCheckBox label { font-size: 14px; } 
 .centerJoin .joinCont03 .btnWrap { margin-top: 20px; padding: 0; } 
 .centerJoin .joinCont03 .btnWrap a { padding: 10px 0; font-size: 26px; } 
 .centerJoin .joinCont03 .infoBox { justify-content: flex-start; background: #fff; border-right: none; padding: 10px; } 
 .centerJoin .joinCont03 .contBox { padding: 10px 10px; } 
-}
+ }
  
  @media screen and (max-width: 640px){
  .centerJoin h2 { font-size: 24px; } 
