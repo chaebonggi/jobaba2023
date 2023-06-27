@@ -9,13 +9,14 @@
 .centerEdu .fcSkyBlue { color: #4194d3; } 
 .centerEdu .fcBrown { color: #a28064; } 
 .centerEdu .fcMint { color: #3cbca4; } 
+.centerEdu .fcRed { color: #ff0000; } 
 
 .centerEdu .bgSky { background: #c8edfd; } 
 .centerEdu .bgYellow { background: #fbecbf; } 
 .centerEdu .bgPurple { background: #ecdefb; } 
-.centerEdu .bgGreen { background: #bbe8c1; }
-.centerEdu .bgSkin { background: #feede0; }
-.centerEdu .bgMint { background: #d3f5f9; }
+.centerEdu .bgGreen { background: #bbe8c1; } 
+.centerEdu .bgSkin { background: #feede0; } 
+.centerEdu .bgMint { background: #d3f5f9; } 
 
 .centerEdu .eduMain { background: #66c2bd; } 
 .centerEdu .eduMain .innerSection { position: relative; padding: 60px 0 70px; overflow: hidden; } 
@@ -27,7 +28,13 @@
 .centerEdu .eduMain .txtWrap p span { display: inherit; font-size: 24px; } 
 .centerEdu .eduMain .btnWrap { padding-left: 166px; } 
 .centerEdu .eduMain .btnWrap a { display: inline-block; padding: 6px 30px 8px; background: #003281; color: #fff; font-size: 24px; border-radius: 30px; } 
-.centerEdu h2 { color: #000; font-size: 48px; text-align: center; } 
+.centerEdu h2 { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: #000; font-size: 48px; text-align: center; } 
+.centerEdu h2 span { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-left: 4px; } 
+.centerEdu h2 i { display: inline-block; margin: 0 6px; background-repeat: no-repeat; } 
+.centerEdu h2 i.icon01 { width: 75px; height: 73px; background-image: url(../images/centerEdu/eduCont_icon01.png); } 
+.centerEdu h2 i.icon02 { width: 75px; height: 75px; background-image: url(../images/centerEdu/eduCont_icon02.png); } 
+.centerEdu h2 i.icon03 { width: 82px; height: 78px; background-image: url(../images/centerEdu/eduCont_icon03.png); } 
+.centerEdu h2 i.icon04 { width: 72px; height: 78px; background-image: url(../images/centerEdu/eduCont_icon04.png); } 
 
 .centerEdu .eduCont01 .innerSection { padding: 100px 10px 130px; } 
 .centerEdu .eduCont01 .slideLink { min-height: 570px; padding: 40px 38px; border-radius: 30px; } 
@@ -44,19 +51,20 @@
 .centerEdu .eduCont01 .swiper-pagination-bullet-active { background: #5a5a5a; } 
 .centerEdu .eduCont01 .swiper-pagination-bullet { width: 18px; height: 18px; } 
 
-.centerEdu .eduCont02 { position: relative; background: #6b788b; overflow: hidden; } 
+.centerEdu .eduCont02 { position: relative; background: #ecf1f5; overflow: hidden; } 
 .centerEdu .eduCont02 .innerSection { max-width: 1260px; padding: 100px 0; position: relative; } 
 .centerEdu .eduCont02 .whiteBox { width: 100%; height: 100%; position: relative; padding: 90px 40px 100px; background: #fff; border-radius: 48px; box-shadow: 0px 30px 30px 0px rgba(52, 28, 28, 0.1); } 
-.centerEdu .eduCont02 .whiteBox li {min-height: 70px; color: #000; font-size: 24px; letter-spacing: -1px; } 
+.centerEdu .eduCont02 .whiteBox li { min-height: 70px; color: #000; font-size: 24px; letter-spacing: -1px; } 
 .centerEdu .eduCont02 .whiteBox li + li { margin-top: 10px; } 
 .centerEdu .eduCont02 .whiteBox li::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { position: absolute; width: 100%; padding: 0 40px; left: 0; bottom: 130px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong { display: block; position: relative; font-size: 48px; line-height: 1; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { content: ''; position: absolute; right: 0; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon01::after { width: 167px; height: 110px; top: -25px; background: url(../images/centerEdu/eduCont02_icon01.png) no-repeat; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon02::after { width: 134px; height: 134px; top: -60px; background: url(../images/centerEdu/eduCont02_icon02.png) no-repeat; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon03::after { width: 173px; height: 131px; top: -50px; background: url(../images/centerEdu/eduCont02_icon03.png) no-repeat; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon04::after { width: 152px; height: 120px; top: -50px; background: url(../images/centerEdu/eduCont02_icon04.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap { min-height: 152px; position: relative; margin-bottom: 80px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong { display: block; color: #507593; font-size: 48px; line-height: 1; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { content: ''; position: absolute; right: 0; bottom: 0; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon01::after { width: 109px; height: 82px; background: url(../images/centerEdu/eduCont02_icon01.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon02::after { width: 103px; height: 100px; background: url(../images/centerEdu/eduCont02_icon02.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon03::after { width: 112px; height: 104px; background: url(../images/centerEdu/eduCont02_icon03.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon04::after { width: 103px; height: 96px; background: url(../images/centerEdu/eduCont02_icon04.png) no-repeat; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon05::after { width: 104px; height: 103px; background: url(../images/centerEdu/eduCont02_icon05.png) no-repeat; } 
 .centerEdu .eduCont02 .slideLink { width: 430px; height: 595px; } 
 .centerEdu .eduCont02 .slideLink > div { width: 100%; height: 100%; } 
 .centerEdu .eduCont02 .slideLink:hover .tagMenu { display: flex; } 
@@ -81,19 +89,33 @@
 .centerEdu .eduCont03 .innerSection { max-width: 980px; padding: 70px 10px; } 
 .centerEdu .eduCont03 .tabBox { display: none; } 
 .centerEdu .eduCont03 .tabBox.active { display: block; } 
-.centerEdu .eduCont03 .tabBox .txtWrap { position: relative; padding: 60px 60px; background: url(../images/centerEdu/eduCont03_img01.png) no-repeat #fff top -200px right; border-radius: 20px; box-shadow: 0px 20px 20px 0px rgba(52, 28, 28, 0.05); } 
-.centerEdu .eduCont03 .tabBox .txtWrap::after { content: ''; width: 407px; height: 303px; position: absolute; right: -32px; bottom: -20px; background: url(../images/centerEdu/eduCont03_img02.png) no-repeat; } 
-.centerEdu .eduCont03 .tabBox .txtWrap strong { color: #000; font-size: 48px; } 
-.centerEdu .eduCont03 .tabBox .txtWrap ul { margin-top: 20px; padding-left: 10px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap { position: relative; padding: 40px 60px 40px; background-color: #fff; border-radius: 20px; box-shadow: 0px 20px 20px 0px rgba(52, 28, 28, 0.05); overflow: hidden; background-repeat: no-repeat; } 
+.centerEdu .eduCont03 .tabBox .txtWrap::before { content: ''; width: 100%; height: 100%; top: 0; right: 0; position: absolute; z-index: 1; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon01::before { background-image: url(../images/centerEdu/eduCont03_imgbg01.png); background-repeat: no-repeat; background-position: top -200px right -20px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon02::before { background-image: url(../images/centerEdu/eduCont03_imgbg02.png); background-repeat: no-repeat; background-position: top -20px right -20px; } 
+
+.centerEdu .eduCont03 .tabBox .txtWrap.icon01 { background-image: url(../images/centerEdu/eduCont03_img01.png); background-position: right 30px bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon02 { background-image: url(../images/centerEdu/eduCont03_img02.png); background-position: right 30px bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon03 { background-image: url(../images/centerEdu/eduCont03_img03.png); background-position: right -70px bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon04 { background-image: url(../images/centerEdu/eduCont03_img04.png); background-position: right 0 bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon05 { background-image: url(../images/centerEdu/eduCont03_img05.png); background-position: right 30px bottom -10px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon06 { background-image: url(../images/centerEdu/eduCont03_img06.png); background-position: right 30px bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon07 { background-image: url(../images/centerEdu/eduCont03_img07.png); background-position: right 30px bottom; } 
+.centerEdu .eduCont03 .tabBox .txtWrap.icon08 { background-image: url(../images/centerEdu/eduCont03_img08.png); background-position: right -20px bottom 20px; } 
+
+
+.centerEdu .eduCont03 .tabBox .txtWrap strong { position: relative; color: #000; font-size: 48px; z-index: 2; } 
+.centerEdu .eduCont03 .tabBox .txtWrap ul { min-height: 160px; position: relative; margin-top: 20px; padding-left: 10px; letter-spacing: -1px; z-index: 2; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 24px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 20px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li + li { margin-top: 10px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
-.centerEdu .eduCont03 .tabBox .txtWrap a { display: inline-block; background: #e6f1f6; margin-top: 40px; padding: 20px 26px; color: #3e5a9b; font-size: 26px; font-weight: bold; border-radius: 20px; box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.28); } 
+.centerEdu .eduCont03 .tabBox .txtWrap a { display: inline-block; width: 330px; position: relative; background: #e6f1f6; margin-top: 40px; padding: 20px 10px; color: #3e5a9b; font-size: 26px; font-weight: bold; border-radius: 20px; box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.28); text-align: center; z-index: 10; } 
 .centerEdu .eduCont03 .tabBox .btnWrap { display: flex; justify-content: space-between; margin-top: 66px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a { display: block; width: calc(100% / 2 - 20px); padding: 26px 0; background: #3e5a9b; color: #fff; font-size: 26px; font-weight: bold; text-align: center; border-radius: 10px; transition: all 0.35s; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a:hover { color: #a8f6ff; } 
 
-.centerEdu .eduCont04 { padding: 100px 0 300px; } 
+.centerEdu .eduCont04 .innerSection { padding: 100px 10px 300px; } 
 .centerEdu .eduCont04 .qnaList { margin-top: 40px; } 
 .centerEdu .eduCont04 .qnaList a { display: block; padding: 16px 0 18px 80px; position: relative; color: #696969; font-size: 22px; border-top: 1px solid #999999; } 
 .centerEdu .eduCont04 .qnaList li:last-child a { border-bottom: 1px solid #999999; } 
@@ -109,7 +131,7 @@
 .centerEdu .eduCont04 .qnaList .answerWrap p { color: #000; font-size: 20px; } 
 
 
-.centerEdu .eduCont05 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
+.centerEdu .eduCont05 { position: relative; padding: 100px 10px 30px; background: #e3f1f4; } 
 .centerEdu .eduCont05 .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
 .centerEdu .eduCont05 .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; word-break: keep-all; } 
 .centerEdu .eduCont05 .titWrap p::after { content: ''; width: 433px; height: 136px; position: absolute; top: -112px; left: 50%; transform: translateX(-50%); background: url(../images/centerEdu/eduCont05_img01.png) no-repeat; background-size: cover; } 
@@ -132,9 +154,8 @@
 
  .centerEdu .eduCont03 .tabMenu { white-space: nowrap; overflow-x: scroll; } 
  .centerEdu .eduCont03 .tabMenu li { min-width: 120px; } 
- .centerEdu .eduCont03 .tabBox .txtWrap::after { bottom: -46px; right: 0; transform: scale(0.8); } 
-
-}
+ .centerEdu .eduCont03 .tabBox .txtWrap::before { opacity: 0.2; } 
+ }
 
 
  @media screen and (max-width: 860px){
@@ -145,6 +166,7 @@
 
  .centerEdu .eduCont01 .innerSection { padding: 50px 10px 50px; } 
  .centerEdu h2 { font-size: 32px; word-break: keep-all; } 
+ .centerEdu h2 i { margin: 0; transform: scale(0.8);}
 .centerEdu .eduCont01 .serviceSlide { margin-top: 30px; padding-bottom: 50px; } 
 
 .centerEdu .eduCont01 .slideLink { min-height: 470px; padding: 20px 20px; border-radius: 30px; } 
@@ -154,30 +176,28 @@
 
 .centerEdu .eduCont02 .innerSection { max-width: 370px; padding: 30px 0 60px; } 
 .centerEdu .eduCont02 .guideSlide { margin-top: 40px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { bottom: 100px; } 
 .centerEdu .eduCont02 .whiteBox { padding: 50px 40px; } 
 .centerEdu .eduCont02 .whiteBox li { font-size: 20px; } 
 .centerEdu .eduCont02 .slideLink { width: 370px; height: 500px; } 
 .centerEdu .eduCont02 .tagMenu { display: flex; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap { margin-bottom: 60px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 38px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong::after { transform: scale(0.8); } 
 .centerEdu .eduCont02 .tagMenu li { padding: 12px 0; font-size: 18px; } 
 
 .centerEdu .eduCont03 { padding: 30px 0 0; } 
-.centerEdu .eduCont03 .tabMenu {
-    margin: 30px auto 20px;
-}
+.centerEdu .eduCont03 .tabMenu { margin: 30px auto 20px; padding: 10px;} 
+.centerEdu .eduCont03 .tabMenu li {font-size: 18px;}
 .centerEdu .eduCont03 .tabBox .txtWrap strong { font-size: 36px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 20px; word-break: keep-all; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 16px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap a { padding: 10px 26px; font-size: 20px; } 
-.centerEdu .eduCont03 .tabBox .txtWrap::after { bottom: -85px; right: -80px; transform: scale(0.5); } 
+.centerEdu .eduCont03 .tabBox .txtWrap { background-size: auto 50%; } 
 .centerEdu .eduCont03 .tabBox .btnWrap { flex-direction: column; padding: 0; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a { width: 100%; padding: 22px 0; font-size: 22px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a + a { margin-top: 10px; } 
-.centerEdu .eduCont03 .tabBox .txtWrap { background: url(../images/centerEdu/eduCont03_img01.png) no-repeat #fff top -224px right -150px; } 
 
-
-.centerEdu .eduCont04 { padding: 30px 0 50px; } 
+.centerEdu .eduCont04 .innerSection { padding: 30px 10px 50px; } 
 .centerEdu .eduCont04 .qnaList a { font-size: 20px; word-break: keep-all; } 
 .centerEdu .eduCont04 .qnaList .answerWrap p { font-size: 18px; word-break: keep-all; } 
 
@@ -186,7 +206,7 @@
 .centerEdu .eduCont05 .titWrap p::after { width: 300px; height: 94px; top: -78px; } 
 .centerEdu .eduCont05 .txtWrap p { font-size: 26px; } 
 .centerEdu .eduCont05 .txtWrap p::after { width: 110px; height: 34px; } 
-}
+ }
 
  @media screen and (max-width: 640px){
  .centerEdu .eduMain .txtWrap p { font-size: 18px; } 
@@ -194,6 +214,7 @@
 .centerEdu .eduMain .btnWrap a { width: 100%; padding: 2px 10px 4px; font-size: 16px; } 
 
 .centerEdu h2 { font-size: 24px; } 
+.centerEdu h2 i {margin: 0 -10px; transform: scale(0.6);}
 .centerEdu .eduCont01 .innerSection { padding: 30px 10px; } 
 .centerEdu .eduCont01 .slideLink { min-height: 430px; padding: 0 10px; text-align: center; } 
 .centerEdu .eduCont01 .slideLink::before { margin: 0 auto; } 
@@ -203,31 +224,35 @@
 
 .centerEdu .eduCont02 .innerSection { max-width: 300px; } 
 .centerEdu .eduCont02 .slideLink { width: 300px; } 
-.centerEdu .eduCont02 .whiteBox li { font-size: 18px; word-break: keep-all; } 
+.centerEdu .eduCont02 .whiteBox li { min-height: auto; font-size: 18px; word-break: keep-all; } 
 .centerEdu .eduCont02 .whiteBox { padding: 50px 20px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap { padding: 0 20px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 32px; } 
 
 .centerEdu .eduCont03 .innerSection { padding: 30px 10px; } 
-.centerEdu .eduCont03 .tabBox .txtWrap::after { content: none; } 
+
+.centerEdu .eduCont03 .tabBox .txtWrap { background-image: none !important; } 
 .centerEdu .eduCont03 .tabBox .txtWrap { padding: 30px 20px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap strong { font-size: 26px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap ul { min-height: auto; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 16px; } 
+.centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 14px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap a { width: 100%; font-size: 18px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap { margin-top: 20px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap a { font-size: 16px; } 
 
+.centerEdu .eduCont04 .qnaList { margin-top: 20px; } 
 .centerEdu .eduCont04 .qnaList a { padding: 16px 0 18px 46px; font-size: 18px; } 
 .centerEdu .eduCont04 .qnaList a::before, 
 .centerEdu .eduCont04 .qnaList a::after { width: 12px; top: 50%; left: 15px; } 
 .centerEdu .eduCont04 .qnaList .answerWrap { padding: 20px; } 
 .centerEdu .eduCont04 .qnaList .answerWrap p { font-size: 16px; } 
 
+.centerEdu .eduCont05 .titWrap p::before { content: none; } 
 .centerEdu .eduCont05 .titWrap { margin-bottom: 20px; } 
 .centerEdu .eduCont05 .titWrap p { padding: 15px 10px; width: 100%; font-size: 20px; } 
 .centerEdu .eduCont05 .titWrap p::after { width: 230px; height: 72px; top: -58px; } 
 .centerEdu .eduCont05 .titWrap p::before { content: none; } 
 .centerEdu .eduCont05 .txtWrap p { font-size: 18px; } 
 .centerEdu .eduCont05 .txtWrap p::after { width: 70px; height: 22px; } 
-
-}
+ }
