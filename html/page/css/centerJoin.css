@@ -44,10 +44,10 @@
 .centerJoin .joinCont01 .whiteBox.icon03::before { background-image: url(../images/centerJoin/joinCont01_icon03.png); background-color: #e1d9ed; } 
 
 .joinCont02 { background: url(../images/centerJoin/joinCont02_bg.jpg) top center no-repeat; background-size: cover; } 
-.joinCont02 .innerSection { padding: 100px 20px 0; } 
+.joinCont02 .innerSection { padding: 100px 20px 150px; } 
 .section_various_wrap .pin-spacer { width: 100% !important; max-width: 100%; } 
 .section_various { overflow: hidden; will-change: contents; } 
-.section_various .card_wrap { margin-top: 100px; animation-delay: 0.3s; } 
+.section_various .card_wrap { margin-top: 50px; animation-delay: 0.3s; } 
 .section_various .card_wrap .card_box { position: relative; height: 550px; } 
 .section_various .card_wrap .card_item { display: flex; justify-content: space-between; padding: 50px 50px; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; will-change: transform; overflow: hidden; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05)); } 
 .section_various .card_wrap .card_item .txtWrap { flex-shrink: 0; } 
@@ -108,9 +108,6 @@
  .centerJoin .joinCont01 ul { flex-wrap: wrap; justify-content: center; } 
  .centerJoin .joinCont01 ul li { width: calc(100% / 2 - 50px); } 
  .centerJoin .joinCont01 ul li:first-child { margin-right: 50px; margin-bottom: 100px; } 
-
- .centerJoin .section_various .card_wrap .card_01 { background-size: 50%; } 
- .centerJoin .section_various .card_wrap .card_02 { background-size: 50%; } 
  }
 
  
@@ -141,8 +138,8 @@
 .centerJoin .joinCont01 .whiteBox p { margin-top: 20px; font-size: 18px; word-break: keep-all; } 
 
 
-.joinCont02 .innerSection { padding: 30px 20px 0; } 
-.section_various .card_wrap { margin-top: 70px; } 
+.joinCont02 .innerSection { padding: 30px 20px 50px; } 
+.section_various .card_wrap { margin-top: 30px; } 
 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
 .section_various .card_wrap .card_item br.forMobile { display: none; } 
 .section_various .card_wrap .card_item h3 { padding: 6px 24px; margin-bottom: 20px; font-size: 26px; } 
@@ -185,7 +182,6 @@
 .centerJoin .joinCont01 .whiteBox p br { display: none; } 
 .centerJoin .joinCont01 .whiteBox::before { transform: translateX(-50%) scale(0.6); } 
 
-.centerJoin .section_various .card_wrap { margin-top: 60px; } 
 .centerJoin .section_various .card_wrap .card_item { padding: 30px 20px; } 
 .centerJoin .section_various .card_wrap .card_item h3 { width: 100%; margin-bottom: 15px; font-size: 20px; text-align: center; } 
 .centerJoin .section_various .card_wrap .card_item .txtWrap > span { font-size: 20px; margin-bottom: 10px; text-align: center; } 
