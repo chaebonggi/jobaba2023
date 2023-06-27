@@ -15,16 +15,23 @@
 .centerJoin .bgSky { background: #c8edfd; } 
 .centerJoin .bgYellow { background: #fbecbf; } 
 .centerJoin .bgPurple { background: #ecdefb; } 
+.centerJoin .bgGray { background: #e0e0e0; } 
+.centerJoin .bgSkyBlue { background: #daf1ff; } 
 .centerJoin .bgWhite { background: #ffffff !important; } 
 
 .centerJoin .joinMain { background: url(../images/centerJoin/main_bg.jpg) no-repeat; background-size: cover; } 
 .centerJoin .joinMain .innerSection { position: relative; padding: 90px 20px 75px; overflow: hidden; } 
-.centerEdu .eduMain .innerSection::before { content: ''; width: 442px; height: 276px; position: absolute; right: 0; bottom: -40px; background: url(../images/centerEdu/main_img02.png) no-repeat; z-index: 2; } 
+.centerJoin .joinMain .innerSection::before { content: ''; width: 415px; height: 246px; position: absolute; right: 84px; bottom: 26px; background: url(../images/centerJoin/main_img01.png) no-repeat;} 
 .centerJoin .joinMain .imgWrap { margin-bottom: 40px; } 
-.centerJoin .joinMain .txtWrap p { margin-bottom: 30px; color: #000; font-size: 40px; line-height: 1.2; } 
-.centerJoin h2 { color: #000; font-size: 48px; text-align: center; } 
-
+.centerJoin .joinMain .txtWrap p { margin-bottom: 30px; color: #000; font-size: 40px; line-height: 1.2; }
 .centerJoin .joinCont01 .innerSection { padding: 100px 0; } 
+
+.centerJoin h2 { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: #000; font-size: 48px; text-align: center; } 
+.centerJoin h2 span { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-left: 4px; } 
+.centerJoin h2 i { display: inline-block; margin: 0 8px; background-repeat: no-repeat; } 
+.centerJoin h2 i.icon01 { width: 76px; height: 76px; background-image: url(../images/centerJoin/joinCont_icon01.png); } 
+.centerJoin h2 i.icon02 { width: 83px; height: 84px; background-image: url(../images/centerJoin/joinCont_icon02.png); } 
+.centerJoin h2 i.icon03 { width: 75px; height: 66px; background-image: url(../images/centerJoin/joinCont_icon03.png); }
 
 .centerJoin .joinCont01 ul { display: flex; justify-content: space-between; margin-top: 50px; } 
 .centerJoin .joinCont01 ul li { width: calc(100% / 3 - 46px); } 
@@ -42,12 +49,15 @@
 .section_various { overflow: hidden; will-change: contents; } 
 .section_various .card_wrap { margin-top: 100px; animation-delay: 0.3s; } 
 .section_various .card_wrap .card_box { position: relative; height: 550px; } 
-.section_various .card_wrap .card_item { padding: 50px 50px; will-change: transform; overflow: hidden; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05)); } 
-.section_various .card_wrap .card_item h3 { display: inline-block; padding: 10px 28px; margin-bottom: 25px; background: #4f5660; color: #fff; font-size: 34px; border-radius: 40px; } 
-.section_various .card_wrap .card_item strong { display: block; color: #4f5660; font-size: 30px; } 
-.section_various .card_wrap .card_item p { margin-top: 10px; color: #4f5660; font-size: 18px; } 
-.section_various .card_wrap .card_01 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #ffffff bottom -30px right -30px; } 
-.section_various .card_wrap .card_02 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #797979 bottom -30px right -30px; } 
+.section_various .card_wrap .card_item { display: flex; justify-content: space-between; padding: 50px 50px; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; will-change: transform; overflow: hidden; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.05)); } 
+.section_various .card_wrap .card_item .txtWrap { flex-shrink: 0; } 
+.section_various .card_wrap .card_item h3 { display: inline-block; padding: 10px 28px; margin-bottom: 25px; font-size: 34px; border-radius: 40px; } 
+.section_various .card_wrap .card_item .txtWrap > span { display: block; margin-bottom: 20px; font-size: 32px; line-height: 1.2; } 
+.section_various .card_wrap .card_item .txtWrap p { margin-top: 10px; padding-left: 10px; font-size: 18px; font-weight: 300; } 
+.section_various .card_wrap .card_item .txtWrap p::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
+.section_various .card_wrap .imgWrap { margin-left: 30px; border: 1px solid #dcdcdc; border-radius: 16px; overflow: hidden; } 
+.section_various .card_wrap .imgWrap img { width: 100%; height: 100%; object-fit: cover; } 
+
 
 .centerJoin .joinCont03 .innerSection { padding: 100px 10px 280px; } 
 .centerJoin .joinCont03 .joinWrap > p { margin: 40px 0 10px; color: #ff0000; font-size: 24px; text-align: right; } 
@@ -70,7 +80,7 @@
 .centerJoin .joinCont03 .btnWrap a { display: block; width: 400px; padding: 14px 0; margin: 0 auto; background: #3e5a9b; color: #fff; font-size: 32px; text-align: center; border-radius: 15px; } 
 .centerJoin .joinCont03 .comCheckBox input[type="checkbox"] { display: none; } 
 .centerJoin .joinCont03 .comCheckBox input[type="checkbox"] + label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 4px; background: #fff; border: 1px solid #9ea4aa; border-radius: 3px; vertical-align: bottom; box-sizing: border-box; } 
-.centerJoin .joinCont03 .comCheckBox input[type="checkbox"]:checked + label::before { content: ''; background-color: #67c3be; background-image: url(../images/centerJoin/check_btn.png); background-repeat: no-repeat; background-position: 50%; border-color: #67c3be;}
+.centerJoin .joinCont03 .comCheckBox input[type="checkbox"]:checked + label::before { content: ''; background-color: #67c3be; background-image: url(../images/centerJoin/check_btn.png); background-repeat: no-repeat; background-position: 50%; border-color: #67c3be; } 
 .centerJoin .joinCont03 .checkItem { margin-top: 20px; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 20px; } 
 
@@ -87,6 +97,9 @@
 .centerJoin .joinCont04 .txtWrap p { color: #003281; font-size: 32px; text-align: center; word-break: keep-all; } 
 .centerJoin .joinCont04 .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../images/centerJoin/joinCont04_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 
 
+@media screen and (max-width: 1199px){
+    .centerJoin .joinMain .innerSection::before { right: 0; bottom: 0; transform: scale(0.8);} 
+}
 
 @media screen and (max-width: 1024px){
  .centerJoin .joinCont01 .innerSection { padding: 100px 20px; } 
@@ -102,9 +115,11 @@
  
  
  @media screen and (max-width: 860px){
- .centerJoin h2 { font-size: 32px; word-break: keep-all; } 
+ .centerJoin h2 { font-size: 32px; justify-content: center; word-break: keep-all; } 
+ .centerJoin h2 i { margin: 0 -10px; transform: scale(0.6);}
 
  .centerJoin .joinMain .innerSection { padding: 30px 10px; } 
+ .centerJoin .joinMain .innerSection::before {content: none;}
  .centerJoin .joinMain .imgWrap { transform: scale(0.8); text-align: center; } 
  .centerJoin .joinMain .txtWrap p { font-size: 28px; word-break: keep-all; text-align: center; } 
 
@@ -121,10 +136,12 @@
 
 
 .joinCont02 .innerSection { padding: 30px 20px 0; } 
-.section_various .card_wrap .card_item { padding: 30px 20px; } 
+.section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
+.section_various .card_wrap .card_item br.forMobile { display: none; } 
 .section_various .card_wrap .card_item h3 { padding: 6px 24px; margin-bottom: 20px; font-size: 26px; } 
-.section_various .card_wrap .card_item strong { font-size: 24px; } 
-.section_various .card_wrap .card_item p { margin-top: 15px; font-size: 16px; word-break: keep-all; } 
+.section_various .card_wrap .card_item .txtWrap > span { font-size: 24px; word-break: keep-all; } 
+.section_various .card_wrap .card_item .txtWrap p { margin-top: 15px; font-size: 16px; word-break: keep-all; } 
+.section_various .card_wrap .imgWrap { margin-left: 0; margin-top: 20px; } 
 
 .centerJoin .joinCont03 .innerSection { padding: 30px 10px 30px; } 
 .centerJoin .joinCont03 .joinWrap > p { margin: 20px 0 10px; font-size: 14px; } 
@@ -164,13 +181,11 @@
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
 
-.section_various .card_wrap { margin-top: 80px; } 
+.section_various .card_wrap { margin-top: 70px; } 
+.section_various .card_wrap .card_item { padding: 30px 20px; } 
 .section_various .card_wrap .card_item h3 { width: 100%; margin-bottom: 15px; font-size: 20px; text-align: center; } 
-.section_various .card_wrap .card_item strong { font-size: 18px; text-align: center; } 
-.section_various .card_wrap .card_item p { text-align: center; } 
-.section_various .card_wrap .card_item p br { display: none; } 
-.section_various .card_wrap .card_01 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #ffffff center bottom -40px; background-size: 90%; } 
-.section_various .card_wrap .card_02 { background: url(../images/centerJoin/joinCont02_img01.png) no-repeat #797979 center bottom -40px; background-size: 90%; } 
+.section_various .card_wrap .card_item .txtWrap > span { font-size: 20px; margin-bottom: 10px; text-align: center; } 
+.section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; } 
 
 .centerJoin .joinCont03 .infoWrap { flex-direction: column; } 
 .centerJoin .joinCont03 .btnWrap a { width: 100%; padding: 8px 0; font-size: 18px; } 
