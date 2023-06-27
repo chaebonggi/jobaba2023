@@ -182,11 +182,11 @@
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
 
-/* .section_various .card_wrap { margin-top: 50px; } 
+.section_various .card_wrap { margin-top: 50px; } 
 .section_various .card_wrap .card_item { padding: 30px 20px; } 
 .section_various .card_wrap .card_item h3 { width: 100%; margin-bottom: 15px; font-size: 20px; text-align: center; } 
 .section_various .card_wrap .card_item .txtWrap > span { font-size: 20px; margin-bottom: 10px; text-align: center; } 
-.section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; }  */
+.section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; } 
 
 .centerJoin .joinCont03 .infoWrap { flex-direction: column; } 
 .centerJoin .joinCont03 .btnWrap a { width: 100%; padding: 8px 0; font-size: 18px; } 
