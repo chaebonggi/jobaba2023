@@ -89,7 +89,7 @@
 .centerJoin .joinCont03 .infoWrap:last-child { border-bottom: none; } 
 .centerJoin .joinCont03 .infoBox { display: flex; align-items: center; flex-shrink: 0; justify-content: center; width: 138px; background: #ecf8f6; border-right: 1px solid #cccccc; } 
 
-.centerJoin .joinCont04 { position: relative; padding: 100px 0 30px; background: #e3f1f4; } 
+.centerJoin .joinCont04 { position: relative; padding: 100px 10px 30px; background: #e3f1f4; } 
 .centerJoin .joinCont04 .titWrap { width: 100%; position: absolute; top: -85px; left: 50%; transform: translateX(-50%); text-align: center; } 
 .centerJoin .joinCont04 .titWrap p { display: inline-block; position: relative; padding: 34px 54px; background: #00aef0; color: #fff; font-size: 30px; border-radius: 80px; word-break: keep-all; } 
 .centerJoin .joinCont04 .titWrap p::after { content: ''; width: 433px; height: 136px; position: absolute; top: -112px; left: 50%; transform: translateX(-50%); background: url(../images/centerJoin/joinCont04_img01.png) no-repeat; background-size: cover; } 
