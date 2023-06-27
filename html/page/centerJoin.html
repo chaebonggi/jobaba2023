@@ -88,47 +88,45 @@
 			<div class="innerSection">
 				<div class="contWrap">
 					<div class="section_various_wrap">
-						<div class="pin-spacer">
-							<section id="section_various" class="section_various">
-								<h2>잡아바 러닝센터<i class="icon02"></i>연계 사례</h2>
-								<div class="card_wrap">
-									<div class="card_box">
-										<div class="card_item card_01 bgWhite">
-											<div class="txtWrap">
-												<h3 class="bgGray">도내 우수 대학교</h3>													
-												<span>졸업을 앞둔 학생들을 위한<br>
-													온라인 취업준비 <b>특강 프로그램</b><br class="forMobile"> 운영</span>
-												<p>취업준비 과정을 통한 온라인 특강 진행<br class="forMobile">
-													(수강생 약 1,500명)</p>
-												<p>취업상담, 자기소개소컨설팅, AI모의면접 등<br class="forMobile">
-													비대면 취업지원 서비스 제공</p>
-												<p>원활하고 편리한 학습관리를 위한 별도 전용 페이지<br class="forMobile">
-													및 학습관리LMS제공</p>
-											</div>
-											<div class="imgWrap">
-												<img src="./images/centerJoin/joinCont02_img01.png" alt="잡아바 러닝센터 이미지">
-											</div>
+						<section class="section_various">
+							<h2>잡아바 러닝센터<i class="icon02"></i>연계 사례</h2>
+							<div class="card_wrap">
+								<div class="card_box">
+									<div class="card_item card_01 bgWhite">
+										<div class="txtWrap">
+											<h3 class="bgGray">도내 우수 대학교</h3>													
+											<span>졸업을 앞둔 학생들을 위한<br>
+												온라인 취업준비 <b>특강 프로그램</b><br class="forMobile"> 운영</span>
+											<p>취업준비 과정을 통한 온라인 특강 진행<br class="forMobile">
+												(수강생 약 1,500명)</p>
+											<p>취업상담, 자기소개소컨설팅, AI모의면접 등<br class="forMobile">
+												비대면 취업지원 서비스 제공</p>
+											<p>원활하고 편리한 학습관리를 위한 별도 전용 페이지<br class="forMobile">
+												및 학습관리LMS제공</p>
 										</div>
-										<div class="card_item card_02 bgSkyBlue">
-											<div class="txtWrap">
-												<h3 class="bgWhite">도내 우수 대학교</h3>
-												<span>IT전공 학생들을 위한<br>
-													오프라인 <b>취업력량 강화 프로그램</b><br class="forMobile"> 운영</span>
-												<p>IT전공 맞춤 자기소개서 특강, 면접특강 진행<br class="forMobile">
-													(수강색 약 100명)</p>
-												<p>IT분야 대기업 현직자 멘토링 프로그램을 통한 취업트렌드<br class="forMobile">
-													및 전략 특강 (수강색 약 100명)</p>
-												<p>취업상담, 자기소개개서 컨설팅, AI모의 면접 등<br class="forMobile"> 비대면 취업지원 서비스 제공</p>
-												
-											</div>
-											<div class="imgWrap">
-												<img src="./images/centerJoin/joinCont02_img02.png" alt="잡아바 러닝센터 이미지">
-											</div>
+										<div class="imgWrap">
+											<img src="./images/centerJoin/joinCont02_img01.png" alt="잡아바 러닝센터 이미지">
 										</div>
-									</div>										
-								</div>								
-							</section>
-						</div>
+									</div>
+									<div class="card_item card_02 bgSkyBlue">
+										<div class="txtWrap">
+											<h3 class="bgWhite">도내 우수 대학교</h3>
+											<span>IT전공 학생들을 위한<br>
+												오프라인 <b>취업력량 강화 프로그램</b><br class="forMobile"> 운영</span>
+											<p>IT전공 맞춤 자기소개서 특강, 면접특강 진행<br class="forMobile">
+												(수강색 약 100명)</p>
+											<p>IT분야 대기업 현직자 멘토링 프로그램을 통한 취업트렌드<br class="forMobile">
+												및 전략 특강 (수강색 약 100명)</p>
+											<p>취업상담, 자기소개개서 컨설팅, AI모의 면접 등<br class="forMobile"> 비대면 취업지원 서비스 제공</p>
+											
+										</div>
+										<div class="imgWrap">
+											<img src="./images/centerJoin/joinCont02_img02.png" alt="잡아바 러닝센터 이미지">
+										</div>
+									</div>
+								</div>										
+							</div>								
+						</section>
 					</div>
 				</div>
 			</div>
@@ -331,15 +329,15 @@
             limitCallbacks: true,
             ignoreMobileResize: true,
         })
-        gsap.utils.toArray('.section_various').forEach(function (el, index) {
+        gsap.utils.toArray('.section_various h2').forEach(function (el, index) {
             let tl = gsap.timeline({
                 scrollTrigger: {
                     // trigger: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
-					trigger: '.section_various',
-                    start: () => window.innerWidth > window.innerHeight && window.innerHeight <= 860 ? '-30px top' : '-100px top',
+					trigger: window.innerWidth <= 860 ? '.card_wrap' : '.section_various',
+                    start: () => window.innerWidth <= 860 ? '-30px top' : '-100px top',
                     // pin: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
-					pin: '.joinCont02',
-                    end: "+=50%",
+					pin: '.section_various',
+                    end: "+=100%",
                     scrub: 1,
                     invalidateOnResize: true,
                     invalidateOnRefresh: true,

@@ -43,7 +43,7 @@
 .centerJoin .joinCont01 .whiteBox.icon02::before { background-image: url(../images/centerJoin/joinCont01_icon02.png); background-color: #cbeeeb; } 
 .centerJoin .joinCont01 .whiteBox.icon03::before { background-image: url(../images/centerJoin/joinCont01_icon03.png); background-color: #e1d9ed; } 
 
-.joinCont02 { background: url(../images/centerJoin/joinCont02_bg.jpg) top center no-repeat; background-size: cover; } 
+.joinCont02 { background: #f3f3f3; } 
 .joinCont02 .innerSection { padding: 100px 20px 150px; } 
 .section_various_wrap .pin-spacer { width: 100% !important; max-width: 100%; } 
 .section_various { overflow: hidden; will-change: contents; } 
