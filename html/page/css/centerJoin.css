@@ -23,7 +23,7 @@
 .centerJoin .joinMain .innerSection { position: relative; padding: 90px 20px 75px; overflow: hidden; } 
 .centerJoin .joinMain .innerSection::before { content: ''; width: 415px; height: 246px; position: absolute; right: 84px; bottom: 26px; background: url(../images/centerJoin/main_img01.png) no-repeat;} 
 .centerJoin .joinMain .imgWrap { margin-bottom: 40px; } 
-.centerJoin .joinMain .txtWrap p { margin-bottom: 30px; color: #000; font-size: 40px; line-height: 1.2; }
+.centerJoin .joinMain .txtWrap p { color: #000; font-size: 40px; line-height: 1.2; }
 .centerJoin .joinCont01 .innerSection { padding: 100px 0; } 
 
 .centerJoin h2 { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: #000; font-size: 48px; text-align: center; } 
@@ -135,7 +135,8 @@
 .centerJoin .joinCont01 .whiteBox p { margin-top: 20px; font-size: 20px; word-break: keep-all; } 
 
 
-.joinCont02 .innerSection { padding: 30px 20px 0; } 
+.joinCont02 .innerSection { padding: 30px 20px 0; }
+.section_various .card_wrap {margin-top: 70px;} 
 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
 .section_various .card_wrap .card_item br.forMobile { display: none; } 
 .section_various .card_wrap .card_item h3 { padding: 6px 24px; margin-bottom: 20px; font-size: 26px; } 
@@ -175,13 +176,13 @@
 .centerJoin .joinCont04 .txtWrap p::after { width: 70px; height: 22px; } 
 
 .centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
-.centerJoin .joinCont01 ul { margin-top: 20px; } 
+.centerJoin .joinCont01 ul { margin-top: 10px; } 
 .centerJoin .joinCont01 ul li + li { margin-top: 10px; } 
 .centerJoin .joinCont01 .whiteBox { border: 4px solid #e7e7e7; } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
 
-.section_various .card_wrap { margin-top: 70px; } 
+.section_various .card_wrap { margin-top: 50px; } 
 .section_various .card_wrap .card_item { padding: 30px 20px; } 
 .section_various .card_wrap .card_item h3 { width: 100%; margin-bottom: 15px; font-size: 20px; text-align: center; } 
 .section_various .card_wrap .card_item .txtWrap > span { font-size: 20px; margin-bottom: 10px; text-align: center; } 
