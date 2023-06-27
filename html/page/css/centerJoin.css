@@ -63,7 +63,7 @@
 .centerJoin .joinCont03 .joinWrap > p { margin: 40px 0 10px; color: #ff0000; font-size: 24px; text-align: right; } 
 .centerJoin .joinCont03 .item { display: flex; border: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
-.centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px; font-size: 18px; border: 1px solid #c8c8c8; box-sizing: border-box; } 
+.centerJoin .joinCont03 input[type="text"], .centerJoin .joinCont03 input[type="tel"] { width: 100%; padding: 5px; font-size: 18px; border: 1px solid #c8c8c8; box-sizing: border-box; } 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 280px; background: #f5f5f5; font-size: 24px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 280px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 34px 40px; } 
@@ -151,7 +151,7 @@
 .centerJoin .joinCont03 .tit { width: 100%; padding: 10px 0; font-size: 20px; border-right: none; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p { font-size: 18px; } 
 .centerJoin .joinCont03 .contBox .txtWrap li { font-size: 16px; } 
-.centerJoin .joinCont03 .contBox .comm_select { width: 100% !important; } 
+.centerJoin .joinCont03 .contBox .comm_select { width: 100% !important; margin: 0; } 
 .centerJoin .joinCont03 .cont { width: 100%; } 
 .centerJoin .joinCont03 .checkItem { text-align: center; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 10px; } 
@@ -182,11 +182,11 @@
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
 
-.section_various .card_wrap { margin-top: 50px; } 
+/* .section_various .card_wrap { margin-top: 50px; } 
 .section_various .card_wrap .card_item { padding: 30px 20px; } 
 .section_various .card_wrap .card_item h3 { width: 100%; margin-bottom: 15px; font-size: 20px; text-align: center; } 
 .section_various .card_wrap .card_item .txtWrap > span { font-size: 20px; margin-bottom: 10px; text-align: center; } 
-.section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; } 
+.section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; }  */
 
 .centerJoin .joinCont03 .infoWrap { flex-direction: column; } 
 .centerJoin .joinCont03 .btnWrap a { width: 100%; padding: 8px 0; font-size: 18px; } 
