@@ -45,7 +45,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_gnb li { width: 150px; text-align: center; } 
 #newHeader .h_gnb li a { display: block; height: 70px; color: #000; font-size: 22px; line-height: 70px; } 
 /* 헤더 메뉴 */
-#newHeader .h_gnb_menu { display: block !important; position: absolute; width: 100%; background: #fff; border-bottom: 1px solid #d5d5d5; z-index: 10; } 
+#newHeader .h_gnb_menu { display: none; position: absolute; width: 100%; background: #fff; border-bottom: 1px solid #d5d5d5; z-index: 10; } 
 #newHeader .mainMenu { display: flex; width: 750px; margin: 0 auto; } 
 #newHeader .mainMenu > li { display: flex; flex-direction: column; align-items: center; width: 150px; padding: 20px 0 36px; transition: all 0.25s; } 
 #newHeader .mainMenu > li:hover { background: #f2f2f2; } 
