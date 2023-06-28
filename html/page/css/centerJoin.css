@@ -52,7 +52,7 @@
 .joinCont02 .section_various .card_wrap .card_box { position: relative; height: 550px; } 
 .joinCont02 .section_various .card_wrap .card_item { display: flex; justify-content: space-between; align-items: center; padding: 50px 50px; position: absolute; width: 100%; top: 0px; height: 550px; -webkit-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; will-change: transform; overflow: hidden; filter: drop-shadow(0px 8px 40px rgba(86, 91, 101, 0.02)); } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap { flex-shrink: 0; } 
-.joinCont02 .section_various .card_wrap .card_item h3 { display: inline-block; padding: 6px 20px; margin-bottom: 20px; font-size: 22px; border-radius: 40px; } 
+.joinCont02 .section_various .card_wrap .card_item h3 { display: inline-block; padding: 6px 20px; margin-bottom: 20px; font-size: 18px; font-weight: 400; border-radius: 40px; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { display: block; margin-bottom: 20px; font-size: 32px; line-height: 1.2; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p { margin-top: 10px; padding-left: 10px; font-size: 16px; font-weight: 300; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
@@ -69,11 +69,12 @@
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
 .centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px 10px; font-size: 16px; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px;} 
 .centerJoin .joinCont03 input[type="tel"] { max-width: 130px; width: 100%; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px; } 
-.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #e8e8e8; } 
+.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #cacaca; font-size: 14px; font-weight: 400;} 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 250px; background: #f5f5f5; font-size: 18px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 250px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 10px 20px; } 
 .centerJoin .joinCont03 .contBox.box01 { padding: 20px 30px; } 
+.centerJoin .joinCont03 .contBox p.point {padding-left: 20px;}
 .centerJoin .joinCont03 .contBox p.point::before { content: "※"; margin-left: -20px; margin-right: 5px; } 
 .centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px;} 
 .centerJoin .joinCont03 .contBox.style_01 { display: flex; gap: 10px } 
@@ -153,7 +154,7 @@
 
 .joinCont02 .section_various .card_wrap .card_box {height: 570px;}
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; height: 570px; padding: 30px 40px; } 
-.joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 18px; } 
+.joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 16px; } 
 /* .joinCont02 .section_various .card_wrap .card_item br.forMobile { display: none; } */
 .joinCont02 .section_various .card_wrap .card_item .txtWrap { text-align: center; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { margin-bottom: 40px; font-size: 26px; word-break: keep-all; } 
@@ -164,6 +165,7 @@
 .centerJoin .joinCont03 .joinWrap > p { margin: 20px 0 10px; font-size: 12px; } 
 .centerJoin .joinCont03 .item { flex-direction: column; } 
 .centerJoin .joinCont03 .contBox { padding: 20px 10px; } 
+.centerJoin .joinCont03 .contBox.box01 {padding: 20px 20px;}
 .centerJoin .joinCont03 .tit { width: 100%; padding: 10px 0; font-size: 20px; border-right: none; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p { font-size: 18px; } 
 .centerJoin .joinCont03 .contBox .txtWrap li { font-size: 16px; } 
