@@ -261,11 +261,9 @@
                                 <p>참고사항 및 회신 동의<span class="fcRed">*</span></p>                                
                             </div>
 							<div class="cont">
-								<div class="contBox">
-									<p>
-										※ 상세 과정 선택은 연계신청  후, 입력해주신 담당자 정보로 회신드립니다.<br>
-										※ 상세 과정 선택 및 운영 방법 안내 회신을 위하여 위 입력한 개인정보의 수집에 대하여 동의합니다.
-									</p>
+								<div class="contBox box01">
+									<p class="point">상세 과정 선택은 연계신청  후, 입력해주신 담당자 정보로 회신드립니다.</p>
+									<p class="point">상세 과정 선택 및 운영 방법 안내 회신을 위하여 위 입력한 개인정보의 수집에 대하여 동의합니다.</p>
 									<div class="comCheckBox mt10">
 										<input type="checkbox" id="agree">
 										<label for="agree">동의</label>
@@ -336,7 +334,7 @@
                 scrollTrigger: {
                     // trigger: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
 					trigger: '.section_various',
-                    start: () => window.innerWidth <= 860 ? '-30px top' : '-100px top',
+                    start: () => window.innerWidth <= 860 ? '0px top' : '-100px top',
                     // pin: window.innerWidth > window.innerHeight && window.innerHeight <= 480 ? '.card_wrap' : '.section_various',
 					pin: '.section_various',
                     // end: "+=200%",
@@ -348,7 +346,7 @@
             })
             if(window.innerWidth <= 1024){
                 tl.to('.card_01', { yPercent: 0})
-                    .from('.card_02', { yPercent: 200})
+                    .from('.card_02', { yPercent: 150})
                     .to('.card_01', { scale: 0.95, yPercent: -4.5 }, 0.6)
                     .to('.card_02', { yPercent: 0});
             } else {

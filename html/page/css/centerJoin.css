@@ -74,10 +74,11 @@
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 250px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 10px 20px; } 
 .centerJoin .joinCont03 .contBox.box01 { padding: 20px 30px; } 
+.centerJoin .joinCont03 .contBox p.point::before { content: "※"; margin-left: -20px; margin-right: 5px; } 
 .centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; } 
 .centerJoin .joinCont03 .contBox.style_01 { display: flex; gap: 10px } 
 .centerJoin .joinCont03 .contBox.style_01 .comm_select { max-width: 90px; } 
-.centerJoin .joinCont03 .contBox p { font-size: 16px; } 
+.centerJoin .joinCont03 .contBox p { font-size: 16px; word-break: keep-all; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p span { font-size: 16px; } 
 .centerJoin .joinCont03 .contBox .txtWrap ul { margin-top: 10px; } 
 .centerJoin .joinCont03 .contBox .txtWrap li { display: flex; font-size: 16px; } 
@@ -144,7 +145,7 @@
 
 
 .joinCont02 .innerSection { padding: 0; } 
-.joinCont02 .inner { padding: 30px 20px 100px; } 
+.joinCont02 .inner { padding: 50px 20px 100px; } 
 
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 18px; } 
@@ -189,7 +190,8 @@
 .centerJoin .joinCont01 .whiteBox p br { display: none; } 
 .centerJoin .joinCont01 .whiteBox::before { transform: translateX(-50%) scale(0.6); } 
 
-.joinCont02 .section_various .card_wrap .card_item { justify-content: center; padding: 30px 15px; } 
+.joinCont02 .section_various .card_wrap .card_box {height: 570px;}
+.joinCont02 .section_various .card_wrap .card_item { justify-content: center; height: 570px; padding: 30px 15px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 2px 15px; font-size: 14px; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { font-size: 18px; margin-bottom: 20px; text-align: center; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p { margin-top: 5px; font-size: 12px; } 
