@@ -9,15 +9,7 @@
 .mr4 { margin-right: 4px; } 
 a:focus, button:focus { outline: thin dotted; } 
 
-.new_label_01::before {
-    content: 'O&F';
-    padding: 2px 4px;    
-    margin-right: 6px;
-    font-size: 9px;
-    border-radius: 20px;
-    color: #008ae0;
-    border: 1px solid #008ae0;
-}
+.new_label_01::before { content: 'ON&OFF'; padding: 2px 4px; margin-right: 4px; background: #008ae0; color: #fff; font-size: 10px; border-radius: 20px; border: 1px solid #008ae0; } 
 
 #newHeader .nheader_top { background: #008ae0; } 
 #newHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 50px; } 
@@ -67,8 +59,8 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
 #newHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #newHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
-#newHeader .h_mobile_btn .logo { height: 100%;} 
-#newHeader .h_mobile_btn .logo a {display: block; width: 100%; height: 100%; padding: 15px 0;}
+#newHeader .h_mobile_btn .logo { height: 100%; } 
+#newHeader .h_mobile_btn .logo a { display: block; width: 100%; height: 100%; padding: 15px 0; } 
 #newHeader .h_mobile_btn .logo img { height: 100%; } 
 #newHeader .h_mobile_close { position: relative; width: 16px; height: 8px; cursor: pointer; } 
 #newHeader .h_mobile_close span { display: block; width: 16px; height: 2px; position: absolute; top: 50%; background-color: #000; } 
@@ -446,7 +438,6 @@ a:focus, button:focus { outline: thin dotted; }
  #newMain .m_employ .m_employ_wrap .m_employ_box + div { margin-top: 20px; } 
  }
 @media screen and (max-width: 860px) { 
-    
 /* 헤더 */
  #newHeader .h_util { height: 4px; } 
  #newHeader .h_util ul { display: none; } 
@@ -479,8 +470,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newFooter .f_business .f_addr { display: none; } 
 #newFooter .f_address .f_addr { display: block; } 
  }
-@media screen and (max-width: 768px){
-/* 정책정보 */
+@media screen and (max-width: 768px) {/* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit a { display: none; } 
@@ -526,8 +516,8 @@ a:focus, button:focus { outline: thin dotted; }
  .innerSection { padding: 0 10px; } 
  /* 헤더 */
  #newHeader .h_cont { margin-top: 0; } 
- #newHeader .h_cont .logo a {padding: 15px 0;}
- /* #newHeader .h_cont .logo img { width: 80%; }  */
+ #newHeader .h_cont .logo a { padding: 15px 0; } 
+ /* #newHeader .h_cont .logo img { width: 80%; } */
  #newHeader .h_gnb li a { height: 50px; font-size: 16px; line-height: 50px; } 
  #newHeader .h_menu { width: 20px; height: 12px; } 
  #newHeader .h_menu span { width: 20px; height: 2px; } 
