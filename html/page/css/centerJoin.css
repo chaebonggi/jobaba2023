@@ -144,7 +144,7 @@
 
 
 .joinCont02 .innerSection { padding: 0; } 
-.joinCont02 .inner { padding: 30px 20px 50px; } 
+.joinCont02 .inner { padding: 30px 20px 100px; } 
 
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 18px; } 
@@ -189,7 +189,6 @@
 .centerJoin .joinCont01 .whiteBox p br { display: none; } 
 .centerJoin .joinCont01 .whiteBox::before { transform: translateX(-50%) scale(0.6); } 
 
-.joinCont02 .section_various .card_wrap .card_box { height: 650px; } 
 .joinCont02 .section_various .card_wrap .card_item { justify-content: center; padding: 30px 15px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 2px 15px; font-size: 14px; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { font-size: 18px; margin-bottom: 20px; text-align: center; } 
