@@ -82,6 +82,7 @@
 .centerEdu .eduCont02 .btn_arrow:hover:before { background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/05/naverdetails_newpc/img/sp_newpc.png); -webkit-background-size: 348px 328px; background-size: 348px 328px; background-position: -164px -75px; width: 60px; height: 60px; z-index: 10; } 
 
 .centerEdu .eduCont03 { padding: 100px 0 0; } 
+.centerEdu .eduCont03 .inner {padding: 0 10px;}
 .centerEdu .eduCont03 .tabMenu { display: flex; align-items: center; justify-content: space-between; max-width: 980px; width: 100%; margin: 60px auto 50px; padding: 10px 30px; background: #f3f3f3; border-radius: 40px; } 
 .centerEdu .eduCont03 .tabMenu li { color: #000; font-size: 18px; text-align: center; cursor: pointer; } 
 .centerEdu .eduCont03 .tabMenu li.active { padding: 6px 20px; background: #4ba7a9; color: #fff; border-radius: 30px; box-shadow: 0px 0px 7px 0px rgba(0, 132, 134, 0.5); } 
