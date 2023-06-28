@@ -117,7 +117,7 @@
 
 .centerEdu .eduCont04 .innerSection { padding: 100px 10px 300px; } 
 .centerEdu .eduCont04 .qnaList { margin-top: 40px; } 
-.centerEdu .eduCont04 .qnaList a { display: block; padding: 16px 0 18px 80px; position: relative; color: #696969; font-size: 20px; border-top: 1px solid #999999; } 
+.centerEdu .eduCont04 .qnaList a { display: block; padding: 16px 0 18px 80px; position: relative; color: #696969; font-size: 18px; border-top: 1px solid #999999; } 
 .centerEdu .eduCont04 .qnaList li:last-child a { border-bottom: 1px solid #999999; } 
 .centerEdu .eduCont04 .qnaList a::before,
 .centerEdu .eduCont04 .qnaList a::after { content: ''; width: 22px; height: 5px; position: absolute; top: 50%; left: 26px; transform: translateY(-50%); background: #bcbcbc; border-radius: 10px; transition: all 0.5s ease; } 
@@ -128,7 +128,7 @@
 .centerEdu .eduCont04 .qnaList li.active a::after { transform: translateY(-50%) rotate(-90deg); } 
 .centerEdu .eduCont04 .qnaList .answerWrap { display: none; padding: 20px 10px 40px 80px; background: #f3f8f8; border-top: 1px solid #999999; } 
 .centerEdu .eduCont04 .qnaList li:last-child .answerWrap { border-top: none; border-bottom: 1px solid #999999; } 
-.centerEdu .eduCont04 .qnaList .answerWrap p { color: #000; font-size: 18px; font-weight: 300; } 
+.centerEdu .eduCont04 .qnaList .answerWrap p { color: #000; font-size: 16px; font-weight: 300; } 
 
 
 .centerEdu .eduCont05 { position: relative; padding: 100px 10px 30px; background: #e3f1f4; } 
@@ -191,7 +191,7 @@
 
 .centerEdu .eduCont03 { padding: 30px 0 0; } 
 .centerEdu .eduCont03 .tabMenu { margin: 30px auto 20px; padding: 10px;} 
-.centerEdu .eduCont03 .tabMenu li {font-size: 18px;}
+.centerEdu .eduCont03 .tabMenu li {font-size: 16px;}
 .centerEdu .eduCont03 .tabBox .txtWrap strong { font-size: 36px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 20px; word-break: keep-all; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 16px; } 
@@ -242,14 +242,14 @@
 .centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 14px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap a { width: 100%; font-size: 18px; } 
 .centerEdu .eduCont03 .tabBox .btnWrap { margin-top: 20px; } 
-.centerEdu .eduCont03 .tabBox .btnWrap a { font-size: 18px; } 
+.centerEdu .eduCont03 .tabBox .btnWrap a { padding: 15px 0; font-size: 18px; } 
 
 .centerEdu .eduCont04 .qnaList { margin-top: 20px; } 
-.centerEdu .eduCont04 .qnaList a { padding: 16px 0 18px 46px; font-size: 18px; } 
+.centerEdu .eduCont04 .qnaList a { padding: 16px 0 18px 46px; font-size: 14px; } 
 .centerEdu .eduCont04 .qnaList a::before, 
 .centerEdu .eduCont04 .qnaList a::after { width: 12px; top: 50%; left: 15px; } 
 .centerEdu .eduCont04 .qnaList .answerWrap { padding: 20px; } 
-.centerEdu .eduCont04 .qnaList .answerWrap p { font-size: 16px; } 
+.centerEdu .eduCont04 .qnaList .answerWrap p { font-size: 12px; } 
 
 .centerEdu .eduCont05 .titWrap p::before { content: none; } 
 .centerEdu .eduCont05 .titWrap { margin-bottom: 20px; } 
