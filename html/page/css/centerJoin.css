@@ -24,11 +24,11 @@
 .centerJoin .joinMain .innerSection::before { content: ''; width: 415px; height: 246px; position: absolute; right: 84px; bottom: 26px; background: url(../images/centerJoin/main_img01.png) no-repeat; } 
 .centerJoin .joinMain .imgWrap { margin-bottom: 40px; } 
 .centerJoin .joinMain .txtWrap p { color: #000; font-size: 32px; line-height: 1.2; } 
-.centerJoin .joinCont01 .innerSection { max-width: 1000px; padding: 100px 0 100px;} 
+.centerJoin .joinCont01 .innerSection { max-width: 1000px; padding: 100px 0 100px; } 
 
 .centerJoin h2 { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: #000; font-size: 34px; text-align: center; line-height: 1; } 
 .centerJoin h2 span { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-left: 4px; } 
-.centerJoin h2 i { display: inline-block; margin: 0 8px; background-repeat: no-repeat; background-position: center; background-size: contain;} 
+.centerJoin h2 i { display: inline-block; margin: 0 8px; background-repeat: no-repeat; background-position: center; background-size: contain; } 
 .centerJoin h2 i.icon01 { width: 55px; height: 55px; background-image: url(../images/centerJoin/joinCont_icon01.png); } 
 .centerJoin h2 i.icon02 { width: 60px; height: 61px; background-image: url(../images/centerJoin/joinCont_icon02.png); } 
 .centerJoin h2 i.icon03 { width: 60px; height: 53px; background-image: url(../images/centerJoin/joinCont_icon03.png); } 
@@ -45,7 +45,7 @@
 
 .joinCont02 { background: #f3f3f3; } 
 .joinCont02 .innerSection { padding: 100px 20px 0; } 
-.joinCont02 .inner { padding: 0 20px 100px; }
+.joinCont02 .inner { padding: 0 20px 100px; } 
 .joinCont02 .section_various_wrap .pin-spacer { width: 100% !important; max-width: 100%; } 
 .joinCont02 .section_various { overflow: hidden; will-change: contents; } 
 .joinCont02 .section_various .card_wrap { margin-top: 50px; padding: 0 20px; animation-delay: 0.3s; } 
@@ -56,24 +56,24 @@
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { display: block; margin-bottom: 20px; font-size: 32px; line-height: 1.2; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p { margin-top: 10px; padding-left: 10px; font-size: 16px; font-weight: 300; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
-.joinCont02 .section_various .card_wrap .imgWrap { margin-left: 40px; border: 1px solid #dcdcdc; border-radius: 16px; overflow: hidden; } 
+.joinCont02 .section_various .card_wrap .imgWrap { min-width: 400px; margin-left: 40px; border: 1px solid #dcdcdc; border-radius: 16px; overflow: hidden; } 
 .joinCont02 .section_various .card_wrap .imgWrap img { width: 100%; height: 100%; object-fit: cover; } 
 
 
 
 .centerJoin .joinCont03 .innerSection { max-width: 1080px; padding: 100px 10px 280px; } 
 .centerJoin .joinCont03 .joinWrap > p { margin: 40px 0 10px; color: #ff0000; font-size: 18px; text-align: right; } 
-.centerJoin .joinCont03 .item { display: flex; border: 1px solid #cccccc; overflow: hidden;} 
-.centerJoin .joinCont03 .item:nth-of-type(1) { border-radius: 10px 10px 0 0;}
-.centerJoin .joinCont03 .item:last-child { border-radius: 0 0 10px 10px;}
+.centerJoin .joinCont03 .item { display: flex; border: 1px solid #cccccc; overflow: hidden; } 
+.centerJoin .joinCont03 .item:nth-of-type(1) { border-radius: 10px 10px 0 0; } 
+.centerJoin .joinCont03 .item:last-child { border-radius: 0 0 10px 10px; } 
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
 .centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px 10px; font-size: 16px; border: 1px solid #c8c8c8; box-sizing: border-box; } 
-.centerJoin .joinCont03 input[type="tel"] { max-width: 120px; }
-.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #e8e8e8;}
+.centerJoin .joinCont03 input[type="tel"] { max-width: 120px; } 
+.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #e8e8e8; } 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 250px; background: #f5f5f5; font-size: 18px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 250px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 10px 20px; } 
-.centerJoin .joinCont03 .contBox.box01 {padding: 20px 30px;}
+.centerJoin .joinCont03 .contBox.box01 { padding: 20px 30px; } 
 .centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; } 
 .centerJoin .joinCont03 .contBox.style_01 { display: flex; gap: 10px } 
 .centerJoin .joinCont03 .contBox.style_01 .comm_select { min-width: 90px; width: 90px !important; } 
@@ -145,14 +145,17 @@
 .centerJoin .joinCont01 .whiteBox p { margin-top: 20px; font-size: 18px; word-break: keep-all; } 
 
 
-/* .joinCont02 .innerSection { padding: 30px 10px 50px; }  */
-.joinCont02 .section_various .card_wrap { margin-top: 30px; } 
-.joinCont02 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
+.joinCont02 .innerSection { padding: 0; } 
+.joinCont02 .inner { padding: 30px 20px 100px; } 
+
+.joinCont02 .section_various .card_wrap .card_box {height: 600px;}
+.joinCont02 .section_various .card_wrap .card_item { flex-direction: column; height: 600px; padding: 30px 40px; } 
+.joinCont02 .section_various .card_wrap .card_item h3 {padding: 4px 20px;font-size: 18px;} 
 .joinCont02 .section_various .card_wrap .card_item br.forMobile { display: none; } 
-.joinCont02 .section_various .card_wrap .card_item h3 { padding: 6px 24px; margin-bottom: 20px; font-size: 26px; } 
-.joinCont02 .section_various .card_wrap .card_item .txtWrap > span { font-size: 24px; word-break: keep-all; } 
+.joinCont02 .section_various .card_wrap .card_item .txtWrap { text-align: center; } 
+.joinCont02 .section_various .card_wrap .card_item .txtWrap > span { margin-bottom: 40px; font-size: 26px; word-break: keep-all; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p { margin-top: 15px; font-size: 16px; word-break: keep-all; } 
-.joinCont02 .section_various .card_wrap .imgWrap { margin-left: 0; margin-top: 20px; } 
+.joinCont02 .section_various .card_wrap .imgWrap { min-width: auto; margin-left: 0; margin-top: 40px; } 
 
 .centerJoin .joinCont03 .innerSection { padding: 30px 10px 30px; } 
 .centerJoin .joinCont03 .joinWrap > p { margin: 20px 0 10px; font-size: 12px; } 
@@ -210,5 +213,4 @@
 .centerJoin .joinCont04 .titWrap p::before { content: none; } 
 .centerJoin .joinCont04 .txtWrap p { font-size: 16px; } 
 .centerJoin .joinCont04 .txtWrap p::after { width: 70px; height: 22px; } 
-
- }
+}
