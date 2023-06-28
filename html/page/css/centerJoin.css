@@ -191,7 +191,7 @@
  .centerJoin .joinMain .txtWrap p { font-size: 18px; } 
  
  .centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
-.centerJoin .joinCont01 ul li { width: 100%; } 
+.centerJoin .joinCont01 ul li { width: 80%; } 
 .centerJoin .joinCont01 ul li + li { margin-top: 50px; } 
 
 .centerJoin .joinCont01 .whiteBox { border: 4px solid #e7e7e7; } 
