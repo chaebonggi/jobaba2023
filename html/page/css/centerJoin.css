@@ -180,7 +180,7 @@
  }
  
  @media screen and (max-width: 640px){
- .centerJoin h2 { font-size: 20px; } 
+ .centerJoin h2 { font-size: 24px; } 
  .centerJoin h2 i {margin: 0 2px;}
  .centerJoin h2 i.icon01 { width: 25px; height: 25px;} 
  .centerJoin h2 i.icon02 { width: 30px; height: 31px;} 
