@@ -11,6 +11,9 @@ a:focus, button:focus { outline: thin dotted; }
 
 .new_label_01::before { content: 'ON&OFF'; padding: 2px 4px; margin-right: 4px; background: #008ae0; color: #fff; font-size: 10px; border-radius: 20px; border: 1px solid #008ae0; } 
 
+#newHeader.fixed_gnb {width: 100%; position: fixed; z-index: 9999;}
+#newHeader.fixed_gnb .nheader_top {display: none;}
+#newHeader.fixed_gnb .h_cont {margin-top: 0;}
 #newHeader .nheader_top { background: #008ae0; } 
 #newHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 50px; } 
 #newHeader .h_util ul { display: flex; } 
@@ -33,7 +36,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_menu span:last-child { top: 100%; } 
 #newHeader .h_search { margin-left: 34px; flex-shrink: 0; } 
 #newHeader .nheader_bottom { position: relative; } 
-#newHeader .h_gnb { display: flex; align-items: center; max-width: 750px; width: 100%; position: absolute; top: -70px; left: 50%; transform: translateX(-50%); } 
+#newHeader .h_gnb { display: flex; align-items: center; max-width: 750px; width: 100%; position: absolute; top: -71px; left: 50%; transform: translateX(-50%); } 
 #newHeader .h_gnb li { width: 150px; text-align: center; } 
 #newHeader .h_gnb li a { display: block; height: 70px; color: #000; font-size: 22px; line-height: 70px; } 
 /* 헤더 메뉴 */
@@ -441,6 +444,7 @@ a:focus, button:focus { outline: thin dotted; }
 /* 헤더 */
  #newHeader .h_util { height: 4px; } 
  #newHeader .h_util ul { display: none; } 
+ #newHeader.fixed_gnb .h_gnb { display: none;}
  #newHeader .h_gnb { max-width: 100%; position: static; transform: none; } 
  #newHeader .h_gnb li a { padding: 0; } 
  #newHeader .h_gnb_menu { display: none !important; } 

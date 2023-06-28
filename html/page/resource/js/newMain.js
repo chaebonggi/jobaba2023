@@ -243,3 +243,17 @@
         let randomNumber = Math.floor(Math.random() * 8) + 1;
         image.setAttribute('src', `./images/main/logo_0${randomNumber}.png`);
     });
+
+    // 헤더 fixed
+    var $newHeader = $('#newHeader');
+    var gnbOffsetTop = $newHeader.offset().top;
+
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > gnbOffsetTop) {
+            $newHeader.addClass('fixed_gnb');
+        } else {
+            $newHeader.removeClass('fixed_gnb');
+        }
+    });
