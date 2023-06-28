@@ -45,7 +45,7 @@
 
 .joinCont02 { background: #f3f3f3; } 
 .joinCont02 .innerSection { padding: 100px 20px 0; } 
-.joinCont02 .inner { padding: 0 20px 100px; } 
+.joinCont02 .inner { padding: 0 20px 180px; } 
 .joinCont02 .section_various_wrap .pin-spacer { width: 100% !important; max-width: 100%; } 
 .joinCont02 .section_various { overflow: hidden; will-change: contents; } 
 .joinCont02 .section_various .card_wrap { margin-top: 50px; padding: 0 20px; animation-delay: 0.3s; } 
@@ -68,7 +68,7 @@
 .centerJoin .joinCont03 .item:last-child { border-radius: 0 0 10px 10px; } 
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
 .centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px 10px; font-size: 16px; border: 1px solid #c8c8c8; box-sizing: border-box; } 
-.centerJoin .joinCont03 input[type="tel"] { max-width: 120px; width: 100%; } 
+.centerJoin .joinCont03 input[type="tel"] { max-width: 130px; width: 100%; } 
 .centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #e8e8e8; } 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 250px; background: #f5f5f5; font-size: 18px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 250px); background: #fff; } 
@@ -77,7 +77,7 @@
 .centerJoin .joinCont03 .contBox p.point::before { content: "※"; margin-left: -20px; margin-right: 5px; } 
 .centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; } 
 .centerJoin .joinCont03 .contBox.style_01 { display: flex; gap: 10px } 
-.centerJoin .joinCont03 .contBox.style_01 .comm_select { max-width: 90px; } 
+.centerJoin .joinCont03 .contBox.style_01 .comm_select { max-width: 90px; min-width: initial;} 
 .centerJoin .joinCont03 .contBox p { font-size: 16px; word-break: keep-all; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p span { font-size: 16px; } 
 .centerJoin .joinCont03 .contBox .txtWrap ul { margin-top: 10px; } 
