@@ -175,9 +175,8 @@
 .centerEdu .eduCont01 .serviceSlide { margin-top: 30px; padding-bottom: 50px; } 
 
 .centerEdu .eduCont01 .slideLink { min-height: 470px; padding: 20px 20px; border-radius: 30px; } 
-.centerEdu .eduCont01 .slideLink::before { margin: 0 auto 20px; transform: scale(0.8); } 
-.centerEdu .eduCont01 .slideLink strong { margin-bottom: 20px; font-size: 26px; } 
-.centerEdu .eduCont01 .slideLink p { font-size: 20px; word-break: keep-all; } 
+.centerEdu .eduCont01 .slideLink strong { margin-bottom: 20px; font-size: 24px; } 
+.centerEdu .eduCont01 .slideLink p { font-size: 18px; word-break: keep-all; } 
 
 .centerEdu .eduCont02 .innerSection { max-width: 370px; padding: 30px 0 60px; } 
 .centerEdu .eduCont02 .guideSlide { margin-top: 40px; } 
@@ -218,7 +217,7 @@
 
 .centerEdu h2 { font-size: 24px; } 
 .centerEdu .eduCont01 .innerSection { padding: 30px 10px; } 
-.centerEdu .eduCont01 .serviceSlide {margin-top: 10px;}
+.centerEdu .eduCont01 .serviceSlide {margin-top: 20px;}
 .centerEdu .eduCont01 .slideLink { min-height: 430px; padding: 0 10px; text-align: center; } 
 .centerEdu .eduCont01 .slideLink::before { margin: 0 auto; } 
 .centerEdu .eduCont01 .slideLink strong { font-size: 22px; } 
