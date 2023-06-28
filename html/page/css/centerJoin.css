@@ -146,7 +146,7 @@
 
 
 .joinCont02 .innerSection { padding: 0; } 
-.joinCont02 .inner { padding: 30px 20px 50px; } 
+.joinCont02 .inner { padding: 30px 20px 100px; } 
 
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; padding: 30px 40px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 {padding: 4px 20px;font-size: 18px;} 
