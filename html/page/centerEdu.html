@@ -212,33 +212,35 @@
 		<article class="eduCont03" id="moveTo">
 			<div class="contWrap">
 				<div class="inner">
-					<h2>교육과정 <span class="fcMint"><i class="icon03"></i>소개</span></h2>
-					<ul class="tabMenu">
-						<li class="active" data-tab="tab01">
-							<span># 취업준비</span>
-						</li>
-						<li data-tab="tab02">
-							<span># 자격증</span>
-						</li>
-						<li data-tab="tab03">
-							<span># 외국어</span>
-						</li>
-						<li data-tab="tab04">
-							<span># IT</span>
-						</li>
-						<li data-tab="tab05">
-							<span># 창업</span>
-						</li>
-						<li data-tab="tab06">
-							<span># 직장적응</span>
-						</li>
-						<li data-tab="tab07">
-							<span># 비즈니스</span>
-						</li>
-						<li data-tab="tab08">
-							<span># 유관기관</span>
-						</li>
-					</ul>
+					<h2>교육과정 <span class="fcMint"><i class="icon03"></i>소개</span></h2>		
+					<div class="swiper-container snbSwiper">
+						<ul class="swiper-wrapper tabMenu">
+							<li class="swiper-slide active" data-tab="tab01" >
+								<a href="javascript:void(0);"><span># 취업준비</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab02">
+								<a href="javascript:void(0);"><span># 자격증</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab03">
+								<a href="javascript:void(0);"><span># 외국어</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab04">
+								<a href="javascript:void(0);"><span># IT</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab05">
+								<a href="javascript:void(0);"><span># 창업</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab06">
+								<a href="javascript:void(0);"><span># 직장적응</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab07">
+								<a href="javascript:void(0);"><span># 비즈니스</span></a>
+							</li>
+							<li class="swiper-slide" data-tab="tab08">
+								<a href="javascript:void(0);"><span># 유관기관</span></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="tabWrap">
 					<div class="innerSection">
@@ -477,20 +479,6 @@
 		
 	$(document).ready(function() {
 
-		function handleTabClick($btn, $items, tabAttr, $btn02) {
-			$btn.click(function() {
-				var tab = $(this).attr(tabAttr);
-				$btn.removeClass('active');
-				$(this).addClass('active');
-				$items.removeClass('active');
-				$items.filter('[data-tab="' + tab + '"]').addClass('active');
-				$btn02.removeClass('active');
-				$btn02.filter('[data-tab="' + tab + '"]').addClass('active');
-			});
-		}
-		handleTabClick($('.tabMenu li'), $('.tabBox'), 'data-tab');
-		handleTabClick($('.tagMenu li'), $('.tabBox'), 'data-tab', $('.tabMenu li'));
-
 		$("ul.qnaList li:first .answerWrap").css("display", "block");
 		$('ul.qnaList a').click(function(){
 			$('ul.qnaList li').removeClass('active');
@@ -498,7 +486,7 @@
 			$(this).parent().addClass('active');
 			$(this).next().slideDown(300);
 		});
-
+		// 대상별 활용 가이드
 		guideSwiper = new Swiper('.guideSlide', {
 			slidesPerView: 1.2,
             centeredSlides: true,
@@ -573,10 +561,69 @@
             },
         });
 
-		$('.tagMenu li').click(function(e){
+		// 교육과정
+		var scrollSwiper = new Swiper('.snbSwiper', {
+            slidesPerView: 'auto',
+            preventClicks: true,
+            preventClicksPropagation: false,
+            observer: true,
+            observeParents: true
+        });
+        var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+        $snbSwiperItem.click(function(){
+            var target = $(this).parent();
+			var tab = $(this).parent().attr('data-tab');
+            $snbSwiperItem.parent().removeClass('active')
+            target.addClass('active');
+			$('.tabBox').removeClass('active');
+			$('.tabBox').filter('[data-tab="' + tab + '"]').addClass('active');
+            if ($(window).width() <= 980) {
+				muCenter(target);
+			}
+        })
+
+		var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+		var $tagMenuItems = $('.tagMenu li');
+
+		$tagMenuItems.click(function() {
+			var tab = $(this).attr('data-tab');
 			var move = $(this).data('href');
+			var target = $('.snbSwiper .swiper-wrapper .swiper-slide[data-tab="' + tab + '"]');
+
+			$snbSwiperItem.parent().removeClass('active');
+			target.addClass('active');
+			$('.tabBox').removeClass('active');
+			$('.tabBox').filter('[data-tab="' + tab + '"]').addClass('active');
 			$("html, body").animate({ scrollTop: $(move).offset().top }, 500);
+			if ($(window).width() <= 980) {
+				muCenter(target);
+			}
 		});
+
+        function muCenter(target){
+            var snbwrap = $('.snbSwiper .swiper-wrapper');
+            var targetPos = target.position();
+            var box = $('.snbSwiper');
+            var boxHarf = box.width()/2;
+            var pos;
+            var listWidth=0;
+            
+            snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
+            
+            var selectTargetPos = targetPos.left + target.outerWidth()/2;
+            if (selectTargetPos <= boxHarf) { // left
+                pos = 0;
+            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                pos = listWidth-box.width();
+            }else {
+                pos = selectTargetPos - boxHarf;
+            }
+            
+            setTimeout(function(){snbwrap.css({
+                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+                "transition-duration": "500ms"
+            })}, 200);
+        }
 
 	});
 </script>

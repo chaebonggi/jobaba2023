@@ -83,9 +83,11 @@
 
 .centerEdu .eduCont03 { padding: 100px 0 0; } 
 .centerEdu .eduCont03 .inner {padding: 0 10px;}
-.centerEdu .eduCont03 .tabMenu { display: flex; align-items: center; justify-content: space-between; max-width: 980px; width: 100%; margin: 60px auto 50px; padding: 10px 30px; background: #f3f3f3; border-radius: 40px; } 
-.centerEdu .eduCont03 .tabMenu li { color: #000; font-size: 18px; text-align: center; cursor: pointer; } 
-.centerEdu .eduCont03 .tabMenu li.active { padding: 6px 20px; background: #4ba7a9; color: #fff; border-radius: 30px; box-shadow: 0px 0px 7px 0px rgba(0, 132, 134, 0.5); } 
+.centerEdu .eduCont03 .snbSwiper {max-width:980px; padding: 10px 30px; margin: 60px auto 50px; background: #f3f3f3; border-radius: 40px; overflow: hidden;}
+.centerEdu .eduCont03 .tabMenu {display: flex; justify-content: space-between;} 
+.centerEdu .eduCont03 .tabMenu .swiper-slide { width: auto !important;} 
+.centerEdu .eduCont03 .tabMenu .swiper-slide a {display: block; padding: 6px 20px; color: #000; font-size: 18px; border-radius: 30px;}
+.centerEdu .eduCont03 .tabMenu .swiper-slide.active a { background: #4ba7a9; color: #fff; box-shadow: 0px 0px 7px 0px rgba(0, 132, 134, 0.5); } 
 .centerEdu .eduCont03 .tabWrap { background: url(../images/centerEdu/eduCont03_bg.jpg) no-repeat; background-size: cover; } 
 .centerEdu .eduCont03 .innerSection { max-width: 980px; padding: 70px 10px; } 
 .centerEdu .eduCont03 .tabBox { display: none; } 
@@ -166,9 +168,6 @@
  .centerEdu .eduCont02 .innerSection { max-width: 740px; } 
  .centerEdu .eduCont02 .swiper-navigation { display: none; } 
 
-
- .centerEdu .eduCont03 .tabMenu { padding: 0; white-space: nowrap; overflow-x: scroll; border: 10px solid #f3f3f3;} 
- .centerEdu .eduCont03 .tabMenu li { min-width: 120px; } 
  .centerEdu .eduCont03 .tabBox .txtWrap::before { opacity: 0.2; } 
  }
 
@@ -199,14 +198,14 @@
 .centerEdu .eduCont02 .whiteBox li { font-size: 20px; } 
 .centerEdu .eduCont02 .slideLink { width: 370px; height: 500px; } 
 .centerEdu .eduCont02 .swiper-slide-active .tagMenu { display: flex; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { margin-bottom: 60px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap { margin-bottom: 50px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 38px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong::after { transform: scale(0.8); } 
 .centerEdu .eduCont02 .tagMenu li { padding: 12px 0; font-size: 18px; } 
 
 .centerEdu .eduCont03 { padding: 30px 0 0; } 
-.centerEdu .eduCont03 .tabMenu { margin: 30px auto 20px;} 
-.centerEdu .eduCont03 .tabMenu li { font-size: 16px; } 
+.centerEdu .eduCont03 .snbSwiper { margin: 30px auto 20px;} 
+.centerEdu .eduCont03 .tabMenu a { font-size: 16px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap strong { font-size: 36px; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li { font-size: 20px; word-break: keep-all; } 
 .centerEdu .eduCont03 .tabBox .txtWrap li span { font-size: 16px; } 
@@ -244,7 +243,6 @@
 .centerEdu .eduCont02 .tagMenu li {font-size: 16px;}
 .centerEdu .eduCont02 .slideLink { width: 300px; } 
 .centerEdu .eduCont02 .whiteBox li { min-height: auto; font-size: 16px; word-break: keep-all; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { padding: 0 20px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 32px; } 
 
 .centerEdu .eduCont03 .innerSection { padding: 30px 10px; } 
