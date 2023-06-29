@@ -240,34 +240,6 @@
 						</li>
 					</ul>
 				</div>
-				<!-- <div class="swiper-container snbSwiper" style="max-width:420px">
-					<ul class="swiper-wrapper tabMenu">
-						<li class="swiper-slide" data-tab="tab01">
-							<a href="javascript:void(0);"><span># 취업준비</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab02">
-							<a href="javascript:void(0);"><span># 자격증</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab03">
-							<a href="javascript:void(0);"><span># 외국어</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab04">
-							<a href="javascript:void(0);"><span># IT</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab05">
-							<a href="javascript:void(0);"><span># 창업</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab06">
-							<a href="javascript:void(0);"><span># 직장적응</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab07">
-							<a href="javascript:void(0);"><span># 비즈니스</span></a>
-						</li>
-						<li class="swiper-slide" data-tab="tab08">
-							<a href="javascript:void(0);"><span># 유관기관</span></a>
-						</li>
-					</ul>
-				</div> -->
 				<div class="tabWrap">
 					<div class="innerSection">
 						<div class="tabBox active" data-tab="tab01">
@@ -605,77 +577,6 @@
 			var move = $(this).data('href');
 			$("html, body").animate({ scrollTop: $(move).offset().top }, 500);
 		});
-
-		// 
-		// var snbSwiper = new Swiper('.snbSwiper', {
-        //     slidesPerView: 'auto',
-        //     preventClicks: true,
-        //     preventClicksPropagation: false,
-        //     observer: true,
-        //     observeParents: true
-        // });
-        // var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
-        // $snbSwiperItem.click(function(){
-        //     var target = $(this).parent();
-        //     $snbSwiperItem.parent().removeClass('on')
-        //     target.addClass('on');
-        //     muCenter(target);
-        // })
-
-        // function muCenter(target){
-        //     var snbwrap = $('.snbSwiper .swiper-wrapper');
-        //     var targetPos = target.position();
-        //     var box = $('.snbSwiper');
-        //     var boxHarf = box.width()/2;
-        //     var pos;
-        //     var listWidth=0;
-            
-        //     snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
-            
-        //     var selectTargetPos = targetPos.left + target.outerWidth()/2;
-        //     if (selectTargetPos <= boxHarf) {
-        //         pos = 0;
-        //     }else if ((listWidth - selectTargetPos) <= boxHarf) { 
-        //         pos = listWidth-box.width();
-        //     }else {
-        //         pos = selectTargetPos - boxHarf;
-        //     }
-            
-        //     setTimeout(function(){snbwrap.css({
-        //         "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
-        //         "transition-duration": "500ms"
-        //     })}, 200);
-        // }
-
-		// // 
-		// var ww = $(window).width();
-		// var mySwiper = undefined;
-
-		// function initSwiper() {
-
-		// if (ww < 1280 && mySwiper == undefined) {
-		// 	mySwiper = new Swiper(".swiper-container", {
-		// 	slidesPerView: 5,
-		// 	spaceBetween: 10,
-		// 	simulateTouch: true,
-		// 	loop: true,
-		// 	autoplay: {
-		// 		delay: 500,
-		// 		disableOnInteraction: false,
-		// 	},
-		// 	});
-		// } else if (ww >= 1280 && mySwiper != undefined) {
-		// 	mySwiper.destroy();
-		// 	mySwiper = undefined;
-		// }
-		// }
-
-		// initSwiper();
-
-		// $(window).on('resize', function () {
-		// ww = $(window).width();
-		// initSwiper();
-		// });
 
 	});
 </script>
