@@ -1,6 +1,12 @@
 @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
-.gBold { font-family: 'GmarketSansBold','Noto Sans KR'; } 
-.gMedium { font-family: 'GmarketSansMedium','Noto Sans KR'; } 
+@font-face { font-family: 'KOHIBaeumOTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff'); font-weight: normal; font-style: normal; } 
 
-.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; }  
+.themaWrap .kohiBeaum {font-family: 'KOHIBaeumOTF','Noto Sans KR' !important;}
+.themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
+.themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.themaWrap .fcPurple { color: #6d26e3; } 
+.themaWrap .fcBlue { color: #003181; } 
+
+.themaWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
