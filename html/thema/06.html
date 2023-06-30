@@ -137,6 +137,30 @@
 						background: url(./resource/images/thema/230629/thema_list_01.png) no-repeat;
 						background-size: contain;
 					}
+					.themaWrap h3.icon02::before {						
+						width: 323px;
+						height: 199px;						
+						background: url(./resource/images/thema/230629/thema_list_02.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap h3.icon03::before {						
+						width: 323px;
+						height: 182px;						
+						background: url(./resource/images/thema/230629/thema_list_03.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap h3.icon04::before {						
+						width: 323px;
+						height: 198px;						
+						background: url(./resource/images/thema/230629/thema_list_04.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap h3.icon05::before {						
+						width: 332px;
+						height: 192px;						
+						background: url(./resource/images/thema/230629/thema_list_05.png) no-repeat;
+						background-size: contain;
+					}
 					
 				</style>
 				<h3 class="gBold icon01">공감 채용</h3>
@@ -147,6 +171,8 @@
 						padding: 40px 60px;
 						background: #d9f3fa;
 						border: 1px solid #000;
+						background-repeat: no-repeat;
+						background-size: auto;
 					}					
 					.themaWrap .etcWrap .boxIcon span::before {
 						content: '';
@@ -184,19 +210,22 @@
 					}
 					.themaWrap .etcWrap .txtBox.bg_01 {
 						background-image: url(./resource/images/thema/230629/thema_ev01_img02.png);
-						background-repeat: no-repeat;
 						background-position: right 78px bottom -10px;
-						background-size: auto;
+					}
+					.themaWrap .etcWrap .txtBox.bg_02 {
+						background-image: url(./resource/images/thema/230629/thema_ev01_img03.png);
+						background-position: right 78px bottom -10px;						
 					}
 					.themaWrap .etcWrap .etc {
 						display: flex;
 						align-items: center;
-						padding-left: 112px;
+						padding: 0 100px;
 					}
 					.themaWrap .etcWrap .etc p {
 						color: #000;
 						font-size: 20px;
 						line-height: 1.3;
+						word-break: keep-all;
 					}
 					.themaWrap .etcWrap .etc::before {
 						content: '';
@@ -226,66 +255,99 @@
 				
 				<style>
 					.themaWrap .boxWrap .tit {
-						margin: 60px 0 40px;
+						margin: 80px 0 40px;
 						font-size: 40px;
 						font-weight: 600;
 						text-align: center;
 						letter-spacing: -0.5px;
 					}
-					.themaWrap .boxWrap .whiteBox {
+					.themaWrap .whiteBox {
 						margin: 0 50px;
 						padding: 40px 50px;
 						background: #fff;
 						border-radius: 30px;
 						box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
 					}
-					.themaWrap .itemBox {
+					.themaWrap .whiteBox.boxStyle_01 .itemBox {
 						display: flex;
 						align-items: center;
 						padding: 0 30px;
 					}
-					.themaWrap .itemBox + .itemBox {
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 {
+						flex-direction: row-reverse;
+					}
+					.themaWrap .whiteBox.boxStyle_01 .itemBox + .itemBox {
 						margin-top: 20px;
 						padding-top: 20px;
 						border-top: 2px dotted #cacaca;
 					}
-					.themaWrap .itemBox .titWrap {
+					.themaWrap .whiteBox.boxStyle_01 .titWrap {
 						flex-shrink: 0;
 						width: 205px;
 						height: 205px;
 						position: relative;
 						margin-right: 20px;
 						padding: 20px;
-						background: #54c6db;
 						border-radius: 50%;
 					}
-					.themaWrap .itemBox .titWrap p {
-						margin: 10px 0;
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap {
+						margin-right: 0;
+						margin-left: 20px;
+					}
+					.themaWrap .whiteBox.boxStyle_01 .titWrap p {
+						margin: 16px 0;
 						color: #fff;
 						font-size: 26px;
 						text-align: center;
+						line-height: 1.2;
 						word-break: keep-all;
 					}
-					.themaWrap .itemBox .titWrap::after {
+					.themaWrap .whiteBox.boxStyle_01 .itemBox .titWrap::after {
 						content: '';
-						display: block;
+						display: block;						
+						margin: 0 auto;						
+					}
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item01 .titWrap::after {
 						width: 64px;
 						height: 58px;
-						margin: 0 auto;
 						background: url(./resource/images/thema/230629/thema_icon02.png) no-repeat;
 						background-size: contain;
 					}
-					.themaWrap .itemBox .titWrap::before {
-						content: '01';
-						position: absolute;
-						left: -10px;
-						bottom: 10px;
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap::after {
+						width: 60px;
+						height: 64px;
+						background: url(./resource/images/thema/230629/thema_icon03.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item03 .titWrap::after {
+						width: 60px;
+						height: 75px;
+						background: url(./resource/images/thema/230629/thema_icon04.png) no-repeat;
+						background-size: contain;
+					}
+					
+					.themaWrap .whiteBox.boxStyle_01 .itemBox .titWrap::before {						
+						position: absolute;						
+						left: -10px;					
 						color: #dadada;
 						font-size: 48px;
 						font-family: 'KOHIBaeumOTF';
 						font-style: italic;
 					}
-					.themaWrap .itemBox .txtWrap p {
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item01 .titWrap::before {
+						content: '01';
+						bottom: 10px;
+					}
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap::before {
+						content: '02';
+						bottom: 0;
+					}
+					.themaWrap .whiteBox.boxStyle_01 .itemBox.item03 .titWrap::before {
+						content: '03';
+						bottom: 0;
+					}
+
+					.themaWrap .whiteBox.boxStyle_01 .txtWrap p {
 						color: #565656;
 						font-size: 22px;
 						font-weight: 100;
@@ -295,8 +357,8 @@
 				<div class="boxWrap">
 					<p class="tit ">공감 채용에 임하는 구직자세!</p>
 					<div class="whiteBox boxStyle_01">
-						<div class="itemBox itme01">
-							<div class="titWrap">
+						<div class="itemBox item01">
+							<div class="titWrap bgSky">
 								<p>정확한 채용서류 제출</p>
 							</div>
 							<div class="txtWrap">
@@ -307,7 +369,7 @@
 							</div>
 						</div>
 						<div class="itemBox item02">
-							<div class="titWrap">
+							<div class="titWrap bgBlue">
 								<p>능동적인<br> 면접 자세</p>
 							</div>
 							<div class="txtWrap">
@@ -318,7 +380,7 @@
 							</div>
 						</div>
 						<div class="itemBox item03">
-							<div class="titWrap">
+							<div class="titWrap bgGreen">
 								<p>공감채용<br> 제도 건의</p>
 							</div>
 							<div class="txtWrap">
@@ -340,12 +402,80 @@
 		</article>
 		<article class="event03">
 			<div class="innerSection">
-
+				<h3 class="gBold icon02">온보딩 채용</h3>
+				<div class="etcWrap">
+					
+					<div class="txtBox bg_02">	
+						<div class="boxIcon">
+							<span></span>
+							<span></span>
+						</div>					
+						<p>신규 직원이 조직에 수월히 적응할 수 있도록<br> 업무에 필요한 지식이나 기술 등을 안내 · 교육하는 과정</p>
+					</div>
+					<div class="etc">
+						<p>채용이 확정된 이후에 조직에 잘 적응하는 것도 취업의 한 과정입니다!<br>
+							온보딩 채용에 대해 자세히 이해하고 조직에서 인정받는 인재로 성장합시다!
+						</p>
+					</div>
+				</div>
 			</div>
 		</article>
 		<article class="event04">
 			<div class="innerSection">
-
+				<h3 class="gBold icon03">실무형 인재</h3>
+				<div class="etcWrap">
+					
+					<div class="txtBox bg_03">	
+						<div class="boxIcon">
+							<span></span>
+							<span></span>
+						</div>					
+						<p>단순 스펙이 뛰어난 지원자보다 지원직무에 적합한<br>
+							역량을 갖춘 사람을 채용하기를 원하고 있습니다.</p>
+					</div>
+					
+				</div>
+			</div>
+		</article>
+		<article class="event05">
+			<div class="innerSection">
+				<h3 class="gBold icon04">멀티 포텐셜라이트 인재</h3>
+				<div class="etcWrap">
+					
+					<div class="txtBox bg_04">	
+						<div class="boxIcon">
+							<span></span>
+							<span></span>
+						</div>					
+						<p>한 우물만 파는 시대는 끝났다?!<br>
+							다방면에서 유능한 인재가 되어볼까요?</p>
+					</div>
+					<div class="etc">
+						<p>한 가지만 잘해서는 살아남기 힘든 시대,<br>
+							기업에서는 아이디어 통합과 빠른 습득력을 갖춘 다재다능한 인재에 
+							관심을 기울이고 있습니다!</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="event06">
+			<div class="innerSection">
+				<h3 class="gBold icon05">디지털 인재</h3>
+				<div class="etcWrap">
+					
+					<div class="txtBox bg_05">	
+						<div class="boxIcon">
+							<span></span>
+							<span></span>
+						</div>					
+						<p>디지털 시대로의 세계사적 대전환에<br>
+							어울리는 인재가 되어봅시다!</p>
+					</div>
+					<div class="etc">
+						<p>인공지능과 소프트웨어를 기반으로 한 디지털 전환이 가속화하면서 
+							전 산업분야에서 디지털 인재를 필요로 하고 있습니다. </p>
+					</div>
+				</div>
 			</div>
 		</article>
 		

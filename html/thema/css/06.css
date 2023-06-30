@@ -5,8 +5,16 @@
 .themaWrap .kohiBeaum {font-family: 'KOHIBaeumOTF','Noto Sans KR' !important;}
 .themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
 .themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+
 .themaWrap .fcPurple { color: #6d26e3; } 
 .themaWrap .fcBlue { color: #003181; } 
+.themaWrap .bgSky {background: #54c6db;}
+.themaWrap .bgBlue {background: #2a82cc;}
+.themaWrap .bgGreen {background: #7fd256;}
 
 .themaWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
 .themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+
+article {
+    border: 1px solid #eee;
+}
