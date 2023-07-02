@@ -27,45 +27,159 @@
 </head>
 <body>
 	<div class="themaWrap">
+		<style>
+			.themaWrap .mainVisual {
+				background: url(./resource/images/thema/230629/thema_main_bg.jpg) no-repeat;
+				background-size: cover;
+			}
+			.themaWrap .mainVisual .innerSection {
+				max-width: 100%;
+				padding: 100px 0 220px;		
+				background-image: url(./resource/images/thema/230629/thema_main_img01.png);
+				background-repeat: no-repeat;
+				background-position: top -80px center;		
+			}
+			.themaWrap .mainVisual .imgWrap {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.themaWrap .mainVisual .txtWrap {
+				text-align: center;
+			}
+			.themaWrap .mainVisual .txtWrap span {
+				display: inline-block;
+				padding: 6px 30px 2px;
+				margin-bottom: 20px;
+				background: #fff;
+				font-size: 32px;
+				border: 2px solid #000;
+				border-radius: 40px;
+				box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 1);
+			}
+			.themaWrap .mainVisual .txtWrap p {
+				color: #000;
+				font-size: 30px;
+			}
+		</style>
 		<article class="mainVisual">
 			<div class="innerSection">
 				<div class="imgWrap">
 					<img src="./resource/images/thema/230629/main_title.png" alt="2023 채용트렌드 그잡채">
 				</div>
 				<div class="txtWrap">
-					<span>취업을 똑똑하게!</span>
-					<p>잡아바와 함께 2023 채용트렌드를 제대로 알아보고<br>
+					<span class="gBold">취업을 똑똑하게!</span>
+					<p>잡아바와 함께 <strong class="gBold">2023 채용트렌드</strong>를 제대로 알아보고<br>
 						취업준비해볼까요?</p>
 				</div>
 			</div>
 		</article>
+		<style>
+			.themaWrap .event01 {
+				position: relative;
+				margin-top: -30px;
+				background: url(./resource/images/thema/230629/thema_ev01_bg.png) no-repeat top;
+				background-size: cover;
+			}
+			.themaWrap .event01 .innerSection {
+				padding: 200px 0;
+			}
+			.themaWrap .event01 .item + .item {
+				margin-top: 60px;
+			}
+			.themaWrap .event01 .listTit {
+				margin-bottom: 20px;
+				font-size: 40px;
+			}
+			.themaWrap .event01 .listTit strong {
+				color: #003181;
+				font-size: 46px;
+			}
+			.themaWrap .event01 ul {
+				display: flex;
+				gap: 0 20px;
+			}
+			.themaWrap .event01 li {
+				width: calc(100% / 3 - 40px);
+				height: 240px;
+				background: #fff;
+				border-radius: 20px;
+				overflow: hidden;
+				border: 5px solid transparent;
+				transition: all 0.35s;				
+			}
+			.themaWrap .event01 li a {
+				display: block;
+				width: 100%;
+				height: 240px;
+				padding: 20px;
+				background-repeat: no-repeat;
+				background-size: auto;				
+			}
+			.themaWrap .event01 li:hover {
+				border: 5px solid #003181;
+				transform: translateY(-10px);
+				box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.1);
+			}
+			.themaWrap .event01 li a span {
+				color: #00a6cc;
+				font-style: 16px;
+				font-family: 'GmarketSansBold' !important;
+			}
+			.themaWrap .event01 li a p {
+				color: #003181;
+				font-size: 32px;
+				font-family: 'GmarketSansBold' !important;
+				word-break: keep-all;
+			}
+			.themaWrap .event01 li a.icon01 {
+				background-image: url(./resource/images/thema/230629/thema_ev01_img02.png);
+				background-position: center bottom;
+			}
+			.themaWrap .event01 li a.icon02 {
+				background-image: url(./resource/images/thema/230629/thema_ev01_img03.png);
+				background-position: right bottom;
+			}
+			.themaWrap .event01 li a.icon03 {
+				background-image: url(./resource/images/thema/230629/thema_ev01_img04.png);
+				background-position: right bottom;
+			}
+			.themaWrap .event01 li a.icon04 {
+				background-image: url(./resource/images/thema/230629/thema_ev01_img05.png);
+				background-position: right bottom;
+			}
+			.themaWrap .event01 li a.icon05 {
+				background-image: url(./resource/images/thema/230629/thema_ev01_img06.png);
+				background-position: right bottom;
+			}
+			
+		</style>
 		<article class="event01">
 			<div class="innerSection">
-				<div>
-					<p class="listTit">기업에서 MZ를 공략하는 <strong>채용</strong></p> 
+				<div class="item">
+					<p class="listTit gBold">기업에서 MZ를 공략하는 <strong class="gBold">채용</strong></p> 
 					<ul>
-						<li><a href="">
+						<li><a href="" class="icon01">
 							<span>Recipe.01</span>
 							<p>공감 채용</p>
 						</a></li>
-						<li><a href="">
+						<li><a href="" class="icon02">
 							<span>Recipe.02</span>
 							<p>온보딩 채용</p>
 						</a></li>
 					</ul>
 				</div>
-				<div>
-					<p class="listTit">기업에서 원하는 <strong>인재</strong></p>
+				<div class="item">
+					<p class="listTit gBold">기업에서 원하는 <strong class="gBold">인재</strong></p>
 					<ul>
-						<li><a href="">
+						<li><a href="" class="icon03">
 							<span>Recipe.01</span>
 							<p>실무형 인재</p>
 						</a></li>
-						<li><a href="">
+						<li><a href="" class="icon04">
 							<span>Recipe.02</span>
 							<p>멀티포텐셜라이트 인재</p>
 						</a></li>
-						<li><a href="">
+						<li><a href="" class="icon05">
 							<span>Recipe.03</span>
 							<p>디지털 인재</p>
 						</a></li>
@@ -107,6 +221,14 @@
 					<h2 class="gBold">기업에서 MZ를 공략하는 <span class="gBold fcBlue">채용</span></h2>
 				</div>
 				<style>
+					.themaWrap .event02 {
+						margin-top: -30px;
+						background: url(./resource/images/thema/230629/thema_ev02_bg.jpg) no-repeat top;
+						background-size: cover;
+					}
+					.themaWrap .event02 .innerSection {
+						padding: 150px 0 130px;
+					}
 					.themaWrap .title {
 						margin: 0px 100px 100px;
 						padding: 20px 0;
@@ -216,6 +338,18 @@
 						background-image: url(./resource/images/thema/230629/thema_ev01_img03.png);
 						background-position: right 78px bottom -10px;						
 					}
+					.themaWrap .etcWrap .txtBox.bg_03 {
+						background-image: url(./resource/images/thema/230629/thema_ev01_img04.png);
+						background-position: right 50px bottom;						
+					}
+					.themaWrap .etcWrap .txtBox.bg_04 {
+						background-image: url(./resource/images/thema/230629/thema_ev01_img05.png);
+						background-position: right 50px bottom;						
+					}
+					.themaWrap .etcWrap .txtBox.bg_05 {
+						background-image: url(./resource/images/thema/230629/thema_ev01_img06.png);
+						background-position: right 50px bottom;						
+					}
 					.themaWrap .etcWrap .etc {
 						display: flex;
 						align-items: center;
@@ -230,6 +364,7 @@
 					.themaWrap .etcWrap .etc::before {
 						content: '';
 						display: inline-block;
+						flex-shrink: 0;
 						width: 136px;
 						height: 118px;
 						margin-right: 20px;
@@ -265,7 +400,7 @@
 						margin: 0 50px;
 						padding: 40px 50px;
 						background: #fff;
-						border-radius: 30px;
+						border-radius: 20px;
 						box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
 					}
 					.themaWrap .whiteBox.boxStyle_01 .itemBox {
@@ -355,7 +490,7 @@
 					}
 				</style>
 				<div class="boxWrap">
-					<p class="tit ">공감 채용에 임하는 구직자세!</p>
+					<p class="tit">공감 채용에 임하는 구직자세!</p>
 					<div class="whiteBox boxStyle_01">
 						<div class="itemBox item01">
 							<div class="titWrap bgSky">
@@ -394,8 +529,129 @@
 				</div>
 				<div class="boxWrap">
 					<p class="tit">공감 채용 실천기업 사례</p>
-					<div class="whiteBox">
-
+					<style>
+						.themaWrap .whiteBox.boxStyle_02 .itemBox {
+							padding: 40px 70px 20px 100px;
+							border-radius: 30px;
+							border: 1px solid #e6e6e6;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 {
+							background-image: url(./resource/images/thema/230629/thema_ev02_img01.png);
+							background-repeat: no-repeat;
+							background-position: left 76px bottom;
+							background-size: auto 230px;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .titWrap p {
+							margin-bottom: 10px;
+							font-size: 26px;
+							font-weight: 600;
+							word-break: keep-all;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .titWrap p {
+							margin-bottom: 40px;
+						}						
+						.themaWrap p.num::before {							
+							margin-left: -70px;
+							margin-right: 16px;
+							color: #dadada;
+							font-size: 40px;
+							font-family: 'KOHIBaeumOTF';
+							font-weight: 300;
+							font-style: italic;
+						}
+						.themaWrap p.num.n01::before {
+							content: '01';
+						}
+						.themaWrap p.num.n02::before {
+							content: '02';
+						}
+						.themaWrap .whiteBox.boxStyle_02 .txtWrap p {
+							font-size: 20px;							
+							word-break: keep-all;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox + .itemBox {
+							margin-top: 40px;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .txtWrap p {
+							padding-left: 200px;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .txtWrap > span {
+							display: block;
+							margin: 30px 0 0;
+							font-size: 16px;
+							text-align: right;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .itemBox .txtWrap em {
+							margin-left: 20px;
+							font-size: 16px;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .imgWrap {
+							display: flex;
+							justify-content: space-between;
+							text-align: center;
+							margin-top: 30px;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .imgWrap .imgBox:nth-child(2) {
+							flex-shrink: 0;
+							margin: 20px 20px 0;
+						}
+						.themaWrap .whiteBox.boxStyle_02 .imgWrap .imgBox:nth-child(2)::after {
+							content: '';
+							display: block;
+							width: 116px;
+							height: 101px;
+							margin: 0 auto;
+							background: url(./resource/images/thema/230629/thema_ev02_img05.png) no-repeat;
+							background-size: contain;
+						}	
+						.themaWrap .whiteBox.boxStyle_02 .imgWrap .txtWrap p {
+							margin-top: 20px;
+							font-size: 16px;
+							letter-spacing: -1px;
+							word-break: keep-all;
+						}
+					</style>
+					<div class="whiteBox boxStyle_02">
+						<div class="itemBox bgGray item01">
+							<div class="titWrap">
+								<p class="num n01">공감채용을 위한 <span class="fcPurple">사내 채용전문면접관 자격제도 도입!</span></p>
+							</div>
+							<div class="txtWrap">
+								<p>한국바른채용인증원 조지용 원장은
+									"선진기업들은 면접관의 지원자에 대한 
+								   평가능력 향상은 물론 <span class="fcPurple">지원자 역시 면접관을 
+								   평가한다는 사실을 인지하고 대응한다.</span>"며 
+								   (~후략)</p>
+								<span>[출처] 한국바른채용인증원</span>
+							</div>
+						</div>
+						<div class="itemBox">
+							<div class="titWrap">
+								<p class="num n02"><span class="fcPurple">리버스 인터뷰도입!</span></p>
+							</div>
+							<div class="txtWrap">
+								<p>면접위원과 지원자의 역할이 뒤바뀐 면접으로 <span class="fcPurple">직무와 연관된 내용을 
+									역으로 면접위원에게 질문하여 지원자의 궁금증을 해소하고 
+									직무역량을 확인하는 면접 진행</span><em>[출처] 캐치뉴스</em></p>
+							</div>
+							<div class="imgWrap">
+								<div class="imgBox">
+									<img src="./resource/images/thema/230629/thema_ev02_img02.png" alt="구직자">
+									<div class="txtWrap">
+										<p>질문을 통해 기업이 자신과 얼마나 잘 맞는지 확인할 수 있는 기회</p>
+									</div>
+								</div>
+								<div class="imgBox">
+									<img src="./resource/images/thema/230629/thema_ev02_img04.png" alt="win-win">
+								</div>
+								<div class="imgBox">
+									<img src="./resource/images/thema/230629/thema_ev02_img03.png" alt="인사담당자">
+									<div class="txtWrap">
+										<p>지원자의 기업 · 직무 이해도 및 관심도를 파악할 수 있는 기회</p>
+									</div>									
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -403,8 +659,7 @@
 		<article class="event03">
 			<div class="innerSection">
 				<h3 class="gBold icon02">온보딩 채용</h3>
-				<div class="etcWrap">
-					
+				<div class="etcWrap">					
 					<div class="txtBox bg_02">	
 						<div class="boxIcon">
 							<span></span>
@@ -418,10 +673,136 @@
 						</p>
 					</div>
 				</div>
+				<style>
+					.themaWrap .event03 {
+						background: url(./resource/images/thema/230629/thema_ev03_bg.jpg) no-repeat top;
+						background-size: cover;
+					}
+					.themaWrap .event03 .innerSection {
+						padding: 100px 0 110px;
+					}
+					.themaWrap .event03 .onSlide {
+						position: relative;
+					}
+					.themaWrap .event03 .onSlide .item {
+						display: flex;
+						justify-content: space-between;
+						width: 100%;
+					}
+					.themaWrap .event03 .onSlide .imgWrap {
+						width: 480px;
+						height: 430px;
+						border: 5px solid #ffffff;
+						box-sizing: border-box;
+						border-radius: 20px;
+						overflow: hidden;
+					}
+					.themaWrap .event03 .onSlide .imgWrap img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+					.themaWrap .event03 .onSlide .txtWrap {
+						width: calc(100% - 500px);
+						padding: 70px 50px;
+						background: #fff;
+						border-radius: 20px;
+					}
+					.themaWrap .event03 .onSlide .txtWrap .stit {
+						margin-bottom: 20px;
+						font-size: 28px;
+						font-weight: 600;
+					}
+					.themaWrap .event03 .onSlide .txtWrap .stxt {
+						color: #646464;
+						font-size: 22px;
+						word-break: keep-all;
+					}
+					.themaWrap .event03 .onSlide .slideBtn {
+						position: absolute;
+						right: 80px;
+						bottom: 50px;
+						border: 1px solid red;
+					}
+					.themaWrap .event03 .onSlide .swiper-button-next:after, 
+					.themaWrap .event03 .onSlide .swiper-button-prev:after {display: none}
+					.themaWrap .event03 .onSlide .swiper-button-prev,
+					.themaWrap .event03 .onSlide .swiper-button-next {
+						width: 46px;
+						height: 46px;						
+					}
+					.themaWrap .event03 .onSlide .swiper-button-prev {
+						background: url(./resource/images/thema/230629/thema_arrow_prev.png) no-repeat;
+						left: -60px;	
+						background-size: contain;					
+					}
+					.themaWrap .event03 .onSlide .swiper-button-next {
+						background: url(./resource/images/thema/230629/thema_arrow_next.png) no-repeat;
+						background-size: contain;						
+					}
+				</style>
+				<div class="boxWrap">
+					<p class="tit">온보딩 채용문화의 장점</p>
+					<div class="swiper-container onSlide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="imgWrap">
+										<img src="./resource/images/thema/230629/thema_ev03_img01.png" alt="빠른 적응과 생산성 향상">
+									</div>
+									<div class="txtWrap">
+										<p class="stit">빠른 적응과 생산성 향상</p>
+										<p class="stxt">신규 직원이 업무 프로세스,
+											관리자 기대사항 등을 <br>
+											신속하게 이해하고 적응할 수 있도록
+											도와 빠른 역량개발과 생산성을 
+											높일 수 있습니다!</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="imgWrap">
+										<img src="./resource/images/thema/230629/thema_ev03_img02.png" alt="직원 유지 및 참여도 향상">
+									</div>
+									<div class="txtWrap">
+										<p class="stit">직원 유지 및 참여도 향상</p>
+										<p class="stxt">조직에 대한 긍정적인 경험을 갖게
+											해줍니다.<br>
+											신규직원의 참여도를 높이고,<br>
+											조직에 대한 이타적인 정서를 형성하여 
+											직원 이탈율을 감소시킵니다.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="imgWrap">
+										<img src="./resource/images/thema/230629/thema_ev03_img03.png" alt="팀 협업 강화">
+									</div>
+									<div class="txtWrap">
+										<p class="stit">팀 협업 강화</p>
+										<p class="stxt">신규 직원이 팀에 원활하게 통합되고 
+											역할과 책임에 대한 명확한 이해를 
+											갖게 되면서, 팀 구성원들 간의 
+											커뮤니케이션과 협업이 원활합니다.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slideBtn">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</article>
 		<article class="event04">
 			<div class="innerSection">
+				<div class="title">
+					<h2 class="gBold">기업에서 원하는 <span class="gBold fcBlue">인재</span></h2>
+				</div>
 				<h3 class="gBold icon03">실무형 인재</h3>
 				<div class="etcWrap">
 					
@@ -433,6 +814,224 @@
 						<p>단순 스펙이 뛰어난 지원자보다 지원직무에 적합한<br>
 							역량을 갖춘 사람을 채용하기를 원하고 있습니다.</p>
 					</div>
+					<style>
+						.themaWrap .event04 {
+							background: url(./resource/images/thema/230629/thema_ev04_bg.jpg) no-repeat top;
+							background-size: cover;
+						}
+						.themaWrap .event04 .innerSection {
+							padding: 100px 0 160px;
+						}
+						.themaWrap .event04 .imgWrap {
+							position: relative;
+							margin: 60px 50px 40px;
+							padding: 40px 0 20px;
+							background: #a2e4de;
+							border: 5px solid #ffffff;
+							border-radius: 200px;
+							text-align: center;
+							box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+						}
+						.themaWrap .event04 .imgWrap::before {
+							content: '';
+							width: 100px;
+							height: 70px;
+							position: absolute;
+							top: -24px;
+							right: 160px;
+							background: url(./resource/images/thema/230629/thema_ev04_img02.png) no-repeat;
+							background-size: contain;
+						}
+						.themaWrap .event04 .boxWrap .stxt {
+							font-size: 18px;
+							text-align: center;
+							word-break: keep-all;
+						}
+						.themaWrap .event04 .boxWrap .stxt span {
+							font-size: 14px;
+						}
+					</style>
+					<div class="imgWrap">
+						<img src="./resource/images/thema/230629/thema_ev04_img01.png" alt="범용인재">
+					</div>
+					<div class="boxWrap">						
+						<div class="whiteBox">
+							<p class="stxt">채용의 척도가 학벌이나 시험성적보다 실질적으로 직무에 적합한 인재인지를 판단할 수 있는 
+								<strong>직무 전문성</strong> <span>(자격증, 관련 직무 인턴 경험, 수상경력 등)</span>이 더 중요하게 작용하고 있습니다.</p>			
+						</div>
+					</div>
+					<style>
+						.themaWrap .whiteBox.boxStyle_03 .itemBox {
+							padding: 20px 70px;
+							background-repeat: no-repeat;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .itemBox + .itemBox {
+							margin-top: 20px;
+							padding-top: 30px;
+							border-top: 2px dotted #cacaca;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .itemBox.icon01 {
+							background-image: url(./resource/images/thema/230629/thema_ev04_icon01.png);
+						    background-position: right 10px center;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .itemBox.icon02 {
+							background-image: url(./resource/images/thema/230629/thema_ev04_icon02.png);
+						    background-position: right 10px bottom;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .itemBox.icon03 {
+							background-image: url(./resource/images/thema/230629/thema_ev05_icon01.png);
+						    background-position: right 10px center;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .itemBox.icon04 {
+							background-image: url(./resource/images/thema/230629/thema_ev05_icon02.png);
+						    background-position: right 10px center;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .titWrap p {
+							font-size: 30px;
+							font-weight: 600;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .txtWrap p {
+							padding-right: 100px;
+							font-size: 24px;
+							word-break: keep-all;
+						}
+						.themaWrap .whiteBox .grayBox {
+							display: flex;
+							justify-content: space-between;
+						}
+						.themaWrap .whiteBox .grayBox .item {
+							width: calc(100% / 2 - 10px);
+							padding: 25px 30px;
+							background: #e1e1e1;
+							border-radius: 20px;
+						}
+						.themaWrap .whiteBox .grayBox .stit {
+							display: inline-block;
+							padding: 5px 20px 2px;
+							margin-bottom: 20px;
+							background: #fff;
+							font-size: 20px;
+							border-radius: 30px;
+						}
+						.themaWrap .whiteBox .grayBox li {
+							padding-left: 10px;
+						}
+						.themaWrap .whiteBox .grayBox li::before {
+							content: '·';
+							margin-right: 5px;
+							margin-left: -10px;
+						}
+					</style>
+					<div class="boxWrap">
+						<p class="tit">실무형 인재 되기!</p>
+						<div class="whiteBox boxStyle_03">
+							<div class="itemBox icon01">
+								<div class="titWrap">
+									<p class="num n01">직무전문성 기르기</p>
+								</div>
+								<div class="txtWrap">
+									<p>불필요한 스펙은 줄이고 직무중심으로 필요역량을 쌓는데 집중하자!</p>
+								</div>
+							</div>
+							<div class="itemBox icon02">
+								<div class="titWrap">
+									<p class="num n02">직무이해도 높이기</p>
+								</div>
+								<div class="txtWrap">
+									<p>직접·간접적인 체험을 통해 직무이해도를 높이자!</p>
+								</div>
+							</div>
+							<div class="grayBox">
+								<div class="item">
+									<p class="stit">직접 체험</p>
+									<ul>
+										<li>취업희망 기업 인턴쉽 프로그램 참여</li>
+										<li>관련 직무 공모전 참여</li>
+										<li>각종 직업박람회 참여</li>
+									</ul>
+								</div>
+								<div class="item">
+									<p class="stit">간접 체험</p>
+									<ul>
+										<li>채용정보 사이트 직무 정보 검색</li>
+										<li>지인 혹은 선배를 통해 직무 특성 검색</li>
+										<li>기업 인재채용 페이지 직무 내용 검색</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<style>
+						.themaWrap .whiteBox.boxStyle_03 .qList {
+							display: flex;
+							align-items: flex-start;
+							flex-direction: column;
+							width: 100%;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li {
+							display: inline-block;
+							padding: 10px 30px 6px;
+							margin-top: 20px;
+							font-size: 20px;							
+							border-radius: 30px;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(even) {
+							margin-left: auto;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(1) {
+							background: #e0d8f8;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(2) {
+							background: #f6dddd;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(3) {
+							background: #fffac6;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(4) {
+							background: #d6f5d3;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .stxtWrap {							
+							max-width: 600px;
+							position: relative;
+							margin-left: auto;
+							margin-top: 40px;
+							padding: 20px 65px;
+							border: 4px solid #000;
+							border-radius: 20px;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .stxtWrap::before {
+							content: '';
+							width: 110px;
+							height: 121px;
+							position: absolute;
+							left: -50px;
+							bottom: -74px;
+							background: url(./resource/images/thema/230629/thema_ev04_icon04.png) no-repeat;
+							background-size: contain;
+						}
+						.themaWrap .whiteBox.boxStyle_03 .stxtWrap p {
+							color: #003181;
+							font-size: 22px;
+							font-weight: 600;
+							word-break: keep-all;
+						}
+					</style>
+					<div class="boxWrap">
+						<p class="tit">실무형 인재 채용 단골 면접질문</p>
+						<div class="whiteBox boxStyle_03">
+							<ul class="qList">
+								<li>지원하신 직무를 수행하기위해 어떤 노력과 준비를 해왔습니까?</li>
+								<li>지원한 직무에 중요하다고 생각하는 핵심역량 3가지를 말해보세요.</li>
+								<li>해당 직무에 지원한 동기는 무엇입니까?</li>
+								<li>지원한 직무 관련 본인의 직·간접 경험이나 생각을 자유롭게 설명해주세요.</li>
+							</ul>
+							<div class="stxtWrap">
+								<p>지원회사와 직무에 대한 이해도를 파악하고 
+									실무 투입이 바로 가능한지를 확인하기 위한 질문이 
+									주를 이루고 있습니다!</p>
+							</div>
+						</div>
+					</div>	
 					
 				</div>
 			</div>
@@ -456,8 +1055,99 @@
 							관심을 기울이고 있습니다!</p>
 					</div>
 				</div>
+				<style>
+					.themaWrap .event05 {
+						background: url(./resource/images/thema/230629/thema_ev05_bg.jpg) no-repeat top;
+						background-size: cover;
+					}
+					.themaWrap .event05 .innerSection {
+						padding: 130px 0 142px;
+					}
+					.themaWrap .whiteBox.boxStyle_04 {
+						margin-top: 60px;
+					}
+					.themaWrap .whiteBox.boxStyle_04 .itemBox:first-child {
+						padding: 20px 50px 0;
+					}
+					.themaWrap .whiteBox.boxStyle_04 .itemBox + .itemBox {
+						margin-top: 20px;
+						padding-top: 30px;
+						border-top: 2px dotted #cacaca;
+					}
+					.themaWrap .whiteBox.boxStyle_04 .titWrap p {
+						margin-bottom: 20px;
+						color: #757575;
+						font-size: 28px;
+						font-weight: 600;
+					}
+					.themaWrap .whiteBox.boxStyle_04 .txtWrap p {
+						font-size: 22px;
+						word-break: keep-all;
+					}
+					.themaWrap .whiteBox.boxStyle_04 ul {
+						margin-bottom: 40px;
+						text-align: center;
+					}
+					.themaWrap .whiteBox.boxStyle_04 li {
+						display: inline-block;
+						position: relative;
+						padding: 10px 30px 6px;
+						background: #4d4d4d;
+						color: #fff;
+						font-size: 20px;
+						border-radius: 30px;						
+					}
+					.themaWrap .whiteBox.boxStyle_04 li + li {
+						margin-left: 30px;
+					}
+					.themaWrap .whiteBox.boxStyle_04 li + li::before {
+						content: '+';
+						position: absolute;
+						left: -24px;
+						top: 50%;
+						transform: translateY(-50%);
+						color: #4d4d4d;
+						font-size: 30px;
+						font-family: 'GmarketSansBold';
+					}
+				</style>
+				<div class="boxWrap">
+					<div class="whiteBox boxStyle_04">
+						<div class="itemBox">
+							<div class="titWrap">
+								<p>MultiPotentialLite</p>
+							</div>
+							<div class="txtWrap">
+								<p>여러가지 잠재성을 갖고 관심사가 다양하고 재미있는 삶을 추구하며 
+									창의적인 활동 분야가 많은 인재!<br>
+									<span class="fcPurple">단순히 이것저것 좋아하고 관심 있는 것을 넘어 많은 분야에 재능과 능력까지 
+									갖춘 인재!</span></p>
+							</div>
+						</div>
+						<div class="itemBox">
+							<ul>
+								<li>Multi</li>
+								<li>Potential</li>
+								<li>Lite</li>
+							</ul>
+							<div class="imgWrap">
+								<img src="./resource/images/thema/230629/thema_ev05_img01.png" alt="멀티 포텐셜라이트 인재">
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</article>
+		<style>
+			.themaWrap .event06 {
+				background: url(./resource/images/thema/230629/thema_ev06_bg.jpg) no-repeat top;
+				background-size: cover;
+			}
+			.themaWrap .event06 .innerSection {
+				padding: 130px 0 150px;
+			}
+		</style>
 		<article class="event06">
 			<div class="innerSection">
 				<h3 class="gBold icon05">디지털 인재</h3>
@@ -476,9 +1166,350 @@
 							전 산업분야에서 디지털 인재를 필요로 하고 있습니다. </p>
 					</div>
 				</div>
+				<div class="boxWrap">
+					<p class="tit">디지털 인재 양성 지원</p>
+					<div class="whiteBox boxStyle_03">
+						<div class="itemBox icon03">
+							<div class="titWrap">
+								<p class="num n01">정부</p>
+							</div>
+							<div class="txtWrap">
+								<p>전 산업분야 디지털 인재수요에 대한 공급이 부족하여, 
+									정부에서는 ‘디지털 인재양성 종합방안’을 통해 
+									디지털 인재 100만 양성을 목표로 하고 있습니다.</p>
+							</div>
+						</div>
+						<div class="itemBox icon04">
+							<div class="titWrap">
+								<p class="num n02">기업</p>
+							</div>
+							<div class="txtWrap">
+								<p>기업에서도 대학과 연계하거나 자체적인 인재양성 
+									프로그램을 통해 디지털 인재 양성과 확보에 
+									힘쓰고 있습니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</article>
-		
+		<style>
+			.themaWrap .event07 {
+				background: url(./resource/images/thema/230629/thema_ev07_bg.jpg) no-repeat center;
+				background-size: cover;
+			}
+			.themaWrap .event07 .innerSection {
+				padding: 30px 0 100px;
+			}
+			.themaWrap .event07 .banner {
+				padding: 50px 50px 30px;
+				background: url(./resource/images/thema/230629/thema_ev07_img01.jpg) no-repeat center;
+				background-size: cover;
+				border-radius: 20px;
+			}
+			.themaWrap .event07 .txtWrap {
+				max-width: 360px;
+			}
+			.themaWrap .event07 .txtWrap .stit {
+				margin-bottom: 10px;
+				font-size: 28px;
+				font-weight: 600;
+			}
+			.themaWrap .event07 .txtWrap .stxt {
+				margin-bottom: 10px;
+				color: #fff;
+				font-size: 14px;
+				word-break: keep-all;
+			}
+			.themaWrap .event07 .linkWrap {
+				text-align: right;
+				padding-right: 50px;
+			}
+			.themaWrap .event07 .linkWrap a {
+				display: inline-block;
+				padding: 10px 30px 6px;			
+				background: #37ffb6;
+				color: #000;
+				font-size: 20px;
+				border: 2px solid #fff;
+				border-radius: 30px;
+				transition: 0.3s;
+			}
+			.themaWrap .event07 .linkWrap a:hover {
+				transform: scale(1.05);
+			}
+			.themaWrap .event07 .linkWrap a span {
+				position: relative;
+			}
+			.themaWrap .event07 .linkWrap a span::after {
+				content: '';
+				width: 40px;
+				height: 34px;
+				position: absolute;
+				right: -46px;
+				bottom: -22px;
+				background: url(./resource/images/thema/230629/thema_icon05.png) no-repeat;
+				background-size: contain;
+			}
+		</style>
+		<article class="event07">
+			<div class="innerSection">
+				<div class="boxWrap">
+					<p class="tit fcWhite">디지털 인재로 거듭나고 싶다면? </p>
+					<div class="banner">
+						<div class="txtWrap">
+							<p class="stit"><span class="fcWhite">4차 산업의 중심</span><br>
+								<span class="fcBlue01">경기도</span> <span class="fcMint">미래기술학교</span></p>
+							<p class="stxt">국내 대표 기업과의 협력으로 프로젝트 중심 실무교육을 
+								제공하여 경기도 청년들을 4차 미래산업의 전문인력으로 
+								양성합니다.</p>
+							<div class="linkWrap">
+								<a href="" target="_blank"><span>자세히 보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="event08">
+			<style>
+				.themaWrap .event08 {
+					background: #e5e9ea;
+				}
+				.themaWrap .event08 .innerSection {
+					padding: 100px 0 120px;
+				}
+				.themaWrap .event08 .txtWrap {
+					max-width: 500px;				
+					position: relative;
+					margin: 0 50px 20px;
+					text-align: center;
+					
+				}
+				.themaWrap .event08 .txtWrap::after {
+					content: '';
+					display: inline-block;
+					width: 273px;
+					height: 152px;
+					position: absolute;
+					top: 0;
+					right: -340px;
+					background: url(./resource/images/thema/230629/thema_ev08_img01.png) no-repeat;
+					background-size: contain;
+				}
+				.themaWrap .event08 .txtWrap span {
+					color: #000;
+					font-size: 26px;
+				}
+				.themaWrap .event08 .txtWrap p {
+					color: #003382;
+					font-size: 40px;
+					font-weight: 600;
+					word-break: keep-all;
+				}
+				.themaWrap .event08 ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 20px;
+				}
+				.themaWrap .event08 li {
+					width: calc(100% / 3 - 40px);
+					background: #fff;
+					border-radius: 20px;
+				}
+				.themaWrap .event08 li a {
+					display: block;
+					min-height: 350px;
+					padding: 20px;
+					position: relative;
+					width: 100%;
+					height: 100%;
+				}
+				.themaWrap .event08 li a::after {
+					content: 'go';
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 60px;
+					height: 60px;
+					position: absolute;
+					right: 20px;
+					bottom: 20px;
+					font-size: 20px;
+					border-radius: 50%;
+				}
+				.themaWrap .event08 li:nth-child(1) a::after {
+					background: #d8d8d8;					
+				}
+				.themaWrap .event08 li:nth-child(2) a::after {
+					background: #aacad4;					
+				}
+				.themaWrap .event08 li:nth-child(3) a::after {
+					background: #97e5df;					
+				}
+				.themaWrap .event08 li:nth-child(4) a::after {
+					background: #ffd883;					
+				}
+				.themaWrap .event08 li:nth-child(5) a::after {
+					background: #dec6d8;					
+				}
+				.themaWrap .event08 li a::before {
+					content: '';
+					display: block;
+					height: 60px;
+					margin: 0 auto 20px;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+				.themaWrap .event08 li a.icon01::before {					
+					width: 53px;					
+					background-image: url(./resource/images/thema/230629/thema_ev08_icon01.png);					
+				}
+				.themaWrap .event08 li a.icon02::before {					
+					width: 62px;					
+					background-image: url(./resource/images/thema/230629/thema_ev08_icon02.png);					
+				}
+				.themaWrap .event08 li a.icon03::before {					
+					width: 82px;					
+					background-image: url(./resource/images/thema/230629/thema_ev08_icon03.png);					
+				}
+				.themaWrap .event08 li a.icon04::before {					
+					width: 65px;					
+					background-image: url(./resource/images/thema/230629/thema_ev08_icon04.png);					
+				}
+				.themaWrap .event08 li a.icon05::before {					
+					width: 57px;					
+					background-image: url(./resource/images/thema/230629/thema_ev08_icon05.png);					
+				}
+				.themaWrap .event08 li a strong {
+					position: relative;
+					font-size: 26px;
+					z-index: 1;
+				}
+				.themaWrap .event08 li strong::after {
+					content: "";
+					width: 0;
+					height: 9px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transition: all 0.3s;
+					z-index: -1;
+					opacity: 0.5;
+				}
+				.themaWrap .event08 li a:hover strong::after {
+					width: 100%;
+				}
+				.themaWrap .event08 li:nth-child(1) strong::after {
+					background: #d8d8d8;					
+				}
+				.themaWrap .event08 li:nth-child(2) strong::after {
+					background: #aacad4;					
+				}
+				.themaWrap .event08 li:nth-child(3) strong::after {
+					background: #97e5df;					
+				}
+				.themaWrap .event08 li:nth-child(4) strong::after {
+					background: #ffd883;					
+				}
+				.themaWrap .event08 li:nth-child(5) strong::after {
+					background: #dec6d8;					
+				}
+				.themaWrap .event08 li a p {
+					margin-top: 10px;
+					font-size: 20px;
+				}
+				.themaWrap .event08 li:nth-child(1) {
+					border: 3px solid #d8d8d8;
+				}
+				.themaWrap .event08 li:nth-child(2) {
+					border: 3px solid #aacad4;
+				}
+				.themaWrap .event08 li:nth-child(3) {
+					border: 3px solid #97e5df;
+				}
+				.themaWrap .event08 li:nth-child(4) {
+					border: 3px solid #ffd883;
+				}
+				.themaWrap .event08 li:nth-child(5) {
+					border: 3px solid #dec6d8;
+				}
+				.themaWrap .event08 li:nth-child(1) strong {
+					color: #d8d8d8;
+				}
+				.themaWrap .event08 li:nth-child(2) strong {
+					color: #aacad4;
+				}
+				.themaWrap .event08 li:nth-child(3) strong {
+					color: #97e5df;
+				}
+				.themaWrap .event08 li:nth-child(4) strong {
+					color: #ffd883;
+				}
+				.themaWrap .event08 li:nth-child(5) strong {
+					color: #dec6d8;
+				}
+				
+			</style>
+			<div class="innerSection">
+				<div class="txtWrap">
+					<span>잡아바에서 직무역량 강화하고</span>
+					<p>2023 채용트렌드에 딱 맞춘 인재 되자!</p>
+				</div>
+				<ul>
+					<li>
+						<a href="" class="icon01">
+							<strong>자기소개서 컨설팅</strong>
+							<p>비슷비슷한 자소서는<br>
+								이제 그만!<br> 
+								잡아바에서<br> 
+								나만의 자소서를<br> 
+								만들어보세요!</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="icon02">
+							<strong>AI 역량검사</strong>
+							<p>무분별한 스펙업보다<br>
+								중요한건 실전!<br>
+								해볼까요?<br>
+								취업희망 분야<br>
+								면접 시뮬레이션!</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="icon03">
+							<strong>잡아바 상담톡</strong>
+							<p>취업,<br>
+								잡아바 취업상담사와<br>
+								함께 하세요!<br>
+								취업상담,<br>
+								사업·사이트<br>
+								이용문의하기</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="icon04">
+							<strong>잡아바 러닝센터</strong>
+							<p>직무별 역량강화 교육!<br>
+								400여개<br>
+								이러닝 강의 듣고<br>
+								취업하자!</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="icon05">
+							<strong>탐나는 일자리정보관</strong>
+							<p>경기도 내 각 기관의<br>
+								추천 일자리를<br>
+								한눈에<br>
+								확인해보세요!</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</article>
 	</div>
 
 
@@ -503,20 +1534,22 @@
 	<script>
 		
 		$(document).ready(function() {
-			$('.linkList a').click(function(e){
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
-				e.preventDefault();
-			});	
+			var mySwiper = new Swiper('.onSlide', {
+				spaceBetween: 20,
+				loop: false,
+				// autoplay: {
+				// 	delay: 5000,
+				// 	disableOnInteraction: true,
+				// },
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+
+
 		});
-		// 이벤트 추가 script
-		function chatOpen(){
-			var nWidth = "500";
-			var nHeight = "700";
-			var xPos = (document.body.clientWidth / 2) - (nWidth / 2); 
-			xPos += window.screenLeft;
-			var yPos = (screen.availHeight / 2) - (nHeight / 2);
-			window.open("https://jobaba.channel.io/support-bots/64708","chatOpen","width="+nWidth+",height="+nHeight+", left="+xPos+", top="+yPos+", toolbars=no, resizable=no, scrollbars=no");
-		}
+		
 	</script>
 
 </body>
