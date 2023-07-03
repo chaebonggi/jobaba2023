@@ -214,7 +214,7 @@
 				</div>
 			</div>
 		</article>
-		
+		 
 		<article class="event03 listBox" id="moveTo02">
 			<div class="innerSection">
 				<h3 class="gBold icon02">온보딩 채용</h3>
@@ -289,6 +289,7 @@
 				</div>
 			</div>
 		</article>
+		
 		<article class="event04 listBox" id="moveTo03">
 			<div class="innerSection">
 				<div class="title">
@@ -376,6 +377,7 @@
 				</div>
 			</div>
 		</article>
+		
 		<article class="event05 listBox" id="moveTo04">
 			<div class="innerSection">
 				<h3 class="gBold icon04">멀티 포텐셜라이트 인재</h3>
@@ -423,6 +425,7 @@
 				</div>
 			</div>
 		</article>
+		<!-- 
 		<article class="event06 listBox" id="moveTo05">
 			<div class="innerSection">
 				<h3 class="gBold icon05">디지털 인재</h3>
@@ -546,7 +549,7 @@
 				</ul>
 			</div>
 		</article>
-		<!-- -->
+		-->
 	</div>
 
 
@@ -571,46 +574,46 @@
 	<script>
 		
 		$(document).ready(function() {
-			var mySwiper = new Swiper('.onSlide', {
-				spaceBetween: 20,
-				loop: false,
-				autoplay: {
-					delay: 5000,
-					disableOnInteraction: true,
-				},
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
+			// var mySwiper = new Swiper('.onSlide', {
+			// 	spaceBetween: 20,
+			// 	loop: false,
+			// 	autoplay: {
+			// 		delay: 5000,
+			// 		disableOnInteraction: true,
+			// 	},
+			// 	navigation: {
+			// 		nextEl: ".swiper-button-next",
+			// 		prevEl: ".swiper-button-prev",
+			// 	},
+			// });
 
-			$('.leftMenu a, .event01 a').click(function(e){
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
-				e.preventDefault();
-			});
+			// $('.leftMenu a, .event01 a').click(function(e){
+			// 	$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+			// 	e.preventDefault();
+			// });
 
-			const menuOffset =  $('.leftMenu').offset();
-			const menu = $('.menuList')
-			const menuHight = menu.outerHeight();
-			const articles = $('.listBox');
+			// const menuOffset =  $('.leftMenu').offset();
+			// const menu = $('.menuList')
+			// const menuHight = menu.outerHeight();
+			// const articles = $('.listBox');
 				
-			$(document).scroll(function(){
-				const winScroll = $(this).scrollTop();
+			// $(document).scroll(function(){
+			// 	const winScroll = $(this).scrollTop();
 
-				if( winScroll > menuOffset.top) {
-					$('.leftMenu').addClass('fixed');
-				}else {
-					$('.leftMenu').removeClass('fixed');
-				}
-				articles.each(function(){
-					const winTop = $(this).offset().top - menuHight;
-					const winBottom = winTop + $(this).outerHeight();
-					if (winScroll >= winTop && winScroll <= winBottom) {
-						menu.find("a").parent().removeClass('active');
-						menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
-					}
-				});	
-			});
+			// 	if( winScroll > menuOffset.top) {
+			// 		$('.leftMenu').addClass('fixed');
+			// 	}else {
+			// 		$('.leftMenu').removeClass('fixed');
+			// 	}
+			// 	articles.each(function(){
+			// 		const winTop = $(this).offset().top - menuHight;
+			// 		const winBottom = winTop + $(this).outerHeight();
+			// 		if (winScroll >= winTop && winScroll <= winBottom) {
+			// 			menu.find("a").parent().removeClass('active');
+			// 			menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
+			// 		}
+			// 	});	
+			// });
 
 
 		});
