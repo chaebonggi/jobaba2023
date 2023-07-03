@@ -251,12 +251,8 @@
  .themaWrap .mainVisual .imgWrap img { transform: scale(0.8); } 
 
  .themaWrap .event01 li { width: calc(100% / 3); } 
- .themaWrap .event08 .txtWrap::after {
-    content: none;
- }
- .themaWrap .event08 .txtWrap {
-    margin: 0 auto 20px;
-}
+ .themaWrap .event08 .txtWrap::after { content: none; } 
+ .themaWrap .event08 .txtWrap { margin: 0 auto 20px; } 
  }
 
 @media all and (max-width:860px){
@@ -320,38 +316,21 @@
 .themaWrap .whiteBox.boxStyle_03 .itemBox { padding: 20px 50px; } 
 .themaWrap .whiteBox.boxStyle_03 .qList li { width: 100%; font-size: 18px; } 
 .themaWrap .whiteBox.boxStyle_03 .stxtWrap p { font-size: 18px; } 
-.themaWrap .event04 .imgWrap::before {right: 60px;}
+.themaWrap .event04 .imgWrap::before { right: 60px; } 
 .themaWrap .event05 .innerSection { padding: 30px 10px 30px; } 
 
 .themaWrap .whiteBox.boxStyle_04 .titWrap p { font-size: 22px; } 
 .themaWrap .whiteBox.boxStyle_04 .txtWrap p { font-size: 18px; } 
 .themaWrap .whiteBox.boxStyle_04 li { padding: 10px 20px 6px; font-size: 16px; } 
 .themaWrap .event06 .innerSection { padding: 30px 0 30px; } 
-.themaWrap .event07 .innerSection {
-    padding: 30px 10px 50px;
-}
-.themaWrap .event07 .txtWrap .stit {
-    font-size: 22px;
-}
-.themaWrap .event08 li {
-    width: calc(100% / 2 - 20px);
-}
-.themaWrap .event08 .innerSection {
-    padding: 50px 0 50px;
-}
-.themaWrap .event08 .txtWrap span {
-    font-size: 22px;
-}
-.themaWrap .event08 .txtWrap p {
-    font-size: 32px;
-}
-.themaWrap .event08 li a strong {
-    font-size: 22px;
-}
-.themaWrap .event08 li a p {
-    font-size: 18px;
-}
-
+.themaWrap .event07 .innerSection { padding: 30px 10px 50px; } 
+.themaWrap .event07 .txtWrap .stit { font-size: 22px; } 
+.themaWrap .event08 li { width: calc(100% / 2 - 20px); } 
+.themaWrap .event08 .innerSection { padding: 50px 0 50px; } 
+.themaWrap .event08 .txtWrap span { font-size: 22px; } 
+.themaWrap .event08 .txtWrap p { font-size: 32px; } 
+.themaWrap .event08 li a strong { font-size: 22px; } 
+.themaWrap .event08 li a p { font-size: 18px; } 
 }
 
 @media all and (max-width:640px){
@@ -413,39 +392,19 @@
 .themaWrap .whiteBox.boxStyle_04 ul { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; } 
 .themaWrap .whiteBox.boxStyle_04 li { padding: 6px 15px 2px; font-size: 14px; } 
 .themaWrap .whiteBox.boxStyle_04 li + li { margin-left: 0; margin-top: 20px; } 
-.themaWrap .whiteBox.boxStyle_04 li + li::before { left: 50%; top: -20px; transform: translateX(-50%); font-size: 18px;} 
-.themaWrap .event07 .banner {
-    padding: 20px;
+.themaWrap .whiteBox.boxStyle_04 li + li::before { left: 50%; top: -20px; transform: translateX(-50%); font-size: 18px; } 
+.themaWrap .event07 .banner { padding: 20px; } 
+.themaWrap .event07 .linkWrap { padding-right: 0; } 
+.themaWrap .event07 .linkWrap a { font-size: 16px; } 
+.themaWrap .event08 .txtWrap span { font-size: 18px; } 
+.themaWrap .event08 .txtWrap p { font-size: 26px; } 
+.themaWrap .event08 li a strong { font-size: 18px; } 
+.themaWrap .event08 li a p { font-size: 14px; } 
+.themaWrap .event08 li a::after { content: none; } 
+.themaWrap .event08 li a { min-height: auto; } 
+.themaWrap .event08 ul { gap: 10px; } 
+.themaWrap .event04 .imgWrap::before { width: 60px; height: 40px; right: 40px; } 
+.themaWrap .whiteBox.boxStyle_04 {
+    margin-top: 20px;
 }
-.themaWrap .event07 .linkWrap {padding-right: 0;}
-.themaWrap .event07 .linkWrap a {
-    font-size: 16px;
-}
-.themaWrap .event08 .txtWrap span {
-    font-size: 18px;
-}
-.themaWrap .event08 .txtWrap p {
-    font-size: 26px;
-}
-.themaWrap .event08 li a strong {
-    font-size: 18px;
-}
-.themaWrap .event08 li a p {
-    font-size: 14px;
-}
-.themaWrap .event08 li a::after {
-    content: none;
-}
-.themaWrap .event08 li a {
-    min-height: auto;
-}
-.themaWrap .event08 ul {
-    gap: 10px;
-}
-.themaWrap .event04 .imgWrap::before {
-    width: 60px;
-    height: 40px;
-    right: 40px;
-}
-
 }
