@@ -2,7 +2,7 @@
 @font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'KOHIBaeumOTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff'); font-weight: normal; font-style: normal; } 
 
-.themaWrap .kohiBeaum {font-family: 'KOHIBaeumOTF','Noto Sans KR' !important; font-weight: 300;}
+.themaWrap .kohiBeaum { font-family: 'KOHIBaeumOTF','Noto Sans KR' !important; font-weight: 300; } 
 .themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
 .themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
 
@@ -10,12 +10,274 @@
 .themaWrap .fcBlue { color: #003181; } 
 .themaWrap .fcBlue01 { color: #3351ff; } 
 .themaWrap .fcMint { color: #38ffb6; } 
-.themaWrap .fcWhite { color: #fff; }
+.themaWrap .fcWhite { color: #fff; } 
 
-.themaWrap .bgGray {background: #f0f0f0;}
-.themaWrap .bgSky {background: #54c6db;}
-.themaWrap .bgBlue {background: #2a82cc;}
-.themaWrap .bgGreen {background: #7fd256;}
+.themaWrap .bgGray { background: #f0f0f0; } 
+.themaWrap .bgSky { background: #54c6db; } 
+.themaWrap .bgBlue { background: #2a82cc; } 
+.themaWrap .bgGreen { background: #7fd256; } 
 
 .themaWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
 .themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+
+.themaWrap .mainVisual { background: url(../resource/images/thema/230629/thema_main_bg.jpg) no-repeat; background-size: cover; } 
+.themaWrap .mainVisual .innerSection { max-width: 100%; padding: 100px 0 220px; background-image: url(../resource/images/thema/230629/thema_main_img01.png); background-repeat: no-repeat; background-position: top -80px center; } 
+.themaWrap .mainVisual .imgWrap { margin-bottom: 20px; text-align: center; } 
+.themaWrap .mainVisual .txtWrap { text-align: center; } 
+.themaWrap .mainVisual .txtWrap span { display: inline-block; padding: 6px 30px 2px; margin-bottom: 20px; background: #fff; font-size: 32px; border: 2px solid #000; border-radius: 40px; box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 1); } 
+.themaWrap .mainVisual .txtWrap p { color: #000; font-size: 30px; } 
+
+.themaWrap .event01 { position: relative; margin-top: -30px; background: url(../resource/images/thema/230629/thema_ev01_bg.png) no-repeat top; background-size: cover; } 
+.themaWrap .event01 .innerSection { padding: 200px 10px; } 
+.themaWrap .event01 .item + .item { margin-top: 60px; } 
+.themaWrap .event01 .item.icon01 { background-image: url(../resource/images/thema/230629/thema_ev01_img01.png); background-position: right 20px center; background-size: auto; background-repeat: no-repeat; } 
+.themaWrap .event01 .listTit { margin-bottom: 20px; font-size: 40px; } 
+.themaWrap .event01 .listTit strong { color: #003181; font-size: 46px; } 
+.themaWrap .event01 ul { display: flex; gap: 0 20px; } 
+.themaWrap .event01 li { width: calc(100% / 3 - 40px); background: #fff; border-radius: 20px; overflow: hidden; border: 5px solid transparent; transition: all 0.35s; } 
+.themaWrap .event01 li a { display: block; width: 100%; height: 240px; padding: 20px 10px; background-repeat: no-repeat; background-size: auto; } 
+.themaWrap .event01 li:hover { border: 5px solid #003181; transform: translateY(-10px); box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.1); } 
+.themaWrap .event01 li a span { color: #00a6cc; font-size: 16px; font-family: 'GmarketSansBold' !important; } 
+.themaWrap .event01 li a p { color: #003181; font-size: 32px; font-family: 'GmarketSansBold' !important; } 
+.themaWrap .event01 li a.icon01 { background-image: url(../resource/images/thema/230629/thema_ev01_img02.png); background-position: center bottom; } 
+.themaWrap .event01 li a.icon02 { background-image: url(../resource/images/thema/230629/thema_ev01_img03.png); background-position: right bottom; } 
+.themaWrap .event01 li a.icon03 { background-image: url(../resource/images/thema/230629/thema_ev01_img04.png); background-position: right bottom; } 
+.themaWrap .event01 li a.icon04 { background-image: url(../resource/images/thema/230629/thema_ev01_img05.png); background-position: right bottom; } 
+.themaWrap .event01 li a.icon05 { background-image: url(../resource/images/thema/230629/thema_ev01_img06.png); background-position: right bottom; } 
+
+.themaWrap .leftMenu.fixed { position: fixed; top: 200px; } 
+.themaWrap .leftMenu { position: absolute; left: 90px; top: 200px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+.themaWrap .leftMenu > a { display: block; margin-top: 10px; color: #5f5f5f; font-size: 14px; } 
+.themaWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+.themaWrap .menuList li + li { margin-top: 6px; } 
+.themaWrap .menuList li a { display: block; width: 100%; height: 100%; padding: 10px 10px 6px; background: #f0f0f0; color: #000; font-size: 16px; font-weight: 600; } 
+.themaWrap .menuList li a:hover { background: #b9f1df; } 
+.themaWrap .menuList li.active a { height: 100px; background: #b9f1df; background-repeat: no-repeat; background-size: auto; } 
+.themaWrap .menuList li.active a.item01 { background-image: url(../resource/images/thema/230629/thema_list_icon01.png); background-position: center bottom -10px; } 
+.themaWrap .menuList li.active a.item02 { background-image: url(../resource/images/thema/230629/thema_list_icon02.png); background-position: center bottom -20px; } 
+.themaWrap .menuList li.active a.item03 { background-image: url(../resource/images/thema/230629/thema_list_icon03.png); background-position: center bottom -20px; } 
+.themaWrap .menuList li.active a.item04 { background-image: url(../resource/images/thema/230629/thema_list_icon04.png); background-position: center bottom -20px; } 
+.themaWrap .menuList li.active a.item05 { background-image: url(../resource/images/thema/230629/thema_list_icon05.png); background-position: center bottom -20px; } 
+
+.themaWrap .event02 { margin-top: -30px; position: relative; background: url(../resource/images/thema/230629/thema_ev02_bg.jpg) no-repeat top; background-size: cover; } 
+.themaWrap .event02 .innerSection { padding: 150px 0 130px; } 
+.themaWrap .title { margin: 0px 100px 100px; padding: 20px 0; background: #b9f1df; border: 2px solid #000000; border-radius: 60px; box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 1); text-align: center; } 
+.themaWrap .title h2 { font-size: 40px; } 
+.themaWrap h3 { position: relative; margin-bottom: 50px; color: #003181; font-size: 50px; text-align: center; } 
+.themaWrap h3::before { content: ''; display: block; margin: 0 auto 20px; } 
+.themaWrap h3.icon01::before { width: 334px; height: 187px; background: url(../resource/images/thema/230629/thema_list_01.png) no-repeat; background-size: contain; } 
+.themaWrap h3.icon02::before { width: 323px; height: 199px; background: url(../resource/images/thema/230629/thema_list_02.png) no-repeat; background-size: contain; } 
+.themaWrap h3.icon03::before { width: 323px; height: 182px; background: url(../resource/images/thema/230629/thema_list_03.png) no-repeat; background-size: contain; } 
+.themaWrap h3.icon04::before { width: 323px; height: 198px; background: url(../resource/images/thema/230629/thema_list_04.png) no-repeat; background-size: contain; } 
+.themaWrap h3.icon05::before { width: 332px; height: 192px; background: url(../resource/images/thema/230629/thema_list_05.png) no-repeat; background-size: contain; } 
+
+.themaWrap .etcWrap .txtBox { position: relative; margin: 0 50px 40px; padding: 40px 60px; background: #d9f3fa; border: 1px solid #000; background-repeat: no-repeat; background-size: auto; } 
+.themaWrap .etcWrap .boxIcon span::before { content: ''; width: 10px; height: 10px; position: absolute; background: #000; } 
+.themaWrap .etcWrap .boxIcon span::after { content: ''; width: 10px; height: 10px; position: absolute; background: #000; } 
+.themaWrap .etcWrap .boxIcon span:nth-child(1)::before { top: -5px; left: -5px; } 
+.themaWrap .etcWrap .boxIcon span:nth-child(1)::after { top: -5px; right: -5px; } 
+.themaWrap .etcWrap .boxIcon span:nth-child(2)::before { bottom: -5px; left: -5px; } 
+.themaWrap .etcWrap .boxIcon span:nth-child(2)::after { bottom: -5px; right: -5px; } 
+.themaWrap .etcWrap .txtBox p { color: #000; font-size: 22px; } 
+.themaWrap .etcWrap .txtBox.bg_01 { background-image: url(../resource/images/thema/230629/thema_ev01_img02.png); background-position: right 78px bottom -10px; } 
+.themaWrap .etcWrap .txtBox.bg_02 { background-image: url(../resource/images/thema/230629/thema_ev01_img03.png); background-position: right 78px bottom -10px; } 
+.themaWrap .etcWrap .txtBox.bg_03 { background-image: url(../resource/images/thema/230629/thema_ev01_img04.png); background-position: right 50px bottom; } 
+.themaWrap .etcWrap .txtBox.bg_04 { background-image: url(../resource/images/thema/230629/thema_ev01_img05.png); background-position: right 50px bottom; } 
+.themaWrap .etcWrap .txtBox.bg_05 { background-image: url(../resource/images/thema/230629/thema_ev01_img06.png); background-position: right 50px bottom; } 
+.themaWrap .etcWrap .etc { display: flex; align-items: center; padding: 0 100px; } 
+.themaWrap .etcWrap .etc p { color: #000; font-size: 20px; line-height: 1.3; word-break: keep-all; } 
+.themaWrap .etcWrap .etc::before { content: ''; display: inline-block; flex-shrink: 0; width: 136px; height: 118px; margin-right: 20px; background: url(../resource/images/thema/230629/thema_icon01.png) no-repeat; background-size: contain; } 
+
+.themaWrap .boxWrap .tit { margin: 80px 0 40px; font-size: 40px; font-weight: 600; text-align: center; letter-spacing: -0.5px; } 
+.themaWrap .whiteBox { margin: 0 50px; padding: 40px 50px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox { display: flex; align-items: center; padding: 0 30px; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 { flex-direction: row-reverse; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox + .itemBox { margin-top: 20px; padding-top: 20px; border-top: 2px dotted #cacaca; } 
+.themaWrap .whiteBox.boxStyle_01 .titWrap { flex-shrink: 0; width: 205px; height: 205px; position: relative; margin-right: 20px; padding: 20px; border-radius: 50%; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap { margin-right: 0; margin-left: 20px; } 
+.themaWrap .whiteBox.boxStyle_01 .titWrap p { margin: 16px 0; color: #fff; font-size: 26px; text-align: center; line-height: 1.2; word-break: keep-all; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox .titWrap::after { content: ''; display: block; margin: 0 auto; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item01 .titWrap::after { width: 64px; height: 58px; background: url(../resource/images/thema/230629/thema_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap::after { width: 60px; height: 64px; background: url(../resource/images/thema/230629/thema_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item03 .titWrap::after { width: 60px; height: 75px; background: url(../resource/images/thema/230629/thema_icon04.png) no-repeat; background-size: contain; } 
+
+.themaWrap .whiteBox.boxStyle_01 .itemBox .titWrap::before { position: absolute; left: -10px; color: #dadada; font-size: 48px; font-family: 'KOHIBaeumOTF'; font-style: italic; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item01 .titWrap::before { content: '01'; bottom: 10px; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item02 .titWrap::before { content: '02'; bottom: 0; } 
+.themaWrap .whiteBox.boxStyle_01 .itemBox.item03 .titWrap::before { content: '03'; bottom: 0; } 
+
+.themaWrap .whiteBox.boxStyle_01 .txtWrap p { color: #565656; font-size: 22px; font-weight: 100; word-break: keep-all; } 
+
+.themaWrap .whiteBox.boxStyle_02 .itemBox { padding: 40px 70px 20px 100px; border-radius: 30px; border: 1px solid #e6e6e6; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 { background-image: url(../resource/images/thema/230629/thema_ev02_img01.png); background-repeat: no-repeat; background-position: left 76px bottom; background-size: auto 230px; } 
+.themaWrap .whiteBox.boxStyle_02 .titWrap p { margin-bottom: 10px; font-size: 26px; font-weight: 600; word-break: keep-all; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .titWrap p { margin-bottom: 40px; } 
+.themaWrap p.num::before { margin-left: -70px; margin-right: 16px; color: #dadada; font-size: 40px; font-family: 'KOHIBaeumOTF'; font-weight: 300; font-style: italic; } 
+.themaWrap p.num.n01::before { content: '01'; } 
+.themaWrap p.num.n02::before { content: '02'; } 
+.themaWrap .whiteBox.boxStyle_02 .txtWrap p { font-size: 20px; word-break: keep-all; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox + .itemBox { margin-top: 40px; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .txtWrap p { padding-left: 200px; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox.item01 .txtWrap > span { display: block; margin: 30px 0 0; font-size: 16px; text-align: right; } 
+.themaWrap .whiteBox.boxStyle_02 .itemBox .txtWrap em { margin-left: 20px; font-size: 16px; } 
+.themaWrap .whiteBox.boxStyle_02 .imgWrap { display: flex; justify-content: space-between; text-align: center; margin-top: 30px; } 
+.themaWrap .whiteBox.boxStyle_02 .imgWrap .imgBox:nth-child(2) { flex-shrink: 0; margin: 20px 20px 0; } 
+.themaWrap .whiteBox.boxStyle_02 .imgWrap .imgBox:nth-child(2)::after { content: ''; display: block; width: 116px; height: 101px; margin: 0 auto; background: url(../resource/images/thema/230629/thema_ev02_img05.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox.boxStyle_02 .imgWrap .txtWrap p { margin-top: 20px; font-size: 16px; letter-spacing: -1px; word-break: keep-all; } 
+
+.themaWrap .event03 { background: url(../resource/images/thema/230629/thema_ev03_bg.jpg) no-repeat top; background-size: cover; } 
+.themaWrap .event03 .innerSection { padding: 100px 0 110px; } 
+.themaWrap .event03 .onSlide { position: relative; } 
+.themaWrap .event03 .onSlide .item { display: flex; justify-content: space-between; width: 100%; } 
+.themaWrap .event03 .onSlide .imgWrap { width: 480px; height: 430px; border: 5px solid #ffffff; box-sizing: border-box; border-radius: 20px; overflow: hidden; } 
+.themaWrap .event03 .onSlide .imgWrap img { width: 100%; height: 100%; object-fit: cover; } 
+.themaWrap .event03 .onSlide .txtWrap { width: calc(100% - 500px); padding: 70px 50px; background: #fff; border-radius: 20px; } 
+.themaWrap .event03 .onSlide .txtWrap .stit { margin-bottom: 20px; font-size: 28px; font-weight: 600; } 
+.themaWrap .event03 .onSlide .txtWrap .stxt { color: #646464; font-size: 22px; word-break: keep-all; } 
+.themaWrap .event03 .onSlide .slideBtn { position: absolute; right: 80px; bottom: 50px; border: 1px solid red; } 
+.themaWrap .event03 .onSlide .swiper-button-next:after, 
+.themaWrap .event03 .onSlide .swiper-button-prev:after { display: none } 
+.themaWrap .event03 .onSlide .swiper-button-prev,
+.themaWrap .event03 .onSlide .swiper-button-next { width: 46px; height: 46px; } 
+.themaWrap .event03 .onSlide .swiper-button-prev { background: url(../resource/images/thema/230629/thema_arrow_prev.png) no-repeat; left: -60px; background-size: contain; } 
+.themaWrap .event03 .onSlide .swiper-button-next { background: url(../resource/images/thema/230629/thema_arrow_next.png) no-repeat; background-size: contain; } 
+
+.themaWrap .event04 { background: url(../resource/images/thema/230629/thema_ev04_bg.jpg) no-repeat top; background-size: cover; } 
+.themaWrap .event04 .innerSection { padding: 100px 0 160px; } 
+.themaWrap .event04 .imgWrap { position: relative; margin: 60px 50px 40px; padding: 40px 0 20px; background: #a2e4de; border: 5px solid #ffffff; border-radius: 200px; text-align: center; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); } 
+.themaWrap .event04 .imgWrap::before { content: ''; width: 100px; height: 70px; position: absolute; top: -24px; right: 160px; background: url(../resource/images/thema/230629/thema_ev04_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .event04 .boxWrap .stxt { font-size: 18px; text-align: center; word-break: keep-all; } 
+.themaWrap .event04 .boxWrap .stxt span { font-size: 14px; } 
+
+.themaWrap .whiteBox.boxStyle_03 .itemBox { padding: 20px 70px; background-repeat: no-repeat; } 
+.themaWrap .whiteBox.boxStyle_03 .itemBox + .itemBox { margin-top: 20px; padding-top: 30px; border-top: 2px dotted #cacaca; } 
+.themaWrap .whiteBox.boxStyle_03 .itemBox.icon01 { background-image: url(../resource/images/thema/230629/thema_ev04_icon01.png); background-position: right 10px center; } 
+.themaWrap .whiteBox.boxStyle_03 .itemBox.icon02 { background-image: url(../resource/images/thema/230629/thema_ev04_icon02.png); background-position: right 10px bottom; } 
+.themaWrap .whiteBox.boxStyle_03 .itemBox.icon03 { background-image: url(../resource/images/thema/230629/thema_ev05_icon01.png); background-position: right 10px center; } 
+.themaWrap .whiteBox.boxStyle_03 .itemBox.icon04 { background-image: url(../resource/images/thema/230629/thema_ev05_icon02.png); background-position: right 10px center; } 
+.themaWrap .whiteBox.boxStyle_03 .titWrap p { font-size: 30px; font-weight: 600; } 
+.themaWrap .whiteBox.boxStyle_03 .txtWrap p { padding-right: 100px; font-size: 24px; word-break: keep-all; } 
+.themaWrap .whiteBox .grayBox { display: flex; justify-content: space-between; } 
+.themaWrap .whiteBox .grayBox .item { width: calc(100% / 2 - 10px); padding: 25px 30px; background: #e1e1e1; border-radius: 20px; } 
+.themaWrap .whiteBox .grayBox .stit { display: inline-block; padding: 5px 20px 2px; margin-bottom: 20px; background: #fff; font-size: 20px; border-radius: 30px; } 
+.themaWrap .whiteBox .grayBox li { padding-left: 10px; } 
+.themaWrap .whiteBox .grayBox li::before { content: '·'; margin-right: 5px; margin-left: -10px; } 
+
+.themaWrap .whiteBox.boxStyle_03 .qList { display: flex; align-items: flex-start; flex-direction: column; width: 100%; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li { display: inline-block; padding: 10px 30px 6px; margin-top: 20px; font-size: 20px; border-radius: 30px; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(even) { margin-left: auto; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(1) { background: #e0d8f8; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(2) { background: #f6dddd; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(3) { background: #fffac6; } 
+.themaWrap .whiteBox.boxStyle_03 .qList li:nth-child(4) { background: #d6f5d3; } 
+.themaWrap .whiteBox.boxStyle_03 .stxtWrap { max-width: 600px; position: relative; margin-left: auto; margin-top: 40px; padding: 20px 65px; border: 4px solid #000; border-radius: 20px; } 
+.themaWrap .whiteBox.boxStyle_03 .stxtWrap::before { content: ''; width: 110px; height: 121px; position: absolute; left: -50px; bottom: -74px; background: url(../resource/images/thema/230629/thema_ev04_icon04.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox.boxStyle_03 .stxtWrap p { color: #003181; font-size: 22px; font-weight: 600; word-break: keep-all; } 
+
+.themaWrap .event05 { background: url(../resource/images/thema/230629/thema_ev05_bg.jpg) no-repeat top; background-size: cover; } 
+.themaWrap .event05 .innerSection { padding: 130px 0 142px; } 
+.themaWrap .whiteBox.boxStyle_04 { margin-top: 60px; } 
+.themaWrap .whiteBox.boxStyle_04 .itemBox:first-child { padding: 20px 50px 0; } 
+.themaWrap .whiteBox.boxStyle_04 .itemBox + .itemBox { margin-top: 20px; padding-top: 30px; border-top: 2px dotted #cacaca; } 
+.themaWrap .whiteBox.boxStyle_04 .titWrap p { margin-bottom: 20px; color: #757575; font-size: 28px; font-weight: 600; } 
+.themaWrap .whiteBox.boxStyle_04 .txtWrap p { font-size: 22px; word-break: keep-all; } 
+.themaWrap .whiteBox.boxStyle_04 ul { margin-bottom: 40px; text-align: center; } 
+.themaWrap .whiteBox.boxStyle_04 li { display: inline-block; position: relative; padding: 10px 30px 6px; background: #4d4d4d; color: #fff; font-size: 20px; border-radius: 30px; } 
+.themaWrap .whiteBox.boxStyle_04 li + li { margin-left: 30px; } 
+.themaWrap .whiteBox.boxStyle_04 li + li::before { content: '+'; position: absolute; left: -24px; top: 50%; transform: translateY(-50%); color: #4d4d4d; font-size: 30px; font-family: 'GmarketSansBold'; } 
+
+.themaWrap .event06 { background: url(../resource/images/thema/230629/thema_ev06_bg.jpg) no-repeat top; background-size: cover; } 
+.themaWrap .event06 .innerSection { padding: 130px 0 150px; } 
+
+.themaWrap .event07 { background: url(../resource/images/thema/230629/thema_ev07_bg.jpg) no-repeat center; background-size: cover; } 
+.themaWrap .event07 .innerSection { padding: 30px 0 100px; } 
+.themaWrap .event07 .banner { padding: 50px 50px 30px; background: url(../resource/images/thema/230629/thema_ev07_img01.jpg) no-repeat center; background-size: cover; border-radius: 20px; } 
+.themaWrap .event07 .txtWrap { max-width: 360px; } 
+.themaWrap .event07 .txtWrap .stit { margin-bottom: 10px; font-size: 28px; font-weight: 600; } 
+.themaWrap .event07 .txtWrap .stxt { margin-bottom: 10px; color: #fff; font-size: 14px; word-break: keep-all; } 
+.themaWrap .event07 .linkWrap { text-align: right; padding-right: 50px; } 
+.themaWrap .event07 .linkWrap a { display: inline-block; padding: 10px 30px 6px; background: #37ffb6; color: #000; font-size: 20px; border: 2px solid #fff; border-radius: 30px; transition: 0.3s; } 
+.themaWrap .event07 .linkWrap a:hover { transform: scale(1.05); } 
+.themaWrap .event07 .linkWrap a span { position: relative; } 
+.themaWrap .event07 .linkWrap a span::after { content: ''; width: 40px; height: 34px; position: absolute; right: -46px; bottom: -22px; background: url(../resource/images/thema/230629/thema_icon05.png) no-repeat; background-size: contain; } 
+
+.themaWrap .event08 { background: #e5e9ea; } 
+.themaWrap .event08 .innerSection { padding: 100px 0 120px; } 
+.themaWrap .event08 .txtWrap { max-width: 500px; position: relative; margin: 0 50px 20px; text-align: center; } 
+.themaWrap .event08 .txtWrap::after { content: ''; display: inline-block; width: 273px; height: 152px; position: absolute; top: 0; right: -340px; background: url(../resource/images/thema/230629/thema_ev08_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .event08 .txtWrap span { color: #000; font-size: 26px; } 
+.themaWrap .event08 .txtWrap p { color: #003382; font-size: 40px; font-weight: 600; word-break: keep-all; } 
+.themaWrap .event08 ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; } 
+.themaWrap .event08 li { width: calc(100% / 3 - 40px); background: #fff; border-radius: 20px; } 
+.themaWrap .event08 li a { display: block; min-height: 350px; padding: 20px; position: relative; width: 100%; height: 100%; } 
+.themaWrap .event08 li a::after { content: 'go'; display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; position: absolute; right: 20px; bottom: 20px; font-size: 20px; border-radius: 50%; } 
+.themaWrap .event08 li:nth-child(1) a::after { background: #d8d8d8; } 
+.themaWrap .event08 li:nth-child(2) a::after { background: #aacad4; } 
+.themaWrap .event08 li:nth-child(3) a::after { background: #97e5df; } 
+.themaWrap .event08 li:nth-child(4) a::after { background: #ffd883; } 
+.themaWrap .event08 li:nth-child(5) a::after { background: #dec6d8; } 
+.themaWrap .event08 li a::before { content: ''; display: block; height: 60px; margin: 0 auto 20px; background-repeat: no-repeat; background-size: contain; } 
+.themaWrap .event08 li a.icon01::before { width: 53px; background-image: url(../resource/images/thema/230629/thema_ev08_icon01.png); } 
+.themaWrap .event08 li a.icon02::before { width: 62px; background-image: url(../resource/images/thema/230629/thema_ev08_icon02.png); } 
+.themaWrap .event08 li a.icon03::before { width: 82px; background-image: url(../resource/images/thema/230629/thema_ev08_icon03.png); } 
+.themaWrap .event08 li a.icon04::before { width: 65px; background-image: url(../resource/images/thema/230629/thema_ev08_icon04.png); } 
+.themaWrap .event08 li a.icon05::before { width: 57px; background-image: url(../resource/images/thema/230629/thema_ev08_icon05.png); } 
+.themaWrap .event08 li a strong { position: relative; font-size: 26px; z-index: 1; } 
+.themaWrap .event08 li strong::after { content: ""; width: 0; height: 9px; position: absolute; left: 0; bottom: 0; transition: all 0.3s; z-index: -1; opacity: 0.5; } 
+.themaWrap .event08 li a:hover strong::after { width: 100%; } 
+.themaWrap .event08 li:nth-child(1) strong::after { background: #d8d8d8; } 
+.themaWrap .event08 li:nth-child(2) strong::after { background: #aacad4; } 
+.themaWrap .event08 li:nth-child(3) strong::after { background: #97e5df; } 
+.themaWrap .event08 li:nth-child(4) strong::after { background: #ffd883; } 
+.themaWrap .event08 li:nth-child(5) strong::after { background: #dec6d8; } 
+.themaWrap .event08 li a p { margin-top: 10px; font-size: 20px; } 
+.themaWrap .event08 li:nth-child(1) { border: 3px solid #d8d8d8; } 
+.themaWrap .event08 li:nth-child(2) { border: 3px solid #aacad4; } 
+.themaWrap .event08 li:nth-child(3) { border: 3px solid #97e5df; } 
+.themaWrap .event08 li:nth-child(4) { border: 3px solid #ffd883; } 
+.themaWrap .event08 li:nth-child(5) { border: 3px solid #dec6d8; } 
+.themaWrap .event08 li:nth-child(1) strong { color: #d8d8d8; } 
+.themaWrap .event08 li:nth-child(2) strong { color: #aacad4; } 
+.themaWrap .event08 li:nth-child(3) strong { color: #97e5df; } 
+.themaWrap .event08 li:nth-child(4) strong { color: #ffd883; } 
+.themaWrap .event08 li:nth-child(5) strong { color: #dec6d8; } 
+
+@media all and (max-width:1700px){
+ .themaWrap .leftMenu { display: none; } 
+ }
+
+@media all and (max-width:1024px){
+ .themaWrap .mainVisual .imgWrap { margin-bottom: 0; } 
+ .themaWrap .mainVisual .imgWrap img { transform: scale(0.8); } 
+
+ .themaWrap .event01 li { width: calc(100% / 3); } 
+ }
+
+@media all and (max-width:860px){
+ .themaWrap .mainVisual .innerSection { max-width: 100%; padding: 30px 10px 50px; background-image: none } 
+ .themaWrap .mainVisual .txtWrap span { font-size: 24px; } 
+ .themaWrap .mainVisual .txtWrap p { font-size: 22px; word-break: keep-all; } 
+
+ .themaWrap .event01 ul { flex-wrap: wrap; gap: 10px; } 
+.themaWrap .event01 li { width: calc(100% / 2 - 10px); } 
+ .themaWrap .event01 .item.icon01 { background-image: none; } 
+ .themaWrap .event01 .innerSection { padding: 100px 10px; } 
+.themaWrap .event01 .listTit { font-size: 32px; } 
+.themaWrap .event01 .listTit strong { font-size: 38px; } 
+.themaWrap .event01 li a p { font-size: 26px; } 
+.themaWrap .event01 li a span { font-size: 14px; } 
+.themaWrap .event01 li a { height: 200px; padding: 20px 10px; background-size: auto 50%; } 
+ }
+
+@media all and (max-width:640px){
+ .themaWrap .mainVisual .txtWrap span { padding: 4px 15px 0px; font-size: 16px; border: 1px solid #000; box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1); } 
+ .themaWrap .mainVisual .txtWrap p { font-size: 14px; } 
+
+ .themaWrap .event01 .innerSection { padding: 50px 10px; } 
+.themaWrap .event01 .item + .item { margin-top: 20px; } 
+ .themaWrap .event01 .listTit { font-size: 20px; } 
+.themaWrap .event01 .listTit strong { font-size: 24px; } 
+.themaWrap .event01 li a span { font-size: 12px; } 
+.themaWrap .event01 li a p { font-size: 20px; } 
+.themaWrap .event01 li a { height: 140px; padding: 10px 10px; background-size: auto 30%; } 
+}
