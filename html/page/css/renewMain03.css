@@ -24,7 +24,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_util ul li a { display: block; color: #fff; font-size: 13px; line-height: 1; } 
 #newHeader .h_cont { display: flex; align-items: center; justify-content: space-between; height: 70px; margin-top: 25px; } 
 #newHeader .h_cont .logo { height: 100%; } 
-#newHeader .h_cont .logo a { display: block; width: 100%; height: 100%; padding: 10px 0; } 
+#newHeader .h_cont .logo a { display: block; width: 100%; height: 100%; padding: 6px 0; } 
 #newHeader .h_cont .logo img { width: 100%; height: 100%; object-fit: contain; } 
 #newHeader .nheader_mid { background: #fff; border-bottom: 1px solid #dadada; } 
 #newHeader .h_ui { display: flex; align-items: center; } 
@@ -40,7 +40,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_gnb li { width: 150px; text-align: center; } 
 #newHeader .h_gnb li a { display: block; height: 70px; color: #000; font-size: 22px; line-height: 70px; } 
 /* 헤더 메뉴 */
-#newHeader .h_gnb_menu { display: none; position: absolute; width: 100%; background: #fff; border-bottom: 1px solid #d5d5d5; z-index: 10; } 
+/* #newHeader .h_gnb_menu { display: none; position: absolute; width: 100%; background: #fff; border-bottom: 1px solid #d5d5d5; z-index: 10; } 
 #newHeader .mainMenu { display: flex; width: 750px; margin: 0 auto; } 
 #newHeader .mainMenu > li { display: flex; flex-direction: column; align-items: center; width: 150px; padding: 20px 0 36px; transition: all 0.25s; } 
 #newHeader .mainMenu > li:hover { background: #f2f2f2; } 
@@ -56,7 +56,8 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .subMenu li { line-height: 1; text-align: center; } 
 #newHeader .subMenu a { display: block; padding: 6px 0; color: #666666; font-size: 12px; font-weight: 300; transition: all 0.25s; } 
 #newHeader .subMenu a:hover,
-#newHeader .subMenu a:focus { color: #008ae0; font-weight: bold; } 
+#newHeader .subMenu a:focus { color: #008ae0; font-weight: bold; }  */
+
 /* 헤더 모바일 */
 #newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 

@@ -21,7 +21,7 @@
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/newMain.css?ver=20221031">
 	<!-- 추가 css -->
-    <link rel="stylesheet" href="./css/renewMain03.css">
+    <link rel="stylesheet" href="./css/renewMain02.css">
     
 </head>
 
@@ -114,318 +114,52 @@
                     </li>
                 </ul>
             </div>
-            <style>
-                .h_gnb_bg {
-                    display: none;
-                    position: absolute;
-                    width: 100%;
-                }
-                .h_gnb_menu {   
-                    display: grid;                
-                    grid-template-columns: 976px 284px;
-                    justify-content: center;
-                    width: 100%;
-                    position: absolute;
-                    background: #fff;
-                    border-bottom: 1px solid #dadada;
-                    z-index: 9999;
-                    overflow: hidden;
-                }
-                .h_gnb_menu::after {
-                    content: '';
-                    width: 50%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    background: #edf6fd;
-                    z-index: 1;
-                }
-                .h_gnb_menu .gnb_item {
-                    position: relative;
-                    padding: 50px 0 25px;
-                    z-index: 2;
-                }
-                .h_gnb_menu .gnb_item.menu {
-                    display: grid;
-                    grid-template-areas: "depth_01 depth_01 depth_01 depth_01 depth_01";
-                    background: #fff;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01 {
-                    position: relative;
-                    padding: 0 15px;
-                    min-height: 204px;
-                    align-self: stretch;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01::before {
-                    content: '';
-                    width: 1px;
-                    position: absolute;
-                    top: 4px;
-                    bottom: 4px;
-                    left: 0;                    
-                    background: #ececec;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01 .etc_txt {
-                    position: absolute;
-                    top: -26px;
-                    left: 15px;
-                    color: #008ae0;
-                    font-size: 12px;
-                    line-height: 16px;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01.double .depth_02 {
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    gap: 0 20px;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_tit {
-                    display: inline-block;
-                    margin-bottom: 16px;
-                    color: #000;
-                    font-size: 16px;
-                    font-weight: 600;
-                    pointer-events: none;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_02 a {
-                    color: #000;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 28px;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_02 a:hover,
-                .h_gnb_menu .gnb_item.menu .depth_02 a:focus {
-                    color: #008ae0;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01 .extra {
-                    display: block;
-                    margin-top: 34px;
-                    padding: 10px 15px;
-                    background: #f5f5f5;
-                    border: 1px solid #d2d2d2;
-                    border-radius: 5px;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01 .extra p {
-                    color: #000;
-                    font-size: 14px;
-                    font-weight: 600;
-                }
-                .h_gnb_menu .gnb_item.menu .depth_01 .extra span {
-                    display: block;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-                .h_gnb_menu .gnb_item.links {
-                    width: 248px;
-                    padding: 24px 32px;
-                }
-                .h_gnb_menu .gnb_item.links .etc_txt {
-                    display: block;
-                    padding-left: 8px;
-                    color: #008ae0;
-                    font-size: 12px;
-                    line-height: 16px;
-                }
-                
-                
-            </style>
-            <div class="h_gnb_bg">
-                <div class="h_gnb_menu">
-                    <div class="gnb_item menu">
-                        <div class="depth_01 double">
-                            <span class="etc_txt">혜택이 필요하면</span>
-                            <a href="#" class="depth_tit"><span class="menu_tit">정책정보</span></a>
-                            <ul class="depth_02">
-                                <li><a href=""><span class="menu_txt">일자리지원사업</span></a></li>
-                                <li><a href=""><span class="menu_txt">기업지원정책</span></a></li>
-                                <li><a href=""><span class="menu_txt">취업교육</span></a></li>
-                                <li><a href=""><span class="menu_txt">대외활동</span></a></li>
-                                <li><a href=""><span class="menu_txt">정책등록</span></a></li>
-                            </ul>
-                            <a href="" class="extra">
-                                <p><span>정책신청은</span>잡아바 어플라이 바로가기</p>
-                            </a>
-                        </div>
-                        <div class="depth_01">
-                            <a href="#" class="depth_tit"><span class="menu_tit">취업준비</span></a>
-                            <ul class="depth_02">
-                                <li><a href=""><span class="menu_txt">취업진로진단</span></a></li>
-                                <li><a href=""><span class="menu_txt">진로취업상담</span></a></li>
-                                <li><a href=""><span class="menu_txt">자기소개서 첨삭</span></a></li>
-                                <li><a href=""><span class="menu_txt">AI역량검사</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="depth_01">
-                            <a href="#" class="depth_tit"><span class="menu_tit">러닝센터</span></a>
-                            <ul class="depth_02">
-                                <li><a href=""><span class="menu_txt">알아보기</span></a></li>
-                                <li><a href=""><span class="menu_txt">동영상 교육</span></a></li>
-                                <li><a href=""><span class="menu_txt">연계신청</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="depth_01 double">
-                            <span class="etc_txt">공고를 찾는다면</span>
-                            <a href="#" class="depth_tit"><span class="menu_tit">채용정보</span></a>
-                            <ul class="depth_02">
-                                <li><a href=""><span class="menu_txt">기업채용정보</span></a></li>
-                                <li><a href=""><span class="menu_txt">일경험 채용관</span></a></li>
-                                <li><a href=""><span class="menu_txt">공공일자리</span></a></li>
-                                <li><a href=""><span class="menu_txt">탐나는 기업관</span></a></li>
-                                <li><a href=""><span class="menu_txt">좋은 일자리 정보관</span></a></li>
-                            </ul>
-                            <a href="" class="extra">
-                                <p><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</p>
-                            </a>
-                        </div>
-                        <div class="depth_01">
-                            <a href="#" class="depth_tit"><span class="menu_tit">참여소통</span></a>
-                            <ul class="depth_02">
-                                <li><a href=""><span class="menu_txt">공지사항</span></a></li>
-                                <li><a href=""><span class="menu_txt">이벤트</span></a></li>
-                                <li><a href=""><span class="menu_txt">Q&A</span></a></li>
-                                <li><a href=""><span class="menu_txt">잡학사전</span></a></li>
-                                <li><a href=""><span class="menu_txt">정책활용 꿀팁</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <style>
-                        .h_gnb_menu .gnb_item.links ul {
-                            margin-top: 2px;
-                        }
-                        .h_gnb_menu .gnb_item.links li {
-                        }
-                        .h_gnb_menu .gnb_item.links li a {
-                            display: grid;
-                            width: 226px;
-                            padding: 8px 8px 12px;
-                            gap: 0 10px;
-                            grid-template-areas: "links_icon links_tit" "links_icon links_txt";
-                            grid-template-columns: 36px 1fr;
-                            align-items: center;
-                            border-radius: 10px;
-                        }
-                        .h_gnb_menu .gnb_item.links li a:hover {
-                            background: #acdfff;
-                        }
-                        .h_gnb_menu .gnb_item.links li a .links_icon {
-                            display: grid;
-                            width: 36px;
-                            height: 36px;
-                            background: #fff;
-                            border: 1px solid #eaedf4;
-                            border-radius: 5px;
-                            grid-area: links_icon;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        .h_gnb_menu .gnb_item.links li a .links_icon img {
-                            height: 24px;
-                        }
-                        .h_gnb_menu .gnb_item.links li a .links_tit {
-                            display: grid;
-                            color: #000;
-                            font-size: 16px;
-                            font-weight: 600;
-                            grid-auto-flow: column dense;
-                            grid-area: links_tit;
-                            align-items: center;
-                            justify-content: start;
-                        }
-                        .h_gnb_menu .gnb_item.links li a .links_tit::after {
-                            content: '';
-                            display: inline-block;
-                            width: 6px;
-                            height: 10px;
-                            margin-left: 14px;
-                            background: url(./images/main/gnb_icon_arrow.png) no-repeat;
-                        }
-                        .h_gnb_menu .gnb_item.links li a .links_txt {
-                            color: #000;
-                            font-size: 12px;
-                            font-weight: 400;
-                            grid-area: links_txt;
-
-                        }
-                    </style>
-                    <div class="gnb_item links">
-                        <span class="etc_txt">잡아바가 처음이라면</span>
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <span class="links_icon"><img src="./images/main/gnb_icon01.png" alt="잡아바 상담톡"></span>
-                                    <span class="links_tit">잡아바 상담톡</span>
-                                    <span class="links_txt">빠르고 정확한 진로 및 취업상담</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="links_icon"><img src="./images/main/gnb_icon02.png" alt="좋은 일자리 정보관"></span>
-                                    <span class="links_tit">좋은 일자리 정보관</span>
-                                    <span class="links_txt">경기도 내 모든 추천 일자리</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="links_icon"><img src="./images/main/gnb_icon03.png" alt="구직등록"></span>
-                                    <span class="links_tit">구직등록</span>
-                                    <span class="links_txt">내게 딱 맞는 일자리 찾기</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="links_icon"><img src="./images/main/gnb_icon04.png" alt="채용공고 등록"></span>
-                                    <span class="links_tit">채용공고 등록</span>
-                                    <span class="links_txt">우리회사 맞춤인재 채용</span>
-                                </a>
-                            </li>
+            <div class="h_gnb_menu">
+                <ul class="mainMenu">
+                    <li>
+                        <p>지원정책</p>
+                        <ul class="subMenu">
+                            <li><a href="">일자리 지원사업</a></li>
+                            <li><a href="">취업교육</a></li>
+                            <li><a href="">대외활동</a></li>
+                            <li><a href="">기업지원정책</a></li>
                         </ul>
-                    </div>
-                    <!-- <ul class="mainMenu">
-                        <li>
-                            <p>지원정책</p>
-                            <ul class="subMenu">
-                                <li><a href="">일자리 지원사업</a></li>
-                                <li><a href="">취업교육</a></li>
-                                <li><a href="">대외활동</a></li>
-                                <li><a href="">기업지원정책</a></li>
-                            </ul>
-                            <p>신청하기</p>
-                            <ul class="subMenu">
-                                <li><a href="">어플라이 바로가기</a></li>
-                            </ul>
-                            <a href=""><span>정책등록</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span>취업진로진단</span></a>
-                            <a href=""><span>진로 취업상담</span></a>
-                            <a href=""><span>자기소개서 첨삭</span></a>
-                            <a href=""><span>AI 역량검사</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span>알아보기</span></a>
-                            <a href=""><span>동영상교육</span></a>
-                            <a href=""><span>연계신청</span></a>
-                        </li>
-                        <li>
-                            <p>채용공고</p>
-                            <ul class="subMenu">
-                                <li><a href="">기업채용정보</a></li>
-                                <li><a href="">일경험 채용관</a></li>
-                                <li><a href="">공공일자리</a></li>
-                            </ul>
-                            <a href=""><span>탐나는 기업</span></a>
-                            <a href=""><span>탐나는일자리정보관</span></a>
-                            <a href="" class="new_label_01"><span>채용 박람회</span></a>
-                        </li>
-                        <li>
-                            <a href=""><span>공지사항</span></a>
-                            <a href=""><span>이벤트</span></a>
-                            <a href=""><span>Q&A</span></a>
-                            <a href=""><span>잡학사전</span></a>
-                            <a href=""><span>정책활용 꿀팁</span></a>
-                        </li>
-                    </ul> -->
-                </div>
+                        <p>신청하기</p>
+                        <ul class="subMenu">
+                            <li><a href="">어플라이 바로가기</a></li>
+                        </ul>
+                        <a href=""><span>정책등록</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>취업진로진단</span></a>
+                        <a href=""><span>진로 취업상담</span></a>
+                        <a href=""><span>자기소개서 첨삭</span></a>
+                        <a href=""><span>AI 역량검사</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>알아보기</span></a>
+                        <a href=""><span>동영상교육</span></a>
+                        <a href=""><span>연계신청</span></a>
+                    </li>
+                    <li>
+                        <p>채용공고</p>
+                        <ul class="subMenu">
+                            <li><a href="">기업채용정보</a></li>
+                            <li><a href="">일경험 채용관</a></li>
+                            <li><a href="">공공일자리</a></li>
+                        </ul>
+                        <a href=""><span>탐나는 기업</span></a>
+                        <a href=""><span>탐나는일자리정보관</span></a>
+                        <a href="" class="new_label_01"><span>채용 박람회</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>공지사항</span></a>
+                        <a href=""><span>이벤트</span></a>
+                        <a href=""><span>Q&A</span></a>
+                        <a href=""><span>잡학사전</span></a>
+                        <a href=""><span>정책활용 꿀팁</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="h_mobile">
