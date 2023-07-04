@@ -69,7 +69,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_gnb_menu .gnb_item.links li a .links_txt { color: #000; font-size: 12px; font-weight: 400; grid-area: links_txt; } 
 
 /* 헤더 모바일 */
-#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: 0; background: #fff; transition: all 0.3s; z-index: 999; } 
+#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
 #newHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #newHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
