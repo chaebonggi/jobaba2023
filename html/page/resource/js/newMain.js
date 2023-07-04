@@ -195,14 +195,10 @@
         if(window.innerWidth < 860) {
             $('.h_mobile').toggleClass('show');
         } else {
-            // $('.h_gnb_bg').toggleClass('active');
-            $('.h_gnb_bg').slideToggle(300);
-            // $('.h_gnb_bg').slideToggle(300, function(){
-            //     $(this).addClass('active');
-            // });
-            // $('.h_gnb_menu').mouseleave(function () {
-            //     $('.h_gnb_menu').stop().slideUp(300);
-            // });
+            $('.h_gnb_bg').stop().slideToggle(300);
+            $('.h_gnb_bg').mouseleave(function () {
+                $('.h_gnb_bg').stop().slideUp(300);
+            });
         }
       }
       if(window.innerWidth > 860) {
