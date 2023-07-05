@@ -27,7 +27,7 @@
 .centerJoin .joinCont01 .innerSection { max-width: 1080px; padding: 100px 0 100px; } 
 
 .centerJoin h2 { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: #000; font-size: 34px; text-align: center; line-height: 1; } 
-.centerJoin h2 span { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-left: 6px;} 
+.centerJoin h2 span { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-left: 6px; } 
 .centerJoin h2 i { display: inline-block; margin: 0 8px; background-repeat: no-repeat; background-position: center; background-size: contain; } 
 .centerJoin h2 i.icon01 { width: 55px; height: 55px; background-image: url(../images/centerJoin/joinCont_icon01.png); } 
 .centerJoin h2 i.icon02 { width: 60px; height: 61px; background-image: url(../images/centerJoin/joinCont_icon02.png); } 
@@ -67,18 +67,18 @@
 .centerJoin .joinCont03 .item:nth-of-type(1) { border-radius: 10px 10px 0 0; } 
 .centerJoin .joinCont03 .item:last-child { border-radius: 0 0 10px 10px; } 
 .centerJoin .joinCont03 .item:not(:nth-child(2)) { border-top: none; } 
-.centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px 10px; font-size: 16px; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px;} 
+.centerJoin .joinCont03 input[type="text"] { width: 100%; padding: 5px 10px; font-size: 16px; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px; } 
 .centerJoin .joinCont03 input[type="tel"] { max-width: 130px; width: 100%; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px; } 
-.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #cacaca; font-size: 14px; font-weight: 400;} 
+.centerJoin .joinCont03 input[type="text"]::placeholder, .centerJoin .joinCont03 input[type="tel"]::placeholder { color: #cacaca; font-size: 14px; font-weight: 400; } 
 .centerJoin .joinCont03 .tit { display: flex; align-items: center; justify-content: center; width: 250px; background: #f5f5f5; font-size: 18px; text-align: center; border-right: 1px solid #cccccc; } 
 .centerJoin .joinCont03 .cont { display: flex; align-items: center; width: calc(100% - 250px); background: #fff; } 
 .centerJoin .joinCont03 .contBox { width: 100%; padding: 10px 20px; } 
 .centerJoin .joinCont03 .contBox.box01 { padding: 20px 30px; } 
-.centerJoin .joinCont03 .contBox p.point {padding-left: 20px;}
+.centerJoin .joinCont03 .contBox p.point { padding-left: 20px; } 
 .centerJoin .joinCont03 .contBox p.point::before { content: "※"; margin-left: -20px; margin-right: 5px; } 
-.centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px;} 
+.centerJoin .joinCont03 .contBox .comm_select { width: 380px !important; max-width: 100%; border: 1px solid #ddd; box-sizing: border-box; border-radius: 5px; } 
 .centerJoin .joinCont03 .contBox.style_01 { display: flex; gap: 10px } 
-.centerJoin .joinCont03 .contBox.style_01 .comm_select { max-width: 90px; min-width: initial;} 
+.centerJoin .joinCont03 .contBox.style_01 .comm_select { max-width: 90px; min-width: initial; } 
 .centerJoin .joinCont03 .contBox p { font-size: 16px; word-break: keep-all; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p span { font-size: 16px; } 
 .centerJoin .joinCont03 .contBox .txtWrap ul { margin-top: 10px; } 
@@ -123,11 +123,11 @@
  
  @media screen and (max-width: 860px){
  .centerJoin h2 { justify-content: center; font-size: 28px; word-break: keep-all; } 
- .centerJoin h2 span {width: 100%; margin-top: 10px; margin-left: 0;}
- .centerJoin h2 i {margin: 0 4px;}
- .centerJoin h2 i.icon01 { width: 35px; height: 35px;} 
- .centerJoin h2 i.icon02 { width: 40px; height: 41px;} 
- .centerJoin h2 i.icon03 { width: 40px; height: 33px;} 
+ .centerJoin h2 span { width: 100%; margin-top: 10px; margin-left: 0; } 
+ .centerJoin h2 i { margin: 0 4px; } 
+ .centerJoin h2 i.icon01 { width: 35px; height: 35px; } 
+ .centerJoin h2 i.icon02 { width: 40px; height: 41px; } 
+ .centerJoin h2 i.icon03 { width: 40px; height: 33px; } 
 
  .centerJoin .joinMain .innerSection { padding: 30px 10px; } 
  .centerJoin .joinMain .innerSection::before { content: none; } 
@@ -152,7 +152,7 @@
 .joinCont02 .innerSection { padding: 0; } 
 .joinCont02 .inner { padding: 50px 20px 100px; } 
 
-.joinCont02 .section_various .card_wrap .card_box {height: 570px;}
+.joinCont02 .section_various .card_wrap .card_box { height: 570px; } 
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; height: 570px; padding: 30px 40px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 16px; } 
 /* .joinCont02 .section_various .card_wrap .card_item br.forMobile { display: none; } */
@@ -165,7 +165,7 @@
 .centerJoin .joinCont03 .joinWrap > p { margin: 20px 0 10px; font-size: 12px; } 
 .centerJoin .joinCont03 .item { flex-direction: column; } 
 .centerJoin .joinCont03 .contBox { padding: 20px 10px; } 
-.centerJoin .joinCont03 .contBox.box01 {padding: 20px 20px;}
+.centerJoin .joinCont03 .contBox.box01 { padding: 20px 20px; } 
 .centerJoin .joinCont03 .tit { width: 100%; padding: 10px 0; font-size: 20px; border-right: none; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p { font-size: 18px; } 
 .centerJoin .joinCont03 .contBox .txtWrap li { font-size: 16px; } 
@@ -173,7 +173,7 @@
 .centerJoin .joinCont03 .cont { width: 100%; } 
 .centerJoin .joinCont03 .checkItem { text-align: center; } 
 .centerJoin .joinCont03 .checkItem span + span { margin-left: 10px; } 
-.centerJoin .joinCont03 .comCheckBox { text-align: center; } 
+.centerJoin .joinCont03 .comCheckBox.tct { text-align: center; } 
 .centerJoin .joinCont03 .comCheckBox label { font-size: 14px; } 
 .centerJoin .joinCont03 .btnWrap { margin-top: 20px; padding: 0; } 
 .centerJoin .joinCont03 .btnWrap a { padding: 10px 0; font-size: 26px; } 
@@ -183,10 +183,10 @@
  
  @media screen and (max-width: 640px){
  .centerJoin h2 { font-size: 24px; } 
- .centerJoin h2 i {margin: 0 2px;}
- .centerJoin h2 i.icon01 { width: 25px; height: 25px;} 
- .centerJoin h2 i.icon02 { width: 30px; height: 31px;} 
- .centerJoin h2 i.icon03 { width: 30px; height: 23px;} 
+ .centerJoin h2 i { margin: 0 2px; } 
+ .centerJoin h2 i.icon01 { width: 25px; height: 25px; } 
+ .centerJoin h2 i.icon02 { width: 30px; height: 31px; } 
+ .centerJoin h2 i.icon03 { width: 30px; height: 23px; } 
 
  .centerJoin .joinMain .imgWrap { margin-bottom: 20px; } 
  .centerJoin .joinMain .txtWrap p { font-size: 18px; } 
@@ -212,6 +212,7 @@
 .centerJoin .joinCont03 .contBox .txtWrap li + li { margin-top: 10px; } 
 .centerJoin .joinCont03 .contBox p { font-size: 14px; } 
 .centerJoin .joinCont03 .tit { padding: 5px 0; font-size: 16px; } 
+.centerJoin .joinCont03 .contBox .txtWrap li span { margin-bottom: 10px; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p { font-size: 14px; } 
 .centerJoin .joinCont03 .contBox .txtWrap > p span { font-size: 14px; } 
 .centerJoin .joinCont03 input[type="text"] { font-size: 16px; } 
