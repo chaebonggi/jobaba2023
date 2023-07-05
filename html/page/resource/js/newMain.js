@@ -243,6 +243,38 @@
         let randomNumber = Math.floor(Math.random() * 8) + 1;
         image.setAttribute('src', `./images/main/logo_0${randomNumber}.png`);
     });
+    // 구직등록 로그인 팝업
+    $(".newResume").on('click', function(e){
+        var login = false;
+        var entUsr = false;
+
+        if(login) {
+            if(entUsr){
+                alertLayerPopup("알림","개인회원 전용 서비스입니다.");
+                return false;
+            }else{
+                location.href = "https://www.jobaba.net/mber/myPage/resume/jbhntRegForm.do";
+            }
+        } else {
+            loginLayerPopup("알림", "로그인후 이용 하여 주세요.");
+        }
+    });
+    //채용등록 로그인 팝업
+    $(".newEnt").on('click', function(e){
+        var login = false;
+        var entUsr = false;
+
+        if(login) {
+            if(!entUsr){
+                alertLayerPopup("알림","기업회원 전용 서비스입니다.");
+                return false;
+            }else{
+                location.href = "https://www.jobaba.net/empmn/entEmpmn/rgst.do";
+            }
+        } else {
+            loginLayerPopup("알림", "로그인후 이용 하여 주세요.");
+        }
+    });
 
     // 헤더 fixed
     // var $newHeader = $('#newHeader');

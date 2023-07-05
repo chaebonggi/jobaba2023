@@ -69,7 +69,7 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_gnb_menu .gnb_item.links li a .links_txt { color: #000; font-size: 12px; font-weight: 400; grid-area: links_txt; } 
 
 /* 헤더 모바일 */
-#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 999; } 
+#newHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 9999; } 
 #newHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
 #newHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #newHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
@@ -104,8 +104,8 @@ a:focus, button:focus { outline: thin dotted; }
 #newHeader .h_mobile_mid .mobile_menu > li > a::before { content: ''; height: 14px; width: 14px; position: absolute; left: -24px; top: 50%; background: #fff; transform: translateY(-50%); border: 4px solid #9ea9ff; border-radius: 50%; box-sizing: border-box; } 
 #newHeader .h_mobile_mid .mobileGnb { padding: 10px 0; } 
 #newHeader .h_mobile_mid .mobileGnb li > a { display: block; padding: 5px 0; color: #000; font-size: 16px; } 
-#newHeader .h_mobile_mid .mobileSub { display: flex; flex-wrap: wrap; margin-top: 20px;} 
-#newHeader .h_mobile_mid .mobileSub li { border-radius: 5px; border: 1px solid #d2d2d2; overflow: hidden; } 
+#newHeader .h_mobile_mid .mobileSub { display: flex; flex-wrap: wrap; margin: 10px 0;} 
+#newHeader .h_mobile_mid .mobileSub li {width: 100%; border-radius: 5px; border: 1px solid #d2d2d2; overflow: hidden; } 
 #newHeader .h_mobile_mid .mobileSub li a { display: block; padding: 10px 15px; background: #f5f5f5; color: #000; font-size: 14px; font-weight: 600; } 
 #newHeader .h_mobile_mid .mobileSub li a span { display: block; font-size: 12px; font-weight: 500;}
 
@@ -453,7 +453,7 @@ a:focus, button:focus { outline: thin dotted; }
  #newHeader .h_util { height: 4px; } 
  #newHeader .h_util ul { display: none; } 
  #newHeader .h_gnb::before { content: ''; width: 120%; height: 1px; position: absolute; top: 0; left: -20px; background: #dadada; } 
- #newHeader .h_gnb { position: relative; order: 3; } 
+ #newHeader .h_gnb { position: relative; margin-right: 0; order: 3; } 
  #newHeader .h_gnb li a { padding: 0; } 
  #newHeader .h_gnb_bg { display: none !important; } 
  #newHeader.fixed_gnb .h_gnb { display: none; } 
