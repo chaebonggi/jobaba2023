@@ -139,8 +139,7 @@
  .centerJoin .joinMain .innerSection::before { right: 0; bottom: 0; transform: scale(0.8); } 
  }
 
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 1024px) {
  /* 230706 추가 css */
  .centerJoin .joinCont01 .innerSection { padding: 100px 20px; } 
  .centerJoin .joinCont01 ul { flex-wrap: wrap; justify-content: center; } 
@@ -150,7 +149,7 @@
  .centerJoin .joinCont05 .titWrap .tit { max-width: 100%; margin-top: 0; margin-bottom: 40px; text-align: center; } 
  .centerJoin .joinCont05 .imgWrap { margin: 0 auto; } 
  .centerJoin .joinCont05 .onSlide .button-next { left: initial; right: 0; } 
-}
+ }
 
  
  
@@ -223,7 +222,7 @@
 .centerJoin .joinCont05 .txtWrap li span::before { width: 20px; height: 15px; left: -30px; } 
 .centerJoin .joinCont05 .onSlide .button-prev { left: -40px; } 
 .centerJoin .joinCont05 .onSlide .button-next { right: -40px; } 
-}
+ }
  
  @media screen and (max-width: 640px){
  .centerJoin h2 { font-size: 24px; } 
@@ -238,7 +237,7 @@
  /* 230706 추가 css */
 .centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
 .centerJoin .joinCont01 ul { margin-top: 20px; } 
-.centerJoin .joinCont01 ul li {width: 80%;}
+.centerJoin .joinCont01 ul li { width: 80%; } 
 .centerJoin .joinCont01 ul li + li { margin-top: 10px; } 
 .centerJoin .joinCont01 .whiteBox { padding: 0 20px 20px; } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
@@ -271,9 +270,10 @@
 
  /* 230706 추가 css */
  .centerJoin .joinCont05 .onSlide { padding-top: 30px; } 
- .centerJoin .joinCont05 .onSlide .slideBtn { display: none; } 
+ .centerJoin .joinCont05 .onSlide .slideBtn { top: 190px; left: 50px; right: 50px; } 
+ .centerJoin .joinCont05 .onSlide .button-prev, .centerJoin .joinCont05 .onSlide .button-next { width: 30px; height: 30px; } 
  .centerJoin .joinCont05 .titWrap .tit span { font-size: 16px; } 
- .centerJoin .joinCont05 .imgWrap { max-width: 360px; padding: 0 10px; } 
+ .centerJoin .joinCont05 .imgWrap { max-width: 360px; padding: 0 30px; } 
 .centerJoin .joinCont05 .titWrap .tit { margin-bottom: 10px; font-size: 22px; } 
 
  .centerJoin .joinCont05 .imgBox { padding: 2px; border: 4px solid #efefef; box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.20); } 
@@ -282,4 +282,4 @@
 .centerJoin .joinCont05 .txtWrap li { padding: 10px 10px 10px 30px; font-size: 14px; } 
 .centerJoin .joinCont05 .txtWrap li span::before { width: 14px; height: 11px; top: 6px; left: -18px; } 
 .centerJoin .joinCont05 .txtWrap li + li { margin-top: 8px; } 
-}
+ }
