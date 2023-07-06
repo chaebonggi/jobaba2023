@@ -34,7 +34,7 @@
 .centerJoin h2 i.icon03 { width: 60px; height: 53px; background-image: url(../images/centerJoin/joinCont_icon03.png); } 
 
 /* 230706 추가 css */
-.centerJoin .joinCont01 ul { display: flex; justify-content: space-between; margin-top: 100px; } 
+.centerJoin .joinCont01 ul { display: flex; justify-content: space-between; margin-top: 50px; } 
 .centerJoin .joinCont01 ul li { width: calc(100% / 3 - 20px); } 
 .centerJoin .joinCont01 .whiteBox { min-height: 350px; padding: 46px 20px; position: relative; background: #fff; border-radius: 20px; box-sizing: border-box; text-align: center; } 
 .centerJoin .joinCont01 .whiteBox strong { color: #000; font-size: 24px; } 
@@ -140,12 +140,12 @@
  }
 
 @media screen and (max-width: 1024px){
+
+ /* 230706 추가 css */
  .centerJoin .joinCont01 .innerSection { padding: 100px 20px; } 
  .centerJoin .joinCont01 ul { flex-wrap: wrap; justify-content: center; } 
  .centerJoin .joinCont01 ul li { width: calc(100% / 2 - 50px); } 
- .centerJoin .joinCont01 ul li:first-child { margin-right: 50px; margin-bottom: 100px; } 
-
- /* 230706 추가 css */
+ .centerJoin .joinCont01 ul li:first-child { margin-right: 50px; margin-bottom: 50px; } 
  .centerJoin .joinCont05 .titWrap { flex-direction: column; padding: 0 20px; } 
  .centerJoin .joinCont05 .titWrap .tit { max-width: 100%; margin-top: 0; margin-bottom: 40px; text-align: center; } 
  .centerJoin .joinCont05 .imgWrap { margin: 0 auto; } 
@@ -173,10 +173,10 @@
 
  /* 230706 추가 css */
 .centerJoin .joinCont01 .innerSection { padding: 30px 20px; } 
-.centerJoin .joinCont01 ul { margin-top: 60px; } 
+.centerJoin .joinCont01 ul { margin-top: 30px; } 
 .centerJoin .joinCont01 ul li:first-child { margin: initial } 
 .centerJoin .joinCont01 ul li { width: calc( 100% - 300px); } 
-.centerJoin .joinCont01 ul li + li { margin-top: 80px; } 
+.centerJoin .joinCont01 ul li + li { margin-top: 20px; } 
 .centerJoin .joinCont01 .whiteBox { min-height: auto; padding: 20px 20px 20px; } 
 .centerJoin .joinCont01 .whiteBox::before { margin-bottom: 0; transform: scale(0.8); } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 22px; word-break: keep-all; } 
@@ -235,17 +235,14 @@
  .centerJoin .joinMain .imgWrap { margin-bottom: 20px; } 
  .centerJoin .joinMain .txtWrap p { font-size: 18px; } 
  
- .centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
-.centerJoin .joinCont01 ul li { width: 80%; } 
-.centerJoin .joinCont01 ul li + li { margin-top: 20px; } 
-
  /* 230706 추가 css */
- .centerJoin .joinCont01 ul { margin-top: 20px; } 
+.centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
+.centerJoin .joinCont01 ul { margin-top: 20px; } 
+.centerJoin .joinCont01 ul li {width: 80%;}
 .centerJoin .joinCont01 ul li + li { margin-top: 10px; } 
- .centerJoin .joinCont01 .whiteBox { padding: 0 20px 20px; } 
+.centerJoin .joinCont01 .whiteBox { padding: 0 20px 20px; } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
-
 .centerJoin .joinCont01 .whiteBox p br { display: none; } 
 .centerJoin .joinCont01 .whiteBox::before { transform: scale(0.6); } 
 
