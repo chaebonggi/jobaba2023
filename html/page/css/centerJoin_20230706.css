@@ -33,19 +33,15 @@
 .centerJoin h2 i.icon02 { width: 60px; height: 61px; background-image: url(../images/centerJoin/joinCont_icon02.png); } 
 .centerJoin h2 i.icon03 { width: 60px; height: 53px; background-image: url(../images/centerJoin/joinCont_icon03.png); } 
 
-/* 230706 추가 css */
 .centerJoin .joinCont01 ul { display: flex; justify-content: space-between; margin-top: 100px; } 
 .centerJoin .joinCont01 ul li { width: calc(100% / 3 - 20px); } 
-.centerJoin .joinCont01 .whiteBox { min-height: 350px; padding: 46px 20px; position: relative; background: #fff; border-radius: 20px; box-sizing: border-box; text-align: center; } 
+.centerJoin .joinCont01 .whiteBox { min-height: 350px; padding: 90px 20px 10px; position: relative; background: #fff; border-radius: 20px; border: 6px solid #e7e7e7; box-sizing: border-box; text-align: center; } 
 .centerJoin .joinCont01 .whiteBox strong { color: #000; font-size: 24px; } 
 .centerJoin .joinCont01 .whiteBox p { margin-top: 25px; color: #000; font-size: 18px; } 
-.centerJoin .joinCont01 .whiteBox::before { content: ''; display: block; height: 145px; margin-bottom: 30px; background-repeat: no-repeat; background-position: center; background-size: auto; } 
-.centerJoin .joinCont01 .whiteBox.icon01::before { background-image: url(../images/centerJoin/joinCont01_icon04.png); } 
-.centerJoin .joinCont01 .whiteBox.icon02::before { background-image: url(../images/centerJoin/joinCont01_icon05.png); } 
-.centerJoin .joinCont01 .whiteBox.icon03::before { background-image: url(../images/centerJoin/joinCont01_icon06.png); } 
-.centerJoin .joinCont01 .whiteBox.icon01 { background: #bde7e3; } 
-.centerJoin .joinCont01 .whiteBox.icon02 { background: #eae2fe; } 
-.centerJoin .joinCont01 .whiteBox.icon03 { background: #f8f8d4; } 
+.centerJoin .joinCont01 .whiteBox::before { content: ''; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); width: 132px; height: 115px; border-radius: 30px; background-repeat: no-repeat; background-position: center; background-size: auto; } 
+.centerJoin .joinCont01 .whiteBox.icon01::before { background-image: url(../images/centerJoin/joinCont01_icon01.png); background-color: #fbd4e1; } 
+.centerJoin .joinCont01 .whiteBox.icon02::before { background-image: url(../images/centerJoin/joinCont01_icon02.png); background-color: #cbeeeb; } 
+.centerJoin .joinCont01 .whiteBox.icon03::before { background-image: url(../images/centerJoin/joinCont01_icon03.png); background-color: #e1d9ed; } 
 
 .joinCont02 { background: #f3f3f3; } 
 .joinCont02 .innerSection { padding: 100px 20px 0; } 
@@ -112,29 +108,6 @@
 .centerJoin .joinCont04 .txtWrap p { color: #003281; font-size: 28px; text-align: center; word-break: keep-all; } 
 .centerJoin .joinCont04 .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../images/centerJoin/joinCont04_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 
 
-/* 230706 추가 css */
-.centerJoin .joinCont05 .innerSection { max-width: 1080px; } 
-.centerJoin .joinCont05 .onSlide { padding-top: 50px; } 
-.centerJoin .joinCont05 .titWrap { display: flex; width: 100%; position: relative; padding: 0 70px; justify-content: space-between; } 
-.centerJoin .joinCont05 .titWrap .tit { max-width: 400px; width: 100%; margin-top: 50px; color: #441fcd; font-size: 42px; font-weight: bold; word-break: keep-all; } 
-.centerJoin .joinCont05 .titWrap .tit span { display: block; color: #000; font-size: 24px; font-weight: 400; } 
-.centerJoin .joinCont05 .imgBox { max-width: 520px; width: 100%; padding: 5px; background: #9ad5cf; border: 8px solid #efefef; border-radius: 30px; box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.25); } 
-.centerJoin .joinCont05 .imgBox img { width: 100%; height: 100%; border-radius: 20px; object-fit: cover; } 
-.centerJoin .joinCont05 .txtWrap { margin-top: -50px; padding: 80px 70px 50px; background: #efefef; border-radius: 10px; } 
-.centerJoin .joinCont05 .txtWrap li { position: relative; padding: 20px 20px 20px 80px; background: #fff; font-size: 24px; font-weight: 400; border-radius: 10px; word-break: keep-all; } 
-.centerJoin .joinCont05 .txtWrap li span { position: relative; } 
-.centerJoin .joinCont05 .txtWrap li span::before { content: ''; width: 32px; height: 24px; position: absolute; top: 10px; left: -40px; background: url(../images/centerJoin/joinCont_arrow_check.png) no-repeat; background-size: contain; } 
-.centerJoin .joinCont05 .txtWrap li + li { margin-top: 15px; } 
-.centerJoin .joinCont05 .onSlide .slideBtn { position: absolute; top: 320px; left: 70px; right: 70px; z-index: 10; } 
-.centerJoin .joinCont05 .onSlide .swiper-button-next:after, 
-.centerJoin .joinCont05 .onSlide .swiper-button-prev:after { display: none } 
-.centerJoin .joinCont05 .onSlide .button-prev,
-.centerJoin .joinCont05 .onSlide .button-next { position: absolute; width: 40px; height: 40px; cursor: pointer; } 
-.centerJoin .joinCont05 .onSlide .button-prev { left: 0; background: url(../images/centerJoin/joinCont_arrow_left.png) no-repeat; background-size: contain; } 
-.centerJoin .joinCont05 .onSlide .button-next { left: 50px; background: url(../images/centerJoin/joinCont_arrow_right.png) no-repeat; background-size: contain; } 
-.centerJoin .joinCont05 .onSlide .button-next.swiper-button-disabled, 
-.centerJoin .joinCont05 .onSlide .button-prev.swiper-button-disabled { opacity: .35; cursor: auto; pointer-events: none; } 
-
 @media screen and (max-width: 1199px){
  .centerJoin .joinMain .innerSection::before { right: 0; bottom: 0; transform: scale(0.8); } 
  }
@@ -144,13 +117,7 @@
  .centerJoin .joinCont01 ul { flex-wrap: wrap; justify-content: center; } 
  .centerJoin .joinCont01 ul li { width: calc(100% / 2 - 50px); } 
  .centerJoin .joinCont01 ul li:first-child { margin-right: 50px; margin-bottom: 100px; } 
-
- /* 230706 추가 css */
- .centerJoin .joinCont05 .titWrap { flex-direction: column; padding: 0 20px; } 
- .centerJoin .joinCont05 .titWrap .tit { max-width: 100%; margin-top: 0; margin-bottom: 40px; text-align: center; } 
- .centerJoin .joinCont05 .imgWrap { margin: 0 auto; } 
- .centerJoin .joinCont05 .onSlide .button-next { left: initial; right: 0; } 
-}
+ }
 
  
  
@@ -171,14 +138,13 @@
 .centerJoin .joinCont04 .titWrap p::after { width: 300px; height: 94px; top: -78px; } 
 .centerJoin .joinCont04 .txtWrap p::after { width: 110px; height: 34px; } 
 
- /* 230706 추가 css */
 .centerJoin .joinCont01 .innerSection { padding: 30px 20px; } 
 .centerJoin .joinCont01 ul { margin-top: 60px; } 
 .centerJoin .joinCont01 ul li:first-child { margin: initial } 
 .centerJoin .joinCont01 ul li { width: calc( 100% - 300px); } 
 .centerJoin .joinCont01 ul li + li { margin-top: 80px; } 
-.centerJoin .joinCont01 .whiteBox { min-height: auto; padding: 20px 20px 20px; } 
-.centerJoin .joinCont01 .whiteBox::before { margin-bottom: 0; transform: scale(0.8); } 
+.centerJoin .joinCont01 .whiteBox { min-height: auto; padding: 60px 20px 20px; } 
+.centerJoin .joinCont01 .whiteBox::before { margin: 0 auto; transform: translateX(-50%) scale(0.8); } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 22px; word-break: keep-all; } 
 .centerJoin .joinCont01 .whiteBox p { margin-top: 20px; font-size: 18px; word-break: keep-all; } 
 
@@ -189,6 +155,7 @@
 .joinCont02 .section_various .card_wrap .card_box { height: 570px; } 
 .joinCont02 .section_various .card_wrap .card_item { flex-direction: column; height: 570px; padding: 30px 40px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 4px 20px; font-size: 16px; } 
+/* .joinCont02 .section_various .card_wrap .card_item br.forMobile { display: none; } */
 .joinCont02 .section_various .card_wrap .card_item .txtWrap { text-align: center; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap > span { margin-bottom: 40px; font-size: 26px; word-break: keep-all; } 
 .joinCont02 .section_various .card_wrap .card_item .txtWrap p { margin-top: 15px; font-size: 16px; word-break: keep-all; } 
@@ -212,18 +179,7 @@
 .centerJoin .joinCont03 .btnWrap a { padding: 10px 0; font-size: 26px; } 
 .centerJoin .joinCont03 .infoBox { justify-content: flex-start; background: #fff; border-right: none; padding: 10px; } 
 .centerJoin .joinCont03 .contBox { padding: 10px 10px; } 
-
- /* 230706 추가 css */
- .centerJoin .joinCont05 .innerSection { padding-top: 30px; } 
- .centerJoin .joinCont05 .imgWrap { padding: 0 70px; } 
- .centerJoin .joinCont05 .titWrap .tit span { font-size: 18px; } 
- .centerJoin .joinCont05 .titWrap .tit { font-size: 30px; } 
- .centerJoin .joinCont05 .txtWrap { margin-top: 20px; padding: 50px 40px 50px; } 
- .centerJoin .joinCont05 .txtWrap li { padding: 20px 20px 20px 60px; font-size: 18px; } 
-.centerJoin .joinCont05 .txtWrap li span::before { width: 20px; height: 15px; left: -30px; } 
-.centerJoin .joinCont05 .onSlide .button-prev { left: -40px; } 
-.centerJoin .joinCont05 .onSlide .button-next { right: -40px; } 
-}
+ }
  
  @media screen and (max-width: 640px){
  .centerJoin h2 { font-size: 24px; } 
@@ -237,17 +193,13 @@
  
  .centerJoin .joinCont01 .innerSection { padding: 30px 10px; } 
 .centerJoin .joinCont01 ul li { width: 80%; } 
-.centerJoin .joinCont01 ul li + li { margin-top: 20px; } 
+.centerJoin .joinCont01 ul li + li { margin-top: 50px; } 
 
- /* 230706 추가 css */
- .centerJoin .joinCont01 ul { margin-top: 20px; } 
-.centerJoin .joinCont01 ul li + li { margin-top: 10px; } 
- .centerJoin .joinCont01 .whiteBox { padding: 0 20px 20px; } 
+.centerJoin .joinCont01 .whiteBox { border: 4px solid #e7e7e7; } 
 .centerJoin .joinCont01 .whiteBox strong { font-size: 18px; } 
 .centerJoin .joinCont01 .whiteBox p { font-size: 16px; } 
-
 .centerJoin .joinCont01 .whiteBox p br { display: none; } 
-.centerJoin .joinCont01 .whiteBox::before { transform: scale(0.6); } 
+.centerJoin .joinCont01 .whiteBox::before { transform: translateX(-50%) scale(0.6); } 
 
 .joinCont02 .section_various .card_wrap .card_item { justify-content: center; padding: 30px 15px; } 
 .joinCont02 .section_various .card_wrap .card_item h3 { padding: 2px 15px; font-size: 14px; } 
@@ -271,18 +223,4 @@
 .centerJoin .joinCont04 .titWrap p::before { content: none; } 
 .centerJoin .joinCont04 .txtWrap p { font-size: 16px; } 
 .centerJoin .joinCont04 .txtWrap p::after { width: 70px; height: 22px; } 
-
- /* 230706 추가 css */
- .centerJoin .joinCont05 .onSlide { padding-top: 30px; } 
- .centerJoin .joinCont05 .onSlide .slideBtn { display: none; } 
- .centerJoin .joinCont05 .titWrap .tit span { font-size: 16px; } 
- .centerJoin .joinCont05 .imgWrap { max-width: 360px; padding: 0 10px; } 
-.centerJoin .joinCont05 .titWrap .tit { margin-bottom: 10px; font-size: 22px; } 
-
- .centerJoin .joinCont05 .imgBox { padding: 2px; border: 4px solid #efefef; box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.20); } 
-.centerJoin .joinCont05 .imgBox img { border-radius: 24px; } 
-.centerJoin .joinCont05 .txtWrap { padding: 20px; } 
-.centerJoin .joinCont05 .txtWrap li { padding: 10px 10px 10px 30px; font-size: 14px; } 
-.centerJoin .joinCont05 .txtWrap li span::before { width: 14px; height: 11px; top: 6px; left: -18px; } 
-.centerJoin .joinCont05 .txtWrap li + li { margin-top: 8px; } 
-}
+ }
