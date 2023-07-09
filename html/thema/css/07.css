@@ -1,0 +1,10 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.themaWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.themaWrap .innerSection { max-width: 1000px; margin: 0 auto;} 
+
+.themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
+.themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; }
+.themaWrap .stit { font-size: 26px; word-break: keep-all;}
+.themaWrap .stxt { font-size: 20px; word-break: keep-all;}
