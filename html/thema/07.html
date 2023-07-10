@@ -28,13 +28,15 @@
 <body>
 	<div class="themaWrap">
 		<style>
+			.themaWrap .mainVisual {
+				position: relative;
+				background: url(./resource/images/thema/230710/thema_main_bg.png) no-repeat center;
+				background-size: cover;
+				z-index: 2;
+			}
 			.themaWrap .mainVisual .innerSection {
 				padding: 80px 0 100px;
-			}
-			.themaWrap .mainVisual {
-				background: url(./resource/images/thema/230710/thema_main_bg.png) no-repeat;
-				background-size: cover;
-			}
+			}			
 			.themaWrap .mainVisual .imgWrap {
 				padding-left: 54px;
 				margin-bottom: 40px;
@@ -183,12 +185,16 @@
 						background-size: contain;
 					}
 					.themaWrap .titWrap .titBox {
+						display: flex;						
+						min-height: 132px;
 						padding: 25px 20px;
 						margin: 0 50px;
 						position: relative;
 						background: #fff;
 						border: 2px dashed #000;
 						border-radius: 110px;
+						align-items: center;
+						justify-content: center;
 						z-index: 1;
 					}
 					.themaWrap .leftMenu.fixed { position: fixed; top: 200px; } 
@@ -208,7 +214,94 @@
 						position: relative;
 					}
 					.themaWrap .event01 .innerSection {
-						padding: 160px 0 130px;
+						padding: 200px 0 130px;
+					}
+					.themaWrap .event01 .etc {
+						margin: 40px 50px 60px;
+					}
+					.themaWrap .event01 .etc p {
+						position: relative;
+						padding-left: 200px;
+					}
+					.themaWrap .event01 .etc p::before {
+						content: '';
+						width: 126px;
+						height: 100px;
+						position: absolute;
+						top: -70px;
+					    left: 64px;
+						background: url(./resource/images/thema/230710/thema_ev01_img01.png) no-repeat;
+						background-size: contain;
+						z-index: 1;
+					}
+					.themaWrap h3 {
+						font-size: 36px;
+						text-align: center;
+					}
+					.themaWrap h3.icon01::before {
+						content: '';
+						display: block;
+						width: 80px;
+						height: 74px;
+						margin: 0 auto 20px;
+						background: url(./resource/images/thema/230710/thema_ev01_icon01.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap h3.icon02::before {
+						content: ''; 
+						display: block;
+						width: 70px;
+						height: 80px;
+						margin: 0 auto 20px;
+						background: url(./resource/images/thema/230710/thema_ev01_icon02.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap h3.dot {
+						margin-top: 60px;
+					}
+					.themaWrap h3.dot::after {
+						content: '';
+					}
+					.themaWrap h3.dot span {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					.themaWrap h3.dot em {
+						display: inline-block;
+						width: 6px;
+						height: 6px;
+						position: relative;
+						background: #000;
+						border-radius: 50%;
+					}
+					.themaWrap h3.dot em.dotLeft {
+						margin-right: 10px;
+					}
+					.themaWrap h3.dot em.dotRight {
+						margin-left: 10px;
+					}
+					.themaWrap h3.dot em::after,
+					.themaWrap h3.dot em::before {
+						content: '';
+						width: 6px;
+						height: 6px;
+						position: absolute;
+						top: 0;
+						background: #000;
+						border-radius: 50%;
+					}
+					.themaWrap h3.dot em.dotLeft::after {
+						left:  -10px;
+					}
+					.themaWrap h3.dot em.dotLeft::before {
+						left: -20px;
+					}
+					.themaWrap h3.dot em.dotRight::after {
+						right:  -10px;
+					}
+					.themaWrap h3.dot em.dotRight::before {
+						right: -20px;
 					}
 				</style>
 				<div class="titWrap">
@@ -219,26 +312,628 @@
 					</div>
 				</div>
 				
-				
+				<div class="etc">
+					<p class="stxt">대조선업은 2020년이후 선박수주량이 늘어나고 있으나 근로자가 부족해서 
+						<b>채용수요가 많은 직종</b>입니다. 이에 따라 정부나 지자체에서 조선업 일자리부족문제 
+						해결을 위해 다양한 지원제도를 운영하고 있습니다.</p>
+				</div>
+				<style>
+					.themaWrap .event01 {
+						margin-top: -30px;
+						background: url(./resource/images/thema/230710/thema_ev01_bg.jpg) no-repeat top center;
+						background-size: cover;
+					}
+					.themaWrap .event01 .produceList > li:first-child {
+						border-top: 1px dotted #355fa8;
+					}
+					.themaWrap .event01 .produceList > li {
+						display: flex;						
+						padding: 30px 50px;
+						align-items: center;
+						border-bottom: 1px dotted #355fa8;
+					}
+					.themaWrap .event01 .prTit {
+						width: 170px;
+						font-size: 32px;
+						flex-shrink: 0;
+					}
+					.themaWrap .event01 .prTit span {
+						display: block;
+						color: #39bec3;
+						font-size: 50px;
+						line-height: 1;
+					}
+					.themaWrap .event01 .produceList .item {
+						display: flex;
+						align-items: center;
+					}
+					.themaWrap .event01 .produceList .item.fls {
+						align-items: flex-start;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .imgWrap {
+						display: flex;
+						gap: 10px
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .etcList {
+						display: flex;
+						margin-top: 10px;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .etcList li {
+						position: relative;
+						padding: 2px 10px 0px;
+						background: #a8dadf;						
+						font-size: 14px;
+						border-radius: 30px;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .etcList li:first-child::before {
+						content: none;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .etcList li + li {
+						margin-left: 20px;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle02 .etcList li + li::before {
+						content: '→';
+						position: absolute;
+						top: 50%;
+						left: -5px;
+						color: #a8dadf;
+						transform: translateY(-50%);
+					}
+					.themaWrap .event01 .produceList .item.itemStyle03 {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle03 .imgWrap {
+						display: flex;
+						margin-right: 0;
+						flex-wrap: wrap;
+						gap: 10px;
+					}
+					.themaWrap .event01 .produceList .item.itemStyle03 .imgWrap > span {
+						width: calc(100% / 3 - 10px);
+					}
+					.themaWrap .event01 .produceList .item.itemStyle03 .imgBox {
+						width: 100%;
+						height: 120px;
+					}
+					.themaWrap .event01 .produceList .imgWrap {		
+						margin-right: 60px;						
+						flex-shrink: 0;						
+					}
+					.themaWrap .event01 .produceList .imgWrap .imgTxt {
+						margin-top: 10px;
+						font-size: 16px;
+						text-align: center;
+					}
+					.themaWrap .event01 .produceList .imgBox {
+						width: 280px;
+						height: 170px;
+						border: 2px solid #fff;
+						border-radius: 30px;
+						overflow: hidden;
+					}
+					.themaWrap .event01 .produceList .imgBox img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+					
+					.themaWrap .event01 .produceList .txtWrap .stit {
+						margin-bottom: 10px;
+						color: #1f4c9a;
+					}
+					.themaWrap .event01 .produceList .txtWrap li::before {
+						content: '·';
+						margin-left: -10px;
+						margin-right: 5px;
+					}
+					.themaWrap .event01 .courseList {
+						display: flex;
+						margin: 40px 50px 40px;
+						justify-content: space-between;
+					}
+					.themaWrap .event01 .courseList li {						
+						position: relative;
+					}
+					.themaWrap .event01 .courseList li + li::before {
+						content: '';
+						width: 11px;
+						height: 19px;
+						position: absolute;
+						top: 50%;
+						left: -16px;
+						transform: translateY(-50%);
+						background: url(./resource/images/thema/230710/thema_ev01_arrow.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap .event01 .courseList li > div {
+						width: 130px;
+						height: 130px;
+						padding: 4px;
+						background: linear-gradient( to bottom, #ff7dd9, #2cf8ff );
+						border-radius: 50%;
+						overflow: hidden;						
+					}
+					.themaWrap .event01 .courseList li P {
+						display: flex;						
+						width: 100%;
+						height: 100%;
+						background: #355fa8;
+						border-radius: 50%;
+						align-items: center;
+						justify-content: center;
+					}
+					.themaWrap .event01 .courseList li span {
+						color: #fff;
+					}
+					.themaWrap .event01 .courseList li span::before {
+						content: '';
+						display: block;
+						height: 24px;
+						margin: 0 auto 10px;
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+					.themaWrap .event01 .courseList li span.icon01::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon03.png);						
+					}
+					.themaWrap .event01 .courseList li span.icon02::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon04.png);						
+					}
+					.themaWrap .event01 .courseList li span.icon03::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon05.png);						
+					}
+					.themaWrap .event01 .courseList li span.icon04::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon06.png);						
+					}
+					.themaWrap .event01 .courseList li span.icon05::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon07.png);						
+					}
+					.themaWrap .event01 .courseList li span.icon06::before {						
+						background-image: url(./resource/images/thema/230710/thema_ev01_icon08.png);						
+					}
+				</style>
+				<h3 class="icon01">배를 만드는 과정</h3>
+				<ul class="courseList">
+					<li><div><p><span class="stxt icon01">설계</span></p></div></li>
+					<li><div><p><span class="stxt icon02">철판,가공</span></p></div></li>
+					<li><div><p><span class="stxt icon03">조립</span></p></div></li>
+					<li><div><p><span class="stxt icon04">배관,설비</span></p></div></li>
+					<li><div><p><span class="stxt icon05">도장</span></p></div></li>
+					<li><div><p><span class="stxt icon06">시운전</span></p></div></li>
+				</ul>
+				<ul class="produceList">
+					<li>
+						<p class="prTit"><span>01</span>설계</p>
+						<div class="itemWrap">
+							<div class="item">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list01.png" alt="설계">
+									</div>
+								</div>
+								<div class="txtWrap">
+									<p class="stit gBold">선박 건조의 시작</p>
+									<ul>
+										<li class="stxt">선박은 규모와 구조가 매우크고 복잡</li>
+										<li class="stxt">국제규정에도 맞춰야 함</li>
+										<li class="stxt">다양한 전공을 가진 많은 <span class="fcRed">&lt;설계인력들&gt;</span>이 컴퓨터 이용해 설계를 진행</li>
+										<li class="stxt">설계기간 1척 설계에 12개월정도소요</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="prTit"><span>02</span>철판가공</p>
+						<div class="itemWrap">
+							<div class="item fls">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list02.png" alt="철판가공">
+									</div>
+								</div>
+								<div class="txtWrap">
+									<p class="stit gBold">용접사</p>
+									<ul>
+										<li class="stxt">옷을 만들 때 옷을 재단하는 것처럼, 철판 역시 설계도면에 표시된 모양과 치수대로 오려내야함</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item fls mt20">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list03.png" alt="철판가공">
+									</div>
+								</div>
+								<div class="txtWrap">
+									<p class="stit gBold">절단과정</p>
+									<ul>
+										<li class="stxt">강재를 자를 때는 <span class="fcRed">&lt;마킹사&gt;</span>가 표시한데로
+											자재를 정확히 오려야함. 플라즈마 절단,
+											전기에너지를 이용한 절단방식을 사용하거나
+											가스절단 장비를 이용하여 자동 또는 수동으로
+											부재들을 자름</li>
+										<li class="stxt">절단된 강재들은 <span class="fcRed">&lt;용접사&gt;</span>가 용접으로 
+											붙이거나 정해진 모양으로 구부리면서 
+											부품재료, 부재를 만들어 감</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="prTit"><span>03</span>조립</p>
+						<div class="itemWrap">
+							<div class="item itemStyle02">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list03.png" alt="조립">
+									</div>
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list04.png" alt="조립">
+									</div>
+								</div>
+								<div class="txtWrap">
+									<ul class="mt20">
+										<li class="stxt">절단된 강재와 부재들을 용접하여 블록으로 제작하는 과정</li>
+									</ul>
+									<ul class="etcList">
+										<li>소조립</li>
+										<li>중조립</li>
+										<li>대조립</li>
+										<li>최종조립</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="prTit"><span>04</span>배관, 설비</p>
+						<div class="itemWrap">
+							<div class="item">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list06.png" alt="배관, 설비">
+									</div>
+									<p class="imgTxt">선행의장 : 기초 배관공사</p>
+								</div>
+								<div class="txtWrap">
+									<ul>
+										<li class="stxt">옷을 만들 때 옷을 재단하는 것처럼,
+											철판 역시 설계도면에 표시된 모양과
+											치수대로 오려내야 함</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="prTit"><span>05</span>도장</p>
+						<div class="itemWrap">
+							<div class="item itemStyle03">
+								<div class="imgWrap">
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list07.png" alt="도장">
+										</div>
+										<p class="imgTxt">Inside Spray 작업</p>
+									</span>
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list08.png" alt="도장">
+										</div>
+										<p class="imgTxt">Outside blast’g 작업</p>
+									</span>
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list09.png" alt="도장">
+										</div>
+										<p class="imgTxt">연마제(Grit) 수거작업</p>
+									</span>
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list10.png" alt="도장">
+										</div>
+										<p class="imgTxt">터치업 작업</p>
+									</span>
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list11.png" alt="도장">
+										</div>
+										<p class="imgTxt">도막 Check 작업</p>
+									</span>
+									<span>
+										<div class="imgBox">
+											<img src="./resource/images/thema/230710/thema_ev01_list12.png" alt="도장">
+										</div>
+										<p class="imgTxt">Outside Spray 작업</p>
+									</span>
+								</div>
+								<div class="txtWrap">
+									<ul class="mt20">
+										<li class="stxt">조립과 선행의장 마친 블록과 의장품은 <span class="fcRed">&lt;도장공&gt;</span>들이 나서 도장작업을 하게 됨.
+											한 번에 많은 면적을 도장하기 위해 보통 스프레이 분사기로 작업을 함</li>
+										<li class="stxt">스프레이 작업이 힘든 곳이나 어려운 곳은 <span class="fcRed">&lt;터치업&gt;</span> 직종이 직접 나서 하나하나 
+											붓이나 롤러로 수작업을 하게 됨</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="prTit"><span>06</span>시운전</p>
+						<div class="itemWrap">
+							<div class="item">
+								<div class="imgWrap">
+									<div class="imgBox">
+										<img src="./resource/images/thema/230710/thema_ev01_list13.png" alt="시운전">
+									</div>
+								</div>
+								<div class="txtWrap">
+									<ul>
+										<li class="stxt">해상에서 선박의 성능을 최종적으로
+											테스트하게 됨</li>
+										<li class="stxt">짧게는 하루이틀에서 길게는 열흘 이상 동안
+											속력, 타력, 정지, 후진, 선회 등 
+											다양한 방법으로 선박의 성을을 시험하고, 
+											잘못된 곳은 없는지 꼼꼼하게 살펴봄</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<h3 class="icon02">조선업 직종소개</h3>
 			</div>
 		</article>
 		<article class="event02 linkWrap" id="moveTo02">
 			<div class="innerSection">
+				<style>
+					.themaWrap .event02 {
+						background: url(./resource/images/thema/230710/thema_ev02_bg.jpg) no-repeat top -50px center;
+						background-size: cover;
+					}
+					.themaWrap .event02 .innerSection {
+						padding: 150px 0 150px;
+					}
+
+					.themaWrap .whiteBox {
+						margin-top: 40px;
+						padding: 50px;
+						background: #fff;
+						border-radius: 30px;
+						border: 2px solid #dddddd;
+					}
+					.themaWrap .whiteBox.item01 {
+						background: url(./resource/images/thema/230710/thema_ev02_img01.png) #fff no-repeat center right -20px;
+						background-size: auto;
+					}
+					.themaWrap .whiteBox .boxList li {
+						display: flex;
+						align-items: baseline;			
+						text-align: left;
+					}
+					.themaWrap .whiteBox .boxList li + li {
+						margin-top: 8px;
+					}
+					.themaWrap .whiteBox .boxList span {
+						display: inline-block;
+						padding: 4px 20px 0;
+						margin-right: 10px;
+						background: #71b0b6;
+						color: #fff;
+						border-radius: 20px;
+					}
+					
+				</style>
 				<div class="titWrap">
 					<h2 class="tit gBold">채용정보</h2>
 					<div class="titBox">
 						<p class="stit">현대중공업 군산조선소 사내협력사의 상시채용정보 입니다.</p>
+					</div>
+					<h3 class="dot"><span><em class="dotLeft"></em>조선업 취업 희망자 모집<em class="dotRight"></em></span></h3>
+					<div class="whiteBox item01">
+						<ul class="boxList">
+							<li>
+								<span class="stxt">모집대상</span>
+								<p class="stxt">도내 조선업 및 조선 기자재 취업 희망자</p>
+							</li>
+							<li>
+								<span class="stxt">모집직종</span>
+								<p class="stxt">용접, 사상, 취부, 생산직, 사무직 등 조선업 관련 직종</p>
+							</li>
+							<li>
+								<span class="stxt">채용기업</span>
+								<p class="stxt">전북 조선업 도약센터 구인한 상시 확인</p>
+							</li>
+							<li>
+								<span class="stxt">모집인원</span>
+								<p class="stxt">00명</p>
+							</li>
+							<li>
+								<span class="stxt">제출서류</span>
+								<p class="stxt">이력서</p>
+							</li>
+							<li>
+								<span class="stxt">접수방법</span>
+								<p class="stxt">방문접수 : 전북조선업도약센터(군산고용복지플러스센터 별관 3층)<br>
+									이  메  일 : jumpjbjob@naver.com(기업명_000(지원자명))<br>
+									워  크  넷 : 워크넷입사지원(기업명검색)<br>
+									문의사항 : 063-450-1315, 1316, 1317, 1318</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</article>
 		<article class="event03 linkWrap" id="moveTo03">
 			<div class="innerSection">
+				<style>
+					.themaWrap .event03 {
+						background: url(./resource/images/thema/230710/thema_ev03_bg.jpg) no-repeat top center;
+						background-size: cover;
+					}
+					.themaWrap .event03 .innerSection {
+						padding: 200px 0 150px;
+					}
+					.themaWrap .whiteBox.boxStyle01 .stit {
+						display: inline-block;
+						padding: 4px 20px 0;
+						margin-bottom: 20px;
+						background: #71b0b6;
+						color: #fff;
+						border-radius: 30px;
+					}
+					.themaWrap .whiteBox.boxStyle01 .imgWrap {
+						margin: 20px 0;
+						transform: scale(0.9);
+					}
+				</style>
 				<div class="titWrap">
 					<h2 class="tit gBold">지원제도</h2>
 					<div class="titBox">
 						<p class="stit">조선업 일자리문제 해결을 위해 정부 및 지자체에서 제공하는<br>
 							조선업분야 취업자 지원제도 입니다.</p>
+					</div>
+					<h3 class="dot"><span><em class="dotLeft"></em>조선업 취업정착금 지원<em class="dotRight"></em></span></h3>
+					<div class="whiteBox boxStyle01">
+						<p class="stit">지원대상 및 지원금 지급</p>
+						<p class="stxt">전북 조선업 도약센터(군산고용위기종합지원센터) 취업지원 및 연계서비스 참여 후 
+							‘23년 1월 1일’ 이후 도내 조선업 관련 기업체에 취업하여 3개월 연속 근속중인 자</p>
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230710/thema_ev03_img01.png" alt="지원대상 및 지원금 지급">
+						</div>
+						<p class="fs16 tlt">※ 지원금 제외대상 : 국민취업지원제도(취업성공수당) 중복 수령 불가</p>
+						<p class="fs16 tlt">※ 예산소진 시 조기 마감될 수 있음</p>
+					</div>
+					<h3 class="dot"><span><em class="dotLeft"></em>조선업 내일채움공제<em class="dotRight"></em></span></h3>
+					<style>
+						.themaWrap .whiteBox.boxStyle02 .imgWrap {
+							margin-bottom: 40px;
+						}
+						.themaWrap .whiteBox.boxStyle02 .listBox {
+							padding: 40px 80px;
+							border: 2px dotted #a4a4a4;
+							text-align: left;
+						}
+						.themaWrap .whiteBox.boxStyle02 .listBox .stit {
+							display: inline-block;
+							width: 200px;
+							padding: 4px 0 0;
+							margin-bottom: 20px;
+							background: #6c6c6c;
+							color: #fff;
+							text-align: center;
+						}
+						.themaWrap .whiteBox.boxStyle02 .listBox li {
+							display: flex;
+						}
+						.themaWrap .whiteBox.boxStyle02 .listBox li::before {
+							content: '·';
+							margin-right: 5px;
+						}
+						.themaWrap .whiteBox.boxStyle02 .listBox span {
+							width: 100px;
+							flex-shrink: 0;
+						}
+					</style>
+					<div class="whiteBox boxStyle02">
+						<div class="imgWrap">
+							<img src="./resource/images/thema/230710/thema_ev03_img02.png" alt="조선업 내일채움공제">
+						</div>
+						<div class="listBox">
+							<p class="stit fs20">근로자 지원 요건</p>
+							<ul>
+								<li>
+									<span class="fs20">연령기준 : </span>
+									<p class="fs20">만 18세 이상인 자</p></li>
+								<li>
+									<span class="fs20">거&nbsp; 주&nbsp; 지 :</span>
+									<p class="fs20">전라북도에 주민등록이 되어 있는 자</p>
+								</li>
+								<li>
+									<span class="fs20">가입기준 :</span>
+									<p class="fs20">
+										- 2023. 2. 27 이후 전북소개 조선업종 기업에 주 40시간 이상 정규직으로 취업한 자<br>
+										- 90일 이전 동일 업종(조선업)에 근무 이력이 없는 자
+									</p>
+								</li>
+							</ul>
+							<p class="stit fs20 mt20">제출서류</p>							
+							<ul>
+								<li class="fs20">전북 조선업 내일채움공제사업 가입신청서</li>
+								<li class="fs20">신청자 확인서</li>
+								<li class="fs20">개인정보수집 · 이용에 대한 동의서</li>
+								<li class="fs20">주민등록등본 (신청일 7일 이내 발급)</li>
+								<li class="fs20">근로계약서</li>
+								<li class="fs20">4대보험 가입증명서</li>
+								<li class="fs20">졸업예정 확인서 또는 학력사항 입증서류 (해당자)</li>									
+							</ul>
+						</div>
+						<style>
+							.themaWrap .whiteBox.boxStyle02 .listBox02 {
+								margin-top: 60px;
+								padding: 50px 40px 50px;
+								position: relative;
+								border: 2px dashed #a4a4a4;
+								border-radius: 20px;
+								
+							}
+							.themaWrap .whiteBox.boxStyle02 .listBox02 .stit {
+								min-width: 600px;
+								padding: 4px 20px 0;
+								position: absolute;
+								top: -20px;
+								left: 50%;
+								transform: translateX(-50%);
+								background: #327eb5;
+								color: #fff;
+								border-radius: 20px;
+							}
+							.themaWrap .whiteBox.boxStyle02 .listBox02 li {
+								display: flex;
+								align-items: baseline;
+								text-align: left;
+							}
+							.themaWrap .whiteBox.boxStyle02 .listBox02 li + li {
+								margin-top: 10px;
+							}
+							.themaWrap .whiteBox.boxStyle02 .listBox02 li span {
+								padding: 4px 20px 0;
+								margin-right: 10px;
+								background: #838383;
+								color: #fff;
+								border-radius: 20px;
+								flex-shrink: 0;
+							}							
+						</style>
+						<div class="listBox02">
+							<p class="stit">군산의 봄 조선해양기자재산업 청년일자리사업</p>
+							<ul>
+								<li>
+									<span class="fs20">지원분야</span>
+									<p class="fs20">현대중공업 군산조선소 협력업체 및 조선해양기자재 산업분야</p>
+								</li>
+								<li>
+									<span class="fs20">사업기간</span>
+									<p class="fs20">23. 3 ~ ‘25. 2 +1년 (총 3년)</p>
+								</li>
+								<li>
+									<span class="fs20">지원내용</span>
+									<p class="fs20">인건비 80%(월 최대 160만원), 직무교육비 등(3년차 인센티브 1,000만원)</p>
+								</li>
+								<li>
+									<span class="fs20">복지혜택</span>
+									<p class="fs20">자기개발비 연 30만원, 정착지원수당 월 30만원, 복지수당 월 20만원 등</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -252,6 +947,237 @@
 							군산지역 기업체의 고용활성화를 위해<br>
 							정식 출범한 공공기관으로서 취업상담, 취업지원, 직업훈련 등의
 							고용서비스를 진행합니다.</p>
+					</div>
+					<style>
+						.themaWrap .event04 {
+							background: url(./resource/images/thema/230710/thema_ev04_bg.jpg) no-repeat top center;
+							background-size: cover;
+						}
+						.themaWrap .event04 .innerSection {
+							padding: 200px 0 150px;
+						}
+						.themaWrap .whiteBox.boxStyle03 {
+							display: flex;
+							justify-content: space-between;
+						}
+						.themaWrap .whiteBox.boxStyle03 .imgWrap {
+							display: flex;							
+							max-width: 400px;
+							width: 100%;
+							background: #e6f1ff;
+							border-radius: 20px;
+							align-items: center;
+							justify-content: center;
+						}
+						.themaWrap .whiteBox.boxStyle03 .imgWrap p {
+							color: #618cc0;
+							font-size: 32px;
+						}
+						.themaWrap .whiteBox.boxStyle03 li {
+							display: flex;
+							align-items: baseline;
+						}
+						.themaWrap .whiteBox.boxStyle03 li + li {
+							margin-top: 10px;
+						}
+						.themaWrap .whiteBox.boxStyle03 li span {
+							display: inline-block;
+							width: 120px;
+							padding: 4px 0 0;
+							margin-right: 10px;
+							background: #e6f1ff;
+							border-radius: 20px;
+						}
+
+						</style>
+					<div class="whiteBox boxStyle03">
+						<div class="imgWrap">
+							<p class="gBold">전라북도 조선업<br> 도약 지원센터</p>
+						</div>
+						<ul>
+							<li>
+								<span class="fs20">기 관 명</span>
+								<p class="fs20">전북조선업도약센터</p>
+							</li>
+							<li>
+								<span class="fs20">주 소</span>
+								<p class="fs20">전북 군산시 조촌로 62(조촌동) 3층</p>
+							</li>
+							<li>
+								<span class="fs20">연 락 처</span>
+								<p class="fs20">063)450-1315~1318</p>
+							</li>
+							<li>
+								<span class="fs20">홈페이지</span>
+								<p class="fs20">http://www.jumpjbjob.or.kr</p>
+							</li>
+						</ul>
+					</div>
+					<h3 class="dot"><span><em class="dotLeft"></em>조선업 채용지원<em class="dotRight"></em></span></h3>
+					<style>
+						.themaWrap .whiteBox.boxStyle04 .stit {
+							margin-bottom: 20px;
+							color: #e46464;
+						}
+						.themaWrap .whiteBox.boxStyle04 .imgwrap {
+							transform: scale(0.9);
+						}
+						.themaWrap .whiteBox.boxStyle05 .stit {
+							margin-bottom: 20px;
+						}
+						.themaWrap .whiteBox.boxStyle05 li {
+							display: flex;
+							padding: 20px 40px;
+							align-items: center;
+							text-align: left;
+							border-radius: 20px;
+						}
+						.themaWrap .whiteBox.boxStyle05 li + li {
+							margin-top: 10px;
+						}
+						.themaWrap .whiteBox.boxStyle05 li span {
+							display: inline-flex;
+							margin-right: 30px;
+							align-items: center;
+							text-align: center;
+						}
+						.themaWrap .whiteBox.boxStyle05 li span::before {
+							content: '';
+							display: inline-block;
+							width: 60px;
+							height: 60px;
+							margin-right: 30px;							
+						}
+						.themaWrap .whiteBox.boxStyle05 li span.icon01::before {							
+							background: url(./resource/images/thema/230710/thema_ev04_icon01.png) no-repeat;	
+							background-size: contain;						
+						}
+						.themaWrap .whiteBox.boxStyle05 li span.icon02::before {							
+							background: url(./resource/images/thema/230710/thema_ev04_icon02.png) no-repeat;	
+							background-size: contain;						
+						}
+						.themaWrap .whiteBox.boxStyle05 li span.icon03::before {							
+							background: url(./resource/images/thema/230710/thema_ev04_icon03.png) no-repeat;	
+							background-size: contain;						
+						}
+						.themaWrap .whiteBox.boxStyle05 li span.icon04::before {							
+							background: url(./resource/images/thema/230710/thema_ev04_icon04.png) no-repeat;	
+							background-size: contain;						
+						}
+						.themaWrap .whiteBox.boxStyle05 li:nth-child(1) {
+							background: #e0f6e4;
+						}
+						.themaWrap .whiteBox.boxStyle05 li:nth-child(2) {
+							background: #f2edd7;
+						}
+						.themaWrap .whiteBox.boxStyle05 li:nth-child(3) {
+							background: #e0f1f6;
+						}
+						.themaWrap .whiteBox.boxStyle05 li:nth-child(4) {
+							background: #e3e1f3;
+						}
+					</style>
+					<div class="whiteBox boxStyle04">
+						<p class="stit fs26">채용맞춤형 원스톱 지원</p>
+						<div class="imgwrap">
+							<img src="./resource/images/thema/230710/thema_ev04_img01.png" alt="채용맞춤형 원스톱 지원">
+						</div>
+					</div>
+					<h3 class="dot"><span><em class="dotLeft"></em>취업역량강화 지원<em class="dotRight"></em></span></h3>
+					<div class="whiteBox boxStyle05">
+						<p class="stit fs26">취업역량강화 프로그램</p>
+						<ul>
+							<li>
+								<span class="fs26 gBold icon01">직업훈련</span>
+								<p class="stxt fs20">조선업 용접, 도장 직업훈련/채용연계</p>
+							</li>
+							<li>
+								<span class="fs26 gBold icon02">노동전환<br> 교육</span>
+								<p class="fs20">군산지역 전기차, 이차전지 분야 기업체 노동전환 교육</p>
+							</li>
+							<li>
+								<span class="fs26 gBold icon03">취업캠프</span>
+								<p class="fs20">
+									- 구인기업 설명회 및 인사담당자와의 만남<br>
+									- 직장인 기본소양, 면접교육<br>
+									- 입사지원서 작성, 입사지원서 사진촬영지원
+								</p>
+							</li>
+							<li>
+								<span class="fs26 gBold icon04">직무특강</span>
+								<p class="fs20">조선업 기초 직무특강 운영</p>
+							</li>
+						</ul>
+					</div>
+					<style>	
+					.themaWrap .whiteBox.boxStyle06 .item {
+						font-weight: 600;
+						text-align: left;
+					}
+					.themaWrap .whiteBox.boxStyle06 .itemTit::before {
+						content: '';
+						display: inline-block;						
+						width: 12px;
+						height: 12px;
+						margin-right: 10px;
+						background: #fff;
+						border: 6px solid #71bbbb;
+						vertical-align: middle;
+						border-radius: 50%;
+					}
+					.themaWrap .whiteBox.boxStyle06 .item + .item {
+						margin-top: 20px;
+					} 
+					.themaWrap .whiteBox.boxStyle06 .item li {
+						padding-left: 50px;
+					}
+					.themaWrap .whiteBox.boxStyle06 .item li + li {
+						margin-top: 10px;
+					}
+					.themaWrap .whiteBox.boxStyle06 .item li::before {
+						content: '·';
+						margin-left: -10px;
+						margin-right: 5px;
+					}
+					.themaWrap .whiteBox.boxStyle06 .item li p {
+						padding-left: 20px;
+						font-weight: 500;
+					}
+					.themaWrap .whiteBox.boxStyle06 .item li p::before {
+						content: '·';
+						margin-left: -10px;
+						margin-right: 5px;
+					}
+					</style>
+					<h3 class="dot"><span><em class="dotLeft"></em>직업훈련<em class="dotRight"></em></span></h3>
+					<div class="whiteBox boxStyle06">
+						<p class="stit fs26">조선업 취업연계 직업훈련</p>
+						<div class="item">
+							<p class="itemTit fs26">훈련과정 및 일정</p>
+						</div>
+						<div class="item">
+							<p class="itemTit fs26">훈련개요</p>
+							<ul>
+								<li class="fs20">훈련시간 : 09:00 ~ 17:00 (1일 6~7시간)</li>
+								<li class="fs20">훈련장소 : (주)명신기술교육원 (군산시 생멀로 73)</li>
+								<li class="fs20">훈련수당 : 월 31만원정도 (식비 10,000원/일, 수당 5,800원/일)</li>
+								<li class="fs20"><span>훈련내용</span>
+									<p class="fs16">용접과정 : 용접이론/도면해독/가스텅스텐아크용접/이산화탄소아크용접 등</p>
+									<p class="fs16">도장과정 : 도장과 도료의 이해/표면처리/상도 도장 및 조색작업/작업안전 등</p>
+								</li>
+								<li class="fs20"><span>신청방법 : 교육담당자와 상담 후 서류제출</span>
+									<p class="fs16">제출자료 : ①개인정보동의서 ②교육 참여신청서</p>
+									<p class="fs16">제출방법 : 방문 또는 이메일접수 (j4501305@naver.com) </p>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<p class="itemTit fs26">문의 및 접수</p>
+							<ul>
+								<li class="fs20">방문접수 : 전북조선업도약센터 5번, 6번 창구</li>
+								<li class="fs20">문의전화 : 063-450-1306, 1307</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -8,3 +8,13 @@
 .themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; }
 .themaWrap .stit { font-size: 26px; word-break: keep-all;}
 .themaWrap .stxt { font-size: 20px; word-break: keep-all;}
+.themaWrap .fs26 { font-size: 26px; }
+.themaWrap .fs20 { font-size: 20px; }
+.themaWrap .fs16 { font-size: 16px; }
+.themaWrap .tlt {text-align: left;}
+.themaWrap .mt20 {margin-top: 20px;}
+.themaWrap .fcRed {color: #ff0000;}
+
+@media all and (max-width:1024px){
+
+}
