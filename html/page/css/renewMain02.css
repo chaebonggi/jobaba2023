@@ -43,7 +43,7 @@
 #newHeader .h_gnb > li > a { display: block; width: 100%; height: 70px; color: #000; font-size: 22px; line-height: 70px; } 
 #newHeader .h_gnb > li > a:hover { color: #008ae0; } 
 #newHeader .h_gnb > li:hover .depth_02 { display: block; } 
-#newHeader .h_gnb > li .depth_02 { display: none; position: absolute; top: 60px; padding: 10px 0; width: 163px; height: auto; border: 1px solid #d7dce5; border-radius: 10px; box-sizing: border-box; letter-spacing: -0.5px; background: #fff; box-shadow: 2px 6px 16px 0 rgba(17,42,128,0.08); z-index: 6000; } 
+#newHeader .h_gnb > li .depth_02 { display: none; position: absolute; top: 60px; padding: 10px 0; width: 174px; height: auto; border: 1px solid #d7dce5; border-radius: 10px; box-sizing: border-box; letter-spacing: -0.5px; background: #fff; box-shadow: 2px 6px 16px 0 rgba(17,42,128,0.08); z-index: 6000; } 
 #newHeader .h_gnb li .depth_02 > li { position: relative; z-index: 2; height: 100%; } 
 #newHeader .h_gnb li .depth_02 > li > a { display: block; padding: 0 16px; height: 36px; color: #5c667b; font-size: 14px; line-height: 36px; } 
 #newHeader .h_gnb li .depth_02 > li > a:hover { background: #eee; } 
