@@ -217,9 +217,17 @@
 
     $('.h_mobile_close').click(function(){
       $('.h_mobile').removeClass('show');
+      $('.h_menu').removeClass('active');
     });
     $('.m_policy_btn ul li').click(function(){
         $('.m_policy_more').removeClass('active');
+    });
+    $(document).mouseup(function (e){
+        var navMenu = $(".h_gnb_bg");
+        if(navMenu.has(e.target).length === 0){
+            $('.h_gnb_bg').stop().slideUp(300);
+            $('.h_menu').removeClass('active');
+        }
     });
     
     // tag 메뉴
