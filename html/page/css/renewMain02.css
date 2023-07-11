@@ -466,7 +466,7 @@
  #newHeader .h_gnb_bg { display: none !important; } 
  #newHeader.fixed_gnb .h_gnb { display: none; } 
 /* 2023.07.11 추가 */
- #newHeader .h_gnb > li:hover .depth2 { display: none; } 
+#newHeader .h_gnb > li:hover .depth_02 { display: none; } 
 
  /* 메인 메뉴 */
  #newMain { padding: 0 0 24px; } 
