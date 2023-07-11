@@ -145,7 +145,7 @@
 .themaWrap .whiteBox.boxStyle01 .imgWrap { margin: 20px 0; } 
 
 .themaWrap .whiteBox.boxStyle02 .imgWrap { margin-bottom: 40px; } 
-.themaWrap .whiteBox.boxStyle02 .listBox { padding: 40px 80px; border: 2px dotted #a4a4a4; text-align: left; } 
+.themaWrap .whiteBox.boxStyle02 .listBox { padding: 40px 80px;  border: 2px dashed #a4a4a4; border-radius: 20px; text-align: left; } 
 .themaWrap .whiteBox.boxStyle02 .listBox .stit { display: inline-block; width: 200px; padding: 4px 0 0; margin-bottom: 20px; background: #6c6c6c; color: #fff; text-align: center; } 
 .themaWrap .whiteBox.boxStyle02 .listBox li { display: flex; } 
 .themaWrap .whiteBox.boxStyle02 .listBox span { width: 100px; flex-shrink: 0; } 
@@ -254,6 +254,7 @@
 .themaWrap h3.icon01::before { width: 60px; height: 56px; margin: 0 auto 10px; } 
 .themaWrap .titWrap .tit { margin-bottom: 10px; font-size: 28px; } 
 .themaWrap .titWrap .titBox { min-height: auto; padding: 20px 10px; margin: 0; border-radius: 20px; word-break: keep-all; } 
+.themaWrap .titWrap .titBox p br { display: none;}
 .themaWrap .titWrap .tit::before { content: none; } 
 
 
