@@ -476,6 +476,7 @@
  #newMain .m_visual .m_visual_items { padding: 0; } 
 
  /* 메인 슬라이드 배너 */
+ #newMain .m_slide_banner .swiper-slide .imgWrap { height: auto; }
  #newMain .m_slide_banner .swiper-slide .imgWrap .x1 { display: block; } 
  #newMain .m_slide_banner .swiper-slide .imgWrap .x2 { display: none; } 
  #newMain .m_slide_banner .swiper-wrapper { margin-left: 0; } 
@@ -567,8 +568,7 @@
  #newMain .m_visual .m_notice_wrap .swiper-button-prev { bottom: 4px; } 
  #newMain .m_visual .m_notice_wrap .swiper-button-next { top: 26px; } 
  /* 메인 슬라이드 배너 */
- #newMain .m_slide_banner .swiper-container { padding: 0 0 46px; margin: 0 auto 10px; } 
- #newMain .m_slide_banner .swiper-slide .imgWrap { height: 165px; } 
+ #newMain .m_slide_banner .swiper-container { padding: 0 0 46px; margin: 0 auto 10px; }  
 
  /* 정책정보 */
  #newMain .m_policy h2 { flex-shrink: 0; margin: 0px 0 10px 28px; } 
