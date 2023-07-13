@@ -477,7 +477,7 @@
 
  /* 메인 슬라이드 배너 */
  #newMain .m_slide_banner .swiper-slide .imgWrap { height: auto;}
- #newMain .m_slide_banner .swiper-slide .imgWrap .x1 { display: block; max-height: 390px; object-fit: contain;} 
+ #newMain .m_slide_banner .swiper-slide .imgWrap .x1 { display: block; max-height: 390px; object-fit: cover;} 
  #newMain .m_slide_banner .swiper-slide .imgWrap .x2 { display: none; } 
  #newMain .m_slide_banner .swiper-wrapper { margin-left: 0; } 
  #newMain .m_slide_banner .swiper-slide { margin-right: 0; } 
