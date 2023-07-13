@@ -54,7 +54,7 @@
       var bannerSwiper = new Swiper(".m_slider", {
           slidesPerView: 1.5,
           spaceBetween: 10,
-          centeredSlides: true,
+          centeredSlides: false,
           preventClicks:true,
           observer: true,
           observeParents: true,
@@ -119,8 +119,7 @@
                slidesPerView: 1.5,
                spaceBetween: 8,
                observer: true,
-               observeParents: true,        
-               loop: true,
+               observeParents: true,
                breakpoints: {
                    1024: {
                        slidesPerView: 5,
