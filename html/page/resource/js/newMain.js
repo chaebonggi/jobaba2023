@@ -54,15 +54,15 @@
       var bannerSwiper = new Swiper(".m_slider", {
           slidesPerView: 1.5,
           spaceBetween: 10,
-          centeredSlides: false,
+          centeredSlides: true,
           preventClicks:true,
           observer: true,
           observeParents: true,
           loop:true, 
-          autoplay:{
-              delay: 5000,
-              disableOnInteraction: false,
-          },
+        //   autoplay:{
+        //       delay: 5000,
+        //       disableOnInteraction: false,
+        //   },
           pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -82,10 +82,12 @@
           },
           breakpoints: {
               859: {
+                  centeredSlides: false,
                   slidesPerView: 'auto',
                   spaceBetween: 0,
               },
               640: {
+                  centeredSlides: true,
                   slidesPerView: 2,
                   spaceBetween: 10,
               },
