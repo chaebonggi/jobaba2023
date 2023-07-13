@@ -59,10 +59,10 @@
           observer: true,
           observeParents: true,
           loop:true, 
-        //   autoplay:{
-        //       delay: 5000,
-        //       disableOnInteraction: false,
-        //   },
+          autoplay:{
+              delay: 5000,
+              disableOnInteraction: false,
+          },
           pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -81,8 +81,13 @@
             }
           },
           breakpoints: {
-              859: {
+              1300: {
                   centeredSlides: false,
+                  slidesPerView: 'auto',
+                  spaceBetween: 0,
+              },
+              859: {
+                  centeredSlides: true,
                   slidesPerView: 'auto',
                   spaceBetween: 0,
               },
@@ -103,7 +108,7 @@
               if (window.innerWidth > 860) {
                   const slides = document.querySelectorAll('#newMain .m_slide_banner .swiper-slide');
                   slides.forEach((slide) => {
-                      slide.style.width = '275px';
+                      slide.style.width = '330px';
                   });
                   bannerSwiper.update();
               }
