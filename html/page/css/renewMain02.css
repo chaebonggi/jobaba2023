@@ -384,7 +384,8 @@
 #newMain .m_useful .m_useful_cont.active { display: flex; justify-content: center; } 
 #newMain .m_useful .m_useful_cont a { width: calc((100% - 42px) / 4); } 
 #newMain .m_useful .m_useful_cont a + a { margin-left: 14px; } 
-#newMain .m_useful .m_useful_thumb { height: 190px; border: 2px solid #fff; border-radius: 15px; overflow: hidden; } 
+/* 2023.07.14 */
+#newMain .m_useful .m_useful_thumb { height: auto; max-height: 163px; border: 2px solid #fff; border-radius: 5px; overflow: hidden; } 
 #newMain .m_useful .m_useful_thumb img { width: 100%; height: 100%; object-fit: cover; } 
 #newMain .m_useful .m_useful_txt { padding: 14px 10px; } 
 #newMain .m_useful .m_useful_txt p { margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
