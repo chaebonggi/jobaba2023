@@ -159,10 +159,10 @@
             breakpoints: {
                 768: {
                     slidesPerView: 2,
-                    slidesPerColumn: 2,
+                    // slidesPerColumn: 2,
                     spaceBetween: 20,
                     touchRatio: 0,
-                    slidesPerColumnFill: "row",
+                    // slidesPerColumnFill: "row",
                 },
                 460: {
                     slidesPerView: 2.5,
