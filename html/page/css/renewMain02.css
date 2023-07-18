@@ -336,6 +336,14 @@
 #newMain .m_employ .m_employ_slide .e_employ_etc { padding: 0 10px; margin-bottom: 10px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; } 
 #newMain .m_employ .m_employ_slide .e_employ_etc span { background: #c6e7f0; padding: 0 4px; font-size: 12px; border-radius: 5px; } 
 #newMain .m_employ .m_employ_slide .e_employ_etc span + span { margin-left: 2px; } 
+/* 2023.07.18 */
+#newMain .m_employ .m_employ_items01.item_style02 .swiper-slide { padding-bottom: 3px; margin-bottom: 20px;}
+#newMain .m_employ .m_employ_items01.item_style02 .e_employ_txt { padding: 30px 10px 0;}
+#newMain .m_employ .m_employ_items01.item_style02 .e_employ_txt .txt { margin-bottom: 0;}
+#newMain .m_employ .m_employ_items01.item_style02 .employLogo { margin: 0 auto 10px;}
+
+
+
 
 #newMain .m_employ .m_employ_list a { display: flex; justify-content: space-between; padding: 10px 0;}  
 #newMain .m_employ .m_employ_list a .detail {margin-top: 10px; color: #666666; font-size: 14px;}
@@ -595,7 +603,7 @@
  #newMain .m_policy .m_policy_txt .tit { height: auto; font-size: 14px; } 
  #newMain .m_policy .m_policy_txt .date { margin-top: 4px; font-size: 14px; } 
  #newMain .m_policy .m_tag { height: 30px; margin: 20px 10px 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 10px; order:2; } 
- #newMain .m_policy .m_tag a { margin-right: 6px; padding: 2px 0; font-size: 14px; } 
+ #newMain .m_policy .m_tag a { margin-right: 6px; padding: 6px 0; font-size: 14px; } 
  #newMain .m_policy .m_tag .m_tag_btn { top: 12px; right: 14px; } 
  #newMain .m_policy .btnWrap { order: 3; } 
 
