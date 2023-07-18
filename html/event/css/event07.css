@@ -1,0 +1,29 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.eventWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.eventWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+
+.eventWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
+.eventWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+
+.eventWrap .eventMain { 
+    background: url(../resource/images/eventImg/event07/ev_main_bg.png) no-repeat top;
+    background-size: cover;
+}
+.eventWrap .titWrap { text-align: center; } 
+.eventWrap .leftMenu.fixed { position: fixed; top: 200px; } 
+.eventWrap .leftMenu { position: absolute; left: 90px; top: 430px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+.eventWrap .leftMenu > a { display: block; margin-top: 10px; color: #5f5f5f; } 
+.eventWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+.eventWrap .menuList li + li { margin-top: 6px; } 
+.eventWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 15px 10px 6px; background: #f0f0f0; color: #000; font-size: 22px; font-weight: 600; } 
+.eventWrap .menuList li a > p { color: #000;}
+.eventWrap .menuList li a .txtBox { display: none;}
+.eventWrap .menuList li a .txtBox p {color: #fff; font-size: 18px;}
+.eventWrap .menuList li a:hover { background: #576add; } 
+.eventWrap .menuList li.active a { height: 120px;} 
+.eventWrap .menuList li.active a.item01 {background: #576add;}
+.eventWrap .menuList li.active a.item02 {background: #523743;}
+.eventWrap .menuList li.active a > p { color: #fffc9d;}
+.eventWrap .menuList li.active .txtBox {display: block;}
