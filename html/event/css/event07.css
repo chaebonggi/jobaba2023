@@ -248,9 +248,9 @@
 .eventWrap .eventBox .evTit { position: static; margin-bottom: 20px; transform: none; border-radius: 40px; text-align: center; } 
 .eventWrap .eventBox .evTit::before { content: none; } 
 .eventWrap .eventBox { position: relative; padding: 20px 20px 20px; background: #d3e5f4; border-radius: 20px; } 
-.eventWrap .eventBox .reviewList li:nth-child(1)::before { width: 70px; height: 65px; top: -15px; right: 0; } 
-.eventWrap .eventBox .reviewList li:nth-child(2)::before { width: 70px; height: 70px; top: -22px; left: 0; } 
-.eventWrap .eventBox .reviewList li:nth-child(3)::before { width: 70px; height: 70px; bottom: -26px; right: 0; } 
+.eventWrap .eventBox .reviewList li:nth-child(1)::before { width: 50px; height: 45px; top: -15px; right: 0; } 
+.eventWrap .eventBox .reviewList li:nth-child(2)::before { width: 50px; height: 50px; top: -22px; left: 0; } 
+.eventWrap .eventBox .reviewList li:nth-child(3)::before { width: 50px; height: 50px; bottom: -26px; right: 0; } 
 .eventWrap .evtitWrap { margin-top: 20px; margin-bottom: 20px; padding: 5px; border-radius: 80px; box-shadow: none; border-radius: 20px; word-break: keep-all; } 
 .eventWrap .eventBox.boxStyle02 { margin-top: 20px; padding: 20px 0 0; } 
 .eventWrap .eventBox.boxStyle02 .evTit { margin: 0 20px 20px; } 
