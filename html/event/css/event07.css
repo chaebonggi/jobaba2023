@@ -184,7 +184,7 @@
 
  .eventWrap .tlt { text-align: center !important; } 
  
- .eventWrap .mainVisual { padding-top: 0; } 
+ .eventWrap .mainVisual { padding: 0 10px; } 
  .eventWrap .mainVisual .imgWrap img { transform: scale(0.8); } 
  .eventWrap .mainVisual .txtWrap { margin-bottom: 100px; } 
  .eventWrap .mainVisual .txtWrap p { font-size: 22px; word-break: keep-all; } 
