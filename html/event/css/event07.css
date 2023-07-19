@@ -216,9 +216,9 @@
 
 
 @media all and (max-width: 640px){
- .eventWrap .fs40 { font-size: 24px; } 
-.eventWrap .fs30 { font-size: 18px; } 
-.eventWrap .fs26 { font-size: 16px; } 
+ .eventWrap .fs40 { font-size: 22px; } 
+.eventWrap .fs30 { font-size: 16px; } 
+.eventWrap .fs26 { font-size: 12px; } 
 .eventWrap .fs22 { font-size: 12px; } 
 .eventWrap .fs20 { font-size: 12px; } 
 .eventWrap .fs18 { font-size: 12px; } 
