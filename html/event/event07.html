@@ -81,12 +81,12 @@
 								</ul>
 								<div class="itemWrap">
 									<div class="linkBox">
-										<a href="" class="box01">
+										<a href="#moveTo01" class="box01">
 											<strong class="jalnan fs20">EVENT 1</strong>
 											<p class="gBold fs20">잡아바 리뉴얼<br> 축하 메시지 보내기</p>
 											<span class="fs18">바로가기</span>
 										</a>
-										<a href="" class="box02">
+										<a href="#moveTo02" class="box02">
 											<strong class="jalnan fs20">EVENT 2</strong>
 											<p class="gBold fs20">잡아바 SNS 채널<br> 친구 인증하기</p>
 											<span class="fs18">바로가기</span>
@@ -373,7 +373,7 @@
 		$('.eventWrap .imgCont').twentytwenty();
 
 
-		$('.menuList li a').click(function(e){
+		$('.menuList li a, .linkBox a').click(function(e){
 			$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
 			e.preventDefault();
 		});	
