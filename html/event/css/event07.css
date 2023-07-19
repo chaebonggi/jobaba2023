@@ -119,6 +119,7 @@
 .eventWrap .eventBox.boxStyle02 .comList { border-bottom: 1px solid #000; } 
 .eventWrap .eventBox.boxStyle02 .comList li { display: flex; padding: 20px; align-items: flex-end; justify-content: space-between; } 
 .eventWrap .eventBox.boxStyle02 .comList li + li { border-top: 1px solid #c3c3c3; } 
+.eventWrap .eventBox.boxStyle02 .comList li .evComment p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;text-align: left; overflow: hidden; } 
 .eventWrap .eventBox.boxStyle02 .comList .evDate { flex-shrink: 0; width: 200px; margin-left: 30px; text-align: right; } 
 .eventWrap .eventBox.boxStyle02 .comList .evDate span + span::before { content: '|'; margin-right: 5px; } 
 
@@ -203,6 +204,7 @@
 .eventWrap .eventBox .reviewList li:nth-child(1) { margin-right: 0; } 
 .eventWrap .eventBox .reviewList li:nth-child(2) { margin-left: 0; } 
 .eventWrap .eventBox.boxStyle02 .comList li { flex-direction: column; } 
+.eventWrap .eventBox.boxStyle02 .comList li .evComment { width: 100%; } 
 
 .eventWrap .eventBox .boxItem02 .contImg img { transform: scale(0.8); margin-left: 0; } 
 .eventWrap .eventBox .boxItem02 .titImg img { transform: scale(0.8); } 
