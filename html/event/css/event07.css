@@ -182,6 +182,7 @@
  .eventWrap .fs18 { font-size: 16px; } 
  .eventWrap .fs16 { font-size: 14px; } 
 
+ .eventWrap .tlt { text-align: center !important; } 
  
  .eventWrap .mainVisual { padding-top: 0; } 
  .eventWrap .mainVisual .imgWrap img { transform: scale(0.8); } 
