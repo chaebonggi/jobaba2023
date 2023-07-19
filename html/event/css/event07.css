@@ -256,7 +256,7 @@
 .eventWrap .eventBox.boxStyle02 .evTit { margin: 0 20px 20px; } 
 .eventWrap .event02 .wirteForm { flex-direction: column; } 
 .eventWrap .event02 .evbtn { width: 100%; height: 50px; } 
-.eventWrap .eventBox.boxStyle02 .boxItem01 { padding: 0 10px; } 
+.eventWrap .eventBox.boxStyle02 .boxItem01 { padding: 0 10px; margin-bottom: 30px; } 
 .eventWrap .event02 .tit::before { width: 230px; height: 120px; top: -112px; } 
 .eventWrap .event02 .innerSection { padding: 150px 0 50px; } 
 
