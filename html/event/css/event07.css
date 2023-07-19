@@ -126,7 +126,7 @@
 .eventWrap .eventBox .boxItem02 .contImg { padding: 56px 60px 50px; background: #fff; border-radius: 20px; } 
 .eventWrap .eventBox .boxItem02 .contImg img { margin-left: 40px; } 
 .eventWrap .eventBox .boxItem02 .contImg > p { margin-top: 20px; } 
-.eventWrap .eventBox .boxItem02 .txtBox { margin-top: 20px; padding: 10px 0 10px 60px; border: 1px solid #000; text-align: left; } 
+.eventWrap .eventBox .boxItem02 .txtBox { margin-top: 20px; padding: 10px 0 10px 60px; border: 1px solid #000; text-align: left; word-break: keep-all; } 
 
 .eventWrap .paging { margin: 24px 0; text-align: center; } 
 .eventWrap .paging a { display: inline-block; color: #000; padding: 4px; } 
@@ -171,7 +171,7 @@
 
  .eventWrap .eventBox .boxItem02 .txtBox { padding: 10px; text-align: center; } 
 .eventWrap .event05 .innerSection { padding: 50px 10px; } 
-}
+ }
 
 @media all and (max-width: 860px){
  .eventWrap .fs40 { font-size: 34px; } 
@@ -212,8 +212,7 @@
 .eventWrap .event04 .imgWrap::before { content: none; } 
 .eventWrap .event04 .imgWrap::after { content: none; } 
 .eventWrap .event04 .imgWrap img { transform: scale(0.8); } 
-
-}
+ }
 
 
 @media all and (max-width: 640px){
@@ -245,14 +244,14 @@
 .eventWrap .whiteBox .item02 ul { padding-top: 20px; } 
 .eventWrap .whiteBox .item02 li { padding: 10px 10px 8px; word-break: keep-all; } 
 
-.eventWrap .evtitWrap .evTitbg { padding: 20px; background: #fff; border-radius: 80px; } 
+.eventWrap .evtitWrap .evTitbg { padding: 20px; background: #fff; border-radius: 20px; } 
 .eventWrap .eventBox .evTit { position: static; margin-bottom: 20px; transform: none; border-radius: 40px; text-align: center; } 
 .eventWrap .eventBox .evTit::before { content: none; } 
 .eventWrap .eventBox { position: relative; padding: 20px 20px 20px; background: #d3e5f4; border-radius: 20px; } 
 .eventWrap .eventBox .reviewList li:nth-child(1)::before { width: 70px; height: 65px; top: -15px; right: 0; } 
 .eventWrap .eventBox .reviewList li:nth-child(2)::before { width: 70px; height: 70px; top: -22px; left: 0; } 
 .eventWrap .eventBox .reviewList li:nth-child(3)::before { width: 70px; height: 70px; bottom: -26px; right: 0; } 
-.eventWrap .evtitWrap { margin-top: 20px; margin-bottom: 20px; border-radius: 80px; } 
+.eventWrap .evtitWrap { margin-top: 20px; margin-bottom: 20px; padding: 5px; border-radius: 80px; box-shadow: none; border-radius: 20px; word-break: keep-all; } 
 .eventWrap .eventBox.boxStyle02 { margin-top: 20px; padding: 20px 0 0; } 
 .eventWrap .eventBox.boxStyle02 .evTit { margin: 0 20px 20px; } 
 .eventWrap .event02 .wirteForm { flex-direction: column; } 
@@ -270,6 +269,8 @@
 .eventWrap .event04 { background: none; } 
 .eventWrap .event04 .innerSection { padding: 20px 0; } 
 .eventWrap .event04 .imgWrap { margin-bottom: 0; } 
+
+.eventWrap .eventBox .reviewList li { padding: 20px 20px; word-break: keep-all; } 
 
  .eventWrap .paging { display: none; } 
  .eventWrap .mpaging { display: block; color: #000; text-align: center; } 
