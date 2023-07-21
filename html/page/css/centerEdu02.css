@@ -53,22 +53,22 @@
 
 .centerEdu .eduCont02 { position: relative; background: #ecf1f5; overflow: hidden; } 
 .centerEdu .eduCont02 .innerSection { max-width: 1260px; padding: 100px 0 50px; position: relative; } 
-.centerEdu .eduCont02 .whiteBox { display: flex; flex-direction: column; width: 100%; height: 100%; position: relative; padding: 40px 56px 30px; background: #fff; border-radius: 24px; box-shadow: 0px 30px 30px 0px rgba(52, 28, 28, 0.1); } 
-.centerEdu .eduCont02 .whiteBox .txtList li { color: #000; font-size: 18px; } 
+.centerEdu .eduCont02 .whiteBox { display: flex; flex-direction: column; width: 100%; height: 100%; position: relative; padding: 40px 48px 30px; background: #fff; border-radius: 24px; box-shadow: 0px 30px 30px 0px rgba(52, 28, 28, 0.1); } 
+.centerEdu .eduCont02 .whiteBox .txtList li { color: #000; font-size: 18px; letter-spacing: -1px;} 
 .centerEdu .eduCont02 .whiteBox .txtList li + li { margin-top: 10px; } 
 .centerEdu .eduCont02 .whiteBox .txtList li::before { content: "·"; margin-left: -10px; margin-right: 5px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { min-height: 140px; position: relative; margin-bottom: 40px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap { min-height: 120px; position: relative; margin-bottom: 30px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { display: block; color: #507593; font-size: 32px; line-height: 1; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { content: ''; height: 82px; position: absolute; right: 0; bottom: 0; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon01::after { width: 109px; background: url(../images/centerEdu/eduCont02_icon01.png) no-repeat; background-size: contain; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon02::after { width: 103px; background: url(../images/centerEdu/eduCont02_icon02.png) no-repeat; background-size: contain; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon03::after { width: 112px; background: url(../images/centerEdu/eduCont02_icon03.png) no-repeat; background-size: contain; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon04::after { width: 103px; background: url(../images/centerEdu/eduCont02_icon04.png) no-repeat; background-size: contain; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon05::after { width: 104px; background: url(../images/centerEdu/eduCont02_icon05.png) no-repeat; background-size: contain; } 
-.centerEdu .eduCont02 .slideLink { width: 400px; height: 520px; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { content: ''; height: 64px; position: absolute; right: 0; bottom: 0; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon01::after { width: 85px; background: url(../images/centerEdu/eduCont02_icon01.png) no-repeat; background-size: contain; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon02::after { width: 66px; background: url(../images/centerEdu/eduCont02_icon02.png) no-repeat; background-size: contain; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon03::after { width: 69px; background: url(../images/centerEdu/eduCont02_icon03.png) no-repeat; background-size: contain; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon04::after { width: 69px; background: url(../images/centerEdu/eduCont02_icon04.png) no-repeat; background-size: contain; } 
+.centerEdu .eduCont02 .whiteBox .txtWrap strong.icon05::after { width: 65px; background: url(../images/centerEdu/eduCont02_icon05.png) no-repeat; background-size: contain; } 
+.centerEdu .eduCont02 .slideLink { width: 360px; height: 500px; } 
 .centerEdu .eduCont02 .slideLink > div { width: 100%; height: 100%; } 
 .centerEdu .eduCont02 .tagMenu { display: flex; align-items: center; justify-content: center; margin-top: auto; background: #2a3a51; border-radius: 40px; box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3); } 
-.centerEdu .eduCont02 .tagMenu li { display: inline-block; padding: 18px 0; color: #fff; font-size: 16px; } 
+.centerEdu .eduCont02 .tagMenu li { display: inline-block; padding: 18px 0; color: #fff; font-size: 15px; } 
 .centerEdu .eduCont02 .tagMenu li + li { margin-left: 10px; } 
 .centerEdu .eduCont02 .guideSlide { margin-top: 70px; padding-bottom: 62px; overflow: initial; } 
 .centerEdu .eduCont02 .swiper-button-prev,
@@ -194,10 +194,8 @@
 
 .centerEdu .eduCont02 .innerSection { max-width: 370px; padding: 30px 0 60px; } 
 .centerEdu .eduCont02 .guideSlide { margin-top: 40px; } 
-.centerEdu .eduCont02 .whiteBox { padding: 40px 40px; } 
+.centerEdu .eduCont02 .whiteBox { padding: 40px 36px 30px; } 
 .centerEdu .eduCont02 .whiteBox li { font-size: 20px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap { min-height: 130px; margin-bottom: 30px; } 
-.centerEdu .eduCont02 .whiteBox .txtWrap strong::after { height: 70px; } 
 .centerEdu .eduCont02 .tagMenu li { padding: 12px 0; font-size: 18px; } 
 
 .centerEdu .eduCont03 { padding: 30px 0 0; } 
@@ -240,7 +238,7 @@
 .centerEdu .eduCont02 .guideSlide { margin-top: 20px; } 
 .centerEdu .eduCont02 .tagMenu li { font-size: 14px; } 
 .centerEdu .eduCont02 .slideLink { height: 430px; } 
-.centerEdu .eduCont02 .whiteBox { padding: 30px; } 
+.centerEdu .eduCont02 .whiteBox { padding: 25px; } 
 .centerEdu .eduCont02 .whiteBox .txtList li { min-height: auto; font-size: 16px; word-break: keep-all; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap { min-height: 110px; margin-bottom: 20px; } 
 .centerEdu .eduCont02 .whiteBox .txtWrap strong { font-size: 28px; } 
