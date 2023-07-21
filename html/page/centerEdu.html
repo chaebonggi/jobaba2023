@@ -540,6 +540,24 @@
                 }
             },
         });
+		const RESIZE_DELAY = 300;
+		let resizeTimer = null;
+	
+		function handleResize() {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(() => {
+				if (window.innerWidth > 860) {
+					const slides = document.querySelectorAll('.centerEdu .eduCont02 .slideLink');
+					slides.forEach((slide) => {
+						slide.style.width = '360px';
+					});
+					guideSwiper.update();
+				}
+			console.log('text');
+			}, RESIZE_DELAY);
+		}
+		window.addEventListener('resize', handleResize);
+
 		// 다음 화살표 클릭 이벤트를 추가
         const nextButton = document.querySelector('.eduCont02 .swiper-button-next');
         nextButton.addEventListener('click', (event) => {
