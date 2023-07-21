@@ -29,8 +29,39 @@
 .eventWrap .cont02 { padding: 90px 0 80px; background: url(../resource/images/eventImg/event05/event_cont02_bg.jpg) no-repeat center; background-size: cover; } 
 .eventWrap .tit { margin-bottom: 60px; text-align: center; } 
 .eventWrap .tit strong { display: inline-block; width: 536px; padding: 20px 10px; background: #00a6cc; color: #fff; font-size: 36px; border: 3px solid #fff; border-radius: 50px; box-shadow: 0 12px 0 rgba(0,0,0,0.1); } 
-.eventWrap .evInfo ul { display: flex; justify-content: space-between; padding: 0 28px; } 
-.eventWrap .evInfo ul li a { display: flex; justify-content: center; align-items: center; width: 220px; height: 220px; background: #fff; border: 5px solid #cee3ea; border-radius: 50%; box-shadow: 0 12px 0 rgba(0,0,0,0.05); } 
+/* 2023.07.24 */
+.eventWrap .jobList { padding-bottom: 100px;}
+.eventWrap .jobList ul { } 
+.eventWrap .jobList li a { display: flex; justify-content: center; align-items: center; width: 220px; height: 220px; background: #fff; border: 5px solid #cee3ea; border-radius: 50%; box-shadow: 0 12px 0 rgba(0,0,0,0.05); } 
+.eventWrap .swiperBottom {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    border-radius: 50px;
+}
+.eventWrap .swiperBottom button {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.eventWrap .swiperBottom .swiper-button-prev:after,
+.eventWrap .swiperBottom .swiper-button-next:after{display: none}
+.eventWrap .swiperBottom .swiper-button-prev,
+.eventWrap .swiperBottom .swiper-button-next {  width: 11px; height: 23px; top: 50%; margin-top: 0; transform: translateY(-50%);}
+.eventWrap .swiperBottom .swiper-button-prev { left: 20px; background: url(../resource/images/eventImg/event05/event_icon_prev.png) no-repeat;}
+.eventWrap .swiperBottom .swiper-button-next {  background: url(../resource/images/eventImg/event05/event_icon_next.png) no-repeat;}
+
+.eventWrap .swiperBottom .swiper-button-pause { background: url(../resource/images/eventImg/event05/event_icon_stop.png) no-repeat center;}
+.eventWrap .swiperBottom .swiper-button-play { display: none; background: url(../resource/images/eventImg/event05/event_icon_play.png) no-repeat center;}
 .eventWrap .evInfo li .imgWrap { padding: 0 10px; } 
 
 .eventWrap .cont03 { padding: 100px 0 35px; background: #fff; } 

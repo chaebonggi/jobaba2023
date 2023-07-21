@@ -65,33 +65,43 @@
 					<div class="tit">
 						<strong>2023년 탐나는 일자리정보관</strong>
 					</div>
-					<ul>
-						<li><a href="https://www.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=34&exhbType=1" target="_blank">
-							<div class="imgWrap">
-								<img src="./resource/images/eventImg/event05/event_cont02_logo05.jpg" alt="경기도재단로고">
+					<div class="swiper-container jobList">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><a href="https://www.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=34&exhbType=1" target="_blank">
+								<div class="imgWrap">
+									<img src="./resource/images/eventImg/event05/event_cont02_logo05.jpg" alt="경기도재단로고">
+								</div>
+							</a></li>
+							<li class="swiper-slide"><a href="http://jobabadev.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=73&exhbType=1" target="_blank">
+								<div class="imgWrap">
+									<img src="./resource/images/eventImg/event05/event_cont02_logo01.png" alt="ibk로고">
+								</div>
+							</a></li>
+							<li class="swiper-slide"><a href="#">
+								<div class="imgWrap">
+									<img src="./resource/images/eventImg/event05/event_cont02_logo02.png" alt="삼성로고">
+								</div>
+							</a></li>
+							<li class="swiper-slide"><a href="#">
+								<div class="imgWrap">
+									<img src="./resource/images/eventImg/event05/event_cont02_logo03.png" alt="lg전자로고">
+								</div>
+							</a></li>
+							<li class="swiper-slide"><a href="#">
+								<div class="imgWrap">
+									<img src="./resource/images/eventImg/event05/event_cont02_logo04.png" alt="참괜찮은중소기업로고">
+								</div>
+							</a></li>
+						</ul>
+						<div class="swiperBottom">
+							<div class="swiperControl">
+								<button class="swiper-button-pause">정지</button>
+								<button class="swiper-button-play">시작</button>
 							</div>
-						</a></li>
-						<li><a href="http://jobabadev.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=73&exhbType=1" target="_blank">
-							<div class="imgWrap">
-								<img src="./resource/images/eventImg/event05/event_cont02_logo01.png" alt="ibk로고">
-							</div>
-						</a></li>
-						<li><a href="#">
-							<div class="imgWrap">
-								<img src="./resource/images/eventImg/event05/event_cont02_logo02.png" alt="삼성로고">
-							</div>
-						</a></li>
-						<li><a href="#">
-							<div class="imgWrap">
-								<img src="./resource/images/eventImg/event05/event_cont02_logo03.png" alt="lg전자로고">
-							</div>
-						</a></li>
-						<li><a href="#">
-							<div class="imgWrap">
-								<img src="./resource/images/eventImg/event05/event_cont02_logo04.png" alt="참괜찮은중소기업로고">
-							</div>
-						</a></li>
-					</ul>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -435,6 +445,36 @@
 
 
 <script>	
+	var mySwiper = new Swiper('.jobList', {
+		slidesPerView: 5,
+		spaceBetween: 20,
+		loop: false,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: true
+		},
+		// pagination: {
+		// 	el: ".swiper-pagination",
+		// 	type: "progressbar",
+		// },
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+	$('.swiperControl .swiper-button-pause').click(function () {
+		$(this).hide();
+		mySwiper.autoplay.stop();
+		$('.swiperControl .swiper-button-play').show();
+	});
+
+	$('.swiperControl .swiper-button-play').click(function () {
+		$(this).hide();
+		mySwiper.autoplay.start();
+		$('.swiperControl .swiper-button-pause').show();
+	});
+
 	var slideContainers = [".slide01", ".slide02", ".slide03", ".slide04"];
 	slideContainers.forEach(function(container){
 		var swiper = new Swiper(container, {
