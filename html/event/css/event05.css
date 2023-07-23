@@ -40,7 +40,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: #000;
+    background-color: rgba(0,0,0,0.5);
     border-radius: 50px;
 }
 .eventWrap .swiperBottom button {
@@ -57,8 +57,8 @@
 .eventWrap .swiperBottom .swiper-button-next:after{display: none}
 .eventWrap .swiperBottom .swiper-button-prev,
 .eventWrap .swiperBottom .swiper-button-next {  width: 11px; height: 23px; top: 50%; margin-top: 0; transform: translateY(-50%);}
-.eventWrap .swiperBottom .swiper-button-prev { left: 20px; background: url(../resource/images/eventImg/event05/event_icon_prev.png) no-repeat;}
-.eventWrap .swiperBottom .swiper-button-next {  background: url(../resource/images/eventImg/event05/event_icon_next.png) no-repeat;}
+.eventWrap .swiperBottom .swiper-button-prev { left: 30px; background: url(../resource/images/eventImg/event05/event_icon_prev.png) no-repeat;}
+.eventWrap .swiperBottom .swiper-button-next { left: 70px !important; background: url(../resource/images/eventImg/event05/event_icon_next.png) no-repeat;}
 
 .eventWrap .swiperBottom .swiper-button-pause { background: url(../resource/images/eventImg/event05/event_icon_stop.png) no-repeat center;}
 .eventWrap .swiperBottom .swiper-button-play { display: none; background: url(../resource/images/eventImg/event05/event_icon_play.png) no-repeat center;}
