@@ -471,6 +471,11 @@
 			prevEl: ".swiper-button-prev",
 		},
 	});
+	$('.jobList .swiper-slide').hover(function(){
+		mySwiper.autoplay.stop();
+	}, function(){
+		mySwiper.autoplay.start();
+	});
 	$('.swiperControl .swiper-button-pause').click(function () {
 		$(this).hide();
 		mySwiper.autoplay.stop();
