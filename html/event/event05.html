@@ -446,17 +446,21 @@
 
 <script>	
 	var mySwiper = new Swiper('.jobList', {
-		slidesPerView: 5,
+		slidesPerView: 2,
 		spaceBetween: 20,
 		loop: false,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: true
 		},
-		// pagination: {
-		// 	el: ".swiper-pagination",
-		// 	type: "progressbar",
-		// },
+		breakpoints: {
+			640: {
+				slidesPerView: 3,
+			},
+			1160: {
+				slidesPerView: 5,
+			},
+		},
 		loop: true,
 		navigation: {
 			nextEl: ".swiper-button-next",
