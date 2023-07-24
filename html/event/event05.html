@@ -439,8 +439,8 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
 
 
 
@@ -448,19 +448,23 @@
 	var mySwiper = new Swiper('.jobList', {
 		slidesPerView: 2,
 		spaceBetween: 20,
-		loop: false,
 		autoplay: {
-			delay: 5000,
-			disableOnInteraction: true
+			delay: 0,
+			stopOnLastSlide: false,
+			disableOnInteraction: false,
 		},
 		breakpoints: {
 			640: {
-				slidesPerView: 3,
+				slidesPerView: 4,
 			},
 			1160: {
 				slidesPerView: 5,
 			},
 		},
+		speed: 5000,
+		loopAdditionalSlides: 1,
+		observer:true, 
+		observeParents:true,
 		loop: true,
 		navigation: {
 			nextEl: ".swiper-button-next",
