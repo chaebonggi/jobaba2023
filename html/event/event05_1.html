@@ -65,7 +65,6 @@
 					<div class="tit">
 						<strong>2023년 탐나는 일자리정보관</strong>
 					</div>
-					<!-- 2023.07.24 -->
 					<div class="swiper-container jobList">
 						<ul class="swiper-wrapper">
 							<li class="swiper-slide"><a href="https://www.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=34&exhbType=1" target="_blank">
@@ -103,6 +102,65 @@
 							<div class="swiper-button-next"></div>
 						</div>
 					</div>
+					<!--  -->
+					<style>
+						.box-flow-wrap { position:relative; height:280px; box-sizing:border-box; overflow:hidden; margin-top: 100px;}
+						.eventWrap .jobList02 {display: flex; position: absolute;}
+						.eventWrap .jobList02 li {
+							margin-right: 40px;
+						}
+						.eventWrap .jobList02 li a { display: flex; justify-content: center; align-items: center; width: 220px; height: 220px; margin: 0 auto; background: #fff; border: 5px solid #cee3ea; border-radius: 50%; box-shadow: 0 12px 0 rgba(0,0,0,0.05); } 
+						.eventWrap .jobListCtr {
+							display: flex;
+							width: 100px;
+							height: 50px;
+							margin: 0 auto;
+							background-color: rgba(0,0,0,0.5);
+							border-radius: 50px;
+							align-items: center;
+							justify-content: center;
+						}
+						.eventWrap .jobListCtr .btn-play {
+							margin-right: 15px;
+						}
+						@media (max-width: 640px) {
+							.box-flow-wrap {height: 180px;}
+							.eventWrap .jobList02 li {margin-right: 10px;}
+						}
+					</style>
+					<ul class="jobList02">
+						<li><a href="https://www.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=34&exhbType=1" target="_blank">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo05.jpg" alt="경기도재단로고">
+							</div>
+						</a></li>
+						<li><a href="http://jobabadev.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=73&exhbType=1" target="_blank">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo01.png" alt="ibk로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo02.png" alt="삼성로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo03.png" alt="lg전자로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo04.png" alt="참괜찮은중소기업로고">
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="imgWrap">
+								<img src="./resource/images/eventImg/event05/event_cont02_logo02.png" alt="삼성로고">
+							</div>
+						</a></li>						
+					</ul>
+					<!--  -->
 				</div>
 			</div>
 		</article>
@@ -445,8 +503,7 @@
 
 
 
-<script>
-	// 2023.07.24
+<script>	
 	var mySwiper = new Swiper('.jobList', {
 		slidesPerView: 2,
 		spaceBetween: 20,
@@ -470,7 +527,7 @@
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
-	});	
+	});
 	$('.jobList .swiper-wrapper').hover(function(){
 		mySwiper.autoplay.stop();
 	}, function(){
@@ -486,6 +543,115 @@
 		mySwiper.autoplay.start();
 		$('.swiperControl .swiper-button-pause').show();
 	});
+	// 
+	(function($) {
+	$.fn.extend({
+		flowBanner: function(options) {
+
+		var defaults = {
+			control: false,
+			speed: 20,
+			ctrlSelector: 'jobListCtr',
+			wrapSelector: 'box-flow-wrap',
+			playSelector: 'btn-play',
+			pauseSelector: 'btn-pause',
+			playText: '<img src="./resource/images/eventImg/event05/event_icon_play.png" alt="재생버튼">',
+			pauseText: '<img src="./resource/images/eventImg/event05/event_icon_stop.png" alt="버튼">'
+		};
+
+		var opt = $.extend(defaults, options);
+
+		return this.each(function() {
+			var o = opt;
+			var left = 0;
+			var timer = '';
+			var ctrl = o.control;
+			var speed = o.speed;
+			var ctrlSelector = o.ctrlSelector;
+			var wrapSelector = o.wrapSelector;
+			var playSelector = o.playSelector;
+			var pauseSelector = o.pauseSelector;
+			var playText = o.playText;
+			var pauseText = o.pauseText;
+			var $box = $(this);
+			var $wrap = '<div class="' + wrapSelector + '"><\/div>';
+			var $banner = $box.children("li");
+			var $bannerSize = $banner.length;
+			var $bannerW = $banner.outerWidth(true);
+			var $ctrlHtml = '';
+			$ctrlHtml += '<div class="' + ctrlSelector + '">';
+			$ctrlHtml += '	<button type="button" class="' + playSelector + '">' + playText + '<\/button>';
+			$ctrlHtml += '	<button type="button" class="' + pauseSelector + '">' + pauseText + '<\/button>';
+			$ctrlHtml += '<\/div>';
+
+
+			$box.wrap($wrap);
+			$box.width($bannerW * $bannerSize);
+			flowPlay();
+
+			if (ctrl) {
+			$box.parent().after($ctrlHtml);
+
+			$box.parent().next('.' + ctrlSelector).on("click", "button", function(e) {
+				e.preventDefault;
+				if ($(this).hasClass(playSelector)) {
+					flowPause();
+					flowPlay();
+				}
+
+				if ($(this).hasClass(pauseSelector)) {
+					flowPause();
+				}
+			});
+			}
+
+			$box.on("mouseenter", function() {
+				flowPause();
+			}).on("mouseleave", function() {
+				flowPlay();
+			});
+
+			$banner.on("focusin", "a", function() {
+				flowPause();
+			}).on("focusout", "a", function() {
+				flowPause();
+				flowPlay();
+			});
+
+			function flow() {
+
+			if (Math.abs(left) >= $bannerW) {
+				left = 0;
+				$box.children("li").first().appendTo($box);
+			}
+
+			left = left - 1;
+			$box.css({
+				'left': left
+			});
+
+			}
+
+			function flowPause() {
+				clearInterval(timer);
+			}
+
+			function flowPlay() {
+				timer = setInterval(flow, speed);
+			}
+
+		});
+		}
+	});
+	})(jQuery);
+
+	$(function() {
+	$(".jobList02").flowBanner({
+		control: true
+		//speed: 20
+	});
+	});
+
 	// 
 
 	var slideContainers = [".slide01", ".slide02", ".slide03", ".slide04"];
