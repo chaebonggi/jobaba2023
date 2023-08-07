@@ -252,21 +252,6 @@ $(document).ready(function () {
 
     });
 
-    // 2023. 08.07 타임 템플릿 추가
-    $(".timep").timepicker({
-        
-        timeFormat: 'h:mm p',
-        interval: 30,
-        minTime: '09',
-        maxTime: '6:00pm',
-        // defaultTime: '09',
-        startTime: '09:00',
-        dynamic: false,
-        dropdown: true,
-        scrollbar: true,		
-    });
-    // 2023. 08.07 타임 템플릿 추가
-
 
     //tree
 
