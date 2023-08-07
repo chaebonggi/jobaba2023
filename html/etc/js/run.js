@@ -240,7 +240,7 @@ $(document).ready(function () {
 
         currentText: '오늘 날짜', // 오늘 날짜로 이동하는 버튼 패널
 
-        closeText: '닫기', // 닫기 버튼 패널
+        closeText: '닫기', // 닫기 버튼 패널제거
 
         dateFormat: "yy.mm.dd", // 텍스트 필드에 입력되는 날짜 형식.
 
@@ -250,7 +250,28 @@ $(document).ready(function () {
 
         monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'], // 월의 한글 형식.
 
+        // timepicker 설정
+		timeFormat:'HH:mm:ss',
+		controlType:'select',
+		oneLine:true,
+
     });
+
+    // 2023. 08.07 타임 템플릿 추가
+    $(".timep").timepicker({
+        timeFormat: 'HH:mm',
+        interval: 60,
+        minTime: '10',
+        maxTime: '23:00',
+        defaultTime: 'now',
+        startTime: '00:00',
+        dynamic: false,
+        dropdown: true,
+        scrollbar: true,
+        zindex: '9999999',
+
+    });
+    // 2023. 08.07 타임 템플릿 추가
 
 
     //tree
