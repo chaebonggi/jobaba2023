@@ -249,28 +249,10 @@ $(document).ready(function () {
         dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'], // 요일의 한글 형식.
 
         monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'], // 월의 한글 형식.
-
-        // timepicker 설정
-		timeFormat:'HH:mm:ss',
-		controlType:'select',
-		oneLine:true,
-
     });
 
     // 2023. 08.07 타임 템플릿 추가
-    $(".timep").timepicker({
-        timeFormat: 'HH:mm',
-        interval: 60,
-        minTime: '10',
-        maxTime: '23:00',
-        defaultTime: 'now',
-        startTime: '00:00',
-        dynamic: false,
-        dropdown: true,
-        scrollbar: true,
-        zindex: '9999999',
-
-    });
+    $(".timep").timepicker();
     // 2023. 08.07 타임 템플릿 추가
 
 
