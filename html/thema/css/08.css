@@ -1,0 +1,14 @@
+/* @font-face { font-family: 'ONEMobile'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff'); font-weight: normal; font-style: normal; } */
+@font-face { font-family: 'ONEMobile'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'BMHANNAP'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GangwonEdu'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduHyeonokT_OTFMediumA.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.themaWrap * { font-family: 'ONEMobile','Noto Sans KR' !important; } 
+.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+
+.themaWrap .hPro { font-family: 'BMHANNAP','Noto Sans KR' !important; } 
+.themaWrap .gwEdu { font-family: 'GangwonEdu','Noto Sans KR' !important; } 
+.themaWrap .ml20 { margin-left: 20px; } 
+.themaWrap .mr20 { margin-right: 20px; } 
+.themaWrap .mt40 { margin-top: 40px; } 
+.themaWrap .mt100 { margin-top: 100px; } 
