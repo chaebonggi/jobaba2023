@@ -29,7 +29,7 @@
 .themaWrap .fs14 { font-size: 14px; } 
 
 .themaWrap a { transition: 0.3s; } 
-.themaWrap a:hover { transform: scale(1.1); }
+.themaWrap a:hover { transform: scale(1.1); } 
 
 .themaWrap .mainVisual { background: url(../resource/images/thema/230809/thema_main_bg.jpg) no-repeat center; } 
 .themaWrap .mainVisual .innerSection { padding: 70px 0 215px; } 
@@ -56,13 +56,13 @@
 .themaWrap .titCont h3.icon03::before { background: url(../resource/images/thema/230809/thema_title_icon03.png) no-repeat; background-size: contain; } 
 .themaWrap .titCont h3.icon03::after { width: 110px; height: 119px; right: -110px; background: url(../resource/images/thema/230809/thema_title_img03.png) no-repeat; background-size: contain; } 
 .themaWrap .whiteBox { padding: 50px; background: #fff; border: 5px solid #f0f0f0; border-radius: 50px; } 
-.themaWrap .whiteBox ul { display: flex; flex-wrap: wrap; gap: 20px 30px; } 
+.themaWrap .whiteBox ul { display: flex; flex-wrap: wrap; gap: 40px 30px; } 
 .themaWrap .whiteBox li { width: calc(100% / 2 - 15px); } 
 .themaWrap .whiteBox .infoWrap { display: flex; flex-direction: column; width: 100%; height: 280px; position: relative; align-items: center; justify-content: center; border: 10px solid #c5e4ee; border-radius: 30px; } 
 .themaWrap .whiteBox .infoWrap::before { content: ''; width: 30px; height: 10px; position: absolute; top: -10px; left: 40px; background: #fff; transform: skew(45deg); } 
 .themaWrap .whiteBox .infoWrap::after { content: ''; width: 30px; height: 10px; position: absolute; bottom: -10px; right: 40px; background: #fff; transform: skew(45deg); } 
 .themaWrap .whiteBox .infoWrap span { display: inline-block; margin-bottom: 10px; color: #2abcb2; font-size: 30px; } 
-.themaWrap .whiteBox .infoWrap strong { color: #000; font-size: 56px; font-weight: normal; line-height: 1; } 
+.themaWrap .whiteBox .infoWrap strong { color: #000; font-size: 46px; font-weight: normal; line-height: 1; } 
 .themaWrap .whiteBox .infoWrap p { margin-top: 10px; color: #989898; font-size: 20px; } 
 .themaWrap .whiteBox .btnWrap { margin: 40px auto 0; text-align: center; } 
 .themaWrap .whiteBox > .btnWrap a { display: inline-block; max-width: 570px; width: 100%; padding: 20px 10px; position: relative; background: #ffda01; color: #000; font-size: 20px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
@@ -71,8 +71,13 @@
 .themaWrap .whiteBox ul.boxStyle02 li { width: calc(100% / 3 - 20px); } 
 .themaWrap .whiteBox ul.boxStyle02 .first { position: relative; } 
 .themaWrap .whiteBox ul.boxStyle02 .first::after { content: '만족도 97점'; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); color: #989898; font-size: 20px; white-space: nowrap; } 
-.themaWrap .whiteBox ul.boxStyle02 a { display: inline-block; width: 100%; padding: 10px 10px; position: relative; background: #ffda01; color: #000; font-size: 20px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
-.themaWrap .whiteBox ul.boxStyle02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox .btnWrap.style02 a { display: inline-block; width: 100%; padding: 10px 10px; position: relative; background: #ffda01; color: #000; font-size: 24px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
+.themaWrap .whiteBox .btnWrap.style02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox ul.boxStyle03 li { width: 100%; } 
+.themaWrap .whiteBox ul.boxStyle03 .infoWrap { padding: 50px 10px; height: auto; flex-direction: initial; align-items: center; } 
+.themaWrap .whiteBox ul.boxStyle03 .infoWrap span { margin-bottom: 0; margin-right: 10px; } 
+.themaWrap .whiteBox .btnWrap.style03 { display: flex; flex-wrap: wrap; gap: 40px 30px; } 
+.themaWrap .whiteBox .btnWrap.style03 a { width: calc(100% / 2 - 15px); } 
 
 .themaWrap .event02 .innerSection { padding: 0 0 110px; } 
 .themaWrap .etcWrap { display: flex; margin: 50px 0 100px; align-items: center; justify-content: center; text-align: center; } 
@@ -161,3 +166,8 @@
 
 .themaWrap .event05 { background: url(../resource/images/thema/230809/thema_ev05_bg.jpg) no-repeat; background-size: cover; text-align: center; } 
 .themaWrap .event05 .innerSection { padding: 140px 0 160px; } 
+
+@media all and (max-width:1024px){
+
+
+}
