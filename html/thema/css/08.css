@@ -12,8 +12,6 @@
 .themaWrap .gwEdu { font-family: 'GangwonEdu','Noto Sans KR' !important; } 
 .themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; } 
 
-.themaWrap .ml20 { margin-left: 20px; } 
-.themaWrap .mr20 { margin-right: 20px; } 
 .themaWrap .mt40 { margin-top: 40px; } 
 .themaWrap .mt100 { margin-top: 100px; } 
 
@@ -36,13 +34,21 @@
 .themaWrap .mainVisual .txtWrap { margin-top: 40px; } 
 .themaWrap .mainVisual .txtWrap p { color: #fff; font-size: 30px; text-align: center; word-break: keep-all; } 
 
-.themaWrap .eventWrap { padding: 120px 0 180px; background: url(../resource/images/thema/230809/thema_event_bg.jpg) no-repeat; background-size: cover; } 
+.themaWrap .eventWrap { padding: 120px 0 180px; background: url(../resource/images/thema/230809/thema_event_bg.jpg) no-repeat center; background-size: cover; } 
 .themaWrap .event01 .innerSection { padding: 0 0 110px; } 
-.themaWrap .titWrap { position: relative; padding: 12px; margin: 0 50px; background: #fff; text-align: center; border: 4px solid #ffb3c8; border-radius: 100px; } 
-.themaWrap .titWrap::before { content: ''; position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px; border: 4px solid #8194ff; border-radius: 90px; } 
-.themaWrap .titWrap h2 { margin: 5px; padding: 24px 10px; background: #fff; font-size: 40px; border: 8px solid #8de1e2; border-radius: 70px; word-break: keep-all; } 
+.themaWrap .titWrap { position: relative; padding: 12px; margin: 0 50px; background: #fff; text-align: center; border: 4px solid #ffb3c8; border-radius: 120px; } 
+.themaWrap .titWrap::before { content: ''; position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px; border: 4px solid #8194ff; border-radius: 110px; } 
+.themaWrap .titWrap h2 { margin: 5px; padding: 24px 10px; background: #fff; font-size: 40px; border: 8px solid #8de1e2; border-radius: 100px; word-break: keep-all; } 
 .themaWrap .titWrap .logoIcon { display: inline-block; width: 200px; height: 62px; background: url(../resource/images/thema/230809/thema_icon_logo.png) no-repeat; background-size: contain; vertical-align: middle; } 
 .themaWrap .titWrap .icon01 { display: inline-block; width: 32px; height: 62px; margin-left: 10px; background: url(../resource/images/thema/230809/thema_tit_icon01.png) no-repeat; background-size: contain; vertical-align: middle; } 
+.themaWrap .event01 .titWrap .logoIcon { margin-left: 20px; } 
+.themaWrap .event02 .titWrap .logoIcon { margin-right: 20px; } 
+.themaWrap .event03 .titWrap .logoIcon { margin-right: 20px; } 
+.themaWrap .event04 .titWrap .logoIcon { margin-left: 20px; } 
+
+
+
+
 .themaWrap .titCont { margin: 150px 0 50px; text-align: center; } 
 .themaWrap .titCont h3 { display: inline-block; position: relative; color: #003181; font-size: 40px; line-height: 1; } 
 .themaWrap .titCont h3::before { content: ''; position: absolute; width: 186px; height: 45px; top: -50px; left: 50%; transform: translateX(-50%); } 
@@ -62,20 +68,31 @@
 .themaWrap .whiteBox .infoWrap span { display: inline-block; margin-bottom: 10px; color: #2abcb2; font-size: 30px; } 
 .themaWrap .whiteBox .infoWrap strong { color: #000; font-size: 46px; font-weight: normal; line-height: 1; } 
 .themaWrap .whiteBox .infoWrap p { margin-top: 10px; color: #989898; font-size: 20px; } 
-.themaWrap .whiteBox .btnWrap { margin: 40px auto 0; text-align: center; } 
-.themaWrap .whiteBox > .btnWrap a { display: inline-block; max-width: 570px; width: 100%; padding: 20px 10px; position: relative; background: #ffda01; color: #000; font-size: 20px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
-.themaWrap .whiteBox > .btnWrap a::after { content: ''; width: 70px; height: 57px; position: absolute; right: -12px; bottom: -20px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
-.themaWrap .whiteBox > .btnWrap a strong { font-size: 28px; vertical-align: middle; } 
+.themaWrap .whiteBox .evBtn { margin: 40px auto 0; text-align: center; } 
+.themaWrap .whiteBox > .evBtn a { display: inline-block; max-width: 570px; width: 100%; padding: 20px 10px; position: relative; background: #ffda01; color: #000; font-size: 20px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
+.themaWrap .whiteBox > .evBtn a::after { content: ''; width: 70px; height: 57px; position: absolute; right: -12px; bottom: -20px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox > .evBtn.ani a:hover::after { animation-iteration-count: infinite; animation-name: boxMove, boxClick; animation-delay: 0s, 1s; animation-duration: 1s, 0.6s; animation-timing-function: ease-in, ease-in-out; } 
+ @keyframes boxMove { 
+ 0% { transform: translate(100px, -100px); opacity: 0; } 
+100% { transform: translate(0, 0); opacity: 1; } 
+ }
+@keyframes boxClick { 
+ 0% { transform: scale(1); opacity: 1; } 
+ 100% { transform: scale(0.9); opacity: 1; } 
+ }
+ .themaWrap .whiteBox .evBtn:not(.ani) a:hover::after { animation: boxClick 0.5s infinite ease-in, ease-in-out; } 
+
+.themaWrap .whiteBox > .evBtn a strong { font-size: 28px; vertical-align: middle; } 
 .themaWrap .whiteBox ul.boxStyle02 li { width: calc(100% / 3 - 20px); } 
 .themaWrap .whiteBox ul.boxStyle02 .first { position: relative; } 
 .themaWrap .whiteBox ul.boxStyle02 .first::after { content: '만족도 97점'; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); color: #989898; font-size: 20px; white-space: nowrap; } 
-.themaWrap .whiteBox .btnWrap.style02 a { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 78px; padding: 4px 10px; position: relative; background: #ffda01; color: #000; font-size: 24px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
-.themaWrap .whiteBox .btnWrap.style02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox .evBtn.style02 a { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 78px; padding: 4px 10px; position: relative; background: #ffda01; color: #000; font-size: 24px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
+.themaWrap .whiteBox .evBtn.style02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
 .themaWrap .whiteBox ul.boxStyle03 li { width: 100%; } 
 .themaWrap .whiteBox ul.boxStyle03 .infoWrap { padding: 50px 10px; height: auto; flex-direction: initial; align-items: center; } 
 .themaWrap .whiteBox ul.boxStyle03 .infoWrap span { margin-bottom: 0; margin-right: 10px; } 
-.themaWrap .whiteBox .btnWrap.style03 { display: flex; flex-wrap: wrap; gap: 40px 30px; } 
-.themaWrap .whiteBox .btnWrap.style03 a { width: calc(100% / 2 - 15px); } 
+.themaWrap .whiteBox .evBtn.style03 { display: flex; flex-wrap: wrap; gap: 40px 30px; } 
+.themaWrap .whiteBox .evBtn.style03 a { width: calc(100% / 2 - 15px); } 
 
 .themaWrap .event02 .innerSection { padding: 0 0 110px; } 
 .themaWrap .etcWrap { display: flex; margin: 50px 0 100px; align-items: center; justify-content: center; text-align: center; } 
@@ -110,7 +127,10 @@
 .themaWrap .rankBox .rank { position: absolute; top: -54px; left: 50%; transform: translateX(-50%); } 
 .themaWrap .rankBox .rank.icon01::before { content: ''; width: 88px; height: 75px; position: absolute; top: -40px; right: -80px; background: url(../resource/images/thema/230809/thema_rank_icon01.png) no-repeat; } 
 .themaWrap .rankBox .imgWrap { margin-bottom: 10px; } 
-.themaWrap .rankBox .btnWrap a { display: inline-block; padding: 6px 30px; background: #6b6b6b; color: #fff; font-size: 16px; border-radius: 20px; } 
+.themaWrap .rankBox .evBtn a { display: inline-block; padding: 6px 30px; background: #6b6b6b; color: #fff; font-size: 16px; border-radius: 20px; } 
+.themaWrap .rankBox .evBtn a span { position: relative; z-index: 1; } 
+.themaWrap .rankBox .evBtn a span::after { content: ''; width: 0; height: 4px; position: absolute; left: 0; bottom: -4px; background: #eee; transition: all 0.3s; z-index: -1; opacity: 1; } 
+.themaWrap .rankBox .evBtn a:hover span::after { width: 100%; } 
 .themaWrap .rankBox .txtWrap { margin-bottom: 10px; } 
 .themaWrap .rankBox .txtWrap p { display: flex; min-height: 100px; color: #000; font-size: 22px; align-items: center; justify-content: center; word-break: keep-all; } 
 .themaWrap .rankBox .ongoing { padding: 0 5px; position: absolute; top: 24px; right: 10px; font-size: 14px; border: 1px solid #000; border-radius: 20px; } 
@@ -139,8 +159,8 @@
 .hotSlide .txtSlide p { margin: 20px 0 20px; font-size: 22px; } 
 .hotSlide .txtSlide li { display: flex; padding-left: 10px; font-size: 16px; } 
 .hotSlide .txtSlide li::before { content: '-'; margin-left: -10px; margin-right: 5px; } 
-.hotSlide .btnWrap { position: absolute; left: 50px; bottom: 30px; } 
-.hotSlide .btnWrap a { display: inline-block; background: #fff; padding: 4px 20px; color: #000; font-size: 16px; border: 1px solid #cacaca; border-radius: 30px; text-align: center; } 
+.hotSlide .evBtn { position: absolute; left: 50px; bottom: 30px; } 
+.hotSlide .evBtn a { display: inline-block; background: #fff; padding: 4px 20px; color: #000; font-size: 16px; border: 1px solid #cacaca; border-radius: 30px; text-align: center; } 
 
 .themaWrap .event04 ul { margin-top: 200px; } 
 .themaWrap .event04 li { position: relative; } 
@@ -181,8 +201,8 @@
  .themaWrap .whiteBox .infoWrap { height: auto; padding: 20px 10px; } 
  .themaWrap .whiteBox ul.boxStyle03 .infoWrap { flex-direction: column; } 
  .themaWrap .whiteBox ul.boxStyle03 .infoWrap span { margin-right: 0; margin-bottom: 10px; } 
- .themaWrap .whiteBox .btnWrap.style03 { flex-direction: column; align-items: center; } 
- .themaWrap .whiteBox .btnWrap.style03 a { width: 100%; } 
+ .themaWrap .whiteBox .evBtn.style03 { flex-direction: column; align-items: center; } 
+ .themaWrap .whiteBox .evBtn.style03 a { width: 100%; } 
 
  .themaWrap .event02 .innerSection { padding: 0 10px 110px; } 
 .themaWrap .rankBox ul { gap: 100px 0; flex-direction: column; align-items: center; } 
@@ -203,42 +223,31 @@
 .themaWrap .event05 .titImg img,
 .themaWrap .event05 .contImg img { transform: scale(0.8); } 
 
-.themaWrap .event03 .hotSlide {
-    padding-bottom: 80px;
-}
+.themaWrap .event03 .hotSlide { padding-bottom: 80px; } 
 
 .hotSlide > ul > li.bg02::before,
 .hotSlide > ul > li.bg02::after,
 .hotSlide > ul > li.bg03::before,
 .hotSlide > ul > li.bg04::before,
 .hotSlide > ul > li.bg05::before,
-.hotSlide > ul > li.bg05::after {
-    content: none;
-}
-.hotSlide > ul > li.bg01 {
-    background-size: 180px;
-}
-.hotSlide > ul > li.bg02 {
-    background-position: right 20px bottom 0;
-    background-size: 220px;
-}
-.hotSlide > ul > li.bg03 {
-    background-position: right 20px bottom 0;
-    background-size: 170px;
-}
-.hotSlide > ul > li.bg04 {
-    background-position: right 20px bottom 0;
-    background-size: 200px;
-}
-.hotSlide > ul > li.bg05 {
-    background-position: right 20px bottom 0;
-    background-size: 200px;
-}
+.hotSlide > ul > li.bg05::after { content: none; } 
+.hotSlide > ul > li.bg01 { background-size: 180px; } 
+.hotSlide > ul > li.bg02 { background-position: right 20px bottom 0; background-size: 220px; } 
+.hotSlide > ul > li.bg03 { background-position: right 20px bottom 0; background-size: 170px; } 
+.hotSlide > ul > li.bg04 { background-position: right 20px bottom 0; background-size: 200px; } 
+.hotSlide > ul > li.bg05 { background-position: right 20px bottom 0; background-size: 200px; } 
 
+.themaWrap .whiteBox > .evBtn.ani a:hover::after,
+.themaWrap .whiteBox .evBtn:not(.ani) a:hover::after {
+    animation: none;
 }
+ }
 
 @media all and (max-width:640px){
- .themaWrap .ml20 { margin-left: 0; } 
+ .themaWrap .event01 .titWrap .logoIcon { margin-left: 10px; } 
+.themaWrap .event02 .titWrap .logoIcon { margin-right: 10px; } 
+.themaWrap .event03 .titWrap .logoIcon { margin-right: 10px; } 
+.themaWrap .event04 .titWrap .logoIcon { margin-left: 10px; } 
  .themaWrap .mt100 { margin-top: 20px; } 
  .themaWrap .mainVisual .innerSection { padding: 30px 10px 60px; } 
  .themaWrap .mainVisual .txtWrap p { font-size: 14px; } 
@@ -250,7 +259,8 @@
  .themaWrap .titWrap { padding: 6px; border: 2px solid #ffb3c8; border-radius: 30px; } 
  .themaWrap .titWrap::before { top: 2px; left: 2px; right: 2px; bottom: 2px; border: 2px solid #8194ff; border-radius: 30px; } 
  .themaWrap .titWrap h2 { margin: 2px; padding: 16px 10px; background: #fff; font-size: 26px; border: 4px solid #8de1e2; border-radius: 30px; } 
- .themaWrap .titWrap .logoIcon { width: 140px; height: 43px; } 
+ .themaWrap .titWrap .logoIcon { width: 120px; height: 37px; } 
+ .themaWrap .titWrap .icon01 { width: 20px; height: 40px; } 
  .themaWrap .titCont { margin: 90px 0 30px; } 
  .themaWrap .titCont h3 { font-size: 30px; } 
  .themaWrap .titCont h3::before { width: 150px; height: 37px; } 
@@ -262,13 +272,13 @@
  .themaWrap .whiteBox .infoWrap::after { width: 20px; } 
  .themaWrap .whiteBox .infoWrap span { font-size: 20px; } 
  .themaWrap .whiteBox .infoWrap strong { font-size: 26px; } 
- .themaWrap .whiteBox .btnWrap { margin: 20px auto 0; padding: 0; } 
- .themaWrap .whiteBox > .btnWrap a { padding: 12px 10px; font-size: 16px; border-radius: 30px; } 
- .themaWrap .whiteBox > .btnWrap a strong { display: block; font-size: 20px; } 
- .themaWrap .whiteBox .btnWrap.style02 a { min-height: 66px; font-size: 18px; border-radius: 20px; } 
- .themaWrap .whiteBox > .btnWrap a::after { width: 50px; height: 41px; right: -4px; bottom: -10px; } 
- .themaWrap .whiteBox .btnWrap.style02 a:after { width: 50px; height: 41px; right: -4px; bottom: -10px; } 
- .themaWrap .whiteBox .btnWrap.style03 { gap: 20px 0; } 
+ .themaWrap .whiteBox .evBtn { margin: 20px auto 0; padding: 0; } 
+ .themaWrap .whiteBox > .evBtn a { padding: 12px 10px; font-size: 16px; border-radius: 30px; } 
+ .themaWrap .whiteBox > .evBtn a strong { display: block; font-size: 20px; } 
+ .themaWrap .whiteBox .evBtn.style02 a { min-height: 66px; font-size: 18px; border-radius: 20px; } 
+ .themaWrap .whiteBox > .evBtn a::after { width: 50px; height: 41px; right: -4px; bottom: -10px; } 
+ .themaWrap .whiteBox .evBtn.style02 a:after { width: 50px; height: 41px; right: -4px; bottom: -10px; } 
+ .themaWrap .whiteBox .evBtn.style03 { gap: 20px 0; } 
  .themaWrap .whiteBox ul.boxStyle03 .infoWrap { padding: 20px 10px; } 
 
  .themaWrap .event02 .innerSection { padding: 0 10px 30px; } 
@@ -288,11 +298,12 @@
 .themaWrap .titEdu h3.icon04::after,
 .themaWrap .titEdu h3.icon04::before { content: none; } 
 .themaWrap .rankBox { padding: 20px; } 
+.themaWrap .rankBox ul { gap: 60px 0; } 
 .themaWrap .titEdu h3 { width: 100%; padding: 10px; margin-bottom: 70px; position: static; transform: none; font-size: 22px; } 
 .themaWrap .rankBox .rank img { transform: scale(0.8); } 
 .themaWrap .rankBox .rank.icon01::before { width: 60px; height: 51px; top: -4px; right: -52px; background-size: contain; } 
 .themaWrap .rankBox .txtWrap p { min-height: auto; font-size: 18px; } 
-.themaWrap .rankBox .btnWrap a { width: 100%; padding: 10px; } 
+.themaWrap .rankBox .evBtn a { width: 100%; padding: 10px; } 
 
 .themaWrap .etcWrap i.icon02 { width: 60px; height: 66px; margin: -30px 0 0 4px; } 
 .themaWrap .event04 .jobTit.icon01::before,
@@ -307,16 +318,15 @@
 .themaWrap .event04 .jobTxt p { font-size: 16px; text-align: center; word-break: keep-all; } 
 .themaWrap .event05 .contImg img { margin-top: -40px; transform: scale(0.8); } 
 
-.hotSlide > ul > li {
-    padding: 30px 20px 10px;
-}
-.hotSlide .titSlide p {
-    font-size: 26px;
-    word-break: keep-all;
-}
-.hotSlide .txtSlide p {
-    margin: 10px 0 10px;
-    font-size: 16px;
-}
-
+.themaWrap .event03 .innerSection { padding: 0 0 30px; } 
+.hotSlide > ul > li { background-image: none !important; } 
+.hotSlide > ul > li { padding: 30px 20px; } 
+.hotSlide .titSlide { min-height: 52px; } 
+.hotSlide .titSlide p { font-size: 26px; word-break: keep-all; } 
+.hotSlide .txtSlide p { margin: 10px 0 10px; font-size: 16px; word-break: keep-all; } 
+.hotSlide .txtSlide li { padding-left: 6px; font-size: 14px; word-break: keep-all; } 
+.hotSlide .txtSlide li::before { margin-right: 2px; } 
+.hotSlide .txtSlide p br { display: none; } 
+.hotSlide .evBtn { left: 50%; transform: translateX(-50%); } 
+.hotSlide > ul > li.bg01 .txtSlide p { margin: 0 0 20px; } 
  }
