@@ -27,37 +27,6 @@
 </head>
 <body>
 	<div class="themaWrap">
-		<style>
-			.themaWrap .mainVisual {
-				background: url(./resource/images/thema/230809/thema_main_bg.jpg) no-repeat center;				
-			}
-			.themaWrap .mainVisual .innerSection {
-				padding: 70px 0 215px;
-			}
-			.themaWrap .mainVisual .imgWrap {
-				position: relative;
-				text-align: center;
-			}
-			.themaWrap .mainVisual .imgWrap::before {
-				content: '';
-				width: 175px;
-				height: 149px;
-				position: absolute;
-				top: 93px;
-				left: 0;
-				background: url(./resource/images/thema/230809/thema_main_icon01.png) no-repeat;
-				background-size: contain;
-			}
-			.themaWrap .mainVisual .txtWrap {
-				margin-top: 40px;
-			}
-			.themaWrap .mainVisual .txtWrap p {
-				color: #fff;
-				font-size: 30px;
-				text-align: center;
-				word-break: keep-all;
-			}
-		</style>
 		<article class="mainVisual">
 			<div class="innerSection">
 				<div class="imgWrap">
@@ -72,247 +41,6 @@
 		<div class="eventWrap">
 			<article class="event01">
 				<div class="innerSection">
-					<style>
-						.themaWrap .eventWrap { 
-							background: url(./resource/images/thema/230809/thema_event_bg.jpg) no-repeat;
-						}
-						.themaWrap .titWrap {
-							position: relative;
-							padding: 12px;
-							margin: 0 50px;
-							background: #fff;
-							text-align: center;
-							border: 4px solid #ffb3c8;
-							border-radius: 100px;
-							
-						}
-						.themaWrap .titWrap::before {
-							content: '';
-							position: absolute;
-							top: 6px;
-							left: 6px;
-							right: 6px;
-							bottom: 6px;
-							border: 4px solid #8194ff;
-							border-radius: 90px;
-						}
-						.themaWrap .titWrap h2 {
-							margin: 5px;
-							padding: 24px 10px;
-							background: #fff;
-							font-size: 40px;
-							border: 8px solid #8de1e2;
-							border-radius: 70px;
-						}
-						.themaWrap .titWrap .logoIcon {
-							display: inline-block;
-							width: 200px;
-							height: 62px;
-							background: url(./resource/images/thema/230809/thema_icon_logo.png) no-repeat;
-							background-size: contain;
-							vertical-align: middle;
-						}
-						.themaWrap .titWrap .icon01 {
-							display: inline-block;
-							width: 32px;
-							height: 62px;
-							margin-left: 10px;
-							background: url(./resource/images/thema/230809/thema_tit_icon01.png) no-repeat;
-							background-size: contain;
-							vertical-align: middle;
-						}
-						.themaWrap .titCont {
-							margin: 150px 0 50px;
-							text-align: center;
-						}
-						.themaWrap .titCont h3 {
-							display: inline-block;
-							position: relative;
-							color: #003181;
-							font-size: 40px;
-							line-height: 1;
-						}
-						.themaWrap .titCont h3::before {
-							content: '';
-							position: absolute;
-							width: 186px;
-							height: 45px;
-							top: -50px;
-							left: 50%;
-							transform: translateX(-50%);
-						}
-						.themaWrap .titCont h3::after {
-							content: '';
-							position: absolute;
-							bottom: 0;
-						}
-						.themaWrap .titCont h3.icon01::before {
-							background: url(./resource/images/thema/230809/thema_title_icon01.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titCont h3.icon01::after {							
-							width: 130px;
-							height: 116px;
-							right: -140px;							
-							background: url(./resource/images/thema/230809/thema_title_img01.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titCont h3.icon02::before {
-							background: url(./resource/images/thema/230809/thema_title_icon02.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titCont h3.icon02::after {							
-							width: 88px;
-							height: 130px;
-							right: -110px;
-							bottom: -12px;						
-							background: url(./resource/images/thema/230809/thema_title_img02.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titCont h3.icon03::before {
-							background: url(./resource/images/thema/230809/thema_title_icon03.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titCont h3.icon03::after {							
-							width: 110px;
-							height: 119px;
-							right: -110px;						
-							background: url(./resource/images/thema/230809/thema_title_img03.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .whiteBox {
-							padding: 50px;
-							background: #fff;
-							border: 5px solid #f0f0f0;
-							border-radius: 50px;
-						}
-						.themaWrap .whiteBox ul {
-							display: flex;
-							flex-wrap: wrap;
-							gap: 20px 30px;
-						}
-						.themaWrap .whiteBox li {
-							width: calc(100% / 2 - 15px);
-						}
-						.themaWrap .whiteBox .infoWrap {
-							display: flex;
-							flex-direction: column;
-							width: 100%;
-							height: 280px;
-							position: relative;
-							align-items: center;
-							justify-content: center;
-							border: 10px solid #c5e4ee;
-							border-radius: 30px;
-						}
-						.themaWrap .whiteBox .infoWrap::before {
-							content: '';							
-							width: 30px;
-							height: 10px;
-							position: absolute;
-							top: -10px;
-							left: 40px;
-							background: #fff;
-							transform: skew(45deg);
-						}
-						.themaWrap .whiteBox .infoWrap::after {
-							content: '';							
-							width: 30px;
-							height: 10px;
-							position: absolute;
-							bottom: -10px;
-							right: 40px;
-							background: #fff;
-							transform: skew(45deg);
-						}
-						.themaWrap .whiteBox .infoWrap span {
-							display: inline-block;
-							margin-bottom: 10px;
-							color: #2abcb2;
-							font-size: 30px;
-						}
-						.themaWrap .whiteBox .infoWrap strong {
-							color: #000;
-							font-size: 56px;
-							font-weight: normal;
-							line-height: 1;
-						}
-						.themaWrap .whiteBox .infoWrap p {
-							margin-top: 10px;
-							color: #989898;
-							font-size: 20px;
-						}
-						.themaWrap .whiteBox .btnWrap {
-							margin: 40px auto 0;
-							text-align: center;
-						}
-						.themaWrap .whiteBox > .btnWrap a {
-							display: inline-block;
-							max-width: 570px;
-							width: 100%;
-							padding: 20px 10px;
-							position: relative;
-							background: #ffda01;
-							color: #000;
-							font-size: 20px;
-							border: 2px solid #ffbe01;
-							border-radius: 50px;
-							box-shadow: 0 6px 0 #ffbe01;
-						}
-						.themaWrap .whiteBox > .btnWrap a::after {
-							content: '';
-							width: 70px;
-						    height: 57px;
-							position: absolute;
-							right: -12px;
-						    bottom: -20px;
-							background: url(./resource/images/thema/230809/thema_btn_img01.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .whiteBox > .btnWrap a strong {
-							font-size: 28px;
-							vertical-align: middle;
-						}
-						.themaWrap .whiteBox ul.boxStyle02 li {
-							width: calc(100% / 3 - 20px);
-						}
-						.themaWrap .whiteBox ul.boxStyle02 .first {
-							position: relative;
-							
-						}
-						.themaWrap .whiteBox ul.boxStyle02 .first::after {
-							content: '만족도 97점';
-							position: absolute;
-							bottom: -30px;
-							left: 50%;
-							transform: translateX(-50%);
-							color: #989898;
-							font-size: 20px;
-							white-space: nowrap;
-						}
-						.themaWrap .whiteBox ul.boxStyle02 a {
-							display: inline-block;
-							width: 100%;
-							padding: 10px 10px;
-							position: relative;
-							background: #ffda01;
-							color: #000;
-							font-size: 20px;
-							border: 2px solid #ffbe01;
-							border-radius: 50px;
-							box-shadow: 0 6px 0 #ffbe01;
-						}
-						.themaWrap .whiteBox ul.boxStyle02 a:after {
-							content: '';
-							width: 60px;
-							height: 49px;
-							position: absolute;
-							right: 4px;
-							bottom: -16px;
-							background: url(./resource/images/thema/230809/thema_btn_img01.png) no-repeat;
-							background-size: contain;
-						}
-					</style>
 					<div class="titWrap">
 						<h2 class="hPro">숫자로 톺아보는<i class="logoIcon ml20"></i></h2>
 					</div>
@@ -323,28 +51,28 @@
 						<ul>
 							<li>
 								<div class="infoWrap">
-									<span>개인회원 가입자 수</span>
-									<strong>157,689</strong>
+									<span>신규 회원 수</span>
+									<strong>181,497명</strong>
 								</div>
 							</li>
 							<li>
 								<div class="infoWrap">
-									<span>기업회원 가입자 수</span>
-									<strong>1,658</strong>
-								</div>
-							</li>
-							<li>
-								<div class="infoWrap">
-									<span>일평균 페이지 뷰</span>
-									<strong>39,616</strong>
-									<p>누적 7,170,676</p>
+									<span>신규 일자리 정책 정보</span>
+									<strong>36,614명</strong>
 								</div>
 							</li>
 							<li>
 								<div class="infoWrap">
 									<span>일평균 방문자 수</span>
-									<strong>15,738</strong>
-									<p>누적 2,848,735</p>
+									<strong>18,180명</strong>
+									<!-- <p>누적 9,534,628</p> -->
+								</div>
+							</li>
+							<li>
+								<div class="infoWrap">
+									<span>일평균 페이지 뷰</span>
+									<strong>52,677pv</strong>
+									<!-- <p>누적 3,964,868</p> -->
 								</div>
 							</li>
 						</ul>
@@ -380,7 +108,7 @@
 							<li>
 								<div class="infoWrap">
 									<span>구직자 인재등록</span>
-									<strong>978</strong>
+									<strong>1,022</strong>
 								</div>
 							</li>
 							<li>
@@ -392,12 +120,12 @@
 							<li>
 								<div class="infoWrap">
 									<span>구인구직 매칭</span>
-									<strong>729</strong>
+									<strong>1,695</strong>
 								</div>
 							</li>
 						</ul>
 						<div class="btnWrap">
-							<a href=""><p>구직정보 등록하고 <strong>일자리 추천받기</strong></p></a>
+							<a href=""><p>이력서 등록하기전 <strong>사전진단 받기</strong></p></a>
 						</div>
 					</div>
 
@@ -409,7 +137,7 @@
 							<li>
 								<div class="infoWrap">
 									<span>자기소개서 첨삭</span>
-									<strong class="first">3,233</strong>
+									<strong class="first">3,873</strong>
 								</div>
 								<div class="btnWrap">
 									<a href=""><p>자소서 첨삭<br> 받으러가기</p></a>
@@ -418,7 +146,7 @@
 							<li>
 								<div class="infoWrap">
 									<span>AI역량검사</span>
-									<strong>1,856</strong>
+									<strong>2,178</strong>
 								</div>
 								<div class="btnWrap">
 									<a href=""><p>AI역량검사<br> 체험하기</p></a>
@@ -426,8 +154,8 @@
 							</li>
 							<li>
 								<div class="infoWrap">
-									<span>구인구직 매칭</span>
-									<strong>729</strong>
+									<span>취업진단 검사</span>
+									<strong>5,399</strong>
 								</div>
 								<div class="btnWrap">
 									<a href=""><p>취업진단 검사하고<br> 취업준비하기</p></a>
@@ -440,213 +168,6 @@
 			</article>
 			<article class="event02">
 				<div class="innerSection">
-					<style>
-						.themaWrap .etcWrap {
-							display: flex;
-							margin: 50px 0 100px;
-							align-items: center;
-							justify-content: center;
-							text-align: center;
-						}
-						.themaWrap .etcWrap p {
-							color: #000;
-							font-size: 50px;
-							line-height: 1;
-						}
-						.themaWrap .etcWrap i.icon01 {
-							width: 60px;
-						    height: 106px;
-							background: url(./resource/images/thema/230809/thema_etc_icon01.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .rankBox {
-							padding: 150px 50px 50px;
-							position: relative;
-							border: 1px solid #000;
-							border-radius: 30px;
-						}
-						.themaWrap .rankBox.bg01 {
-							background: url(./resource/images/thema/230809/thema_edu_bg01.png)  no-repeat;
-							background-size: cover;
-						}
-						.themaWrap .rankBox.bg02 {
-							background: url(./resource/images/thema/230809/thema_edu_bg02.png) no-repeat;
-							background-size: cover;
-						}
-						.themaWrap .rankBox.bg03 {
-							background: url(./resource/images/thema/230809/thema_edu_bg03.png)  no-repeat;
-							background-size: cover;
-						}
-						.themaWrap .rankBox.bg04 {
-							background: url(./resource/images/thema/230809/thema_edu_bg04.png)  no-repeat;
-							background-size: cover;
-						}
-						.themaWrap .titEdu {
-							text-align: center;
-						}
-						.themaWrap .titEdu h3 {
-							display: inline-block;
-							padding: 14px 60px;
-							position: absolute;
-							top: -45px;
-							left: 50%;
-							transform: translateX(-50%);							
-							color: #fff;
-							font-size: 38px;
-							font-weight: normal;
-							border-radius: 40px;
-							border: 1px solid #000;
-						}
-						.themaWrap .titEdu h3::after {
-							content: '';
-							position: absolute;								
-							display: block;
-							width: 0;								
-							bottom: -13px; 
-							left: 50%; 
-							transform: translateX(-50%);
-							border-style: solid;
-							border-width: 14px 10px 0 11.5px;
-							z-index: 1;
-						}							
-						.themaWrap .titEdu h3::before {
-							content: '';
-							position: absolute;								
-							border-color: #000 transparent;
-							display: block;
-							width: 0;
-							bottom: -14px;
-							left: 50%; 
-							transform: translateX(-50%);
-							border-style: solid;
-							border-width: 14px 10px 0 11.5px;
-							z-index: 0;
-						}
-						.themaWrap .titEdu h3 span::before {
-							content: '';
-							position: absolute;
-							z-index: 2;
-						}
-						.themaWrap .titEdu h3.icon01 {
-							background: #68c2bc;
-						}						
-						.themaWrap .titEdu h3.icon01 span::before {
-							width: 90px;
-							height: 109px;
-							right: -45px;
-							bottom: -10px;
-							background: url(./resource/images/thema/230809/thema_edu_img01.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titEdu h3.icon01::after {							
-							border-color: #68c2bc transparent;
-						}
-						.themaWrap .titEdu h3.icon02 {
-							background: #6c68c2;
-						}						
-						.themaWrap .titEdu h3.icon02 span::before {
-							width: 100px;
-							height: 96px;
-							right: -50px;
-							bottom: -10px;
-							background: url(./resource/images/thema/230809/thema_edu_img02.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titEdu h3.icon02::after {							
-							border-color: #6c68c2 transparent;
-						}
-						.themaWrap .titEdu h3.icon03 {
-							background: #9abc7b;
-						}						
-						.themaWrap .titEdu h3.icon03 span::before {
-							width: 130px;
-							height: 86px;
-							right: -80px;
-							bottom: -8px;
-							background: url(./resource/images/thema/230809/thema_edu_img03.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titEdu h3.icon03::after {							
-							border-color: #9abc7b transparent;
-						}
-						.themaWrap .titEdu h3.icon04 {
-							background: #f4a75c;
-						}						
-						.themaWrap .titEdu h3.icon04 span::before {
-							width: 90px;
-							height: 97px;
-							right: -34px;
-							bottom: -4px;
-							background: url(./resource/images/thema/230809/thema_edu_img04.png) no-repeat;
-							background-size: contain;
-						}
-						.themaWrap .titEdu h3.icon04::after {							
-							border-color: #f4a75c transparent;
-						}
-						.themaWrap .rankBox ul {
-							display: flex;
-							text-align: center;
-							gap: 20px;
-							justify-content: space-between;
-						}
-						.themaWrap .rankBox li {
-							width: calc(100% / 3 - 10px);
-							padding: 70px 10px 20px;
-							position: relative;
-							background: #fff;
-							border: 2px solid #d2d2d2;
-							border-radius: 20px;
-						}
-						.themaWrap .rankBox .rank {
-							position: absolute;
-							top: -54px;
-							left: 50%;
-							transform: translateX(-50%);
-						}
-						.themaWrap .rankBox .imgWrap {
-							margin-bottom: 10px;
-						}
-						.themaWrap .rankBox .btnWrap a {
-							display: inline-block;
-							padding: 6px 30px;
-							background: #6b6b6b;
-							color: #fff;
-							font-size: 16px;
-							border-radius: 20px;
-						}
-						.themaWrap .rankBox .txtWrap {
-							
-							margin-bottom: 10px;
-						}
-						.themaWrap .rankBox .txtWrap p {
-							display: flex;							
-							min-height: 100px;
-							color: #000;
-							font-size: 22px;
-							align-items: center;
-							justify-content: center;
-							word-break: keep-all;
-						}
-						.themaWrap .rankBox .ongoing {
-							padding: 0 5px;
-							position: absolute;
-							top: 24px;
-    						right: 10px;
-							font-size: 14px;
-							border: 1px solid #000;
-							border-radius: 20px;
-							
-						}
-						.themaWrap .rankBox .ongoing::before {
-							content: '';
-							display: inline-block;
-							width: 10px;
-							height: 10px;
-							margin-right: 4px;
-							background: #ff0000;
-							border-radius: 50%;
-						}
-					</style>
 					<div class="titWrap">
 						<h2 class="hPro"><i class="logoIcon mr20"></i>2023 상반기 AWARDS</h2>
 					</div>
@@ -661,7 +182,7 @@
 						</div>
 						<ul>
 							<li>								
-								<div class="rank">
+								<div class="rank icon01">
 									<img src="./resource/images/thema/230809/thema_rank01.png" alt="1위">
 								</div>
 								<div class="imgWrap">
@@ -675,7 +196,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="rank">
+								<div class="rank icon01">
 									<img src="./resource/images/thema/230809/thema_rank02.png" alt="2위">
 								</div>
 								<div class="imgWrap">
@@ -847,17 +368,170 @@
 			</article>
 			<article class="event03">
 				<div class="innerSection">
-					<style>
-						
-					</style>
 					<div class="titWrap">
 						<h2 class="hPro"><i class="logoIcon mr20"></i>2023 Hot issue<i class="icon01"></i></h2>
 					</div>
-					
+					<div class="etcWrap">						
+						<p class="gwEdu">2023년 상반기를 <span class="fcRed gwEdu">핫하게</span> 달군<br>
+							잡아바 issue는 무엇이었을까요?</p>
+						<i class="icon02"></i>
+					</div>
+					<div class="swiper-container hotSlide">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide bg01">
+								<div class="titSlide">
+									<img src="./resource/images/thema/230809/thema_slide_tit01.png" alt="잡아바 러닝센터 오픈">
+								</div>
+								<div class="txtSlide">
+									<p>400여개 무료 취업지원교육<br>
+										학점연계 서비스 실시
+										</p>
+									<ul>
+										<li>400여개의 다양한 교육 서비스를 무료로 이용</li>
+										<li>학점연계, 과제대체 등 원하는 방법으로<br>
+											운영가능</li>
+									</ul>
+								</div>
+								<div class="btnWrap">
+									<a href=""><span>자세히보기 →</span></a>
+								</div>
+							</li>
+							<li class="swiper-slide bg02">
+								<div class="titSlide">
+									<img src="./resource/images/thema/230809/thema_slide_tit02.png" alt="jobaba 리뉴얼">
+								</div>
+								<div class="txtSlide">
+									<p>더욱 편리한 잡아바 이용을 위한<br>
+										홈페이지 리뉴얼 진행!
+										</p>
+									<ul>
+										<li>키워드, 지역(거주지)등으로 맞춤정보 검색 가능</li>
+										<li>간편화된 메뉴와 매일매일 업데이트되는<br>
+											채용정보 제공</li>
+									</ul>
+								</div>
+							</li>
+							<li class="swiper-slide bg03">
+								<div class="titSlide">
+									<img src="./resource/images/thema/230809/thema_slide_tit03.png" alt="잡아바 상담톡 오픈">
+								</div>
+								<div class="txtSlide">
+									<p>자신감, 목표를 찾기 위한<br>
+										취업 첫걸음의 시작!
+										</p>
+									<ul>
+										<li>전문상담사가 직접 상담하는 맞춤형 취업 컨설팅</li>
+										<li>언제 어디서나 비대면으로 간편한 상담 가능</li>
+									</ul>
+								</div>
+								<div class="btnWrap">
+									<a href=""><span>자세히보기 →</span></a>
+								</div>
+							</li>
+							<li class="swiper-slide bg04">
+								<div class="titSlide">
+									<p class="gBold fcMint02">탐나는 일자리정보관 개설</p>
+								</div>
+								<div class="txtSlide">
+									<p class="fcWhite">대기업 협력사 일자리정보를 통해<br>
+										성공적인 취업에 도전!
+										</p>
+									<ul class="fcWhite">
+										<li>IBK기업은행 아이원잡 추천기업 채용관</li>
+										<li>수도권 LG협력사 채용정보 제공</li>
+										<li>참 괜찮은 중소기업 플랫폼에 등재된 우수기업 채용관</li>
+									</ul>
+								</div>
+								<div class="btnWrap">
+									<a href=""><span>자세히보기 →</span></a>
+								</div>
+							</li>
+							<li class="swiper-slide bg05">
+								<div class="titSlide">
+									<p class="gBold">기업탐방프로그램</p>
+								</div>
+								<div class="txtSlide">
+									<p>구직자와 인사담당자와의<br>
+										만남의 장 프로그램 진행
+										</p>
+									<ul>
+										<li>구직자가 기업을 살펴보며 리버스 채용 진행</li>
+										<li>탐방기업의 구체적인 채용프로세스 정보 공유</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</article>
+			<article class="event04">
+				<div class="innerSection">
+					<div class="titWrap">
+						<h2 class="hPro">하반기<i class="logoIcon ml20"></i> 가 걸어갈 길</i></h2>
+					</div>
+					<ul>
+						<li class="box01">
+							<div class="jobBox bgPink">
+								<div class="jobTit icon01">
+									<p class="jobLogo fcBlue">구인&#183;구직 정보 연계</p>
+								</div>
+								<div class="jobTxt">
+									<p>
+										잡아바의 채용공고가 더욱 풍성해집니다!<br>
+										더욱 편리한 일자리정보 제공을 위해 <br>
+										워크넷과 협업예정!<br>
+										<span class="fcRed">경기도 모든 일자리 정보 잡아바에서 <br>
+										한번에 확인하세요!</span>
+
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="box02">
+							<div class="jobBox bgMint">
+								<div class="jobTit icon02">
+									<p class="fcMint">구인구직 프로세스<br> 개선</p>
+								</div>
+								<div class="jobTxt">
+									<p>
+										구직정보만 등록하면 맞춤 채용공고<br> 
+										추천은 물론! 인사담당자에게 맞춤 인재로<br>
+										추천해드립니다.<br>
+										<span class="fcBlue02">내게 딱! 맞는 일자리 잡아바에서 <br>
+										편하게 찾아보세요!</span><br>
+										<span class="fs14">(추천서비스 신청자에 한함)</span>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="box03">
+							<div class="jobBox bgBlue">
+								<div class="jobTit icon03">
+									<p class="fcWhite">탐나는 일자리정보관<br> 확대</p>
+								</div>
+								<div class="jobTxt">
+									<p class="fcWhite">
+										하반기에도 다양한 기관과의 협력을 통해
+										탐나는 일자리정보관이 확대 운영 됩니다! 
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</article>
 		</div>
-		
+		<article class="event05">
+			<div class="innerSection">
+				<div class="titImg">
+					<img src="./resource/images/thema/230809/thema_ev05_img01.png" alt="취업 혼자 하지마 잡아바랑 해">
+				</div>
+				<div class="contImg">
+					<img src="./resource/images/thema/230809/thema_ev05_img02.png" alt="당신의 취업 메이트 잡아바">
+				</div>
+			</div>
+		</article>
 		
 
 
@@ -883,9 +557,19 @@
 		
 		$(document).ready(function() {
 			
-			
+			new Swiper('.swiper-container', {
 
-
+			// 스크롤바 설정하기
+			slidesPerView: 1.2,
+			spaceBetween: 20,
+			centeredSlides: true,
+			// loop: true,
+			// loopedSlides: 1,
+			scrollbar : {
+				el : '.swiper-scrollbar',
+				draggable: true,
+			},
+			});	
 		});
 
 
