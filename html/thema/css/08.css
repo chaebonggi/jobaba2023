@@ -27,20 +27,20 @@
 .themaWrap .fs14 { font-size: 14px; } 
 
 
-.themaWrap .mainVisual { background: url(../resource/images/thema/230809/thema_main_bg.jpg) no-repeat center bottom; background-size: cover; } 
+.themaWrap .mainVisual { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_main_bg.jpg) no-repeat center bottom; background-size: cover; } 
 .themaWrap .mainVisual .innerSection { padding: 70px 0 215px; } 
 .themaWrap .mainVisual .imgWrap { position: relative; text-align: center; } 
-.themaWrap .mainVisual .imgWrap::before { content: ''; width: 175px; height: 149px; position: absolute; top: 93px; left: 0; background: url(../resource/images/thema/230809/thema_main_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .mainVisual .imgWrap::before { content: ''; width: 175px; height: 149px; position: absolute; top: 93px; left: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_main_icon01.png) no-repeat; background-size: contain; } 
 .themaWrap .mainVisual .txtWrap { margin-top: 40px; } 
 .themaWrap .mainVisual .txtWrap p { color: #fff; font-size: 30px; text-align: center; word-break: keep-all; } 
 
-.themaWrap .eventWrap { padding: 120px 0 180px; background: url(../resource/images/thema/230809/thema_event_bg.jpg) no-repeat center; background-size: cover; } 
+.themaWrap .eventWrap { padding: 120px 0 180px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_event_bg.jpg) no-repeat center; background-size: cover; } 
 .themaWrap .event01 .innerSection { padding: 0 0 110px; } 
 .themaWrap .titWrap { position: relative; padding: 12px; margin: 0 50px; background: #fff; text-align: center; border: 4px solid #ffb3c8; border-radius: 120px; } 
 .themaWrap .titWrap::before { content: ''; position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px; border: 4px solid #8194ff; border-radius: 110px; } 
 .themaWrap .titWrap h2 { margin: 5px; padding: 24px 10px; background: #fff; font-size: 40px; border: 8px solid #8de1e2; border-radius: 100px; word-break: keep-all; } 
-.themaWrap .titWrap .logoIcon { display: inline-block; width: 200px; height: 62px; background: url(../resource/images/thema/230809/thema_icon_logo.png) no-repeat; background-size: contain; vertical-align: middle; } 
-.themaWrap .titWrap .icon01 { display: inline-block; width: 32px; height: 62px; margin-left: 10px; background: url(../resource/images/thema/230809/thema_tit_icon01.png) no-repeat; background-size: contain; vertical-align: middle; } 
+.themaWrap .titWrap .logoIcon { display: inline-block; width: 200px; height: 62px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_icon_logo.png) no-repeat; background-size: contain; vertical-align: middle; } 
+.themaWrap .titWrap .icon01 { display: inline-block; width: 32px; height: 62px; margin-left: 10px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_tit_icon01.png) no-repeat; background-size: contain; vertical-align: middle; } 
 .themaWrap .event01 .titWrap .logoIcon { margin-left: 20px; } 
 .themaWrap .event02 .titWrap .logoIcon { margin-right: 20px; } 
 .themaWrap .event03 .titWrap .logoIcon { margin-right: 20px; } 
@@ -53,12 +53,12 @@
 .themaWrap .titCont h3 { display: inline-block; position: relative; color: #003181; font-size: 40px; line-height: 1; } 
 .themaWrap .titCont h3::before { content: ''; position: absolute; width: 186px; height: 45px; top: -50px; left: 50%; transform: translateX(-50%); } 
 .themaWrap .titCont h3::after { content: ''; position: absolute; bottom: 0; } 
-.themaWrap .titCont h3.icon01::before { background: url(../resource/images/thema/230809/thema_title_icon01.png) no-repeat; background-size: contain; } 
-.themaWrap .titCont h3.icon01::after { width: 130px; height: 116px; right: -140px; background: url(../resource/images/thema/230809/thema_title_img01.png) no-repeat; background-size: contain; } 
-.themaWrap .titCont h3.icon02::before { background: url(../resource/images/thema/230809/thema_title_icon02.png) no-repeat; background-size: contain; } 
-.themaWrap .titCont h3.icon02::after { width: 88px; height: 130px; right: -110px; bottom: -12px; background: url(../resource/images/thema/230809/thema_title_img02.png) no-repeat; background-size: contain; } 
-.themaWrap .titCont h3.icon03::before { background: url(../resource/images/thema/230809/thema_title_icon03.png) no-repeat; background-size: contain; } 
-.themaWrap .titCont h3.icon03::after { width: 110px; height: 119px; right: -110px; background: url(../resource/images/thema/230809/thema_title_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon01::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon01::after { width: 130px; height: 116px; right: -140px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon02::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon02::after { width: 88px; height: 130px; right: -110px; bottom: -12px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon03::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .titCont h3.icon03::after { width: 110px; height: 119px; right: -110px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_title_img03.png) no-repeat; background-size: contain; } 
 .themaWrap .whiteBox { padding: 50px; background: #fff; border: 5px solid #f0f0f0; border-radius: 50px; } 
 .themaWrap .whiteBox ul { display: flex; flex-wrap: wrap; gap: 40px 30px; } 
 .themaWrap .whiteBox li { width: calc(100% / 2 - 15px); } 
@@ -70,7 +70,7 @@
 .themaWrap .whiteBox .infoWrap p { margin-top: 10px; color: #989898; font-size: 20px; } 
 .themaWrap .whiteBox .evBtn { margin: 40px auto 0; text-align: center; } 
 .themaWrap .whiteBox > .evBtn a { display: inline-block; max-width: 570px; width: 100%; padding: 20px 10px; position: relative; background: #ffda01; color: #000; font-size: 20px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
-.themaWrap .whiteBox > .evBtn a::after { content: ''; width: 70px; height: 57px; position: absolute; right: -12px; bottom: -20px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox > .evBtn a::after { content: ''; width: 70px; height: 57px; position: absolute; right: -12px; bottom: -20px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
 .themaWrap .whiteBox > .evBtn.ani a:hover::after { animation-iteration-count: infinite; animation-name: boxMove, boxClick; animation-delay: 0s, 1s; animation-duration: 1s, 0.6s; animation-timing-function: ease-in, ease-in-out; } 
  @keyframes boxMove { 
  0% { transform: translate(100px, -100px); opacity: 0; } 
@@ -87,7 +87,7 @@
 .themaWrap .whiteBox ul.boxStyle02 .first { position: relative; } 
 .themaWrap .whiteBox ul.boxStyle02 .first::after { content: '만족도 97점'; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); color: #989898; font-size: 20px; white-space: nowrap; } 
 .themaWrap .whiteBox .evBtn.style02 a { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 78px; padding: 4px 10px; position: relative; background: #ffda01; color: #000; font-size: 24px; border: 2px solid #ffbe01; border-radius: 50px; box-shadow: 0 6px 0 #ffbe01; } 
-.themaWrap .whiteBox .evBtn.style02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(../resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .whiteBox .evBtn.style02 a:after { content: ''; width: 60px; height: 49px; position: absolute; right: 4px; bottom: -16px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_btn_img01.png) no-repeat; background-size: contain; } 
 .themaWrap .whiteBox ul.boxStyle03 li { width: 100%; } 
 .themaWrap .whiteBox ul.boxStyle03 .infoWrap { padding: 50px 10px; height: auto; flex-direction: initial; align-items: center; } 
 .themaWrap .whiteBox ul.boxStyle03 .infoWrap span { margin-bottom: 0; margin-right: 10px; } 
@@ -98,34 +98,34 @@
 .themaWrap .etcWrap { display: flex; margin: 50px 0 100px; align-items: center; justify-content: center; text-align: center; } 
 .themaWrap .event03 .etcWrap { margin: 50px 0 50px; } 
 .themaWrap .etcWrap p { color: #000; font-size: 50px; line-height: 1; } 
-.themaWrap .etcWrap i.icon01 { width: 60px; height: 106px; background: url(../resource/images/thema/230809/thema_etc_icon01.png) no-repeat; background-size: contain; } 
-.themaWrap .etcWrap i.icon02 { width: 96px; height: 106px; margin: -30px 0 0 20px; background: url(../resource/images/thema/230809/thema_etc_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .etcWrap i.icon01 { width: 60px; height: 106px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_etc_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .etcWrap i.icon02 { width: 96px; height: 106px; margin: -30px 0 0 20px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_etc_icon02.png) no-repeat; background-size: contain; } 
 .themaWrap .rankBox { padding: 150px 50px 50px; position: relative; border: 1px solid #000; border-radius: 30px; } 
-.themaWrap .rankBox.bg01 { background: url(../resource/images/thema/230809/thema_edu_bg01.png) no-repeat #DFF4F3; background-size: cover; } 
-.themaWrap .rankBox.bg02 { background: url(../resource/images/thema/230809/thema_edu_bg02.png) no-repeat #DDDCF5; background-size: cover; } 
-.themaWrap .rankBox.bg03 { background: url(../resource/images/thema/230809/thema_edu_bg03.png) no-repeat #DEEECF; background-size: cover; } 
-.themaWrap .rankBox.bg04 { background: url(../resource/images/thema/230809/thema_edu_bg04.png) no-repeat #F6E8DA; background-size: cover; } 
+.themaWrap .rankBox.bg01 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_bg01.png) no-repeat #DFF4F3; background-size: cover; } 
+.themaWrap .rankBox.bg02 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_bg02.png) no-repeat #DDDCF5; background-size: cover; } 
+.themaWrap .rankBox.bg03 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_bg03.png) no-repeat #DEEECF; background-size: cover; } 
+.themaWrap .rankBox.bg04 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_bg04.png) no-repeat #F6E8DA; background-size: cover; } 
 .themaWrap .titEdu { text-align: center; } 
 .themaWrap .titEdu h3 { display: inline-block; padding: 14px 60px; position: absolute; top: -45px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 38px; font-weight: normal; border-radius: 40px; border: 1px solid #000; } 
 .themaWrap .titEdu h3::after { content: ''; position: absolute; display: block; width: 0; bottom: -13px; left: 50%; transform: translateX(-50%); border-style: solid; border-width: 14px 10px 0 11.5px; z-index: 1; } 
 .themaWrap .titEdu h3::before { content: ''; position: absolute; border-color: #000 transparent; display: block; width: 0; bottom: -14px; left: 50%; transform: translateX(-50%); border-style: solid; border-width: 14px 10px 0 11.5px; z-index: 0; } 
 .themaWrap .titEdu h3 span::before { content: ''; position: absolute; z-index: 2; } 
 .themaWrap .titEdu h3.icon01 { background: #68c2bc; } 
-.themaWrap .titEdu h3.icon01 span::before { width: 90px; height: 109px; right: -45px; bottom: -10px; background: url(../resource/images/thema/230809/thema_edu_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .titEdu h3.icon01 span::before { width: 90px; height: 109px; right: -45px; bottom: -10px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_img01.png) no-repeat; background-size: contain; } 
 .themaWrap .titEdu h3.icon01::after { border-color: #68c2bc transparent; } 
 .themaWrap .titEdu h3.icon02 { background: #6c68c2; } 
-.themaWrap .titEdu h3.icon02 span::before { width: 100px; height: 96px; right: -50px; bottom: -10px; background: url(../resource/images/thema/230809/thema_edu_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .titEdu h3.icon02 span::before { width: 100px; height: 96px; right: -50px; bottom: -10px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_img02.png) no-repeat; background-size: contain; } 
 .themaWrap .titEdu h3.icon02::after { border-color: #6c68c2 transparent; } 
 .themaWrap .titEdu h3.icon03 { background: #9abc7b; } 
-.themaWrap .titEdu h3.icon03 span::before { width: 130px; height: 86px; right: -80px; bottom: -8px; background: url(../resource/images/thema/230809/thema_edu_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .titEdu h3.icon03 span::before { width: 130px; height: 86px; right: -80px; bottom: -8px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_img03.png) no-repeat; background-size: contain; } 
 .themaWrap .titEdu h3.icon03::after { border-color: #9abc7b transparent; } 
 .themaWrap .titEdu h3.icon04 { background: #f4a75c; } 
-.themaWrap .titEdu h3.icon04 span::before { width: 90px; height: 97px; right: -34px; bottom: -4px; background: url(../resource/images/thema/230809/thema_edu_img04.png) no-repeat; background-size: contain; } 
+.themaWrap .titEdu h3.icon04 span::before { width: 90px; height: 97px; right: -34px; bottom: -4px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_edu_img04.png) no-repeat; background-size: contain; } 
 .themaWrap .titEdu h3.icon04::after { border-color: #f4a75c transparent; } 
 .themaWrap .rankBox ul { display: flex; text-align: center; gap: 20px; justify-content: space-between; } 
 .themaWrap .rankBox li { width: calc(100% / 3 - 10px); padding: 70px 10px 20px; position: relative; background: #fff; border: 2px solid #d2d2d2; border-radius: 20px; } 
 .themaWrap .rankBox .rank { position: absolute; top: -54px; left: 50%; transform: translateX(-50%); } 
-.themaWrap .rankBox .rank.icon01::before { content: ''; width: 88px; height: 75px; position: absolute; top: -40px; right: -80px; background: url(../resource/images/thema/230809/thema_rank_icon01.png) no-repeat; } 
+.themaWrap .rankBox .rank.icon01::before { content: ''; width: 88px; height: 75px; position: absolute; top: -40px; right: -80px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_rank_icon01.png) no-repeat; } 
 .themaWrap .rankBox .imgWrap { margin-bottom: 10px; } 
 .themaWrap .rankBox .evBtn a { display: inline-block; padding: 6px 30px; background: #6b6b6b; color: #fff; font-size: 16px; border-radius: 20px; } 
 .themaWrap .rankBox .evBtn a span { position: relative; z-index: 1; } 
@@ -139,19 +139,19 @@
 .themaWrap .event03 .innerSection { padding: 0 0 110px; } 
 .hotSlide > ul > li { height: 347px; padding: 40px 50px; position: relative; border-radius: 30px; } 
 .hotSlide > ul > li.bg01 .txtSlide p { margin: -20px 0 20px; } 
-.hotSlide > ul > li.bg01 { background: url(../resource/images/thema/230809/thema_slide_bg01.png) #d5f8ff no-repeat; background-position: right 50px bottom -30px; } 
-.hotSlide > ul > li.bg02::before { content: ''; width: 105px; height: 123px; position: absolute; right: 356px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide02_icon01.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg02::after { content: ''; width: 103px; height: 228px; position: absolute; right: 96px; bottom: -38px; background: url(../resource/images/thema/230809/thema_slide02_icon02.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg02 { background: url(../resource/images/thema/230809/thema_slide_bg02.png) #fff no-repeat; background-position: right 40px bottom 20px; } 
-.hotSlide > ul > li.bg02::before { content: ''; width: 105px; height: 123px; position: absolute; right: 356px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide02_icon01.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg02::after { content: ''; width: 103px; height: 228px; position: absolute; right: 96px; bottom: -38px; background: url(../resource/images/thema/230809/thema_slide02_icon02.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg03 { background: url(../resource/images/thema/230809/thema_slide_bg03.png) #fdff74 no-repeat; background-position: right 40px bottom 0; } 
-.hotSlide > ul > li.bg03::before { content: ''; width: 119px; height: 137px; position: absolute; right: 276px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide03_icon01.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg04 { background: url(../resource/images/thema/230809/thema_slide_bg04.png) #576fc5 no-repeat; background-position: right 60px bottom 40px; } 
-.hotSlide > ul > li.bg04::before { content: ''; width: 138px; height: 168px; position: absolute; right: 256px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide04_icon01.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg05 { background: url(../resource/images/thema/230809/thema_slide_bg05.png) #74e9a6 no-repeat; background-position: right 60px bottom 40px; } 
-.hotSlide > ul > li.bg05::before { content: ''; width: 136px; height: 130px; position: absolute; right: 347px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide05_icon01.png) no-repeat; background-size: contain; } 
-.hotSlide > ul > li.bg05::after { content: ''; width: 179px; height: 206px; position: absolute; right: 48px; bottom: -34px; background: url(../resource/images/thema/230809/thema_slide05_icon02.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg01 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide_bg01.png) #d5f8ff no-repeat; background-position: right 50px bottom -30px; } 
+.hotSlide > ul > li.bg02::before { content: ''; width: 105px; height: 123px; position: absolute; right: 356px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide02_icon01.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg02::after { content: ''; width: 103px; height: 228px; position: absolute; right: 96px; bottom: -38px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide02_icon02.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg02 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide_bg02.png) #fff no-repeat; background-position: right 40px bottom 20px; } 
+.hotSlide > ul > li.bg02::before { content: ''; width: 105px; height: 123px; position: absolute; right: 356px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide02_icon01.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg02::after { content: ''; width: 103px; height: 228px; position: absolute; right: 96px; bottom: -38px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide02_icon02.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg03 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide_bg03.png) #fdff74 no-repeat; background-position: right 40px bottom 0; } 
+.hotSlide > ul > li.bg03::before { content: ''; width: 119px; height: 137px; position: absolute; right: 276px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide03_icon01.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg04 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide_bg04.png) #576fc5 no-repeat; background-position: right 60px bottom 40px; } 
+.hotSlide > ul > li.bg04::before { content: ''; width: 138px; height: 168px; position: absolute; right: 256px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide04_icon01.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg05 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide_bg05.png) #74e9a6 no-repeat; background-position: right 60px bottom 40px; } 
+.hotSlide > ul > li.bg05::before { content: ''; width: 136px; height: 130px; position: absolute; right: 347px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide05_icon01.png) no-repeat; background-size: contain; } 
+.hotSlide > ul > li.bg05::after { content: ''; width: 179px; height: 206px; position: absolute; right: 48px; bottom: -34px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_slide05_icon02.png) no-repeat; background-size: contain; } 
 .themaWrap .event03 .hotSlide { padding-bottom: 130px; } 
 .hotSlide .swiper-scrollbar { height: 20px; background: #ffffff; border-radius: initial; } 
 .hotSlide .swiper-scrollbar-drag { background: #78acc4; border-radius: initial; cursor: pointer; } 
@@ -164,9 +164,9 @@
 
 .themaWrap .event04 ul { margin-top: 200px; } 
 .themaWrap .event04 li { position: relative; } 
-.themaWrap .event04 li.box01:before { content: ''; width: 755px; height: 400px; position: absolute; left: 78px; top: -135px; background: url(../resource/images/thema/230809/thema_ev4_img01.png) no-repeat; background-size: contain; z-index: 1; } 
-.themaWrap .event04 li.box02:before { content: ''; width: 295px; height: 274px; position: absolute; left: 126px; bottom: -310px; background: url(../resource/images/thema/230809/thema_ev4_img02.png) no-repeat; background-size: contain; z-index: 1; } 
-.themaWrap .event04 li.box03:before { content: ''; width: 465px; height: 356px; position: absolute; right: 90px; top: -325px; background: url(../resource/images/thema/230809/thema_ev4_img03.png) no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .event04 li.box01:before { content: ''; width: 755px; height: 400px; position: absolute; left: 78px; top: -135px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_ev4_img01.png) no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .event04 li.box02:before { content: ''; width: 295px; height: 274px; position: absolute; left: 126px; bottom: -310px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_ev4_img02.png) no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .event04 li.box03:before { content: ''; width: 465px; height: 356px; position: absolute; right: 90px; top: -325px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_ev4_img03.png) no-repeat; background-size: contain; z-index: 1; } 
 .themaWrap .event04 li.box03 .jobTit { margin: 50px 0 40px; } 
 .themaWrap .event04 li.box01 { padding-right: 180px; text-align: right; } 
 .themaWrap .event04 li.box02 { margin-top: -50px; padding-left: 80px; } 
@@ -174,15 +174,15 @@
 
 .themaWrap .event04 .jobBox { display: inline-block; max-width: 450px; width: 100%; height: 385px; padding: 40px; position: relative; border: 2px solid #fff; border-radius: 30px; } 
 .themaWrap .event04 .jobTit { display: flex; margin-bottom: 20px; align-items: center; } 
-.themaWrap .event04 .jobTit p.jobLogo::before { content: ''; display: block; width: 274px; height: 38px; background: url(../resource/images/thema/230809/thema_job_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .event04 .jobTit p.jobLogo::before { content: ''; display: block; width: 274px; height: 38px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_job_img01.png) no-repeat; background-size: contain; } 
 .themaWrap .event04 .jobTit p { font-size: 28px; text-align: left; } 
 .themaWrap .event04 .jobTit::before { content: ''; display: block; } 
-.themaWrap .event04 .jobTit.icon01::before { width: 80px; height: 64px; margin-right: 10px; background: url(../resource/images/thema/230809/thema_job_icon01.png) no-repeat; background-size: contain; } 
-.themaWrap .event04 .jobTit.icon02::before { width: 70px; height: 70px; margin-right: 30px; background: url(../resource/images/thema/230809/thema_job_icon02.png) no-repeat; background-size: contain; } 
-.themaWrap .event04 .jobTit.icon03::before { width: 62px; height: 74px; margin-right: 30px; background: url(../resource/images/thema/230809/thema_job_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .event04 .jobTit.icon01::before { width: 80px; height: 64px; margin-right: 10px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_job_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .event04 .jobTit.icon02::before { width: 70px; height: 70px; margin-right: 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_job_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .event04 .jobTit.icon03::before { width: 62px; height: 74px; margin-right: 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_job_icon03.png) no-repeat; background-size: contain; } 
 .themaWrap .event04 .jobTxt p { font-size: 20px; line-height: 1.6; text-align: left; } 
 
-.themaWrap .event05 { background: url(../resource/images/thema/230809/thema_ev05_bg.jpg) no-repeat; background-size: cover; text-align: center; } 
+.themaWrap .event05 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/230809/thema_ev05_bg.jpg) no-repeat; background-size: cover; text-align: center; } 
 .themaWrap .event05 .innerSection { padding: 140px 0 160px; } 
 
 @media all and (max-width:1024px){
