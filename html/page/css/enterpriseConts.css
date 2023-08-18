@@ -5,108 +5,76 @@
 .mt20 { margin-top: 20px; } 
 .mb5 { margin-bottom: 5px; } 
 .mt8 { margin-top: 8px; } 
+.mr20 { margin-right: 20px; } 
 .trt { text-align: right; } 
-.flexSP {display: flex; flex-wrap: wrap; justify-content: space-between; } 
+.flexSP { display: flex; flex-wrap: wrap; justify-content: space-between; } 
 
-.enterpriseConts .innerSection {max-width: 1280px; padding: 0 10px; margin: 0 auto; } 
-.enterpriseConts {background: linear-gradient(180deg, #d6eefc 0%, rgba(255,255,255,.2));padding-top: 60px;background-size: 100% 440px;background-repeat: no-repeat; } 
-.enterpriseConts .header {margin-bottom: 88px; } 
-.enterpriseConts h2 {font-size: 50px;color: #003281;text-align: center; } 
-.enterpriseConts h2::before {content: "";background: url(https://www.jobaba.net/resource/images/publicJob/mv_ico.png) no-repeat;display: block;width: 54px;height: 44px;margin: 0 auto 10px; } 
-.entpConts h3 {padding-bottom: 20px;color: #010101;font-size: 24px;border-bottom: 1px solid #000; } 
-.entpConts .contsBox {padding: 30px;margin-top: 40px;background: #fff;border: 1px solid #dddddd;border-radius: 10px; } 
-.entpConts .titWrap {margin-bottom: 22px; word-break: keep-all;} 
-.entpConts .tit {font-size: 20px;font-weight: bold; } 
-.entpConts .borderTop {border-top: 2px solid #888888; } 
-.entpConts .tableStyle01 {width: 100%;border-collapse: collapse;border-spacing: 0; } 
-.entpConts .tableStyle01 col:first-child {width: 20%; } 
-.entpConts .tableStyle01 tr {border-bottom: 1px solid #dddddd; } 
-.entpConts .tableStyle01 th {padding: 0 20px;background: #e8f5f3;font-weight: 500;text-align: left; } 
-.entpConts .tableStyle01 td {padding: 12px 12px;font-size: 14px;word-break: break-all; } 
-.entpConts .tableStyle01 input[type="text"] {border: 1px solid #c9cdd2;padding: 4px 6px;font-size: 14px;box-sizing: border-box;border-radius: 2px; } 
+.enterpriseConts .innerSection { max-width: 1280px; padding: 0 10px; margin: 0 auto; } 
+.enterpriseConts { background: linear-gradient(180deg, #d6eefc 0%, rgba(255,255,255,.2)); padding-top: 60px; background-size: 100% 440px; background-repeat: no-repeat; } 
+.enterpriseConts .header { margin-bottom: 88px; } 
+.enterpriseConts h2 { font-size: 50px; color: #003281; text-align: center; } 
+.enterpriseConts h2::before { content: ""; background: url(https://www.jobaba.net/resource/images/publicJob/mv_ico.png) no-repeat; display: block; width: 54px; height: 44px; margin: 0 auto 10px; } 
+.entpConts h3 { padding-bottom: 20px; color: #010101; font-size: 24px; border-bottom: 1px solid #000; } 
+.entpConts .contsBox { padding: 30px; margin-top: 40px; background: #fff; border: 1px solid #dddddd; border-radius: 10px; } 
+.entpConts .titWrap { margin-bottom: 22px; word-break: keep-all; } 
+.entpConts .tit { font-size: 20px; font-weight: bold; } 
+.entpConts .borderTop { border-top: 2px solid #888888; } 
+.entpConts .tableStyle01 { width: 100%; border-collapse: collapse; border-spacing: 0; } 
+.entpConts .tableStyle01 col:first-child { width: 20%; } 
+.entpConts .tableStyle01 tr { border-bottom: 1px solid #dddddd; } 
+.entpConts .tableStyle01 th { padding: 0 20px; background: #e8f5f3; font-weight: 500; text-align: left; } 
+.entpConts .tableStyle01 td { padding: 12px 12px; font-size: 14px; word-break: break-all; } 
+.entpConts .tableStyle01 input[type="text"] { border: 1px solid #c9cdd2; padding: 4px 6px; font-size: 14px; box-sizing: border-box; border-radius: 2px; } 
 
-.entpConts .radioList .radioBox {display: inline-block; position: relative; margin-right: 20px;} 
-.entpConts .radioList .radioBox input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0; } 
-.entpConts .radioList .radioBox input[type="radio"] + label {display: inline-block;position: relative;padding-left: 25px;cursor: pointer;font-size: 14px; } 
-.entpConts .radioList .radioBox input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: 3px;width: 14px;height: 14px;text-align: center;background: #fff;border: 1px solid #c9cdd2;border-radius: 100%; } 
-.entpConts .radioList .radioBox input[type="radio"]:checked + label:after {content: '';position: absolute;top: 7px;left: 4px;width: 8px;height: 8px;background: #38bab2;border-radius: 100%; } 
+.entpConts .radioList .radioBox { display: inline-block; position: relative; margin-right: 20px; } 
+.entpConts .radioList .radioBox input[type="radio"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; } 
+.entpConts .radioList .radioBox input[type="radio"] + label { display: inline-block; position: relative; padding-left: 25px; cursor: pointer; font-size: 14px; } 
+.entpConts .radioList .radioBox input[type="radio"] + label:before { content: ''; position: absolute; left: 0; top: 3px; width: 14px; height: 14px; text-align: center; background: #fff; border: 1px solid #c9cdd2; border-radius: 100%; } 
+.entpConts .radioList .radioBox input[type="radio"]:checked + label:after { content: ''; position: absolute; top: 7px; left: 4px; width: 8px; height: 8px; background: #38bab2; border-radius: 100%; } 
 
-.entpConts .txtBox {padding: 20px;background: #f1f1f1;border: 1px solid #dddddd; } 
-.entpConts .listStyle01 li {position: relative;padding-left: 15px; font-weight: 300; word-break: keep-all; } 
-.entpConts .listStyle01 li::before {content: '-';display: block;position: absolute;left: 0;top: 0; } 
-.entpConts .listStyle02 li {position: relative;padding-left: 15px; font-weight: 300; word-break: keep-all; } 
-.entpConts .listStyle02 li::before {display: block;position: absolute;left: 0;top: 0; } 
-.entpConts .listStyle02 li:nth-child(1):before {content: '1.'; } 
-.entpConts .listStyle02 li:nth-child(2):before {content: '2.'; } 
-.entpConts .listStyle02 li:nth-child(3):before {content: '3.'; } 
-.entpConts .listStyle02 li:nth-child(4):before {content: '4.'; } 
-.entpConts .listStyle02 li:nth-child(5):before {content: '5.'; } 
+.entpConts .txtBox { padding: 20px; background: #f1f1f1; border: 1px solid #dddddd; } 
+.entpConts .listStyle01 li { position: relative; padding-left: 15px; font-weight: 300; word-break: keep-all; } 
+.entpConts .listStyle01 li::before { content: '-'; display: block; position: absolute; left: 0; top: 0; } 
+.entpConts .listStyle02 li { position: relative; padding-left: 15px; font-weight: 300; word-break: keep-all; } 
+.entpConts .listStyle02 li::before { display: block; position: absolute; left: 0; top: 0; } 
+.entpConts .listStyle02 li:nth-child(1):before { content: '1.'; } 
+.entpConts .listStyle02 li:nth-child(2):before { content: '2.'; } 
+.entpConts .listStyle02 li:nth-child(3):before { content: '3.'; } 
+.entpConts .listStyle02 li:nth-child(4):before { content: '4.'; } 
+.entpConts .listStyle02 li:nth-child(5):before { content: '5.'; } 
+.entpConts .listStyle02 li:nth-child(6):before { content: '6.'; } 
 
 
-.entpConts .btnWrap {margin-top: 40px;text-align: center; } 
-.entpConts .btnWrap a {display: inline-block; } 
-.entpConts .btnWrap a + a {margin-left: 5px; } 
-.entpConts .btnStyle01 {padding: 8px;width: 140px;border-radius: 20px;font-size: 16px;text-align: center;box-sizing: border-box; } 
-.entpConts .btnStyle02 {display: inline-block;min-width: 185px;padding: 2px 0 2px;font-size: 14px;text-align: center;border-radius: 5px;box-sizing: border-box; } 
-.entpConts .btnWhite01 {background: #fff;color: #010101;border: 1px solid #dddddd; } 
-.entpConts .btnBlue01 {background: #008ae0;color: #fff;border: 1px solid #008ae0; } 
-.entpConts .btnMint01 {background: #3bc5b6;color: #fff;border: 1px solid #3bc5b6; } 
-.entpConts .check input[type="checkbox"] + label::before {content: '';display: inline-block;width: 20px;height: 20px;margin-right: 4px;background: #fff;border: 1px solid #9ea4aa;border-radius: 3px;vertical-align: bottom;box-sizing: border-box; } 
-.entpConts .check input[type="checkbox"]:checked + label::before {content: '';background-color: #67c3be;background-image: url(https://www.jobaba.net/runCenter/home/images/centerJoin/check_btn.png);background-repeat: no-repeat;background-position: 50%;border-color: #67c3be; } 
+.entpConts .btnWrap { margin-top: 40px; text-align: center; } 
+.entpConts .btnWrap a { display: inline-block; } 
+.entpConts .btnWrap a + a { margin-left: 5px; } 
+.entpConts .btnStyle01 { padding: 8px; width: 140px; border-radius: 20px; font-size: 16px; text-align: center; box-sizing: border-box; } 
+.entpConts .btnStyle02 { display: inline-block; min-width: 185px; padding: 2px 0 2px; font-size: 14px; text-align: center; border-radius: 5px; box-sizing: border-box; } 
+.entpConts .btnWhite01 { background: #fff; color: #010101; border: 1px solid #dddddd; } 
+.entpConts .btnBlue01 { background: #008ae0; color: #fff; border: 1px solid #008ae0; } 
+.entpConts .btnMint01 { background: #3bc5b6; color: #fff; border: 1px solid #3bc5b6; } 
+.entpConts .check input[type="checkbox"] + label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 4px; background: #fff; border: 1px solid #9ea4aa; border-radius: 3px; vertical-align: text-bottom; box-sizing: border-box; } 
+.entpConts .check input[type="checkbox"]:checked + label::before { content: ''; background-color: #67c3be; background-image: url(https://www.jobaba.net/runCenter/home/images/centerJoin/check_btn.png); background-repeat: no-repeat; background-position: 50%; border-color: #67c3be; } 
+.entpConts .check span { display: inline-block; } 
 
-@media only screen and (max-width: 768px){ 
-    .entpConts .tableStyle01 th,
-    .entpConts .tableStyle01 td {
-        display: block;
-        background: #fff;
-    }
-    .entpConts .tableStyle01 th {
-        padding: 12px 12px 0;
-    }
-    .entpConts .w50p {
-        width: 100% !important;
-    }
-    .entpConts .tit {
-        font-size: 16px;
-    }
-    .entpConts .contsBox {
-        padding: 30px 15px;
-    }
-    .listStyle01,
-    .listStyle02 {
-        font-size: 14px;
-    }
-    .entpConts .txtBox {
-        padding: 10px;
-        max-height: 220px;
-        overflow: scroll;
-    }
-    .entpConts .listStyle01 li {
-        padding-left: 10px;
-    }
-}
-@media only screen and (max-width: 640px){ 
-    .trt {
-        text-align: left;
-    }
-    .enterpriseConts .header {
-        margin-bottom: 40px;
-    }
-    .enterpriseConts h2 {
-        font-size: 30px;
-    }
-    .entpConts h3 {
-        font-size: 18px;
-    }
-    .entpConts .check {
-        font-size: 12px;
-    } 
-    .entpConts .check input[type="checkbox"] + label::before {
-        width: 16px;
-        height: 16px;
-    }
-    .entpConts .btnWrap {
-        padding: 0;
-        margin-top: 20px;
-    }
-}
+@media only screen and (max-width: 768px){
+ .entpConts .trt { text-align: left; } 
+ .entpConts .tableStyle01 th,
+ .entpConts .tableStyle01 td { display: block; background: #fff; } 
+ .entpConts .tableStyle01 th { padding: 12px 12px 0; } 
+ .entpConts .w50p { width: 100% !important; } 
+ .entpConts .tit { font-size: 16px; } 
+ .entpConts .contsBox { padding: 30px 15px; } 
+ .listStyle01,
+ .listStyle02 { font-size: 14px; } 
+ .entpConts .txtBox { padding: 10px; max-height: 220px; overflow: scroll; } 
+ .entpConts .listStyle01 li { padding-left: 10px; } 
+ }
+@media only screen and (max-width: 640px){
+ .enterpriseConts .header { margin-bottom: 40px; } 
+ .enterpriseConts h2 { font-size: 30px; } 
+ .entpConts h3 { font-size: 18px; } 
+ .entpConts .check label { font-size: 12px; } 
+ .entpConts .check input[type="checkbox"] + label::before { width: 16px; height: 16px; } 
+ .entpConts .btnWrap { padding: 0; margin-top: 20px; } 
+ }
