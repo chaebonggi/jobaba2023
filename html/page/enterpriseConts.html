@@ -86,26 +86,36 @@
 						</colgroup>
 						<tbody>
 							<tr class="borderTop">
-								<th scope="row"><label for="info04">참여 사업정보<span class="fcRed">*</span></label></th>
-								<td>
-									<input type="text" class="w100p" id="info04" placeholder="참여한 재단사업을 적어주세요.(참여한 재단사업이 없을 경우 “없음” 으로 작성해주세요)">
+								<th scope="row"><label for="check01">참여 사업정보<span class="fcRed">*</span></label></th>
+								<td class="flexAC">
+									<div class="radioList">
+										<div class="radioBox">
+											<input type="radio" name="conts01" id="check01">
+											<label for="check01">참여 한적 없음</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" name="conts01" id="check02">
+											<label for="check02">참여함</label>
+										</div>										
+									</div>	
+									<input type="text" class="w100p" id="info04" placeholder="참여한 재단사업을 적어주세요.(참여한 재단사업이 없을 경우 “없음” 으로 작성해주세요)">								
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="check01">구분</label><span class="fcRed">*</span></th>
+								<th scope="row"><label for="check03">구분</label><span class="fcRed">*</span></th>
 								<td>
 									<div class="radioList">
 										<div class="radioBox">
-											<input type="radio" name="conts" id="check01">
-											<label for="check01">신규제작</label>
+											<input type="radio" name="conts02" id="check03">
+											<label for="check03">신규제작</label>
 										</div>
 										<div class="radioBox">
-											<input type="radio" name="conts" id="check02">
-											<label for="check02">콘텐츠 활용(파일요청)</label>
+											<input type="radio" name="conts02" id="check04">
+											<label for="check04">콘텐츠 활용(파일요청)</label>
 										</div>
 										<div class="radioBox">
-											<input type="radio" name="conts" id="check03">
-											<label for="check03">내용 수정</label>
+											<input type="radio" name="cont02s" id="check05">
+											<label for="check05">내용 수정</label>
 										</div>
 									</div>
 								</td>
