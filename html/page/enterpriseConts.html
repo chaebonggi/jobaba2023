@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>기업채용 콘텐츠 신청</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+
+	<!-- 이벤트 추가 css -->
+	<link rel="stylesheet" href="./css/enterpriseConts.css">
+
+	
+</head>
+<body>
+<div id="page-content">
+	<style>
+		
+
+	</style>
+	<section class="enterpriseConts">
+		<div class="header">
+			<h2>기업채용 콘텐츠 신청</h2>
+		</div>
+		<article class="entpConts">
+			<div class="innerSection">
+				<h3>기업채용 콘텐츠 신청</h3>
+				<div class="contsBox">
+					<div class="titWrap flexSP">
+						<p class="tit">기본정보</p>
+						<p class="fcRed fs16">*필수 입력값입니다.</p>
+					</div>
+					<table class="tableStyle01">
+						<caption>기본정보</caption>
+						<colgroup>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr class="borderTop">
+								<th scope="row"><label for="info01">사업정보<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w100p" id="info01" placeholder="참여중인 재단 사업을 적어주세요. (참여중인 사업이 없을 경우 “없음” 으로 작성해주세요)">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="check01">구분</label><span class="fcRed">*</span></th>
+								<td>
+									<div class="radioList">
+										<div class="radioBox">
+											<input type="radio" name="conts" id="check01">
+											<label for="check01">신규제작</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" name="conts" id="check02">
+											<label for="check02">콘텐츠 활용(파일요청)</label>
+										</div>
+										<div class="radioBox">
+											<input type="radio" name="conts" id="check03">
+											<label for="check03">내용 수정</label>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info02">기업명<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w100p" id="info02" placeholder="기업명을 입력해 주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info03">사업자번호<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w50p" id="info03" placeholder="사업자 번호를 - 없이 입력해 주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info04">작성자<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w50p" id="info04" placeholder="작성자명을 입력해 주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info05">이메일</label></th>
+								<td>
+									<input type="text" class="w100p" id="info05" placeholder="이메일 주소를 입력해 주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info06">연락처<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w50p" id="info06" placeholder="연락처를 입력해 주세요.">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="info07">회사 URL<span class="fcRed">*</span></label></th>
+								<td>
+									<input type="text" class="w100p" id="info07" placeholder="회사 URL 주소를 입력해 주세요.">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="titWrap mt40">
+						<p class="tit fcMint">신청시 유의사항</p>
+					</div>
+					<div class="txtBox">
+						<ul class="listStyle01">
+							<li class="mb5">재단에서는 귀사의 요청 시 제작된 콘텐츠를 다양한 파일 형태로 제공하고 있으며 이 파일은 각 기업에서 자유롭게 사용하실 수 있습니다.</li>
+							<li class="mb5">본 사업은 선정된 기업 대상 선착순 접수로 진행되므로 기업기초자료 첨부파일 회신이 늦어질 경우 지원대상에서 제외될 수 있습니다.</li>
+							<li>프리미엄형 인센티브 중 법정의무교육은 100개사, 홍보 동영상은 20개사로 제한하고 있으므로 회신이 늦어질 경우 제공이 어려울 수 있습니다</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contsBox">
+					<div class="titWrap flexSP">
+						<p class="tit">기업정보</p>
+						<a href="#" class="btnStyle02 btnMint01">기초정보 양식 다운로드(xls)</a>
+					</div>
+					<table class="tableStyle01">
+						<caption>기업정보</caption>
+						<colgroup>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr class="borderTop">
+								<th scope="row">대표이미지</th>
+								<td>
+									<p class="fcRed mt8">1920 *280px 이미지로 첨부하세요</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">회사소개 자료</th>
+								<td>
+									<p class="fcRed mt8">doc,docx 문서로 첨부하세요</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">회사 브로셔</th>
+								<td>
+									<p class="fcRed mt8">pdf 문서로 첨부하세요</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">기초정보 파일 등록</th>
+								<td>
+									<p class="fcRed mt8">xls,xlsx 문서로 첨부하세요</p>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<div class="titWrap mt40">
+						<p class="tit">개인정보의 수집 이용 및 정보제공에 관한 동의서</p>
+					</div>
+					<div class="txtBox">
+						<ul class="listStyle02">
+							<li class="mb5">
+								경기도일자리재단에서는 “일자리플랫폼 잡아바 기업채용콘텐츠 제작” 신청에 있어 개인을 고유하게 구별하기 위해 부여된 개인 식별정보를 포함한 개인정보를
+								다음과 같이 수집/관리하고 있습니다.<br>
+								가. 개인정보 수집 항목 및 수집·이용의 목적 :‘기업채용(홍보)콘텐츠 제작 신청’참여기업의 담당자로서 콘텐츠 개발 및 관리 위해 수집된 정보 이용<br>
+								나. 수집 항목 (필수항목) : 성명(국문), 전화번호(휴대전화), 사진, 이메일
+							</li>
+							<li class="mb5">경기도일자리재단은 「개인정보보호법」에 의거하여, 기업담당자(동의자)로부터 제공받은 개인정보를 보호합니다.</li>
+							<li class="mb5">수집된 개인정보는 수집·이용 동의일로부터 개인정보의 수집·이용목적을 달성할 때까지 사용하며, 원칙적으로 개인정보의 수집 및 이용 목적이 달성되면 지체 없이 파기합니다.</li>
+							<li class="mb5">본인은 위의 내용에 따라‘기업채용(홍보)콘텐츠 제작신청’을 위한 개인식별정보를 제공하는데 동의합니다.</li>
+							<li>기업채용콘텐츠 제작에 활용한 기업정보 및 이미지(파일)에 대해서 제공 및 활용에 대해서 동의합니다.</li>
+						</ul>
+					</div>
+					<div class="check mt20 trt">
+                        <input type="checkbox" id="agree01">
+                        <label for="agree01">개인정보 수집 이용 및 정보제공에 동의 합니다.</label>
+                    </div>
+				</div>
+				<div class="btnWrap">
+					<a href="#" class="btnStyle01 btnWhite01">
+						취소
+					</a>
+					<a href="#" class="btnStyle01 btnBlue01">
+						신청
+					</a>		
+				</div>
+			</div>
+		</article>
+		
+	</section>
+
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/script.js"></script> <!-- GNB영향 -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+
+
+<script>
+		
+	$(document).ready(function() {
+
+	});
+</script>
+</body></html>
