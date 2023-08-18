@@ -90,15 +90,15 @@
 								<td class="flexAC">
 									<div class="radioList">
 										<div class="radioBox">
-											<input type="radio" name="conts01" id="check01">
+											<input type="radio" name="conts01" class="radioValue" id="check01" value="no">
 											<label for="check01">참여 한적 없음</label>
 										</div>
 										<div class="radioBox">
-											<input type="radio" name="conts01" id="check02">
+											<input type="radio" name="conts01" class="radioValue" id="check02" value="yes">
 											<label for="check02">참여함</label>
 										</div>										
 									</div>	
-									<input type="text" class="w100p" id="info04" placeholder="참여한 재단사업을 적어주세요.(참여한 재단사업이 없을 경우 “없음” 으로 작성해주세요)">								
+									<input type="text" class="w100p radioValueDetail" id="info04" placeholder="참여한 재단사업을 적어주세요.(참여한 재단사업이 없을 경우 “없음” 으로 선택해주세요)">								
 								</td>
 							</tr>
 							<tr>
@@ -258,7 +258,15 @@
 <script>
 		
 	$(document).ready(function() {
-
+		$('.radioValue').on('click', function() {
+			var valueCheck = $('.radioValue:checked').val();
+			if ( valueCheck == 'no' ) {
+				$('.radioValueDetail').attr('disabled', true); 				
+			} else {
+				$('.radioValueDetail').attr('disabled', false);
+				$('.radioValueDetail').focus();
+			}
+		});
 	});
 </script>
 </body></html>

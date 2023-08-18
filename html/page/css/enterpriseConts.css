@@ -73,6 +73,7 @@
  .entpConts .txtBox { padding: 10px; max-height: 220px; overflow: scroll; } 
  .entpConts .listStyle01 li { padding-left: 10px; } 
  .entpConts .listStyle01 li.ref {padding-left: 14px;}
+ .entpConts .radioValueDetail { margin-top: 10px;}
  }
 @media only screen and (max-width: 640px){
  .enterpriseConts .header { margin-bottom: 40px; } 
