@@ -35,6 +35,7 @@
 .entpConts .txtBox { padding: 20px; background: #f1f1f1; border: 1px solid #dddddd; } 
 .entpConts .listStyle01 li { position: relative; padding-left: 15px; font-weight: 300; word-break: keep-all; } 
 .entpConts .listStyle01 li::before { content: '-'; display: block; position: absolute; left: 0; top: 0; } 
+.entpConts .listStyle01 li.ref::before { content: '\203B';} 
 .entpConts .listStyle02 li { position: relative; padding-left: 15px; font-weight: 300; word-break: keep-all; } 
 .entpConts .listStyle02 li::before { display: block; position: absolute; left: 0; top: 0; } 
 .entpConts .listStyle02 li:nth-child(1):before { content: '1.'; } 
@@ -69,6 +70,7 @@
  .listStyle02 { font-size: 14px; } 
  .entpConts .txtBox { padding: 10px; max-height: 220px; overflow: scroll; } 
  .entpConts .listStyle01 li { padding-left: 10px; } 
+ .entpConts .listStyle01 li.ref {padding-left: 14px;}
  }
 @media only screen and (max-width: 640px){
  .enterpriseConts .header { margin-bottom: 40px; } 
