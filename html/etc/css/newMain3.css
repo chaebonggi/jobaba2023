@@ -9,7 +9,6 @@
 #header .member_util .topLogo a { padding: 0; } 
 
 .newMain .innerSection { position: relative; max-width: 1230px; height: 100%; margin: 0 auto; padding: 0 20px; } 
-.newMain .mainContens { margin-top: 141px; } 
 .newMain .mainContens { width: 100%; height: 445px; position: relative; padding: 45px 0; background: url(../theme/images/main_bg.jpg) center no-repeat; background-size: cover; } 
 .newMain .mainContens.bg02 { width: 100%; height: 445px; position: relative; padding: 45px 0; background: url(../theme/images/main_bg02.jpg) center no-repeat; background-size: cover; } 
 .newMain .mainContens::before { content: ''; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: #000; opacity: 0.45; } 
