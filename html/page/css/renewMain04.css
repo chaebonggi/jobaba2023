@@ -636,6 +636,7 @@
 #newMain .m_visual .m_search_cont .m_visual_keyword {
     display: flex;
     padding-left: 0;
+    margin-bottom: 10px;
     overflow: scroll;
     
 }
