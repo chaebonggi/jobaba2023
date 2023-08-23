@@ -38,6 +38,14 @@
 					width: 600px;
 				}
 			</style>
+			<article class="linkWrap">
+				<div class="chartWrap" >
+					<canvas id="myChart"></canvas>
+				</div>
+				<div class="chartWrap" >
+					<canvas id="myChart02"></canvas>
+				</div>
+			</article>
 			<div class="innerSection">
 				<div class="mainVisual">
 					<div class="imgWrap">
@@ -133,11 +141,11 @@
 				</div>
 			</div>
 		</article>
-		<article class="linkWrap">
-			<div class="chartWrap" data-aos="fade-down">
+		<!-- <article class="linkWrap">
+			<div class="chartWrap" >
 				<canvas id="myChart"></canvas>
 			</div>
-		</article>
+		</article> -->
 		
 	</section>
 
@@ -162,34 +170,164 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
 
 
 <script>	
 	$(document).ready(function() {
 		AOS.init();
-		const ctx = document.getElementById('myChart');
 		
+		const delay = 0;
+		function createAndDisplayChart() {
+			const ctx = document.getElementById('myChart');
 
-		new Chart(ctx, {
-			type: 'bar',
-			data: {
-			labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-			datasets: [{
-				label: '# of Votes',
-				data: [12, 19, 3, 5, 2, 3],
-				borderWidth: 1
-			}]
-			},
-			options: {
-			scales: {
-				y: {
-				beginAtZero: true
+			new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ['2023', '01', '02', '03', '04', '05'],
+					
+					datasets: [{
+						label: '전국',
+						data: [120, 190, 30, 500, 2, 3],
+						backgroundColor: ['red','red','red','blue'],
+						borderWidth: 0
+					},
+					{
+						label: '경기도',
+						data: [100, 200, 100, 200, 100, 10],
+						backgroundColor: '#eee',
+						borderWidth: 0,
+					}]
+				},				
+				options: {
+					plugins: {
+						legend: {
+							display: false,
+						},
+						
+						
+					},
+					scales: {
+						y: {
+							beginAtZero: true,
+							min: -200,
+							max: 1000,
+							ticks: {
+								color: '#000',
+								padding: 10
+							},
+							grid: {
+								
+								drawTicks: false,
+								ickBorderDashOffset: false,
+								tickBorderDash: false,
+								drawBorder: false,
+								tickWidth: 10,
+								tickLength: 10
+								
+							},
+							border: {
+								display: false,
+							}
+							
+							
+						},		
+						x: {
+							ticks: {
+								color: ['#000','#000','#000','#000','red']
+							},
+							grid: {
+								// display: false,
+								tickBorderDashOffset: false,
+								display: false,
+								drawTicks: false,
+								drawOnChartArea: false,
+								tickBorderDashOffset: false,
+								tickBorderDash: false,
+								drawBorder: false,
+								tickWidth: 10,
+								tickLength: 10
+							}
+							
+						}		
+					},
+					plugins: {
+						datalabels: {
+							anchor: 'end',
+							align: 'top',
+						}
+					}
+					
+					
 				},
+				plugins: [ChartDataLabels]
+			});
+		}
+		// 
+		function createAndDisplayChart02() {
+			const ctx = document.getElementById('myChart02');
+
+			new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: ['2017', '2018', '2019', '2020', '2021', '2022'],
+					datasets: [
+						{
+							label: 'Dataset #1',
+							data: [10, 19, 17, 25, 23, 27],
+							borderColor: '#ff8989',
+							backgroundColor: '#ff8989',
+						},
+						{
+							label: 'Dataset #2',
+							data: [5, 14, 13, 15, 20, 17],
+							borderColor: '#64a849',
+							backgroundColor: '#64a849',
+						},
+					],
+				},
+				options: {
+					responsive: true,
+				}
+			});
+		}
+		// 
+		setTimeout(createAndDisplayChart, delay);
+		setTimeout(createAndDisplayChart02, delay);	
+
+		
+		function checkVisible( element, check = 'above' ) {
+			const viewportHeight = $(window).height(); // Viewport Height
+			const scrolltop = $(window).scrollTop(); // Scroll Top
+			const y = $(element).offset().top;
+			const elementHeight = $(element).height();   
+			
+			// 반드시 요소가 화면에 보여야 할경우
+			if (check == "visible") 
+				return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
 				
-				
+			// 화면에 안보여도 요소가 위에만 있으면 (페이지를 로드할때 스크롤이 밑으로 내려가 요소를 지나쳐 버릴경우)
+			if (check == "above") 
+				return ((y < (viewportHeight + scrolltop)));
+		}
+
+		// 리소스가 로드 되면 함수 실행을 멈출지 말지 정하는 변수
+		let isVisible = false;
+
+		// 이벤트에 등록할 함수
+		const func = function () {
+			if ( !isVisible && checkVisible('.linkWrap') ) {
+				// setTimeout(createAndDisplayChart, delay);				
+				isVisible = true;
 			}
-			}
-		});
+			
+			// 만일 리소스가 로드가 되면 더이상 이벤트 스크립트가 있을 필요가 없으니 삭제
+			isVisible && window.removeEventListener('scroll', func);
+		}
+
+		// 스크롤 이벤트 등록
+		window.addEventListener('scroll', func);
+
 		
 	});
 
