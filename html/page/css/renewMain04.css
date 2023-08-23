@@ -630,6 +630,19 @@
 
 
 /*  */
+#newMain .m_visual .m_search_cont .m_visual_keyword::before {
+    content: none;
+}
+#newMain .m_visual .m_search_cont .m_visual_keyword {
+    display: flex;
+    padding-left: 0;
+    overflow: scroll;
+    
+}
+#newMain .m_visual .m_search_cont .m_visual_keyword a {
+    white-space: nowrap;
+}
+
 #newMain .m_visual .m_visual_items li {
     height: auto;
 }
