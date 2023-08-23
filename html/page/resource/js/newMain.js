@@ -111,6 +111,9 @@
                       slide.style.width = '330px';
                   });
                   bannerSwiper.update();
+                  initSwiper();
+              } else {
+                initSwiper();
               }
           }, RESIZE_DELAY);
       }
@@ -246,6 +249,20 @@
         let randomNumber = Math.floor(Math.random() * 8) + 1;
         image.setAttribute('src', `./images/main/logo_0${randomNumber}.png`);
     });
+
+    // 메인 메뉴 swiper
+    function initSwiper() {
+        if (window.innerWidth  < 641) {
+                mySwiper = new Swiper(".itemSwiper", {
+                slidesPerView: 3,
+                simulateTouch: true,
+                loop: true,
+            });
+        } else if (window.innerWidth >= 641) {
+            mySwiper.destroy();
+        }
+    }
+    initSwiper();
 
     // 헤더 fixed
     // var $newHeader = $('#newHeader');

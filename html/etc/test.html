@@ -200,13 +200,6 @@
 					}]
 				},				
 				options: {
-					plugins: {
-						legend: {
-							display: false,
-						},
-						
-						
-					},
 					scales: {
 						y: {
 							beginAtZero: true,
@@ -255,7 +248,11 @@
 						datalabels: {
 							anchor: 'end',
 							align: 'top',
-						}
+						},
+						legend: {
+							display: false,
+						},
+
 					}
 					
 					
@@ -285,10 +282,19 @@
 							backgroundColor: '#64a849',
 						},
 					],
+					
 				},
 				options: {
 					responsive: true,
-				}
+					plugins: {
+						datalabels: {
+							anchor: 'end',
+							align: ['top'],
+							color: ['red','blue','yellow']
+						}
+					}
+				},
+				plugins: [ChartDataLabels]
 			});
 		}
 		// 
