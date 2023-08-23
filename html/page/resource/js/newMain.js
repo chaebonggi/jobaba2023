@@ -255,9 +255,18 @@
     function itemSwiper() {
         if (window.innerWidth  < 641 && menuSwiper == undefined) {
                 menuSwiper = new Swiper(".itemSwiper", {
-                slidesPerView: 3,
+                slidesPerView: 3.5,                
+                spaceBetween: 5,
                 simulateTouch: true,
                 loop: true,
+                breakpoints: {
+                    420: {
+                        slidesPerView: 4.5,
+                    },
+                    560: {
+                        slidesPerView: 5.5,
+                    },
+                },
             });
         } else if (window.innerWidth >= 641 && menuSwiper != undefined) {
             menuSwiper.destroy();
