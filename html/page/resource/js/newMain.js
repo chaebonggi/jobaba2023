@@ -259,12 +259,11 @@
                 // slidesPerView: 'auto',              
                 spaceBetween: 10,
                 simulateTouch: true,
-                slidesOffsetAfter: 36,
+                slidesOffsetAfter: 40,
                 breakpoints: {
                     420: {
                         slidesPerView: 4.5,
                         spaceBetween: 20,
-                        slidesOffsetAfter: 40,
                     },
                     560: {
                         slidesPerView: 5.5,
