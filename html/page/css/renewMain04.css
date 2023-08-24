@@ -162,6 +162,7 @@
 #newMain .m_visual .m_visual_items li a.m_item05::before { background-image: url(https://www.jobaba.net/resource/images/main2023/icon_item05.png); } 
 #newMain .m_visual .m_visual_items li a.m_item06::before { background-image: url(https://www.jobaba.net/resource/images/main2023/icon_item06.png); } 
 #newMain .m_visual .m_visual_items li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); } 
+#newMain .m_visual .m_visual_items li:nth-child(7) {display: none;}
 #newMain .m_visual .m_visual_search { position: relative; } 
 #newMain .m_visual .m_search_cont { position: relative; } 
 #newMain .m_visual .m_search_cont::before { content: ''; width: 125px; height: 136px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(https://www.jobaba.net/resource/images/main2023/search_img01.png) no-repeat; background-size: contain; } 
@@ -663,6 +664,7 @@
     padding: 4px;
     background: #fff;
     border-radius: 10px;
+    width: 80px;
 }
 #newMain .m_visual .m_visual_items li a .txt { font-size: 12px; white-space: nowrap; }
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }
@@ -673,7 +675,12 @@
     background-size: contain;
 }
 #newMain .m_visual .m_visual_items li:nth-child(6) {
-    width: 110px !important;
+    width: 110px;
+    /* min-width: 110px !important; */
+}
+#newMain .m_visual .m_visual_items li:nth-child(7) {
+    display: block;
+    visibility: hidden;
 }
 
 }

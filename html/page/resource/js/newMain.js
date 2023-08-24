@@ -112,8 +112,8 @@
                   });
                   bannerSwiper.update();
                   itemSwiper();
-              } else {
-                itemSwiper();
+              } else {                
+                itemSwiper();                
               }
           }, RESIZE_DELAY);
       }
@@ -255,18 +255,21 @@
     function itemSwiper() {
         if (window.innerWidth  < 641 && menuSwiper == undefined) {
                 menuSwiper = new Swiper(".itemSwiper", {
-                slidesPerView: 3.5,                
+                // slidesPerView: 3.5,
+                slidesPerView: 'auto',              
                 spaceBetween: 10,
                 simulateTouch: true,
-                breakpoints: {
-                    420: {
-                        slidesPerView: 4.5,
-                        spaceBetween: 20,
-                    },
-                    560: {
-                        slidesPerView: 5.5,
-                    },
-                },
+                // breakpoints: {
+                //     420: {
+                //         // slidesPerView: 4.5,
+                //         slidesPerView: 'auto',
+                //         spaceBetween: 20,
+                //     },
+                //     560: {
+                //         // slidesPerView: 5.5,
+                //         slidesPerView: 'auto',
+                //     },
+                // },
             });
         } else if (window.innerWidth >= 641 && menuSwiper != undefined) {
             menuSwiper.destroy();
