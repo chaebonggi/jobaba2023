@@ -664,7 +664,6 @@
     padding: 4px;
     background: #fff;
     border-radius: 10px;
-    width: 80px;
 }
 #newMain .m_visual .m_visual_items li a .txt { font-size: 12px; white-space: nowrap; }
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }
@@ -675,7 +674,8 @@
     background-size: contain;
 }
 #newMain .m_visual .m_visual_items li:nth-child(6) {
-    width: 110px;
+    width: 110px !important;
+    border: 1px solid red;
     /* min-width: 110px !important; */
 }
 #newMain .m_visual .m_visual_items li:nth-child(7) {
