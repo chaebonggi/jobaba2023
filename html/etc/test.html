@@ -200,6 +200,7 @@
 						{
 							label: 'Dataset #2',
 							data: [5, 14, 13, 15, 20, 17],
+							
 							backgroundColor: [
 								'red',
 								'blue',
@@ -221,13 +222,33 @@
 						datalabels: {
 							anchor: 'end',
 							align: ['top','bottom','top'],
-							color: ['red','blue','yellow']
+							color: ['red','blue','yellow'],						
+							font: {
+								size: 30
+							}
+						},
+						annotation: {
+							annotations: {
+								box1: {
+									drawTime: 'beforeDatasetsDraw',
+									type: 'box',
+									xMin: 3.5,
+									xMax: 5.5,
+									// yMin: -200,
+									// yMax: 1000,
+									backgroundColor: 'rgba(255, 234, 233, 0.5)',
+									borderColor: 'transparent'
+								}
+							}
 						}
+						
 					},
 					scales: {
 						x: {
 							offset: true
 						},
+
+						
 						
 						
 					}
@@ -252,7 +273,7 @@
 						backgroundColor: ['red','red','red','blue'],
 						borderWidth: 0, 
 						borderRadius: 100,
-						barPercentage: 0.2
+						barPercentage: 1
 					},
 					{
 						label: '경기도',
@@ -323,7 +344,7 @@
 									type: 'box',
 									xMin: 2.5,
 									xMax: 5.5,
-									yMin: 0,
+									yMin: -200,
 									yMax: 1000,
 									backgroundColor: 'rgba(255, 234, 233, 0.5)',
 									borderColor: 'transparent'

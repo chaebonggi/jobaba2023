@@ -169,6 +169,7 @@
 #newMain .m_visual .m_search_cont .search_wrap { position: relative; display: flex; align-items: center; justify-content: space-between; width: 660px; padding: 14px 20px; margin-bottom: 14px; background: #fff; border-radius: 10px; } 
 #newMain .m_visual .m_search_cont .search_wrap button { display: block; flex-shrink: 0; background: url(https://www.jobaba.net/resource/images/main2023/icon_search.png) no-repeat; width: 24px; height: 24px; border: 0; text-indent: -9999px; cursor: pointer; } 
 #newMain .m_visual .m_search_cont .search_wrap input { width: 100%; margin: 0 10px; font-size: 16px; border: 0; outline: 0; } 
+#newMain .m_visual .m_search_cont .search_wrap input::placeholder {color: transparent;}
 
 #newMain .m_visual .m_search_cont ul { display: inline-flex; background: #008ae0; border-radius: 20px; z-index: 1; } 
 #newMain .m_visual .m_search_cont ul li { width: 70px; padding: 3px 0; margin: 4px; color: #fff; font-size: 14px; font-weight: 600; border-radius: 20px; text-align: center; cursor: pointer; transition: all 0.2s; } 
@@ -448,7 +449,9 @@
  #newMain .m_slide_banner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
  }
 
-@media screen and (max-width: 1200px) { /* 헤더 */
+@media screen and (max-width: 1200px) { 
+    
+/* 헤더 */
  #newHeader .h_gnb_bg::after { content: none; } 
  #newHeader .h_gnb_menu { grid-template-columns: auto; } 
  #newHeader .h_gnb_menu .gnb_item.links ul { display: grid; grid-template-columns: repeat(4, 1fr); } 
@@ -457,7 +460,9 @@
  #newMain .m_visual .m_search_cont .search_wrap { width: 100%; } 
  #newMain .m_visual .m_search_cont::before { width: 80px; top: -8px; transform: none; } 
  }
-@media screen and (max-width: 1024px) {/* 메인 메뉴 */
+@media screen and (max-width: 1024px) {
+    
+/* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .tit { margin: 10px 0 20px 20px; font-size: 18px; } 
  
  #newMain .m_visual .m_visual_items li { width: calc(100% / 3); } 
@@ -514,7 +519,9 @@
  #newMain .m_employ .m_employ_item.right span + span { display: block; position: relative; margin-left: 8px; padding-left: 8px; } 
  #newMain .m_employ .m_employ_item.right span + span::before { content: ''; width: 1px; height: 12px; position: absolute; left: 0; top: 8px; background: #d2d2d2; } 
  }
-@media screen and (max-width: 768px) { /* 정책정보 */
+@media screen and (max-width: 768px) { 
+    
+/* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_info { flex-direction: column; } 
@@ -574,8 +581,8 @@
  #newMain h2 { font-size: 22px; } 
  #newMain .m_visual { margin-bottom: 30px; } 
  #newMain .m_visual .m_search_cont ul li { width: 50px; padding: 2px 0; font-size: 14px; } 
- #newMain .m_visual .m_search_cont::before { width: 56px; } 
- #newMain .m_visual .m_search_cont .tit { margin: 10px; font-size: 15px; } 
+ /* #newMain .m_visual .m_search_cont::before { width: 56px; }  */
+ /* #newMain .m_visual .m_search_cont .tit { margin: 10px; font-size: 15px; }  */
  #newMain .m_visual .m_search_cont .search_wrap { padding: 4px 10px; } 
  #newMain .m_visual .m_search_cont .search_wrap button { width: 16px; height: 16px; background-size: cover; } 
  /* 
@@ -628,23 +635,47 @@
 
 
 /* */
+#newMain .m_visual .m_search_cont .tit {display: none;}
+#newMain .m_visual .m_search_cont::before { width: 50px; top: -32px; }
+
+#newMain .m_visual .m_search_cont .search_wrap input {font-size: 12px;}
+#newMain .m_visual .m_search_cont .search_wrap input::placeholder {color: #999;}
 #newMain .m_visual .m_search_cont .m_visual_keyword::before { content: none; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword { display: flex; padding-left: 0; margin-bottom: 10px; overflow: scroll; } 
-#newMain .m_visual .m_search_cont .m_visual_keyword a { white-space: nowrap; } 
+#newMain .m_visual .m_search_cont .m_visual_keyword a { font-size: 14px; white-space: nowrap; } 
+#newMain .m_visual .m_search_cont .m_visual_keyword a + a {margin-left: 4px;}
 
 #newMain .m_visual .itemSwiper { overflow: hidden; } 
 #newMain .m_visual .m_visual_items { margin-bottom: 10px; flex-wrap: nowrap; } 
 #newMain .m_visual .m_visual_items li { height: 100%; } 
-#newMain .m_visual .m_visual_items li a .txt { display: none; } 
+/* #newMain .m_visual .m_visual_items li a .txt { display: none; }  */
 
-#newMain .m_visual .m_visual_items li a::before { display: flex; width: 100%; height: 70px; margin: 0; background-image: none !important; align-items: center; justify-content: center; font-size: 12px; white-space: break-spaces; } 
+/* #newMain .m_visual .m_visual_items li a::before { display: flex; width: 100%; height: 70px; margin: 0; background-image: none !important; align-items: center; justify-content: center; font-size: 12px; white-space: break-spaces; } 
 #newMain .m_visual .m_visual_items li a.m_item01::before { content: '자소서첨삭'; } 
 #newMain .m_visual .m_visual_items li a.m_item02::before { content: 'AI역량검사'; } 
 #newMain .m_visual .m_visual_items li a.m_item03::before { content: '취업상담'; } 
 #newMain .m_visual .m_visual_items li a.m_item04::before { content: '러닝센터'; } 
 #newMain .m_visual .m_visual_items li a.m_item05::before { content: '탐나는\a 일자리정보관'; } 
 #newMain .m_visual .m_visual_items li a.m_item06::before { content: '탐나는\a 기업관'; } 
-#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; } 
+#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
+
+#newMain .m_visual .m_visual_items li {
+    padding: 4px;
+    background: #fff;
+    border-radius: 10px;
+}
+#newMain .m_visual .m_visual_items li a .txt { font-size: 12px; white-space: nowrap; }
+#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }
+#newMain .m_visual .m_visual_items li a::before {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 0;
+    background-size: contain;
+}
+#newMain .m_visual .m_visual_items li:nth-child(6) {
+    width: 110px !important;
+}
+
 }
 @media screen and (max-width: 480px) { 
 /* 헤더 */
