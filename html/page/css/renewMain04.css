@@ -645,6 +645,7 @@
 #newMain .m_visual .m_search_cont .m_visual_keyword { display: flex; padding-left: 0; margin-bottom: 10px; overflow: scroll; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword a { font-size: 14px; white-space: nowrap; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword a + a {margin-left: 4px;}
+#newMain .m_visual .m_visual_notice {display: none;}
 
 #newMain .m_visual .itemSwiper { overflow: hidden; } 
 #newMain .m_visual .m_visual_items { margin-bottom: 10px; flex-wrap: nowrap; } 
@@ -661,7 +662,7 @@
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
 
 #newMain .m_visual .m_visual_items li {
-    padding: 4px;
+    padding: 10px 4px;
     background: #fff;
     border-radius: 10px;
 }
@@ -673,8 +674,14 @@
     margin-bottom: 0;
     background-size: contain;
 }
+#newMain .m_visual .m_visual_cont {
+    padding: 40px 15px 10px;
+}
+#newMain .m_visual .m_visual_items li:nth-child(-n + 3) {
+    margin-bottom: 0;
+}
 #newMain .m_visual .m_visual_items li:nth-child(6) {
-    width: 110px !important;
+    min-width: 110px !important;
     
 }
 #newMain .m_visual .m_visual_items li.empty {
