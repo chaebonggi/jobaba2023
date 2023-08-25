@@ -111,9 +111,9 @@
                       slide.style.width = '330px';
                   });
                   bannerSwiper.update();
-                  itemSwiper();
-              } else {                
-                itemSwiper();                
+                  itemSwiper(); 
+              } else {
+                itemSwiper();
               }
           }, RESIZE_DELAY);
       }
@@ -259,7 +259,7 @@
                 // slidesPerView: 'auto',              
                 spaceBetween: 10,
                 simulateTouch: true,
-                slidesOffsetAfter: 40,
+                // slidesOffsetAfter: 40,
                 breakpoints: {
                     420: {
                         slidesPerView: 4.5,
@@ -275,7 +275,7 @@
             menuSwiper = undefined;
         }
     }
-    itemSwiper();
+    itemSwiper(); 
 
     // 헤더 fixed
     // var $newHeader = $('#newHeader');
