@@ -26,8 +26,10 @@
           var selectedTab = $(this).data('tab');
           if (selectedTab === 'search01') {
             $('.m_search_cont .tit').html('관심있는 <strong>지원정책</strong>을 찾아보세요');
+            $('#search').attr('placeholder', '관심있는 지원정책을 찾아보세요');
           } else if (selectedTab === 'search02') {
             $('.m_search_cont .tit').html('관심있는 <strong>채용정보</strong>를 찾아보세요');
+            $('#search').attr('placeholder', '관심있는 채용정보를 찾아보세요');
           }
         });
 
