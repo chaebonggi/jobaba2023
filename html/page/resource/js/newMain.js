@@ -257,18 +257,18 @@
     function itemSwiper() {
         if (window.innerWidth  < 641 && menuSwiper == undefined) {
                 menuSwiper = new Swiper(".itemSwiper", {
-                slidesPerView: 3.5,
-                // slidesPerView: 'auto',              
+                // slidesPerView: 3.5,
+                slidesPerView: 'auto',              
                 spaceBetween: 10,
                 simulateTouch: true,
                 // slidesOffsetAfter: -40,
                 breakpoints: {
                     460: {
-                        slidesPerView: 4.5,
+                        // slidesPerView: 4.5,
                         // slidesOffsetAfter: -24,
                     },
                     560: {
-                        slidesPerView: 5.5,
+                        // slidesPerView: 5.5,
                         // slidesOffsetAfter: -70,
                     },
                 },

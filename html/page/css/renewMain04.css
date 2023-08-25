@@ -661,7 +661,8 @@
 #newMain .m_visual .m_visual_items li a.m_item06::before { content: '탐나는\a 기업관'; } 
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
 
-#newMain .m_visual .m_visual_items li {
+#newMain .m_visual .m_visual_items li a {
+    min-width: 90px;
     padding: 10px 4px;
     background: #fff;
     border-radius: 10px;
