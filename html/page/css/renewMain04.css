@@ -662,15 +662,14 @@
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
 
 #newMain .m_visual .m_visual_items li {
-    width: calc(100% / 5);
+    width: auto;
 }
-#newMain .m_visual .m_visual_items li a {
-    min-width: 90px;
+#newMain .m_visual .m_visual_items li a {    
     padding: 10px 4px;
     background: #fff;
     border-radius: 10px;
 }
-#newMain .m_visual .m_visual_items li a .txt { font-size: 12px; white-space: nowrap; }
+#newMain .m_visual .m_visual_items li a .txt { display: inline-block; min-width: 72px; font-size: 12px; white-space: nowrap;}
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }
 #newMain .m_visual .m_visual_items li a::before {
     width: 100%;
@@ -703,9 +702,5 @@
  #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px; } 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
- /*  */
- #newMain .m_visual .m_visual_items li {
-    width: calc(100% / 3);
-}
 
 }
