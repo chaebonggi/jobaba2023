@@ -661,6 +661,9 @@
 #newMain .m_visual .m_visual_items li a.m_item06::before { content: '탐나는\a 기업관'; } 
 #newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
 
+#newMain .m_visual .m_visual_items li {
+    width: calc(100% / 5);
+}
 #newMain .m_visual .m_visual_items li a {
     min-width: 90px;
     padding: 10px 4px;
@@ -700,4 +703,9 @@
  #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px; } 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
+ /*  */
+ #newMain .m_visual .m_visual_items li {
+    width: calc(100% / 3);
+}
+
 }
