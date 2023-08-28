@@ -162,7 +162,7 @@
 #newMain .m_visual .m_visual_items li a.m_item05::before { background-image: url(https://www.jobaba.net/resource/images/main2023/icon_item05.png); } 
 #newMain .m_visual .m_visual_items li a.m_item06::before { background-image: url(https://www.jobaba.net/resource/images/main2023/icon_item06.png); } 
 #newMain .m_visual .m_visual_items li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); } 
-#newMain .m_visual .m_visual_items li.empty {display: none;}
+#newMain .m_visual .m_visual_items li.empty { display: none; } 
 #newMain .m_visual .m_visual_search { position: relative; } 
 #newMain .m_visual .m_search_cont { position: relative; } 
 #newMain .m_visual .m_search_cont::before { content: ''; width: 125px; height: 136px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(https://www.jobaba.net/resource/images/main2023/search_img01.png) no-repeat; background-size: contain; } 
@@ -170,7 +170,7 @@
 #newMain .m_visual .m_search_cont .search_wrap { position: relative; display: flex; align-items: center; justify-content: space-between; width: 660px; padding: 14px 20px; margin-bottom: 14px; background: #fff; border-radius: 10px; } 
 #newMain .m_visual .m_search_cont .search_wrap button { display: block; flex-shrink: 0; background: url(https://www.jobaba.net/resource/images/main2023/icon_search.png) no-repeat; width: 24px; height: 24px; border: 0; text-indent: -9999px; cursor: pointer; } 
 #newMain .m_visual .m_search_cont .search_wrap input { width: 100%; margin: 0 10px; font-size: 16px; border: 0; outline: 0; } 
-#newMain .m_visual .m_search_cont .search_wrap input::placeholder {color: transparent;}
+#newMain .m_visual .m_search_cont .search_wrap input::placeholder { color: transparent; } 
 
 #newMain .m_visual .m_search_cont ul { display: inline-flex; background: #008ae0; border-radius: 20px; z-index: 1; } 
 #newMain .m_visual .m_search_cont ul li { width: 70px; padding: 3px 0; margin: 4px; color: #fff; font-size: 14px; font-weight: 600; border-radius: 20px; text-align: center; cursor: pointer; transition: all 0.2s; } 
@@ -451,7 +451,6 @@
  }
 
 @media screen and (max-width: 1200px) { 
-    
 /* 헤더 */
  #newHeader .h_gnb_bg::after { content: none; } 
  #newHeader .h_gnb_menu { grid-template-columns: auto; } 
@@ -461,8 +460,7 @@
  #newMain .m_visual .m_search_cont .search_wrap { width: 100%; } 
  #newMain .m_visual .m_search_cont::before { width: 80px; top: -8px; transform: none; } 
  }
-@media screen and (max-width: 1024px) {
-    
+@media screen and (max-width: 1024px) { 
 /* 메인 메뉴 */
  #newMain .m_visual .m_search_cont .tit { margin: 10px 0 20px 20px; font-size: 18px; } 
  
@@ -521,7 +519,6 @@
  #newMain .m_employ .m_employ_item.right span + span::before { content: ''; width: 1px; height: 12px; position: absolute; left: 0; top: 8px; background: #d2d2d2; } 
  }
 @media screen and (max-width: 768px) { 
-    
 /* 정책정보 */
  #newMain .m_policy { margin-bottom: 20px; } 
  #newMain .m_policy .innerSection { padding: 0; } 
@@ -582,8 +579,8 @@
  #newMain h2 { font-size: 22px; } 
  #newMain .m_visual { margin-bottom: 30px; } 
  #newMain .m_visual .m_search_cont ul li { width: 50px; padding: 2px 0; font-size: 14px; } 
- /* #newMain .m_visual .m_search_cont::before { width: 56px; }  */
- /* #newMain .m_visual .m_search_cont .tit { margin: 10px; font-size: 15px; }  */
+ /* #newMain .m_visual .m_search_cont::before { width: 56px; } */
+ /* #newMain .m_visual .m_search_cont .tit { margin: 10px; font-size: 15px; } */
  #newMain .m_visual .m_search_cont .search_wrap { padding: 4px 10px; } 
  #newMain .m_visual .m_search_cont .search_wrap button { width: 16px; height: 16px; background-size: cover; } 
  /* 
@@ -635,66 +632,34 @@
  #newFooter .f_enquiry dl { font-size: 13px; } 
 
 
-/* */
-#newMain .m_visual .m_search_cont .tit {display: none;}
-#newMain .m_visual .m_search_cont::before { width: 50px; top: -32px; }
+/* 모바일 메뉴 수정 */
+#newMain .m_visual .m_search_cont .tit { display: none; } 
+#newMain .m_visual .m_search_cont::before { width: 50px; top: -32px; } 
 
-#newMain .m_visual .m_search_cont .search_wrap input {font-size: 12px;}
-#newMain .m_visual .m_search_cont .search_wrap input::placeholder {color: #999;}
+#newMain .m_visual .m_search_cont .search_wrap input { font-size: 12px; } 
+#newMain .m_visual .m_search_cont .search_wrap input::placeholder { color: #999; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword::before { content: none; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword { display: flex; padding-left: 0; margin-bottom: 10px; overflow: scroll; } 
 #newMain .m_visual .m_search_cont .m_visual_keyword a { font-size: 14px; white-space: nowrap; } 
-#newMain .m_visual .m_search_cont .m_visual_keyword a + a {margin-left: 4px;}
-#newMain .m_visual .m_visual_notice {display: none;}
+#newMain .m_visual .m_search_cont .m_visual_keyword a + a { margin-left: 4px; } 
+#newMain .m_visual .m_visual_notice { display: none; } 
 
 #newMain .m_visual .itemSwiper { overflow: hidden; } 
 #newMain .m_visual .m_visual_items { margin-bottom: 10px; flex-wrap: nowrap; } 
 #newMain .m_visual .m_visual_items li { height: 100%; } 
-/* #newMain .m_visual .m_visual_items li a .txt { display: none; }  */
 
-/* #newMain .m_visual .m_visual_items li a::before { display: flex; width: 100%; height: 70px; margin: 0; background-image: none !important; align-items: center; justify-content: center; font-size: 12px; white-space: break-spaces; } 
-#newMain .m_visual .m_visual_items li a.m_item01::before { content: '자소서첨삭'; } 
-#newMain .m_visual .m_visual_items li a.m_item02::before { content: 'AI역량검사'; } 
-#newMain .m_visual .m_visual_items li a.m_item03::before { content: '취업상담'; } 
-#newMain .m_visual .m_visual_items li a.m_item04::before { content: '러닝센터'; } 
-#newMain .m_visual .m_visual_items li a.m_item05::before { content: '탐나는\a 일자리정보관'; } 
-#newMain .m_visual .m_visual_items li a.m_item06::before { content: '탐나는\a 기업관'; } 
-#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }  */
-
-#newMain .m_visual .m_visual_items li {
-    width: auto;
-}
-#newMain .m_visual .m_visual_items li a {    
-    padding: 10px 4px;
-    background: #fff;
-    border-radius: 10px;
-}
-#newMain .m_visual .m_visual_items li a .txt { display: inline-block; min-width: 72px; font-size: 12px; white-space: nowrap;}
-#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; }
-#newMain .m_visual .m_visual_items li a::before {
-    width: 100%;
-    height: 20px;
-    margin-bottom: 0;
-    background-size: contain;
-}
-#newMain .m_visual .m_visual_cont {
-    padding: 40px 15px 10px;
-}
-#newMain .m_visual .m_visual_items li:nth-child(-n + 3) {
-    margin-bottom: 0;
-}
-#newMain .m_visual .m_visual_items li:nth-child(6) {
-    min-width: 110px !important;
-    
-}
-#newMain .m_visual .m_visual_items li.empty {
-    visibility: hidden;
-    display: block;
-}
+#newMain .m_visual .m_visual_items li { width: auto; } 
+#newMain .m_visual .m_visual_items li a { padding: 10px 4px; background: #fff; border-radius: 10px; } 
+#newMain .m_visual .m_visual_items li a .txt { display: inline-block; min-width: 72px; font-size: 12px; white-space: nowrap; } 
+#newMain .m_visual .m_visual_items li a:hover::before { border: none; box-shadow: none; } 
+#newMain .m_visual .m_visual_items li a::before { width: 100%; height: 20px; margin-bottom: 0; background-size: contain; } 
+#newMain .m_visual .m_visual_cont { padding: 40px 15px 10px; } 
+#newMain .m_visual .m_visual_items li:nth-child(-n + 3) { margin-bottom: 0; } 
+#newMain .m_visual .m_visual_items li:nth-child(6) { min-width: 110px !important; }
+#newMain .m_visual .m_visual_items li.empty { visibility: hidden; display: block; } 
 
 }
-@media screen and (max-width: 480px) { 
-/* 헤더 */
+@media screen and (max-width: 480px) {/* 헤더 */
  #newHeader .nheader_bottom .innerSection { padding: 0; } 
  #newMain .m_policy .m_policy_tit h2 { margin: 0 15px 0 10px; } 
  #newMain .m_policy .m_policy_btn li { width: calc(100% / 3); height: 30px; padding: 1px 0 2px 20px; font-size: 12px; } 
@@ -702,5 +667,4 @@
  #newMain .m_policy .m_policy_btn li::before { width: 20px; height: 20px; } 
  /* footer */
  #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
-
 }
