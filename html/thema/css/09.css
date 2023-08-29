@@ -12,6 +12,907 @@
 .themaWrap .gMedium { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
 .themaWrap .fcRed {color: #ff2a2a;}
 .themaWrap .fcBlue {color: #1f8eff;}
+.themaWrap .fcGray {color: #a8a8a8;}
+.themaWrap .fcMint {color: #72bccc;}
+.themaWrap .fcYellow {color: #ffa311;}
+.themaWrap .fcPurple {color: #a39bdc;}
+
 .themaWrap .bcBlue {background: #1f8eff;}
 .themaWrap .bcRed {background: #ff2a2a;}
+.themaWrap .bcGray {background: #dfdfdf;}
+.themaWrap .bcMint {background: #c3ecf5;}
+.themaWrap .bcYellow {background: #ffee9f;}
+.themaWrap .bcPurple {background: #dbd7f9;}
 .themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+
+.themaWrap .mainVisual {
+    position: relative;
+    background: url(../resource/images/thema/230829/thema_main_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.themaWrap .mainVisual::before {
+    content: '';
+    width: 316px;
+    height: 263px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: url(../resource/images/thema/230829/thema_main_img02.png) no-repeat;
+}
+.themaWrap .mainVisual .innerSection {
+    padding: 70px 0 36px;
+}
+.themaWrap .mainVisual .titWrap {
+    position: relative;
+    padding-bottom: 300px;
+    background-image: url(../resource/images/thema/230829/thema_main_img01.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.themaWrap .mainVisual .titWrap strong {
+    font-size: 70px;
+}
+.themaWrap .mainVisual .titWrap p {
+    font-size: 48px;
+}
+.themaWrap .mainVisual .titWrap::before {
+    content: '';
+    width: 237px;
+    height: 234px;
+    position: absolute;
+    left: -300px;
+    bottom: -70px;
+    background: url(../resource/images/thema/230829/thema_main_img03.png) no-repeat;
+}
+.themaWrap .mainVisual .titWrap::after {
+    content: '';
+    width: 221px;
+    height: 283px;
+    position: absolute;
+    left: 150px;
+    bottom: -70px;
+    background: url(../resource/images/thema/230829/thema_main_img04.png) no-repeat;
+}
+
+.themaWrap .event01 {
+    background: url(../resource/images/thema/230829/thema_ev01_bg.png) no-repeat #dcf1ed center;
+    background-size: cover;					
+}
+.themaWrap .event01 .innerSection {
+    padding: 116px 0 170px;
+}
+.themaWrap .event01 .txtWrap {
+    position: relative;
+    height: 364px;
+    padding-top: 110px;
+    background: url(../resource/images/thema/230829/thema_ev01_bg02.png) no-repeat top;
+    background-size: contain;					
+    text-align: center;
+}
+.themaWrap .event01 .txtWrap::before {
+    content: '';
+    width: 198px;
+    height: 182px;
+    position: absolute;
+    right: 54px;
+    bottom: -90px;
+    background: url(../resource/images/thema/230829/thema_ev01_img01.png) no-repeat;
+}
+.themaWrap .event01 .txtWrap p {
+    font-size: 36px;
+    line-height: 1.2;
+}
+.themaWrap .event01 .txtWrap p span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.themaWrap .titleWrap {
+    position: relative;
+    padding: 25px 10px;
+    margin: 0 50px 40px;
+    background: #fff;
+    text-align: center;
+    border: 4px solid #acd9d4;
+    border-radius: 30px;
+}
+.themaWrap .titleWrap::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 2px dashed #acd9d4;
+    border-radius: 20px;
+}
+.themaWrap .titleWrap .circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #acd9d4;
+    border-radius: 50%;
+}
+.themaWrap .titleWrap .circle:nth-child(1) {
+    top: 20px;
+    left: 20px;
+}
+.themaWrap .titleWrap .circle:nth-child(2) {
+    top: 20px;
+    right: 20px;
+}
+.themaWrap .titleWrap .circle:nth-child(3) {
+    bottom: 20px;
+    right: 20px;
+}
+.themaWrap .titleWrap .circle:nth-child(4) {
+    bottom: 20px;
+    left: 20px;
+}
+.themaWrap .titleWrap p {
+    color: #46a29f;
+    font-size: 30px;
+}
+
+.themaWrap .event02 {
+    background: url(../resource/images/thema/230829/thema_ev02_bg.png) center no-repeat;
+}
+.themaWrap .event02 .innerSection {
+    padding: 100px 0 180px;
+}
+.themaWrap .event02 .boxWrap {
+    display: flex;
+    padding: 48px 20px;
+    margin: 0 50px;
+    background: #dcf1ed;
+    border: 2px solid #acd9d4;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+}
+.themaWrap .event02 .titBox {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.themaWrap .event02 .titBox ul {
+    position: absolute;
+    right: 20px;
+    bottom: -44px;
+    font-size: 14px;
+    text-align: left;
+}
+.themaWrap .event02 .titBox li::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.themaWrap .event02 .titBox li:nth-child(1):before {
+    background: #7d78eb;
+}
+.themaWrap .event02 .titBox li:nth-child(2):before {
+    background: #ff9936;
+}
+.themaWrap .event02 .titBox li + li {
+    margin-top: 6px;
+}
+.themaWrap .event02 .titBox p {
+    font-size: 36px;
+}
+.themaWrap .event02 .graphBox {
+    padding: 20px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.themaWrap .event03 .innerSection {
+    max-width: 1620px;
+}
+.themaWrap .event03 .boxWrap {
+    position: relative;
+    padding: 160px 0 100px;
+    background: url(../resource/images/thema/230829/thema_ev03_bg.png) #f1f1f1 bottom no-repeat;
+    background-size: auto;
+    border: 1px solid #28958b;
+    border-radius: 20px;
+}
+.themaWrap .event03 .boxWrap::before {
+    content: '';
+    width: 155px;
+    height: 72px;
+    position: absolute;
+    top: 170px;
+    left: 96px;
+    background: url(../resource/images/thema/230829/thema_ev03_icon02.png) no-repeat;
+}
+.themaWrap .event03 .boxWrap::after {
+    content: '';
+    width: 77px;
+    height: 345px;
+    position: absolute;
+    top: 0;
+    right: 146px;
+    background: url(../resource/images/thema/230829/thema_ev03_icon03.png) no-repeat;
+}
+.themaWrap .event03 .titWrap {
+    position: absolute;
+    left: 50%;
+    top: -68px;
+    transform: translateX(-50%);
+    padding: 34px 60px;
+    background: #fff;
+    border: 1px solid #28958b;
+    border-radius: 20px;
+}
+.themaWrap .event03 .titWrap p {					
+    color: #28958b;
+    font-size: 60px;
+}
+.themaWrap .event03 .titWrap p::after {
+    content: '';
+    width: 140px;
+    height: 86px;
+    position: absolute;
+    bottom: -54px;
+    right: -20px;
+    background: url(../resource/images/thema/230829/thema_ev03_icon01.png) no-repeat;
+    background-size: contain;
+}
+.themaWrap .event03 .boxWrap ul {
+    display: flex;
+    justify-content: center;
+    gap: 0 40px;
+}
+.themaWrap .event03 .boxWrap li {
+    max-width: 280px;
+    width: 100%;
+    padding: 30px 10px;
+    background: #fff;
+    border: 1px dotted #000;
+    border-radius: 20px;
+    text-align: center;
+}
+.themaWrap .event03 .boxWrap .imgWrap::after {
+    content: '';
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    
+}
+.themaWrap .event03 .boxWrap .imgWrap.down::after {
+    background: url(../resource/images/thema/230829/thema_down.png) no-repeat;
+}
+.themaWrap .event03 .boxWrap .imgWrap.up::after {
+    background: url(../resource/images/thema/230829/thema_up.png) no-repeat;
+}
+.themaWrap .event03 .boxWrap .imgWrap {
+    display: flex;				
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background: #eaeaea;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+.themaWrap .event03 .boxWrap .txtWrap {
+    font-size: 19px;
+    line-height: 1.2;
+    word-break: keep-all;
+}
+
+.themaWrap .evBg {
+    background: url(../resource/images/thema/230829/thema_evbg.jpg) top no-repeat;
+    background-size: cover;
+}
+.themaWrap .event05 {
+    padding: 100px 0;
+}
+.themaWrap .evTit {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.themaWrap h3 {
+    position: relative;
+    display: inline-block;
+    padding: 150px 0 20px;
+    background: url(../resource/images/thema/230829/thema_tit_bg.png) no-repeat top;
+    background-size: contain;
+    font-size: 60px;
+}
+.themaWrap h3::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+.themaWrap h3.icon01::before {
+    width: 134px;
+    height: 129px;
+    background: url(../resource/images/thema/230829/thema_tit_icon01.png) no-repeat;
+}
+.themaWrap h3.icon02::before {
+    width: 122px;
+    height: 131px;
+    background: url(../resource/images/thema/230829/thema_tit_icon02.png) no-repeat;
+}
+.themaWrap h3.icon03::before {
+    width: 165px;
+    height: 132px;
+    background: url(../resource/images/thema/230829/thema_tit_icon03.png) no-repeat;
+}
+.themaWrap h3.icon04::before {
+    width: 170px;
+    height: 123px;
+    background: url(../resource/images/thema/230829/thema_tit_icon04.png) no-repeat;
+}
+.themaWrap .etc {
+    margin: 0 50px;
+}
+.themaWrap .etc p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.themaWrap .event05 .boxWrap {
+    padding: 70px 30px 100px;
+    margin: 0 50px;
+    background: url(../resource/images/thema/230829/thema_ev05_bg.png) #f2f2f2 center no-repeat;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.themaWrap .event05 .graph .titWrap {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.themaWrap .event05 .graph .titWrap p {
+    display: inline-block;
+    position: relative;
+    font-size: 48px;
+    line-height: 1;
+}
+.themaWrap .event05 .graph .titWrap p.icon01::after {
+    content: '';
+    width: 53px;
+    height: 56px;
+    position: absolute;
+    right: -70px;
+    bottom: 8px;
+    background: url(../resource/images/thema/230829/thema_ev05_icon01.png) no-repeat;
+}
+.themaWrap .event05 .graph .titWrap p.icon02::after {
+    content: '';
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    right: -70px;
+    bottom: 8px;
+    background: url(../resource/images/thema/230829/thema_ev05_icon02.png) no-repeat;
+}
+.themaWrap .event05 .graph ul {
+    display: flex;
+}
+.themaWrap .event05 .graph li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 70px;
+}
+.themaWrap .event05 .graph li:nth-child(1) {
+    width: 10%;
+    background: #ffadad;
+    border-radius: 50px 0 0 50px;
+}
+.themaWrap .event05 .graph li:nth-child(2) {
+    width: 12%;
+    background: #ff9b9b;
+}
+.themaWrap .event05 .graph li:nth-child(3) {
+    width: 12%;
+    background: #ff8585;
+}
+.themaWrap .event05 .graph li:nth-child(4) {
+    width: 14%;
+    background: #ff6767;
+}
+.themaWrap .event05 .graph li:nth-child(5) {
+    width: 15%;
+    background: #ff5353;
+}
+.themaWrap .event05 .graph li:nth-child(6) {
+    width: 17%;
+    background: #ff3737;
+}
+.themaWrap .event05 .graph li:nth-child(7) {
+    width: 20%;
+    background: #ff0000;
+    border-radius: 0 50px 50px 0;
+}
+.themaWrap .event05 .graph li::before {
+    content: '';
+    width: 7px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background: url(../resource/images/thema/230829/thema_ev05_bar.png) no-repeat;
+}
+.themaWrap .event05 .graph li::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    color: #000;
+    white-space: nowrap;
+}
+.themaWrap .event05 .graph li:nth-child(1)::after {
+    content: '파주시';						
+}
+.themaWrap .event05 .graph li:nth-child(2)::after {
+    content: '의정부시';						
+}
+.themaWrap .event05 .graph li:nth-child(3)::after {
+    content: '안성시';						
+}
+.themaWrap .event05 .graph li:nth-child(4)::after {
+    content: '가평군';						
+}
+.themaWrap .event05 .graph li:nth-child(5)::after {
+    content: '화성시';						
+}
+.themaWrap .event05 .graph li:nth-child(6)::after {
+    content: '연천군';						
+}
+.themaWrap .event05 .graph li:nth-child(7)::after {
+    content: '평택시';						
+}
+
+.themaWrap .event05 .graph.style02 li:nth-child(1) {
+    width: 12%;
+    background: #b5cdff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(2) {
+    width: 12%;
+    background: #9bbcff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(3) {
+    width: 12%;
+    background: #82abff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(4) {
+    width: 12%;
+    background: #6396ff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(5) {
+    width: 15%;
+    background: #4582ff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(6) {
+    width: 17%;
+    background: #256dff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(7) {
+    width: 20%;
+    background: #0054ff;
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '동두천시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '안산시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '안양시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '과천시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '군포시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '이천시';						
+}
+.themaWrap .event05 .graph.style02 li:nth-child(1)::after {
+    content: '광명시';						
+}
+.themaWrap .event05 .graph.style02 {						
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px dashed #000;
+}
+
+.themaWrap .event06 .innerSection {
+    padding: 0 0 100px;
+}
+.themaWrap .event06 .grayBox {
+    position: relative;
+    padding: 80px 50px 100px;
+    margin: 0 50px;
+    background: #f2f2f2;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.themaWrap .event06 .grayBox::before {
+    content: '';
+    width: 174px;
+    height: 5px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../resource/images/thema/230829/thema_ev06_bg.png) no-repeat;
+}
+.themaWrap .event06 ul {
+    display: flex;
+    text-align: center;
+    gap: 0 60px;
+}
+.themaWrap .event06 .imgWrap {
+    position: relative;
+    margin-bottom: 60px;
+}
+.themaWrap .event06 .imgWrap::before {
+    content: '';
+    width: 11px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);						
+}
+.themaWrap .event06 .imgWrap.bar01::before {
+    background: url(../resource/images/thema/230829/thema_ev06_icon01.png) no-repeat;
+}
+.themaWrap .event06 .imgWrap.bar02::before {
+    background: url(../resource/images/thema/230829/thema_ev06_icon02.png) no-repeat;
+}
+.themaWrap .event06 .imgWrap.bar03::before {
+    background: url(../resource/images/thema/230829/thema_ev06_icon03.png) no-repeat;
+}
+.themaWrap .event06 .imgWrap.bar04::before {
+    background: url(../resource/images/thema/230829/thema_ev06_icon04.png) no-repeat;
+}
+.themaWrap .event06 .imgWrap.bar05::before {
+    background: url(../resource/images/thema/230829/thema_ev06_icon05.png) no-repeat;
+}
+.themaWrap .event06 .txtWrap p {
+    margin-bottom: 70px;
+    font-size: 24px;
+}
+.themaWrap .event06 .txtWrap span {
+    display: block;
+    position: relative;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.themaWrap .event06 .txtWrap span::before {
+    content: '';
+    width: 68px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.themaWrap .event06 .txtWrap span.down::before {
+    background: url(../resource/images/thema/230829/thema_arrow_down.png);						
+}
+.themaWrap .event06 .txtWrap span.up::before {
+    background: url(../resource/images/thema/230829/thema_arrow_up.png);						
+}
+.themaWrap .event06 li:nth-child(1) .txtWrap span::before {
+    bottom: -60px;
+}
+.themaWrap .event06 li:nth-child(2) .txtWrap span::before {
+    top: -40px;
+}
+.themaWrap .event06 li:nth-child(3) .txtWrap span::before {
+    bottom: -50px;
+}
+.themaWrap .event06 li:nth-child(4) .txtWrap span::before {
+    top: -46px;
+}
+.themaWrap .event06 li:nth-child(5) .txtWrap span::before {
+    top: -60px;
+}
+
+.themaWrap .event07 .innerSection {
+    padding: 0 0 100px;
+}
+.themaWrap .event07 .grayBox {
+    display: flex;
+    padding: 50px 45px;
+    margin: 0 50px;
+    background: #f2f2f2;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    gap: 0 40px;
+}
+.themaWrap .event07 .grayBox + .grayBox {
+    margin-top: 25px;
+}
+.themaWrap .event07 .txtWrap {
+    position: relative;
+    width: 138px;
+    text-align: center;
+}
+.themaWrap .event07 .txtWrap p {
+    font-size: 36px;
+}
+.themaWrap .event07 .txtWrap p::after {
+    content: '';
+    width: 134px;
+    height: 242px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background: url(../resource/images/thema/230829/thema_ev07_img01.png) no-repeat;
+}
+.themaWrap .event07 .grayBox.style02 .txtWrap p::after {
+    width: 105px;
+    height: 238px;
+    background: url(../resource/images/thema/230829/thema_ev07_img02.png) no-repeat;
+}
+.themaWrap .event07 ul {
+    display: flex;
+    width: 100%;
+    gap: 0 10px;
+}
+.themaWrap .event07 li {
+    width: calc(100% / 3);
+    padding: 20px 10px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+.themaWrap .event07 li p {
+    display: flex;
+    height: 70px;
+    padding: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.themaWrap .event07 li strong::before {
+    content: '';
+    display: block;						
+    height: 72px;
+    margin: 40px auto;						
+}
+.themaWrap .event07 li strong.icon01::before {
+    width: 64px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon01.png) no-repeat;
+}
+.themaWrap .event07 li strong.icon02::before {
+    width: 70px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon02.png) no-repeat;
+}
+.themaWrap .event07 li strong.icon03::before {
+    width: 66px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon03.png) no-repeat;
+}
+.themaWrap .event07 li strong.icon04::before {
+    width: 65px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon04.png) no-repeat;
+}
+.themaWrap .event07 li strong.icon05::before {
+    width: 68px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon05.png) no-repeat;
+}
+.themaWrap .event07 li strong.icon06::before {
+    width: 49px;
+    background: url(../resource/images/thema/230829/thema_ev07_icon06.png) no-repeat;
+}
+.themaWrap .event07 li strong {
+    font-size: 24px;
+}
+
+.themaWrap .event08 .innerSection {
+    padding: 0 0 370px;
+}
+.themaWrap .event08 .etcWRap {
+    margin-bottom: 120px;
+    text-align: center;
+}
+.themaWrap .event08 ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    gap: 40px 20px;		
+}
+.themaWrap .event08 li {
+    width: calc(100% / 2 - 10px);	
+    position: relative;
+    background: #fff;
+    border-radius: 30px;
+    border: 15px solid #dfdfdf;							
+}
+.themaWrap .event08 li a {
+    display: block;
+    height: 100%;
+    width: 100%;							
+    padding: 24px 30px;
+}
+.themaWrap .event08 .titWrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+.themaWrap .event08 .titWrap p {
+    width: 230px;
+    padding: 8px 0;
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 50px;
+}
+.themaWrap .event08 .txtWrap {
+    margin-bottom: 40px;
+}
+.themaWrap .event08 .txtWrap p {
+    color: #000;
+    font-size: 24px;
+    line-height: 1.4;
+}
+.themaWrap .event08 .evBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.themaWrap .event08 .evBtn p {
+    font-size: 28px;
+}
+.themaWrap .event08 .evBtn p span {
+    position: relative;
+    z-index: 1;
+}
+.themaWrap .event08 .evBtn p span::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.3s;
+    z-index: -1;
+    opacity: 1;
+}
+.themaWrap .event08 li:nth-child(1) .evBtn p span::after {
+    background: #dfdfdf;
+}
+.themaWrap .event08 li:nth-child(2) .evBtn p span::after {
+    background: #c3ecf5;
+}
+.themaWrap .event08 li:nth-child(3) .evBtn p span::after {
+    background: #ffee9f;
+}
+.themaWrap .event08 li:nth-child(4) .evBtn p span::after {
+    background: #dbd7f9;
+}
+.themaWrap .event08 a:hover .evBtn p span::after {
+    width: 100%;
+}
+.themaWrap .event08 .titWrap p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);						
+}
+.themaWrap .event08 .titWrap.icon01 p::after {
+    width: 63px;
+    height: 63px;					
+    background: url(../resource/images/thema/230829/thema_ev08_icon01.png) no-repeat;
+}
+.themaWrap .event08 .titWrap.icon02 p::after {
+    width: 55px;
+    height: 69px;					
+    background: url(../resource/images/thema/230829/thema_ev08_icon02.png) no-repeat;
+}
+.themaWrap .event08 .titWrap.icon03 p::after {
+    width: 60px;
+    height: 60px;					
+    background: url(../resource/images/thema/230829/thema_ev08_icon03.png) no-repeat;
+}
+.themaWrap .event08 .titWrap.icon04 p::after {
+    width: 50px;
+    height: 48px;					
+    background: url(../resource/images/thema/230829/thema_ev08_icon04.png) no-repeat;
+}
+.themaWrap .event08 li:nth-child(1) {
+    border-color: #dfdfdf;
+}
+.themaWrap .event08 li:nth-child(2) {
+    border-color: #c3ecf5;
+}
+.themaWrap .event08 li:nth-child(3) {
+    border-color: #ffee9f;
+}
+.themaWrap .event08 li:nth-child(4) {
+    border-color: #dbd7f9;
+}
+
+.themaWrap .event09 .innerSection {
+    padding: 0 0 470px;
+}
+.themaWrap .event09 .evBtn {
+    display: flex;
+    margin: 0 50px;
+    gap: 0 20px;
+}
+.themaWrap .event09 .evBtn a {
+    display: flex;
+    width: calc(100% / 2 - 10px);
+    align-items: center;
+    justify-content: center;
+    min-height: 78px;
+    padding: 4px 10px;
+    position: relative;
+    background: #fff;
+    border: 2px solid #003281;
+    border-radius: 50px;
+    box-shadow: 0 10px 0 #003281;
+}
+.themaWrap .event09 .evBtn a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -240px;
+    transform: translateX(-50%);
+}
+.themaWrap .event09 .evBtn a.icon01::before {
+    width: 331px;
+    height: 245px;
+    background: url(../resource/images/thema/230829/thema_ev09_img01.png) no-repeat;
+    background-size: contain;
+}
+.themaWrap .event09 .evBtn a.icon02::before {
+    width: 315px;
+    height: 245px;
+    background: url(../resource/images/thema/230829/thema_ev09_img02.png) no-repeat;
+    background-size: contain;
+}
+.themaWrap .event09 .evBtn a::after {
+    content: '';
+    width: 70px;
+    height: 58px;
+    position: absolute;
+    bottom: -12px;
+    right: -20px;
+    background: url(../resource/images/thema/230829/thema_ev09_img05.png) no-repeat;
+    background-size: contain;
+}
+.themaWrap .event09 .evBtn a:hover::after {
+    animation: boxClick 0.5s infinite ease-in, ease-in-out;
+}
+@keyframes boxClick {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
