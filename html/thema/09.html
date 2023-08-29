@@ -3,7 +3,7 @@
   <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>테마 8호 2023 잡아바 상반기 결산</title>
+	<title>테마 9호 내 주변 일자리 지각변동</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css" />
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css" />
@@ -31,13 +31,25 @@
 			<div class="innerSection">
 				<style>
 					.themaWrap .mainVisual {
+						position: relative;
 						background: url(./resource/images/thema/230829/thema_main_bg.jpg) no-repeat center;
 						background-size: cover;
 					}
+					.themaWrap .mainVisual::before {
+						content: '';
+						width: 316px;
+						height: 263px;
+						position: absolute;
+						left: 50%;
+						top: 0;
+						transform: translateX(-50%);
+						background: url(./resource/images/thema/230829/thema_main_img02.png) no-repeat;
+					}
 					.themaWrap .mainVisual .innerSection {
-						padding: 200px 0 36px;
+						padding: 70px 0 36px;
 					}
 					.themaWrap .mainVisual .titWrap {
+						position: relative;
 						padding-bottom: 300px;
 						background-image: url(./resource/images/thema/230829/thema_main_img01.png);
 						background-position: center bottom;
@@ -51,30 +63,64 @@
 					.themaWrap .mainVisual .titWrap p {
 						font-size: 48px;
 					}
+					.themaWrap .mainVisual .titWrap::before {
+						content: '';
+						width: 237px;
+						height: 234px;
+						position: absolute;
+						left: -300px;
+					    bottom: -70px;
+						background: url(./resource/images/thema/230829/thema_main_img03.png) no-repeat;
+					}
+					.themaWrap .mainVisual .titWrap::after {
+						content: '';
+						width: 221px;
+						height: 283px;
+						position: absolute;
+						left: 150px;
+					    bottom: -70px;
+						background: url(./resource/images/thema/230829/thema_main_img04.png) no-repeat;
+					}
 				</style>
 				<div class="titWrap">
-					<strong>내 주변 일자리 지각변동</strong>
-					<p>
-						데이터로 알아보는 경기도 고용동향<br>
-						알고 준비하면 취업이 빨라집니다!
-					</p>
+					<img src="./resource/images/thema/230829/thema_main_title.png" alt="내 주변 일자리 지각변동">
 				</div>
 			</div>			
 		</article>
-		 
+ 
 		<article class="event01">
 			<style>
 				.themaWrap .event01 {
 					background: url(./resource/images/thema/230829/thema_ev01_bg.png) no-repeat #dcf1ed center;
-					background-size: cover;
-					
+					background-size: cover;					
+				}
+				.themaWrap .event01 .innerSection {
+					padding: 116px 0 170px;
 				}
 				.themaWrap .event01 .txtWrap {
+					position: relative;
 					height: 364px;
-					padding-top: 50px;
+					padding-top: 110px;
 					background: url(./resource/images/thema/230829/thema_ev01_bg02.png) no-repeat top;
 					background-size: contain;					
 					text-align: center;
+				}
+				.themaWrap .event01 .txtWrap::before {
+					content: '';
+					width: 198px;
+					height: 182px;
+					position: absolute;
+					right: 54px;
+				    bottom: -90px;
+					background: url(./resource/images/thema/230829/thema_ev01_img01.png) no-repeat;
+				}
+				.themaWrap .event01 .txtWrap p {
+					font-size: 36px;
+					line-height: 1.2;
+				}
+				.themaWrap .event01 .txtWrap p span {
+					display: block;
+					margin-bottom: 20px;
 				}
 
 				.themaWrap .titleWrap {
@@ -126,11 +172,11 @@
 			</style>
 			<div class="innerSection">
 				<div class="txtWrap">
-					<p>
-						대면활동·돌봄수요 증가로<br>
-						서비스업 취업자 증가가 지속될 것으로 보이나
-						<span>제조·건설업 부진으로 단기간 고용상황 개선은<br>
-						어려울 것으로 전망됩니다.</span>
+					<p class="hPro">
+						<span class="hPro fcRed">대면활동·돌봄수요 증가로<br>
+						서비스업 취업자 증가가 지속될 것으로 보이나</span>
+						제조·건설업 부진으로 단기간 고용상황 개선은<br>
+						어려울 것으로 전망됩니다.
 					</p>
 				</div>
 			</div>
@@ -392,7 +438,7 @@
 						content: '';
 						position: absolute;
 						left: 50%;
-						top: 10px;
+						top: 30px;
 						transform: translateX(-50%);
 					}
 					.themaWrap h3.icon01::before {
@@ -415,10 +461,21 @@
 						height: 123px;
 						background: url(./resource/images/thema/230829/thema_tit_icon04.png) no-repeat;
 					}
+					.themaWrap .etc {
+						margin: 0 50px;
+					}
+					.themaWrap .etc p {
+						margin-bottom: 20px;
+						font-size: 18px;
+						text-align: right;
+					}
 
 				</style>
 				<div class="evTit">
 					<h3 class="icon01 gBold">지역별 고용동향</h3>
+				</div>
+				<div class="etc">
+					<p>‘23년 상반기 기준</p>
 				</div>
 				<div class="titleWrap">
 					<span class="circle"></span>
@@ -646,6 +703,9 @@
 						20대 감소세 지속</p>
 				</div>
 				<style>
+					.themaWrap .event06 .innerSection {
+						padding: 0 0 100px;
+					}
 					.themaWrap .event06 .grayBox {
 						position: relative;
 						padding: 80px 50px 100px;
@@ -687,6 +747,15 @@
 					}
 					.themaWrap .event06 .imgWrap.bar02::before {
 						background: url(./resource/images/thema/230829/thema_ev06_icon02.png) no-repeat;
+					}
+					.themaWrap .event06 .imgWrap.bar03::before {
+						background: url(./resource/images/thema/230829/thema_ev06_icon03.png) no-repeat;
+					}
+					.themaWrap .event06 .imgWrap.bar04::before {
+						background: url(./resource/images/thema/230829/thema_ev06_icon04.png) no-repeat;
+					}
+					.themaWrap .event06 .imgWrap.bar05::before {
+						background: url(./resource/images/thema/230829/thema_ev06_icon05.png) no-repeat;
 					}
 					.themaWrap .event06 .txtWrap p {
 						margin-bottom: 70px;
@@ -762,7 +831,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="imgWrap bar02">
+							<div class="imgWrap bar04">
 								<img src="./resource/images/thema/230829/thema_ev06_img04.png" alt="50대">
 							</div>
 							<div class="txtWrap">
@@ -771,7 +840,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="imgWrap bar02">
+							<div class="imgWrap bar05">
 								<img src="./resource/images/thema/230829/thema_ev06_img05.png" alt="60대">
 							</div>
 							<div class="txtWrap">
@@ -796,6 +865,222 @@
 					<p class="gBold">서비스업 분야 증가세 유지<br>
 						건설 · 제조업 감소세</p>
 				</div>
+				<style>
+					.themaWrap .event07 .innerSection {
+						padding: 0 0 200px;
+					}
+					.themaWrap .event07 .grayBox {
+						display: flex;
+						padding: 50px 45px;
+						margin: 0 50px;
+						background: #f2f2f2;
+						border: 2px solid #fff;
+						border-radius: 20px;
+						gap: 0 40px;
+					}
+					.themaWrap .event07 .grayBox + .grayBox {
+						margin-top: 25px;
+					}
+					.themaWrap .event07 .txtWrap {
+						position: relative;
+						width: 138px;
+						text-align: center;
+					}
+					.themaWrap .event07 .txtWrap p {
+						font-size: 36px;
+					}
+					.themaWrap .event07 .txtWrap p::after {
+						content: '';
+						width: 134px;
+						height: 242px;
+						position: absolute;
+						bottom: -20px;
+						left: 0;
+						background: url(./resource/images/thema/230829/thema_ev07_img01.png) no-repeat;
+					}
+					.themaWrap .event07 .grayBox.style02 .txtWrap p::after {
+						width: 105px;
+						height: 238px;
+						background: url(./resource/images/thema/230829/thema_ev07_img02.png) no-repeat;
+					}
+					.themaWrap .event07 ul {
+						display: flex;
+						width: 100%;
+						gap: 0 10px;
+					}
+					.themaWrap .event07 li {
+						width: calc(100% / 3);
+						padding: 20px 10px;
+						background: #fff;
+						border-radius: 20px;
+						text-align: center;
+					}
+					.themaWrap .event07 li p {
+						display: flex;
+						height: 70px;
+						padding: 10px;
+						color: #fff;
+						font-size: 22px;
+						border-radius: 40px;
+						align-items: center;
+						justify-content: center;
+					}
+					.themaWrap .event07 li strong::before {
+						content: '';
+						display: block;						
+						height: 72px;
+						margin: 40px auto;						
+					}
+					.themaWrap .event07 li strong.icon01::before {
+						width: 64px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon01.png) no-repeat;
+					}
+					.themaWrap .event07 li strong.icon02::before {
+						width: 70px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon02.png) no-repeat;
+					}
+					.themaWrap .event07 li strong.icon03::before {
+						width: 66px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon03.png) no-repeat;
+					}
+					.themaWrap .event07 li strong.icon04::before {
+						width: 65px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon04.png) no-repeat;
+					}
+					.themaWrap .event07 li strong.icon05::before {
+						width: 68px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon05.png) no-repeat;
+					}
+					.themaWrap .event07 li strong.icon06::before {
+						width: 49px;
+						background: url(./resource/images/thema/230829/thema_ev07_icon06.png) no-repeat;
+					}
+					.themaWrap .event07 li strong {
+						font-size: 24px;
+					}
+				</style>
+				<div class="grayBox">
+					<div class="txtWrap">
+						<p class="gBold">증가</p>
+					</div>
+					<ul>
+						<li>
+							<p class="bcRed">사업, 개인, 공공<br>
+								서비스 및 기타</p>
+							<strong class="icon01">5만 6천명 증가</strong>
+						</li>
+						<li>
+							<p class="bcRed">도소매<br>
+								숙박음식점업
+								</p>
+							<strong class="icon02">3만 7천명 증가</strong>
+						</li>
+						<li>
+							<p class="bcRed">농림어업</p>
+							<strong class="icon03">1천명 증가</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="grayBox style02">
+					<div class="txtWrap">
+						<p class="gBold">감소</p>
+					</div>
+					<ul>
+						<li>
+							<p class="bcBlue">건설업</p>
+							<strong class="icon04">4만 1천명 감소</strong>
+						</li>
+						<li>
+							<p class="bcBlue">제조업</p>
+							<strong class="icon05">3만 2천명 감소</strong>
+						</li>
+						<li>
+							<p class="bcBlue">전기, 운수<br>
+								통신, 금융</p>
+							<strong class="icon06">2만 3천명 감소</strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="event08">
+			<div class="innerSection">
+				<style>
+					.themaWrap .event08 .etcWRap {
+						margin-bottom: 120px;
+						text-align: center;
+					}
+					.themaWrap .event08 ul {
+						display: flex;
+						margin: 0 50px;
+						gap: 40px 20px;						
+					}
+					.themaWrap .event08 li {
+						width: calc(100% / 2);
+						padding: 24px 30px;
+						border-radius: 30px;
+					}
+					.themaWrap .event08 .titWrap {
+						position: relative;
+					}
+					.themaWrap .event08 .titWrap p {
+						width: 230px;
+						padding: 8px 0;
+						color: #000;
+						font-size: 32px;
+						text-align: center;
+						border-radius: 50px;
+					}
+					.themaWrap .event08 li:nth-child(1) {
+						border: 15px solid #dfdfdf;
+					}
+					.themaWrap .event08 li:nth-child(1) .titWrap p {						
+						background: #dfdfdf;
+						
+					}
+				</style>
+				<div class="etcWRap">
+					<img src="./resource/images/thema/230829/thema_ev08_title.png" alt="어려운 여건 속에서도 잡아바로 취업하자">
+				</div>
+				<div class="evTit">
+					<h3 class="icon04 gBold">잡아바랑 취업 준비하러 가기</h3>
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<div class="titWrap">
+								<p class="gBold">취업 초보</p>
+							</div>
+							<div class="txtWrap">
+								<p>나는 지금<br>
+									취업준비 제대로 하고 있을까?<br>
+									취업시장에 뛰어든 새내기들, <br>
+									내가 원하는 직무와 경로를<br>
+									탐색해보세요!</p>
+							</div>
+							<div class="btnWrap">
+								<p>자세히 보기 →</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="titWrap">
+								<p>취업 초보</p>
+							</div>
+							<div class="txtWrap">
+								<p>나는 지금<br>
+									취업준비 제대로 하고 있을까?<br>
+									취업시장에 뛰어든 새내기들, <br>
+									내가 원하는 직무와 경로를<br>
+									탐색해보세요!</p>
+							</div>
+							<div class="btnWrap">
+								<p>자세히 보기 →</p>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</article>
 
