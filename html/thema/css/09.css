@@ -80,7 +80,7 @@
 .themaWrap .evBg { background: url(../resource/images/thema/230829/thema_evbg.jpg) top no-repeat; background-size: cover; } 
 .themaWrap .event05 .innerSection { padding: 100px 0; } 
 .themaWrap .evTit { margin-bottom: 30px; text-align: center; } 
-.themaWrap h3 { position: relative; display: inline-block; padding: 150px 0 20px; background: url(../resource/images/thema/230829/thema_tit_bg.png) no-repeat top; background-size: contain; font-size: 60px; } 
+.themaWrap h3 { position: relative; display: inline-block; padding: 150px 0 20px; background: url(../resource/images/thema/230829/thema_tit_bg.png) no-repeat top; background-size: contain; font-size: 60px; word-break: keep-all;} 
 .themaWrap h3::before { content: ''; position: absolute; left: 50%; top: 30px; transform: translateX(-50%); } 
 .themaWrap h3.icon01::before { width: 134px; height: 129px; background: url(../resource/images/thema/230829/thema_tit_icon01.png) no-repeat; background-size: contain; } 
 .themaWrap h3.icon02::before { width: 122px; height: 131px; background: url(../resource/images/thema/230829/thema_tit_icon02.png) no-repeat; background-size: contain; } 
@@ -263,7 +263,7 @@
 .themaWrap .event09 .evBtn a.icon01::before { width: 220px; height: 163px; } 
 .themaWrap .event09 .evBtn a.icon02::before { width: 210px; height: 163px; } 
 .themaWrap .event09 .evBtn a::before { top: -158px; } 
-.themaWrap .event09 .evBtn a { padding: 4px 40px; } 
+.themaWrap .event09 .evBtn a img {transform: scale(0.8);}
 .themaWrap .event09 .evBtn a::after { width: 50px; height: 41px; right: 0; } 
 
 .themaWrap .event06 .grayBox { margin: 0; } 
@@ -344,7 +344,8 @@
 .themaWrap .event08 .titWrap.icon02 p::after { width: 30px; height: 38px; } 
 .themaWrap .event08 .titWrap.icon03 p::after { width: 40px; height: 40px; } 
 .themaWrap .event08 .titWrap.icon04 p::after { width: 40px; height: 38px; } 
-.themaWrap .event08 .txtWrap p { font-size: 14px; } 
+.themaWrap .event08 .evBtn {text-align: center;}
+.themaWrap .event08 .txtWrap p { font-size: 14px; text-align: center;} 
 .themaWrap .event08 .evBtn p { font-size: 20px; } 
 
 .themaWrap .event09 .evBtn a.icon01::before,
