@@ -1,6 +1,6 @@
 .fcRed { color: #ff0000; } 
 .fcMint { color: #32bfb7; } 
-.fcWhite { color: #fff; } 
+.fcWhite { color: #fff; }
 .bcBlue {background: #008ae0 !important;}
 .fs12 { font-size: 12px;}
 .fs16 { font-size: 16px; } 
@@ -8,7 +8,9 @@
 .mt20 { margin-top: 20px; } 
 .mb5 { margin-bottom: 5px; } 
 .mt8 { margin-top: 8px; } 
-.mr20 { margin-right: 20px; } 
+.mr20 { margin-right: 20px; }
+.pt10 {padding-top: 10px !important;}
+.pb10 {padding-bottom: 10px !important;}
 .trt { text-align: right; } 
 .flexSP { display: flex; flex-wrap: wrap; justify-content: space-between; } 
 .flexAC { display: flex; align-items: center; } 
