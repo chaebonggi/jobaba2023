@@ -61,6 +61,7 @@
 .entpConts .btnWhite01 { background: #fff; color: #010101; border: 1px solid #dddddd; } 
 .entpConts .btnBlue01 { background: #008ae0; color: #fff; border: 1px solid #008ae0; } 
 .entpConts .btnMint01 { background: #3bc5b6; color: #fff; border: 1px solid #3bc5b6; } 
+.entpConts .btnRed01 { background: #ff0000; color: #fff; border: 1px solid #ff0000; }
 .entpConts .check input[type="checkbox"] + label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 4px; background: #fff; border: 1px solid #9ea4aa; border-radius: 3px; vertical-align: text-bottom; box-sizing: border-box; } 
 .entpConts .check input[type="checkbox"]:checked + label::before { content: ''; background-color: #67c3be; background-image: url(https://www.jobaba.net/runCenter/home/images/centerJoin/check_btn.png); background-repeat: no-repeat; background-position: 50%; border-color: #67c3be; } 
 .entpConts .check span { display: inline-block; } 
