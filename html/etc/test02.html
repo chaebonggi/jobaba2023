@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>취업 성공 축하 이벤트</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+	
+</head>
+<body>
+<div id="page-content">
+	<style>
+		#gameContainer {
+			width: 716px;
+			height: 717px;
+			text-align: center;
+			margin: auto;
+			position: relative;
+			margin-top: 120px;
+		}
+		#gameContainer .cursor {
+			position: absolute;
+			background: url(./images/test/ev_obj.png) no-repeat;
+			width: 94px;
+			height: 128px;
+			top: -85px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 999;
+		}
+		#gameContainer .board_on {
+			width: 716px;
+			height: 717px;
+			left: 0px;
+			z-index: 3;
+			background: url(./images/test/ev_roulette.png) no-repeat center;
+		}
+		#gameContainer .board_start {
+			width: 275px;
+			height: 275px;
+			background: #fff714;
+			color: #1d3972;
+			cursor: pointer;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 55;
+			transform: translate(-50%,-50%);
+			font-size: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
+		#gameContainer .board_on img{position:absolute;}
+		#gameContainer .board_on img:nth-child(1){right: 310px;top: 50px}
+		#gameContainer .board_on img:nth-child(2) {left: 100px;top: 200px;}
+		#gameContainer .board_on img:nth-child(3) {left: 80px;bottom: 180px;}
+		#gameContainer .board_on img:nth-child(4) {left: 50%;transform: translateX(-50%);bottom: 50px}
+		#gameContainer .board_on img:nth-child(5) {right: 80px;bottom: 180px}
+		#gameContainer .board_on img:nth-child(6) {right: 100px;top: 200px}
+
+		.ev_pop{position: fixed;background: #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9999999999999;border-radius: 10px;overflow: hidden;}
+		.ev_pop.wd450{max-width: 450px;width: 90%;}
+		.ev_pop.wd550{max-width: 550px;width: 90%;}
+		.ev_pop .popup_top{background:#21a39b;color: #fff;height: 50px;position: relative;}
+		.ev_pop .popup_top .close{font-size: 24px;position: absolute;right: 10px;top: 50%;transform: translateY(-50%)}
+		.ev_pop  .popup_inner{padding: 30px;text-align: center;font-size: 16px}
+		.ev_pop#popup_gift strong{color: #ff3c81;font-size: 18px}
+		.btn_wrap{margin-top: 30px;text-align: center;}
+		.ev_pop .btn_wrap a{font-size: 15px;padding: 7px 20px;border-radius: 5px;}
+		.ev_pop .btn_wrap a + a{margin-left: 10px}
+		.ev_pop .btn_wrap .btn_blue{background: #1d407c !important}
+		.ev_pop .btn_wrap .btn_gray{background: #dcdcdc;}
+
+		.evBg {height: 1000px;}
+	</style>
+	<div class="area_title03">
+
+		<div class="shadow"></div>
+		<h3 class="pink kotra f50">EVENT TIPS</h3>
+		<ul class="bar_list mt20">
+			<li class="f18 sCore blue">본 이벤트는 중복참여가 가능합니다.(최대 4회)</li>
+			<li class="f18 sCore blue">서비스별로 룰렛 이용권은 1개씩만 지급됩니다.</li>
+			<li class="f18 sCore blue">서비스 이용 후 별점 및 후기를 남기시면 <span class="sCore">깜짝 경품</span> 당첨확률이 올라갑니다.</li>
+			<li class="f18 sCore blue">허위·조작된 응모 내역은 적발시 당첨에서 제외됩니다.</li>
+		</ul>
+
+
+		<div id="gameContainer">
+			<a href="#" onclick="" class="board_start join kotra">
+				START
+			</a>
+			<div class="cursor"></div>
+			<div class="board_on obj">
+				<img src="images/test/gift1.png">
+				<img src="images/test/gift2.png">
+				<img src="images/test/gift3.png">
+				<img src="images/test/gift4.png">
+				<img src="images/test/gift5.png">
+				<img src="images/test/gift6.png">
+			</div>
+
+
+		</div>
+		<!-- //gameContainer -->
+		<div class="evBg">
+			
+		</div>
+
+		<!-- 팝업창 -->
+
+		<div id="popup_gift" class="ev_pop wd450 fixed" style="display: none">
+			<div class="popup_top clear">
+				<a href="javascript:void(0)" class="close fr" onclick="closePopup()">×</a>
+			</div>
+			<div class="popup_inner">
+				<div class="lottery_present">
+					<p class="gift_end1"></p>
+					<p class="gift_end2"></p>
+					<p>경품은 이벤트 종료 후에 일괄 발송 예정입니다.</p>
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 응모권 없을 때 출력 -->
+		<div id="popup_no_ticket" class="ev_pop wd550 fixed wd450" style="display: none">
+			<div class="popup_top clear">
+				<a href="javascript:void(0)" class="close fr" onclick="closePopup()">×</a>
+			</div>
+			<div class="popup_inner">
+				<div class="f18 tct">응모권이 없습니다.<br>
+					취업역량강화 서비스 이용 하고<br>
+					룰렛 응모권 획득 후 참여해주세요.
+
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="https://www.jobaba.net/interview/mainList.do" class="btn_style04 btn_blue btn" target="_blank">응모권 받으러 가기
+					</a>
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+		</div>
+		<!-- //응모권 없을 때 출력 -->
+
+		<!-- 이벤트 마감 출력 -->
+		<div id="popup_deadline" class="ev_pop wd550 fixed wd550" style="display: none">
+			<div class="popup_top clear">
+				<a href="javascript:void(0)" class="close fr" onclick="closePopup()">×</a>
+			</div>
+			<div class="popup_inner">
+				<div class="f18 tct">경품이 모두 소진되어 이벤트가 조기 종료되었습니다.<br>
+					다음 이벤트에 참여해주시기 바랍니다.<br>
+					감사합니다.
+
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+
+		</div>
+		<!-- //이벤트 마감 출력 -->
+
+
+
+		<!-- //팝업창-->
+
+		<div class="tct">
+			<div class="ev_ticket f40 blue bold01 kotra">
+				나의 응모권: <strong class="f50 pink">1</strong>개
+			</div>
+		</div>
+
+		<div class="btn_wrap">
+			<a href="https://www.jobaba.net/interview/mainList.do" class="go_link f30 kotra" target="_blank">룰렛 응모권 얻으러 가기</a>
+		</div>
+
+
+	</div>
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+		var gift;
+		var present = ['비타 500', '빙그레 바나나우유', '비타 500', '빙그레 바나나우유', '비타 500', '빙그레 바나나우유']
+		var clicked = 0;
+		var rotationPos = new Array(60, 120, 180, 240, 300, 360);
+
+		// for (i = 1; i < 7; i++) {
+		// 	var pictures = "images/test/gift" + i + ".png";
+		// 	$(".board_on").append('<img  src="' + pictures + '" />');
+		// }
+		$(".join").on("mousedown", function() {
+			if (clicked <= 0) {
+				iniGame(Math.floor(Math.random() * 6));
+			} else if (clicked >= 1) {
+				event.preventDefault();
+				$('#popup_gift_end').show();
+				$('body').addClass('not_scr');
+				$('.fade').show();
+			}
+			clicked++
+		});
+
+		function iniGame(num) {
+			gift = num;
+			TweenLite.killTweensOf($(".board_on"));
+			TweenLite.to($(".board_on"), 0, {
+				css: {
+					rotation: rotationPos[gift]
+				}
+			});
+			TweenLite.from($(".board_on"), 6, {
+				css: {
+					rotation: -3000
+				},
+				onComplete: endGame,
+				// ease: Sine.easeOut
+			});
+			console.log("gift 숫자 : " + (gift + 1) + "rotationPos" + rotationPos);
+		}		
+
+		function endGame() {
+			var copImg = "images/test/gift" + (gift + 1) + ".png";
+			console.log("이미지 : " + copImg);
+
+
+			$("#popup_gift .lottery_present .gift_end1").text(function() {
+				return "축하합니다."
+			});
+
+			$("#popup_gift .lottery_present .gift_end2").html(function() {
+				return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
+			});
+
+
+			//$('<img  src="' + copImg + '" ///>').prependTo("#popup_gift .lottery_present");
+			setTimeout(function() {
+				openPopup("popup_gift");
+			}, 1000);
+		}
+
+
+	});
+
+
+	function openPopup(id) {
+		$('.ev_pop').slideUp(0);
+		var popupid = id
+		$('body').addClass('not_scr');
+		$(".shadow").show();
+		$('#' + popupid).show(0);
+		$('#theme').on('scroll touchmove mousewheel', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			return false;
+		});
+	}
+
+	function closePopup() {
+		$('.ev_pop').hide();
+		$('body').removeClass('not_scr');
+		$('.shadow').hide();
+		$('#theme').off('scroll touchmove mousewheel');
+	};
+
+</script>
+</body></html>

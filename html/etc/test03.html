@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>취업 성공 축하 이벤트</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+	
+</head>
+<body>
+<div id="page-content">
+	<style>
+		.btn-example{z-index:8888; display: inline-block; font-size:0px;  position: relative;cursor:pointer;}
+		.btn-example img {width:100%;}
+		.ch-event1103{display: inline-block; position: absolute; top:0px; left:50%;margin-left:-540px; width: 1080px;}
+		.ch-event1103 > div {width: 100px;position: absolute;}
+		.ch-eventclose{display: inline-block; font-size:15px; position: absolute; cursor: pointer; right:-10px; top:0px; color:#000;z-index:10;}
+	
+		@media screen and (max-width: 768px) {
+			.ch-event1103{width: 100px; height: 100px; left:0%;margin-left:0;}
+			.btn-example{width: 100px; height: 100px;}
+			.btn-example img{width: 100%;}
+			.ch-event1103 > div {width: 100%;position: absolute;}
+			.ch-eventclose{font-size:20px; left:100px;}
+		}
+	</style>
+	<div class="float_event">
+		<div>
+			<a id="imgFindJobabaLogo" class="btn-example">
+				<c:set var="randomVal"><tag:randomValue from="1" to="4"/></c:set>
+				<img src="https://www.jobaba.net/resource/images/eventImg/202106/character02_on.png" alt="잡아바 잡고" />
+			</a>
+			<button id="btnCloseJobabaLogo" class="event_close">닫기</button>
+		</div>
+	</div>
+
+	<div class="modal fade" id="eventLayerPop">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" id="btnModalClose" class="close" data-dismiss="modal">
+						x
+					</button>
+					<h4 class="modal-title">잡아바 캐릭터를 잡아봐!</h4>
+				</div>
+
+				<div class="modal-body">
+					<c:choose>
+						<c:when test="${not empty sessionScope.USR}">
+							<p class="ctxt mb20" data-login-yn="Y"></p>
+							<p class="ctxt mb20">이벤트 페이지에서 확인 하시겠습니까?</p>
+						</c:when>
+						<c:otherwise>
+							<p class="ctxt mb20" data-login-yn="N">로그인 후 참여하실 수 있습니다.</p>
+							<p class="ctxt mb20">로그인 하시겠습니까?</p>
+						</c:otherwise>
+					</c:choose>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" id="btnModalConfirm" class="btn btn-default">
+						확인
+					</button>
+					<button type="button" id="btnModalCancel" class="btn btn-default" data-dismiss="modal">
+						닫기
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var today = new Date();
+		var strToday = "" + today.getFullYear() + (today.getMonth() + 1 < 10? "0" + (today.getMonth() + 1): today.getMonth() + 1) + (today.getDate() < 10? "0" + today.getDate(): today.getDate());
+		$("#imgFindJobabaLogo").parent().parent().show();
+		// 잡아바 로고 display
+		var randomValue = Math.floor(Math.random() * 4);	// 노출확률 25%
+		//var randomValue = Math.floor(Math.random() * 0);
+		var $layerContent = $("#eventLayerPop div.modal-content div.modal-body p:eq(0)");
+		// $layerContent.css('border', '1px solid red');
+		// $layerContent.text("이벤트에 응모하신 후 다시 참여하실 수 있습니다.");
+		// $layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+		$layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+
+
+		$('#eventLayerPop').modal();
+
+	});
+</script>
+
+</body></html>

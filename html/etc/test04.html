@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>취업 성공 축하 이벤트</title>
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- 잡아바 default css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/images/eventImg/20200922/css/evol-colorpicker.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/images/eventImg/20200922/css/jquery.Jcrop.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/images/eventImg/20200922/css/ev_style.css">
+	<link rel="stylesheet" type="text/css" href="./css/test04.css"> 
+
+</head>
+<body>
+<div id="page-content">
+	<div id="prev_pop" class="ev_pop">
+		<input type="hidden" id="seq" value=""/>
+			<h2>메세지 보내기</h2>
+			<div class="ev_pop_body">
+				<img id="prevImg" src='http://www.jobaba.net/resource/images/eventImg/20200922/paper01.png' />
+			</div>
+			<div class="ev_pop_btn_wrap">
+				<button class="btn btn_big ev_btn_down down" onclick='imgDown();return false;'>다운로드</button>
+				<button class="btn btn_big ev_btn_down kakao" onclick='imgLink();return false;'>카카오톡 보내기</button>
+				<!-- <a href="javascript:;" id="kakao-link-btn">
+					<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"/>
+				</a> -->
+			</div>
+			<button class="ev_pop_close">닫기</button>
+		</div>
+		<div class="ev_201909_wrap">
+		
+		
+			<div class="ev_201909_btm">
+				<div class="canvas_center">
+					<p class="step_tit">명절 인사 보내기</p>
+					<ul class="step_area">
+						<li><img src='http://www.jobaba.net/resource/images/eventImg/20200922/step_img1.png' alt="STEP1. 배경 이미지 선택" /><p class="step_txt">배경 이미지를 <br>선택하세요.</p></li>
+						<li><img src='http://www.jobaba.net/resource/images/eventImg/20200922/step_img2.png' alt="STEP1. 배경 이미지 선택" /><p class="step_txt">예시 문구를 선택하신 후 <br>수정해 주세요.</p></li>
+						<li><img src='http://www.jobaba.net/resource/images/eventImg/20200922/step_img3.png' alt="STEP1. 배경 이미지 선택" /><p class="step_txt">이미지 저장 후 주변 지인들에게 <br>안부 인사와 함께 보내세요.</p></li>
+					</ul>
+		
+					<div class="image_Converter_wrap">
+						<div class="ev_uni_left paper_select">
+							<p class="step_tit">배경 이미지 선택</p>
+							<ul>
+								<li><a href="#"  id="aTag1"><img src='./images/test/paper12.png' alt="배경1" /></a></li>
+								<li><a href="#"  id="aTag2"><img src='./images/test/paper11.png' alt="배경2" /></a></li>
+								<li><a href="#"  id="aTag3"><img src='./images/test/paper15.png' alt="배경3" /></a></li>
+								<li><a href="#"  id="aTag4"><img src='./images/test/paper06.png' alt="배경4" /></a></li>
+								<li><a href="#"  id="aTag5"><img src='./images/test/paper07.png' alt="배경5" /></a></li>
+								<li><a href="#"  id="aTag6"><img src='./images/test/paper06.png' alt="배경6" /></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"  id="aTag7"><img src='./images/test/paper09.png' alt="배경1" /></a></li>
+								<li><a href="#"  id="aTag8"><img src='./images/test/paper14.png' alt="배경2" /></a></li>
+								<li><a href="#"  id="aTag9"><img src='./images/test/paper13.png' alt="배경3" /></a></li>
+								<li><a href="#"  id="aTag10"><img src='./images/test/paper10.png' alt="배경4" /></a></li>
+								<li><a href="#"  id="aTag11"><img src='./images/test/paper01.png' alt="배경5" /></a></li>
+								<li><a href="#"  id="aTag12"><img src='./images/test/paper05.png' alt="배경6" /></a></li>
+							</ul>
+						</div>
+		
+						<div class="ev_uni_right">
+							<div class="clone_div"></div>
+							<div id="SavePart" class="SavePart">
+								<img id="changImg" src='./images/test/paper12.png' />
+								<div class="swiper-button-prev" onclick="prevBtn();"></div>
+									 <div class="swiper-button-next" onclick="nextBtn();"></div>
+									 <input type="hidden"  id="prevNum"  value="1" />
+									 <input type="hidden"  id="nextNum"  value="1" />
+							</div>
+		
+							<div>
+							<select name="exSelect" id="exSelect" class="select_st" onchange="exTextAdd();">
+								  <option value="0">선택</option>
+								  <option value="1">예문1</option>
+								  <option value="2">예문2</option>
+								  <option value="3">예문3</option>
+								  <option value="4">예문4</option>
+								  <option value="5">예문5</option>
+								  <option value="6">예문6</option>
+								  <option value="7">예문7</option>
+								  <option value="8">예문8</option>
+								  <option value="9">예문9</option>
+								  <option value="10">예문10</option>
+							</select>
+							</div>
+							<p class="notice">※ 예문을 선택하여 수정하거나 새로운 메시지를 작성할 수 있습니다.	</p>
+							<div class="button_g_wrap">
+								<!-- <button onclick='addText()' class="">텍스트 추가</button> -->
+								<!-- <button onclick='html2img()' class="prev_pop_btn">미리보기</button> -->
+								<button class="prev_pop_btn"  data-name="prev_pop">미리보기</button>
+								<!-- <button onclick='imgDown()'>다운로드</button> -->
+							</div>
+							<div>
+								<image id="theimage"></image>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+		<!-- begin: 이벤트 목록으로 가기 -->
+		<div class="mgt20 ar ct_box mgb20">
+			<button type="button" onclick="goEventList()" class="btn btn-success btn-lg">이벤트 목록으로 이동</button>
+		</div>
+		<!-- end: 이벤트 목록으로 가기 -->
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+<!--  -->
+<script src="https://www.jobaba.net/resource/images/eventImg/20200922/js/jquery.ui.touch-punch.js"></script>
+<script src="https://www.jobaba.net/resource/images/eventImg/20200922/js/html2canvas.js"></script>
+<script src="https://www.jobaba.net/resource/images/eventImg/20200922/js/evol-colorpicker.js"></script>
+<script src="https://www.jobaba.net/resource/images/eventImg/20200922/js/jquery.Jcrop.js"></script>
+<script src="https://www.jobaba.net/resource/images/eventImg/20200922/js/canvas2image.js"></script>
+
+<script type="text/javascript">
+
+	var mySwiper = new Swiper('.swiper-container', {
+		  slidesPerView: 3,
+		spaceBetween: 70,
+		  centeredSlides: true,
+		  loop: true,
+		  watchSlidesVisibility: true,
+		  navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		}
+		  });
+	
+	
+		$(document).ready(function(){
+			addText();
+			$( "#dialog" ).dialog();
+	
+	
+			$(document).on('click', '.add_text .copyText', function(e){
+				var thisEle = e.target;
+				fn_drag();
+				$(this).hide();
+				$(this).prev().show().focus();
+				if($(thisEle).attr("class") == "copyText"){
+					$(this).prev().focus();
+				}
+	
+				e.preventDefault();
+			});
+	
+			$(document).on('click', '.obj_del', function(){
+				$(this).parent().parent().remove();
+				//addCount--;
+			});
+	
+			$(document).on('click', '.paper_select a', function(e){
+				var $this = $(this).find("img");
+				var imgSrc = $this.attr('src');
+				$('#changImg').attr('src',imgSrc);
+				e.preventDefault();
+				addText();
+				$("#exSelect").val("0");
+			});
+	
+			$(document).on('click', '.obj_txt_bold', function(){
+				var $this = $(this).parent().parent().find('textarea');
+				if($this.css('font-weight') == 700){
+					$this.css('font-weight','400');
+				}else{
+					$this.css('font-weight','700');
+				}
+			});
+	
+			$(document).on('click', '.size_list li', function(){
+				var $this = $(this);
+				var sizeNum = $this.text();
+				$this.closest('.add_text').find('textarea').css({'font-size':sizeNum + 'px'});
+				$(".dropList").remove();
+			});
+	
+	
+	
+	
+			 $(document).on('click', '.obj_txt_size', function(){
+				var $this = $(this);
+				var textSizeArr = ['20','22','24','26','28','30'];
+				$(".dropList").remove();
+				if($this.find('.size_list').length == 0){
+					var textSizeHtml = '';
+						textSizeHtml += '<ul class="size_list dropList">';
+	
+						for(var i=0; i < textSizeArr.length; i++){
+							textSizeHtml += '<li>' + textSizeArr[i] + '</li>';
+						}
+						textSizeHtml += '</ul>';
+					$this.append(textSizeHtml);
+				}else{
+					$('.size_list').remove();
+				}
+			});
+	
+			$(document).on('click', '.obj_txt_family', function(){
+				var $this = $(this);
+				var textSizeArr = ['Roboto','Noto Sans KR','Nanum Gothic'];
+				$(".dropList").remove();
+				if($this.find('.font_list').length == 0){
+					var textSizeHtml = '';
+						textSizeHtml += '<ul class="font_list dropList">';
+	
+						for(var i=0; i < textSizeArr.length; i++){
+							textSizeHtml += '<li>' + textSizeArr[i] + '</li>';
+						}
+						textSizeHtml += '</ul>';
+					$this.append(textSizeHtml);
+				}else{
+					$('.font_list').remove();
+				}
+			});
+	
+			$(document).on('click', '.font_list li', function(){
+				var $this = $(this);
+				var fontNum = $this.text();
+				$this.closest('.add_text').find('textarea').css({'font-family':fontNum});
+				$(".dropList").remove();
+			});
+	
+			$(document).on('change', '.obj_txt_size select', function(){
+				var $this = $(this);
+				$this.closest('.add_text').find('textarea').css({'font-size':$(this).val() + 'px'});
+				$this.closest('.add_text').find('textarea').focusout();
+			});
+	
+			$(document).on('change', '.obj_txt_family select', function(){
+				var $this = $(this);
+				$this.closest('.add_text').find('textarea').css({'font-family':$(this).val()});
+				$this.closest('.add_text').find('textarea').focusout();
+			});
+	
+			$(document).on('click', '.btn_alg', function(){
+				var $this = $(this);
+				var $dataName = $this.attr('data-name');
+				$this.closest('.add_text').find('textarea').css({'text-align':$dataName});
+	
+			});
+	
+			$(document).on('focus', '.add_text textarea', function(){
+				$(this).parent().parent().addClass('drag_Selected');
+				//$(this).css({height:$(this).next().outerHeight()});
+				fn_drag();
+			});
+	
+			$(document).on('focusout', '.add_text textarea', function(){
+				//$(this).parent().removeClass('drag_Selected');
+				//$(this).parent().css('z-index','1000');
+				$style = $(this).attr("style");
+				$(this).hide();
+				$(this).next().find("a").attr("style", $style);
+				$(this).next().show();
+				$(this).next().find("a").html($(this).val());
+				$(".dropList").remove();
+			});
+	
+			//미리보기팝업
+			$(".prev_pop_btn").on("click", function(e){
+				var $this = $(this);
+				var $name = $this.attr("data-name");
+				var $pop = $("#" + $name);
+				var $pop_Width = $pop.outerWidth()/2;
+				//var $pop_Height = $pop.outerHeight()/2;
+				var $pop_Height = $pop.outerHeight()/2;
+				var $win_Width = $(window).outerWidth()/2;
+				var $win_Height = $(window).outerHeight()/2;
+	
+				if(isMobileApp() || isMobileWeb()) {
+					$("body").addClass("over_y_h");
+					$(".ctrl_btn_wrap").hide();
+					$pop.css({top:"0px", left:"0", zIndex:2000, opacity:1});
+				}else{
+					$pop.css({top:"20px", left:$win_Width-$pop_Width, zIndex:2000, opacity:1});
+				}
+				$("body").append("<div class='ev_pop_msk'></div>");
+				$(".ev_pop_msk").css({height:$win_Height*2});
+				html2img();
+				e.preventDefault();
+			});
+	
+			//팝업닫기
+			$(".ev_pop_close").on("click", function(e){
+				var $this = $(this);
+				var $pop = $(".ev_pop");
+				$("body").removeClass("over_y_h");
+				if(isMobileApp() || isMobileWeb()) {
+					$(".ctrl_btn_wrap").show();
+				}
+				$(".ev_pop_msk").remove();
+				$pop.css({top:"0", left:"0", zIndex:"-1", opacity:0});
+				e.preventDefault();
+			});
+	
+	
+	
+		});
+	
+		function fn_drag(){
+	
+			/* $(".add_text").draggable({
+				cursor:"move",
+				stack:".add_text",
+				opacity:0.8
+			});
+	
+			$(".add_text").bind("dragstart",function(event, ui){
+				$(this).addClass("color");	//bg 체인지
+			});
+			$(".add_text").bind("dragstop", function(event, ui){
+				$(this).removeClass("color")	//bg 체인지
+				$(this).css({width:'auto', height:'auto'});
+			}); */
+	
+	
+			$('#fontColorInput').colorpicker({
+				//color:'#000',
+				//initialHistory: ['#ff0000','#000000','red', 'purple'],
+				//hideButton: true
+				//defaultPalette:'web'
+			}).on('change.color', setColor)
+		}
+	
+		function setColor(evt, color){
+			var idx = $(this).parent().parent().parent().find('textarea').attr('name');
+			var obj = $(this).parent().parent().parent().find('.copyText');
+			//console.log(idx);
+			if(color){
+				$('textarea[name=' + idx + ']').css('color', color);
+				obj.css('color', color);
+			}
+		}
+	
+		function creatCropArea(){
+			var creatHtml = $('#SavePart').html();
+			$('.clone_div').prepend(creatHtml);
+		}
+	
+		function  html2img(){
+		  var canvas ="";
+		  if ( $('textarea:focus').length > 0 ) {
+			  $('textarea').focusout();
+		  }
+		  $(window).scrollTop($(".ev_uni_right").offset().top)
+		  //$(".ev_uni_right").offset().top
+		  html2canvas($("#SavePart"), {
+			  onrendered: function(canvas) {
+			  setTimeout(function() {
+				  document.getElementById("prevImg").src = canvas.toDataURL();
+				  //location.href = canvas.toDataURL('image/png').replace(/^data:image\/png/, 'data:application/octet-stream');
+					//Canvas2Image.saveAsPNG(canvas);
+					canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+				}, 200);
+			  }
+		  });
+		  return false;
+		}
+	
+		function  imgDown(){
+		  var canvas ="";
+		  html2canvas($("#SavePart"), {
+			  onrendered: function(canvas) {
+			   document.getElementById("prevImg").src = canvas.toDataURL();
+				//var a = document.createElement('a');
+		        //a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+		        //a.download = 'out.jpg';
+		        //a.click();
+				//익스플로러일경우
+				 if (navigator.msSaveBlob) {
+					  //console.log('this is IE');
+					  var URL=window.URL;
+					  var BlobBuilder = window.MSBlobBuilder;
+					  navigator.saveBlob=navigator.msSaveBlob;
+					  var imgBlob = canvas.msToBlob();
+					  if (BlobBuilder && navigator.saveBlob) {
+						var showSave =  function (data, name, mimetype) {
+						  var builder = new BlobBuilder();
+						  builder.append(data);
+						  var blob = builder.getBlob(mimetype||"application/octet-stream");
+						  if (!name)
+							name = "Download.bin";
+						  navigator.saveBlob(blob, name);
+						};
+						showSave(imgBlob, 'your_pic_name.png',"image/png");
+					  }
+					}
+				//크롬 또는 다른브라우저
+				else {
+				 var imgageData = canvas.toDataURL("image/png")
+				 var a = document.createElement('a');
+		         a.href = imgageData.replace("image/jpeg", "image/octet-stream");
+		         a.download = 'out.jpg';
+		         a.click();
+				}
+			 }
+		  });
+		  return false;
+		}
+	
+		function resize(obj) {
+		  obj.style.height = "1px";
+		  obj.style.height = (12+obj.scrollHeight)+"px";
+		}
+	
+		var addCount = 0;
+	
+		function  addText(){
+			//텍스트 삭제
+			$(".add_text").remove()
+	
+			var fontSizeArr = ['20','22','24','26','28','30'];
+			var fontArr = ['Roboto','Noto Sans KR','Nanum Gothic'];
+			var addTextHtml = "";
+				addTextHtml += '<div class="add_text">';
+				//addTextHtml += '<input type="text" name=' + addCount + ' placeholder="내용입력" />';
+				addTextHtml += '<textarea onkeydown="resize(this)" onkeyup="resize(this)" id="contents" name=' + addCount + ' rows="" cols="" placeholder="내용입력" value="" style="width:100%;min-height:80px;"></textarea><pre class="copyText"><a href="javascript:;"></a></pre>';
+				addTextHtml += '<span class="ctrl_btn_wrap">';
+				/* addTextHtml += '<span class="obj_drag"></span>'; */
+				addTextHtml += '<span class="obj_txt_family"><select name="">';
+				for(var i=0; i < fontArr.length; i++){
+					addTextHtml += '<option value="' + fontArr[i] +'">' + fontArr[i] + '</option>';
+				}
+				addTextHtml += '</select></span>';
+				addTextHtml += '<span class="obj_txt_size"><select name="">';
+				for(var i=0; i < fontSizeArr.length; i++){
+					addTextHtml += '<option value=' + fontSizeArr[i] +'>' + fontSizeArr[i] + '</option>';
+				}
+				addTextHtml += '</select></span>';
+				addTextHtml += '<input id="fontColorInput" class="obj_txt_color" value="#92cddc" />';
+				addTextHtml += '<span class="obj_txt_bold"></span>';
+				//addTextHtml += '<span class="obj_txt_al btn_alg" data-name="left"></span>';
+				//addTextHtml += '<span class="obj_txt_ac btn_alg" data-name="center"></span>';
+				//addTextHtml += '<span class="obj_txt_ar btn_alg" data-name="right"></span>';
+				addTextHtml += '<span class="obj_del"></span>';
+				addTextHtml += '</span>';
+				addTextHtml += '</div>';
+	
+			//$("#SavePart").prepend('<p class="add_text"><input type="text" name=' + addCount + ' placeholder="내용입력" /><span class="obj_drag"></span><span class="obj_del"></span></p>');
+			if(!isMobileApp() && !isMobileWeb()) {
+	
+				$("#SavePart").prepend(addTextHtml);
+	
+			}else{
+				if(addCount <= 0){
+					$("#SavePart").prepend(addTextHtml);
+				}
+			}
+	
+			//$('#SavePart textarea[name=' + addCount + ']').focus();
+			//addCount++;
+			if(!isMobileApp() && !isMobileWeb()){
+				$('.add_text').draggable();
+			}
+	
+	
+		}
+	
+		// 이벤트 리스트로 이동
+		function goEventList(){
+			location.href = "/event/list.do";
+		}
+	
+		function imgLink(){
+			var images = $('#prevImg').attr("src");
+			//sendLink(images);
+			imgLink_bak();
+		}
+	
+		function imgLink_bak(){
+			/* var images = $('#prevImg').attr("src");
+			 images.replace("data:image/png;base64," , ""); */
+			 if($("#contents").val() == ""){
+				 alert("내용을 입력해주세요.");
+				 return false;
+			 }
+			$.ajax({
+				url				: "/eventInfo/dowriteAjax.do"
+				,type			: "POST"
+				,contentType	: "application/x-www-form-urlencoded; charset=UTF-8"
+				,dataType		: "json"
+					,data			: {
+					 'content' : $("#contents").val(),
+					 'image' : $('#prevImg').attr("src")
+				}
+				,success		: (
+					function(data) {
+	
+						if(data.result === 0){
+	
+							var saveSeq = data.seq;
+	
+							//console.log(saveSeq);
+							$("#seq").val(saveSeq);
+							sendLink();
+						}else{
+							alert('통신에러  - eventInfo/dowriteAjax.do');
+						}
+	
+					}
+	
+				)
+				,error			: (
+					function(errMsg) {
+						alert('errMsg  - 다시 시도해 주세요.');
+					}
+				)
+			});
+		}
+	
+		function exTextAdd(){
+			var exSelectVal = $("#exSelect").val();
+	
+			var exTextStr = "";
+	
+			if(exSelectVal == "1"){
+				exTextStr += "행복한 추석이 우리 곁으로 성큼 다가왔습니다.\n";
+				exTextStr += "풍요로운 추석 연휴 보내시고 코로나 19로\n";
+				exTextStr += "가족 모두 모이기 힘들겠지만 그래도 뜻 깊고\n";
+				exTextStr += "행복한 시간이 되길 기원합니다.";
+			}else if(exSelectVal == "2"){
+				exTextStr += "올 추석에도 소중한 분들의 건강을 기원하며\n";
+				exTextStr += "보름달처럼 풍성하고 행복한 추석 보내시길\n";
+				exTextStr += "바랍니다.";
+			}else if(exSelectVal == "3"){
+				exTextStr += "올해는 특별한 한가위입니다.\n";
+				exTextStr += "비록 만나서 인사드리지는 못하지만 늘\n";
+				exTextStr += "건강하시고 소중한 가족들과 보름달처럼\n";
+				exTextStr += "풍성한 한가위 되세요.";
+			}else if(exSelectVal == "4"){
+				exTextStr += "한가위를 맞아 인사 올립니다.\n";
+				exTextStr += "항상 건강하시고 소망하시는 일\n";
+				exTextStr += "모두 거두시길 바랍니다.";
+			}else if(exSelectVal == "5"){
+				exTextStr += "맑고 화창한 가을에 맞이하는 한가위입니다.\n";
+				exTextStr += "코로나19로 힘든 2020년 힘든일 다 잊고\n";
+				exTextStr += "웃음 풍년 추석 맞이하세요.";
+			}else if(exSelectVal == "6"){
+				exTextStr += "풍요로운 들판처럼 넉넉한 보름달처럼\n";
+				exTextStr += "행복과 건강이 가득한 추석되시길\n";
+				exTextStr += "기원합니다.";
+			}else if(exSelectVal == "7"){
+				exTextStr += "사회적 거리두기로 인해 찾아뵙지는 못하지만\n";
+				exTextStr += "멀리에서 하시는 일 잘되기를 바라고 있습니다.\n";
+				exTextStr += "늘 건강하시고, 풍성한 한가위 되세요.";
+			}else if(exSelectVal == "8"){
+				exTextStr += "힘들었던 일상은 잠시 접고\n";
+				exTextStr += "보름달처럼 마음속에 행복이 가득 차 오르는\n";
+				exTextStr += "한가위 되시기를 기원합니다.\n";
+				exTextStr += "항상 건강하세요.";
+			}else if(exSelectVal == "9"){
+				exTextStr += "코로나로 인해 힘든 2020년입니다.\n";
+				exTextStr += "몸은 멀지만 마음만은 가깝게 건강을\n";
+				exTextStr += "우선으로 하는 한가위 되시길 바랍니다.";
+			}else if(exSelectVal == "10"){
+				exTextStr += "걱정과 불안이 많은 가을입니다.\n";
+				exTextStr += "추석연휴만큼은 이 모든것들을 잠시 잊고\n";
+				exTextStr += "가족들과 즐거운 시간 보내시기 바랍니다.";
+			}else{
+				exTextStr = "";
+			}
+	
+			addText();
+			$("#contents").html(exTextStr);
+			$(".add_text .copyText").click();
+		}
+	
+		function prevBtn(){
+			$("#exSelect").val("0");
+			var num = $("#prevNum").val();
+			var newNum = Number(num) - 1;
+			if(num == 1){
+				$("#aTag12").click();
+				$("#prevNum").val("12");
+				$("#nextNum").val("12");
+			}else{
+				$("#aTag"+newNum).click();
+				$("#prevNum").val(newNum);
+				$("#nextNum").val(newNum);
+			}
+		}
+		function nextBtn(){
+			$("#exSelect").val("0");
+			var num = $("#nextNum").val();
+			var newNum = Number(num) + 1;
+			if(num == 12){
+				$("#aTag1").click();
+				$("#prevNum").val("1");
+				$("#nextNum").val("1");
+			}else{
+				$("#aTag"+newNum).click();
+				$("#prevNum").val(newNum);
+				$("#nextNum").val(newNum);
+			}
+		}
+	
+	</script>
+
+</body></html>

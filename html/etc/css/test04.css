@@ -1,0 +1,217 @@
+.ev_201909_wrap {}
+.ev_201909_top {height:1345px;padding:730px 0 0 0;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/ev_top.png) no-repeat center top;}
+.ev_201909_wrap .hide_txt {font-size:0;line-height:0;}
+.ev_ct_box {width:1080px;margin:0 auto;}
+span.bk {display:block;}
+
+.ev_201909_btm {height:auto;padding:0 0 0 0;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/btm_bg.png) no-repeat center top;}
+.ev_201909_btm > h2, .ev_201909_btm > .ev_info_txt {text-align:center;}
+.ev_201909_btm > h2 {padding:0 0 10px 0;}
+
+.tip_wrap {width:776px;margin:0 auto;}
+.tip_wrap > h2 {padding:0 0 50px 0;text-align:center;}
+.tip_wrap .slide_list {height:589px;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/tip_bg.png) no-repeat center top;}
+.tip_wrap .item {padding:215px 100px 0 100px;text-align:center;}
+.tip_wrap .item h2 {padding:0 0 40px 0;}
+.tip_wrap .item h2 img {display:inline-block;}
+.tip_wrap .slick-dots {bottom: 90px;}
+.tip_wrap .slick-dots li button {width:18px;height:18px;background:#fff;border:2px solid #b29b4d;}
+.tip_wrap .slick-dots li.slick-active button {background:#b29b4d;}
+/* .tip_wrap .slick-prev, .tip_wrap .slick-next {width:45px;height:62px;top: 25%;text-indent:-10000px;}
+.tip_wrap .slick-prev {left: -75px;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/prev.png) no-repeat center top;}
+.tip_wrap .slick-next {right: -75px;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/next.png) no-repeat center top;} */
+.tip_wrap .slick-prev:hover,
+.tip_wrap .slick-prev:focus,
+.tip_wrap .slick-next:hover,
+.tip_wrap .slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    border:none;
+    background:;
+}
+
+.ev_pop {position:fixed;left:0;top:0;z-index:2000;opacity:0;z-index:-1;background:#fff; border-radius:15px;}
+.ev_pop h2 {height:60px;background:#081e51;color:#fff;font-size:20px;padding:0 0 0 20px; line-height:60px; border-radius:15px 15px 0 0;}
+.ev_pop .ev_pop_body {padding:25px 40px;overflow: auto;}
+.ev_pop .ev_pop_close {border-radius:0 15px 0 0;width:60px;height:60px;border:none;outline:0;position:absolute;right:0;top:0;background:#081e51 url(https://www.jobaba.net/resource/images/eventImg/20200922/ico_close.png) no-repeat 50% 50%;text-indent:-10000px;}
+.ev_pop .ev_pop_btn_wrap {padding:0 0 30px 0;text-align:center;}
+.ev_pop .ev_pop_btn_wrap .btn {width:160px;height:35px; line-height:35px; color: #fff; font-size:17px; font-weight:900; border-radius:50px; margin: 0 5px; border:none;}
+.ev_pop .ev_pop_btn_wrap .btn.down {background:#009096; color:#fff;}
+.ev_pop .ev_pop_btn_wrap .btn.kakao{background:#fae100; color:#3b1e1e;}
+.ev_pop_msk {position:fixed;left:0;top:0;width:100%;background:rgba(0,0,0,0.5);z-index:1900;}
+
+
+.caution_wrap {padding:20px;background:none;color:#fff;}
+.caution_wrap h2 {color:#fff;}
+.caution_wrap li:before {border: 1px solid #fff;}
+.image_Converter_wrap {width:1260px;padding:20px 0px 100px 0px;margin:0 auto;font-size:18px; background:url(https://www.jobaba.net/resource/images/eventImg/20200922/bg_bg.png) no-repeat; background-position:top;}
+.image_Converter_wrap h2 {padding:0 0 10px 0;}
+.image_Converter_wrap:after, .image_Converter_wrap .ev_uni_left:after {display: block; content: ''; clear: both;}
+.image_Converter_wrap .ev_uni_left ul {display:flex; justify-content:space-between; margin:0 0 20px 0;}
+.image_Converter_wrap .ev_uni_left ul li {width:13%;}
+.image_Converter_wrap .ev_uni_left ul li img {width:100%;}
+.ev_uni_right {margin:40px 0 0 0;}
+.paper_select {width:920px; margin:0 auto;}
+.SavePart {width:340px;height:560px;position:relative;background:#000; margin:0 auto;}
+.SavePart .add_text {max-width: 340px;position:absolute;top:20% !important;z-index:2000;text-align: center; height:420px !important; left:0 !important;}
+.SavePart .add_text input:focus {border:1px solid #fff;outline:0;}
+.SavePart .add_text input:focus ~ span {display:block;}
+.SavePart input[type='text'] {padding:10px;border:none;background:none;font-size:18px;}
+#fontColorInput {display:none;}
+.SavePart .add_text textarea:focus {border:1px solid #fff;outline:0;}
+.SavePart .add_text textarea:hover {border:1px solid rgba(255,255,255,.5);}
+.SavePart .add_text textarea:focus ~ span, .SavePart .add_text textarea:focus ~ div {display:block;}
+.SavePart textarea {padding:10px;border:none;background:none;font-size:18px;line-height:1.2;text-align: center; min-height:420px !important;}
+.evo-pointer {display:none;}
+.button_g_wrap {padding:15px 0 15px 0;text-align:center;}
+.button_g_wrap button {padding:3px 40px;background:#ff573b; font-size:17px; font-weight:900; border-radius:50px; color:#fff;}
+.copyText {margin: 0;display:none;cursor: pointer; }
+.copyText a {/* padding: 10px; */display:inline-block !important; margin:0 auto; height:420px !important; top:20% !important; left:0 !important;}
+.over_y_h {overflow-y:hidden;}
+
+
+.ctrl_btn_wrap {width:100%;display:block;position:absolute;bottom:-21px;display:none;}
+.ctrl_btn_wrap span {margin-left:1px;float:left;cursor:pointer;border:1px solid #ddd;}
+.evo-cp-wrap span {width:auto !important;height:auto !important;}
+
+.evo-colorind {height:22px;}
+.obj_del, .obj_drag, .obj_width, .obj_txt_size, .obj_txt_family, .obj_txt_bold, .obj_txt_color, .evo-cp-wrap {width:20px !important;height:22px;display:block;float:left;background:#fff;cursor:pointer;margin-left:1px;}
+.obj_del {float:right !important;background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/delete.png') no-repeat 50% 50%;background-size:60%;}
+.obj_drag {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/ico_drag.png') no-repeat 50% 50%;background-size:60%;}
+.evo-cp-wrap {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/paint-palette.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_family {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/txt_family.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_size {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/text-size.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_bold {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/bold-text.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_al {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/left-align.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_ac {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/center-align.png') no-repeat 50% 50%;background-size:60%;}
+.obj_txt_ar {background:#fff url('https://www.jobaba.net/resource/images/eventImg/20200922/right-align.png') no-repeat 50% 50%;background-size:60%;}
+
+.drag_Selected {z-index:100;}
+.drag_Selected .evo-pointer {display:block;}
+.font_list {width:100px;list-style:none;padding:0;margin:21px 0 0 0;position:relative;background:#fff;font-size:12px;z-index:10;border:1px solid #ddd;}
+.size_list {width:40px;list-style:none;padding:0;margin:21px 0 0 0;position:relative;background:#fff;font-size:12px;z-index:10;border:1px solid #ddd;}
+.size_list li, .font_list li  {padding:1px 0 1px 0;text-align:center;}
+.size_list li:hover, .font_list li:hover {background:#000;color:#fff;}
+
+.skin_wrap {width:120px;position:fixed;top:0px;bottom:0px;left:0px;background:#000;}
+.skin_wrap h2 {padding:10px 0 0 0;text-align:center;color:#fff;}
+.skin_body {}
+.skin_body ul {padding:10px;}
+.skin_body ul li {margin-top:10px;cursor:pointer;}
+.skin_body ul li img {width:100%;}
+
+.option_wrap {width:120px;position:fixed;top:0px;bottom:0px;left:120px;background:#f4f4f4;display:none;}
+.option_wrap h2 {padding:10px 0 0 0;text-align:center;}
+.option_wrap h3 {padding:10px 0 4px 0;font-size:14px;font-weight:400;}
+.option_body ul {padding:10px;}
+.option_body input[type='text'] {width:100%;font-size:14px;}
+
+.creatCropArea {width:300px;height:300px;position:absolute;}
+.clone_div {display:none;}
+.ctrl_btn_wrap select {display:none;}
+
+.img_Gray img {
+	/*
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	*/
+	opacity:.5;
+}
+
+.ac {text-align:center;}
+.f_bold {font-weight:bold;}
+.f_20 {font-size:20px;}
+.mgt5 {margin-top:5px;}
+.wide {width:100%;}
+
+.tip_tit {font-size:20px; color:#ff573b; font-weight:900;}
+.card_tit {font-size:26px; color:#3632a3; margin:20px 0;}
+.slick-dots li {margin:0 5px;}
+.step_tit {font-size:24px; color:#1e1e1e; font-weight:900; text-align:center; margin:0 0 40px 0; padding:40px 0 0 0;}
+.canvas_center {text-align:center; margin:0 auto; width:1260px;}
+.step_area {display:flex; margin:30px auto; width:726px; justify-content:space-between }
+.step_txt {margin:20px 0; font-size:15px; color:#393945; line-height:22px;}
+
+.ev_pop {top:100px !important; }
+.notice {font-size:14px; color:#4f4f4f; }
+.select_st { border:none; background:none; border-bottom:solid 1px #afa1a6; padding:5px 0; font-size:15px; color:#393945; width:104px; margin:20px 0 10px 0;background:url('https://www.jobaba.net/resource/images/eventImg/20200922/select_bg.png') no-repeat 100% 50%;}
+
+.swiper-button-prev {left:-70px !important; background:url(https://www.jobaba.net/resource/images/eventImg/20200922/left_sign.png);}
+.swiper-button-next {right:-70px !important; background:url(https://www.jobaba.net/resource/images/eventImg/20200922/right_sign.png);}
+.swiper-button-prev:after, .swiper-button-next:after{content:none;}
+
+.evo-pop {
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyText a {
+    white-space: break-spaces;
+    word-break: break-all;
+}
+@media screen and (max-width : 991px) {
+	#gnb-wrap {z-index:1000 !important;}
+	.ev_201909_wrap img {width:100%;}
+	.ev_201909_top {height:auto;padding:113% 0 0 0;background:#fdd4d4 url(https://www.jobaba.net/resource/images/eventImg/20200922/ev_top_m.png) no-repeat center top;background-size:100%;}
+	.ev_ct_box {width:100%;}
+	.tip_wrap {width:90%;margin:0 auto;}
+	.tip_wrap .slide_list {height:auto;margin-bottom: 0;padding: 0 0 40% 0;background:#fff;background-size:100%; }
+	.tip_wrap .item {padding:40px 30px 0 30px;text-align:center;}
+	.tip_wrap > h2 {padding:0 0 20px 0;text-align:center;}
+	.tip_wrap > h2 img {width:60%;}
+	.tip_wrap .item h2 {padding:0 0 10px 0;}
+	.tip_wrap p {font-size:13px;}
+	.ev_201909_btm {height:auto;padding:0 0 0 0;background:url(https://www.jobaba.net/resource/images/eventImg/20200922/btm_bg.png) no-repeat center top;}
+	.ev_201909_btm > h2 {padding:0 0 10px 0;}
+	.ev_201909_btm > h2 img {width:50%;}
+	.ev_201909_btm > .ev_info_txt img {width:90%;}
+	.image_Converter_wrap {width:100%;padding:20px;margin:0 auto;font-size:18px;}
+	.image_Converter_wrap h2 img {width:60%;}
+	.image_Converter_wrap .ev_uni_left,
+	.image_Converter_wrap .ev_uni_right {width:100%;float:none;}
+	.image_Converter_wrap .ev_uni_left ul li {width:15%;float:left;margin:0 3% 3% 0 !important;}
+	.image_Converter_wrap .ev_uni_left ul li:nth-child(even) {margin:0 0 0 0;}
+	.image_Converter_wrap .ev_uni_left ul li img {width:100%;}
+	.SavePart {width:80%;height:auto;}
+	.SavePart .add_text {width:100%;padding:0 15px 0 15px;left:0px; min-width:auto; height:250px !important;}
+	.obj_drag {display:none;}
+	.obj_del {}
+	.obj_txt_size, .obj_txt_family {width:auto !important;height:auto;background:none;}
+	.ctrl_btn_wrap select {display:block;float:left;font-size:12px;border:none;border-radius:0;background:#fff;}
+	.ctrl_btn_wrap ul {display:none;}
+
+	.ev_pop {width:100%; top:0 !important;}
+	.ev_pop h2 {height:35px;font-size:14px;padding:0 0 0 15px; line-height:35px;}
+	.ev_pop .ev_pop_body {padding:15px;}
+	#prevImg {width:80%; margin:0 auto;}
+	.ev_pop .ev_pop_close {width:35px;height:35px;background-size:30%;text-indent:-10000px;}
+	.ev_pop img {width:100%;}
+
+
+	.ctrl_btn_wrap {width: 90%;display:block;bottom:-30px;}
+	span.bk {display:inline;}
+	.tip_wrap .slick-dots li button {width:12px; height:12px;}
+
+	.canvas_center {width:95%;}
+	.step_area {width:100%;}
+	.step_txt  {font-size:13px; line-height:18px;}
+	.step_area {margin:20px 0;}
+	.step_area li {margin:10px;}
+	.tip_tit {font-size:15px !important;}
+	.card_tit {font-size:18px !important;}
+	.step_tit {font-size:18px;}
+	.select_st {font-size:14px;}
+	.notice {font-size:13px;}
+	.button_g_wrap button {font-size:14px;}
+	.ev_pop .ev_pop_btn_wrap {padding:0 0 20px 0;}
+	.ev_pop .ev_pop_btn_wrap .btn {font-size:14px !important; width:40%;}
+
+	.swiper-button-prev {left:-40px !important;}
+	.swiper-button-next {right:-40px !important;}
+
+	.copyText a {height:250px !important;}
+	.SavePart textarea {height:250px !important; min-height:250px !important;}
+
+}
