@@ -1,0 +1,476 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="tag" uri="/WEB-INF/META-INF" %>
+
+<!-- ==================== [begin: 캐릭터 잡기 관련 코드] ==================== -->
+
+<style>
+	.btn-example{z-index:8888; display: inline-block; font-size:0px;  position: relative;cursor:pointer;}
+	.btn-example img {width:100%;}
+	.ch-event1103{display: inline-block; position: absolute; top:0px; left:50%;margin-left:-540px; width: 1080px;}
+	.ch-event1103 > div {width: 100px;position: absolute;}
+	.ch-eventclose{display: inline-block; font-size:15px; position: absolute; cursor: pointer; right:-10px; top:0px; color:#000;z-index:10;}
+
+	@media screen and (max-width: 768px) {
+		.ch-event1103{width: 100px; height: 100px; left:0%;margin-left:0;}
+		.btn-example{width: 100px; height: 100px;}
+		.btn-example img{width: 100%;}
+		.ch-event1103 > div {width: 100%;position: absolute;}
+		.ch-eventclose{font-size:20px; left:100px;}
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*
+		var today = new Date();
+		var strToday = "" + today.getFullYear() + (today.getMonth() + 1 < 10? "0" + (today.getMonth() + 1): today.getMonth() + 1) + (today.getDate() < 10? "0" + today.getDate(): today.getDate());
+		$("#imgFindJobabaLogo").parent().parent().show();
+		// 잡아바 로고 display
+		var randomValue = Math.floor(Math.random() * 4);	// 노출확률 25%
+		//var randomValue = Math.floor(Math.random() * 0);
+
+		if(randomValue == 2){
+			// mobile 여부
+			var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+
+			var topCssRandomValue = 0;	// 잡아바 캐릭터 상하 노출 위치를 결정할 CSS용 랜덤변수
+			var leftCssRandomValue = 0;	// 잡아바 캐릭터 좌우 노출 위치를 결정할 CSS용 랜덤변수
+
+			var heightMinVal = 0;	// height max value
+			var heightMaxVal = 0;	// height minimum value
+			var widthMinVal = 0;	// width max value
+			var widthMaxVal = 0;	// width minimum value
+
+
+			//	mobile
+			//	top: 0 ~ 700
+			//	left: 360 ~ 600
+
+			//	height: 812
+			//	width: 375
+
+			//	pc
+			//	top: 100 ~ 800
+			//	left: 0 ~ 1000
+
+			//	height: 947
+			//	width: 1930
+
+
+			if (mobile) {	// mobile 인 경우의 top, left random value 설정
+				heightMinVal = 0;	// height max value
+				heightMaxVal = $(window).height() * 0.86;	// height minimum value
+				widthMinVal = $(window).width();	// width max value
+				widthMaxVal = $(window).width();	// width minimum value
+
+				topCssRandomValue = Math.floor(Math.random() * (heightMaxVal - heightMinVal) + heightMinVal);	// Math.random() * (max -min) + min
+				leftCssRandomValue = Math.floor(Math.random() * widthMinVal) - 100;		// Math.random() * (max -min) + min
+				if(leftCssRandomValue < 0){
+					leftCssRandomValue = 0;
+				}
+			}else{	// PC 인 경우의 top, left random value 설정
+				heightMinVal = 100;	// height minimum value
+				heightMaxVal = $(window).height() * 0.84;	// height max value
+				widthMinVal = 0;	// width minimum value
+				widthMaxVal = $(window).width() / 2 ;	// width max value
+
+				topCssRandomValue = Math.floor(Math.random() * (heightMaxVal - heightMinVal) + heightMinVal);	// Math.random() * (max -min) + min
+				leftCssRandomValue = Math.floor(Math.random() * (widthMaxVal - widthMinVal) + widthMinVal);		// Math.random() * (max -min) + min
+
+				// topCssRandomValue = Math.floor(Math.random() * 4);	// 잡아바 상하 노출 위치를 결정할 CSS용 랜덤변수
+				// leftCssRandomValue = Math.floor(Math.random() * 0);	// 잡아바 좌우 노출 위치를 결정할 CSS용 랜덤변수
+			}
+
+			// var topCssRandomValue = Math.floor(Math.random() * 4);	// 잡아바 상하 노출 위치를 결정할 CSS용 랜덤변수
+			// var leftCssRandomValue = Math.floor(Math.random() * 0);	// 잡아바 좌우 노출 위치를 결정할 CSS용 랜덤변수
+
+			$("#imgFindJobabaLogo").parent().css({top:topCssRandomValue, left:leftCssRandomValue});
+
+			// 2018.08.31 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2018.09.30 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2018.10.31 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2018.11.19 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2018.12.14 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2019.10.29 ~ 2019.11.07 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			// 2020.12.02 ~ 2020.12.30 까지만 잡아바 캐릭터 노출, 이후 잡아바 캐릭터 비노출
+			if(strToday >= "20210614" && strToday <= "20210625"){
+				$("#imgFindJobabaLogo").parent().parent().show();
+			}
+
+		}else{
+			$("#imgFindJobabaLogo").parent().parent().hide();
+		}
+
+		// 잡아바 로고 클릭
+		$("#imgFindJobabaLogo").on("click", function(){
+			// click 후 잡아바 로고 hide
+			$("#imgFindJobabaLogo").hide();
+			$("#btnCloseJobabaLogo").hide();
+
+			if(${not empty sessionScope.USR}){
+				// var evtInfoSeq = "22";	// 캐릭터 잡고 커피받자 이벤트(상시) - 2018.06
+				// var evtInfoSeq = "24";	// 캐릭터 잡고 커피받자 이벤트(상시) - 2018.07
+				// var evtInfoSeq = "26";	// 캐릭터 잡고 커피받자 이벤트(상시) - 2018.08
+				// var evtInfoSeq = "31";	// 캐릭터 잡고 커피받자 이벤트(상시) - 2018.09
+				// var evtInfoSeq = "35";	// 캐릭터 잡고 커피받자 이벤트(상시) - 2018.10
+				// var evtInfoSeq = "38";	// [11월] 잡아바 친구소환 캐릭터 잡고 EXO싸인 받자! 이벤트(상시) - 2018.11
+				// var evtInfoSeq = "44";	// 캐릭터 잡고 잡아바 굿즈 받자 이벤트(상시) - 2018.12
+				//var evtInfoSeq = "63";	// 잡아바 캐릭터를 잡아바 이벤트 (2019.10) 2019.10.29 ~ 2019.11.07
+				//var evtInfoSeq = "82";	// 잡아바 캐릭터를 잡아바 이벤트 (2020.11) ?
+				var evtInfoSeq = "91";	// 잡아바 캐릭터를 잡아바 이벤트 (2020.12) ?
+
+				$.ajax({
+					url: "/eventInfo/searchEventLogoAjax.do"
+					, type: "POST"
+					, contentType: "application/x-www-form-urlencoded; charset=UTF-8"
+					, dataType: "json"
+					, data: {
+						"evtInfoSeq": evtInfoSeq
+					}
+					, success: function(data, status, xhr){
+
+						var srchCnt = 0;	// 찾은 횟수
+						var entryCnt = 0;	// 응모 횟수
+						var $layerContent = $("#eventLayerPop div.modal-content div.modal-body p:eq(0)");
+
+						// 참여 정보가 있는 경우
+						if(data.eventUserCnt > 0){
+							/*
+							srchCnt = parseInt(data.eventUser.srchCnt);
+							entryCnt = parseInt(data.eventUser.entryCnt);
+
+							// 10개 단위로 찾은 이후 응모하지 않은 경우
+							if(srchCnt >= (entryCnt + 1) * 10){
+								$layerContent.text("이벤트에 응모하신 후 다시 참여하실 수 있습니다.");
+							}else{
+								$layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+							}
+							*/
+
+							srchCnt = parseInt(data.eventUser.srchCnt)+1;
+							entryCnt = parseInt(data.eventUser.entryCnt);
+							if(srchCnt % 10== 0){
+								$layerContent.text("잡아바 캐릭터를 모두 찾으셨습니다.");
+							}else{
+								var entryCnt_ = parseInt(srchCnt-(entryCnt*10));
+								if(entryCnt!=0 && entryCnt_==11){
+									$layerContent.text("잡아바 캐릭터를 모두 찾으셨습니다.");
+								}else{
+									$layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+								}
+							}
+
+						}else{	// 참여 정보가 없는 경우
+							$layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+						}
+
+						// 응모 후 잡아바 로고 hide
+						// $("#imgFindJobabaLogo").hide();
+
+						// modal layer open
+						$("#eventLayerPop").modal();
+					}
+					, error: function(xhr, status, error){
+
+					}
+				});
+			}else{
+				// modal layer open
+				$("#eventLayerPop").modal();
+			}
+
+		});
+
+		// modal window 확인 button click
+		$("#btnModalConfirm").on("click", function(){
+			var $layerContent = $("#eventLayerPop div.modal-content div.modal-body p:eq(0)");
+
+			// 로그인 된 경우 이벤트 페이지로 이동
+			if($layerContent.data("loginYn") == "Y"){
+				// location.href = "/eventInfo/eventInfoCharacter201808.do";
+				// location.href = "/eventInfo/eventInfoCharacter201809.do";
+				// location.href = "/eventInfo/eventInfoCharacter201810.do";
+				// location.href = "/eventInfo/eventInfoCharacter201811.do";
+				// location.href = "/eventInfo/eventInfoCharacter201812.do";
+				//location.href = "/eventInfo/eventInfo201910c.do";
+				//location.href = "/eventInfo/eventInfoCharacter202011.do";
+				//location.href = "/eventInfo/eventInfoCharacter202012.do";
+				location.href = "/eventInfo/eventInfoCharacter202106.do";
+			}else{
+				// 로그인 아닌경우 로그인 페이지로 이동
+				location.href = "/mber/login/login.do";
+			}
+
+			// $("#btnModalCancel").trigger("click");
+		});
+
+		// modal window 닫기 button click
+		$("#btnModalCancel, #btnModalClose").on("click", function(){
+			$("#imgFindJobabaLogo").parent().hide();
+		})
+
+		// 로고 close
+		$("#btnCloseJobabaLogo").on("click", function(){
+			$("#imgFindJobabaLogo").parent().hide();
+		});
+
+	*/
+	});
+</script>
+
+<c:if test="${requestScope['javax.servlet.forward.servlet_path'] ne '/eventInfo/eventInfo201910c.do'}">
+	<!-- begin: 잡아바 캐릭터 잡기 이벤트(상시) -->
+	<div id="page-content">
+		<div class="float_event">
+			<div>
+				<a id="imgFindJobabaLogo" class="btn-example">
+					<c:set var="randomVal"><tag:randomValue from="1" to="4"/></c:set>
+					<img src="/resource/images/eventImg/202106/character0${randomVal}_on.png" alt="잡아바 잡고" />
+				</a>
+				<button id="btnCloseJobabaLogo" class="event_close">닫기</button>
+			</div>
+		</div>
+
+		<div class="modal fade" id="eventLayerPop">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" id="btnModalClose" class="close" data-dismiss="modal">
+							x
+						</button>
+						<h4 class="modal-title">잡아바 캐릭터를 잡아봐!</h4>
+					</div>
+
+					<div class="modal-body">
+						<c:choose>
+							<c:when test="${not empty sessionScope.USR}">
+								<p class="ctxt mb20" data-login-yn="Y"></p>
+								<p class="ctxt mb20">이벤트 페이지에서 확인 하시겠습니까?</p>
+							</c:when>
+							<c:otherwise>
+								<p class="ctxt mb20" data-login-yn="N">로그인 후 참여하실 수 있습니다.</p>
+								<p class="ctxt mb20">로그인 하시겠습니까?</p>
+							</c:otherwise>
+						</c:choose>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" id="btnModalConfirm" class="btn btn-default">
+							확인
+						</button>
+						<button type="button" id="btnModalCancel" class="btn btn-default" data-dismiss="modal">
+							닫기
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: 잡아바 캐릭터 잡기 이벤트(상시) -->
+</c:if>
+<!-- ==================== [end: 캐릭터 잡기 관련 코드] ==================== -->
+
+
+<script>
+
+	//패미리사이트 변경
+	function fnChgFamilyStie(){
+		var selUrl = $('#bottomFamilySite').val();
+		if(selUrl != ''){
+			window.open(selUrl, "_blank");
+		}
+	}
+</script>
+
+<div id="footer" class="container-fluid">
+	<div class="fnb-wrap">
+		<div class="containerNew clearfix">
+			<ul class="fnb clearfix">
+				<li><a href="https://www.gjf.or.kr/gjf/contents.do?key=407" title="재단소개 이동" target="_blank" id="blankBtn">경기도일자리재단</a></li>
+<!-- 				<li><a href="javascript:void(0);">잡아바 소개</a></li> -->
+				<li class="m_hide"><a href="<spring:message code='DEFAULT.URI' />/mber/siteMap/terms.do" title="이용약관 이동" target="_blank">이용약관</a></li>
+				<li class="m_hide"><a href="<spring:message code='DEFAULT.URI' />/mber/siteMap/privacy.do" title="개인정보처리방침 이동" target="_blank"><strong class="red_txt">개인정보처리방침</strong></a></li>
+				<li><a href="<spring:message code='DEFAULT.URI' />/jobabaApi/apiMain.do" title="API 신청 이동" target="_blank">API신청</a></li>
+<!-- 				<li><a href="javascript:void(0);">원격지원서비스 신청</a></li> -->
+			</ul>
+			<select class="m_hide" onChange="fnChgFamilyStie();" id="bottomFamilySite">
+				<option value="">Family Site</option>
+				<option value="https://www.gjf.or.kr/gjf/index.do">경기도일자리재단</option>
+				<option value="https://apply.jobaba.net/bsns/bsnsListView.do">통합접수시스템</option>
+				<!-- <option value="https://www.jobaba.net/youngMall/youngMall.do">경기청년몰</option>  -->
+				<option value="https://youth.jobaba.net/introduction">청년노동자지원사업·청년몰</option>
+				<!-- <option value="https://account.ggwf.or.kr/main/intro.do">청년통장</option> -->
+				<option value="http://consultant.jobaba.net/">잡수다</option>
+				<option value="https://www.dream.go.kr/dream/index.do">꿈날개</option>
+				<option value="https://www.dreammaru.or.kr/www/index.do">꿈마루</option>
+				<option value="https://www.gjf.or.kr/gti/index.do">경기도기술학교</option>
+			</select>
+		</div>
+	</div>
+	<div class="containerNew clearfix">
+		<div class="footer_num_area clearfix">
+			<div class="f_logo">
+			</div>
+			<div class="f_info_area">
+				<p class="tit">사업별 문의안내<span class="mf_sign"></span></p>
+				<ul class="f_info">
+					<li>평일 : 09:00 ~ 18 : 00</li>
+					<li>토,일요일 및 법정공휴일 휴무</li>
+				</ul>
+			</div>
+			<ul class="f_info ty2">
+				<li><span class="adress">연금, 마이스터, 복지포인트</span><span class="p_num">1577 - 0014</span></li>
+				<li><span class="adress">경기도 일하는 청년통장</span><span class="p_num">031 - 267 - 9360</span></li>
+				<li><span class="adress">경기도 일자리재단 사업문의</span><span class="p_num">031 - 270 - 9600</span></li>
+				<li><span class="adress">경기 여성 취업지원금 문의</span><span class="p_num">1522 - 3582</span></li>
+			</ul>
+			<ul class="f_info ty3">
+				<li><span class="adress">청년기본소득 사업문의</span><span class="p_num">031 - 120</span></li>
+				<li><span class="adress">청년기본소득 시스템문의</span><span class="p_num">1522-8667</span></li>
+				<li><span class="adress">경기지역화폐 카드문의</span><span class="p_num">1899 - 7997</span></li>
+			</ul>
+			<ul class="sns_area">
+				<li><a href="https://www.facebook.com/jobabanet" title="페이스북 이동" target="_blank"><span class="f_face_ico"></span></a></li>
+				<li><a href="https://www.instagram.com/jobabanet/" title="인스타그램 이동" target="_blank"><span class="f_insta_ico"></span></a></li>
+				<li><a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" title="유튜브 이동" target="_blank"><span class="f_youtube_ico"></span></a></li>
+			</ul>
+		</div>
+		<ul class="fnb ty2 clearfix">
+				<li><a href="<spring:message code='DEFAULT.URI' />/mber/siteMap/terms.do" title="이용약관 이동" target="_blank">이용약관</a></li>
+				<li><a href="<spring:message code='DEFAULT.URI' />/mber/siteMap/privacy.do" title="개인정보처리방침 이동" target="_blank"><strong>개인정보처리방침</strong></a></li>
+		</ul>
+		<div class="footer_area clearfix">
+			<ul class="app_area">
+				<li><a href="https://apps.apple.com/us/app/%EC%9E%A1%EC%95%84%EB%B0%94/id1260278304?l=ko&ls=1" title="앱스토어 이동" target="_blank"><span class="app_btn appstore"></span></a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=net.jobaba.app" title="플레이스토어 이동" target="_blank"><span class="app_btn playstore"></span></a></li>
+			</ul>
+			<ul class="footer_txt">
+				<li>경기도 부천시 부천로 136번길 27 원미어울림마당 3층 (14566)  경기도일자리재단</li>
+				<li>잡아바 이용문의 :  031-270-9988      이메일 :  jobaba@gjf.or.kr  </li>
+				<li>Copyright ⓒ Gyeonggido Job Foundation. All Rights Reserved.</li>
+			</ul>
+			<ul class="award_area">
+				<li><span class="img_fot_awards2"></span><p>2020, 2019, 2018 아시아태평양<br>스티비어워드 3년 연속수상</p></li>
+				<li><span class="img_fot_ieco"></span><p>2018 인터넷어워드<br>일자리창출 분야 대상</p></li>
+				<li><span class="img_fot_good"></span><p>2019, 2018 한국소비자만족지수<br>공공서비스부문 2년 연속 1위</p></li>
+				<li><span class="img_fot_rankey"></span><p>공공취업·창업분야 1위<br>랭키닷컴 2021, 2020, 2019, 2018</p></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<%-- <script>
+	$(function(){
+		// about finger push
+		var firstLogin = "<%=request.getParameter("firstLogin")%>";
+		if (firstLogin  == "Y") {
+			if(${not empty sessionScope.USR}){
+				if(${sessionScope.USR.infrmAgreYn eq 'Y'}){
+					var usrId = "<c:out value="${sessionScope.USR.usrId}" />";
+					onFingerPush(usrId);
+				}
+			}
+		}
+
+		$('.btn-remote').on('click', function(e){
+			 var $this = $('.remote_popup .remote_popup_wrap');
+			var $winHeight = $(window).height();
+			var $thisPosX = $this.outerWidth()/2;
+			var $thisPosY = $this.outerHeight()/2;
+			$this.css('display','block');
+			$this.css({marginLeft:-$thisPosX, marginTop:-$thisPosY});
+			$('.remote_popup .remote_popup_msk').css({height:$winHeight, display:'block'});
+			e.preventDefault();
+		});
+
+		$('.RankeyPop').on('click', function(e){
+			var $this = $('.Rankey_popup');
+			var $obj = $this.find('.popup');
+			var $winHeight = $(window).height();
+			var $thisPosX = $this.outerWidth()/2;
+			var $thisPosY = $this.outerHeight()/2;
+			$this.css('display','block');
+			$this.css({left:'50%',top:'50%',marginLeft:-$thisPosX, marginTop:-$thisPosY});
+			$('.Rankey_popup .pop_msk').css({height:$winHeight, display:'block'});
+			e.preventDefault();
+		});
+
+		$(document).on('click','.remote_popup .pop_close', function(){
+			$('.remote_popup_wrap').css('display','none');
+			$('.remote_popup .remote_popup_msk').css('display','none');
+		});
+
+		$(document).on('click','.Rankey_popup .pop_close', function(){
+			$('.Rankey_popup').css('display','none');
+			$('.Rankey_popup .pop_msk').css('display','none');
+		});
+
+		$(document).on('click','.news-wrap .prev', function(){
+			var curRow = parseInt($(".news-wrap").find("em").eq(0).html());
+			if(1 < curRow){
+				$(".news-wrap").find("em").eq(0).html(curRow-1);
+				$(".news-wrap").find("li").removeClass("on");
+				$(".news-wrap .ntc"+(curRow-1)).addClass("on");
+			}
+		});
+		$(document).on('click','.news-wrap .next', function(){
+			var curRow = parseInt($(".news-wrap").find("em").eq(0).html());
+			if(curRow < $(".news-wrap").find("li").length){
+				$(".news-wrap").find("em").eq(0).html(curRow+1);
+				$(".news-wrap").find("li").removeClass("on");
+				$(".news-wrap .ntc"+(curRow+1)).addClass("on");
+			}
+		});
+
+		// =============== [ begin: 잡아바 스탬프 미션 이벤트 (2019.11.26 ~ 2019.12.03)] ===============
+		// 로그인 여부
+		var login = <c:out value="${not empty sessionScope.USR}" />;
+		if(login){
+			// 현재 path 확인
+			var currentPath = $(location).attr('pathname');
+
+			var isSprtPlcy = currentPath.indexOf("/sprtPlcy/info/") > -1;					// 지원정책 (목록, 상세)
+			var isEdutrn = currentPath.indexOf("/edutrn/") > -1;							// 교육훈련 (목록, 상세)
+			var isEvtIfo = currentPath.indexOf("/evtIfo/") > -1;							// 대외활동 (목록, 상세)
+			var isFntn = currentPath.indexOf("/fntn/") > -1;								// 창업정보 (목록, 상세)
+			var isThemeJobDicList = currentPath.indexOf("/thema/list.do") > -1;				// 잡학사전 목록
+			var isThemeJobDicView = currentPath.indexOf("/thema/exprcDtl.do") > -1;			// 잡학사전 상세
+			var isDesEnt = currentPath.indexOf("/empmn/desEnt") > -1;						// 탐나는기업 (목록, 상세)
+			var isPublicJob = currentPath.indexOf("/empmn/publicJobEmployList.do") > -1;	// 공공일자리 목록
+
+			if(isSprtPlcy || isEdutrn || isEvtIfo || isFntn || isThemeJobDicList || isThemeJobDicView || isDesEnt || isPublicJob){
+
+				// 미션이 시작된 경우 count up
+				var evtInfoSeq = "82";	// 67: 2019.11 잡아바 앱 다운로드 이벤트 - 9회차 (스탬프 미션)
+				$.ajax({
+					url: "/eventInfo/updateStampEvent.do"
+					, type: "POST"
+					, contentType: "application/x-www-form-urlencoded; charset=UTF-8"
+					, dataType: "json"
+					, data: {
+						"evtInfoSeq": evtInfoSeq
+					}
+					, success: function(data, status, xhr){
+
+					}
+					, error: function(xhr, status, error){
+
+					}
+				});
+			}
+		}
+		// =============== [ end: 잡아바 스탬프 미션 이벤트 (2019.11.26 ~ 2019.12.03)] ===============
+
+	});
+
+	function Rankey_Mark_Win(no){
+		window.open('http://www.rankey.com/rank/cert/cert_pop.php?mark_no='+no,'Rankey_pop','width=700,height=800,scrollbars=yes');
+	}
+</script> --%>
+
+
+<!-- </body> -->
+<!-- </html> -->

@@ -26,8 +26,8 @@
 <div id="page-content">
 	<style>
 		#gameContainer {
-			width: 716px;
-			height: 717px;
+			width: 684px;
+			height: 684px;
 			text-align: center;
 			margin: auto;
 			position: relative;
@@ -35,26 +35,26 @@
 		}
 		#gameContainer .cursor {
 			position: absolute;
-			background: url(./images/test/ev_obj.png) no-repeat;
-			width: 94px;
-			height: 128px;
-			top: -85px;
+			background: url(./images/test/ev_obj02.png) no-repeat;
+			width: 84px;
+			height: 123px;
+			top: -60px;
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 999;
 		}
 		#gameContainer .board_on {
-			width: 716px;
-			height: 717px;
+			width: 684px;
+			height: 684px;
 			left: 0px;
 			z-index: 3;
-			background: url(./images/test/ev_roulette.png) no-repeat center;
+			background: url(./images/test/ev_roulette02.png) no-repeat center;
 		}
 		#gameContainer .board_start {
-			width: 275px;
-			height: 275px;
-			background: #fff714;
-			color: #1d3972;
+			width: 141px;
+			height: 141px;
+			background: #3d9988;
+			color: #fff;
 			cursor: pointer;
 			border-radius: 50%;
 			position: absolute;
@@ -62,20 +62,23 @@
 			left: 50%;
 			z-index: 55;
 			transform: translate(-50%,-50%);
-			font-size: 60px;
+			font-size: 24px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-weight: bold;
 			letter-spacing: -1px;
+			border: 6px solid #96ede3;
 		}
 		#gameContainer .board_on img{position:absolute;}
-		#gameContainer .board_on img:nth-child(1){right: 310px;top: 50px}
-		#gameContainer .board_on img:nth-child(2) {left: 100px;top: 200px;}
-		#gameContainer .board_on img:nth-child(3) {left: 80px;bottom: 180px;}
-		#gameContainer .board_on img:nth-child(4) {left: 50%;transform: translateX(-50%);bottom: 50px}
-		#gameContainer .board_on img:nth-child(5) {right: 80px;bottom: 180px}
-		#gameContainer .board_on img:nth-child(6) {right: 100px;top: 200px}
+		#gameContainer .board_on img:nth-child(1){right: 292px;top: 80px}
+		#gameContainer .board_on img:nth-child(2) {left: 145px;top: 146px;}
+		#gameContainer .board_on img:nth-child(3) {left: 94px;bottom: 318px;}
+		#gameContainer .board_on img:nth-child(4) {left: 140px;bottom: 138px;}
+		#gameContainer .board_on img:nth-child(5) {left: 50%;transform: translateX(-50%);bottom: 80px}
+		#gameContainer .board_on img:nth-child(6) {right: 126px;bottom: 122px}
+		#gameContainer .board_on img:nth-child(7) {right: 90px;bottom: 280px}
+		#gameContainer .board_on img:nth-child(8) {right: 135px;top: 176px}
 
 		.ev_pop{position: fixed;background: #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9999999999999;border-radius: 10px;overflow: hidden;}
 		.ev_pop.wd450{max-width: 450px;width: 90%;}
@@ -106,16 +109,16 @@
 
 		<div id="gameContainer">
 			<a href="#" onclick="" class="board_start join kotra">
-				START
+				돌리기
 			</a>
 			<div class="cursor"></div>
 			<div class="board_on obj">
-				<img src="images/test/gift1.png">
+				<!-- <img src="images/test/gift1.png">
 				<img src="images/test/gift2.png">
 				<img src="images/test/gift3.png">
 				<img src="images/test/gift4.png">
 				<img src="images/test/gift5.png">
-				<img src="images/test/gift6.png">
+				<img src="images/test/gift6.png"> -->
 			</div>
 
 
@@ -226,17 +229,17 @@
 	$(document).ready(function() {
 
 		var gift;
-		var present = ['비타 500', '빙그레 바나나우유', '비타 500', '빙그레 바나나우유', '비타 500', '빙그레 바나나우유']
+		var present = ['바나나 우유', '꽝', '롯데리아 햄버거세트', '비타 500','BHC 치킨세트', '이디야 커피쿠폰','꽝', '네이버 페이 20,000원']
 		var clicked = 0;
-		var rotationPos = new Array(60, 120, 180, 240, 300, 360);
-
-		// for (i = 1; i < 7; i++) {
-		// 	var pictures = "images/test/gift" + i + ".png";
-		// 	$(".board_on").append('<img  src="' + pictures + '" />');
-		// }
+		// var rotationPos = new Array(60, 120, 180, 240, 300, 360);
+		var rotationPos = new Array(45, 90, 135, 180, 225, 270, 315, 360);
+		for (i = 1; i < 9; i++) {
+			var pictures = "images/test/gift" + i + ".png";
+			$(".board_on").append('<img  src="' + pictures + '" />');
+		}
 		$(".join").on("mousedown", function() {
 			if (clicked <= 0) {
-				iniGame(Math.floor(Math.random() * 6));
+				iniGame(Math.floor(Math.random() * 8));
 			} else if (clicked >= 1) {
 				event.preventDefault();
 				$('#popup_gift_end').show();
@@ -267,15 +270,26 @@
 		function endGame() {
 			var copImg = "images/test/gift" + (gift + 1) + ".png";
 			console.log("이미지 : " + copImg);
+			console.log("상품 숫자 : " + gift);
 
+			if(gift === 1 || gift === 6 ) {
+				$("#popup_gift .lottery_present .gift_end1").text(function() {
+				return "꽝입니다."
+				});
 
-			$("#popup_gift .lottery_present .gift_end1").text(function() {
+				$("#popup_gift .lottery_present .gift_end2").html(function() {
+					return "다음 기회에.";
+				});
+			} else {
+				$("#popup_gift .lottery_present .gift_end1").text(function() {
 				return "축하합니다."
-			});
+				});
 
-			$("#popup_gift .lottery_present .gift_end2").html(function() {
-				return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
-			});
+				$("#popup_gift .lottery_present .gift_end2").html(function() {
+					return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
+				});
+			}
+			
 
 
 			//$('<img  src="' + copImg + '" ///>').prependTo("#popup_gift .lottery_present");
