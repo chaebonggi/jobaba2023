@@ -1,0 +1,18 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.eventWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.GmarketSansBold { font-family: 'GmarketSansBold' !important;}
+.eventWrap .innerSection { max-width: 900px; margin: 0 auto; } 
+
+.eventWrap .fcRed { color: #ff0000; }
+.eventWrap .fcWhite { color: #fff; }
+
+.eventWrap .fs36 { font-size: 36px; } 
+.eventWrap .fs34 { font-size: 34px; } 
+.eventWrap .fs30 { font-size: 30px; } 
+.eventWrap .fs24 { font-size: 24px; } 
+.eventWrap .fs22 { font-size: 22px; }
+.eventWrap .fs20 { font-size: 20px; } 
+.eventWrap .fs16 { font-size: 16px; } 
+.eventWrap .fs14 { font-size: 14px; } 
