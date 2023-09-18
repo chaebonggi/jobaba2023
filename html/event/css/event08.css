@@ -2,17 +2,184 @@
 @font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
 
 .eventWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
-.GmarketSansBold { font-family: 'GmarketSansBold' !important;}
+.GmarketSansBold { font-family: 'GmarketSansBold' !important; } 
 .eventWrap .innerSection { max-width: 900px; margin: 0 auto; } 
 
-.eventWrap .fcRed { color: #ff0000; }
-.eventWrap .fcWhite { color: #fff; }
+.eventWrap .fcRed { color: #ff0000; } 
+.eventWrap .fcWhite { color: #fff; } 
 
 .eventWrap .fs36 { font-size: 36px; } 
 .eventWrap .fs34 { font-size: 34px; } 
 .eventWrap .fs30 { font-size: 30px; } 
 .eventWrap .fs24 { font-size: 24px; } 
-.eventWrap .fs22 { font-size: 22px; }
+.eventWrap .fs22 { font-size: 22px; } 
 .eventWrap .fs20 { font-size: 20px; } 
 .eventWrap .fs16 { font-size: 16px; } 
 .eventWrap .fs14 { font-size: 14px; } 
+
+.eventWrap .eventMain { background: url(../resource/images/eventImg/event08/ev_main_bg.jpg) top center no-repeat; } 
+.eventWrap .eventMain .innerSection { padding: 120px 10px 390px; } 
+.eventWrap .eventMain .imgWrap { margin-bottom: 20px; text-align: center; } 
+.eventWrap .eventMain ul { width: 650px; position: relative; margin: 0 auto; padding: 15px 90px; background: #eaaea2; border-radius: 100px; } 
+.eventWrap .eventMain ul::after { content: ''; width: 35px; height: 37px; position: absolute; top: -16px; right: 85px; background: url(../resource/images/eventImg/event08/ev_main_icon01.png) no-repeat; } 
+.eventWrap .eventMain ul li { display: flex; align-items: baseline; color: #000; } 
+.eventWrap .eventMain ul li + li { margin-top: 4px; } 
+.eventWrap .eventMain ul li > span { width: 144px; padding: 0 20px; background: #fff; text-align: justify; font-size: 0; border-radius: 30px; } 
+.eventWrap .eventMain ul li > span::after { content: ''; display: inline-block; width: 100%; } 
+.eventWrap .eventMain ul li .siner { font-size: 20px; font-weight: bold; } 
+.eventWrap .eventMain ul li p { margin-left: 14px; font-size: 24px; font-weight: bold; } 
+.eventWrap .eventMain ul li p span { display: block; font-size: 16px; } 
+
+.eventWrap .leftMenu.fixed { position: fixed; top: 200px; } 
+.eventWrap .leftMenu { position: absolute; left: 90px; top: 50px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+.eventWrap .leftMenu > a { display: block; margin-top: 10px; color: #5f5f5f; } 
+.eventWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+.eventWrap .menuList li + li { margin-top: 6px; } 
+.eventWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 15px 10px 6px; background: #d0d0d0; color: #000; font-size: 22px; font-weight: 600; } 
+.eventWrap .menuList li a > p { color: #000; } 
+.eventWrap .menuList li a .txtBox { display: none; } 
+.eventWrap .menuList li a .txtBox p { color: #fff; font-size: 18px; } 
+.eventWrap .menuList li a:hover { background: #765856; } 
+.eventWrap .menuList li a:hover > p { color: #fffc9d; } 
+.eventWrap .menuList li.active a { height: 120px; background: #765856; } 
+.eventWrap .menuList li.active a > p { color: #fffc9d; margin-bottom: 10px; } 
+.eventWrap .menuList li.active .txtBox { display: block; } 
+
+ .eventWrap .event01 { position: relative; background: url(../resource/images/eventImg/event08/ev01_bg.jpg) top center no-repeat; } 
+ .eventWrap .event01 .innerSection { padding: 90px 0 100px; } 
+ .eventWrap .event01 .titWrap { margin-bottom: 20px; text-align: center; } 
+ .eventWrap .event01 .titWrap p { display: inline-block; padding: 0 30px; background: #000; color: #fff; font-size: 36px; border: 5px solid #ffaf26; border-radius: 50px; } 
+ .eventWrap .event01 .imgWrap { text-align: center; } 
+ .eventWrap .event01 .giftList { padding: 120px 100px 50px; margin-top: -90px; background: #dfeaa5; border: 2px solid #000; border-radius: 20px; } 
+ .eventWrap .event01 .giftList ul { display: flex; margin-bottom: 50px; flex-wrap: wrap; gap: 10px 0; } 
+ .eventWrap .event01 .giftList li { width: calc(100% / 3); text-align: center; } 
+ .eventWrap .event01 .giftList li p { display: flex; margin-top: 20px; height: 66px; justify-content: center; align-items: center; line-height: 1.2; font-size: 28px; } 
+ .eventWrap .event01 .giftList > p { margin: 0 30px; padding: 8px 0; background: #fff; font-size: 20px; border-radius: 30px; text-align: center; } 
+
+ .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg.jpg) top center no-repeat; } 
+ .eventWrap .event02 .innerSection { padding: 190px 0 200px; } 
+ .eventWrap .event02 .boxWrap { position: relative; padding: 70px 10px 40px; margin-bottom: 100px; background: #f6f6f6; border: 6px solid #9adcd0; border-radius: 20px; text-align: center; } 
+ .eventWrap .event02 .boxWrap .titWrap { position: absolute; left: 50%; top: -40px; transform: translateX(-50%); } 
+ .eventWrap .event02 .boxWrap .titWrap p { display: inline-block; padding: 0 30px; background: #000; border: 5px solid #9adcd0; border-radius: 40px; } 
+ .eventWrap .event02 .boxWrap .gift strong { display: block; line-height: 1; } 
+ .eventWrap .event02 .boxWrap .send { max-width: 600px; margin: 10px auto; background: #003281; } 
+ .eventWrap .event02 .evBox a { display: block; position: relative; padding: 20px; background: #b7f0e5; color: #000; border-radius: 20px; border: 1px solid #000; } 
+ .eventWrap .event02 .evBox.style02 a { background: #b4cff1; } 
+ .eventWrap .event02 .evBox .titWrap { position: absolute; top: -60px; padding: 10px 20px; background: #3d9988; border: 1px solid #000; border-radius: 40px 40px 40px 0; } 
+ .eventWrap .event02 .evBox.style02 .titWrap { background: #4c82c7; } 
+ .eventWrap .event02 .evBox .titWrap::after { border-top: 30px solid #3d9988; border-left: 0 solid transparent; border-right: 30px solid transparent; border-bottom: 0px solid transparent; content:""; position:absolute; bottom: -20px; left: 0; } 
+ .eventWrap .event02 .evBox .titWrap::before { border-top: 22px solid #000; border-left: 0 solid transparent; border-right: 22px solid transparent; border-bottom: 0px solid transparent; content: ""; position: absolute; bottom: -22px; left: -1px; } 
+ .eventWrap .event02 .evBox.style02 .titWrap::after { border-top: 30px solid #4c82c7; } 
+ .eventWrap .event02 .misstionWrap { display: flex; margin-bottom: 50px; gap: 0 30px; } 
+ .eventWrap .event02 .evBox .txtWrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; } 
+ .eventWrap .event02 .evBox .txtWrap span { display: flex; width: 88px; height: 88px; background: #fff; border-radius: 50%; align-items: center; justify-content: center; line-height: 1.1; border: 1px solid #000; font-size: 0; } 
+ .eventWrap .event02 .evBox .txtWrap span::before { content: '참여\a하기'; white-space: pre; font-size: 24px; } 
+ .eventWrap .event02 .evBox .txtWrap span.on::before { content: '참여\a완료'; color: #fff; } 
+ .eventWrap .event02 .evBox .txtWrap span.on { background: #3d9988; } 
+ .eventWrap .event02 .evBox.style02 .txtWrap span.on { background: #4c82c7; } 
+ .eventWrap .event02 .evBox .txtWrap strong { width: 100%; } 
+
+ .eventWrap .evTicket { text-align: center; } 
+ .eventWrap .evTicket p { display: inline-block; } 
+ .eventWrap .evTicket p::before { content: ''; display: block; width: 91px; height: 49px; margin: 0 auto 10px; background: url(../resource/images/eventImg/event08/ev_ticket.png) no-repeat; background-size: contain; }
+ #gameContainer { width: 684px; height: 684px; text-align: center; margin: auto; position: relative; margin-top: 120px; } 
+ #gameContainer::before { content: ''; width: 149px; height: 208px; position: absolute; bottom: -8px; left: -80px; background: url(../resource/images/eventImg/event08/ev02_icon01.png) no-repeat; } 
+ #gameContainer::after { content: ''; width: 167px; height: 213px; position: absolute; bottom: -24px; right: -98px; background: url(../resource/images/eventImg/event08/ev02_icon02.png) no-repeat; } 
+ #gameContainer .gameShadow::before { content: ''; width: 461px; height: 91px; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event08/ev_bg.png) bottom center no-repeat; z-index: 1; } 
+ #gameContainer .cursor { position: absolute; background: url(../resource/images/eventImg/event08/ev_obj.png) no-repeat; width: 84px; height: 123px; top: -60px; left: 50%; transform: translateX(-50%); z-index: 999; } 
+ #gameContainer .board_on { width: 684px; height: 684px; position: relative; background: url(../resource/images/eventImg/event08/ev_roulette.png) no-repeat center; z-index: 2; } 
+ #gameContainer .board_start { width: 141px; height: 141px; background: #3d9988; color: #fff; cursor: pointer; border-radius: 50%; position: absolute; top: 50%; left: 50%; z-index: 55; transform: translate(-50%,-50%); font-size: 24px; display: flex; justify-content: center; align-items: center; font-weight: bold; letter-spacing: -1px; border: 6px solid #96ede3; } 
+ #gameContainer .board_on img { position:absolute; } 
+ #gameContainer .board_on img:nth-child(1) { left: 145px; top: 146px; } 
+ #gameContainer .board_on img:nth-child(2) { left: 94px; bottom: 304px; } 
+ #gameContainer .board_on img:nth-child(3) { left: 140px; bottom: 138px; } 
+ #gameContainer .board_on img:nth-child(4) { left: 50%; transform: translateX(-50%); bottom: 80px } 
+ #gameContainer .board_on img:nth-child(5) { right: 126px; bottom: 122px } 
+ #gameContainer .board_on img:nth-child(6) { right: 90px; bottom: 280px } 
+ #gameContainer .board_on img:nth-child(7) { right: 142px; top: 138px } 
+ #gameContainer .board_on img:nth-child(8) { right: 292px; top: 80px } 
+
+ .eventWrap .titleWrap { position: relative; max-width: 640px; padding: 30px; margin: 0 auto 40px; background:#4bbdfd; border: 2px solid #000; border-radius: 30px; text-align: center; z-index:1; } 
+ .eventWrap .titleWrap:before { content:""; position:absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background:#ff6982; border: 2px solid #000; border-radius: 25px; z-index: -1; } 
+ .eventWrap .titleWrap:after { content:""; position:absolute; top: 13px; left: 13px; right: 13px; bottom: 13px; background:#ffee5b; border: 2px solid #000; border-radius: 20px; z-index: -1; } 
+ .eventWrap .titleWrap p::before { content: ''; position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: #fff; border: 2px solid #000; border-radius: 15px; z-index: 1; } 
+ .eventWrap .titleWrap p strong { position: relative; font-size: 40px; z-index: 2; } 
+ .eventWrap .evTitWrap { margin: 0 100px 30px; text-align: center; } 
+ .eventWrap .evTitWrap p { display: flex; margin-bottom: 30px; justify-content: center; align-items: center; } 
+ .eventWrap .evTitWrap p::before { content: ''; display: inline-block; flex-shrink: 0; z-index: 1; } 
+ .eventWrap .evTitWrap p.icon01::before { width: 248px; height: 219px; background: url(../resource/images/eventImg/event08/ev_icon01.png) no-repeat; } 
+ .eventWrap .evTitWrap p.icon02::before { width: 224px; height: 211px; background: url(../resource/images/eventImg/event08/ev_icon02.png) no-repeat; } 
+ .eventWrap .evTitWrap p span { line-height: 1.2; } 
+ .eventWrap .evTitWrap p.icon01 span { margin-left: -60px; } 
+ .eventWrap .evTitWrap p.icon02 span { margin-left: -30px; margin-top: 60px; } 
+ .eventWrap .evTitWrap > span { display: block; padding: 10px; background: #fff; border-radius: 30px; border: 1px solid #000; } 
+ .eventWrap .event03 { background: url(../resource/images/eventImg/event08/ev03_bg.jpg) top center #f2efe5 no-repeat; } 
+ .eventWrap .event03 .innerSection { padding: 0 0 48px; } 
+ .eventWrap .event03 .titleWrap { top: -56px; } 
+ .eventWrap .event03 .stepWrap { display: flex; flex-wrap: wrap; gap: 20px 30px; } 
+ .eventWrap .event03 .stepWrap .stepBox::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 5px; background:linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: 
+ linear-gradient(#fff 0 0) content-box, 
+ linear-gradient(#fff 0 0); -webkit-mask-composite: xor; } 
+ .eventWrap .event03 .stepWrap .stepBox { width: calc(100% / 2 - 15px); position: relative; padding: 30px; background: #fff; border-radius: 30px; } 
+ .eventWrap .event03 .stepWrap .stepBox.style02 { display: flex; width: 100%; justify-content: space-between; } 
+ .eventWrap .event03 .stepWrap .stepBox.style02 .titWrap { margin-bottom: 0; } 
+ .eventWrap .event03 .stepWrap .titWrap { margin-bottom: 20px; line-height: 1.2; word-break: keep-all; } 
+ .eventWrap .event03 .stepWrap .titWrap::before { content: ''; display: block; margin-bottom: 20px; } 
+ .eventWrap .event03 .stepWrap .titWrap.step01::before { width: 71px; height: 28px; background: url(../resource/images/eventImg/event08/ev03_step01.png) no-repeat; } 
+ .eventWrap .event03 .stepWrap .titWrap.step02::before { width: 73px; height: 28px; background: url(../resource/images/eventImg/event08/ev03_step02.png) no-repeat; } 
+ .eventWrap .event03 .stepWrap .titWrap.step03::before { width: 73px; height: 28px; background: url(../resource/images/eventImg/event08/ev03_step03.png) no-repeat; } 
+ .eventWrap .event03 .stepWrap .titWrap p { margin-left: 46px; } 
+ .eventWrap .event03 .stepWrap .titWrap p span { display: block; } 
+ .eventWrap .event03 .stepWrap .imgWrap { text-align: center; } 
+ .eventWrap .event03 .stepWrap ul { margin-left: 28px; } 
+ .eventWrap .event03 .stepWrap li::before { content: '\00B7'; position: absolute; left: 0; top: 0; color: #ff0000; } 
+ .eventWrap .event03 .stepWrap li { position: relative; padding-left: 15px; margin-bottom: 6px; } 
+ .eventWrap .event03 .characterType { margin-top: 20px; } 
+ .eventWrap .event03 .characterType ul { display: flex; padding: 30px 50px; background: #fff; align-items: center; justify-content: space-between; border: 2px dashed #000; border-radius: 20px; } 
+
+ .eventWrap .event04 { background: url(../resource/images/eventImg/event08/ev04_bg.jpg) top center #f2efe5 no-repeat; } 
+ .eventWrap .event04 .innerSection { padding: 50px 0 100px; } 
+ .eventWrap .event04 .serviceWrap::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 5px; background: linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; } 
+ .eventWrap .event04 .serviceWrap { position: relative; padding: 50px 55px; background: #fff; border-radius: 30px; } 
+ .eventWrap .event04 .serviceWrap li { position: relative; padding: 35px; border-radius: 20px; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(1) { background: #e1d6fa; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(2) { background: #bce4f1; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(3) { background: #f0e1ca; } 
+ .eventWrap .event04 .serviceWrap li + li { margin-top: 20px; } 
+ .eventWrap .event04 .serviceWrap li::before { content: ''; width: 72px; height: 69px; position: absolute; top: 0; left: 40px; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(1)::before { background: url(../resource/images/eventImg/event08/ev04_icon01.png); } 
+ .eventWrap .event04 .serviceWrap li:nth-child(2)::before { background: url(../resource/images/eventImg/event08/ev04_icon02.png); } 
+ .eventWrap .event04 .serviceWrap li:nth-child(3)::before { background: url(../resource/images/eventImg/event08/ev04_icon03.png); } 
+ .eventWrap .event04 .serviceWrap .titWrap { margin-bottom: 20px; text-align: center; } 
+ .eventWrap .event04 .serviceWrap .titWrap strong { display: block; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(1) .txtWrap strong { color: #8b6ecb; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(2) .txtWrap strong { color: #4c8395; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(3) .txtWrap strong { color: #887c69; } 
+ .eventWrap .event04 .serviceWrap .txtWrap { display: flex; padding: 30px 50px; background: #fff; border-radius: 100px; justify-content: space-between; align-items: center; } 
+ .eventWrap .event04 .serviceWrap .txtWrap strong { display: block; } 
+ .eventWrap .event04 .serviceWrap .txtWrap a::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 2px; background: linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; } 
+ .eventWrap .event04 .serviceWrap .txtWrap a { display: inline-block; position: relative; padding: 16px 32px; background: #383838; color: #fff; border-radius: 30px; } 
+ .eventWrap .event04 .serviceWrap .txtWrap a span { position: relative; } 
+ .eventWrap .event04 .serviceWrap .txtWrap a span::after { content: ''; width: 28px; height: 28px; position: absolute; bottom: -30px; right: -34px; background: url(../resource/images/eventImg/event08/ev_btn_icon01.png) no-repeat; background-size: contain; } 
+
+ .eventWrap .event05 {background: #001d4b; } 
+.eventWrap .event05 .innerSection {padding: 70px 0; } 
+.eventWrap .event05 h3 {margin-bottom: 10px;color: #fff; } 
+.eventWrap .event05 li::before {content: '\00B7';position: absolute;left: 0;top: 5px;color: #fff; } 
+.eventWrap .event05 li {position: relative;padding-left: 15px;margin-bottom: 6px;color: #fff;word-break: keep-all; } 
+
+ 
+/* 팝업 */
+.shadow { background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 99999999; width: 100%; height: 100vh; display: none; } 
+.ev_pop { position: fixed; background: #fff; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 9999999999999; border-radius: 10px; overflow: hidden; } 
+.ev_pop.wd450 { max-width: 450px; width: 90%; } 
+.ev_pop.wd550 { max-width: 550px; width: 90%; } 
+.ev_pop .popup_top { background:#21a39b; color: #fff; height: 50px; position: relative; } 
+.ev_pop .popup_top .close { font-size: 24px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%) } 
+.ev_pop .popup_inner { padding: 30px; text-align: center; font-size: 16px } 
+.ev_pop#popup_gift strong { color: #ff3c81; font-size: 18px } 
+.btn_wrap { margin-top: 30px; text-align: center; } 
+.ev_pop .btn_wrap a { font-size: 15px; padding: 7px 20px; border-radius: 5px; } 
+.ev_pop .btn_wrap a + a { margin-left: 10px } 
+.ev_pop .btn_wrap .btn_blue { background: #1d407c !important } 
+.ev_pop .btn_wrap .btn_gray { background: #dcdcdc; } 
