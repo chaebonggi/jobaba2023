@@ -18,8 +18,9 @@
 .eventWrap .fs14 { font-size: 14px; } 
 
 .eventWrap .eventMain { background: url(../resource/images/eventImg/event08/ev_main_bg.jpg) top center no-repeat; } 
-.eventWrap .eventMain .innerSection { padding: 120px 10px 390px; } 
-.eventWrap .eventMain .imgWrap { margin-bottom: 20px; text-align: center; } 
+.eventWrap .eventMain .innerSection { padding: 120px 0 390px; } 
+.eventWrap .eventMain .imgWrap:not(.evMobile) { margin-bottom: 20px; text-align: center; } 
+.eventWrap .eventMain .imgWrap.evMobile { display: none; } 
 .eventWrap .eventMain ul { width: 650px; position: relative; margin: 0 auto; padding: 15px 90px; background: #eaaea2; border-radius: 100px; } 
 .eventWrap .eventMain ul::after { content: ''; width: 35px; height: 37px; position: absolute; top: -16px; right: 85px; background: url(../resource/images/eventImg/event08/ev_main_icon01.png) no-repeat; } 
 .eventWrap .eventMain ul li { display: flex; align-items: baseline; color: #000; } 
@@ -48,7 +49,7 @@
  .eventWrap .event01 { position: relative; background: url(../resource/images/eventImg/event08/ev01_bg.jpg) top center no-repeat; } 
  .eventWrap .event01 .innerSection { padding: 90px 0 100px; } 
  .eventWrap .event01 .titWrap { margin-bottom: 20px; text-align: center; } 
- .eventWrap .event01 .titWrap p { display: inline-block; padding: 0 30px; background: #000; color: #fff; font-size: 36px; border: 5px solid #ffaf26; border-radius: 50px; } 
+ .eventWrap .event01 .titWrap p { display: inline-block; padding: 0 30px; background: #000; color: #fff; border: 5px solid #ffaf26; border-radius: 50px; } 
  .eventWrap .event01 .imgWrap { text-align: center; } 
  .eventWrap .event01 .giftList { padding: 120px 100px 50px; margin-top: -90px; background: #dfeaa5; border: 2px solid #000; border-radius: 20px; } 
  .eventWrap .event01 .giftList ul { display: flex; margin-bottom: 50px; flex-wrap: wrap; gap: 10px 0; } 
@@ -58,7 +59,7 @@
 
  .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg.jpg) top center no-repeat; } 
  .eventWrap .event02 .innerSection { padding: 190px 0 200px; } 
- .eventWrap .event02 .boxWrap { position: relative; padding: 70px 10px 40px; margin-bottom: 100px; background: #f6f6f6; border: 6px solid #9adcd0; border-radius: 20px; text-align: center; } 
+ .eventWrap .event02 .boxWrap { position: relative; padding: 70px 10px 40px; margin-bottom: 100px; background: #f6f6f6; border: 6px solid #9adcd0; border-radius: 20px; text-align: center; word-break: keep-all; } 
  .eventWrap .event02 .boxWrap .titWrap { position: absolute; left: 50%; top: -40px; transform: translateX(-50%); } 
  .eventWrap .event02 .boxWrap .titWrap p { display: inline-block; padding: 0 30px; background: #000; border: 5px solid #9adcd0; border-radius: 40px; } 
  .eventWrap .event02 .boxWrap .gift strong { display: block; line-height: 1; } 
@@ -81,7 +82,7 @@
 
  .eventWrap .evTicket { text-align: center; } 
  .eventWrap .evTicket p { display: inline-block; } 
- .eventWrap .evTicket p::before { content: ''; display: block; width: 91px; height: 49px; margin: 0 auto 10px; background: url(../resource/images/eventImg/event08/ev_ticket.png) no-repeat; background-size: contain; }
+ .eventWrap .evTicket p::before { content: ''; display: block; width: 91px; height: 49px; margin: 0 auto 10px; background: url(../resource/images/eventImg/event08/ev_ticket.png) no-repeat; background-size: contain; } 
  #gameContainer { width: 684px; height: 684px; text-align: center; margin: auto; position: relative; margin-top: 120px; } 
  #gameContainer::before { content: ''; width: 149px; height: 208px; position: absolute; bottom: -8px; left: -80px; background: url(../resource/images/eventImg/event08/ev02_icon01.png) no-repeat; } 
  #gameContainer::after { content: ''; width: 167px; height: 213px; position: absolute; bottom: -24px; right: -98px; background: url(../resource/images/eventImg/event08/ev02_icon02.png) no-repeat; } 
@@ -112,7 +113,7 @@
  .eventWrap .evTitWrap p span { line-height: 1.2; } 
  .eventWrap .evTitWrap p.icon01 span { margin-left: -60px; } 
  .eventWrap .evTitWrap p.icon02 span { margin-left: -30px; margin-top: 60px; } 
- .eventWrap .evTitWrap > span { display: block; padding: 10px; background: #fff; border-radius: 30px; border: 1px solid #000; } 
+ .eventWrap .evTitWrap > span { display: block; padding: 10px; background: #fff; border-radius: 30px; border: 1px solid #000; word-break: keep-all; } 
  .eventWrap .event03 { background: url(../resource/images/eventImg/event08/ev03_bg.jpg) top center #f2efe5 no-repeat; } 
  .eventWrap .event03 .innerSection { padding: 0 0 48px; } 
  .eventWrap .event03 .titleWrap { top: -56px; } 
@@ -147,9 +148,9 @@
  .eventWrap .event04 .serviceWrap li:nth-child(3) { background: #f0e1ca; } 
  .eventWrap .event04 .serviceWrap li + li { margin-top: 20px; } 
  .eventWrap .event04 .serviceWrap li::before { content: ''; width: 72px; height: 69px; position: absolute; top: 0; left: 40px; } 
- .eventWrap .event04 .serviceWrap li:nth-child(1)::before { background: url(../resource/images/eventImg/event08/ev04_icon01.png); } 
- .eventWrap .event04 .serviceWrap li:nth-child(2)::before { background: url(../resource/images/eventImg/event08/ev04_icon02.png); } 
- .eventWrap .event04 .serviceWrap li:nth-child(3)::before { background: url(../resource/images/eventImg/event08/ev04_icon03.png); } 
+ .eventWrap .event04 .serviceWrap li:nth-child(1)::before { background: url(../resource/images/eventImg/event08/ev04_icon01.png) no-repeat; background-size: contain; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(2)::before { background: url(../resource/images/eventImg/event08/ev04_icon02.png) no-repeat; background-size: contain; } 
+ .eventWrap .event04 .serviceWrap li:nth-child(3)::before { background: url(../resource/images/eventImg/event08/ev04_icon03.png) no-repeat; background-size: contain; } 
  .eventWrap .event04 .serviceWrap .titWrap { margin-bottom: 20px; text-align: center; } 
  .eventWrap .event04 .serviceWrap .titWrap strong { display: block; } 
  .eventWrap .event04 .serviceWrap li:nth-child(1) .txtWrap strong { color: #8b6ecb; } 
@@ -158,15 +159,15 @@
  .eventWrap .event04 .serviceWrap .txtWrap { display: flex; padding: 30px 50px; background: #fff; border-radius: 100px; justify-content: space-between; align-items: center; } 
  .eventWrap .event04 .serviceWrap .txtWrap strong { display: block; } 
  .eventWrap .event04 .serviceWrap .txtWrap a::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 2px; background: linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; } 
- .eventWrap .event04 .serviceWrap .txtWrap a { display: inline-block; position: relative; padding: 16px 32px; background: #383838; color: #fff; border-radius: 30px; } 
+ .eventWrap .event04 .serviceWrap .txtWrap a { display: inline-block; position: relative; padding: 16px 32px; background: #383838; color: #fff; border-radius: 30px; flex-shrink: 0; } 
  .eventWrap .event04 .serviceWrap .txtWrap a span { position: relative; } 
  .eventWrap .event04 .serviceWrap .txtWrap a span::after { content: ''; width: 28px; height: 28px; position: absolute; bottom: -30px; right: -34px; background: url(../resource/images/eventImg/event08/ev_btn_icon01.png) no-repeat; background-size: contain; } 
 
- .eventWrap .event05 {background: #001d4b; } 
-.eventWrap .event05 .innerSection {padding: 70px 0; } 
-.eventWrap .event05 h3 {margin-bottom: 10px;color: #fff; } 
-.eventWrap .event05 li::before {content: '\00B7';position: absolute;left: 0;top: 5px;color: #fff; } 
-.eventWrap .event05 li {position: relative;padding-left: 15px;margin-bottom: 6px;color: #fff;word-break: keep-all; } 
+ .eventWrap .event05 { background: #001d4b; } 
+.eventWrap .event05 .innerSection { padding: 70px 0; } 
+.eventWrap .event05 h3 { margin-bottom: 10px; color: #fff; } 
+.eventWrap .event05 li::before { content: '\00B7'; position: absolute; left: 0; top: 5px; color: #fff; } 
+.eventWrap .event05 li { position: relative; padding-left: 15px; margin-bottom: 6px; color: #fff; word-break: keep-all; } 
 
  
 /* 팝업 */
@@ -183,3 +184,109 @@
 .ev_pop .btn_wrap a + a { margin-left: 10px } 
 .ev_pop .btn_wrap .btn_blue { background: #1d407c !important } 
 .ev_pop .btn_wrap .btn_gray { background: #dcdcdc; } 
+
+@media all and (max-width: 1700px){
+ .eventWrap .leftMenu { display: none; } 
+ }
+ 
+@media all and (max-width: 1024px){
+ .eventWrap .eventMain .innerSection { padding: 120px 0 0; } 
+ .eventWrap .eventMain { background: url(../resource/images/eventImg/event08/ev_main_bg02.jpg) top center no-repeat; background-size: cover; } 
+ .eventWrap .eventMain .imgWrap.evMobile { display: block; margin-top: 20px; text-align: center; } 
+ 
+ .eventWrap .event01 .innerSection { padding: 90px 10px 100px; } 
+
+ .eventWrap .event02 .innerSection { padding: 190px 10px 200px; } 
+ #gameContainer::before,
+ #gameContainer::after { content: none; } 
+
+ .eventWrap .event03 .innerSection { padding: 0 10px 48px; } 
+.eventWrap .evTitWrap { margin: 0 80px 30px; } 
+
+.eventWrap .event04 .innerSection { padding: 50px 10px 100px; } 
+.eventWrap .event05 .innerSection { padding: 70px 10px; } 
+ }
+
+@media all and (max-width: 860px){
+ .eventWrap .eventMain .innerSection { padding: 60px 10px 0; } 
+ .eventWrap .eventMain .imgWrap:not(.evMobile) img { transform: scale(0.8); } 
+ .eventWrap .eventMain ul { width: 100%; padding: 15px 60px; } 
+
+ .eventWrap .event01 .innerSection { padding: 60px 10px 50px; } 
+ .eventWrap .event01 .imgWrap img { transform: scale(0.8); } 
+.eventWrap .event01 .giftList { padding: 90px 20px 30px; } 
+.eventWrap .event01 .giftList > p { width: 100%; margin: 0; } 
+
+.eventWrap .event02 .innerSection { padding: 100px 10px 100px; } 
+.eventWrap .event02 .misstionWrap { flex-direction: column; gap: 80px 0; } 
+#gameContainer { zoom: 0.7; } 
+
+.eventWrap .event03 .stepWrap { flex-direction: column; align-items: center; } 
+.eventWrap .event03 .stepWrap .stepBox { width: 100%; max-width: 650px; padding: 20px; text-align: center; word-break: keep-all; } 
+.eventWrap .event03 .stepWrap .stepBox.style02 { flex-direction: column; text-align: left; } 
+.eventWrap .event03 .stepWrap .titWrap p { margin-left: 0; } 
+.eventWrap .event03 .stepWrap ul { margin-left: 0; margin-bottom: 20px; } 
+.eventWrap .titleWrap { margin: 0 auto; word-break: keep-all; } 
+.eventWrap .evTitWrap { margin: 0 0 30px; } 
+.eventWrap .evTitWrap p { flex-direction: column; } 
+.eventWrap .evTitWrap p.icon01 span { margin-left: 0; } 
+.eventWrap .evTitWrap p.icon01::before { width: 170px; height: 150px; margin-bottom: 10px; background-size: contain; } 
+
+.eventWrap .evTitWrap p.icon02::before { width: 170px; height: 160px; margin: 50px 0 10px; background-size: contain; } 
+.eventWrap .evTitWrap p.icon02 span { margin-left: 0; margin-top: 0; } 
+.eventWrap .event04 .serviceWrap .txtWrap { padding: 30px 20px; border-radius: 30px; flex-direction: column; word-break: keep-all; } 
+.eventWrap .event04 .serviceWrap .txtWrap a { margin-top: 20px; } 
+ }
+
+@media all and (max-width: 640px){
+ .eventWrap .fs36 { font-size: 20px; } 
+ .eventWrap .fs34 { font-size: 18px; } 
+ .eventWrap .fs30 { font-size: 18px; } 
+ .eventWrap .fs24 { font-size: 16px; } 
+ .eventWrap .fs22 { font-size: 14px; } 
+.eventWrap .fs20 { font-size: 14px; } 
+.eventWrap .fs16 { font-size: 12px; } 
+ .eventWrap .eventMain .innerSection { padding: 30px 10px 0; } 
+ .eventWrap .eventMain ul { padding: 15px 10px; border-radius: 30px; } 
+ .eventWrap .eventMain ul li { flex-direction: column; align-items: center; } 
+ .eventWrap .eventMain ul li + li { margin-top: 10px; } 
+ .eventWrap .eventMain ul li > span { width: 100%; } 
+ .eventWrap .eventMain ul li .siner { display: block; font-size: 16px; text-align: center; } 
+ .eventWrap .eventMain ul li p { margin-left: 0; font-size: 16px; font-weight: bold; } 
+ .eventWrap .eventMain ul li p span { font-size: 14px; text-align: center; } 
+ .eventWrap .eventMain ul::after { right: 4px; } 
+
+.eventWrap .event01 .innerSection { padding: 30px 10px 30px; } 
+.eventWrap .event01 .giftList ul { margin-bottom: 20px; gap: 10px; } 
+.eventWrap .event01 .giftList li { width: calc(100% / 2 - 5px); } 
+.eventWrap .event01 .giftList li p { margin-top: 0; font-size: 16px; } 
+.eventWrap .event01 .giftList { margin-top: -40px; padding: 40px 20px 30px; } 
+.eventWrap .event01 .giftList > p { padding: 8px 10px; font-size: 12px; word-break: keep-all; } 
+
+.eventWrap .event02 .innerSection { padding: 30px 10px 100px; } 
+.eventWrap .event02 .boxWrap { padding: 20px 10px 20px; margin-bottom: 50px; border: 4px solid #9adcd0; } 
+.eventWrap .event02 .misstionWrap { gap: 40px 0; } 
+.eventWrap .event02 .boxWrap .titWrap { position: static; margin-bottom: 20px; transform: none; } 
+.eventWrap .event02 .boxWrap .titWrap p { border: 2px solid #9adcd0; } 
+.eventWrap .event02 .evBox .titWrap { top: -30px; } 
+.eventWrap .event02 .evBox .txtWrap span { width: 60px; height: 60px; } 
+.eventWrap .event02 .evBox .txtWrap span::before { font-size: 16px; } 
+.eventWrap .event02 .evBox .titWrap::before,
+.eventWrap .event02 .evBox .titWrap::after { content: none; } 
+
+#gameContainer { zoom: 0.35; } 
+
+.eventWrap .event03 .characterType ul { padding: 20px 20px; } 
+
+.eventWrap .event04 .innerSection { padding: 30px 10px 30px; } 
+
+.eventWrap .titleWrap p strong { font-size: 22px; } 
+.eventWrap .event04 .serviceWrap { padding: 20px 20px; } 
+.eventWrap .event04 .serviceWrap li { padding: 10px; } 
+.eventWrap .event04 .serviceWrap li::before { width: 40px; height: 38px; left: 25px; } 
+.eventWrap .event04 .serviceWrap li { padding: 36px 10px 10px; } 
+.eventWrap .event04 .serviceWrap .txtWrap { padding: 10px 10px; border-radius: 15px; } 
+.eventWrap .event04 .serviceWrap .txtWrap a { width: 100%; text-align: center; } 
+.eventWrap .event04 .serviceWrap .txtWrap a span::after { width: 20px; height: 20px; bottom: -19px; right: -24px; } 
+.eventWrap .event05 .innerSection { padding: 30px 10px; } 
+ }

@@ -31,7 +31,8 @@
 <div id="page-content">
 	<div class="shadow"></div>
 	<section class="eventWrap">
-		<article class="eventMain">
+		
+		<article class="eventMain" id="moveTo03">
 			<div class="innerSection">
 				<div class="mainVisual">
 					<div class="imgWrap">
@@ -51,7 +52,9 @@
 							<p>10월 5일(목)</p>
 						</li>
 					</ul>
-		
+					<div class="imgWrap evMobile">
+						<img src="./resource/images/eventImg/event08/ev_main_mobile.png" alt="행운송편 얻고 룰렛 돌리자!">
+					</div>
 				</div>
 			</div>	 
 		</article>
@@ -81,7 +84,7 @@
 			</div>
 			<div class="innerSection">
 				<div class="titWrap">
-					<p>이벤트 경품안내</p>
+					<p class="fs36">이벤트 경품안내</p>
 				</div>
 				<div class="imgWrap">
 					<img src="./resource/images/eventImg/event08/ev01_title.png" alt="총 600명에게 잡아바가 쏩니다!">
@@ -141,7 +144,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="event02">			
+		<article class="event02">
 			<div class="innerSection">
 				<div class="boxWrap">
 					<div class="titWrap">
@@ -158,20 +161,20 @@
 				</div>
 				<div class="misstionWrap">
 					<div class="evBox">
-						<a href="">
+						<a href="#moveTo01">
 							<div class="titWrap">
 								<p class="fs30 fcWhite">MISSION 1</p>
 							</div>
 							<div class="txtWrap">
 								<p class="fs24">잡아바&middot;캐릭터 잡기</p>
-								<!-- span class 'on' 추가시 참여완료로 변경됩니다 -->
+								 <!-- span class 'on' 추가시 참여완료로 변경됩니다 -->
 								<span class="on">참여하기</span>
 								<strong class="GmarketSansBold fs30">캐릭터 잡고 경품 받고!</strong>
 							</div>
 						</a>
 					</div>
 					<div class="evBox style02">
-						<a href="">
+						<a href="#moveTo02">
 							<div class="titWrap">
 								<p class="fs30 fcWhite">MISSION 2</p>
 							</div>
@@ -210,11 +213,8 @@
 				<!-- //gameContainer -->
 			</div>
 		</article>
-		<article class="event03">
+		<article class="event03 linkWrap" id="moveTo01">
 			<div class="innerSection">
-				<style>
-					
-				</style>
 				<div class="titleWrap">
 					<p><strong class="GmarketSansBold">잡아바 캐릭터 잡기</strong></p>
 				</div>
@@ -263,7 +263,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="event04">
+		<article class="event04 linkWrap" id="moveTo02">
 			<div class="innerSection">
 				<div class="titleWrap">
 					<p><strong class="GmarketSansBold">취업역량 강화 서비스 체험하기</strong></p>
@@ -280,7 +280,7 @@
 							</div>
 							<div class="txtWrap">
 								<p class="fs20"><strong class="GmarketSansBold fs24">AI 역량검사 완료하면 ‘행운송편‘ 지급!</strong>검사 완료 후 익일 오전 4:00에 행운송편이 지급됩니다.</p>
-								<a href=""><span class="fs20">바로가기</span></a>
+								<a href="https://www.jobaba.net/interview/mainList.do"><span class="fs20">바로가기</span></a>
 							</div>
 						</li>
 						<li>
@@ -289,7 +289,7 @@
 							</div>
 							<div class="txtWrap">
 								<p class="fs20"><strong class="GmarketSansBold fs24">컨설팅 첨삭 신청 시 ‘행운송편’ 지급!</strong>첨삭 신청 시, 행운송편 즉시 지급!</p>
-								<a href=""><span class="fs20">바로가기</span></a>
+								<a href="https://www.jobaba.net/introduction/mainList.do"><span class="fs20">바로가기</span></a>
 							</div>
 						</li>
 						<li>
@@ -298,7 +298,7 @@
 							</div>
 							<div class="txtWrap">
 								<p class="fs20"><strong class="GmarketSansBold fs24">검사 신청 시 ‘행운송편‘ 지급!</strong>검사 신청 시, 행운송편 즉시 지급!</p>
-								<a href=""><span class="fs20">바로가기</span></a>
+								<a href="https://www.jobaba.net/auland/mainList.do"><span class="fs20">바로가기</span></a>
 							</div>
 						</li>
 					</ul>
@@ -419,6 +419,41 @@
 
 <script>	
 	$(document).ready(function() {
+		// left메뉴
+		const menuOffset =  $('.leftMenu').offset();
+		const menu = $('.menuList')
+		const menuHight = menu.outerHeight();
+		const articles = $('.linkWrap');
+
+		$(document).scroll(function(){
+			const winScroll = $(this).scrollTop();
+
+			if( winScroll > menuOffset.top) {
+				$('.leftMenu').addClass('fixed');
+			}else {
+				$('.leftMenu').removeClass('fixed');
+			}
+			articles.each(function(){
+				const winTop = $(this).offset().top - menuHight;
+				const winBottom = winTop + $(this).outerHeight();
+				if (winScroll >= winTop && winScroll <= winBottom) {
+					menu.find("a").parent().removeClass('active');
+					menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
+				}
+			});	
+		});
+		$('.menuList li a, .evBox a').click(function(e){
+			var href = $(this).attr('href');
+			if( href === '#moveTo01') {
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100}, 500);
+			} else {
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top}, 500);
+			}
+			e.preventDefault();
+		});	
+
+
+		// 룰렛
 		var gift;
 		var present = ['바나나 우유', '비타 500', '롯데리아 햄버거세트', '비타 500','BHC 치킨세트', '이디야 커피쿠폰','바나나 우유', '네이버 페이 20,000원']
 		var clicked = 0;
