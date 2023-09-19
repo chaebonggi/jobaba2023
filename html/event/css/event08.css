@@ -240,7 +240,7 @@
 
 @media all and (max-width: 640px){
  .eventWrap .fs36 { font-size: 20px; } 
- .eventWrap .fs34 { font-size: 18px; } 
+ .eventWrap .fs34 { font-size: 20px; } 
  .eventWrap .fs30 { font-size: 18px; } 
  .eventWrap .fs24 { font-size: 16px; } 
  .eventWrap .fs22 { font-size: 14px; } 
@@ -274,7 +274,7 @@
 .eventWrap .event02 .evBox .titWrap::before,
 .eventWrap .event02 .evBox .titWrap::after { content: none; } 
 
-#gameContainer { zoom: 0.35; } 
+#gameContainer { zoom: 0.4; } 
 
 .eventWrap .event03 .characterType ul { padding: 20px 20px; } 
 
@@ -289,4 +289,6 @@
 .eventWrap .event04 .serviceWrap .txtWrap a { width: 100%; text-align: center; } 
 .eventWrap .event04 .serviceWrap .txtWrap a span::after { width: 20px; height: 20px; bottom: -19px; right: -24px; } 
 .eventWrap .event05 .innerSection { padding: 30px 10px; } 
+.eventWrap .evTitWrap p.icon01::before { width: 120px; height: 106px; } 
+.eventWrap .evTitWrap p.icon02::before { width: 120px; height: 113px; margin: 20px 0 10px; } 
  }
