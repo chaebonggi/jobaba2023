@@ -442,7 +442,7 @@
 				}
 			});	
 		});
-		$('.menuList li a, .evBox a').click(function(e){
+		$('.leftMenu a, .evBox a').click(function(e){
 			var href = $(this).attr('href');
 			if( href === '#moveTo01') {
 				$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100}, 500);
