@@ -224,6 +224,7 @@
 .eventWrap .event03 .stepWrap { flex-direction: column; align-items: center; } 
 .eventWrap .event03 .stepWrap .stepBox { width: 100%; max-width: 650px; padding: 20px; text-align: center; word-break: keep-all; } 
 .eventWrap .event03 .stepWrap .stepBox.style02 { flex-direction: column; text-align: left; } 
+.eventWrap .event03 .stepWrap img {transform: scale(0.8);}
 .eventWrap .event03 .stepWrap .titWrap p { margin-left: 0; } 
 .eventWrap .event03 .stepWrap ul { margin-left: 0; margin-bottom: 20px; } 
 .eventWrap .titleWrap { margin: 0 auto; word-break: keep-all; } 
