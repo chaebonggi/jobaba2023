@@ -158,3 +158,59 @@
     src: url("../fonts/BMHANNA11yrsold.woff2")format("woff2"),
     url("../fonts/BMHANNA11yrsold.woff")format("woff");
 }
+@font-face {
+    font-family: "jalNan";
+	font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Jalnan.woff2")format("woff2"),
+    url("../fonts/Jalnan.woff")format("woff");
+}
+@font-face {
+    font-family: "EsaManru";
+	font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/EsaManruLight.woff2")format("woff2"),
+    url("../fonts/EsaManruLight.woff")format("woff");
+}
+@font-face {
+    font-family: "EsaManru";
+	font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/EsaManruMedium.woff2")format("woff2"),
+    url("../fonts/EsaManruMedium.woff")format("woff");
+}
+@font-face {
+    font-family: "EsaManru";
+	font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/EsaManruBold.woff2")format("woff2"),
+    url("../fonts/EsaManruBold.woff")format("woff");
+}
+@font-face {
+    font-family: "Pretendard";
+	font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Pretendard-Regular.woff2")format("woff2"),
+    url("../fonts/Pretendard-Regular.woff")format("woff");
+}
+@font-face {
+    font-family: "SBAggro";
+	font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/SBAggroLight.woff2")format("woff2"),
+    url("../fonts/SBAggroLight.woff")format("woff");
+}
+@font-face {
+    font-family: "SBAggro";
+	font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/SBAggroMedium.woff2")format("woff2"),
+    url("../fonts/SBAggroMedium.woff")format("woff");
+}
+@font-face {
+    font-family: "SBAggro";
+	font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/SBAggroBold.woff2")format("woff2"),
+    url("../fonts/SBAggroBold.woff")format("woff");
+}
