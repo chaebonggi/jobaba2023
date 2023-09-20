@@ -214,3 +214,9 @@
     src: url("../fonts/SBAggroBold.woff2")format("woff2"),
     url("../fonts/SBAggroBold.woff")format("woff");
 }
+/* @font-face {
+    font-family: "swiper-icons";
+    src: url("../fonts/swiperIcon.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+} */
