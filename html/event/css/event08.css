@@ -83,22 +83,21 @@
  .eventWrap .evTicket { text-align: center; } 
  .eventWrap .evTicket p { display: inline-block; } 
  .eventWrap .evTicket p::before { content: ''; display: block; width: 91px; height: 49px; margin: 0 auto 10px; background: url(../resource/images/eventImg/event08/ev_ticket.png) no-repeat; background-size: contain; } 
- #gameContainer { width: 684px; height: 684px; text-align: center; margin: auto; position: relative; margin-top: 120px; } 
+ #gameContainer { width: 689px; height: 688px; text-align: center; margin: auto; position: relative; margin-top: 120px; } 
  #gameContainer::before { content: ''; width: 149px; height: 208px; position: absolute; bottom: -8px; left: -80px; background: url(../resource/images/eventImg/event08/ev02_icon01.png) no-repeat; } 
  #gameContainer::after { content: ''; width: 167px; height: 213px; position: absolute; bottom: -24px; right: -98px; background: url(../resource/images/eventImg/event08/ev02_icon02.png) no-repeat; } 
  #gameContainer .gameShadow::before { content: ''; width: 461px; height: 91px; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event08/ev_bg.png) bottom center no-repeat; z-index: 1; } 
  #gameContainer .cursor { position: absolute; background: url(../resource/images/eventImg/event08/ev_obj.png) no-repeat; width: 84px; height: 123px; top: -60px; left: 50%; transform: translateX(-50%); z-index: 999; } 
- #gameContainer .board_on { width: 684px; height: 684px; position: relative; background: url(../resource/images/eventImg/event08/ev_roulette.png) no-repeat center; z-index: 2; } 
+ #gameContainer .board_on { width: 689px; height: 688px; position: relative; background: url(../resource/images/eventImg/event08/ev_roulette02.png) no-repeat center; z-index: 2; } 
  #gameContainer .board_start { width: 141px; height: 141px; background: #3d9988; color: #fff; cursor: pointer; border-radius: 50%; position: absolute; top: 50%; left: 50%; z-index: 55; transform: translate(-50%,-50%); font-size: 24px; display: flex; justify-content: center; align-items: center; font-weight: bold; letter-spacing: -1px; border: 6px solid #96ede3; } 
  #gameContainer .board_on img { position:absolute; } 
- #gameContainer .board_on img:nth-child(1) { left: 145px; top: 146px; } 
- #gameContainer .board_on img:nth-child(2) { left: 94px; bottom: 304px; } 
- #gameContainer .board_on img:nth-child(3) { left: 140px; bottom: 138px; } 
- #gameContainer .board_on img:nth-child(4) { left: 50%; transform: translateX(-50%); bottom: 80px } 
- #gameContainer .board_on img:nth-child(5) { right: 126px; bottom: 122px } 
- #gameContainer .board_on img:nth-child(6) { right: 90px; bottom: 280px } 
- #gameContainer .board_on img:nth-child(7) { right: 142px; top: 138px } 
- #gameContainer .board_on img:nth-child(8) { right: 292px; top: 80px } 
+
+ #gameContainer .board_on img:nth-child(1) { left: 118px; top: 188px; transform: rotate(-60deg);}
+ #gameContainer .board_on img:nth-child(2) { left: 124px; bottom: 188px; transform: rotate(-120deg);}  
+ #gameContainer .board_on img:nth-child(3) { left: 288px; bottom: 98px; transform: rotate(180deg);} 
+ #gameContainer .board_on img:nth-child(4) { right: 130px; bottom: 198px; transform: rotate(120deg);} 
+ #gameContainer .board_on img:nth-child(5) { right: 140px; top: 190px; transform: rotate(60deg);} 
+ #gameContainer .board_on img:nth-child(6) { left: 300px; top: 94px;} 
 
  .eventWrap .titleWrap { position: relative; max-width: 640px; padding: 30px; margin: 0 auto 40px; background:#4bbdfd; border: 2px solid #000; border-radius: 30px; text-align: center; z-index:1; } 
  .eventWrap .titleWrap:before { content:""; position:absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background:#ff6982; border: 2px solid #000; border-radius: 25px; z-index: -1; } 

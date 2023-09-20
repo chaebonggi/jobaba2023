@@ -455,16 +455,16 @@
 
 		// 룰렛
 		var gift;
-		var present = ['바나나 우유', '비타 500', '롯데리아 햄버거세트', '비타 500','BHC 치킨세트', '이디야 커피쿠폰','바나나 우유', '네이버 페이 20,000원']
+		var present = ['BHC 치킨세트', '롯데리아 햄버거 세트', '이디야 커피쿠폰', '바나나 우유','비타 500', '네이버 페이 20,000원']
 		var clicked = 0;
-		var rotationPos = new Array(45, 90, 135, 180, 225, 270, 315, 360);
-		for (i = 1; i < 9; i++) {
+		var rotationPos = new Array(60, 120, 180, 240, 300, 360);
+		for (i = 1; i < 7; i++) {
 			var pictures = "./resource/images/eventImg/event08/gift" + i + ".png";
 			$(".board_on").append('<img  src="' + pictures + '" />');
 		}
 		$(".join").on("mousedown", function() {
 			if (clicked <= 0) {
-				iniGame(Math.floor(Math.random() * 8));
+				iniGame(Math.floor(Math.random() * 5));
 			} else if (clicked >= 1) {
 				event.preventDefault();
 				$('#popup_no_ticket').show();
@@ -492,7 +492,6 @@
 
 		function endGame() {
 			var copImg = "./resource/images/eventImg/event08/gift_icon0" + (gift + 1) + ".png";
-			
 			$("#popup_gift .lottery_present .gift_end1").text(function() {
 				return "축하합니다."
 				});
