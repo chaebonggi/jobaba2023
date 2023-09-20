@@ -1,7 +1,5 @@
-@font-face { font-family: 'GmarketSans'; font-weight: 500; font-style: normal; src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot'); src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
- url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
- url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
- url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype"); font-display: swap; } 
+@import url(../../etc/css/fonts.css);
+
 
 .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; } 
 .mt20 { margin-top: 20px; } 
@@ -226,7 +224,7 @@
  #newMain .m_counseling_chat .chatTalk strong::before { content: ''; display: inline-block; width: 57px; height: 53px; margin-right: 6px; background: url(https://www.jobaba.net/resource/images/main2023/icon_chat04.png) no-repeat; background-size: cover; } 
  #newMain .m_counseling_chat .chatLive { position: relative; } 
  #newMain .m_counseling_chat .chatLive::before { content: ''; width: 56px; height: 49px; position: absolute; top: -52px; right: 4px; background: url(https://www.jobaba.net/resource/images/main2023/icon_chat05.png) no-repeat; background-size: cover; animation: move 3s infinite; } 
- #newMain .m_counseling_chat .chatLive strong { display: flex; align-items: center; position: relative; color: #ffff00; font-size: 16px; font-family: 'GmarketSans'; } 
+ #newMain .m_counseling_chat .chatLive strong { display: flex; align-items: center; position: relative; color: #ffff00; font-size: 16px; font-family: 'GmarketSans'; font-weight: 500; } 
  #newMain .m_counseling_chat .chatLive strong::before { content: ''; width: 18px; height: 11px; position: absolute; top: -10px; left: 3px; background: url(https://www.jobaba.net/resource/images/main2023/icon_chat06.png) no-repeat; background-size: cover; animation: fade 3s infinite; } 
  #newMain .m_counseling_chat .chatLive strong::after { content: ''; display: inline-block; width: 12px; height: 13px; margin-left: 4px; background: url(https://www.jobaba.net/resource/images/main2023/icon_chat07.png) no-repeat; background-size: cover; } 
 
