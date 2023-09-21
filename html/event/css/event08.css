@@ -92,12 +92,20 @@
  #gameContainer .board_start { width: 141px; height: 141px; background: #3d9988; color: #fff; cursor: pointer; border-radius: 50%; position: absolute; top: 50%; left: 50%; z-index: 55; transform: translate(-50%,-50%); font-size: 24px; display: flex; justify-content: center; align-items: center; font-weight: bold; letter-spacing: -1px; border: 6px solid #96ede3; } 
  #gameContainer .board_on img { position:absolute; } 
 
- #gameContainer .board_on img:nth-child(1) { left: 128px; top: 192px; transform: rotate(-60deg);}
- #gameContainer .board_on img:nth-child(2) { left: 124px; bottom: 188px; transform: rotate(-120deg);}  
- #gameContainer .board_on img:nth-child(3) { left: 288px; bottom: 92px; transform: rotate(180deg);} 
- #gameContainer .board_on img:nth-child(4) { right: 130px; bottom: 198px; transform: rotate(120deg);} 
- #gameContainer .board_on img:nth-child(5) { right: 135px; top: 204px; transform: rotate(60deg);} 
- #gameContainer .board_on img:nth-child(6) { left: 314px; top: 94px;} 
+ #gameContainer .board_on img:nth-child(1) { left: 128px; top: 192px; transform: rotate(-60deg); } 
+ #gameContainer .board_on img:nth-child(2) { left: 124px; bottom: 188px; transform: rotate(-120deg); } 
+ #gameContainer .board_on img:nth-child(3) { left: 288px; bottom: 92px; transform: rotate(180deg); } 
+ #gameContainer .board_on img:nth-child(4) { right: 130px; bottom: 198px; transform: rotate(120deg); } 
+ #gameContainer .board_on img:nth-child(5) { right: 135px; top: 204px; transform: rotate(60deg); } 
+ #gameContainer .board_on img:nth-child(6) { left: 314px; top: 94px; } 
+
+ .eventWrap .giftInfo { max-width: 420px; margin: 90px auto 0; text-align: center; border: 1px solid #000; border-radius: 20px; overflow: hidden; } 
+.eventWrap .giftInfo .titWrap { padding: 10px 0; background: #96ede3; border-bottom: 1px solid #000; } 
+.eventWrap .giftInfo table { width: 100%; background: #fff; } 
+.eventWrap .giftInfo table th { padding: 10px 0; background: #e2e2e2; } 
+.eventWrap .giftInfo table tr { border-bottom: 1px solid #ddd; } 
+.eventWrap .giftInfo table td { padding: 10px 0; } 
+.eventWrap .giftInfo table td { padding: 10px 0; } 
  
 
  .eventWrap .titleWrap { position: relative; max-width: 640px; padding: 30px; margin: 0 auto 40px; background:#4bbdfd; border: 2px solid #000; border-radius: 30px; text-align: center; z-index:1; } 
@@ -184,12 +192,8 @@
 .ev_pop .btn_wrap a + a { margin-left: 10px } 
 .ev_pop .btn_wrap .btn_blue { background: #1d407c !important } 
 .ev_pop .btn_wrap .btn_gray { background: #dcdcdc; } 
-.ev_pop .lottery_present img {
-    margin-bottom: 20px;
-}
-.ev_pop .lottery_present img + img {
-    display: none;
-}
+.ev_pop .lottery_present img { margin-bottom: 20px; } 
+.ev_pop .lottery_present img + img { display: none; } 
 
 @media all and (max-width: 1700px){
  .eventWrap .leftMenu { display: none; } 
@@ -230,7 +234,7 @@
 .eventWrap .event03 .stepWrap { flex-direction: column; align-items: center; } 
 .eventWrap .event03 .stepWrap .stepBox { width: 100%; max-width: 650px; padding: 20px; text-align: center; word-break: keep-all; } 
 .eventWrap .event03 .stepWrap .stepBox.style02 { flex-direction: column; text-align: left; } 
-.eventWrap .event03 .stepWrap img {transform: scale(0.8);}
+.eventWrap .event03 .stepWrap img { transform: scale(0.8); } 
 .eventWrap .event03 .stepWrap .titWrap p { margin-left: 0; } 
 .eventWrap .event03 .stepWrap ul { margin-left: 0; margin-bottom: 20px; } 
 .eventWrap .titleWrap { margin: 0 auto; word-break: keep-all; } 
@@ -257,7 +261,7 @@
  .eventWrap .eventMain ul { padding: 15px 10px; border-radius: 30px; } 
  .eventWrap .eventMain ul li { flex-direction: column; align-items: center; } 
  .eventWrap .eventMain ul li + li { margin-top: 10px; } 
- .eventWrap .eventMain ul li > span { width: 100%; max-width: 140px;} 
+ .eventWrap .eventMain ul li > span { width: 100%; max-width: 140px; } 
  .eventWrap .eventMain ul li .siner { display: block; font-size: 16px; text-align: center; } 
  .eventWrap .eventMain ul li p { margin-left: 0; font-size: 16px; font-weight: bold; } 
  .eventWrap .eventMain ul li p span { font-size: 14px; text-align: center; } 
@@ -282,6 +286,7 @@
 .eventWrap .event02 .evBox .titWrap::after { content: none; } 
 
 #gameContainer { zoom: 0.4; } 
+.eventWrap .giftInfo { margin: 30px auto 0; } 
 
 .eventWrap .event03 .characterType ul { padding: 20px 20px; } 
 
