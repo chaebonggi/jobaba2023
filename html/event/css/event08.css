@@ -57,7 +57,7 @@
  .eventWrap .event01 .giftList li p { display: flex; margin-top: 20px; height: 66px; justify-content: center; align-items: center; line-height: 1.2; font-size: 28px; } 
  .eventWrap .event01 .giftList > p { margin: 0 30px; padding: 8px 0; background: #fff; font-size: 20px; border-radius: 30px; text-align: center; } 
 
- .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg.jpg) top center no-repeat; } 
+ .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg02.jpg) top center no-repeat; } 
  .eventWrap .event02 .innerSection { padding: 190px 0 200px; } 
  .eventWrap .event02 .boxWrap { position: relative; padding: 70px 10px 40px; margin-bottom: 100px; background: #f6f6f6; border: 6px solid #9adcd0; border-radius: 20px; text-align: center; word-break: keep-all; } 
  .eventWrap .event02 .boxWrap .titWrap { position: absolute; left: 50%; top: -40px; transform: translateX(-50%); } 
@@ -92,12 +92,13 @@
  #gameContainer .board_start { width: 141px; height: 141px; background: #3d9988; color: #fff; cursor: pointer; border-radius: 50%; position: absolute; top: 50%; left: 50%; z-index: 55; transform: translate(-50%,-50%); font-size: 24px; display: flex; justify-content: center; align-items: center; font-weight: bold; letter-spacing: -1px; border: 6px solid #96ede3; } 
  #gameContainer .board_on img { position:absolute; } 
 
- #gameContainer .board_on img:nth-child(1) { left: 118px; top: 188px; transform: rotate(-60deg);}
+ #gameContainer .board_on img:nth-child(1) { left: 128px; top: 192px; transform: rotate(-60deg);}
  #gameContainer .board_on img:nth-child(2) { left: 124px; bottom: 188px; transform: rotate(-120deg);}  
- #gameContainer .board_on img:nth-child(3) { left: 288px; bottom: 98px; transform: rotate(180deg);} 
+ #gameContainer .board_on img:nth-child(3) { left: 288px; bottom: 92px; transform: rotate(180deg);} 
  #gameContainer .board_on img:nth-child(4) { right: 130px; bottom: 198px; transform: rotate(120deg);} 
- #gameContainer .board_on img:nth-child(5) { right: 140px; top: 190px; transform: rotate(60deg);} 
- #gameContainer .board_on img:nth-child(6) { left: 300px; top: 94px;} 
+ #gameContainer .board_on img:nth-child(5) { right: 135px; top: 204px; transform: rotate(60deg);} 
+ #gameContainer .board_on img:nth-child(6) { left: 314px; top: 94px;} 
+ 
 
  .eventWrap .titleWrap { position: relative; max-width: 640px; padding: 30px; margin: 0 auto 40px; background:#4bbdfd; border: 2px solid #000; border-radius: 30px; text-align: center; z-index:1; } 
  .eventWrap .titleWrap:before { content:""; position:absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background:#ff6982; border: 2px solid #000; border-radius: 25px; z-index: -1; } 
@@ -183,6 +184,12 @@
 .ev_pop .btn_wrap a + a { margin-left: 10px } 
 .ev_pop .btn_wrap .btn_blue { background: #1d407c !important } 
 .ev_pop .btn_wrap .btn_gray { background: #dcdcdc; } 
+.ev_pop .lottery_present img {
+    margin-bottom: 20px;
+}
+.ev_pop .lottery_present img + img {
+    display: none;
+}
 
 @media all and (max-width: 1700px){
  .eventWrap .leftMenu { display: none; } 

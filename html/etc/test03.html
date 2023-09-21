@@ -25,6 +25,8 @@
 <body>
 <div id="page-content">
 	<style>
+		#page-content { width: 100%; height: 100vh;}
+		.float_event { display: block;}
 		.btn-example{z-index:8888; display: inline-block; font-size:0px;  position: relative;cursor:pointer;}
 		.btn-example img {width:100%;}
 		.ch-event1103{display: inline-block; position: absolute; top:0px; left:50%;margin-left:-540px; width: 1080px;}
@@ -108,23 +110,52 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		var today = new Date();
-		var strToday = "" + today.getFullYear() + (today.getMonth() + 1 < 10? "0" + (today.getMonth() + 1): today.getMonth() + 1) + (today.getDate() < 10? "0" + today.getDate(): today.getDate());
-		$("#imgFindJobabaLogo").parent().parent().show();
-		// 잡아바 로고 display
-		var randomValue = Math.floor(Math.random() * 4);	// 노출확률 25%
-		//var randomValue = Math.floor(Math.random() * 0);
-		var $layerContent = $("#eventLayerPop div.modal-content div.modal-body p:eq(0)");
-		// $layerContent.css('border', '1px solid red');
-		// $layerContent.text("이벤트에 응모하신 후 다시 참여하실 수 있습니다.");
-		// $layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
-		$layerContent.html("잡아바 캐릭터를 찾으셨습니다.");
+	
+
+			var topCssRandomValue = 0;	// 잡아바 캐릭터 상하 노출 위치를 결정할 CSS용 랜덤변수
+			var leftCssRandomValue = 0;	// 잡아바 캐릭터 좌우 노출 위치를 결정할 CSS용 랜덤변수
+
+			var heightMinVal = 0;	// height max value
+			var heightMaxVal = 0;	// height minimum value
+			var widthMinVal = 0;	// width max value
+			var widthMaxVal = 0;	// width minimum value
 
 
-		$('#eventLayerPop').modal();
 
-	});
+			// PC 인 경우의 top, left random value 설정
+				heightMinVal = 100;	// height minimum value
+				heightMaxVal = $(window).height() * 0.84;	// height max value
+				widthMinVal = 0;	// width minimum value
+				widthMaxVal = $(window).width() / 2 ;	// width max value
+
+				topCssRandomValue = Math.floor(Math.random() * (heightMaxVal - heightMinVal) + heightMinVal);	// Math.random() * (max -min) + min
+				leftCssRandomValue = Math.floor(Math.random() * (widthMaxVal - widthMinVal) + widthMinVal);		// Math.random() * (max -min) + min
+
+
+			$("#imgFindJobabaLogo").parent().css({top:topCssRandomValue, left:leftCssRandomValue});
+
+
+		
+
+		// 잡아바 로고 클릭
+		$("#imgFindJobabaLogo").on("click", function(){
+			// click 후 잡아바 로고 hide
+			$("#imgFindJobabaLogo").hide();
+			$("#btnCloseJobabaLogo").hide();
+			$("#eventLayerPop").modal();
+		});
+
+		$("#btnModalCancel, #btnModalClose").on("click", function(){
+			$("#imgFindJobabaLogo").parent().hide();
+		});
+
+		// 로고 close
+		$("#btnCloseJobabaLogo").on("click", function(){
+			$("#imgFindJobabaLogo").parent().hide();
+		});
+		
+
+	
 </script>
 
 </body></html>
