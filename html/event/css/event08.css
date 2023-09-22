@@ -57,7 +57,7 @@
  .eventWrap .event01 .giftList li p { display: flex; margin-top: 20px; height: 66px; justify-content: center; align-items: center; line-height: 1.2; font-size: 28px; } 
  .eventWrap .event01 .giftList > p { margin: 0 30px; padding: 8px 0; background: #fff; font-size: 20px; border-radius: 30px; text-align: center; } 
 
- .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg02.jpg) top center no-repeat; } 
+ .eventWrap .event02 { background: url(../resource/images/eventImg/event08/ev02_bg.jpg) top center no-repeat; } 
  .eventWrap .event02 .innerSection { padding: 190px 0 200px; } 
  .eventWrap .event02 .boxWrap { position: relative; padding: 70px 10px 40px; margin-bottom: 100px; background: #f6f6f6; border: 6px solid #9adcd0; border-radius: 20px; text-align: center; word-break: keep-all; } 
  .eventWrap .event02 .boxWrap .titWrap { position: absolute; left: 50%; top: -40px; transform: translateX(-50%); } 
@@ -99,13 +99,16 @@
  #gameContainer .board_on img:nth-child(5) { right: 135px; top: 204px; transform: rotate(60deg); } 
  #gameContainer .board_on img:nth-child(6) { left: 314px; top: 94px; } 
 
- .eventWrap .giftInfo { max-width: 420px; margin: 90px auto 0; text-align: center; border: 1px solid #000; border-radius: 20px; overflow: hidden; } 
+.eventWrap .event06 {background: #f2efe5 ;}
+.eventWrap .event06 .innerSection {padding: 100px 0 100px;}
+.eventWrap .giftInfo { max-width: 420px; margin: 0 auto; text-align: center; border: 1px solid #000; border-radius: 20px; overflow: hidden; } 
 .eventWrap .giftInfo .titWrap { padding: 10px 0; background: #96ede3; border-bottom: 1px solid #000; } 
 .eventWrap .giftInfo table { width: 100%; background: #fff; } 
 .eventWrap .giftInfo table th { padding: 10px 0; background: #e2e2e2; } 
 .eventWrap .giftInfo table tr { border-bottom: 1px solid #ddd; } 
 .eventWrap .giftInfo table td { padding: 10px 0; } 
 .eventWrap .giftInfo table td { padding: 10px 0; } 
+
  
 
  .eventWrap .titleWrap { position: relative; max-width: 640px; padding: 30px; margin: 0 auto 40px; background:#4bbdfd; border: 2px solid #000; border-radius: 30px; text-align: center; z-index:1; } 
@@ -124,7 +127,6 @@
  .eventWrap .evTitWrap > span { display: block; padding: 10px; background: #fff; border-radius: 30px; border: 1px solid #000; word-break: keep-all; } 
  .eventWrap .event03 { background: url(../resource/images/eventImg/event08/ev03_bg.jpg) top center #f2efe5 no-repeat; } 
  .eventWrap .event03 .innerSection { padding: 0 0 48px; } 
- .eventWrap .event03 .titleWrap { top: -56px; } 
  .eventWrap .event03 .stepWrap { display: flex; flex-wrap: wrap; gap: 20px 30px; } 
  .eventWrap .event03 .stepWrap .stepBox::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 5px; background:linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: 
  linear-gradient(#fff 0 0) content-box, 
@@ -241,7 +243,7 @@
 .eventWrap .evTitWrap { margin: 0 0 30px; } 
 .eventWrap .evTitWrap p { flex-direction: column; } 
 .eventWrap .evTitWrap p.icon01 span { margin-left: 0; } 
-.eventWrap .evTitWrap p.icon01::before { width: 170px; height: 150px; margin-bottom: 10px; background-size: contain; } 
+.eventWrap .evTitWrap p.icon01::before { width: 170px; height: 150px; margin:50px 0 10px; background-size: contain; } 
 
 .eventWrap .evTitWrap p.icon02::before { width: 170px; height: 160px; margin: 50px 0 10px; background-size: contain; } 
 .eventWrap .evTitWrap p.icon02 span { margin-left: 0; margin-top: 0; } 
@@ -286,7 +288,8 @@
 .eventWrap .event02 .evBox .titWrap::after { content: none; } 
 
 #gameContainer { zoom: 0.4; } 
-.eventWrap .giftInfo { margin: 30px auto 0; } 
+.eventWrap .event06 .innerSection {padding: 30px 10px;}
+.eventWrap .giftInfo {  } 
 
 .eventWrap .event03 .characterType ul { padding: 20px 20px; } 
 
