@@ -488,12 +488,13 @@
 			});	
 		});
 		$('.leftMenu a, .evBox a').click(function(e){
-			var href = $(this).attr('href');
-			if( href === '#moveTo01') {
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100}, 500);
-			} else {
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top}, 500);
-			}
+			// var href = $(this).attr('href');
+			// if( href === '#moveTo01') {
+			// 	$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100}, 500);
+			// } else {
+				
+			// }
+			$("html, body").animate({ scrollTop: $(this.hash).offset().top}, 500);
 			e.preventDefault();
 		});	
 

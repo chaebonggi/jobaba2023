@@ -126,7 +126,7 @@
  .eventWrap .evTitWrap p.icon02 span { margin-left: -30px; margin-top: 60px; } 
  .eventWrap .evTitWrap > span { display: block; padding: 10px; background: #fff; border-radius: 30px; border: 1px solid #000; word-break: keep-all; } 
  .eventWrap .event03 { background: url(../resource/images/eventImg/event08/ev03_bg.jpg) top center #f2efe5 no-repeat; } 
- .eventWrap .event03 .innerSection { padding: 0 0 48px; } 
+ .eventWrap .event03 .innerSection { padding: 30px 0 48px; } 
  .eventWrap .event03 .stepWrap { display: flex; flex-wrap: wrap; gap: 20px 30px; } 
  .eventWrap .event03 .stepWrap .stepBox::before { content: ""; position: absolute; inset: 0; border-radius: 30px; padding: 5px; background:linear-gradient(130deg,#7ed8c7, #bfa2da,#19c8ff); -webkit-mask: 
  linear-gradient(#fff 0 0) content-box, 
