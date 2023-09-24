@@ -1,0 +1,186 @@
+@font-face { font-family: 'jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+
+
+.themaWrap * { font-family: 'GmarketSansMedium','Noto Sans KR' !important; } 
+.themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; font-weight: 700; } 
+.themaWrap .jalNan { font-family: 'jalnan','Noto Sans KR' !important; } 
+/* .themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; } 
+.themaWrap .gBold { font-family: 'GmarketSansBold','Noto Sans KR' !important; font-weight: 700; } */
+.themaWrap .innerSection { max-width: 920px; margin: 0 auto; } 
+.bcPurple { background: #dfc6ff; } 
+.bcPurple02 { background: #8f92d5; } 
+.bcMint { background: #a5e8e4; } 
+.bcYellow { background: #fff798; } 
+.bcPink { background: #fb99a4; } 
+.fcPurple { color: #8f92d5; } 
+.fcYellow { color: #f7ba01; } 
+.fcPink { color: #fd6f7f; } 
+.fcRed { color: #ff0000; } 
+.fs50 { font-size: 50px; } 
+.fs40 { font-size: 40px; } 
+.fs36 { font-size: 34px; } 
+.fs30 { font-size: 28px; } 
+.fs26 { font-size: 26px; } 
+.fs20 { font-size: 20px; } 
+.fs16 { font-size: 16px; } 
+.trt { text-align: right; } 
+
+.themaWrap .mainVisual { background: url(../resource/images/thema/230925/thema_main_bg.jpg) top center no-repeat; border-bottom: 1px solid #000; } 
+.themaWrap .mainVisual .innerSection { position: relative; padding: 65px 10px 276px; } 
+.themaWrap .mainVisual .titWrap { text-align: center; } 
+.themaWrap .mainVisual .innerSection::after { content: ''; width: 777px; height: 319px; position: absolute; left: 50%; bottom: -83px; transform: translateX(-50%); background: url(../resource/images/thema/230925/thema_icon01.png) no-repeat; background-size: contain; } 
+
+.themaWrap .event01 { margin-top: 160px; background: url(../resource/images/thema/230925/thema_ev01_bg.jpg) top center no-repeat; } 
+.themaWrap .event01 .innerSection { padding: 0 10px 160px; } 
+.themaWrap .titWrap h2 { text-align: center; } 
+.themaWrap .titWrap h2 img { margin-top: -30px; } 
+.themaWrap .event01 .boxWrap { margin-top: 90px; } 
+.themaWrap .event01 h3 { max-width: 370px; padding: 10px 0; position: relative; background: #000; border-radius: 50px; color: #fff; text-align: center; margin: 0 auto;; } 
+.themaWrap .event01 h3::after { content: ''; width: 70px; height: 61px; position: absolute; top: -30px; right: -30px; background: url(../resource/images/thema/230925/thema_tit_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem { display: flex; margin-top: 40px; align-items: center; justify-content: space-between; padding: 30px 45px; border-radius: 30px; } 
+.themaWrap .event01 .boxItem .txtWrap ul { display: flex; margin: 10px 0; gap: 0 20px; } 
+.themaWrap .event01 .boxItem .txtWrap li::before { content: ''; display: inline-block; width: 52px; height: 52px; margin-right: 4px; border-radius: 50%; border: 1px dashed #000; vertical-align: middle; } 
+.themaWrap .event01 .boxItem .txtWrap li.icon01::before { background: url(../resource/images/thema/230925/thema_ev01_ticon01.png) center center #fff no-repeat; } 
+.themaWrap .event01 .boxItem .txtWrap li.icon02::before { background: url(../resource/images/thema/230925/thema_ev01_ticon02.png) center center #fff no-repeat; } 
+.themaWrap .event01 .boxItem .txtWrap li.icon03::before { background: url(../resource/images/thema/230925/thema_ev01_ticon03.png) center center #fff no-repeat; } 
+.themaWrap .event01 .boxItem .txtWrap li.icon04::before { background: url(../resource/images/thema/230925/thema_ev01_ticon04.png) center center #fff no-repeat; } 
+.themaWrap .event01 .boxItem .txtWrap span { position: relative; color: #fff; } 
+.themaWrap .event01 .boxItem .txtWrap span::before { content: ''; width: 100%; height: 2px; position: absolute; bottom: 0; background: #fff; } 
+.themaWrap .event01 .boxItem .txtWrap p { margin-top: 20px; line-height: 1.4; } 
+.themaWrap .event01 .boxItem .boxList { display: flex; max-width: 400px; flex-wrap: wrap; gap: 20px 30px; } 
+.themaWrap .event01 .boxItem .boxList li { display: block; width: calc(100% / 2 - 15px); } 
+.themaWrap .event01 .boxItem .boxList li p { width: 175px; height: 175px; padding: 30px 0; background: #fff; border: 1px dashed #000; border-radius: 100%; text-align: center; } 
+.themaWrap .event01 .boxItem .boxList li p::before { content: ''; display: block; height: 42px; margin: 0 auto 20px; } 
+.themaWrap .event01 .boxItem .boxList li.icon01 p::before { width: 42px; background: url(../resource/images/thema/230925/thama_box_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon02 p::before { width: 33px; background: url(../resource/images/thema/230925/thama_box_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon03 p::before { width: 26px; background: url(../resource/images/thema/230925/thama_box_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon04 p::before { width: 27px; background: url(../resource/images/thema/230925/thama_box_icon04.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon05 p::before { width: 41px; background: url(../resource/images/thema/230925/thama_box_icon05.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon06 p::before { width: 41px; background: url(../resource/images/thema/230925/thama_box_icon06.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon07 p::before { width: 31px; background: url(../resource/images/thema/230925/thama_box_icon07.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .boxItem .boxList li.icon08 p::before { width: 23px; background: url(../resource/images/thema/230925/thama_box_icon08.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .tableWrap { position: relative; } 
+.themaWrap .event01 .tableWrap.style01 p { position: absolute; top: 20px; left: 20px; } 
+.themaWrap .event01 .txtWrap.item01::after { content: ''; display: block; width: 178px; height: 157px; margin: 10px auto 0; background: url(../resource/images/thema/230925/thema_ev01_item01.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .txtWrap.item02::after { content: ''; display: block; width: 181px; height: 150px; margin: 30px auto 0; background: url(../resource/images/thema/230925/thema_ev01_item02.png) no-repeat; background-size: contain; } 
+.themaWrap .event01 .tableWrap ul { display: flex; margin-top: 20px; margin-left: 30px; } 
+.themaWrap .event01 .tableWrap li + li { margin-left: 30px; } 
+.themaWrap .event01 .tableWrap li::before { content: ''; display: inline-block; width: 17px; height: 17px; margin-right: 4px; background: url(../resource/images/thema/230925/thema_ev01_icon.png) no-repeat; vertical-align: middle; } 
+
+.themaWrap .event02 { position: relative; margin-top: -30px; background: url(../resource/images/thema/230925/thema_ev02_bg.png) center no-repeat; background-size: cover; } 
+.themaWrap .event02 .innerSection { position: relative; padding: 60px 10px 100px; } 
+.themaWrap .event02 .innerSection::before { content: ''; width: 285px; height: 265px; position: absolute; left: -378px; bottom: 74px; background: url(../resource/images/thema/230925/thema_list_item01.png) no-repeat; } 
+.themaWrap .event02 .innerSection::after { content: ''; width: 310px; height: 406px; position: absolute; right: -390px; top: 130px; background: url(../resource/images/thema/230925/thema_list_item02.png) no-repeat; } 
+.themaWrap .linkList { display: flex; margin-top: 40px; justify-content: space-between; } 
+.themaWrap .linkList li { width: calc(100% / 3 - 20px); } 
+.themaWrap .linkList .imgWrap { padding: 20px 0; text-align: center; } 
+.themaWrap .linkList .txtWrap { padding: 30px 20px; background: #fff; text-align: center; } 
+.themaWrap .linkList .txtBox { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; height: 90px; margin-bottom: 10px; } 
+.themaWrap .event04 .linkList .txtBox { height: 124px; } 
+.themaWrap .linkList .txtBox p { width: 100%; } 
+.themaWrap .linkList .txtBox strong { line-height: 1.2; } 
+.themaWrap .linkList .txtWrap span { color: #7c7c7c; line-height: 1.2; } 
+.themaWrap .linkList .txtWrap a { display: block; padding: 8px 0; margin: 20px 30px 0; color: #000; border-radius: 30px; } 
+.themaWrap .listTit { margin-top: -140px; text-align: center; } 
+.themaWrap .listTit.item01::before { content: ''; display: inline-block; width: 196px; height: 297px; background: url(../resource/images/thema/230925/thema_list_tit01.png) no-repeat; background-size: contain; } 
+.themaWrap .listTit.item02::before { content: ''; display: inline-block; width: 163px; height: 228px; background: url(../resource/images/thema/230925/thema_list_tit02.png) no-repeat; background-size: contain; } 
+.themaWrap .listTit p { display: inline-block; margin-left: -20px; text-align: left; line-height: 1.3; } 
+
+.themaWrap .event04 { position: relative; background: url(../resource/images/thema/230925/thema_ev04_bg.png) center no-repeat; background-size: cover; } 
+				.themaWrap .event04 .innerSection { position: relative; padding: 0 10px 100px; } 
+				.themaWrap .event04 .innerSection::before { content: ''; width: 251px; height: 482px; position: absolute; left: -378px; bottom: 74px; background: url(./resource/images/thema/230925/thema_list_item03.png) no-repeat; } 
+				.themaWrap .event04 .innerSection::after { content: ''; width: 237px; height: 394px; position: absolute; right: -390px; top: 130px; background: url(../resource/images/thema/230925/thema_list_item04.png) no-repeat; } 
+@media all and (max-width:1700px){
+ .themaWrap .event02 .innerSection::before,
+ .themaWrap .event02 .innerSection::after,
+ .themaWrap .event04 .innerSection::after,
+ .themaWrap .event04 .innerSection::before { content: none; } 
+ }
+
+@media all and (max-width:1024px) { } 
+
+@media all and (max-width:860px){
+ .themaWrap .mainVisual .titWrap img { transform: scale(0.8); } 
+ .themaWrap .mainVisual .innerSection { padding: 40px 10px 140px; } 
+ .themaWrap .mainVisual .innerSection::after { width: 470px; height: 193px; bottom: -50px; } 
+
+ .themaWrap .titWrap h2 img { margin-top: -60px; transform: scale(0.8); } 
+ .themaWrap .event01 .innerSection { padding: 0 10px 60px; } 
+ .themaWrap .event01 .boxItem { flex-direction: column; text-align: center; } 
+ .themaWrap .event01 .boxItem .boxList { margin-top: 20px; } 
+ .themaWrap .event01 .txtWrap.item01::after { margin: 10px auto 20px; } 
+.themaWrap .event01 .txtWrap.item02::after { margin: 30px auto 20px; } 
+
+.themaWrap .listTit { margin-top: 0; } 
+.themaWrap .listTit.item01::before { display: block; width: 150px; height: 227px; margin: 0 auto; } 
+.themaWrap .linkList { flex-direction: column; align-items: center; } 
+.themaWrap .linkList li { width: 100%; max-width: 500px; } 
+.themaWrap .linkList li + li { margin-top: 20px; } 
+
+.themaWrap .listTit.item02::before {
+    display: block;
+    width: 124px;
+    height: 173px;
+    margin: 0 auto;
+}
+
+ }
+@media all and (max-width:640px){
+ .fs50 { font-size: 30px; } 
+.fs40 { font-size: 26px; } 
+.fs36 { font-size: 22px; } 
+.fs30 { font-size: 20px; } 
+.fs26 { font-size: 16px; } 
+.fs20 { font-size: 14px; } 
+.fs16 { font-size: 12px; } 
+
+ .themaWrap .mainVisual .innerSection { padding: 30px 10px 30px; } 
+ .themaWrap .mainVisual .innerSection::after { content: none; } 
+ .themaWrap .event01 { margin-top: 0; } 
+.themaWrap .titWrap h2 img { margin-top: 0; } 
+.themaWrap .event01 .innerSection { padding: 0 10px 60px; } 
+.themaWrap .event01 .boxWrap { margin-top: 30px; } 
+.themaWrap .event01 h3::after { width: 34px; height: 30px; top: -10px; right: 0; } 
+
+.themaWrap .event01 .boxItem { margin-top: 20px; padding: 30px 20px; } 
+.themaWrap .event01 .boxItem .boxList { justify-content: space-between; gap: 10px 10px; } 
+.themaWrap .event01 .boxItem .txtWrap li::before { width: 30px; height: 30px; } 
+.themaWrap .event01 .boxItem .txtWrap li.icon01::before,
+.themaWrap .event01 .boxItem .txtWrap li.icon02::before,
+.themaWrap .event01 .boxItem .txtWrap li.icon03::before,
+.themaWrap .event01 .boxItem .txtWrap li.icon04::before { background-size: 50%; } 
+.themaWrap .event01 .boxItem .boxList li p { width: 120px; height: 120px; padding: 20px 0; } 
+.themaWrap .event01 .boxItem .boxList li p::before { height: 32px; margin: 0 auto 10px; } 
+.themaWrap .event01 .boxItem .boxList li.icon01 p::before { width: 32px; } 
+.themaWrap .event01 .boxItem .boxList li.icon02 p::before { width: 23px; } 
+.themaWrap .event01 .boxItem .boxList li.icon03 p::before { width: 16px; } 
+.themaWrap .event01 .boxItem .boxList li.icon04 p::before { width: 17px; } 
+.themaWrap .event01 .boxItem .boxList li.icon05 p::before { width: 31px; } 
+.themaWrap .event01 .boxItem .boxList li.icon06 p::before { width: 31px; } 
+.themaWrap .event01 .boxItem .boxList li.icon07 p::before { width: 21px; } 
+.themaWrap .event01 .boxItem .boxList li.icon08 p::before { width: 13px; } 
+
+.themaWrap .event01 .tableWrap.style01 p { position: static; text-align: right; } 
+.themaWrap .event01 .txtWrap.item01::after { width: 90px; height: 79px; } 
+.themaWrap .event01 .txtWrap.item02::after { width: 90px; height: 75px; margin: 10px auto 20px; } 
+.themaWrap .event01 .tableWrap ul { flex-direction: column; margin-top: 10px; margin-left: 0; text-align: left; } 
+.themaWrap .event01 .tableWrap li + li { margin-left: 0; margin-top: 4px; } 
+.themaWrap .event02 { margin-top: 0; background: #7ad4d3; } 
+.themaWrap .event02 .innerSection { padding: 30px 10px 30px; } 
+.themaWrap .linkList .imgWrap { padding: 10px 0; } 
+.themaWrap .linkList .imgWrap img { zoom: 0.5; } 
+.themaWrap .listTit.item01::before { width: 70px; height: 106px; } 
+.themaWrap .linkList .txtWrap { padding: 20px 10px; } 
+.themaWrap .linkList .txtBox { height: auto; } 
+.themaWrap .event04 .linkList .txtBox { height: auto; } 
+
+.themaWrap .event04 {
+    margin-top: 0; background: #7ad4d3;
+}
+
+}
+
+
