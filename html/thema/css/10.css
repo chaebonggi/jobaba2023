@@ -259,6 +259,7 @@
  .themaWrap .mainVisual .innerSection::after { content: none; } 
  .themaWrap .event01 { margin-top: 0; } 
 .themaWrap .titWrap h2 img { margin-top: 0; } 
+.themaWrap .event01 .titWrap h2 img {transform: scale(0.6); }
 .themaWrap .event01 .innerSection { padding: 0 10px 60px; } 
 .themaWrap .event01 .boxWrap { margin-top: 30px; } 
 .themaWrap .event01 h3::after { width: 34px; height: 30px; top: -10px; right: 0; } 
