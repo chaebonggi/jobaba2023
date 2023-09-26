@@ -613,9 +613,11 @@
 				$(this).addClass('active');
 				$items.removeClass('active');
 				$items.filter('[data-tab="' + tab + '"]').addClass('active');
-				$btn02.removeClass('active');
-				$btn02.filter('[data-tab="' + tab + '"]').addClass('active');
+				// $btn02.removeClass('active');
+				// $btn02.filter('[data-tab="' + tab + '"]').addClass('active');
+				console.log(tab)
 			});
+			
 		}
 		handleTabClick($('.tabMenu li'), $('.tabBox'), 'data-tab');
 		handleTabClick($('.tagMenu li'), $('.tabBox'), 'data-tab', $('.tabMenu li'));
