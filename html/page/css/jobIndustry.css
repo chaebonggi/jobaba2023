@@ -34,7 +34,7 @@
 
 .jobIndustry .cont02 { background: #f2f2f2; } 
 .jobIndustry .cont02 .innerSection { padding: 80px 10px 74px; } 
-.jobIndustry .cont02 h3 { max-width: 770px; margin: 0 auto 70px; padding: 0 10px; background: #b1e3e0; font-size: 48px; text-align: center; border-radius: 50px; border: 2px solid #fff; box-shadow: 0 6px 0 #d9d9d9; word-break: keep-all; } 
+.jobIndustry .cont02 h3 { max-width: 770px; margin: 0 auto 70px; padding: 10px 10px; background: #b1e3e0; font-size: 48px; text-align: center; border-radius: 50px; border: 2px solid #fff; box-shadow: 0 6px 0 #d9d9d9; word-break: keep-all; } 
 .jobIndustry .cont02 .tabWrap { margin-bottom: 100px; } 
 .jobIndustry .cont02 .tabList { display: flex; margin: 0 140px; justify-content: space-between; align-items: center; } 
 .jobIndustry .cont02 .tabList li a { display: block; color: #777777; font-size: 30px; text-align: center; } 
