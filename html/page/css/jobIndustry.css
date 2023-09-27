@@ -1,5 +1,5 @@
 
-.jobIndustry .cont01 *, .jobIndustry .cont02 *, .jobIndustry .cont05 *, .jobIndustry .cont06 * { font-family: 'GmarketSans'; font-weight: 500; line-height: 1.3;} 
+.jobIndustry .cont01 *, .jobIndustry .cont02 *, .jobIndustry .cont05 *, .jobIndustry .cont06 * { font-family: 'GmarketSans'; font-weight: 500; line-height: 1.3; } 
 .jobIndustry .innerSection { max-width: 1280px; padding: 0 10px; margin: 0 auto; } 
 .jobIndustry .gBold { font-family: 'GmarketSans'; font-weight: 700; } 
 .jobIndustry .fcPorts { color: #10768F; } 
@@ -87,9 +87,9 @@
 .jobIndustry .cont03 .rclist .item .cert_wrap > div a + a { margin-left: 4px; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn { display: inline-block; padding: 6px 30px 6px; background-color: #fff; color: #38bab2; font-size: 14px; font-weight: 700; border: 1px solid #38bab2; border-radius: 4px; line-height: 1.2; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn:hover { color: #fff; background-color: #38bab2; } 
-.jobIndustry .cont03 .rclist > div.item + div.item { margin-top: 20px; }
-.jobIndustry .cont03 .pageList {display: none;}
-.jobIndustry .cont03 .pageList.active {display: block;}
+.jobIndustry .cont03 .rclist > div.item + div.item { margin-top: 20px; } 
+.jobIndustry .cont03 .pageList { display: none; } 
+.jobIndustry .cont03 .pageList.active { display: block; } 
  
 .jobIndustry .cont05 { position: relative; padding: 100px 0 290px; background: #fff; } 
 .jobIndustry .evGuide .titWrap { margin-bottom: 50px; text-align: center; } 
@@ -180,7 +180,9 @@
  }
 @media all and (max-width: 640px){
  .jobIndustry .innerSection { padding: 0 10px; } 
-.jobIndustry .industryMain { padding: 30px 0; word-break: keep-all; } 
+.jobIndustry .industryMain { position: relative; padding: 30px 0; word-break: keep-all; } 
+.jobIndustry .industryMain::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255,255,255, 0.7); z-index: 1; } 
+.jobIndustry .mainVisual {z-index: 2;}
 .jobIndustry .mainVisual h2 { font-size: 30px; } 
 .jobIndustry .mainVisual p { font-size: 16px; } 
 
