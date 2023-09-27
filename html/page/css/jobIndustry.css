@@ -28,7 +28,7 @@
 .jobIndustry .cont01 .itemWrap::after { content: ''; width: 141px; height: 255px; position: absolute; bottom: -22px; right: 8px; background: url(../images/jobIndustry/cont01_img02.png) no-repeat; } 
 .jobIndustry .cont01 .evBtnWrap { position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); } 
 .jobIndustry .cont01 .evBtnWrap a { display: inline-block; width: 260px; padding: 12px 0 8px; background: #fdff2c; color: #000; font-size: 28px; text-align: center; border: 2px solid #000; border-radius: 30px; box-shadow: 0 3px 0 #000; } 
-.jobIndustry .cont01 .evBtnWrap a::after { content: ''; display: inline-block; width: 20px; height: 29px; margin-left: 4px; margin-top: -4px; background: url(../images/jobIndustry/item_icon01.png) no-repeat; vertical-align: middle; } 
+.jobIndustry .cont01 .evBtnWrap a::after { content: ''; display: inline-block; width: 20px; height: 29px; margin-left: 4px; margin-top: -4px; background: url(../images/jobIndustry/item_icon01.png) no-repeat; background-size: contain; vertical-align: middle; } 
 
 .jobIndustry .cont02 { background: #f2f2f2; } 
 .jobIndustry .cont02 .innerSection { padding: 80px 10px 74px; } 
@@ -182,7 +182,7 @@
  .jobIndustry .innerSection { padding: 0 10px; } 
 .jobIndustry .industryMain { position: relative; padding: 30px 0; word-break: keep-all; } 
 .jobIndustry .industryMain::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255,255,255, 0.7); z-index: 1; } 
-.jobIndustry .mainVisual {z-index: 2;}
+.jobIndustry .mainVisual { z-index: 2; } 
 .jobIndustry .mainVisual h2 { font-size: 30px; } 
 .jobIndustry .mainVisual p { font-size: 16px; } 
 
@@ -193,12 +193,13 @@
  .jobIndustry .cont01 .txtWrap p { font-size: 16px; } 
  .jobIndustry .cont01 .txtWrap p strong { font-size: 18px; } 
  .jobIndustry .cont01 .txtWrap > strong { font-size: 18px; } 
+ .jobIndustry .cont01 .evBtnWrap a::after { width: 14px; height: 20px; background-size: contain; } 
 
  .jobIndustry .cont01 .evBtnWrap { position: static; margin-top: 20px; transform: none; text-align: center; } 
  .jobIndustry .cont01 .evBtnWrap a { width: 100%; padding: 8px 0 4px; font-size: 20px; } 
 
  .jobIndustry .cont02 .innerSection { padding: 30px 10px; } 
- .jobIndustry .cont02 h3 { margin: 0 auto 30px; font-size: 22px; } 
+ .jobIndustry .cont02 h3 { margin: 0 auto 30px; padding: 10px 10px 6px; font-size: 22px; } 
  .jobIndustry .cont02 .tabList li a { font-size: 16px; } 
  .jobIndustry .cont02 .tabList li a span { width: 100px; height: 100px; } 
  .jobIndustry .cont02 .tabList li.tab_0 span,
