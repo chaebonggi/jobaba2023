@@ -214,7 +214,7 @@
  .jobIndustry .cont02 .tabWrap { margin-bottom: 40px; } 
 .jobIndustry .cont02 .swiper-button-next,
 .jobIndustry .cont02 .swiper-button-prev { display: none; } 
-.jobIndustry .cont02 .item .txt .tit { padding: 6px 25px 0; margin-bottom: 10px; font-size: 18px; } 
+.jobIndustry .cont02 .item .txt .tit { padding: 6px 25px 2px; margin-bottom: 10px; font-size: 18px; } 
 .jobIndustry .cont02 .item .txt .desc { font-size: 14px; word-break: keep-all; } 
 .jobIndustry .cont02 .item .txt a { max-width: 90%; font-size: 16px; } 
 .jobIndustry .cont02 .item .imgWrap img { zoom: 0.3; } 
