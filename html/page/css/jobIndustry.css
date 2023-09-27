@@ -85,7 +85,7 @@
 .jobIndustry .cont03 .rclist .item .cert_wrap > div { display: flex; justify-content: flex-end; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap > div a { display: block; border: 1px solid blue; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap > div a + a { margin-left: 4px; } 
-.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn { display: inline-block; padding: 10px 30px 6px; background-color: #fff; color: #38bab2; font-size: 14px; font-weight: 700; border: 1px solid #38bab2; border-radius: 4px; line-height: 1.2; } 
+.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn { display: inline-block; padding: 6px 30px 6px; background-color: #fff; color: #38bab2; font-size: 14px; font-weight: 700; border: 1px solid #38bab2; border-radius: 4px; line-height: 1.2; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn:hover { color: #fff; background-color: #38bab2; } 
 .jobIndustry .cont03 .rclist > div.item + div.item { margin-top: 20px; }
 .jobIndustry .cont03 .pageList {display: none;}
