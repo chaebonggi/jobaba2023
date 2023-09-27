@@ -1785,6 +1785,9 @@
                 var actIndex = swiper.activeIndex;
                 $(".tabList li").removeClass("active");
                 $(".tabList li.tab_" + actIndex).addClass("active");
+				var tab =  $(".tabList li.tab_" + actIndex).attr('data-tab');
+				$('.pageList').removeClass('active');
+				$('.pageList').filter('[data-tab="' + tab + '"]').addClass('active');
             }
         }
     });
@@ -1796,6 +1799,13 @@
 		$('.pageList').removeClass('active');
 		$('.pageList').filter('[data-tab="' + tab + '"]').addClass('active');
     });
+	// _tabTarget.each(function(e){
+	// 	var aa = _tabTarget.hasClass('active');
+	// 	var tab = $(this).attr('data-tab');
+	// 	$('.pageList').removeClass('active');
+	// 	$('.pageList').filter('[data-tab="' + tab + '"]').addClass('active');
+	// 	console.log(aa)
+	// });
 
 	
 	var ww = $(window).width();
