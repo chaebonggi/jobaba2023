@@ -46,7 +46,7 @@
 .jobIndustry .cont02 .tabList li.tab_3 span { background: url(../images/jobIndustry/tab_icon04.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_4 span { background: url(../images/jobIndustry/tab_icon05.png) no-repeat center #fff } 
 .jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between;} 
-.jobIndustry .cont02 .item.soonImg {display: block; min-height: 400px;}
+.jobIndustry .cont02 .item.soonImg {display: block; min-height: 300px;}
 .jobIndustry .soonImg {text-align: center;}
 .jobIndustry .cont02 .item .txt { min-width: 400px; margin-top: 30px; } 
 .jobIndustry .cont02 .item .txt .tit { display: inline-block; max-width: 260px; width: 100%; padding: 6px 25px 0; margin-bottom: 30px; background: #816ee8; color: #fff; font-size: 30px; text-align: center; font-weight: 700; border-radius: 30px; } 
