@@ -80,11 +80,26 @@
 .jobIndustry .cont03 .rclist.tabStyle02 .item > div:nth-child(1)::before { background-color: #7fbbee; } 
 .jobIndustry .cont03 .rclist.tabStyle01 .item .rctit a { color: #eb6666; } 
 .jobIndustry .cont03 .rclist.tabStyle02 .item .rctit a { color: #388ad0; } 
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon01.png); } 
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon02.png); } 
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon03.png); } 
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon04.png); } 
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon05.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit01_icon01.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit01_icon02.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit01_icon03.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit01_icon04.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit01_icon05.png); } 
+.jobIndustry .cont03 div[data-tab="tab02"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit02_icon01.png); } 
+.jobIndustry .cont03 div[data-tab="tab02"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit02_icon02.png); } 
+.jobIndustry .cont03 div[data-tab="tab02"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit02_icon03.png); } 
+.jobIndustry .cont03 div[data-tab="tab02"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit02_icon04.png); } 
+.jobIndustry .cont03 div[data-tab="tab02"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit02_icon05.png); } 
+.jobIndustry .cont03 div[data-tab="tab03"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit03_icon01.png); } 
+.jobIndustry .cont03 div[data-tab="tab03"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit03_icon02.png); } 
+.jobIndustry .cont03 div[data-tab="tab03"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit03_icon03.png); } 
+.jobIndustry .cont03 div[data-tab="tab03"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit03_icon04.png); } 
+.jobIndustry .cont03 div[data-tab="tab03"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit03_icon05.png); } 
+.jobIndustry .cont03 div[data-tab="tab04"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit04_icon01.png); } 
+.jobIndustry .cont03 div[data-tab="tab04"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit04_icon02.png); } 
+.jobIndustry .cont03 div[data-tab="tab04"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit04_icon03.png); } 
+.jobIndustry .cont03 div[data-tab="tab04"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit04_icon04.png); } 
+.jobIndustry .cont03 div[data-tab="tab04"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit04_icon05.png); } 
 
 .jobIndustry .cont03 .item button.like { background: url(../images/jobIndustry/like.png) no-repeat 50% 55%; width: 30px; height: 30px; border: 1px solid #e2e2e2; border-radius: 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-right: 10px; } 
 .jobIndustry .cont03 .rclist .item button.like.active { border-color: #211314; background: url(../images/jobIndustry/like_active.png) no-repeat 50% 55%; } 
