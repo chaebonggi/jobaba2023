@@ -45,13 +45,13 @@
 .jobIndustry .cont02 .tabList li.tab_2 span { background: url(../images/jobIndustry/tab_icon03.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_3 span { background: url(../images/jobIndustry/tab_icon04.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_4 span { background: url(../images/jobIndustry/tab_icon05.png) no-repeat center #fff } 
-.jobIndustry .cont02 .item { display: flex; margin: 0 140px; justify-content: space-between; align-items: center; } 
-.jobIndustry .cont02 .item.soonImg {min-height: 400px; justify-content: center;}
+.jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between; align-items: center;} 
+.jobIndustry .cont02 .item.soonImg {display: block; min-height: 400px;}
 .jobIndustry .soonImg {text-align: center;}
-.jobIndustry .cont02 .item .txt { min-width: 400px; } 
-.jobIndustry .cont02 .item .txt .tit { display: inline-block; padding: 6px 25px 0; margin-bottom: 20px; background: #58b4af; color: #fff; font-size: 30px; text-align: center; border-radius: 30px; } 
+.jobIndustry .cont02 .item .txt { min-width: 400px; margin-top: 30px; } 
+.jobIndustry .cont02 .item .txt .tit { display: inline-block; max-width: 260px; width: 100%; padding: 6px 25px 0; margin-bottom: 30px; background: #816ee8; color: #fff; font-size: 30px; text-align: center; font-weight: 700; border-radius: 30px; } 
 .jobIndustry .cont02 .item .txt .desc { font-size: 22px; } 
-.jobIndustry .cont02 .item .txt .desc span { color: #3e54d9; } 
+.jobIndustry .cont02 .item .txt .desc span { color: #816ee8; font-weight: 700; } 
 .jobIndustry .cont02 .item .txt a { display: block; max-width: 200px; padding: 8px 0 4px; margin-top: 20px; background: #414141; color: #fff; font-size: 20px; text-align: center; } 
 
 .jobIndustry .cont02 .swiper-container { position: relative; overflow: hidden; } 
