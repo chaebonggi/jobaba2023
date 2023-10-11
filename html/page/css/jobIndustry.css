@@ -62,7 +62,7 @@
 .jobIndustry .cont02 .swiper-button-next { left: initial !important; right: 0; background: url(../images/jobIndustry/tab_next.png) no-repeat; } 
 .jobIndustry .cont02 .swiper-button-prev { background: url(../images/jobIndustry/tab_prev.png) no-repeat; } 
 
-.jobIndustry .cont03 .innerSection { padding: 100px 10px; } 
+.jobIndustry .cont03 .innerSection { margin: 100px auto; } 
 .jobIndustry .cont03 .cnt_wrap { display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #333; margin-bottom: 20px; } 
 .jobIndustry .cont03 .viewBtnWrap { margin-top: 20px; display: flex; } 
 .jobIndustry .cont03 .viewBtnWrap .viewBtn { margin-left: auto; } 
@@ -257,7 +257,7 @@
 .jobIndustry .cont02 .item .txt a { max-width: 90%; font-size: 16px; } 
 .jobIndustry .cont02 .item .imgWrap img { zoom: 0.3; } 
 
-.jobIndustry .cont03 .innerSection { padding: 30px 10px; } 
+.jobIndustry .cont03 .innerSection { margin: 30px auto; } 
 .jobIndustry .cont03 .cnt_wrap .cnt { font-size: 20px; } 
 .jobIndustry .cont03 .rclist .rclistTit { margin: 20px 0 10px; font-size: 20px; } 
 .jobIndustry .cont03 .rclist .item > div:nth-child(1) { padding: 16px 0 32px; margin-bottom: 24px; font-size: 20px; } 
