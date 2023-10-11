@@ -96,7 +96,8 @@
 .themaWrap .whiteBox .swiper-button-next, .themaWrap .whiteBox .swiper-button-prev { width: 27px; height: 44px; transform: none; } 
  }
  
- @media all and (max-width:640px) {.fs50 { font-size: 30px; } 
+ @media all and (max-width:640px){
+ .fs50 { font-size: 30px; } 
 .fs32 { font-size: 24px; } 
 .fs30 { font-size: 22px; } 
 .fs26 { font-size: 20px; } 
@@ -126,6 +127,7 @@
 .themaWrap .whiteBox.bg01 .indList li.icon04::before { background-size: 95%; } 
 .themaWrap .whiteBox .entWrap { margin: 50px 0; } 
 .themaWrap .whiteBox .swiper-container { width: calc(100% - 80px); } 
+.themaWrap .whiteBox .swiper-wrapper li { height: 40px; } 
 .themaWrap .whiteBox .titWrap { padding: 20px 10px; background: linear-gradient(0deg, #65a985 50%, #dbdbdb 50%); flex-direction: column; align-items: center; border-radius: 30px; } 
 .themaWrap .whiteBox .titWrap span { margin-top: 20px; padding-right: 0; } 
 }
