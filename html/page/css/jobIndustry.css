@@ -45,7 +45,7 @@
 .jobIndustry .cont02 .tabList li.tab_2 span { background: url(../images/jobIndustry/tab_icon03.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_3 span { background: url(../images/jobIndustry/tab_icon04.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_4 span { background: url(../images/jobIndustry/tab_icon05.png) no-repeat center #fff } 
-.jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between; align-items: center;} 
+.jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between;} 
 .jobIndustry .cont02 .item.soonImg {display: block; min-height: 400px;}
 .jobIndustry .soonImg {text-align: center;}
 .jobIndustry .cont02 .item .txt { min-width: 400px; margin-top: 30px; } 
@@ -158,8 +158,12 @@
 }
 .jobIndustry .cont02 .tabList li {
     width: calc(100% / 3);
+
 }
+.jobIndustry .cont02 .item { align-items: center;}
+.jobIndustry .cont02 .item .txt {margin-top: 0;}
 .jobIndustry .cont02 .item.soonImg { min-height: auto;}
+
 .jobIndustry .soonImg img {transform: scale(0.8);}
  .jobIndustry .evGuide li { width: calc(100% / 3 - 20px); } 
  }
@@ -251,8 +255,8 @@
  .jobIndustry .cont02 .tabList li a span { margin: 0 auto 10px; } 
  .jobIndustry .cont02 .tabWrap { margin-bottom: 40px; } 
 .jobIndustry .cont02 .swiper-button-next,
-.jobIndustry .cont02 .swiper-button-prev { display: none; } 
-.jobIndustry .cont02 .item .txt .tit { padding: 6px 25px 2px; margin-bottom: 10px; font-size: 18px; } 
+.jobIndustry .cont02 .swiper-button-prev { display: none; }
+.jobIndustry .cont02 .item .txt .tit { max-width: 160px; padding: 6px 25px 2px; margin-bottom: 10px; font-size: 18px; } 
 .jobIndustry .cont02 .item .txt .desc { font-size: 14px; word-break: keep-all; } 
 .jobIndustry .cont02 .item .txt a { max-width: 90%; font-size: 16px; } 
 .jobIndustry .cont02 .item .imgWrap img { zoom: 0.3; } 
