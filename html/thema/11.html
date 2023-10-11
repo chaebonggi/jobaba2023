@@ -149,6 +149,7 @@
 					<li><a href="" target="_blank" class="gBold fs24">반도체</a></li>
 					<li><a href="" target="_blank" class="gBold fs24">첨단 모빌리티</a></li>
 					<li><a href="" target="_blank" class="gBold fs24">바이오</a></li>
+					<li><a href="" target="_blank" class="gBold fs24">AI 빅데이터</a></li>
 				</ul>
 			</div>			
 		</article>
@@ -156,7 +157,7 @@
 			.themaWrap .whiteBox {
 				max-width: 1700px;
 				margin: 0 auto;
-				padding-top: 160px;
+				padding: 160px 0 250px;
 				border-radius: 100px;
 				box-shadow: 0px 60px 60px 0px rgba(0, 0, 0, 0.2);
 			}
@@ -193,7 +194,7 @@
 			}
 			.themaWrap .whiteBox .indList {
 				display: flex;
-				margin: 60px 30px 80px;
+				margin: 60px 30px 0;
 				justify-content: space-between;
 			}
 			.themaWrap .whiteBox .indList li {
@@ -265,7 +266,66 @@
 						<li class="icon03 fs26">웨어러블기기<br><span class="fs18">(무선가전)</span></li>
 						<li class="icon04 fs26">전기차</li>
 					</ul>
-					<!--  -->
+					<style>
+						.themaWrap .whiteBox .swiper-container{width: calc(100% - 150px);}
+						.themaWrap .whiteBox .swiper-button-next:after, 
+						.themaWrap .whiteBox .swiper-button-prev:after{display: none;}
+						.themaWrap .whiteBox .swiper-button-next,
+						.themaWrap .whiteBox .swiper-button-prev{width: 37px;height: 81px; transform: translateY(-24%);}
+						.themaWrap .whiteBox .swiper-button-next{background: url(./resource/images/thema/231010/next_icon.png) no-repeat; background-size: contain; left: initial !important; right: 0;}
+						.themaWrap .whiteBox .swiper-button-prev{background: url(./resource/images/thema/231010/prev_icon.png) no-repeat; background-size: contain; left: 0;}
+
+						.themaWrap .whiteBox .entWrap {
+							position: relative;
+							margin: 100px 0;
+						}
+						.themaWrap .whiteBox .swiper-wrapper {
+							margin-left: 1px;
+						}
+						.themaWrap .whiteBox .swiper-wrapper li {
+							height: 60px;
+							padding: 5px;
+							border: 1px solid #dedede;
+							text-align: center;
+						}
+						.themaWrap .whiteBox .swiper-wrapper li img {
+							height: 100%;
+						}
+					</style>
+					<div class="entWrap">
+						<div class="swiper-container mySwiper">
+							<ul class="entList swiper-wrapper">
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo01.png" alt="lg에너지솔루션">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo02.png" alt="sk온">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo03.png" alt="동화일렉트로라이트">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo04.png" alt="삼성sdi">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo05.png" alt="에코프로">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo06.png" alt="앨엔에프">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo07.png" alt="파워로직스">
+								</li>
+								<li class="swiper-slide">
+									<img src="./resource/images/thema/231010/ent_logo08.png" alt="포스코퓨처엠">
+								</li>
+							</ul>							
+						</div>
+						<div class="swiper-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+					</div>
 					<style>
 						.themaWrap .whiteBox .titWrap {
 							display: flex;
@@ -293,12 +353,45 @@
 							gap: 0 20px;
 						}
 						.themaWrap .whiteBox .linkList li {
+							width: calc(100% / 3 - 10px);
 							background: #fff;
 							border: 1px solid #cccccc;							
-							border-radius: 20px;
+							border-radius: 10px;
+							overflow: hidden;
 						}
 						.themaWrap .whiteBox .linkList .logoWrap {
+							height: 100px;
+							padding: 20px 10px;
 							text-align: center;
+						}
+						.themaWrap .whiteBox .linkList .logoWrap img {
+							height: 100%;
+							object-fit: scale-down;
+						}
+						.themaWrap .whiteBox .linkList .infoWrap {
+							padding: 20px;
+							background: #eeeeee;
+							word-break: keep-all;
+						}
+						.themaWrap .whiteBox .linkList .infoWrap span {
+							margin-bottom: 16px;
+							padding: 4px 18px 0;
+							display: inline-block;
+							background: #fff;
+						}
+						.themaWrap .whiteBox .linkList .infoWrap strong {
+							display: block;
+							margin-bottom: 10px;
+						}
+						.themaWrap .whiteBox .linkList .infoWrap .linkBtn {
+							margin-top: 20px;
+						}
+						.themaWrap .whiteBox .linkList .infoWrap .linkBtn a {
+							display: inline-block;
+							padding: 8px 18px 4px;
+							background: #595959;
+							color: #fff;
+							border-radius: 20px;
 						}
 					</style>
 					<ul class="linkList">
@@ -307,39 +400,39 @@
 								<img src="./resource/images/thema/231010/info_logo01.png" alt="렘퍼스">
 							</div>
 							<div class="infoWrap">
-								<span>화성시</span>
-								<strong>(주)렘퍼스</strong>
-								<p>사람을 위한 혁신과 발전, 리튬이온 배터리팩 제조기업</p>
-							</div>
-							<div class="linkBtn">
-								<a href="" target="_blank">자세히보기 &#8594;</a>
-							</div>
+								<span class="fs18">화성시</span>
+								<strong class="fs30">(주)렘퍼스</strong>
+								<p class="fs16">사람을 위한 혁신과 발전, 리튬이온 배터리팩 제조기업</p>
+								<div class="linkBtn">
+									<a href="" target="_blank">자세히보기 &#8594;</a>
+								</div>
+							</div>							
 						</li>
 						<li>
 							<div class="logoWrap">
-								<img src="./resource/images/thema/231010/info_logo01.png" alt="렘퍼스">
+								<img src="./resource/images/thema/231010/info_logo02.png" alt="필에너지">
 							</div>
 							<div class="infoWrap">
-								<span>화성시</span>
-								<strong>(주)렘퍼스</strong>
-								<p>사람을 위한 혁신과 발전, 리튬이온 배터리팩 제조기업</p>
-							</div>
-							<div class="linkBtn">
-								<a href="" target="_blank">자세히보기 &#8594;</a>
-							</div>
+								<span class="fs18">오산시</span>
+								<strong class="fs30">(주)필에너지</strong>
+								<p class="fs16">EV배터리 설비의<br>새로운 리더</p>
+								<div class="linkBtn">
+									<a href="" target="_blank">자세히보기 &#8594;</a>
+								</div>
+							</div>							
 						</li>
 						<li>
 							<div class="logoWrap">
-								<img src="./resource/images/thema/231010/info_logo01.png" alt="렘퍼스">
+								<img src="./resource/images/thema/231010/info_logo03.png" alt="디온에너지">
 							</div>
 							<div class="infoWrap">
-								<span>화성시</span>
-								<strong>(주)렘퍼스</strong>
-								<p>사람을 위한 혁신과 발전, 리튬이온 배터리팩 제조기업</p>
-							</div>
-							<div class="linkBtn">
-								<a href="" target="_blank">자세히보기 &#8594;</a>
-							</div>
+								<span class="fs18">안산시</span>
+								<strong class="fs30">(주)디온에너지</strong>
+								<p class="fs16">배터리 컨설팅 및 주문제작 플랫폼</p>
+								<div class="linkBtn">
+									<a href="" target="_blank">자세히보기 &#8594;</a>
+								</div>
+							</div>							
 						</li>
 					</ul>
 				</div>
@@ -397,6 +490,18 @@
 				$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100 }, 500);
 				e.preventDefault();
 			});	
+
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				slidesPerGroup: 3,
+				spaceBetween: 20,
+				loop: true,
+				navigation: {
+					nextEl: ".entWrap .swiper-button-next",
+					prevEl: ".entWrap .swiper-button-prev",
+				},
+			});
+
 		});
 		
 	</script>

@@ -21,7 +21,7 @@
 .jobIndustry .cont01 .titWrap strong::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -34px; border-top: 34px solid #fff; border-left: 28px solid transparent; border-right: 28px solid transparent; border-bottom: 0 solid transparent; } 
 .jobIndustry .cont01 .txtWrap { color: #fff; text-align: center; word-break: keep-all; } 
 .jobIndustry .cont01 .txtWrap p { margin-bottom: 20px; font-size: 28px; } 
-.jobIndustry .cont01 .txtWrap p span {display: block; margin-bottom: 10px; color: #fdff2c; }
+.jobIndustry .cont01 .txtWrap p span { display: block; margin-bottom: 10px; color: #fdff2c; } 
 .jobIndustry .cont01 .txtWrap h4 { margin-bottom: 20px; font-size: 42px; } 
 .jobIndustry .cont01 .txtWrap > strong { font-size: 30px; } 
 .jobIndustry .cont01 .txtWrap > strong span { color: #fdff2c; } 
@@ -38,16 +38,16 @@
 .jobIndustry .cont02 .tabList { display: flex; margin: 0 50px; justify-content: space-between; align-items: center; } 
 .jobIndustry .cont02 .tabList li a { display: block; color: #777777; font-size: 28px; text-align: center; } 
 .jobIndustry .cont02 .tabList li.active a { color: #816ee8; font-weight: 700; } 
-.jobIndustry .cont02 .tabList li.active a span { border: 5px solid #816ee8;}
-.jobIndustry .cont02 .tabList li a span { display: block; width: 200px; height: 200px; margin: 0 auto 20px; border-radius: 50%; border: 1px solid #ddd; box-sizing: border-box;} 
+.jobIndustry .cont02 .tabList li.active a span { border: 5px solid #816ee8; } 
+.jobIndustry .cont02 .tabList li a span { display: block; width: 200px; height: 200px; margin: 0 auto 20px; border-radius: 50%; border: 1px solid #ddd; box-sizing: border-box; } 
 .jobIndustry .cont02 .tabList li.tab_0 span { background: url(../images/jobIndustry/tab_icon01.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_1 span { background: url(../images/jobIndustry/tab_icon02.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_2 span { background: url(../images/jobIndustry/tab_icon03.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_3 span { background: url(../images/jobIndustry/tab_icon04.png) no-repeat center #fff } 
 .jobIndustry .cont02 .tabList li.tab_4 span { background: url(../images/jobIndustry/tab_icon05.png) no-repeat center #fff } 
-.jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between;} 
-.jobIndustry .cont02 .item.soonImg {display: block; min-height: 300px;}
-.jobIndustry .soonImg {text-align: center;}
+.jobIndustry .cont02 .item { display: flex; margin: 0 180px; justify-content: space-between; } 
+.jobIndustry .cont02 .item.soonImg { display: block; min-height: 300px; } 
+.jobIndustry .soonImg { text-align: center; } 
 .jobIndustry .cont02 .item .txt { min-width: 400px; margin-top: 30px; } 
 .jobIndustry .cont02 .item .txt .tit { display: inline-block; max-width: 260px; width: 100%; padding: 6px 25px 0; margin-bottom: 30px; background: #816ee8; color: #fff; font-size: 30px; text-align: center; font-weight: 700; border-radius: 30px; } 
 .jobIndustry .cont02 .item .txt .desc { font-size: 22px; } 
@@ -75,16 +75,16 @@
 .jobIndustry .cont03 .rclist .item > div:nth-child(1) { flex-shrink: 0; width: 200px; text-align: center; font-size: 24px; font-weight: 700; color: #333; } 
 .jobIndustry .cont03 .rclist .item > div:nth-child(2) { flex-grow: 1; margin-left: 32px; } 
 .jobIndustry .cont03 .rclist .item .rctit { font-size: 20px; font-weight: 500; } 
-.jobIndustry .cont03 .rclist .item > div:nth-child(1)::before {content: ''; display: block; width: 63px; height: 63px; margin: 0 auto 10px; border-radius: 50%; background-repeat: no-repeat; background-position: center center;}
-.jobIndustry .cont03 .rclist.tabStyle01 .item > div:nth-child(1)::before {background-color: #ff9999;}
-.jobIndustry .cont03 .rclist.tabStyle02 .item > div:nth-child(1)::before {background-color: #7fbbee;}
-.jobIndustry .cont03 .rclist.tabStyle01 .item .rctit a {color: #eb6666;}
-.jobIndustry .cont03 .rclist.tabStyle02 .item .rctit a {color: #388ad0;}
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(2) > div:nth-child(1)::before {background-image: url(../images/jobIndustry/tit_icon01.png);}
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(3) > div:nth-child(1)::before {background-image: url(../images/jobIndustry/tit_icon02.png);}
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(4) > div:nth-child(1)::before {background-image: url(../images/jobIndustry/tit_icon03.png);}
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(5) > div:nth-child(1)::before {background-image: url(../images/jobIndustry/tit_icon04.png);}
-.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(6) > div:nth-child(1)::before {background-image: url(../images/jobIndustry/tit_icon05.png);}
+.jobIndustry .cont03 .rclist .item > div:nth-child(1)::before { content: ''; display: block; width: 63px; height: 63px; margin: 0 auto 10px; border-radius: 50%; background-repeat: no-repeat; background-position: center center; } 
+.jobIndustry .cont03 .rclist.tabStyle01 .item > div:nth-child(1)::before { background-color: #ff9999; } 
+.jobIndustry .cont03 .rclist.tabStyle02 .item > div:nth-child(1)::before { background-color: #7fbbee; } 
+.jobIndustry .cont03 .rclist.tabStyle01 .item .rctit a { color: #eb6666; } 
+.jobIndustry .cont03 .rclist.tabStyle02 .item .rctit a { color: #388ad0; } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(2) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon01.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(3) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon02.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(4) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon03.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(5) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon04.png); } 
+.jobIndustry .cont03 div[data-tab="tab01"] .rclist .item:nth-child(6) > div:nth-child(1)::before { background-image: url(../images/jobIndustry/tit_icon05.png); } 
 
 .jobIndustry .cont03 .item button.like { background: url(../images/jobIndustry/like.png) no-repeat 50% 55%; width: 30px; height: 30px; border: 1px solid #e2e2e2; border-radius: 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-right: 10px; } 
 .jobIndustry .cont03 .rclist .item button.like.active { border-color: #211314; background: url(../images/jobIndustry/like_active.png) no-repeat 50% 55%; } 
@@ -100,8 +100,8 @@
 .jobIndustry .cont03 .rclist .item .cert_wrap > div a + a { margin-left: 4px; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn { display: inline-block; padding: 6px 30px 6px; background-color: #fff; color: #38bab2; font-size: 14px; font-weight: 700; border: 1px solid #38bab2; border-radius: 4px; line-height: 1.2; } 
 .jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn:hover { color: #fff; background: #38bab2; } 
-.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn.btnStyle02 { background: #38bab2; color: #fff;}
-.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn.btnStyle02:hover {background: #fff; color: #38bab2;}
+.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn.btnStyle02 { background: #38bab2; color: #fff; } 
+.jobIndustry .cont03 .rclist .item .cert_wrap .detailBtn.btnStyle02:hover { background: #fff; color: #38bab2; } 
 .jobIndustry .cont03 .rclist > div.item + div.item { margin-top: 20px; } 
 .jobIndustry .cont03 .pageList { display: none; } 
 .jobIndustry .cont03 .pageList.active { display: block; } 
@@ -151,37 +151,25 @@
 .jobIndustry .cont01 .titWrap { position: static; transform: none; } 
 .jobIndustry .cont01 .itemWrap { padding: 20px 10px 45px; } 
 .jobIndustry .cont01 .titWrap strong { margin-bottom: 50px; } 
-.jobIndustry .cont02 .tabList {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px 0;
-}
-.jobIndustry .cont02 .tabList li {
-    width: calc(100% / 3);
+.jobIndustry .cont02 .tabList { flex-wrap: wrap; justify-content: center; gap: 20px 0; } 
+.jobIndustry .cont02 .tabList li { width: calc(100% / 3);}
+.jobIndustry .cont02 .item { align-items: center; } 
+.jobIndustry .cont02 .item .txt { margin-top: 0; } 
+.jobIndustry .cont02 .item.soonImg { min-height: auto; } 
 
-}
-.jobIndustry .cont02 .item { align-items: center;}
-.jobIndustry .cont02 .item .txt {margin-top: 0;}
-.jobIndustry .cont02 .item.soonImg { min-height: auto;}
-
-.jobIndustry .soonImg img {transform: scale(0.8);}
+.jobIndustry .soonImg img { transform: scale(0.8); } 
  .jobIndustry .evGuide li { width: calc(100% / 3 - 20px); } 
  }
-@media all and (max-width: 860px){
-.jobIndustry .cont01 h3 { font-size: 36px; } 
+@media all and (max-width: 860px) {.jobIndustry .cont01 h3 { font-size: 36px; } 
  .jobIndustry .cont01 .titWrap strong { padding: 10px 60px; font-size: 36px; } 
 .jobIndustry .cont01 .titWrap strong::before { bottom: -22px; border-top: 24px solid #fff; border-left: 20px solid transparent; border-right: 20px solid transparent; } 
-.jobIndustry .cont01 .txtWrap h4 {
-    font-size: 30px;
-}
+.jobIndustry .cont01 .txtWrap h4 { font-size: 30px; } 
 .jobIndustry .cont01 .txtWrap p strong { font-size: 26px; } 
 .jobIndustry .cont01 .txtWrap p { font-size: 20px; } 
 .jobIndustry .cont01 .txtWrap > strong { font-size: 24px; } 
 
-.jobIndustry .cont02 {margin-top: 0;}
-.jobIndustry .cont02 .innerSection {
-    padding: 60px 10px 74px;
-}
+.jobIndustry .cont02 { margin-top: 0; } 
+.jobIndustry .cont02 .innerSection { padding: 60px 10px 74px; } 
 
 .jobIndustry .cont02 .tabList li a span { margin: 0 auto 20px; } 
 .jobIndustry .cont02 .item { flex-direction: column; margin: 0; } 
@@ -225,9 +213,7 @@
  .jobIndustry .cont01 .itemWrap::after { width: 60px; height: 41px; top: -32px; } 
  .jobIndustry .cont01 .titWrap strong { width: 100%; margin-bottom: 30px; padding: 10px; font-size: 22px; } 
  .jobIndustry .cont01 .titWrap strong::after { width: 16px; height: 24px; } 
- .jobIndustry .cont01 .txtWrap h4 {
-    font-size: 24px;
-}
+ .jobIndustry .cont01 .txtWrap h4 { font-size: 24px; } 
  .jobIndustry .cont01 .txtWrap p { font-size: 16px; } 
  .jobIndustry .cont01 .txtWrap p strong { font-size: 18px; } 
  .jobIndustry .cont01 .txtWrap > strong { font-size: 18px; } 
@@ -238,13 +224,8 @@
 
  .jobIndustry .cont02 .innerSection { padding: 30px 10px; } 
  
- .jobIndustry .cont02 .tabList {
-    margin: 0;
-    align-items: flex-start;
-}
-.jobIndustry .soonImg img {
-    transform: scale(0.6);
-}
+ .jobIndustry .cont02 .tabList { margin: 0; align-items: flex-start; } 
+.jobIndustry .soonImg img { transform: scale(0.6); } 
  .jobIndustry .cont02 .tabList li a { font-size: 14px; word-break: keep-all; } 
  .jobIndustry .cont02 .tabList li a span { width: 90px; height: 90px; } 
  .jobIndustry .cont02 .tabList li.tab_0 span,
@@ -255,7 +236,7 @@
  .jobIndustry .cont02 .tabList li a span { margin: 0 auto 10px; } 
  .jobIndustry .cont02 .tabWrap { margin-bottom: 40px; } 
 .jobIndustry .cont02 .swiper-button-next,
-.jobIndustry .cont02 .swiper-button-prev { display: none; }
+.jobIndustry .cont02 .swiper-button-prev { display: none; } 
 .jobIndustry .cont02 .item .txt .tit { max-width: 160px; padding: 6px 25px 2px; margin-bottom: 10px; font-size: 18px; } 
 .jobIndustry .cont02 .item .txt .desc { font-size: 14px; word-break: keep-all; } 
 .jobIndustry .cont02 .item .txt a { max-width: 90%; font-size: 16px; } 
