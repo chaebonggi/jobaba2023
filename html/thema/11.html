@@ -43,39 +43,64 @@
 						진화를 통해 지속적인 고부가가치를 달성할 수 있는 산업</p>
 				</div>
 				<ul>
-					<li><a href="" target="_blank" class="gBold fs24">배터리</a></li>
-					<li><a href="" target="_blank" class="gBold fs24">반도체</a></li>
-					<li><a href="" target="_blank" class="gBold fs24">첨단 모빌리티</a></li>
-					<li><a href="" target="_blank" class="gBold fs24">바이오</a></li>
-					<li><a href="" target="_blank" class="gBold fs24">AI 빅데이터</a></li>
+					<li><a href="#moveTo01" class="gBold fs24">배터리</a></li>
+					<li><a href="#moveTo02" class="gBold fs24">반도체</a></li>
+					<li><a href="#moveTo03" class="gBold fs24">첨단 모빌리티</a></li>
+					<li><a href="#moveTo04" class="gBold fs24">바이오</a></li>
+					<li><a href="#moveTo05" class="gBold fs24">AI 빅데이터</a></li>
 				</ul>
 			</div>			
 		</article>
 		<article class="thema01 linkWrap" id="moveTo01">
-			<!-- <div class="leftMenu">
+			<div class="leftMenu">
 				<ul class="menuList">
 					<li class="active">
-						<a href="#moveTo01" class="item01">
-							<p class="fs22">배터리 산업</p>
+						<a href="#moveTo01">
+							<p class="fs24">배터리 산업</p>
 							<div class="txtBox">
-								<p class="fs24">서류</p>
+								<img src="./resource/images/thema/231010/left_icon01.png" alt="배터리산업">
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="#moveTo02" class="item02">
-							<p class="gBold fs24">Part.02</p>
+						<a href="#moveTo02">
+							<p class="fs24">반도체 산업</p>
 							<div class="txtBox">
-								<p class="fs24">자기소개서</p>
+								<img src="./resource/images/thema/231010/left_icon02.png" alt="반도체산업">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo03">
+							<p class="fs24">첨단 모빌리티 산업</p>
+							<div class="txtBox">
+								<img src="./resource/images/thema/231010/left_icon03.png" alt="첨단 모빌리티 산업">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo04">
+							<p class="fs24">바이오 산업</p>
+							<div class="txtBox">
+								<img src="./resource/images/thema/231010/left_icon04.png" alt="바이오산업">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo05">
+							<p class="fs24">AI빅데이터 산업</p>
+							<div class="txtBox">
+								<img src="./resource/images/thema/231010/left_icon05.png" alt="ai빅데이터 산업">
 							</div>
 						</a>
 					</li>
 				</ul>
-				<a href="#moveTo03">
+				<a href="#moveTo06">
 					<p class="gBold">▲ TOP</p>							
 				</a>
-			</div> -->
+			</div>
 			<div class="whiteBox bg01">
+				
 				<div class="innerSection">
 					<h3 class="gBold fs50 icon01">배터리 산업</h3>
 					<div class="txtWrap lineStyle01">
@@ -622,8 +647,8 @@
 					}
 				});	
 			});
-			$('.leftMenu a').click(function(e){
-				$("html, body").animate({ scrollTop: $(this.hash).offset().top - 100 }, 500);
+			$('.leftMenu a, .mainVisual a').click(function(e){
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
 				e.preventDefault();
 			});	
 
