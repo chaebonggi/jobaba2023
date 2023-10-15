@@ -648,20 +648,22 @@
 						<style>
 							.themaWrap .thema01 .itemWrap .cont.style01 {
 								display: grid;
+								grid-template-columns: repeat(3, 1fr);
+								grid-gap: 10px;
 							}
 							.themaWrap .thema01 .itemWrap .cont.style01 a {
-								grid-row: 1;
+								
 								
 							}
 							.themaWrap .thema01 .itemWrap .cont.style01 a:nth-child(1) {
-								 
+								grid-column: span 2;
+								grid-row: span 2;
 							}
-							.themaWrap .thema01 .itemWrap .cont.style01 a:nth-child(2) {
-								
+							.themaWrap .thema01 .itemWrap .cont.style01 a img {
+								width: 100%;
+								height: 100%;
 							}
-							.themaWrap .thema01 .itemWrap .cont.style01 a:nth-child(3) {
-								
-							}
+
 						</style>
 						<div class="cont style01">
 							<a href=""><img src="./resource/images/thema/231013/1.png" alt=""></a>
