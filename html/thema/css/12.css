@@ -143,7 +143,7 @@
 
 @media all and (max-width:860px){
  .themaWrap .mainVisual .innerSection { position: relative; padding: 164px 10px 0; } 
- .themaWrap .mainVisual .boxWrap .titWrap { margin: 0 0 30px;}
+ .themaWrap .mainVisual .boxWrap .titWrap { margin: 0 0 30px; } 
  .themaWrap .mainVisual .boxWrap .titWrap img { transform: scale(0.8); } 
  .themaWrap .mainVisual .table > ul > li p,
  .themaWrap .mainVisual .table > ul > li:hover .toolTip { display: none; } 
@@ -184,4 +184,6 @@
  .themaWrap .thema01 .itemWrap .cont { padding: 20px 20px; } 
  .themaWrap .thema01 .itemWrap .cont a { display: block; } 
  .themaWrap .thema01 .itemWrap .cont a img { width: 100%; } 
+ .themaWrap .thema01 .itemWrap .cont a:hover::before,
+ .themaWrap .thema01 .itemWrap .cont a:hover::after { content: none; } 
  }
