@@ -264,4 +264,7 @@
     .themaWrap .thema01 .itemWrap .cont a {
         display: block;
     }
+    .themaWrap .thema01 .itemWrap .cont a img {
+        width: 100%;
+    }
 }
