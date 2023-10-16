@@ -3,7 +3,7 @@
   <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>테마 11호 신성장산업</title>
+	<title>테마 12호 job calender</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css" />
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css" />
@@ -28,157 +28,16 @@
 </head>
 <body>
 	<div class="themaWrap">
-		<style>
-			.themaWrap .mainVisual {
-				background: url(./resource/images/thema/231013/thema_bg.png) top center no-repeat;
-			}
-			.themaWrap .mainVisual .innerSection {
-				padding: 164px 0 0;
-			}
-			.themaWrap .mainVisual .boxWrap::before {
-				content: '';				
-				width: calc(100% + 2px);
-				height: 82px;
-				position: absolute;
-				top: -82px;
-				left: 50%;
-				transform: translateX(-50%);
-				background: url(./resource/images/thema/231013/thema_img01.png) bottom no-repeat;
-				background-size: contain;				
-			}
-			.themaWrap .mainVisual .boxWrap {
-				position: relative;
-				padding: 40px 30px;
-				background: #fff;
-				border: 1px solid #000;
-			}
-			.themaWrap .mainVisual .boxWrap .titWrap {
-				position: relative;
-				margin: -72px 0 30px;
-				text-align: center;
-				z-index: 2;
-			}
-			.themaWrap .mainVisual .tableWrap {
-				border: 2px solid #000;
-				border-bottom: 1px solid #000;
-				border-radius: 10px 10px 0 0;
-				overflow: hidden;
-			}
-			.themaWrap .bg01 {
-				background: #f8ccc6;
-			}
-			.themaWrap .bg02 {
-				background: #d2edae;
-			}
-			.themaWrap .mainVisual .table > ul {
-				display: table;
-				width: 100%;
-			}
-			.themaWrap .mainVisual .table.hd > ul {
-				background: #eeeeee;
-				
-			}
-			.themaWrap .mainVisual .table.hd > ul > li {				
-				padding: 10px 0;
-				color: #fd7a64;
-				text-align: center;
-				font-weight: 700;
-				border: 0;
-				border-bottom: 2px solid #000;
-			}
-			.themaWrap .mainVisual .table > ul > li {
-				display: table-cell;
-				width: calc(100% / 5);
-				position: relative;
-				text-align: center;
-				border-left: 1px solid #000;
-				border-bottom: 1px solid #000;
-			} 
-			.themaWrap .mainVisual .table > ul > li:first-child {
-				border-left: 0;
-			}
-			.themaWrap .mainVisual .table > ul > li a {
-				display: block;
-				width: 100%;
-				height: 100%;
-				padding: 20px 10px 20px;
-			}
-			.themaWrap .mainVisual .table > ul > li .tbTime {
-				position: absolute;
-				top: 10px;
-				right: 10px;
-			}
-			.themaWrap .mainVisual .table > ul > li i {
-				display: block;
-				width: 70px;
-				height: 70px;
-				margin: 0 auto 10px;
-				background-color: #fff;
-				background-position: center center;
-				background-repeat: no-repeat;
-				border-radius: 50%;
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon01 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon01.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon02 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon02.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon03 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon03.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon04 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon04.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon05 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon05.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon06 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon06.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon07 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon07.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon08 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon08.png);
-			}
-			.themaWrap .mainVisual .table > ul > li i.icon09 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon09.png);
-			}
-
-			.themaWrap .mainVisual .table > ul > li:hover i {
-				background-color: #000;
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon01 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon01_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon02 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon02_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon03 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon03_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon04 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon04_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon05 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon05_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon06 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon06_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon07 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon07_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon08 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon08_on.png);
-			}
-			.themaWrap .mainVisual .table > ul > li:hover i.icon09 {
-				background-image: url(./resource/images/thema/231013/thema_calender_icon09_on.png);
-			}
-		</style>
 		<article class="mainVisual">
 			<div class="innerSection">
+				<div class="leftBox">
+					<span>2023</span>
+					<p>10.17.(화)<br>~<br>11.08.(수)</p>
+				</div>
+				<div class="rightBox">
+					<span>채용박람회 &middot; 취업박람회</span>
+					<p>잡캘린더</p>
+				</div>
 				<div class="boxWrap">
 					<div class="titWrap">
 						<img src="./resource/images/thema/231013/theam_main_tit.png" alt="job calender">
@@ -195,7 +54,7 @@
 						</div>
 						<div class="table">
 							<ul>
-								<li class="bg01">
+								<li class="bg01 tag style01">
 									<a href="javascript:void(0);">
 										<span class="tbTime fs18">16</span>
 									</a>
@@ -205,27 +64,41 @@
 										<span class="tbTime fs18">17</span>
 										<i class="icon01"></i>
 										<p>취업클리닉 받고<br>취업성공!</p>
+										<ul class="toolTip">
+											<li class="fs16">&middot; 화성시 여성 취창업 박람회</li>
+											<li class="fs16">&middot; 연천군 일자리 채용박람회</li>
+											<li class="fs16">&middot; 광명시 취업박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg01">
 									<a href="#date02" data-tab="date02">
 										<span class="tbTime fs18">18</span>
 										<i class="icon02"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>현장에서 면접보고<br>취업하자!</p>
+										<ul class="toolTip">
+											<li class="fs16">&middot; 군포시 일자리 박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg01">
 									<a href="#date03" data-tab="date03">
 										<span class="tbTime fs18">19</span>
 										<i class="icon03"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>무료 증명사진 촬영부터<br>취업타로카드 점 보기!</p>
+										<ul class="toolTip style02">
+											<li class="fs16">&middot; 군포시 일자리 박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg01">
 									<a href="#date04" data-tab="date04">
 										<span class="tbTime fs18">20</span>
 										<i class="icon04"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>오산시 청년 모여라!<br>청년 일자리 페스티벌</p>
+										<ul class="toolTip style02">
+											<li class="fs16">&middot; 잡JOB콕! 청년 일자리 페스티벌</li>
+										</ul>
 									</a>
 								</li>
 							</ul>
@@ -238,22 +111,34 @@
 									</a>
 								</li>
 								<li class="bg01">
-									<a href="">
+									<a href="#date05" data-tab="date05">
 										<span class="tbTime fs18">24</span>
 										<i class="icon05"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>생애주기별 &middot; 특정직군<br>채용박람회 모아보기!</p>
+										<ul class="toolTip">
+											<li class="fs16">&middot; 수원시 일자리박람회</li>
+											<li class="fs16">&middot; 2023 K-Move GLOBAL JAB FAIR 해외취업박람회</li>
+											<li class="fs16">&middot; 2023 안성시 채용박람회 (스트릿 취업 파이터)</li>
+											<li class="fs16">&middot; 2023 반도체 산업 온라인채용 박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg01">
-									<a href="">
+									<a href="#date06" data-tab="date06">
 										<span class="tbTime fs18">25</span>
 									</a>
 								</li>
 								<li class="bg01">
-									<a href="">
+									<a href="#date06" data-tab="date06">
 										<span class="tbTime fs18">26</span>
 										<i class="icon06"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>시군별 박람회 정보 확인!<br>우리동네에서<br>가까운곳은 어디?</p>
+										<ul class="toolTip style02">
+											<li class="fs16">&middot; 의왕시 취업박람회</li>
+											<li class="fs16">&middot; 파주시 더 큰 취업박람회</li>
+											<li class="fs16">&middot; 성남시 채용박람회</li>
+											<li class="fs16">&middot; 여주시 일자리박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg01">
@@ -271,17 +156,23 @@
 									</a>
 								</li>
 								<li class="bg01">
-									<a href="">
+									<a href="#date07" data-tab="date07">
 										<span class="tbTime fs18">31</span>
 										<i class="icon07"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>2023 모두의 일자리<br>박람회. 장애인 채용기업<br>10개사 참여!</p>
+										<ul class="toolTip">
+											<li class="fs16">&middot; 남양주시 모두의 일자리 채용박람회</li>
+										</ul>
 									</a>
 								</li>
-								<li class="bg02">
-									<a href="">
+								<li class="bg02 tag style02">
+									<a href="#date08" data-tab="date08">
 										<span class="tbTime fs18">1</span>
 										<i class="icon08"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>정보보호 분야에<br>관심있는 구직자 집중!</p>
+										<ul class="toolTip">
+											<li class="fs16">&middot; 2023 하반기 정보보호 취업박람회</li>
+										</ul>
 									</a>
 								</li>
 								<li class="bg02">
@@ -319,227 +210,23 @@
 									</a>
 								</li>
 								<li class="bg02">
-									<a href="">
+									<a href="#date09" data-tab="date09">
 										<span class="tbTime fs18">8</span>
 										<i class="icon09"></i>
-										<p>취업클리닉 받고<br>취업성공!</p>
+										<p>IT, CT 분야 채용<br>취업박람회</p>
+										<ul class="toolTip style02">
+											<li class="fs16">&middot; 2023 청년과학기술인 일자리박람회(경기권)</li>
+										</ul>
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-				
-
-				
+				</div>			
 			</div>			
 		</article>
 		<article class="thema01">
 			<div class="innerSection">
-				<style>
-					.themaWrap .thema01 {
-						background: url(./resource/images/thema/231013/thema_bg02.png) bottom center #ffd973 no-repeat;
-					}
-					.themaWrap .thema01 .innerSection {
-						padding: 108px 0 210px;
-					}
-					
-					.themaWrap .thema01 .banner {
-						margin-bottom: 30px;
-						text-align: center;
-					}
-					.themaWrap .thema01 .listWrap {
-						display: flex;
-						padding: 71px 30px 30px;
-						background: url(./resource/images/thema/231013/thema_img02.png) top center no-repeat;
-						background-size: contain;
-						justify-content: space-between;
-					}
-					.themaWrap .thema01 .listBox > p {
-						margin-bottom: 14px;
-						color: #fff;
-						text-align: center;
-						font-weight: 700;
-					}
-					.themaWrap .thema01 .listBox ul {
-						display: flex;
-						padding: 18px 12px;
-						border: 1px dashed #ffd785;
-						border-radius: 20px;
-						text-align: center;
-						justify-content: space-between;
-						gap: 0 8px 
-					}
-					.themaWrap .thema01 .listBox ul span {
-						color: #fff;
-						font-size: 12px;
-					}
-					.themaWrap .thema01 .listBox ul p {
-						margin: 2px 0 2px;
-						color: #fff;
-						font-weight: 700;
-					}
-					.themaWrap .thema01 .listBox ul i {
-						display: block;
-						width: 80px;
-						height: 80px;
-						background-color: #fff;
-						background-repeat: no-repeat;
-						background-position: center center;
-						border-radius: 50%;
-					}
-					.themaWrap .thema01 .listBox ul i.icon01 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon01.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon02 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon02.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon03 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon03.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon04 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon04.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon05 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon05.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon06 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon06.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon07 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon07.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon08 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon08.png);
-					}
-					.themaWrap .thema01 .listBox ul i.icon09 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon09.png);
-					}
-
-					.themaWrap .thema01 .listBox ul li:hover i,
-					.themaWrap .thema01 .listBox ul a.active i {
-						background-color: #000;
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon01,
-					.themaWrap .thema01 .listBox ul li a.active i.icon01 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon01_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon02,
-					.themaWrap .thema01 .listBox ul li a.active i.icon02 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon02_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon03,
-					.themaWrap .thema01 .listBox ul li a.active i.icon03 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon03_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon04,
-					.themaWrap .thema01 .listBox ul li a.active i.icon04 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon04_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon05,
-					.themaWrap .thema01 .listBox ul li a.active i.icon05 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon05_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon06,
-					.themaWrap .thema01 .listBox ul li a.active i.icon06 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon06_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon07,
-					.themaWrap .thema01 .listBox ul li a.active i.icon07 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon07_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon08,
-					.themaWrap .thema01 .listBox ul li a.active i.icon08 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon08_on.png);
-					}
-					.themaWrap .thema01 .listBox ul li:hover i.icon09,
-					.themaWrap .thema01 .listBox ul li a.active i.icon09 {
-						background-image: url(./resource/images/thema/231013/thema_list_icon09_on.png);
-					}
-					.themaWrap .thema01 .itemWrap {
-						display: none;
-						padding: 30px;
-						background: #fff;
-						border: 1px solid #000;
-					}
-					.themaWrap .thema01 .itemWrap.active {
-						display: block;
-					}
-					.themaWrap .thema01 .itemWrap .box {
-						display: flex;
-						padding: 20px 46px;
-						background: #fe7966;
-						border-radius: 10px 10px 0 0;
-					}
-					.themaWrap .thema01 .itemWrap .box > div {
-						width: 100px;
-						margin-right: 40px;
-					}
-					.themaWrap .thema01 .itemWrap .box > div p {
-						position: relative;
-						color: #fff;
-						font-weight: 700;
-					}
-					.themaWrap .thema01 .itemWrap .box > div p span {
-						position: absolute;
-						right: 0;
-						bottom: 0;
-						color: #fff;
-					}
-					.themaWrap .thema01 .itemWrap .box a {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						color: #fff;
-					}
-					.themaWrap .thema01 .itemWrap .box a p {
-						position: relative;
-						padding: 6px 0 0;
-						margin-right: 10px;
-					}
-					.themaWrap .thema01 .itemWrap .box a span {
-						padding: 4px 10px 0;
-						background: #fff;
-						color: #fe7966;
-						font-weight: 700;
-					}
-					.themaWrap .thema01 .itemWrap .cont {
-						padding: 60px;
-						background: #e8e8e8;
-						text-align: center;
-					}
-					.themaWrap .thema01 .itemWrap .cont a {
-						display: inline-block;
-						position: relative;
-						text-align: center;
-					}
-					.themaWrap .thema01 .itemWrap .cont a:hover::before {
-						content: '';
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						background: rgba(0,0,0,.65);
-					}
-					.themaWrap .thema01 .itemWrap .cont a:hover::after {
-						content: 'VIEW';
-						display: flex;
-						width: 100px;
-						height: 100px;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						background: #fe7966;
-						color: #fff;
-						font-size: 24px;
-						font-weight: 700;
-						align-items: center;
-						justify-content: center;
-						border-radius: 50%;
-					}
-				</style>
 				<div class="banner">
 					<img src="./resource/images/thema/231013/thema_banner.png" alt="취업 혼자 하지마! 잡아바랑 해!">
 				</div>
@@ -569,28 +256,28 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#date04" data-tab="date04">
 									<span>TUE</span>
 									<p class="fs24">20</p>
 									<i class="icon04"></i>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#date05" data-tab="date05">
 									<span>TUE</span>
 									<p class="fs24">24</p>
 									<i class="icon05"></i>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#date06" data-tab="date06">
 									<span>THU</span>
 									<p class="fs24">26</p>
 									<i class="icon06"></i>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#date07" data-tab="date07">
 									<span>TUE</span>
 									<p class="fs24">31</p>
 									<i class="icon07"></i>
@@ -602,14 +289,14 @@
 						<p class="fs18">11월</p>
 						<ul>
 							<li>
-								<a href="">
+								<a href="#date08" data-tab="date08">
 									<span>WED</span>
 									<p class="fs24">1</p>
 									<i class="icon08"></i>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#date09" data-tab="date09">
 									<span>WED</span>
 									<p class="fs24">8</p>
 									<i class="icon09"></i>
@@ -627,112 +314,211 @@
 							<ul>
 								<li>
 									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
+										<p class="fs18">화성시 여성 취창업 박람회 <span class="fs12">바로가기 &#8594;</span></p>										
 									</a>
 								</li>
 								<li>
 									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
+										<p class="fs18">연천군 일자리 채용박람회 <span class="fs12">바로가기 &#8594;</span></p>										
 									</a>
 								</li>
 								<li>
 									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
+										<p class="fs18">광명시 취업박람회 <span class="fs12">바로가기 &#8594;</span></p>										
 									</a>
 								</li>
 							</ul>
 						</div>
-						<style>
-							.themaWrap .thema01 .itemWrap .cont.style01 {
-								display: grid;
-								grid-template-columns: repeat(3, 1fr);
-								grid-gap: 10px;
-							}
-							.themaWrap .thema01 .itemWrap .cont.style01 a {
-								
-								
-							}
-							.themaWrap .thema01 .itemWrap .cont.style01 a:nth-child(1) {
-								grid-column: span 2;
-								grid-row: span 2;
-							}
-							.themaWrap .thema01 .itemWrap .cont.style01 a img {
-								width: 100%;
-								height: 100%;
-							}
 
-						</style>
 						<div class="cont style01">
 							<a href=""><img src="./resource/images/thema/231013/1.png" alt=""></a>
 							<a href=""><img src="./resource/images/thema/231013/2.png" alt=""></a>
 							<a href=""><img src="./resource/images/thema/231013/3.png" alt=""></a>
 						</div>						
 					</div>
-					<!--  -->
+
 					<div class="itemWrap" data-tab="date02" id="date02">
 						<div class="box">
 							<div>
-								<p class="fs48">18<span class="fs16">TUE</span></p>								
+								<p class="fs48">18<span class="fs16">WED</span></p>								
 							</div>
 							<ul>
 								<li>
 									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
+										<p class="fs18">군포시 일자리 박람회 <span class="fs12">바로가기 &#8594;</span></p>
+										
 									</a>
-								</li>
-								<li>
-									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
-									</a>
-								</li>
+								</li>				
 							</ul>
 						</div>
 						<div class="cont">
-							<a href=""><img src="./resource/images/thema/231013/1.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/4.png" alt=""></a>
 						</div>						
 					</div>
 					<div class="itemWrap" data-tab="date03" id="date03">
 						<div class="box">
 							<div>
-								<p class="fs48">19<span class="fs16">TUE</span></p>								
+								<p class="fs48">19<span class="fs16">THU</span></p>								
 							</div>
 							<ul>
 								<li>
 									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<p class="fs18">&middot; 화성시 여성 취창업 박람회</p>
-										<span class="fs12">바로가기 &#8594;</span>
+										<p class="fs18">이천시 취업박람회 <span class="fs12">바로가기 &#8594;</span></p>
+										
 									</a>
 								</li>
 							</ul>
 						</div>
 						<div class="cont">
-							<a href=""><img src="./resource/images/thema/231013/1.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/5.png" alt=""></a>
 						</div>						
 					</div>
-					<!--  -->
+					<div class="itemWrap" data-tab="date04" id="date04">
+						<div class="box">
+							<div>
+								<p class="fs48">20<span class="fs16">TUE</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">잡JOB콕! 청년 일자리 페스티벌 <span class="fs12">바로가기 &#8594;</span></p>
+										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/6.png" alt=""></a>
+						</div>						
+					</div>
+					<div class="itemWrap" data-tab="date05" id="date05">
+						<div class="box">
+							<div>
+								<p class="fs48">24<span class="fs16">TUE</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">수원시 일자리박람회 <span class="fs12">바로가기 &#8594;</span></p>
+										
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<p class="fs18">2023 K-Move GLOBAL JAB FAIR<br> 해외취업박람회 <span class="fs12">바로가기 &#8594;</span></p>
+										
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">2023 안성시 채용박람회<br>(스트릿 취업 파이터) <span class="fs12">바로가기 &#8594;</span></p>
+										
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<p class="fs18">2023 반도체 산업 온라인<br>채용 박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/7.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/8.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/9.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/10.png" alt=""></a>
+						</div>						
+					</div>
+					<div class="itemWrap" data-tab="date06" id="date06">
+						<div class="box">
+							<div>
+								<p class="fs48">26<span class="fs16">THU</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">의왕시 취업박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<p class="fs18">파주시 더 큰 취업박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">성남시 채용박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<p class="fs18">여주시 일자리박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/11.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/12.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/13.png" alt=""></a>
+							<a href=""><img src="./resource/images/thema/231013/14.png" alt=""></a>
+						</div>						
+					</div>
+					<div class="itemWrap" data-tab="date07" id="date07">
+						<div class="box">
+							<div>
+								<p class="fs48">31<span class="fs16">TUE</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">남양주시 모두의 일자리 채용박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/15.png" alt=""></a>
+						</div>						
+					</div>
+					<div class="itemWrap" data-tab="date08" id="date08">
+						<div class="box">
+							<div>
+								<p class="fs48">1<span class="fs16">WED</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">2023 하반기 정보보호 취업박람회 <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/16.png" alt=""></a>
+						</div>						
+					</div>
+					<div class="itemWrap" data-tab="date09" id="date09">
+						<div class="box">
+							<div>
+								<p class="fs48">8<span class="fs16">THU</span></p>								
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<p class="fs18">2023 청년과학기술인 일자리박람회(경기권) <span class="fs12">바로가기 &#8594;</span></p>										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							<a href=""><img src="./resource/images/thema/231013/17.png" alt=""></a>
+						</div>						
+					</div>
 				</div>
 			</div>
 		</article>
@@ -784,6 +570,10 @@
 
 			$("#"+tab_id).addClass('active');
 		});
+		$('.listBox a, .mainVisual a').click(function(e){
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+				e.preventDefault();
+			});
 
 	});
 		
