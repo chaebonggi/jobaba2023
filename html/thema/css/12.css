@@ -118,7 +118,7 @@
 .themaWrap .thema01 .itemWrap .box > div p span { position: absolute; right: 0; bottom: 0; color: #fff; } 
 .themaWrap .thema01 .itemWrap .box a { display: flex; align-items: center; color: #fff; } 
 .themaWrap .thema01 .itemWrap .box a p::before { content: '\00B7'; display: block; position: absolute; left: 0; top: 8px; } 
-.themaWrap .thema01 .itemWrap .box a p { position: relative; padding: 6px 0 0 10px; } 
+.themaWrap .thema01 .itemWrap .box a p { position: relative; padding: 6px 0 0 10px; word-break: keep-all;} 
 .themaWrap .thema01 .itemWrap .box a span { padding: 4px 10px 2px; background: #fff; color: #fe7966; font-weight: 700; vertical-align: middle; white-space: nowrap; } 
 .themaWrap .thema01 .itemWrap .cont { padding: 60px; background: #e8e8e8; text-align: center; } 
 .themaWrap .thema01 .itemWrap .cont a { display: inline-block; position: relative; margin: 10px; text-align: center; } 
