@@ -41,6 +41,7 @@
 .themaWrap .mainVisual .table > ul > li i.icon07 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon07.png); } 
 .themaWrap .mainVisual .table > ul > li i.icon08 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon08.png); } 
 .themaWrap .mainVisual .table > ul > li i.icon09 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon09.png); } 
+.themaWrap .mainVisual .table > ul > li i.icon10 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon10.png); } 
 
 .themaWrap .mainVisual .table > ul > li:hover i { background-color: #000; } 
 .themaWrap .mainVisual .table > ul > li:hover i.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon01_on.png); } 
@@ -52,6 +53,7 @@
 .themaWrap .mainVisual .table > ul > li:hover i.icon07 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon07_on.png); } 
 .themaWrap .mainVisual .table > ul > li:hover i.icon08 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon08_on.png); } 
 .themaWrap .mainVisual .table > ul > li:hover i.icon09 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon09_on.png); } 
+.themaWrap .mainVisual .table > ul > li:hover i.icon10 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon10_on.png); }
 
 .themaWrap .mainVisual .table > ul > li:hover .toolTip { display: block; } 
 .themaWrap .mainVisual .table .toolTip { display: none;; padding: 20px 18px 16px; position: absolute; top: -26px; left: 186px; background: rgba(0,0,0, .8); border-radius: 10px; color: #fff; font-size: 14px; font-weight: normal; font-style: normal; line-height: 18px; z-index: 1; box-shadow: 9.027px 11.98px 15px 0px rgba(0, 0, 0, 0.15); } 
@@ -72,62 +74,49 @@
 .themaWrap .thema01 .innerSection { padding: 150px 0 210px; } 
 
 .themaWrap .thema01 .banner { margin-bottom: 30px; text-align: center; } 
-.themaWrap .thema01 .listWrap { display: flex; padding: 70px 30px 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_img02.png) top center no-repeat; background-size: contain; justify-content: space-between; } 
+.themaWrap .thema01 .listWrap { display: flex; padding: 70px 30px 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_img02.png) top center no-repeat; justify-content: space-between; } 
 .themaWrap .thema01 .listBox > p { margin-bottom: 14px; color: #fff; text-align: center; font-weight: 700; } 
 .themaWrap .thema01 .listBox ul { display: flex; padding: 18px 12px; border: 1px dashed #ffd785; border-radius: 20px; text-align: center; justify-content: space-between; gap: 0 8px } 
 .themaWrap .thema01 .listBox ul span { color: #fff; font-size: 12px; } 
 .themaWrap .thema01 .listBox ul p { margin: 2px 0 2px; color: #fff; font-weight: 700; } 
-.themaWrap .thema01 .listBox ul i { display: block; width: 80px; height: 80px; background-color: #fff; background-repeat: no-repeat; background-position: center center; border-radius: 50%; } 
-.themaWrap .thema01 .listBox ul i.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon01.png); } 
-.themaWrap .thema01 .listBox ul i.icon02 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon02.png); } 
-.themaWrap .thema01 .listBox ul i.icon03 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon03.png); } 
-.themaWrap .thema01 .listBox ul i.icon04 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon04.png); } 
-.themaWrap .thema01 .listBox ul i.icon05 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon05.png); } 
-.themaWrap .thema01 .listBox ul i.icon06 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon06.png); } 
-.themaWrap .thema01 .listBox ul i.icon07 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon07.png); } 
-.themaWrap .thema01 .listBox ul i.icon08 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon08.png); } 
-.themaWrap .thema01 .listBox ul i.icon09 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon09.png); } 
+.themaWrap .thema01 .listBox ul i { display: block; width: 70px; height: 70px; background-color: transparent; background-repeat: no-repeat; background-position: center center; border-radius: 50%; border: 1px dashed #ffd785;} 
+.themaWrap .thema01 .listBox ul i.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon01_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon02 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon02_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon03 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon03_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon04 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon04_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon05 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon05_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon06 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon06_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon07 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon07_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon08 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon08_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon09 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon09_on.png); } 
+.themaWrap .thema01 .listBox ul i.icon10 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_calender_icon10_on.png); }
 
 .themaWrap .thema01 .listBox ul li:hover i,
-.themaWrap .thema01 .listBox ul a.active i { background-color: #000; } 
-.themaWrap .thema01 .listBox ul li:hover i.icon01,
-.themaWrap .thema01 .listBox ul li a.active i.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon01_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon02,
-.themaWrap .thema01 .listBox ul li a.active i.icon02 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon02_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon03,
-.themaWrap .thema01 .listBox ul li a.active i.icon03 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon03_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon04,
-.themaWrap .thema01 .listBox ul li a.active i.icon04 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon04_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon05,
-.themaWrap .thema01 .listBox ul li a.active i.icon05 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon05_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon06,
-.themaWrap .thema01 .listBox ul li a.active i.icon06 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon06_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon07,
-.themaWrap .thema01 .listBox ul li a.active i.icon07 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon07_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon08,
-.themaWrap .thema01 .listBox ul li a.active i.icon08 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon08_on.png); } 
-.themaWrap .thema01 .listBox ul li:hover i.icon09,
-.themaWrap .thema01 .listBox ul li a.active i.icon09 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231013/thema_list_icon09_on.png); } 
+.themaWrap .thema01 .listBox ul a.active i { background-color: #000; }
+
+
+
 .themaWrap .thema01 .itemWrap { display: none; position: relative; padding: 30px; background: #fff; border: 1px solid #000; z-index: 2; } 
 .themaWrap .thema01 .itemWrap.active { display: block; } 
 .themaWrap .thema01 .itemWrap .box { display: flex; min-height: 132px; padding: 20px 46px; background: #fe7966; border-radius: 10px 10px 0 0; } 
 .themaWrap .thema01 .itemWrap .box ul { display: flex; flex-direction: column; justify-content: center; } 
 .themaWrap .thema01 .itemWrap .box ul + ul { margin-left: 20px; } 
-.themaWrap .thema01 .itemWrap .box > div { width: 100px; margin-right: 40px; } 
+.themaWrap .thema01 .itemWrap .box > div { margin-right: 40px; } 
 .themaWrap .thema01 .itemWrap .box > div p { position: relative; color: #fff; font-weight: 700; } 
-.themaWrap .thema01 .itemWrap .box > div p span { position: absolute; right: 0; bottom: 0; color: #fff; } 
+.themaWrap .thema01 .itemWrap .box > div p span { display: inline-block; color: #fff; } 
 .themaWrap .thema01 .itemWrap .box a { display: flex; align-items: center; color: #fff; } 
 .themaWrap .thema01 .itemWrap .box a p::before { content: '\00B7'; display: block; position: absolute; left: 0; top: 8px; } 
 .themaWrap .thema01 .itemWrap .box a p { position: relative; padding: 6px 0 0 10px; word-break: keep-all;} 
 .themaWrap .thema01 .itemWrap .box a span { padding: 4px 10px 2px; background: #fff; color: #fe7966; font-weight: 700; vertical-align: middle; white-space: nowrap; } 
 .themaWrap .thema01 .itemWrap .cont { padding: 60px; background: #e8e8e8; text-align: center; } 
-.themaWrap .thema01 .itemWrap .cont a { display: inline-block; position: relative; margin: 10px; text-align: center; } 
+.themaWrap .thema01 .itemWrap .cont a { display: inline-block; position: relative; text-align: center; } 
 .themaWrap .thema01 .itemWrap .cont a:hover::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.65); } 
 .themaWrap .thema01 .itemWrap .cont a:hover::after { content: 'VIEW'; display: flex; width: 100px; height: 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fe7966; color: #fff; font-size: 24px; font-weight: 700; align-items: center; justify-content: center; border-radius: 50%; } 
 
 .themaWrap .thema01 .itemWrap .cont.style01 { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px; } 
 .themaWrap .thema01 .itemWrap .cont.style01 a:nth-child(1) { grid-column: span 2; grid-row: span 2; } 
-.themaWrap .thema01 .itemWrap .cont.style01 a img { width: 100%; height: 100%; } 
+.themaWrap .thema01 .itemWrap .cont a img { width: 100%; height: 100%; } 
+.themaWrap .thema01 .itemWrap .cont.style02 { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;}
 
 
 @media all and (max-width:1700px){
@@ -181,6 +170,8 @@
  .themaWrap .thema01 .itemWrap .box { padding: 10px 20px; } 
  .themaWrap .thema01 .itemWrap .box a span { padding: 2px 10px 0; } 
  .themaWrap .thema01 .itemWrap .cont.style01 { display: block; } 
+ .themaWrap .thema01 .itemWrap .cont.style02 { display: block; } 
+ .themaWrap .thema01 .itemWrap .cont a + a { margin-top: 10px;}
  .themaWrap .thema01 .itemWrap .cont { padding: 20px 20px; } 
  .themaWrap .thema01 .itemWrap .cont a { display: block; } 
  .themaWrap .thema01 .itemWrap .cont a img { width: 100%; } 
