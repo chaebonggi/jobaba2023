@@ -1,0 +1,4 @@
+.jobIndustry * { font-family: 'GmarketSans'; font-weight: 500; line-height: 1.3; } 
+.jobIndustry .innerSection { max-width: 1280px; padding: 0 10px; margin: 0 auto; }
+.jobIndustry .gBold { font-family: 'GmarketSans'; font-weight: 700; } 
+.jobIndustry .fcBlue { color: #2a73c5; } 
