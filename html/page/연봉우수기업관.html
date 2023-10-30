@@ -20,6 +20,7 @@
 	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
 	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
 	<link rel="stylesheet" href="https://chaebonggi.github.io/jobaba2023/html/etc/css/fonts.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
 	<!-- 잡아바 default css-->
 
 	<!-- 이벤트 추가 css -->
@@ -471,7 +472,315 @@
 		</article>
 		<article class="cont03">
 			<div class="innerSection">
-
+				<style>
+					.topCompany .searchWrap {
+						display: flex;
+						margin-bottom: 12px;
+					}
+					.topCompany .searchWrap .searchbar {
+						padding: 8px 8px;
+						border: 1px solid #000;
+						font-size: 16px;
+						flex-grow: 1;
+						overflow: hidden;
+					}
+					.topCompany .searchWrap > div {
+						width: 304px;
+						margin-left: 20px;
+						flex-grow: 0;
+						text-align: right;
+					}
+					.topCompany .btn {
+						display: inline-block;
+						font-size: 16px;
+						padding: 10px;
+						min-width: 120px;
+						color: #fff;
+						text-align: center;
+						border-radius: 3px;
+						height: auto;
+						border: none;
+					}
+					.topCompany .btn.lg {
+						min-width: 146px;
+					}
+					.topCompany .choiceWrap {
+						display: flex;
+						margin-bottom: 30px;
+						align-items: center;
+					}
+					.topCompany .choiceWrap p {
+						margin-right: 10px;
+						font-size: 18px;
+						flex-shrink: 0;
+					}
+					.topCompany .choiceWrap ul {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 10px;
+					}
+					.topCompany .choiceWrap li {
+						padding: 8px 20px;
+						background: #fff;
+						color: #a6a6a6;
+						font-size: 16px;
+						border: 1px solid #d7d7d7;
+						flex-shrink: 0;
+					}
+					.topCompany .choiceWrap li i {
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						margin-left: 10px;
+						background: url(./images/topCompany/btn_close.png) no-repeat;
+						cursor: pointer;
+					}
+					
+				</style>
+				<!--  -->
+				<div class="infoWrap">
+					<div class="searchWrap">
+						<input type="text" class="searchbar" placeholder="희망하는 검색어를 입력하거나 아래에서 원하는 정보를 선택 후 검색해 주세요." />
+						<div>							
+							<a href="javascript:void(0);" class="btn lg search">검색</a>
+							<a href="javascript:void(0);" class="btn lg reset">입력/선택 초기화</a>
+						</div>
+					</div>
+					<div class="choiceWrap">
+						<p>현재 검색조건</p>
+						<ul>
+							<li>근무지 - 경기전체<i></i></li>
+							<li>근무지 - 경기전체<i></i></li>
+							<li>근무지 - 경기전체<i></i></li>
+							<li>근무지 - 경기전체<i></i></li>
+						</ul>
+					</div>
+					<div class="cateWrap">					
+						<div>
+							<div class="tit">근무지</div>
+							<div class="scrollbar-outer">
+								<div class="radio">
+									<label>
+										<input type="checkbox" checked="checked"/>
+										<span class="text">경기전체</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">가평군</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">고양시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">과천시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">광명시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">광주시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">구리시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">군포시</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">남양주시</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tit">연봉</div>
+							<div class="scrollbar-outer">
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">회사내규에 따름</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 만원 이하</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 ~ 3000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">3000 ~ 4000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">4000 ~ 5000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">5000 ~ 6000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">6000 ~ 7000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">7000 만원 이상</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tit">연봉</div>
+							<div class="scrollbar-outer">
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">회사내규에 따름</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 만원 이하</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 ~ 3000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">3000 ~ 4000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">4000 ~ 5000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">5000 ~ 6000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">6000 ~ 7000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">7000 만원 이상</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tit">연봉</div>
+							<div class="scrollbar-outer">
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">회사내규에 따름</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 만원 이하</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">2500 ~ 3000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">3000 ~ 4000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">4000 ~ 5000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">5000 ~ 6000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">6000 ~ 7000 만원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">7000 만원 이상</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="infoBtn">
+						<a href="javascript:void(0);" class="btn reset">초기화</a>
+						<a href="javascript:void(0);" class="btn search">검색</a>
+					</div>
+				</div>
+				<!--  -->
 			</div>
 		</article>
 		<article class="cont04">
@@ -724,11 +1033,18 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 
 
 
 
 <script>
+
+	$('.scrollbar-outer').scrollbar();
+	$('.choiceWrap li i').click(function(){
+		$(this).parent('li').remove();
+	});
+
 	var _tabList = $(".tabList");
     var _tabTarget = _tabList.children("li");
     var swiper = new Swiper('.tbs', {

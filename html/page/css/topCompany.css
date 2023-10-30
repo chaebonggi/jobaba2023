@@ -1,14 +1,16 @@
 .topCompany * { font-family: 'GmarketSans'; font-weight: 500; line-height: 1.4; } 
 .topCompany .cont02 *,
 .topCompany .cont03 *,
-.topCompany .cont04 * { font-family: 'Noto Sans KR', sans-serif; font-weight: 500; line-height: 1.4; } 
+.topCompany .cont04 * { font-family: 'Noto Sans KR', sans-serif; font-weight: 500; } 
 .topCompany .innerSection { max-width: 1280px; padding: 0 10px; margin: 0 auto; } 
 .topCompany .gBold { font-family: 'GmarketSans'; font-weight: 700; } 
 .topCompany .fcBlue { color: #2a73c5; } 
 .topCompany .fcBlue02 { color: #003281; } 
 .topCompany .fcYellow { color: #fdff2c; } 
-.topCompany .fcRed { color: #ff0000; } 
+.topCompany .fcRed { color: #ff0000; }
 
+.topCompany .reset {background: #a6a6a6;}
+.topCompany .search {background: #ff6163;}
 .topCompany .bcSkyblue { background: #d0eef9; } 
 .topCompany .bcWhite { background: #fff; } 
 
@@ -51,7 +53,7 @@
 
 .topCompany .cnt_wrap { margin-bottom: 30px; } 
 .topCompany .cnt_wrap .cnt { font-size: 36px; } 
-.topCompany .item { display: flex; background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 24px; justify-content: space-between; align-items: center; } 
+.topCompany .item { display: flex; background: #fff; border: 1px solid #e7e7e7; border-radius: 10px; padding: 24px; justify-content: space-between; align-items: center; } 
 .topCompany .item > div:nth-child(1) { flex-shrink: 0; width: 200px; text-align: center; font-size: 24px; font-weight: 700; color: #333; } 
 .topCompany .item > div:nth-child(2) { flex-grow: 1; margin-left: 30px; padding-left: 30px; border-left: 1px solid #e2e2e2; } 
 .topCompany .item .rctit { font-size: 20px; font-weight: 500; } 
@@ -99,7 +101,7 @@
 .topCompany .cont02 .tabList li.active.tab_1 span { background: url(../images/topCompany/list_icon02_on.png) no-repeat center #003281; } 
 .topCompany .cont02 .tabList li.active.tab_2 span { background: url(../images/topCompany/list_icon03_on.png) no-repeat center #003281; } 
 
-.topCompany .cont04 .innerSection { padding: 70px 10px 50px;}
+.topCompany .cont04 .innerSection { padding: 70px 10px 50px; } 
 .topCompany .cont04 .rclist { margin-bottom: 30px; } 
 .topCompany .companytWrap { position: relative; padding: 0 90px; } 
 .topCompany .companytWrap .swiper-button-prev::after,
@@ -107,8 +109,28 @@
 .topCompany .companytWrap .swiper-button-prev { width: 64px; height: 140px; background: url(../images/topCompany/prev_btn.png) no-repeat; background-size: contain; left: 0; top: 44%; } 
 .topCompany .companytWrap .swiper-button-next { width: 64px; height: 140px; background: url(../images/topCompany/next_btn.png) no-repeat; background-size: contain; left: initial !important; right: 0; top: 44%; } 
 
+.topCompany .infoWrap { padding: 36px 24px 40px; border: 1px solid #e7e7e7; border-radius: 10px; } 
 
+input[type="checkbox"]+label { display:inline-block; position:relative; padding-left:24px; font-size:14px; color:#333; } 
+input[type="checkbox"]+label::after { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
+input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; } 
+.topCompany .infoWrap .radio { margin:10px 8px; font-size:14px; color:#999; } 
+.topCompany .infoWrap .radio + .radio { margin-top:14px; } 
+.topCompany .infoWrap .radio span {padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
+.topCompany .infoWrap .radio input[type="checkbox"]+span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
+.topCompany .infoWrap .radio input[type="checkbox"]:checked + span::before { content:"✔"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
+.topCompany .infoWrap .cateWrap { display:flex; border:1px solid #e7e7e7; border-radius: 6px; flex-wrap:wrap; overflow:hidden; } 
+.topCompany .infoWrap .cateWrap > div {flex-grow: 1; } 
+.topCompany .infoWrap .cateWrap .tit {background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0; text-align:center; font-weight:700; } 
+.topCompany .infoWrap .cateWrap > div + div { border-left:1px solid #e7e7e7; } 
+.topCompany .infoWrap .cateWrap > div .scrollbar-outer { height:160px; overflow-y:scroll; } 
+.topCompany .infoWrap .infoBtn {margin-top: 20px; text-align: right;}
 
+.scrollbar-outer > .scroll-element .scroll-element_track { background:#fff; } 
+.scrollbar-outer > .scroll-element .scroll-bar { background:#e7e7e7; } 
+.scrollbar-outer > .scroll-element.scroll-y { width:8px; } 
+.scrollbar-outer > .scroll-element .scroll-element_outer, .scrollbar-outer > .scroll-element .scroll-element_track, .scrollbar-outer > .scroll-element .scroll-bar { border-radius:0; } 
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width:6px; } 
 
 .topCompany .cont05 { position: relative; padding: 50px 0 290px; background: #fff; } 
 .topCompany .evGuide .titWrap { margin-bottom: 50px; text-align: center; } 
@@ -144,8 +166,7 @@
 
 
 
-@media all and (max-width: 640px) { 
- 
+@media all and (max-width: 640px){
  .topCompany .paging { display: none; } 
  .topCompany .mpaging { display: block; color: #000; text-align: center; } 
  .topCompany .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; padding: 4px 16px; border-radius: 4px; } 
