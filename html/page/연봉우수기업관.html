@@ -31,7 +31,7 @@
 <body>
 <div id="page-content">
 	<section class="topCompany">
-		<article class="industryMain">
+		<article class="companyMain">
 			<div class="innerSection">
 				<div class="mainVisual">
 					<h2 class="gBold">잡아바가 추천하는 <span class="gBold fcBlue">연봉우수</span>기업관</h2>
@@ -472,73 +472,17 @@
 		</article>
 		<article class="cont03">
 			<div class="innerSection">
-				<style>
-					.topCompany .searchWrap {
-						display: flex;
-						margin-bottom: 12px;
-					}
-					.topCompany .searchWrap .searchbar {
-						padding: 8px 8px;
-						border: 1px solid #000;
-						font-size: 16px;
-						flex-grow: 1;
-						overflow: hidden;
-					}
-					.topCompany .searchWrap > div {
-						width: 304px;
-						margin-left: 20px;
-						flex-grow: 0;
-						text-align: right;
-					}
-					.topCompany .btn {
-						display: inline-block;
-						font-size: 16px;
-						padding: 10px;
-						min-width: 120px;
-						color: #fff;
-						text-align: center;
-						border-radius: 3px;
-						height: auto;
-						border: none;
-					}
-					.topCompany .btn.lg {
-						min-width: 146px;
-					}
-					.topCompany .choiceWrap {
-						display: flex;
-						margin-bottom: 30px;
-						align-items: center;
-					}
-					.topCompany .choiceWrap p {
-						margin-right: 10px;
-						font-size: 18px;
-						flex-shrink: 0;
-					}
-					.topCompany .choiceWrap ul {
-						display: flex;
-						flex-wrap: wrap;
-						gap: 10px;
-					}
-					.topCompany .choiceWrap li {
-						padding: 8px 20px;
-						background: #fff;
-						color: #a6a6a6;
-						font-size: 16px;
-						border: 1px solid #d7d7d7;
-						flex-shrink: 0;
-					}
-					.topCompany .choiceWrap li i {
-						display: inline-block;
-						width: 10px;
-						height: 10px;
-						margin-left: 10px;
-						background: url(./images/topCompany/btn_close.png) no-repeat;
-						cursor: pointer;
-					}
-					
-				</style>
-				<!--  -->
-				<div class="infoWrap">
+				<!-- <div class="title">
+					<strong>상세 우수 채용공고 검색</strong>
+					<p><span class="fcBlue">연봉, 매출액, 기업평가 등급, 취업률</span> 등 원하는 정보를 선택한 후, 채용공고를 검색해 보세요.</p>
+				</div> -->
+				<div class="cnt_wrap">
+					<div class="cnt">
+						<p>상세 우수 채용공고 검색</p>
+						<span class="etc"><b class="fcBlue">연봉, 매출액, 기업평가 등급, 취업률</b> 등 원하는 정보를 선택한 후, 채용공고를 검색해 보세요.</span>
+					</div>				
+				</div>
+				<div class="infoWrap">					
 					<div class="searchWrap">
 						<input type="text" class="searchbar" placeholder="희망하는 검색어를 입력하거나 아래에서 원하는 정보를 선택 후 검색해 주세요." />
 						<div>							
@@ -549,9 +493,6 @@
 					<div class="choiceWrap">
 						<p>현재 검색조건</p>
 						<ul>
-							<li>근무지 - 경기전체<i></i></li>
-							<li>근무지 - 경기전체<i></i></li>
-							<li>근무지 - 경기전체<i></i></li>
 							<li>근무지 - 경기전체<i></i></li>
 						</ul>
 					</div>
@@ -621,55 +562,84 @@
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">회사내규에 따름</span>
+										<span class="text">연봉 TOP 순위</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">2500 만원 이하</span>
+										<span class="text">7,000 만원 이상</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">2500 ~ 3000 만원</span>
+										<span class="text">6,000 ~ 7,000 만원</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">3000 ~ 4000 만원</span>
+										<span class="text">5,000 ~ 6,000 만원</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">4000 ~ 5000 만원</span>
+										<span class="text">4,000 ~ 5,000 만원</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">5000 ~ 6000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">6000 ~ 7000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">7000 만원 이상</span>
+										<span class="text">3,000 ~ 4,000 만원</span>
 									</label>
 								</div>
 							</div>
 						</div>
 						<div>
-							<div class="tit">연봉</div>
+							<div class="tit">매출액</div>
+							<div class="scrollbar-outer">
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">매출 TOP 순위</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">1 조원 이상</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">5,000 억 ~ 1 조원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">1,000 ~ 5,000 억원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">500 ~ 1,000 억원</span>
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="checkbox" />
+										<span class="text">200 ~ 500 억원</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="tit">취업률</div>
 							<div class="scrollbar-outer">
 								<div class="radio">
 									<label>
@@ -680,96 +650,37 @@
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">2500 만원 이하</span>
+										<span class="text">취업률 TOP 순위</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">2500 ~ 3000 만원</span>
+										<span class="text">90% 이상</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">3000 ~ 4000 만원</span>
+										<span class="text">80 ~ 90%</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">4000 ~ 5000 만원</span>
+										<span class="text">70 ~ 80%</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">5000 ~ 6000 만원</span>
+										<span class="text">60 ~ 70%</span>
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="checkbox" />
-										<span class="text">6000 ~ 7000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">7000 만원 이상</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="tit">연봉</div>
-							<div class="scrollbar-outer">
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">회사내규에 따름</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">2500 만원 이하</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">2500 ~ 3000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">3000 ~ 4000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">4000 ~ 5000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">5000 ~ 6000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">6000 ~ 7000 만원</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="checkbox" />
-										<span class="text">7000 만원 이상</span>
+										<span class="text">50 ~ 60%</span>
 									</label>
 								</div>
 							</div>
@@ -786,7 +697,9 @@
 		<article class="cont04">
 			<div class="innerSection">
 				<div class="cnt_wrap">
-					<div class="cnt"><p class="gBold">채용공고 <span class="gBold fcRed">5,422</span>건</p></div>				
+					<div class="cnt">
+						<p>채용공고 <span class="fcRed">5,422</span>건</p>
+					</div>				
 				</div>
 				<div class="rclist">
 					<div class="item">
