@@ -271,6 +271,7 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  .topCompany .cont02 .innerSection { padding: 30px 10px 30px; } 
  .topCompany .companytWrap { padding: 0; } 
 .topCompany .cont02 .tabWrap { margin-bottom: 30px; } 
+.topCompany .cont02 .tabList {max-width: 400px;}
  .topCompany .cont02 .tabList li a { font-size: 16px; } 
  .topCompany .cont02 .tabList li a span { width: 90px; height: 90px; } 
  
