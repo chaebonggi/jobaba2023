@@ -246,7 +246,7 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  
  .topCompany .cont01 { padding: 30px 0 30px; } 
 
- .topCompany h3 { width: 100%; margin: 0 auto 20px; padding: 18px 10px 8px; font-size: 20px; border-radius: 18px; } 
+ .topCompany h3 { width: 100%; margin: 0 auto 20px; padding: 14px 10px 8px; font-size: 20px; border-radius: 18px; } 
  .topCompany .boxItem .banner { padding: 30px 20px; font-size: 18px; } 
  .topCompany .boxItem .banner p { margin: 10px 0; font-size: 16px; } 
  .topCompany .boxItem + .boxItem { margin-top: 20px; } 
