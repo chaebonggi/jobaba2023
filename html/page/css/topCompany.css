@@ -244,14 +244,14 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  .topCompany .mainVisual h2 { margin-bottom: 10px; font-size: 30px; } 
  .topCompany .mainVisual p { font-size: 16px; } 
  
- .topCompany .cont01 { padding: 30px 0 30px; }
+ .topCompany .cont01 { padding: 30px 0 30px; } 
 
- .topCompany h3 { margin: 0 auto 20px; padding: 18px 10px 8px; font-size: 20px; border-radius: 18px; } 
+ .topCompany h3 { width: 100%; margin: 0 auto 20px; padding: 18px 10px 8px; font-size: 20px; border-radius: 18px; } 
  .topCompany .boxItem .banner { padding: 30px 20px; font-size: 18px; } 
  .topCompany .boxItem .banner p { margin: 10px 0; font-size: 16px; } 
  .topCompany .boxItem + .boxItem { margin-top: 20px; } 
  .topCompany .boxItem.style02 { padding: 0 10px 20px; border: 2px solid #d0eef9; border-radius: 20px; } 
- .topCompany .boxItem.style02 h3 { width: 100%; margin: 20px auto; } 
+ .topCompany .boxItem.style02 h3 { margin: 20px auto; } 
  .topCompany .boxItem .itemList li { padding: 20px 10px; border-radius: 20px; } 
  .topCompany .boxItem .itemList li strong { font-size: 22px; } 
  .topCompany .boxItem .itemList li strong::before { width: 100px; height: 100px; margin: 0 auto 10px; } 
@@ -273,60 +273,30 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
 .topCompany .cont02 .tabWrap { margin-bottom: 30px; } 
  .topCompany .cont02 .tabList li a { font-size: 16px; } 
  .topCompany .cont02 .tabList li a span { width: 90px; height: 90px; } 
-  
+ 
  .topCompany .companytWrap .swiper-button-next, .topCompany .companytWrap .swiper-button-prev { display: none; } 
 
  
- .topCompany .cont03 .innerSection {
-    padding: 30px 10px 0;
-}
+ .topCompany .cont03 .innerSection { padding: 30px 10px 0; } 
 
-.topCompany .cnt_wrap {
-    margin-bottom: 20px;
-}
+.topCompany .cnt_wrap { margin-bottom: 20px; } 
 
-.topCompany .cnt_wrap .cnt p {
-    font-size: 20px;
-}
-.topCompany .cnt_wrap .cnt .etc {
-    font-size: 14px;
-}
-.topCompany .infoWrap {
-    padding: 20px 10px;
-}
-.topCompany .searchWrap .searchbar {
-    font-size: 12px;
-}
-.topCompany .searchWrap > div {
-    width: 100%;
-    text-align: center;
-}
-.topCompany .btn {
-    font-size: 14px;
-}
-.topCompany .btn.lg {
-    min-width: 120px;
-}
-.topCompany .choiceWrap p {
-    font-size: 16px;
-}
-.topCompany .choiceWrap li {
-    padding: 5px 10px;
-    font-size: 12px;
-}
-.topCompany .infoWrap .cateWrap {
-    flex-direction: column;
-}
-.topCompany .infoWrap .cateWrap > div + div {
-    border-left: none;
-}
+.topCompany .cnt_wrap .cnt p { font-size: 20px; } 
+.topCompany .cnt_wrap .cnt .etc { font-size: 14px; } 
+.topCompany .infoWrap { padding: 20px 10px; } 
+.topCompany .searchWrap .searchbar { font-size: 12px; } 
+.topCompany .searchWrap > div { width: 100%; text-align: center; } 
+.topCompany .btn { font-size: 14px; } 
+.topCompany .btn.lg { min-width: 120px; } 
+.topCompany .choiceWrap p { font-size: 16px; } 
+.topCompany .choiceWrap li { padding: 5px 10px; font-size: 12px; } 
+.topCompany .infoWrap .cateWrap { flex-direction: column; } 
+.topCompany .infoWrap .cateWrap > div + div { border-left: none; } 
 
  
  
  
-.topCompany .cont04 .innerSection {
-    padding: 30px 10px;
-}
+.topCompany .cont04 .innerSection { padding: 30px 10px; } 
 .topCompany .cnt_wrap .cnt { font-size: 20px; } 
 .topCompany .rclist .rclistTit { margin: 20px 0 10px; font-size: 20px; } 
 .topCompany .rclist .item > div:nth-child(1) { padding: 16px 0 32px; margin-bottom: 24px; font-size: 20px; } 
