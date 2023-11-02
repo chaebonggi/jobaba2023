@@ -15,7 +15,7 @@
 .topCompany .bcSkyblue { background: #d0eef9; } 
 .topCompany .bcWhite { background: #fff; } 
 
-.topCompany .companyMain { padding: 80px 0; background: url(../images/topCompany/main_bg.jpg) no-repeat center; height: 390px; } 
+.topCompany .companyMain { padding: 80px 0; background: url(../images/topCompany/main_bg02.png) no-repeat center; height: 390px; } 
 .topCompany .mainVisual { position: relative; margin-left: 90px; } 
 .topCompany .mainVisual h2 { margin-bottom: 20px; color: #000; font-size: 50px; letter-spacing: -2px; } 
 .topCompany .mainVisual p { color: #000; font-size: 24px; } 
@@ -104,9 +104,9 @@
 .topCompany .paging a.current { font-weight: 700; border-bottom: 2px solid #000; } 
 .topCompany .mpaging { display: none; } 
 
-.topCompany .cont02 .tabWrap { margin-bottom: 30px; } 
-.topCompany .cont02 .tabList { display: flex; max-width: 900px; margin: 0 auto; justify-content: space-between; align-items: center; } 
-.topCompany .cont02 .tabList li { width: calc(100% / 3); } 
+.topCompany .cont02 .tabWrap { margin-bottom: 30px; padding: 0 150px; overflow: hidden; } 
+.topCompany .cont02 .tabList { display: flex; margin: 0 auto; justify-content: space-between; align-items: center; } 
+/* .topCompany .cont02 .tabList li { width: calc(100% / 3); } */
 .topCompany .cont02 .tabList li a { display: block; color: #003281; font-size: 28px; text-align: center; } 
 .topCompany .cont02 .tabList li a span { display: block; width: 200px; height: 200px; margin: 0 auto 20px; border-radius: 50%; border: 1px solid #ddd; box-sizing: border-box; } 
 .topCompany .cont02 .tabList li.tab_0 span { background: url(../images/topCompany/list_icon01.png) no-repeat center #fff } 
@@ -198,9 +198,9 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
 .topCompany .evFooter .txtWrap p::after { content: ''; display: inline-block; width: 139px; height: 43px; margin-left: 10px; background: url(../images/jobIndustry/event_cont06_img02.png) no-repeat; background-size: cover; vertical-align: bottom; } 
 .topCompany .evFooter .txtWrap strong.mint { color: #3da8a2; } 
 
-
 @media all and (max-width: 1280px){
  .topCompany h3 { width: 90%; margin: 0px auto 60px; } 
+ .topCompany .cont02 .tabWrap { padding: 0 100px; } 
  }
 @media all and (max-width: 1024px){
  .topCompany .mainVisual { margin-left: 40px; } 
@@ -216,6 +216,8 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  .topCompany .companytWrap .swiper-button-next,
  .topCompany .companytWrap .swiper-button-prev { width: 40px; height: 88px; top: 48%; } 
 .topCompany .evGuide li { width: calc(100% / 3 - 20px); } 
+
+.topCompany .cont02 .tabWrap { padding: 0 20px; } 
  }
 @media all and (max-width: 860px){
  .topCompany .companyMain { padding: 40px 0; background: #D0EEF9; height: auto; } 
@@ -293,7 +295,7 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  .topCompany .cont02 .innerSection { padding: 30px 10px 30px; } 
  .topCompany .companytWrap { padding: 0; } 
 .topCompany .cont02 .tabWrap { margin-bottom: 30px; } 
-.topCompany .cont02 .tabList { max-width: 400px; } 
+.topCompany .cont02 .tabList { max-width: 100%; } 
  .topCompany .cont02 .tabList li a { font-size: 14px; } 
  .topCompany .cont02 .tabList li a span { width: 90px; height: 90px; } 
  
@@ -315,9 +317,6 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
 .topCompany .choiceWrap li { padding: 5px 10px; font-size: 12px; } 
 .topCompany .infoWrap .cateWrap { flex-direction: column; } 
 .topCompany .infoWrap .cateWrap > div + div { border-left: none; } 
-
- 
- 
  
 .topCompany .cont04 .innerSection { padding: 30px 10px; } 
 .topCompany .cnt_wrap .cnt { font-size: 20px; } 
@@ -345,4 +344,9 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
  .topCompany .mpaging { display: block; color: #000; text-align: center; } 
  .topCompany .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; padding: 4px 16px; border-radius: 4px; } 
  .topCompany .mpaging span { font-weight: 500; } 
+
+ .topCompany .mobileBtn { display: block; margin-bottom: 20px; text-align: center; } 
+ .topCompany .mbtn { display: flex; background: #2a73c5; justify-content: center; align-items: center; transition: all 0.35s; } 
+ .topCompany .mbtn::after { content: '\25BC'; display: inline-block; margin-left: 10px; font-size: 10px; } 
+ .topCompany .mbtn.on::after { transform: rotate(180deg); } 
  }
