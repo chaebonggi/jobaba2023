@@ -1,3 +1,169 @@
 .themaWrap * { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 500; line-height: 1.2; } 
 .themaWrap .innerSection { max-width: 900px; margin: 0 auto; } 
-.themaWrap .gBold {font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700;}
+.themaWrap .gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; } 
+
+.themaWrap .tct { text-align: center; } 
+.themaWrap .fs50 { font-size: 50px; } 
+.themaWrap .fs30 { font-size: 30px; } 
+.themaWrap .fs24 { font-size: 24px; } 
+.themaWrap .fs20 { font-size: 20px; } 
+.themaWrap .fs18 { font-size: 18px; } 
+
+.themaWrap .lh15 { line-height: 1.5; } 
+
+.themaWrap .mainVisual { background: url(../resource/images/thema/231103/thema_main_bg.jpg) top center no-repeat; } 
+.themaWrap .mainVisual .innerSection { position: relative; padding: 66px 0 340px; } 
+.themaWrap .mainVisual .innerSection::before { content: ''; width: 802px; height: 316px; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); background: url(../resource/images/thema/231103/thema_main_img.png) no-repeat; background-size: contain; } 
+.themaWrap .mainVisual h2 { text-align: center; } 
+
+.themaWrap .leftMenu.fixed { position: fixed; top: 150px; } 
+.themaWrap .leftMenu { position: absolute; left: 170px; top: 50px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+.themaWrap .leftMenu > a { display: block; margin-top: 20px; color: #5f5f5f; } 
+.themaWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+.themaWrap .menuList li + li { margin-top: 6px; } 
+.themaWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 10px 10px 6px; background: #d0d0d0; color: #000; font-size: 24px; } 
+.themaWrap .menuList li a > p { color: #000; letter-spacing: -2px; } 
+.themaWrap .menuList li a .txtBox { display: none; } 
+.themaWrap .menuList li a:hover { background: linear-gradient( 135deg, #ecf899, #95f5b8 80%); } 
+.themaWrap .menuList li a:hover > p { font-weight: 700; } 
+.themaWrap .menuList li.active a { height: 120px; padding: 20px 0; background: linear-gradient( 135deg, #ecf899, #95f5b8 80%); } 
+.themaWrap .menuList li.active a > p { margin-bottom: 16px; color: #003281; font-weight: 700; } 
+.themaWrap .menuList li.active .txtBox { display: block; color: #003281; } 
+
+.themaWrap h3 { text-align: center; } 
+.themaWrap h3 span { display: block; margin-top: 150px; position: relative; } 
+.themaWrap h3 span::before { content: ''; width: 199px; height: 133px; position: absolute; top: -150px; left: 50%; transform: translateX(-30%); } 
+.themaWrap h3 span.icon01::before { background: url(../resource/images/thema/231103/thema_h_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap h3 span.icon02::before { background: url(../resource/images/thema/231103/thema_h_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap h3 span.icon03::before { background: url(../resource/images/thema/231103/thema_h_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .boxItem .innerSection { padding: 0 0 86px; } 
+.themaWrap .boxItem.bg01 .innerSection { padding: 100px 0 100px; } 
+
+.themaWrap .boxItem.bg01 { background: url(../resource/images/thema/231103/thema_cont01_bg01.jpg) top center no-repeat; background-size: cover; } 
+.themaWrap .boxItem.bg02 { background: url(../resource/images/thema/231103/thema_cont01_bg02.jpg) top center no-repeat; background-size: cover; } 
+.themaWrap .boxItem.bg03 { background: url(../resource/images/thema/231103/thema_cont01_bg03.jpg) top center no-repeat; background-size: cover; } 
+.themaWrap .boxItem.bg04 { background: url(../resource/images/thema/231103/thema_cont01_bg04.jpg) top center no-repeat; background-size: cover; } 
+.themaWrap .cont01 { position: relative; } 
+.themaWrap .cont01 .titWrap { padding-top: 150px; text-align: center; } 
+.themaWrap .cont01 .titWrap i { display: block; width: 140px; height: 140px; margin: 0 auto -10px; position: relative; outline: 50px solid #a4b8de; border-radius: 50%; z-index: 1; } 
+.themaWrap .cont01 .titWrap i::before { content: ''; width: calc(100% + 110px); height: calc(100% + 110px); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; border: 5px dotted #a4b8de; } 
+.themaWrap .cont01 .titWrap i.icon01 { background: url(../resource/images/thema/231103/thema_tit_icon01.png) center center #e3f6d7 no-repeat; } 
+.themaWrap .cont01 .titWrap i.icon02 { background: url(../resource/images/thema/231103/thema_tit_icon02.png) center center #e3f6d7 no-repeat; } 
+.themaWrap .cont01 .titWrap i.icon03 { background: url(../resource/images/thema/231103/thema_tit_icon03.png) center center #e3f6d7 no-repeat; } 
+.themaWrap .cont01 .titWrap i.icon04 { background: url(../resource/images/thema/231103/thema_tit_icon04.png) center center #e3f6d7 no-repeat; } 
+.themaWrap .cont01 .titWrap .tit { display: inline-block; min-width: 460px; padding: 20px 52px 8px; position: relative; background: #003281; color: #fff; font-size: 48px; border-radius: 50px; z-index: 2; } 
+.themaWrap .cont01 .txtWrap { display: flex; margin-top: 100px; align-items: flex-end; } 
+.themaWrap .cont01 .txtWrap i.icon01 { width: 237px; height: 250px; margin: 0 36px 0 74px; background: url(../resource/images/thema/231103/thema_txt_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .cont01 .txtWrap i.icon02 { width: 240px; height: 255px; margin: 0 28px 0 46px; background: url(../resource/images/thema/231103/thema_txt_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .cont01 .txtWrap i.icon03 { width: 309px; height: 255px; margin: 0 20px 0 18px; background: url(../resource/images/thema/231103/thema_txt_icon03.png) no-repeat; background-size: contain; } 
+.themaWrap .cont01 .txtWrap i.icon04 { width: 256px; height: 259px; margin: 0 36px 0 36px; background: url(../resource/images/thema/231103/thema_txt_icon04.png) no-repeat; background-size: contain; } 
+.themaWrap .cont01 .txtWrap .txt { flex-shrink: 0; } 
+.themaWrap .cont01 .txtWrap strong { position: relative; color: #000; font-size: 36px; } 
+.themaWrap .cont01 .txtWrap strong::after { content: ''; width: 62px; height: 6px; position: absolute; left: 0; bottom: -24px; background: #a4b8de; } 
+.themaWrap .cont01 .txtWrap strong span { color: #8c61e4; } 
+.themaWrap .cont01 .txtWrap p { margin-top: 50px; font-size: 26px; } 
+
+.themaWrap .cont01 .etcWrap { margin-top: 100px; padding: 62px 68px 38px; position: relative; background: #e1e7f4; border-radius: 30px; border: 1px dashed #879dc2; } 
+.themaWrap .cont01 .etcWrap::after { content: ''; width: 97px; height: 154px; position: absolute; right: 50px; bottom: 20px; background: url(../resource/images/thema/231103/thema_etc_icon03.png); } 
+.themaWrap .cont01 .etcWrap strong { padding: 14px 36px 14px; position: absolute; top: -36px; left: 50px; background: #8c61e4; color: #fff; font-size: 24px; border: 1px solid #003281; border-radius: 40px; } 
+.themaWrap .cont01 .etcWrap strong span::after { content: ''; display: inline-block; width: 39px; height: 35px; margin-left: 10px; background: url(../resource/images/thema/231103/thema_etc_icon02.png); vertical-align: sub; } 
+.themaWrap .cont01 .etcWrap strong::before { content: ''; width: 40px; height: 20px; position: absolute; right: 30px; bottom: -20px; background: url(../resource/images/thema/231103/thema_etc_icon01.png); } 
+.themaWrap .cont01 .etcWrap p { font-size: 24px; } 
+.themaWrap .cont01 .boxList { padding: 50px; margin-top: 44px; background: #c6d3e6; border-radius: 30px; } 
+.themaWrap .cont01 .boxList .tit { padding: 30px 10px 26px; margin-bottom: 46px; background: #e3f6d7; color: #003281; font-size: 36px; border-radius: 30px; border: 1px solid #003281; text-align: center; } 
+.themaWrap .cont01 .boxList .tit span { position: relative; } 
+.themaWrap .cont01 .boxList .tit span::before { content: ''; position: absolute; } 
+.themaWrap .cont01 .boxList .tit span.icon01::before { width: 54px; height: 126px; top: -74px; left: -70px; background: url(../resource/images/thema/231103/thema_list_icon01.png) no-repeat; } 
+.themaWrap .cont01 .boxList .tit span.icon02::before { width: 52px; height: 123px; top: -74px; left: -70px; background: url(../resource/images/thema/231103/thema_list_icon02.png) no-repeat; } 
+.themaWrap .cont01 .boxList .tit span.icon03::before { width: 72px; height: 87px; top: -18px; left: -90px; background: url(../resource/images/thema/231103/thema_list_icon03.png) no-repeat; } 
+.themaWrap .cont01 .boxList .tit span.icon04::before { width: 92px; height: 130px; top: -74px; left: -100px; background: url(../resource/images/thema/231103/thema_list_icon04.png) no-repeat; } 
+.themaWrap .cont01 .boxList .tit span.icon05::before { width: 107px; height: 105px; top: -54px; left: -130px; background: url(../resource/images/thema/231103/thema_list_icon05.png) no-repeat; } 
+.themaWrap .cont01 .boxList.style02 ul { padding: 30px 46px; background: #fff; border-radius: 20px; } 
+.themaWrap .cont01 .boxList.style02 li strong { font-size: 22px; } 
+.themaWrap .cont01 .boxList li + li { margin-top: 34px; } 
+.themaWrap .cont01 .boxList.style01 li strong { margin-left: 34px; } 
+.themaWrap .cont01 .boxList li strong { display: block; padding-left: 50px; position: relative; font-size: 24px; word-break: keep-all; letter-spacing: -0.5px; } 
+.themaWrap .cont01 .boxList li:nth-child(1) strong::before { content: '1'; } 
+.themaWrap .cont01 .boxList li:nth-child(2) strong::before { content: '2'; } 
+.themaWrap .cont01 .boxList li:nth-child(3) strong::before { content: '3'; } 
+.themaWrap .cont01 .boxList li:nth-child(4) strong::before { content: '4'; } 
+.themaWrap .cont01 .boxList li:nth-child(5) strong::before { content: '5'; } 
+.themaWrap .cont01 .boxList li strong::before { width: 40px; height: 40px; position: absolute; top: -8px; left: 0; background: #444951; color: #fff; font-size: 22px; border-radius: 50%; line-height: 36px; text-align: center; outline: 1px solid #686f7a; border: 3px solid #c6d3e6; box-sizing: border-box; } 
+.themaWrap .cont01 .boxList li .listBox { padding: 30px 10px 24px 30px; margin-top: 20px; background: #fff; border-radius: 20px; } 
+.themaWrap .cont01 .boxList li .listBox p { display: flex; font-size: 20px; align-items: flex-start; letter-spacing: -0.5px; word-break: keep-all; } 
+.themaWrap .cont01 .boxList li .listBox p::before { content: ''; width: 51px; height: 68px; margin: -14px 20px 0 0; background: url(../resource/images/thema/231103/thema_list_icon.png) no-repeat; flex-shrink: 0; } 
+.themaWrap .linkBtn { margin-top: 30px; text-align: center; } 
+.themaWrap .linkBtn a { display: inline-block; min-width: 320px; padding: 16px 30px 12px; background: linear-gradient( 180deg, #5eb7ae, #31867d); color: #fff; font-size: 24px; border: 2px solid #fff; border-radius: 30px; } 
+
+.themaWrap .cont01 .boxList .txtBox { margin-left: 44px; } 
+.themaWrap .cont01 .boxList .txtBox > span { display: inline-block; padding: 8px 10px 4px; margin: 20px 0; background: #d9d9d9; font-size: 20px; border-radius: 10px; } 
+.themaWrap .cont01 .boxList .txtBox > div { display: flex; margin-top: 18px; align-items: center; } 
+.themaWrap .cont01 .boxList .txtBox > div span { display: flex; width: 80px; height: 80px; margin-right: 20px; background: #ead8ec; font-size: 20px; border-radius: 10px; align-items: center; justify-content: center; } 
+.themaWrap .cont01 .boxList .txtBox > div:nth-child(3) span { background: #c6ded6; } 
+.themaWrap .cont01 .boxList .txtBox > div:nth-child(4) span { background: #e0d7c3; } 
+.themaWrap .cont01 .boxList .txtBox dt { margin-bottom: 4px; } 
+
+.themaWrap .cont02 { background: url(../resource/images/thema/231103/thema_cont02_bg.jpg) top center no-repeat; } 
+.themaWrap .cont02 .innerSection { padding: 110px 0 110px; } 
+.themaWrap .cont02 .tabMenu { display: flex; margin: 70px 50px 30px; justify-content: space-between; } 
+.themaWrap .cont02 .tabMenu li { display: flex; width: 145px; height: 76px; padding: 18px 16px; background: #fff; border-radius: 20px; align-items: center; justify-content: center; cursor: pointer; box-sizing: border-box; } 
+.themaWrap .cont02 .tabMenu li.active { border: 2px solid #000; box-shadow: 0px 6px 6px 0px rgba(52, 28, 28, 0.20); } 
+.themaWrap .cont02 .tabBox { display: none; min-height: 390px; padding: 48px 52px; position: relative; background: #fff; border-radius: 20px; align-items: center; word-break: keep-all; } 
+.themaWrap .cont02 .tabBox.active { display: flex; } 
+.themaWrap .cont02 .tabBox.active::before { content: ''; width: 0; height: 0; position: absolute; top: -12px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 12px solid #000; } 
+.themaWrap .cont02 .tabBox:nth-child(1).active::before { left: 110px; } 
+.themaWrap .cont02 .tabBox:nth-child(2).active::before { left: 278px; } 
+.themaWrap .cont02 .tabBox:nth-child(3).active::before { left: 442px; } 
+.themaWrap .cont02 .tabBox:nth-child(4).active::before { left: 608px; } 
+.themaWrap .cont02 .tabBox:nth-child(5).active::before { left: 770px; } 
+.themaWrap .cont02 .tabBox .imgWrap { min-width: 160px; margin-right: 65px; flex-shrink: 0; text-align: center; } 
+.themaWrap .cont02 .tabBox .imgWrap p { margin-bottom: 20px; } 
+.themaWrap .cont02 .tabBox.active { border: 2px solid #000; } 
+.themaWrap .cont02 .tabBox .txtWrap strong { display: inline-block; margin-bottom: 25px; position: relative; } 
+.themaWrap .cont02 .tabBox:nth-child(1) .txtWrap strong { color: #36b4e5; } 
+.themaWrap .cont02 .tabBox:nth-child(2) .txtWrap strong { color: #ea5a1e; } 
+.themaWrap .cont02 .tabBox:nth-child(3) .txtWrap strong { color: #e30613; } 
+.themaWrap .cont02 .tabBox:nth-child(4) .txtWrap strong { color: #072c83; } 
+.themaWrap .cont02 .tabBox:nth-child(5) .txtWrap strong { color: #8b8c48; } 
+.themaWrap .cont02 .tabBox:nth-child(1) .txtWrap strong::after { background: #36b4e5; } 
+.themaWrap .cont02 .tabBox:nth-child(2) .txtWrap strong::after { background: #ea5a1e; } 
+.themaWrap .cont02 .tabBox:nth-child(3) .txtWrap strong::after { background: #e30613; } 
+.themaWrap .cont02 .tabBox:nth-child(4) .txtWrap strong::after { background: #072c83; } 
+.themaWrap .cont02 .tabBox:nth-child(5) .txtWrap strong::after { background: #8b8c48; } 
+.themaWrap .cont02 .tabBox .txtWrap strong::after { content: ''; width: 100%; height: 2px; position: absolute; left: 0; bottom: 0; } 
+.themaWrap .cont02 .tabBox .txtWrap span { display: inline-block; padding: 20px 25px; margin-top: 25px; background: #eaeef3; word-break: keep-all; } 
+
+.themaWrap .cont03 { background: url(../resource/images/thema/231103/thema_cont03_bg.jpg) top center no-repeat; } 
+.themaWrap .cont03 .innerSection { padding: 106px 0 165px; } 
+.themaWrap .cont03 .boxWrap { padding: 0 48px 50px; margin-top: 150px; background: #e3e8f4; border-radius: 30px; border: 1px solid #97a9ff; } 
+.themaWrap .cont03 .titWrap { display: flex; justify-content: center; margin: -60px 0 40px; } 
+.themaWrap .cont03 .titWrap::before { content: ''; width: 126px; height: 126px; margin-right: 10px; border-radius: 50%; flex-shrink: 0; } 
+.themaWrap .cont03 .titWrap.icon01::before { background: url(../resource/images/thema/231103/thema_cont03_icon01.png) bottom -4px center #b181ea no-repeat; } 
+.themaWrap .cont03 .titWrap.icon02::before { background: url(../resource/images/thema/231103/thema_cont03_icon02.png) bottom -4px center #b181ea no-repeat; } 
+.themaWrap .cont03 .titWrap.icon03::before { background: url(../resource/images/thema/231103/thema_cont03_icon03.png) bottom -4px center #b181ea no-repeat; } 
+.themaWrap .cont03 .titWrap strong { display: flex; height: 126px; padding: 10px 56px 4px; background: linear-gradient( 135deg, #b181ea, #96aaff); color: #fff; font-size: 40px; align-items: center; justify-content: center; border-radius: 70px; } 
+.themaWrap .cont03 .aiList { display: flex; margin-top: 40px; flex-wrap: wrap; justify-content: space-between; gap: 20px 10px; } 
+.themaWrap .cont03 .aiList li { width: calc(100% / 3 - 10px); padding: 25px 10px; background: #fff; border-radius: 30px; text-align: center; } 
+.themaWrap .cont03 .aiList li strong { display: block; padding: 16px 0 12px; margin-bottom: 18px; color: #fff; border-radius: 30px; } 
+.themaWrap .cont03 .aiList li:nth-child(1) strong { background: #98a3ba; } 
+.themaWrap .cont03 .aiList li:nth-child(2) strong { background: #7cb092; } 
+.themaWrap .cont03 .aiList li:nth-child(3) strong { background: #a18f8f; } 
+.themaWrap .cont03 .aiList li:nth-child(4) strong { background: #cc98a1; } 
+.themaWrap .cont03 .aiList li:nth-child(5) strong { background: #ab89bd; } 
+.themaWrap .cont03 .aiList li:nth-child(6) strong { background: #a99671; } 
+.themaWrap .cont03 .aiList li p { display: flex; min-height: 68px; align-items: center; justify-content: center; word-break: keep-all; } 
+.themaWrap .cont03 .infoList { text-align: center; display: block; margin-left: 150px; } 
+.themaWrap .cont03 .infoList li { display: flex; } 
+.themaWrap .cont03 .infoList li + li { margin-top: 10px; } 
+.themaWrap .cont03 .infoList li strong { flex-shrink: 0; } 
+.themaWrap .cont03 .infoList li p { margin-left: 10px; text-align: left; word-break: keep-all; } 
+.themaWrap .cont03 .imgWrap { max-width: 380px; width: 100%; padding: 25px; margin: 40px auto; background: #fff; border-radius: 10px; } 
+.themaWrap .cont03 .bzList { display: flex; flex-wrap: wrap; gap: 15px 15px; } 
+.themaWrap .cont03 .bzList li { width: calc(100% / 5 - 15px); position: relative; text-align: center; } 
+.themaWrap .cont03 .bzList li:hover .toolTip { display: block; } 
+.themaWrap .cont03 .bzList li:hover a { background: #543c9b; color: #fff; } 
+.themaWrap .cont03 .bzList li a { display: block; padding: 20px 10px 12px; background: #fff; border-radius: 40px; } 
+.themaWrap .cont03 .bzList .toolTip { display: none; width: 340px; position: absolute; top: 50%; left: 140px; transform: translateY(-50%); padding: 10px; background: #ae87ed; border-radius: 20px; box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5); z-index: 10; } 
+.themaWrap .cont03 .bzList .toolTip.tLeft { left: initial; right: 140px; } 
+.themaWrap .cont03 .bzList .toolTip.tLeft::before { content: ''; width: 46px; height: 45px; position: absolute; left: initial; right: -26px; top: 76px; transform: scaleX(-1);}
+.themaWrap .cont03 .bzList .toolTip::before { content: ''; width: 46px; height: 45px; position: absolute; left: -26px; top: 76px; background: url(../resource/images/thema/231103/thema_tooltip_icon.png) no-repeat; z-index: -1; } 

@@ -28,197 +28,12 @@
 </head>
 <body>
 	<div class="themaWrap">
-		<style>
-			.themaWrap .mainVisual {
-				background: url(./resource/images/thema/231103/thema_main_bg.jpg) top center no-repeat;
-			}
-			.themaWrap .mainVisual .innerSection {
-				position: relative;
-				padding: 66px 0 340px;
-			}
-			.themaWrap .mainVisual .innerSection::before {
-				content: '';
-				width: 802px;
-				height: 316px;
-				position: absolute;
-				left: 50%;
-				bottom: 0;
-				transform: translateX(-50%);
-				background: url(./resource/images/thema/231103/thema_main_img.png) no-repeat;
-				background-size: contain;
-
-			}
-			.themaWrap .mainVisual h2 {
-				text-align: center;
-			}
-
-			.themaWrap .leftMenu.fixed { position: fixed; top: 150px; } 
-			.themaWrap .leftMenu { position: absolute; left: 170px; top: 50px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
-			.themaWrap .leftMenu > a { display: block; margin-top: 20px; color: #5f5f5f; } 
-			.themaWrap .menuList li { border-radius: 10px; overflow: hidden; } 
-			.themaWrap .menuList li + li { margin-top: 6px; } 
-			.themaWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 10px 10px 6px; background: #d0d0d0; color: #000; font-size: 24px; } 
-			.themaWrap .menuList li a > p { color: #000; letter-spacing: -2px; } 
-			.themaWrap .menuList li a .txtBox { display: none; } 
-			.themaWrap .menuList li a:hover { background: linear-gradient( 135deg, #ecf899, #95f5b8 80%);}
-			.themaWrap .menuList li a:hover > p { font-weight: 700; } 
-			.themaWrap .menuList li.active a { height: 120px; padding: 20px 0; background: linear-gradient( 135deg, #ecf899, #95f5b8 80%);} 
-			.themaWrap .menuList li.active a > p { margin-bottom: 16px; color: #003281; font-weight: 700;} 
-			.themaWrap .menuList li.active .txtBox { display: block; color: #003281;} 
-		</style>
 		<article class="mainVisual" id="moveTo04">
 			<div class="innerSection">
 				<h2><img src="./resource/images/thema/231103/main_title.png" alt="잡아바 취업준비 2탄 면접편"></h2>		
 			</div>			
 		</article>
 		<article id="moveTo01" class="cont01 linkWrap">
-			<style>
-				.themaWrap h3 {
-					text-align: center;
-				}
-				.themaWrap h3 span {
-					display: block;
-					margin-top: 150px;
-					position: relative;
-				}
-				.themaWrap h3 span::before {
-					content: '';
-					width: 199px;
-					height: 133px;
-					position: absolute;
-					top: -150px;
-					left: 50%;
-					transform: translateX(-30%);					
-				}
-				.themaWrap h3 span.icon01::before {
-					background: url(./resource/images/thema/231103/thema_h_icon01.png) no-repeat;
-					background-size: contain;
-				}
-
-				.themaWrap .boxItem .innerSection {
-					padding: 70px 0 100px;
-				}
-				.themaWrap .boxItem.bg01 {
-					background: url(./resource/images/thema/231103/thema_cont01_bg01.jpg) top center no-repeat;
-				}
-				.themaWrap .boxItem.bg02 {
-					background: url(./resource/images/thema/231103/thema_cont01_bg02.jpg) top center no-repeat;
-				}
-				.themaWrap .boxItem.bg03 {
-					background: url(./resource/images/thema/231103/thema_cont01_bg03.jpg) top center no-repeat;
-				}
-				.themaWrap .boxItem.bg04 {
-					background: url(./resource/images/thema/231103/thema_cont01_bg04.jpg) top center no-repeat;
-				}
-				.themaWrap .cont01 {
-					position: relative;
-				}
-				.themaWrap .cont01 .titWrap {
-					margin-top: 150px;
-					text-align: center;
-				}
-				.themaWrap .cont01 .titWrap i {
-					display: block;
-					width: 140px;
-					height: 140px;
-					margin: 0 auto -10px;
-					position: relative;					
-					outline: 50px solid #a4b8de;
-					border-radius: 50%;
-					z-index: 1;
-				}
-				.themaWrap .cont01 .titWrap i::before {
-					content: '';					
-					width: calc(100% + 110px);
-					height: calc(100% + 110px);
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					border-radius: 50%;
-					border: 5px dotted #a4b8de;
-				}
-				.themaWrap .cont01 .titWrap i.icon01 {
-					background: url(./resource/images/thema/231103/thema_tit_icon01.png) center center #e3f6d7 no-repeat;
-				}
-				.themaWrap .cont01 .titWrap i.icon02 {
-					background: url(./resource/images/thema/231103/thema_tit_icon02.png) center center #e3f6d7 no-repeat;
-				}
-				.themaWrap .cont01 .titWrap i.icon03 {
-					background: url(./resource/images/thema/231103/thema_tit_icon03.png) center center #e3f6d7 no-repeat;
-				}
-				.themaWrap .cont01 .titWrap i.icon04 {
-					background: url(./resource/images/thema/231103/thema_tit_icon04.png) center center #e3f6d7 no-repeat;
-				}
-				.themaWrap .cont01 .titWrap .tit {
-					display: inline-block;
-					min-width: 460px;
-					padding: 20px 52px 8px;
-					position: relative;
-					background: #003281;
-					color: #fff;
-					font-size: 48px;
-					border-radius: 50px;
-					z-index: 2;
-				}
-				.themaWrap .cont01 .txtWrap {
-					display: flex;
-					margin-top: 100px;
-					align-items: flex-end;
-				}
-				.themaWrap .cont01 .txtWrap i.icon01 {
-					width: 237px;
-					height: 250px;
-					margin: 0 36px 0 74px;
-					background: url(./resource/images/thema/231103/thema_txt_icon01.png) no-repeat;
-					background-size: contain;
-				}
-				.themaWrap .cont01 .txtWrap i.icon02 {
-					width: 240px;
-					height: 255px;
-					margin: 0 28px 0 46px;
-					background: url(./resource/images/thema/231103/thema_txt_icon02.png) no-repeat;
-					background-size: contain;
-				}
-				.themaWrap .cont01 .txtWrap i.icon03 {
-					width: 309px;
-					height: 255px;
-					margin: 0 20px 0 18px;
-					background: url(./resource/images/thema/231103/thema_txt_icon03.png) no-repeat;
-					background-size: contain;
-				}
-				.themaWrap .cont01 .txtWrap i.icon04 {
-					width: 256px;
-					height: 259px;
-					margin: 0 36px 0 36px;
-					background: url(./resource/images/thema/231103/thema_txt_icon04.png) no-repeat;
-					background-size: contain;
-				}
-				.themaWrap .cont01 .txtWrap .txt {
-					flex-shrink: 0;
-				}
-				.themaWrap .cont01 .txtWrap strong {
-					position: relative;
-					color: #000;
-					font-size: 36px;
-				}
-				.themaWrap .cont01 .txtWrap strong::after {
-					content: '';
-					width: 62px;
-					height: 6px;
-					position: absolute;
-					left: 0;
-					bottom: -24px;
-					background: #a4b8de;
-				}
-				.themaWrap .cont01 .txtWrap strong span {
-					color: #8c61e4;
-				}
-				.themaWrap .cont01 .txtWrap p {
-					margin-top: 50px;
-					font-size: 26px;
-				}
-			</style>
 			<div class="leftMenu">
 				<ul class="menuList">
 					<li class="active">
@@ -267,61 +82,60 @@
 								주를 이루는 면접 형태입니다.</p>
 						</div>
 					</div>
-					<style>
-						.themaWrap .cont01 .etcWrap {
-							margin-top: 100px;
-							padding: 62px 68px 38px;
-							position: relative;
-							background: #e1e7f4;
-							border-radius: 30px;
-							border: 2px dashed #879dc2;
-						}
-						.themaWrap .cont01 .etcWrap::after {
-							content: '';
-							width: 97px;
-							height: 154px;
-							position: absolute;
-							right: 50px;
-							bottom: 20px;
-							background: url(./resource/images/thema/231103/thema_etc_icon03.png);
-						}
-						.themaWrap .cont01 .etcWrap strong {							
-							padding: 14px 36px 14px;
-							position: absolute;
-							top: -36px;
-							left: 50px;
-							background: #8c61e4;
-							color: #fff;
-							font-size: 24px;
-							border: 1px solid #003281;
-							border-radius: 40px;							
-						}
-						.themaWrap .cont01 .etcWrap strong span::after {
-							content: '';
-							display: inline-block;
-							width: 39px;
-							height: 35px;
-							margin-left: 10px;
-							background: url(./resource/images/thema/231103/thema_etc_icon02.png);
-							vertical-align: sub;
-						}
-						.themaWrap .cont01 .etcWrap strong::before {
-							content: '';
-							width: 40px;
-							height: 20px;
-							position: absolute;
-							right: 30px;
-							bottom: -20px;
-							background: url(./resource/images/thema/231103/thema_etc_icon01.png);
-						}
-						.themaWrap .cont01 .etcWrap p {
-							font-size: 24px;
-						}
-					</style>
 					<div class="etcWrap">
 						<strong><span class="gBold">Pass 전략</span></strong>
-						<p>상황 대처 질문, 역량 분석 게임, 심층 질문 등의 질문 형태를<br>
-							분석하여 반복적인 훈련을 통해 연습하도록 합시다!</p>
+						<p>직무역량을 강조할 수 있는 핵심 경험 3~5개를 정리하고,<br>
+							산업/회사/직무 분석을 통해 면접을 대비하자!</p>
+					</div>
+					<div class="boxList style01">
+						<p class="tit"><span class="gBold icon01">직무면접 top5 예상질문</span></p>
+						<ul>
+							<li>
+								<strong class="gBold">평상 시 우리 회사에 대해 어떻게 생각하고 있는가?</strong>
+								<div class="listBox">
+									<p>회사 홈페이지나 SNS, 또는 블로그를 참고하여 다양한 정보를 취합한 뒤<br>
+										SWOT 분석을 통해 취업희망 기업정보를 정리해보자!</p>
+								</div>
+							</li>
+							<li>
+								<strong class="gBold">지원한 직무는 어떤 업무라고 생각하는가?</strong>
+								<div class="listBox">
+									<p>직무 분석을 최대한 자세히 하고 면접에 들어갑시다!<br>
+										현직자 멘토링을 받는다면 최고!</p>
+								</div>
+							</li>
+							<li>
+								<strong class="gBold">지원한 직무로 입사하기 위해 그동안 어떻게 준비를 하였는가?</strong>
+								<div class="listBox">
+									<p>회사가 지원자를 왜 뽑아야 하는지 이유를 묻는 것과 같은 질문입니다.<br>
+										본인의 경험과 지원 직무의 역량을 잘 매칭시켜서 나만의 직무 경쟁력을<br>
+										어필합시다!</p>
+								</div>
+							</li>
+							<li>
+								<strong class="gBold">이 직무로 입사를 한다면 단기적 목표 및 장기적 목표는 어떻게 되나?</strong>
+								<div class="listBox">
+									<p>지원 직무관련 career path(경력 경로)를 이해하고 있는지를 묻는 질문입니다.<br>
+										해당 직무에 지원한 이유를 구체적으로 답변합시다!</p>
+								</div>
+							</li>
+							<li>
+								<strong class="gBold">마지막으로 하고 싶은 말 있으신가요?</strong>
+								<div class="listBox">
+									<p>면접 기회를 주셔서 감사하다는 인사와 함께 입사해서 능동적으로 배우고<br>
+										일하겠다는 부분을 어필하며 마무리하면 됩니다.<br>
+										3문장 안팎으로 준비해주시면 됩니다.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="boxList">
+						<p class="tit"><span class="gBold icon02">기업정보 분석</span></p>
+						<p class="fs50 tct">경기도 내 우수 기업정보<br>
+							잡아바에서 확인하자!</p>
+						<div class="linkBtn">
+							<a href="" target="_blank"><span class="gBold">기업채용콘텐츠 바로가기 &#8594;</span></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -340,6 +154,29 @@
 								제시하고, 이에 대한 응답을 제출합니다.<br> 
 								면접 프로세스 자동화와 대량의 지원자를<br> 
 								빠르게 필터링하기 위해 사용하고 있습니다.</p>
+						</div>
+					</div>
+					<div class="etcWrap">
+						<strong><span class="gBold">Pass 전략</span></strong>
+						<p>상황 대처 질문, 역량 분석 게임, 심층 질문 등의 질문 형태를<br>
+							분석하여 반복적인 훈련을 통해 연습하도록 합시다!</p>
+					</div>
+					<div class="boxList style02">
+						<p class="tit"><span class="gBold icon03">AI면접(역량검사) 준비 하기</span></p>
+						<ul>
+							<li>
+								<strong>장비(웹캠, 헤드셋, 마우스 등)를 사전에 반드시 체크하여 불상사가 없도록 하자!</strong>
+							</li>
+							<li>
+								<strong>표정, 말투, 자주 사용하는 단어들을 유의하여 면접에 임하자!</strong>
+							</li>
+							<li>
+								<strong>화면 배경이 지저분할 경우 인식 오류가 발생할 수 있습니다.<br>
+									화면 배경을 깔끔하게 정리하세요!</strong>
+							</li>
+						</ul>
+						<div class="linkBtn">
+							<a href="" target="_blank"><span class="gBold">AI 역량검사 바로가기 &#8594;</span></a>
 						</div>
 					</div>
 				</div>
@@ -362,7 +199,31 @@
 								사례도 있습니다.</p>
 						</div>
 					</div>
+					<div class="etcWrap">
+						<strong><span class="gBold">Pass 전략</span></strong>
+						<p>토론 면접의 핵심은 감점을 피하는 것입니다!<br>
+							적극적인 자세는 필요하지만 과도한 어필보다는 적정선을 지키면서<br>
+							협업 능력의 강점을 나타낼 수 있도록 노력해봅시다!</p>
+					</div>
+					<div class="boxList style02">
+						<p class="tit"><span class="gBold icon04">토론면접 합격요소</span></p>
+						<ul>
+							<li>
+								<strong>토론 주제를 명확하게 파악하고 논지를 벗어나지 않는 대화 방식을 사용하자!</strong>
+							</li>
+							<li>
+								<strong>기조발언 시 두괄식으로 논리적이고 명확하게 의견을 제시하자!</strong>
+							</li>
+							<li>
+								<strong>쿠션언어를 통해 다른 지원자의 의견을 경청하고 수용하는 자세를 보이자!</strong>
+							</li>
+							<li>
+								<strong>토론 진행자나 리더로서의 역할을 수행할 경우에는 과감하게 의견을 내고 종합 정리하자!</strong>
+							</li>
+						</ul>
+					</div>
 				</div>
+			</div>
 			<div class="boxItem bg04">
 				<div class="innerSection">
 					<div class="titWrap">
@@ -381,17 +242,435 @@
 								직무에 대한 관심도·이해도와 준비성을 평가합니다.</p>
 						</div>
 					</div>
+					<div class="etcWrap">
+						<strong><span class="gBold">Pass 전략</span></strong>
+						<p>PT면접은 한정된 발표시간이 주어집니다.<br>
+							두괄식 전개방법을 통해 결론을 먼저 얘기하고 설명을 풀어나가는<br>
+							발표 형태가 효과적입니다.</p>
+					</div>
+					<div class="boxList style02">
+						<p class="tit"><span class="gBold icon05">PT면접 실전 준비</span></p>
+						<ul>
+							<li>
+								<strong>구조화</strong>
+								<div class="txtBox">
+									<span class="fs20">서론-본론-결론으로 구조화하여 발표 내용을 효과적으로 전달</span>
+									<div>
+										<span>서론</span>
+										<dl>
+											<dt class="fs24">주제 언급 & 내용의 결론 짧게 요약</dt>
+											<dd class="fs18">&middot; 주제관련 짧게 언급</dd>
+											<dd class="fs18">&middot; 주어진 문제 분석 & 파악</dd>
+										</dl>
+									</div>
+									<div>
+										<span>본론</span>
+										<dl>
+											<dt class="fs24">나의 주장 & 제안을 뒷받침할 3가지 대안 & 방안</dt>
+											<dd class="fs18">&middot; 임팩트 있는 2~3가지 의견 제안</dd>
+											<dd class="fs18">&middot; 구체적인 데이터 근거 활용</dd>
+										</dl>
+									</div>
+									<div>
+										<span>결론</span>
+										<dl>
+											<dt class="fs24">마지막 결론 제시</dt>
+											<dd class="fs18">&middot; 향후 진행방향과 기대 효과 추가</dd>
+										</dl>
+									</div>		
+								</div>
+							</li>
+							<li>
+								<strong>모르는 질문이 나왔을 때</strong>
+								<div class="txtBox">
+									<span class="fs20">전혀 모를 경우</span>
+									<p class="fs24">“죄송합니다. 그 부분에 대한 준비가 다소 부족하여<br>
+										면접 후 반드시 학습/생각해보겠습니다.”
+									</p>
+									<span class="fs20">생각할 시간이 필요한 경우</span>
+									<p class="fs24">“죄송하지만 잠시 생각할 시간을 주실 수 있으신가요?<br>
+										감사합니다.”
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>			
 			</div>
 		</article>
 		<article id="moveTo02" class="cont02 linkWrap">
 			<div class="innerSection">
-				
+				<h3><span class="icon02"><img src="./resource/images/thema/231103/thema_h_tit02.png" alt="이색 면접 기업 사례"></span></h3>
+				<ul class="tabMenu">
+					<li class="active" data-tab="tab01">
+						<img src="./resource/images/thema/231103/thema_logo01.png" alt="spc">
+					</li>
+					<li data-tab="tab02">
+						<img src="./resource/images/thema/231103/thema_logo02.png" alt="jejuair">
+					</li>
+					<li data-tab="tab03">
+						<img src="./resource/images/thema/231103/thema_logo03.png" alt="샘표">
+					</li>
+					<li data-tab="tab04">
+						<img src="./resource/images/thema/231103/thema_logo04.png" alt="하이트진로">
+					</li>
+					<li data-tab="tab05">
+						<img src="./resource/images/thema/231103/thema_logo05.png" alt="welstory">
+					</li>
+				</ul>
+				<div class="tabWrap">
+					<div class="tabBox active" data-tab="tab01">
+						<div class="imgWrap">
+							<p class="fs30 gBold">관능 평가</p>
+							<img src="./resource/images/thema/231103/thema_tab_icon01.png" alt="">
+						</div>
+						<div class="txtWrap">
+							<strong class="fs30 gBold">SPC 그룹</strong>
+							<p class="fs24">2004년부터 도입된 관능 테스트는 식품에 대한 관심과 
+								이해도를 평가하기 위해 실시합니다.<br>
+								미각, 후각 테스트이며, 식품에 대한 감각과 기본적인 
+								이해를 갖춘 사람을 뽑기 위해 실시하고 있습니다.</p>
+							<span class="fs20">설탕물 농도 5단계 구분하기 / 단맛, 짠맛, 쓴맛, 무맛 구분하기 / 
+								딸기향, 바나나향 등의 과일향 후각 테스트</span>
+						</div>
+					</div>
+					<div class="tabBox" data-tab="tab02">
+						<div class="imgWrap">
+							<p class="fs30 gBold">재주캐스팅</p>
+							<img src="./resource/images/thema/231103/thema_tab_icon02.png" alt="">
+						</div>
+						<div class="txtWrap">
+							<strong class="fs30 gBold">제주항공</strong>
+							<p class="fs24">서류대신 자신을 소개하는 영상을 제출하는 방식으로 
+								객실승무원 정원의 20% 내외를 '재주캐스팅'전형을 통해 
+								선발하고 있습니다.<br>
+								영상을 통해 개성을 드러내는것도 중요하나, <br>
+								주제를 충실히 따르고 이에 부합하는지가 가장 중요한 
+								평가 항목입니다. <br>
+								인스타그램으로 촬영한 영상만 제출가능하며 보정, 필터, 
+								편집은 불가합니다</p>
+						</div>
+					</div>
+					<div class="tabBox" data-tab="tab03">
+						<div class="imgWrap">
+							<p class="fs30 gBold">요리&middot;젓가락<br>
+								면접</p>
+							<img src="./resource/images/thema/231103/thema_tab_icon03.png" alt="">
+						</div>
+						<div class="txtWrap">
+							<strong class="fs30 gBold">샘표</strong>
+							<p class="fs24">샘표는 2000년대부터 4~5명이 한 팀을 이루어 요리를 
+								정하고, 만들고, 발표하는 요리면접을 진행하고 있습니다. 
+								요리의 결과물보다 과정과 팀워크가 중요한<br>
+								평가지표입니다.<br>
+								또한, 2016년부터 도입한 젓가락 면접도 있습니다.<br>
+								젓가락을 올바르게 사용하는지 여부와 지원자의 태도를 
+								중점적으로 평가한다고 밝혔습니다.</p>
+						</div>
+					</div>
+
+					<div class="tabBox" data-tab="tab04">
+						<div class="imgWrap">
+							<p class="fs30 gBold">음주면접</p>
+							<img src="./resource/images/thema/231103/thema_tab_icon04.png" alt="">
+						</div>
+						<div class="txtWrap">
+							<strong class="fs30 gBold">하이트진로</strong>
+							<p class="fs24 lh15">실무진 면접에서 음주 면접을 진행합니다.<br>
+								식사와 반주를 하며 지원자의 성격과 가치관, 인성 등을 
+								종합적으로 파악하고자 하는 이유이며, <br>
+								하이트진로 관계자는 주량보다는 올바른 주도가 <br>
+								중요하다고 밝힌적이 있습니다.</p>
+						</div>
+					</div>
+					<div class="tabBox" data-tab="tab05">
+						<div class="imgWrap">
+							<p class="fs30 gBold">손 씻기 면접</p>
+							<img src="./resource/images/thema/231103/thema_tab_icon05.png" alt="">
+						</div>
+						<div class="txtWrap">
+							<strong class="fs30 gBold">삼성웰스토리</strong>
+							<p class="fs24">위생안전에 대한 기업 철학 반영된 면접이며,<br>
+								남은 세균이 없는지 올바른 손씻기 방법을 사용하는지 
+								확인합니다.<br>
+								면접 전에 손씻기의 중요성과 방법을 안내해주며, <br>
+								순서에 맞게 손을 올바르게 씻는것이 중요합니다.<br>
+								지원자를 평가한다기 보다는 기업의 철학을 면접 형태에 
+								반영하였다고 보는편이 좋을것 같습니다.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</article>
 		<article id="moveTo03" class="cont03 linkWrap">
 			<div class="innerSection">
-				
+				<h3><span class="icon03"><img src="./resource/images/thema/231103/thema_h_tit03.png" alt="잡아바 면접지원"></span></h3>
+				<div class="boxWrap">
+					<div class="titWrap icon01">
+						<strong><span class="gBold">잡아바 AI 역량검사</span></strong>
+					</div>
+					<p class="fs24 tct">역량검사와 면접단계의 동일한 환경을 제공하는<br>
+						인공지능 기술기반 면접 컨설팅!</p>
+					<ul class="aiList">
+						<li>
+							<strong class="gBold fs24">심층면접</strong>
+							<p class="fs18">응시자에 대한 심층 면접 진행</p>
+						</li>
+						<li>
+							<strong class="gBold fs24">기본면접</strong>
+							<p class="fs18">응시자의 기본적인 자질 검증</p>
+						</li>
+						<li>
+							<strong class="gBold fs24">성향분석</strong>
+							<p class="fs18">AI 성향분석 기술을 이용해서
+								응시자의 인성을 검증</p>
+						</li>
+						<li>
+							<strong class="gBold fs24">AI게임</strong>
+							<p class="fs18">AI게임을 통해 응시자의
+								의사결정구조, 보상심리,
+								난이도 적응력 등을 분석</p>
+						</li>
+						<li>
+							<strong class="gBold fs24">보상선호</strong>
+							<p class="fs18">수렴되는 보상 선호도를
+								분석하여 의사 결정 유형과
+								정보 활용 유형 등을 파악</p>
+						</li>
+						<li>
+							<strong class="gBold fs24">상황대처</strong>
+							<p class="fs18">응시자의 상황대처 능력 검증</p>
+						</li>
+					</ul>
+					<div class="linkBtn">
+						<a href="" target="_blank"><span class="gBold">AI 역량검사 바로가기 &#8594;</span></a>
+					</div>
+				</div>
+				<div class="boxWrap">
+					<div class="titWrap icon02">
+						<strong><span class="gBold">면접정장 대여사업</span></strong>
+					</div>
+					<ul class="bzList">
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">가평군</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss01.png" alt="가평군">
+								</div>
+							</a>							
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">고양시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss02.png" alt="고양시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">과천시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss03.png" alt="과천시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">광명시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss04.png" alt="광명시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">광주시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss05.png" alt="광주시">
+								</div>
+							</a>
+						</li>
+						<!--  -->
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">구리시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss06.png" alt="구리시">
+								</div>
+							</a>							
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">군포시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss07.png" alt="군포시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">김포시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss08.png" alt="김포시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">동두천시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss09.png" alt="동두천시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">성남시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss10.png" alt="성남시">
+								</div>
+							</a>
+						</li>
+						<!--  -->
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">수원시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss11.png" alt="수원시">
+								</div>
+							</a>							
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">안산시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss12.png" alt="안산시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">안성시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss13.png" alt="안성시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">안양시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss14.png" alt="안양시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">양주시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss15.png" alt="양주시">
+								</div>
+							</a>
+						</li>
+						<!--  -->
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">양평군</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss16.png" alt="양평군">
+								</div>
+							</a>							
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">여주시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss17.png" alt="여주시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">오산시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss18.png" alt="오산시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">의왕시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss19.png" alt="의왕시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">이천시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss20.png" alt="이천시">
+								</div>
+							</a>
+						</li>
+						<!--  -->
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">평택시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss21.png" alt="평택시">
+								</div>
+							</a>							
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">포천시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss22.png" alt="포천시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">하남시</span>
+								<div class="toolTip">
+									<img src="./resource/images/thema/231103/ss23.png" alt="하남시">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank">
+								<span class="fs24 gBold">화성시</span>
+								<div class="toolTip tLeft">
+									<img src="./resource/images/thema/231103/ss24.png" alt="화성시">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="boxWrap">
+					<div class="titWrap icon03">
+						<strong><span class="gBold">경기도 청년 면접수당</span></strong>
+					</div>
+					<p class="fs30 tct gBold">제 3차 경기도 청년 면접수당 모집</p>
+					<div class="imgWrap">
+						<img src="./resource/images/thema/231103/thema_cont03_img01.jpg" alt="2023년 제2차 모집 경기도 청년면접수당">
+					</div>
+					<ul class="infoList">
+						<li class="fs24">
+							<strong>&middot; 모집기간 :</strong>
+							<p>2023. 11. 15.(수) ~ 12. 15.(금)</p>
+						</li>
+						<li class="fs24">
+							<strong>&middot; 지원내용 :</strong>
+							<p>면접수당 1회 5만원 최대 50만원 지원</p>
+						</li>
+					</ul>
+					<div class="linkBtn">
+						<a href="" target="_blank"><span class="gBold">자세히보기 &#8594;</span></a>
+					</div>
+				</div>
 			</div>
 		</article>
 
@@ -444,7 +723,15 @@
 		$('.themaWrap .mainVisual li a, .leftMenu a').click(function(e){
 			$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
 			e.preventDefault();
-		});	
+		});
+		var $btn = $('.tabMenu li');
+		$btn.click(function() {
+			var tab = $(this).attr('data-tab');
+			$btn.removeClass('active');
+			$(this).addClass('active');
+			$('.tabBox').removeClass('active');
+			$('.tabBox').filter('[data-tab="' + tab + '"]').addClass('active');
+		});
 		
 	});
 	</script>
