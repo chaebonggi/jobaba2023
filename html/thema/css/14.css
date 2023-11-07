@@ -179,7 +179,7 @@
 
  .themaWrap .boxItem.bg01 .innerSection { padding: 50px 10px 50px; } 
 .themaWrap .boxItem .innerSection { padding: 0 10px 40px; } 
-.themaWrap h3 span img { transform: scale(0.8); } 
+.themaWrap h3 span img { transform: scale(0.7); } 
 .themaWrap h3 span::before { width: 150px; height: 100px; top: -110px; } 
 .themaWrap .cont01 .txtWrap i { display: none; } 
 .themaWrap .cont01 .txtWrap { justify-content: center; } 
@@ -260,7 +260,7 @@
 .themaWrap .cont01 .boxList .txtBox dl { margin-left: 0; } 
 
 .themaWrap .cont02 .tabMenu { display: flex; margin: 30px 0; flex-wrap: wrap; justify-content: center; gap: 10px; } 
-.themaWrap .cont02 .tabMenu li { width: calc(100% / 3 - 10px); } 
+.themaWrap .cont02 .tabMenu li { width: calc(100% / 3 - 10px); height: 52px; border-radius: 10px;} 
 .themaWrap .cont02 .tabBox { min-height: auto; padding: 20px 20px; } 
 .themaWrap .cont02 .tabBox .imgWrap p { margin-bottom: 0; } 
 .themaWrap .cont02 .tabBox .imgWrap img { transform: scale(0.6); } 
