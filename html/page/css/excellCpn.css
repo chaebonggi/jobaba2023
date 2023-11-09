@@ -309,7 +309,7 @@ input {
  .ee_cont .ee_list .item { padding: 40px 20px } 
  .ee_cont .ee_list .item .name { font-size: 20px; } 
  .ee_cont .ee_list .item .cert {  width: 35px;  height: 50px;  background-size: contain;  } 
- .ee_cont .ee_list .item .cert span {  bottom: 14px;  font-size: 10px; } 
+ .ee_cont .ee_list .item .cert span {  bottom: 12px;  font-size: 10px; } 
  /* .ee_cont .ee_list .item .cert img { width: 35px; } */
  .ee_cont .ee_list .item .ing a { font-size: 12px; } 
  .ee_cont .ee_list .item .ing a:before { background-size: 15px; width: 15px; height: 10px } 
