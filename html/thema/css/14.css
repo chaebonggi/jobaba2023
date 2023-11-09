@@ -137,11 +137,11 @@
 .themaWrap .cont03 .innerSection { padding: 106px 0 165px; } 
 .themaWrap .cont03 .boxWrap { padding: 0 48px 50px; margin-top: 150px; background: #e3e8f4; border-radius: 30px; border: 1px solid #97a9ff; } 
 .themaWrap .cont03 .titWrap { display: flex; justify-content: center; margin: -60px 0 40px; } 
-.themaWrap .cont03 .titWrap::before { content: ''; width: 126px; height: 126px; margin-right: 10px; border-radius: 50%; flex-shrink: 0; } 
+.themaWrap .cont03 .titWrap::before { content: ''; width: 126px; height: 126px; margin-right: 10px; border-radius: 50%; border: 1px solid #4e61bb; flex-shrink: 0; } 
 .themaWrap .cont03 .titWrap.icon01::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_cont03_icon01.png) bottom -4px center #b181ea no-repeat; } 
 .themaWrap .cont03 .titWrap.icon02::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_cont03_icon02.png) bottom -4px center #b181ea no-repeat; } 
 .themaWrap .cont03 .titWrap.icon03::before { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_cont03_icon03.png) bottom -4px center #b181ea no-repeat; } 
-.themaWrap .cont03 .titWrap strong { display: flex; height: 126px; padding: 10px 56px 4px; background: linear-gradient( 135deg, #b181ea, #96aaff); color: #fff; font-size: 40px; align-items: center; justify-content: center; border-radius: 70px; } 
+.themaWrap .cont03 .titWrap strong { display: flex; height: 126px; padding: 10px 56px 4px; background: linear-gradient( 135deg, #b181ea, #96aaff); color: #fff; font-size: 40px; border: 1px solid #4e61bb; align-items: center; justify-content: center; border-radius: 70px; } 
 .themaWrap .cont03 .aiList { display: flex; margin-top: 40px; flex-wrap: wrap; justify-content: space-between; gap: 20px 10px; } 
 .themaWrap .cont03 .aiList li { width: calc(100% / 3 - 10px); padding: 25px 10px; background: #fff; border-radius: 30px; text-align: center; } 
 .themaWrap .cont03 .aiList li strong { display: block; padding: 16px 0 12px; margin-bottom: 18px; color: #fff; border-radius: 30px; } 
@@ -158,6 +158,9 @@
 .themaWrap .cont03 .infoList li strong { flex-shrink: 0; } 
 .themaWrap .cont03 .infoList li p { margin-left: 10px; text-align: left; word-break: keep-all; } 
 .themaWrap .cont03 .imgWrap { max-width: 380px; width: 100%; padding: 25px; margin: 40px auto; background: #fff; border-radius: 10px; } 
+.themaWrap .cont03 .imgWrap img {width: 100%;}
+.themaWrap .cont03 .imgWrap.none img {width: initial;}
+.themaWrap .cont03 .imgWrap.none { padding: 25px 25px 0; text-align: center;}
 .themaWrap .cont03 .bzList { display: flex; flex-wrap: wrap; gap: 15px 15px; } 
 .themaWrap .cont03 .bzList li { width: calc(100% / 5 - 15px); position: relative; text-align: center; } 
 .themaWrap .cont03 .bzList li:hover .toolTip { display: block; } 
@@ -230,7 +233,7 @@
  .themaWrap .cont01 .titWrap i { width: 100px; height: 100px; outline: 25px solid #a4b8de; border-radius: 50%; } 
  
  .themaWrap .cont01 .titWrap i::before { width: calc(100% + 60px); height: calc(100% + 60px); border: 2px dotted #a4b8de; } 
- .themaWrap .cont01 .titWrap .tit { min-width: 100%; padding: 14px 10px 8px; font-size: 22px; } 
+ .themaWrap .cont01 .titWrap .tit { min-width: 100%; padding: 10px 10px 8px; font-size: 22px; } 
  .themaWrap .cont01 .txtWrap { margin-top: 40px; } 
  .themaWrap .cont01 .txtWrap .txt { flex-shrink: 1; text-align: center; word-break: keep-all; } 
  .themaWrap .cont01 .txtWrap strong { font-size: 20px; } 
