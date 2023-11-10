@@ -1,6 +1,7 @@
-.themaWrap * { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 500; line-height: 1.2; } 
+.themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.2; } 
 .themaWrap .innerSection { max-width: 900px; margin: 0 auto; } 
-.themaWrap .gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; } 
+.themaWrap .gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; }
+.themaWrap .gMedium { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 500; }
 
 .themaWrap .tct { text-align: center; } 
 .themaWrap .fs50 { font-size: 50px; } 
@@ -51,7 +52,7 @@
 .themaWrap .cont01 .titWrap i.icon02 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_tit_icon02.png) center center #e3f6d7 no-repeat; } 
 .themaWrap .cont01 .titWrap i.icon03 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_tit_icon03.png) center center #e3f6d7 no-repeat; } 
 .themaWrap .cont01 .titWrap i.icon04 { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_tit_icon04.png) center center #e3f6d7 no-repeat; } 
-.themaWrap .cont01 .titWrap .tit { display: inline-block; min-width: 460px; padding: 18px 52px 16px; position: relative; background: #003281; color: #fff; font-size: 48px; border-radius: 50px; z-index: 2; } 
+.themaWrap .cont01 .titWrap .tit { display: inline-block; min-width: 460px; padding: 18px 52px 12px; position: relative; background: #003281; color: #fff; font-size: 48px; border-radius: 50px; z-index: 2; } 
 .themaWrap .cont01 .txtWrap { display: flex; margin-top: 100px; align-items: flex-end; } 
 .themaWrap .cont01 .txtWrap i.icon01 { width: 237px; height: 250px; margin: 0 36px 0 74px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_txt_icon01.png) no-repeat; background-size: contain; } 
 .themaWrap .cont01 .txtWrap i.icon02 { width: 240px; height: 255px; margin: 0 28px 0 46px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231103/thema_txt_icon02.png) no-repeat; background-size: contain; } 
