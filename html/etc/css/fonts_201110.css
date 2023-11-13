@@ -5,6 +5,7 @@
 	font-weight: 100; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Thin.eot?") format("eot"),	
+	url("../fonts/NotoSans-Thin.woff2") format("woff2"),
 	url("../fonts/NotoSans-Thin.woff") format("woff"),
 	url("../fonts/NotoSans-Thin.otf") format("opentype");	
 } 
@@ -14,6 +15,7 @@
 	font-weight: 200; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Light.eot?") format("eot"),
+	url("../fonts/NotoSans-Light.woff2") format("woff2"),
 	url("../fonts/NotoSans-Light.woff") format("woff"),	
 	url("../fonts/NotoSans-Light.otf") format("opentype");
 } 
@@ -23,6 +25,7 @@
 	font-weight: 300; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-DemiLight.eot?") format("eot"),	
+	url("../fonts/NotoSans-DemiLight.woff2") format("woff2"),
 	url("../fonts/NotoSans-DemiLight.woff") format("woff"),
 	url("../fonts/NotoSans-DemiLight.otf") format("opentype");	 
 } 
@@ -32,6 +35,7 @@
 	font-weight: 400; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Regular.eot?") format("eot"),
+	url("../fonts/NotoSans-Regular.woff2") format("woff2"),
 	url("../fonts/NotoSans-Regular.woff") format("woff"),
 	url("../fonts/NotoSans-Regular.otf") format("opentype");	
 } 
@@ -41,6 +45,7 @@
 	font-weight: 500; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Medium.eot?") format("eot"),
+	url("../fonts/NotoSans-Medium.woff2") format("woff2"),
 	url("../fonts/NotoSans-Medium.woff") format("woff"),	
 	url("../fonts/NotoSans-Medium.otf") format("opentype"); 
 } 
@@ -50,6 +55,7 @@
 	font-weight: 700; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Black.eot?") format("eot"),
+	url("../fonts/NotoSans-Black.woff2") format("woff2"),
 	url("../fonts/NotoSans-Black.woff") format("woff"),	
 	url("../fonts/NotoSans-Black.otf") format("opentype");
 } 
@@ -59,6 +65,7 @@
 	font-weight: 900; 
 	font-style: normal; 
 	src: url("../fonts/NotoSans-Bold.eot?") format("eot"),
+	url("../fonts/NotoSans-Bold.woff2") format("woff2"),
 	url("../fonts/NotoSans-Bold.woff") format("woff"),	
 	url("../fonts/NotoSans-Bold.otf") format("opentype");
 } 
@@ -68,6 +75,7 @@
 	font-weight: 300; 
 	font-style: normal; 
 	src: url("../fonts/GmarketSansLight.eot"),
+	url("../fonts/GmarketSansLight.woff2") format("woff2"),
 	url("../fonts/GmarketSansLight.woff") format("woff");
 } 
 @font-face { 
@@ -75,6 +83,7 @@
 	font-weight: 500; 
 	font-style: normal; 
 	src: url("../fonts/GmarketSansMedium.eot"),
+	url("../fonts/GmarketSansMedium.woff2") format("woff2"),
 	url("../fonts/GmarketSansMedium.woff") format("woff");
 } 
 @font-face { 
@@ -82,6 +91,7 @@
 	font-weight: 700; 
 	font-style: normal; 
 	src: url("../fonts/GmarketSansBold.eot"),
+	url("../fonts/GmarketSansBold.woff2") format("woff2"),
 	url("../fonts/GmarketSansBold.woff") format("woff");
 }
 
@@ -89,101 +99,118 @@
     font-family: "SCoreDream";
     font-weight: 400; 
     font-style: normal; 
-    src: url("../fonts/SCoreDream4.woff") format("woff");
+    src: url("../fonts/SCoreDream4.woff2") format("woff2"),
+	url("../fonts/SCoreDream4.woff") format("woff");
 }
 @font-face {
     font-family: "SCoreDream";
     font-weight: 600; 
     font-style: normal; 
-    src: url("../fonts/SCoreDream6.woff") format("woff");
+    src: url("../fonts/SCoreDream6.woff2") format("woff2"),
+	url("../fonts/SCoreDream6.woff") format("woff");
 }
 @font-face {
     font-family: "GangwonEdu";
     font-weight: 300;
     font-style: normal;
-    src: url("../fonts/GangwonEduAllLight.woff") format("woff");
+    src: url("../fonts/GangwonEduAllLight.woff2") format("woff2"),
+	url("../fonts/GangwonEduAllLight.woff") format("woff");
 } 
 @font-face {
     font-family: "GangwonEdu";
     font-weight: 600;
     font-style: normal;
-    src: url("../fonts/GangwonEduAllBold.woff") format("woff");
+    src: url("../fonts/GangwonEduAllBold.woff2") format("woff2"),
+	url("../fonts/GangwonEduAllBold.woff") format("woff");
 } 
 @font-face {
     font-family: "GangwonEdu";
     font-weight: 900;
     font-style: normal;
-    src: url("../fonts/GangwonEduPower.woff") format("woff");
+    src: url("../fonts/GangwonEduPower.woff2") format("woff2"),
+	url("../fonts/GangwonEduPower.woff") format("woff");
 }
 @font-face {
     font-family: "OneMobile";
     font-weight: 300;
     font-style: normal;
-    src: url("../fonts/OneMobileLight.woff") format("woff");
+    src: url("../fonts/OneMobileLight.woff2") format("woff2"),
+	url("../fonts/OneMobileLight.woff") format("woff");
 }
 @font-face {
     font-family: "OneMobile";
     font-weight: 500;
     font-style: normal;
-    src: url("../fonts/OneMobileRegular.woff") format("woff");
+    src: url("../fonts/OneMobileRegular.woff2") format("woff2"),
+	url("../fonts/OneMobileRegular.woff") format("woff");
 }
 @font-face {
     font-family: "OneMobile";
     font-weight: 700;
     font-style: normal;
-    src: url("../fonts/OneMobileBold.woff") format("woff");
+    src: url("../fonts/OneMobileBold.woff2") format("woff2"),
+	url("../fonts/OneMobileBold.woff") format("woff");
 }
 @font-face {
     font-family: "BMHANNA11yrsold";
 	font-weight: normal;
     font-style: normal;
-    src: url("../fonts/BMHANNA11yrsold.woff")format("woff");
+    src: url("../fonts/BMHANNA11yrsold.woff2")format("woff2"),
+    url("../fonts/BMHANNA11yrsold.woff")format("woff");
 }
 @font-face {
     font-family: "jalNan";
 	font-weight: normal;
     font-style: normal;
-    src: url("../fonts/Jalnan.woff")format("woff");
+    src: url("../fonts/Jalnan.woff2")format("woff2"),
+    url("../fonts/Jalnan.woff")format("woff");
 }
 @font-face {
     font-family: "EsaManru";
 	font-weight: 300;
     font-style: normal;
-    src: url("../fonts/EsaManruLight.woff")format("woff");
+    src: url("../fonts/EsaManruLight.woff2")format("woff2"),
+    url("../fonts/EsaManruLight.woff")format("woff");
 }
 @font-face {
     font-family: "EsaManru";
 	font-weight: 500;
     font-style: normal;
-    src: url("../fonts/EsaManruMedium.woff")format("woff");
+    src: url("../fonts/EsaManruMedium.woff2")format("woff2"),
+    url("../fonts/EsaManruMedium.woff")format("woff");
 }
 @font-face {
     font-family: "EsaManru";
 	font-weight: 700;
     font-style: normal;
-    src: url("../fonts/EsaManruBold.woff")format("woff");
+    src: url("../fonts/EsaManruBold.woff2")format("woff2"),
+    url("../fonts/EsaManruBold.woff")format("woff");
 }
 @font-face {
     font-family: "Pretendard";
 	font-weight: 400;
     font-style: normal;
-    src: url("../fonts/Pretendard-Regular.woff")format("woff");
+    src: url("../fonts/Pretendard-Regular.woff2")format("woff2"),
+    url("../fonts/Pretendard-Regular.woff")format("woff");
 }
 @font-face {
     font-family: "SBAggro";
 	font-weight: 300;
     font-style: normal;
-    src: url("../fonts/SBAggroLight.woff")format("woff");
+    src: url("../fonts/SBAggroLight.woff2")format("woff2"),
+    url("../fonts/SBAggroLight.woff")format("woff");
 }
 @font-face {
     font-family: "SBAggro";
 	font-weight: 500;
     font-style: normal;
-    src: url("../fonts/SBAggroMedium.woff")format("woff");
+    src: url("../fonts/SBAggroMedium.woff2")format("woff2"),
+    url("../fonts/SBAggroMedium.woff")format("woff");
 }
 @font-face {
     font-family: "SBAggro";
 	font-weight: 700;
     font-style: normal;
-    src: url("../fonts/SBAggroBold.woff")format("woff");
+    src: url("../fonts/SBAggroBold.woff2")format("woff2"),
+    url("../fonts/SBAggroBold.woff")format("woff");
 }
