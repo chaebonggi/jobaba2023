@@ -1,0 +1,13 @@
+.themaWrap * { font-family: 'OneMobile','Noto Sans KR' !important; font-weight: 300; } 
+.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
+.banHa {font-family: 'BMHANNA11yrsold','Noto Sans KR' !important;}
+
+.fc01 {color: #569e7a;}
+.bc01 {background: #c4f1da;}
+.fw500 {font-weight: 500;}
+.fw700 {font-weight: 700;}
+.fs48 {font-size: 48px;}
+.fs36 {font-size: 36px;}
+.fs30 {font-size: 30px;}
+.fs16 {font-size: 16px;}
+.trt {text-align: right;}
