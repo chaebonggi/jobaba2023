@@ -91,6 +91,9 @@
 			.themaWrap .cont02 .innerSection {
 				padding: 120px 0;
 			}
+			.themaWrap .contBox {
+				margin-bottom: 100px;
+			}
 			.themaWrap .contBox .titWrap {
 				text-align: center;
 			}
@@ -103,10 +106,24 @@
 			.themaWrap .contBox .titWrap h3::before {
 				content: '';
 				display: block;
+				margin: 0 auto 38px;
+			}
+			.themaWrap .contBox .titWrap h3.icon01::before {
 				width: 235px;
 				height: 194px;
-				margin: 0 auto 38px;
 				background: url(./resource/images/thema/231113/thema_tit01.png) no-repeat;
+				background-size: contain;
+			}
+			.themaWrap .contBox .titWrap h3.icon02::before {
+				width: 256px;
+				height: 221px;
+				background: url(./resource/images/thema/231113/thema_tit02.png) no-repeat;
+				background-size: contain;
+			}
+			.themaWrap .contBox .titWrap h3.icon03::before {
+				width: 335px;
+				height: 363px;
+				background: url(./resource/images/thema/231113/thema_tit03.png) no-repeat;
 				background-size: contain;
 			}
 			
@@ -122,16 +139,45 @@
 			}
 			.themaWrap .contBox .boxItem {
 				width: calc(50% - 10px);
+				position: relative;
 			}
 			.themaWrap .contBox .boxItem .tit {
-				margin-bottom: 60px;
+				min-height: 80px;
+				margin-bottom: 20px;
 				font-size: 36px;
 				font-weight: 700;
 			}
 			.themaWrap .contBox .boxItem .imgWrap {
 				padding: 20px 25px;
+				position: relative;
 				background: #fff;
 				border-radius: 20px;
+			}
+			.themaWrap .contBox .boxItem .tag {
+				display: flex;
+				position: absolute;
+				top: -30px;
+				right: 10px;
+				z-index: 1;
+			}
+			.themaWrap .contBox .boxItem .tag li {
+				font-size: 14px;
+			}
+			.themaWrap .contBox .boxItem .tag li:nth-child(2) {
+				margin-left: 10px;
+				
+			}
+			.themaWrap .contBox .boxItem .tag li:nth-child(2)::before {
+				background: #ff9936;
+			}
+			.themaWrap .contBox .boxItem .tag li::before {
+				content: '';
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				margin-right: 8px;
+				background: #7d78eb;
+				vertical-align: middle;
 			}
 			.themaWrap .contBox .etcBox {
 				margin: 40px 0 50px;				
@@ -139,9 +185,18 @@
 				position: relative;
 				background: #fff;
 				border: 1px dashed #000;
-				border-radius: 60px;
+				border-radius: 80px;
 				font-size: 26px;
 				line-height: 1.3;
+			}
+			.themaWrap .contBox .etcBox::after {
+				content: '';
+				width: 105px;
+				height: 91px;
+				position: absolute;
+				bottom: 10px;
+				right: 30px;
+				background: url(../thema/resource/images/thema/231113/etc_icon01.png) no-repeat;
 			}
 		</style>
 		<article class="cont02">
@@ -149,13 +204,17 @@
 				<div class="contBox">
 					<div class="titWrap">
 						<h3 class="banHa icon01 fs48">취업자 증감 및 취업자 수</h3>
-						<p class="fc01 fs30">2023년 9월 경기도 취업자는 772만 4천명으로<br>
+						<p class="fc01 fs30 fw500">2023년 9월 경기도 취업자는 772만 4천명으로<br>
 							<span class="fw700">전년동월대비 약 5만 9천명 증가</span></p>
 						<div class="boxWrap bc01">
 							<div class="graph">
 								<div class="boxItem">
 									<p class="tit">취업자 증감</p>
 									<div class="imgWrap">
+										<ul class="tag">
+											<li>전국</li>
+											<li>경기도</li>
+										</ul>
 										<img src="./resource/images/thema/231113/box_item01.png" alt="취업자 증감 그래프">
 									</div>
 								</div>
@@ -174,6 +233,148 @@
 						</div>
 					</div>
 				</div>
+
+
+				<style>
+					.themaWrap .contBox .boxWrap.bc02 {
+						background: url(../thema/resource/images/thema/231113/cont2_bg02.png) top center #d5d1f3 no-repeat;
+					}
+					.themaWrap .contBox .whiteBox {
+						margin: 0 50px;
+						padding: 40px 80px;
+						background: #fff;
+						border-radius: 20px;
+					}
+					.themaWrap .contBox .whiteBox + .whiteBox {
+						margin-top: 30px;
+					}
+					.themaWrap .contBox .whiteBox li + li {
+						margin-top: 20px;
+					}
+					.themaWrap .contBox .whiteBox li strong {
+						display: block;
+						padding: 6px 0;
+						margin-bottom: 10px;
+						background: #ffd9e7;
+						font-size: 24px;
+						font-weight: 700;
+						border-radius: 20px;
+					}
+					.themaWrap .contBox .whiteBox li .imgWrap {
+						display: flex;
+						align-items: center;
+					}
+					.themaWrap .contBox .whiteBox li .imgWrap p {
+						width: 100%;
+						padding: 40px 0;
+						margin-left: 30px;
+						color: #e93b79;
+						font-size: 36px;
+						font-weight: 700;
+						border: 2px dashed #ffdce9;
+						border-radius: 60px;
+					}
+					.themaWrap .contBox .whiteBox:nth-child(2) li strong {
+						background: #ccdaf3;
+					}
+					.themaWrap .contBox .whiteBox:nth-child(2) li .imgWrap p {
+						color: #4a78cc;
+						border: 2px dashed #ccdaf3;
+					}
+				</style>
+				<div class="contBox">
+					<div class="titWrap">
+						<h3 class="banHa icon02 fs48">주요 산업별 취업자 수</h3>
+						<p class="fc02 fs30 fw500">서비스업 분야 증가세 유지, 건설 · 제조업 감소세</span></p>
+						<div class="boxWrap bc02">
+							<div class="whiteBox">
+								<ul>
+									<li>
+										<strong>도소매&middot;숙박음식점업</strong>
+										<div class="imgWrap">
+											<img src="./resource/images/thema/231113/list_img01.png" alt="">
+											<p>8만 7천명 증가</p>
+										</div>
+									</li>
+									<li>
+										<strong>사업&middot;개인&middot;공공서비스 및 기타</strong>
+										<div class="imgWrap">
+											<img src="./resource/images/thema/231113/list_img02.png" alt="">
+											<p>2만 9천명 증가</p>
+										</div>
+									</li>
+									<li>
+										<strong>전기&middot;운수&middot;통신&middot;금융</strong>
+										<div class="imgWrap">
+											<img src="./resource/images/thema/231113/list_img03.png" alt="">
+											<p>2만 1천명 증가</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="whiteBox">
+								<ul>
+									<li>
+										<strong>제 조 업</strong>
+										<div class="imgWrap">
+											<img src="./resource/images/thema/231113/list_img04.png" alt="">
+											<p>8만 8천명 감소</p>
+										</div>
+									</li>
+									<li>
+										<strong>건 설 업</strong>
+										<div class="imgWrap">
+											<img src="./resource/images/thema/231113/list_img05.png" alt="">
+											<p>1만 2천명 감소</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<style>
+					.themaWrap .contBox .boxWrap.bc03 .boxItem .tit {
+						font-size: 30px;
+						text-align: left;
+						font-weight: 500;
+					}
+					.themaWrap .contBox .boxWrap.bc03 .boxItem .tit span {
+						color: #7c522c;
+					}
+				</style>
+				<div class="contBox">
+					<div class="titWrap">
+						<h3 class="banHa icon03 fs48">청년노동자 고용환경 변화</h3>
+						<p class="fc03 fs30 fw500">근로조건 불만족 및 전공 미적합으로인해<br>
+							미취업&middot;퇴사한 청년의 비중이 높게 나타났습니다.</p>
+						<div class="boxWrap bc03">
+							<div class="graph">
+								<div class="boxItem">
+									<p class="tit banHa">15~39세 <span class="banHa">‘그냥 쉬었음’</span><br>
+										응답자 추이</p>
+									<div class="imgWrap">
+										<img src="./resource/images/thema/231113/box_item01.png" alt="취업자 증감 그래프">
+									</div>
+								</div>
+								<div class="boxItem">
+									<p class="tit banHa">취업준비자</p>
+									<div class="imgWrap">
+										<img src="./resource/images/thema/231113/box_item02.png" alt="취업자 수 그래프">
+									</div>
+								</div>
+							</div>
+							<div class="etcBox">
+								<p class="fw500">전년동월대비 취업준비자 수가 7만 2천명 감소했습니다.<br>
+									아무런 구직활동 없이 ‘그냥 쉬었음‘이라고 응답한 청년이<br>
+									8만 9천명 증가했습니다.</p>
+							</div>
+							<p class="trt fs16 fw500">※ 출처 : 통계청</p>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</article>
 		
