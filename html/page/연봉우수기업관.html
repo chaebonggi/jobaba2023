@@ -538,7 +538,7 @@
 				<div class="cnt_wrap">
 					<div class="cnt">
 						<p>상세 우수 채용공고 검색</p>
-						<span class="etc"><b class="fcBlue">연봉, 매출액, 기업평가 등급, 취업률</b> 등 원하는 정보를 선택한 후, 채용공고를 검색해 보세요.</span>
+						<span class="etc"><b class="fcBlue">연봉, 매출액, 취업률</b> 등 원하는 정보를 선택한 후, 채용공고를 검색해 보세요.</span>
 					</div>				
 				</div>
 				<div class="infoWrap">					
@@ -763,14 +763,27 @@
 				<div class="cnt_wrap">
 					<div class="cnt">
 						<p>채용공고 <span class="fcRed">5,422</span>건</p>
+						<!-- 2023.11.15 추가 -->
+						<style>
+							.topCompany .selectWrap { margin-top: 10px; text-align: right;}
+						</style>
+						<div class="selectWrap">
+							<select id="" name="" title="정렬기준" onchange="" class="comm_select">	
+								<option value="" selected="">연봉TOP순위</option>	
+								<option value="">매출TOP순위</option>	
+								<option value="">취업률TOP순위</option>	
+								<option value="">종합TOP순위</option>
+							</select>
+						</div>
+						<!-- 2023.11.15 추가 -->
 					</div>				
 				</div>
 				<div class="rclist">
 					<div class="item">						
 						<div>
 							<div class="topHonor style02">
-								<span>연봉 1위</span>
-								<span>매출 1위</span>
+								<span>연봉 10위</span>
+								<span>매출 1000위</span>
 							</div>								
 							<p>에프원소프트(주)</p>
 						</div>
@@ -811,8 +824,8 @@
 					<div class="item">
 						<div>
 							<div class="topHonor style02">
-								<span>연봉 1위</span>
-								<span>매출 1위</span>
+								<span>연봉 1000위</span>
+								<span>매출 1000위</span>
 							</div>	
 							<p>에프원소프트(주)</p>
 						</div>

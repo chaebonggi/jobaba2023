@@ -82,7 +82,7 @@
 .topCompany .rclist > div.item + div.item { margin-top: 20px; } 
 
 .topCompany .rclist .topHonor { margin-bottom: 10px; } 
-.topCompany .rclist .topHonor span { display: inline-block; width: 70px; height: 70px; padding: 10px; font-size: 10px; border-radius: 50%; background: #e8e8ed; box-sizing: border-box; } 
+.topCompany .rclist .topHonor span { display: inline-block; min-width: 70px; height: 70px; padding: 10px; font-size: 10px; border-radius: 50%; background: #e8e8ed; box-sizing: border-box; } 
 .topCompany .rclist .topHonor span::before { content: ''; display: block; height: 29px; margin: 0 auto 2px; } 
 .topCompany .rclist .topHonor span:nth-child(1)::before { width: 21px; background: url(../images/topCompany/honor_icon01.png) no-repeat; } 
 .topCompany .rclist .topHonor span:nth-child(2)::before { width: 25px; background: url(../images/topCompany/honor_icon02.png) no-repeat; } 
