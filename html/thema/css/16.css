@@ -6,23 +6,136 @@
 .fs32 { font-size: 32px; } 
 .fs24 { font-size: 24px; } 
 .fs12 { font-size: 12px; } 
-.themaWrap .bc01 { background: url(../resource/images/thema/231120/cont04_list_bg01.png) right bottom #e6e1f9 no-repeat; } 
-.themaWrap .bc02 { background: url(../resource/images/thema/231120/cont04_list_bg02.png) left bottom #ffe9f2 no-repeat; } 
-.themaWrap .bc03 { background: url(../resource/images/thema/231120/cont04_list_bg03.png) right top #ffe6e2 no-repeat; } 
-.themaWrap .bc04 { background: url(../resource/images/thema/231120/cont04_list_bg04.png) left top #d8efff no-repeat; } 
+.themaWrap .bc01 { background: url(.../resource/images/thema/231120/cont04_list_bg01.png) right bottom #e6e1f9 no-repeat; } 
+.themaWrap .bc02 { background: url(.../resource/images/thema/231120/cont04_list_bg02.png) left bottom #ffe9f2 no-repeat; } 
+.themaWrap .bc03 { background: url(.../resource/images/thema/231120/cont04_list_bg03.png) right top #ffe6e2 no-repeat; } 
+.themaWrap .bc04 { background: url(.../resource/images/thema/231120/cont04_list_bg04.png) left top #d8efff no-repeat; } 
 .themaWrap .bc05 { background: #9f8be8; } 
 .themaWrap .bc06 { background: #f2829d; } 
 .themaWrap .bc07 { background: #ff6464; } 
 .themaWrap .bc08 { background: #50a3df; } 
-.themaWrap .fc01 {
-    color: #8069d2;
-}
-.themaWrap .fc02 {
-    color: #e36886;
-}
-.themaWrap .fc03 {
-    color: #ff6464;
-}
-.themaWrap .fc04 {
-    color: #50a3df;
-}
+.themaWrap .fc01 { color: #8069d2; } 
+.themaWrap .fc02 { color: #e36886; } 
+.themaWrap .fc03 { color: #ff6464; } 
+.themaWrap .fc04 { color: #50a3df; } 
+
+.themaWrap .mainVisual { background: url(../resource/images/thema/231120/main_bg.png) top center no-repeat; } 
+.themaWrap .mainVisual .innerSection { padding: 120px 0 40px; } 
+.themaWrap .mainVisual h2 { margin-bottom: 50px; text-align: center; } 
+.themaWrap .mainVisual ul { display: flex; margin: 0 50px; text-align: center; justify-content: space-between; } 
+.themaWrap .mainVisual li a { display: block; width: 246px; height: 246px; margin: 0 auto 40px; border-radius: 50%; box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); transition: all .35s; } 
+.themaWrap .mainVisual li a:hover { transform: scale(1.1); } 
+.themaWrap .mainVisual li.icon01 a { background: url(../resource/images/thema/231120/mina_list_img01.png) bottom center #fff no-repeat; } 
+.themaWrap .mainVisual li.icon02 a { background: url(../resource/images/thema/231120/mina_list_img02.png) bottom center #fff no-repeat; } 
+.themaWrap .mainVisual li.icon03 a { background: url(../resource/images/thema/231120/mina_list_img03.png) bottom 20px center #fff no-repeat; } 
+
+.themaWrap .mainVisual li span { position: relative; color: #fff; font-size: 55px; text-shadow: 0 4px 0 #000; } 
+.themaWrap .mainVisual li span::after { content: ''; position: absolute; width: 110%; height: 100%; top: 0; left: -2px; color: #fff; z-index: 1; mix-blend-mode: soft-light; } 
+.themaWrap .mainVisual li.icon01 span::after { background: url(../resource/images/thema/231120/main_list_01.png) no-repeat; } 
+.themaWrap .mainVisual li.icon02 span::after { background: url(../resource/images/thema/231120/main_list_02.png) no-repeat; } 
+.themaWrap .mainVisual li.icon03 span:after { background: url(../resource/images/thema/231120/main_list_03.png) no-repeat; } 
+
+.themaWrap .cont01 { position: relative; background: url(../resource/images/thema/231120/cont01_bg.png) bottom center no-repeat; } 
+.themaWrap .cont02 { background: url(../resource/images/thema/231120/cont02_bg.png) bottom center no-repeat; } 
+.themaWrap .cont03 { background: url(../resource/images/thema/231120/cont03_bg.png) bottom center no-repeat; } 
+.themaWrap .title { position: relative; text-align: center; } 
+.themaWrap .title.icon01::before { content: ''; width: 363px; height: 212px; position: absolute; left: 50%; top: -222px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont01_tit01.png) no-repeat; background-size: contain; } 
+.themaWrap .title.icon01::after { content: ''; width: 269px; height: 112px; position: absolute; left: 50%; top: -100px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont01_tit02.png) no-repeat; background-size: contain; } 
+.themaWrap .title.icon02::before { content: ''; width: 342px; height: 252px; position: absolute; left: 50%; top: -262px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont02_tit01.png) no-repeat; background-size: contain; } 
+.themaWrap .title.icon02::after { content: ''; width: 342px; height: 94px; position: absolute; left: 50%; top: -82px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont02_tit02.png) no-repeat; background-size: contain; } 
+.themaWrap .title.icon03::after { content: ''; width: 380px; height: 236px; position: absolute; left: 50%; top: -226px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont03_tit01.png) no-repeat; background-size: contain; } 
+.themaWrap .title h2 { display: inline-block; padding: 16px 100px 0; margin-bottom: 70px; position: relative; background: #1c1c1c; color: #fff; font-size: 90px; border-radius: 80px; } 
+.themaWrap .title h2::after { content: ''; width: calc(100% + 10px); height: calc(100% + 10px); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 7px solid #fff; border-radius: 80px; } 
+.themaWrap .title h2 span { display: block; margin-bottom: -6px; position: relative; } 
+.themaWrap .title h2 span::before { content: ''; width: 36px; height: 54px; position: absolute; left: -60px; top: 30px; background: url(../resource/images/thema/231120/cont01_icon01.png) no-repeat; } 
+.themaWrap .title h2 span::after { content: ''; width: 35px; height: 69px; position: absolute; right: -60px; top: 0; background: url(../resource/images/thema/231120/cont01_icon02.png) no-repeat; } 
+.themaWrap .title p { color: #fff; font-size: 34px; } 
+.themaWrap .title p span { color: #000; } 
+.themaWrap .etcWrap { padding: 40px 10px; margin-top: 60px; position: relative; background: linear-gradient(-58deg, #fff 75%, #8fcebd 50%); border-radius: 20px; } 
+.themaWrap .etcWrap::before { content: ''; width: 121px; height: 195px; position: absolute; left: 30px; bottom: 10px; background: url(../resource/images/thema/231120/etc_img01.png) no-repeat; } 
+.themaWrap .etcWrap p { padding-left: 200px; font-size: 24px; text-align: center; } 
+.themaWrap .itemBox { padding: 35px 50px 68px; margin-top: 100px; background: #dfeaff; border-radius: 20px; } 
+.themaWrap .itemBox .tit { margin: -70px 0 70px; text-align: center; } 
+.themaWrap .itemBox h3 { display: inline-block; width: 250px; padding: 15px 0 7px; position: relative; background: #333333; color: #fff; font-size: 40px; border-radius: 10px; } 
+.themaWrap .itemBox h3::after { content: ''; width: 235px; height: 45px; position: absolute; left: 50%; bottom: -45px; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont_tit_img01.png) no-repeat; } 
+.themaWrap .itemBox .tabWrap { display: flex; justify-content: space-between; } 
+.themaWrap .itemBox .tabMenu { display: flex; width: 180px; margin-right: 100px; flex-direction: column; justify-content: space-between; } 
+.themaWrap .itemBox .tabMenu li { display: flex; padding-top: 4px; height: 72px; background: #fff; position: relative; font-size: 26px; border-radius: 50px; align-items: center; justify-content: center; text-align: center; cursor: pointer; } 
+.themaWrap .itemBox .tabMenu li::after { content: ''; width: 100%; height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border: 3px solid #dfeaff; border-radius: 50px; } 
+.themaWrap .itemBox .tabMenu li em { display: block; } 
+.themaWrap .itemBox .tabMenu li.active { background: #7263d0; color: #fff; } 
+.themaWrap .itemBox .tabMenu li.active::before { content: ''; width: 0px; height: 0px; position: absolute;border-top: 10px solid transparent; border-left: 17px solid #7263d0; border-bottom: 10px solid transparent; } 
+.themaWrap .itemBox .tabMenu li:nth-child(1).active::before { right: -14px; bottom: 4px; transform: rotate(32deg); } 
+.themaWrap .itemBox .tabMenu li:nth-child(2).active::before { right: -18px; top: 50%; transform: translateY(-50%) rotate(0); } 
+.themaWrap .itemBox .tabMenu li:nth-child(3).active::before { right: -14px; top: 4px; transform: rotate(-32deg); } 
+.themaWrap .itemBox .tabItem { flex: 1; } 
+.themaWrap .itemBox .tabBox { display: none; min-height: 260px; padding: 24px 15px 15px 110px; position: relative; background: #fff; border: 2px dashed #7263d0; border-radius: 20px; } 
+.themaWrap .itemBox .tabBox.active { display: block; } 
+.themaWrap .itemBox .tabBox::before { content: ''; width: 160px; height: 160px; position: absolute; left: -80px; top: 50%; transform: translateY(-50%); border-radius: 50%; } 
+.themaWrap .itemBox .tabBox.icon01::before { background: url(../resource/images/thema/231120/tab_icon01.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon02::before { background: url(../resource/images/thema/231120/tab_icon02.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon03::before { background: url(../resource/images/thema/231120/tab_icon03.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon04::before { background: url(../resource/images/thema/231120/tab_icon04.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon05::before { background: url(../resource/images/thema/231120/tab_icon05.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon06::before { background: url(../resource/images/thema/231120/tab_icon06.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon07::before { background: url(../resource/images/thema/231120/tab_icon07.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon08::before { background: url(../resource/images/thema/231120/tab_icon08.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox.icon09::before { background: url(../resource/images/thema/231120/tab_icon09.png) center #7263d0 no-repeat; } 
+.themaWrap .itemBox .tabBox strong { display: block; margin-bottom: 10px; color: #7263d0; } 
+.themaWrap .itemBox .tabBox p { letter-spacing: -1px; } 
+.themaWrap .cont01 .innerSection { padding: 300px 0 120px; } 
+.themaWrap .cont02 .innerSection { padding: 366px 0 120px; } 
+.themaWrap .cont03 .innerSection { padding: 332px 0 120px; } 
+
+.themaWrap .jobList { word-break: keep-all; } 
+.themaWrap .jobList li { display: flex; padding: 40px 40px; background: #fff; border-radius: 40px; } 
+.themaWrap .jobList li + li { margin-top: 20px; } 
+.themaWrap .jobList .imgWrap { margin-right: 30px; flex-shrink: 0; } 
+.themaWrap .jobList .txtWrap strong { display: block; margin-bottom: 10px; color: #7865d9; } 
+.themaWrap .jobList .txtWrap p { letter-spacing: -1px; line-height: 1.4; } 
+.themaWrap .entWrap { position: relative; padding: 0 50px; } 
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after { content: none; } 
+.themaWrap .entWrap .swiper-button-next, .themaWrap .entWrap .swiper-button-prev { width: 31px; height: 69px; transform: translateY(-20%); } 
+.themaWrap .entWrap .swiper-button-next { background: url(../resource/images/thema/231120/next_btn.png) no-repeat; background-size: contain; left: initial !important; right: 0; } 
+.themaWrap .entWrap .swiper-button-prev { background: url(../resource/images/thema/231120/prev_btn.png) no-repeat; background-size: contain; left: 0; } 
+.themaWrap .entWrap .entList li { display: flex; height: 70px; background: #fff; border: 1px solid #000; align-items: center; justify-content: center; } 
+
+.themaWrap .leftMenu.fixed { position: fixed; top: 150px; } 
+.themaWrap .leftMenu { position: absolute; left: 170px; top: 50px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+.themaWrap .leftMenu > a { display: block; margin-top: 20px; color: #5f5f5f; } 
+.themaWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+.themaWrap .menuList li + li { margin-top: 6px; } 
+.themaWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 10px 10px 6px; background: #d0d0d0; color: #000; font-size: 24px; } 
+.themaWrap .menuList li a > p { color: #000; letter-spacing: -2px; } 
+.themaWrap .menuList li a:hover { background: #8fcebd; } 
+.themaWrap .menuList li a:hover > p { font-weight: 700; } 
+.themaWrap .menuList li.active a { height: 140px; padding: 20px 0; } 
+.themaWrap .menuList li:nth-child(1).active a { background: url(../resource/images/thema/231120/left_icon01.png) bottom center #8fcebd no-repeat; } 
+.themaWrap .menuList li:nth-child(2).active a { background: url(../resource/images/thema/231120/left_icon02.png) bottom center #8fcebd no-repeat; } 
+.themaWrap .menuList li:nth-child(3).active a { background: url(../resource/images/thema/231120/left_icon03.png) bottom center #8fcebd no-repeat; } 
+.themaWrap .menuList li:nth-child(4).active a { background: url(../resource/images/thema/231120/left_icon04.png) bottom center #8fcebd no-repeat; } 
+.themaWrap .menuList li.active a > p { color: #000; font-weight: 700; } 
+
+.themaWrap .cont04 { background: url(../resource/images/thema/231120/cont04_bg.png) top center no-repeat; } 
+.themaWrap .cont04 .innerSection { position: relative; padding: 314px 0 200px; } 
+.themaWrap .cont04 .innerSection::before { content: ''; width: 851px; height: 301px; position: absolute; left: 50%; top: 0; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont04_img01.png) no-repeat; } 
+.themaWrap .cont04 .tit { position: relative; margin-bottom: 180px; text-align: center; } 
+.themaWrap .cont04 .whiteBox { padding: 50px; position: relative; background: #fff; border-radius: 20px; } 
+.themaWrap .cont04 .whiteBox::before { content: ''; width: 690px; height: 176px; position: absolute; top: -176px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont04_img02.png); } 
+.themaWrap .cont04 .whiteBox::after { content: ''; width: 97px; height: 101px; position: absolute; top: -78px; left: 49%; transform: translateX(-50%); background: url(../resource/images/thema/231120/cont04_img03.png); } 
+.themaWrap .cont04 ul { display: flex; position: relative; flex-wrap: wrap; justify-content: space-between; gap: 20px; } 
+.themaWrap .cont04 ul::after { content: ''; width: 155px; height: 151px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../resource/images/thema/231120/cont04_img04.png) no-repeat; } 
+.themaWrap .cont04 li { width: calc(100% / 2 - 10px); height: 270px; padding: 20px 32px 20px; position: relative; border-radius: 20px; } 
+.themaWrap .cont04 li a { display: block; width: 100%; height: 100%; } 
+.themaWrap .cont04 li a strong { display: block; margin-bottom: 10px; line-height: 1.1; } 
+.themaWrap .cont04 li a p { color: #000; } 
+
+.themaWrap .cont04 li:nth-child(even) { text-align: right}
+.themaWrap .cont04 li span { display: inline-block; width: 90px; padding: 10px 10px 6px; position: absolute; left: 32px; bottom: 20px; color: #fff; border-radius: 20px; text-align: center; } 
+.themaWrap .cont04 li:nth-child(even) span { left: initial; right: 32px; } 
+.themaWrap .cont04 li i { display: inline-block; vertical-align: middle; } 
+.themaWrap .cont04 li i.icon01 { width: 37px; height: 37px; margin-left: 16px; background: url(../resource/images/thema/231120/cont04_icon01.png) no-repeat; } 
+.themaWrap .cont04 li i.icon02 { width: 34px; height: 34px; margin-right: 16px; background: url(../resource/images/thema/231120/cont04_icon02.png) no-repeat; } 
+.themaWrap .cont04 li i.icon03 { width: 38px; height: 33px; margin-left: 16px; background: url(../resource/images/thema/231120/cont04_icon03.png) no-repeat; } 
+.themaWrap .cont04 li i.icon04 { width: 18px; height: 34px; margin-right: 16px; background: url(../resource/images/thema/231120/cont04_icon04.png) no-repeat; } 
