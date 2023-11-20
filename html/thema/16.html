@@ -28,7 +28,7 @@
 </head>
 <body>
 	<div class="themaWrap">
-		<article class="mainVisual">
+		<article class="mainVisual" id="moveTo05">
 			<div class="innerSection">
 				<h2><img src="./resource/images/thema/231120/main_tit.png" alt="미래산업 톺아보기"></h2>
 				<style>
@@ -56,6 +56,10 @@
 						margin: 0 auto 40px;						
 						border-radius: 50%;
 						box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+						transition: all .35s;
+					}
+					.themaWrap .mainVisual li a:hover {
+						transform: scale(1.1);
 					}
 					.themaWrap .mainVisual li.icon01 a {
 						background: url(./resource/images/thema/231120/mina_list_img01.png) bottom center #fff no-repeat;
@@ -95,6 +99,7 @@
 					}
 
 				.themaWrap .cont01 {
+					position: relative;
 					background: url(./resource/images/thema/231120/cont01_bg.png) bottom center no-repeat;
 				}
 				.themaWrap .cont02 {
@@ -337,7 +342,7 @@
 				.themaWrap .itemBox .tabBox {
 					display: none;
 					min-height: 260px;
-					padding: 40px 15px 15px 110px;
+					padding: 24px 15px 15px 110px;
 					position: relative;
 					background: #fff;
 					border: 2px dashed #7263d0;
@@ -458,20 +463,36 @@
 						align-items: center;
 						justify-content: center;
 					}
+
+					.themaWrap .leftMenu.fixed { position: fixed; top: 150px; } 
+					.themaWrap .leftMenu { position: absolute; left: 170px; top: 50px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0px 0px 38px rgb(0,0,0,0.1); text-align: center; z-index: 10; } 
+					.themaWrap .leftMenu > a { display: block; margin-top: 20px; color: #5f5f5f; } 
+					.themaWrap .menuList li { border-radius: 10px; overflow: hidden; } 
+					.themaWrap .menuList li + li { margin-top: 6px; } 
+					.themaWrap .menuList li a { display: block; width: 192px; height: 100%; padding: 10px 10px 6px; background: #d0d0d0; color: #000; font-size: 24px; } 
+					.themaWrap .menuList li a > p { color: #000; letter-spacing: -2px; } 
+					.themaWrap .menuList li a:hover { background: #8fcebd; } 
+					.themaWrap .menuList li a:hover > p { font-weight: 700; } 
+					.themaWrap .menuList li.active a { height: 140px; padding: 20px 0;}
+					.themaWrap .menuList li:nth-child(1).active a { background: url(./resource/images/thema/231120/left_icon01.png) bottom center #8fcebd no-repeat;}
+					.themaWrap .menuList li:nth-child(2).active a { background: url(./resource/images/thema/231120/left_icon02.png) bottom center #8fcebd no-repeat;}
+					.themaWrap .menuList li:nth-child(3).active a { background: url(./resource/images/thema/231120/left_icon03.png) bottom center #8fcebd no-repeat;}
+					.themaWrap .menuList li:nth-child(4).active a { background: url(./resource/images/thema/231120/left_icon04.png) bottom center #8fcebd no-repeat;}
+					.themaWrap .menuList li.active a > p {color: #000; font-weight: 700; } 
 				</style>
 				<ul>
 					<li class="icon01">
-						<a href="">							
+						<a href="#moveTo01">							
 						</a>
 						<span class="banHa">메타버스</span>
 					</li>
 					<li class="icon02">
-						<a href="">							
+						<a href="#moveTo02">							
 						</a>
 						<span class="banHa">디지털 헬스케어</span>
 					</li>
 					<li class="icon03">
-						<a href="">							
+						<a href="#moveTo03">							
 						</a>
 						<span class="banHa">모빌리티</span>
 					</li>
@@ -479,7 +500,34 @@
 				
 			</div>			
 		</article>
-		<article class="cont01">
+		<article class="cont01 linkWrap" id="moveTo01">
+			<div class="leftMenu">
+				<ul class="menuList">
+					<li class="active">
+						<a href="#moveTo01">
+							<p>메타버스</p>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo02">
+							<p>디지털 헬스케어</p>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo03">
+							<p>모빌리티</p>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo04">
+							<p>잡아바 채용관</p>
+						</a>
+					</li>
+				</ul>
+				<a href="#moveTo05">
+					<p class="gBold">▲ TOP</p>							
+				</a>
+			</div>	
 			<div class="innerSection">
 				<div class="title icon01">
 					<h2><span class="banHa">메타버스</span></h2>
@@ -498,12 +546,12 @@
 						<h3><span class="banHa">핵심기술</span></h3>
 					</div>
 					<div class="tabWrap">
-						<ul class="tabMenu">
+						<ul class="tabMenu tab01">
 							<li class="active" data-tab="tab01"><span>인공지능</span></li>
 							<li data-tab="tab02"><span>3D모델링</span></li>
 							<li data-tab="tab03"><span>공간컴퓨팅</span></li>
 						</ul>
-						<div class="tabItem">
+						<div class="tabItem tab01">
 							<div class="tabBox icon01 active" data-tab="tab01">
 								<strong class="gBold fs24">생성형 AI는 메타버스 발전에 있어<br>
 									중요한 기술요소 입니다.</strong>
@@ -617,7 +665,7 @@
 			</div>
 		</article>
 		
-		<article class="cont02">
+		<article class="cont02 linkWrap" id="moveTo02">
 			<div class="innerSection">
 				<div class="title icon02">
 					<h2><span class="banHa">디지털 헬스케어</span></h2>
@@ -637,13 +685,13 @@
 						<h3><span class="banHa">핵심기술</span></h3>
 					</div>
 					<div class="tabWrap">
-						<ul class="tabMenu">
-							<li class="active" data-tab="tab04"><span>디지털트윈</span></li>
-							<li data-tab="tab05"><span>웨어러블<br> 디바이스</span></li>
-							<li data-tab="tab06"><span>원격의료</span></li>
+						<ul class="tabMenu tab03">
+							<li class="active" data-tab="tab01"><span>디지털트윈</span></li>
+							<li data-tab="tab02"><span>웨어러블<br> 디바이스</span></li>
+							<li data-tab="tab03"><span>원격의료</span></li>
 						</ul>
-						<div class="tabItem">
-							<div class="tabBox icon04 active" data-tab="tab04">
+						<div class="tabItem tab03">
+							<div class="tabBox icon04 active" data-tab="tab01">
 								<p class="fs24">현실 세계의 기계나 장비, 사물 등을<br>
 									가상세계에 구현한 것으로, 의료데이터를 <br>
 									접목하여 약물이나 의료기기 등이 <br>
@@ -651,14 +699,14 @@
 									시뮬레이션하는 등 정밀의료, 혁신적인 <br>
 									건강관리 서비스 제공이 가능해 졌습니다.</p>
 							</div>
-							<div class="tabBox icon05" data-tab="tab05">
+							<div class="tabBox icon05" data-tab="tab02">
 								<p class="fs24">신체에 착용하여 사용자의 생체 신호를<br> 측정하여
 									건강상태를 모니터링하는 기기로, <br>
 									혈중 산소포화도를 확인하는 스마트워치 등 <br>
 									일상 속에서 건강을 관리할 수 있는 서비스가 <br>
 									늘어나고 있습니다.</p>
 							</div>
-							<div class="tabBox icon06" data-tab="tab06">
+							<div class="tabBox icon06" data-tab="tab03">
 								<p class="fs24">음성 · 화상 시스템 등을 이용해<br>
 									실시간으로 건강검진과 질병 진료를 받는 <br>
 									비대면 의료를 의미합니다. <br>
@@ -757,7 +805,7 @@
 			</div>
 		</article>
 
-		<article class="cont03">
+		<article class="cont03 linkWrap" id="moveTo03">
 			<div class="innerSection">
 				<div class="title icon03">
 					<h2><span class="banHa">모빌리티</span></h2>
@@ -779,13 +827,13 @@
 						<h3><span class="banHa">핵심기술</span></h3>
 					</div>
 					<div class="tabWrap">
-						<ul class="tabMenu">
-							<li class="active" data-tab="tab07"><span>MaaS<br> <em class="fs12">(Mobility as a Services)</em></span></li>
-							<li data-tab="tab08"><span>자율주행</span></li>
-							<li data-tab="tab09"><span>커넥티드카</span></li>
+						<ul class="tabMenu tab02">
+							<li class="active" data-tab="tab01"><span>MaaS<br> <em class="fs12">(Mobility as a Services)</em></span></li>
+							<li data-tab="tab02"><span>자율주행</span></li>
+							<li data-tab="tab03"><span>커넥티드카</span></li>
 						</ul>
-						<div class="tabItem">
-							<div class="tabBox icon07 active" data-tab="tab07">
+						<div class="tabItem tab02">
+							<div class="tabBox icon07 active" data-tab="tab01">
 								<strong class="gBold fs24">MaaS(Mobility as a Services)는<br>
 									모든 교통수단을 하나의 통합된 서비스로 <br>
 									제공하는 것입니다.</strong>
@@ -794,7 +842,7 @@
 									이동계획을 수립, 결제 등이 가능한<br> 
 									원스톱 서비스입니다.</p>
 							</div>
-							<div class="tabBox icon08" data-tab="tab08">
+							<div class="tabBox icon08" data-tab="tab02">
 								<strong class="gBold fs24">운전자의 조작 없이, 자동차가 사람의<br>
 									인지&middot;판단·제어 기능을 대체하여 운전하는 것을 
 									의미합니다.</strong>
@@ -803,7 +851,7 @@
 									시스템이 주도적으로 자율주행하는 레벨3 차량이 
 									상용화 될 예정입니다.</p>
 							</div>
-							<div class="tabBox icon09" data-tab="tab09">
+							<div class="tabBox icon09" data-tab="tab03">
 								<strong class="gBold fs24">자동차가 스마트폰이나 집·사무실·도시의<br>
 									다양한 인프라 시설들과 상호 통신해<br> 
 									사물인터넷(IoT)의 일부가 되는 것입니다.</strong>
@@ -901,7 +949,189 @@
 				</div>
 			</div>
 		</article>
-
+		<style>
+			.themaWrap .cont04 {
+				background: url(./resource/images/thema/231120/cont04_bg.png) top center no-repeat;
+			}
+			.themaWrap .cont04 .innerSection {
+				position: relative;
+				padding: 314px 0 200px;
+			}
+			.themaWrap .cont04 .innerSection::before {
+				content: '';
+				width: 851px;
+				height: 301px;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/231120/cont04_img01.png) no-repeat;
+			}
+			.themaWrap .cont04 .tit {
+				position: relative;
+				margin-bottom: 180px;
+				text-align: center;
+			}
+			.themaWrap .cont04 .whiteBox {
+				padding: 50px;
+				position: relative;
+				background: #fff;
+				border-radius: 20px;
+			}
+			.themaWrap .cont04 .whiteBox::before {
+				content: '';
+				width: 690px;
+				height: 176px;
+				position: absolute;
+				top: -176px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/231120/cont04_img02.png);
+			}
+			.themaWrap .cont04 .whiteBox::after {
+				content: '';
+				width: 97px;
+				height: 101px;
+				position: absolute;
+				top: -78px;
+				left: 49%;
+				transform: translateX(-50%);
+				background: url(./resource/images/thema/231120/cont04_img03.png);
+			}
+			.themaWrap .cont04 ul {
+				display: flex;
+				position: relative;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 20px;
+			}
+			.themaWrap .cont04 ul::after {
+				content: '';
+				width: 155px;
+				height: 151px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: url(./resource/images/thema/231120/cont04_img04.png) no-repeat;
+			}
+			.themaWrap .cont04 li {
+				width: calc(100% / 2 - 10px);
+				height: 270px;
+				padding: 20px 32px 20px;
+				position: relative;
+				border-radius: 20px;
+			}
+			.themaWrap .cont04 li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.themaWrap .cont04 li a strong {
+				display: block;
+				margin-bottom: 10px;
+				line-height: 1.1;
+			}
+			.themaWrap .cont04 li a p {
+				color: #000;
+			}
+	
+			.themaWrap .cont04 li:nth-child(even) {
+				text-align: right
+			}
+			.themaWrap .cont04 li span {
+				display: inline-block;
+				width: 90px;
+				padding: 10px 10px 6px;
+				position: absolute;
+				left: 32px;
+				bottom: 20px;
+				color: #fff;
+				border-radius: 20px;
+				text-align: center;
+			}
+			.themaWrap .cont04 li:nth-child(even) span {
+				left: initial;
+				right: 32px;
+			}
+			.themaWrap .cont04 li i {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.themaWrap .cont04 li i.icon01 {
+				width: 37px;
+				height: 37px;
+				margin-left: 16px;
+				background: url(./resource/images/thema/231120/cont04_icon01.png) no-repeat;
+			}
+			.themaWrap .cont04 li i.icon02 {
+				width: 34px;
+				height: 34px;
+				margin-right: 16px;
+				background: url(./resource/images/thema/231120/cont04_icon02.png) no-repeat;
+			}
+			.themaWrap .cont04 li i.icon03 {
+				width: 38px;
+				height: 33px;
+				margin-left: 16px;
+				background: url(./resource/images/thema/231120/cont04_icon03.png) no-repeat;
+			}
+			.themaWrap .cont04 li i.icon04 {
+				width: 18px;
+				height: 34px;
+				margin-right: 16px;
+				background: url(./resource/images/thema/231120/cont04_icon04.png) no-repeat;
+			}
+		</style>
+		<article class="cont04 linkWrap" id="moveTo04">
+			<div class="innerSection">
+				<div class="tit">
+					<img src="./resource/images/thema/231120/cont04_tit.png" alt="잡아바에 다 있습니다">
+				</div>
+				<div class="whiteBox">
+					<ul>
+						<li class="bc01">
+							<a href="" target="_blank">
+								<strong class="gBold fs36 fc01">신성장산업관<i class="icon01"></i></strong>
+								<p class="fs24">배터리, 반도체, 바이오 등<br>
+									대한민국 새로운 경제성장을<br>
+									이끄는 5개 분야 채용관<br>
+									확인하세요!</p>
+								<span class="gBold bc05">GO &#8594;</span>
+							</a>
+						</li>
+						<li class="bc02">
+							<a href="" target="_blank">
+								<strong class="gBold fs36 fc02"><i class="icon02"></i>대기업협력관</strong>
+								<p class="fs24">LG전자, i-one잡, 삼성전자 등<br>
+									대기업 협력사, 금융사 추천기업<br>
+									채용공고에 지원하세요!</p>
+								<span class="gBold bc06">GO &#8594;</span>
+							</a>
+						</li>
+						<li class="bc03">
+							<a href="" target="_blank">
+								<strong class="gBold fs36 fc03">탐나는기업관<i class="icon03"></i></strong>
+								<p class="fs24">잡아바가 선정한<br>
+									경기도 탐나는 기업!<br>
+									지금 입사지원하세요!</p>
+								<span class="gBold bc07">GO &#8594;</span>
+							</a>
+						</li>
+						<li class="bc04">
+							<a href="" target="_blank">
+								<strong class="gBold fs36 fc04"><i class="icon04"></i>경기도<br>
+									일자리 우수기업관</strong>
+								<p class="fs24">근로자 고용안정 및 일자리 창출에<br>
+									기여한 우수 중소기업을<br>
+									확인해 보세요!</p>
+								<span class="gBold bc08">GO &#8594;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
 
 
 	
@@ -927,15 +1157,50 @@
 
 	<script>
 	$(document).ready(function(){
-		var $btn = $('.tabMenu li');
-		$btn.click(function() {
-			var tab = $(this).attr('data-tab');
-			$btn.removeClass('active');
-			$(this).addClass('active');
-			$('.tabBox').removeClass('active');
-			$('.tabBox').filter('[data-tab="' + tab + '"]').addClass('active');
+		const menuOffset =  $('.leftMenu').offset();
+		const menu = $('.menuList')
+		const menuHight = menu.outerHeight();
+		const articles = $('.linkWrap');
+
+		$(document).scroll(function(){
+			const winScroll = $(this).scrollTop();
+			if( winScroll > menuOffset.top) {
+				$('.leftMenu').addClass('fixed');
+			}else {
+				$('.leftMenu').removeClass('fixed');
+			}
+			articles.each(function(){
+				const winTop = $(this).offset().top - menuHight;
+				const winBottom = winTop + $(this).outerHeight();
+				if (winScroll >= winTop && winScroll <= winBottom) {
+					menu.find("a").parent().removeClass('active');
+					menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
+				}
+			});	
 		});
 
+		$('.themaWrap .mainVisual li a, .leftMenu a').click(function(e){
+			$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+			e.preventDefault();
+		});
+
+		$('.tabMenu.tab01 li').click(function() {
+			handleTabClick($(this), 'tab01');
+		});
+		$('.tabMenu.tab02 li').click(function() {
+			handleTabClick($(this), 'tab02');
+		});
+		$('.tabMenu.tab03 li').click(function() {
+			handleTabClick($(this), 'tab03');
+		});
+		function handleTabClick($clickedTab, tabName) {
+			var tab = $clickedTab.attr('data-tab');
+			$('.tabMenu.' + tabName + ' li').removeClass('active');
+			$clickedTab.addClass('active');
+			var $tabBox = $('.tabItem.' + tabName).children();
+			$tabBox.removeClass('active');
+			$tabBox.filter('[data-tab="' + tab + '"]').addClass('active');
+		}
 		var swiper = new Swiper(".mySwiper", {
 				slidesPerView: 1.5,
 				slidesPerGroup: 1,

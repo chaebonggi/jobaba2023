@@ -1,7 +1,28 @@
 .themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
 .themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
-.banHa { font-family: 'BMHANNA11yrsold','Noto Sans KR' !important; }
-.gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; }
-.fs32 {font-size: 32px;}
-.fs24 {font-size: 24px;}
-.fs12 {font-size: 12px;}
+.banHa { font-family: 'BMHANNA11yrsold','Noto Sans KR' !important; } 
+.gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; } 
+.fs36 { font-size: 36px; } 
+.fs32 { font-size: 32px; } 
+.fs24 { font-size: 24px; } 
+.fs12 { font-size: 12px; } 
+.themaWrap .bc01 { background: url(../resource/images/thema/231120/cont04_list_bg01.png) right bottom #e6e1f9 no-repeat; } 
+.themaWrap .bc02 { background: url(../resource/images/thema/231120/cont04_list_bg02.png) left bottom #ffe9f2 no-repeat; } 
+.themaWrap .bc03 { background: url(../resource/images/thema/231120/cont04_list_bg03.png) right top #ffe6e2 no-repeat; } 
+.themaWrap .bc04 { background: url(../resource/images/thema/231120/cont04_list_bg04.png) left top #d8efff no-repeat; } 
+.themaWrap .bc05 { background: #9f8be8; } 
+.themaWrap .bc06 { background: #f2829d; } 
+.themaWrap .bc07 { background: #ff6464; } 
+.themaWrap .bc08 { background: #50a3df; } 
+.themaWrap .fc01 {
+    color: #8069d2;
+}
+.themaWrap .fc02 {
+    color: #e36886;
+}
+.themaWrap .fc03 {
+    color: #ff6464;
+}
+.themaWrap .fc04 {
+    color: #50a3df;
+}
