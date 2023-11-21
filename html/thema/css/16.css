@@ -211,7 +211,7 @@
 
 .themaWrap .title h2 span::before,
 .themaWrap .title h2 span::after { content: none; } 
-.themaWrap .title h2 { width: 90%; margin-bottom: 30px; padding: 6px 10px 3px; font-size: 32px; } 
+.themaWrap .title h2 { width: 90%; margin-bottom: 30px; padding: 6px 10px 6px; font-size: 32px; } 
 .themaWrap .title p { font-size: 16px; } 
 .themaWrap .cont01 .innerSection { padding: 110px 10px 30px; } 
 .themaWrap .etcWrap { padding: 40px 10px 10px; margin-top: 20px; background: linear-gradient(0deg, #fff 84%, #8fcebd 50%); } 
