@@ -2,9 +2,9 @@
 .eventWrap .event03 * { font-family: 'Noto Sans KR' !important; font-weight: 300; } 
 .eventWrap .gBold { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 700; } 
 .eventWrap .innerSection { max-width: 900px; margin: 0 auto; } 
-.fc01 { color: #ff7400 !important; } 
-.fs24 { font-size: 24px; } 
-.fs16 { font-size: 16px; } 
+.eventWrap .fc01 { color: #ff7400 !important; } 
+.eventWrap .fs24 { font-size: 24px; } 
+.eventWrap .fs16 { font-size: 16px; } 
 
 .eventWrap .eventMain { background: url(../resource/images/eventImg/event09/main_bg.png) top center no-repeat; } 
 .eventWrap .eventMain .innerSection { padding: 56px 0 160px; } 
@@ -16,8 +16,8 @@
 .eventWrap .whiteBox .tit p::after { content: ''; width: 17px; height: 26px; position: absolute; top: -25px; right: 0; background: url(../resource/images/eventImg/event09/ev_icon02.png) no-repeat; } 
 .eventWrap .whiteBox .listStyle01 { display: flex; justify-content: space-between; gap: 0 40px; } 
 .eventWrap .whiteBox .listStyle01 li { width: 100%; } 
-.eventWrap .whiteBox .listStyle01 li p { color: #000; font-size: 24px; text-align: center; }
-.eventWrap .whiteBox .listStyle01 .item { display: flex; background: #ebf3ff; width: 100%; height: 104px; margin-bottom: 15px; position: relative; border: 1px solid #bacde8; border-radius: 30px; align-items: center; justify-content: center; } 
+.eventWrap .whiteBox .listStyle01 li p { color: #000; font-size: 24px; text-align: center; } 
+.eventWrap .whiteBox .listStyle01 .item { display: flex; background: #ebf3ff; max-width: 163px; width: 100%; height: 104px; margin-bottom: 15px; position: relative; border: 1px solid #bacde8; border-radius: 30px; align-items: center; justify-content: center; } 
 .eventWrap .whiteBox .listStyle01 .item span { display: flex; width: 80px; height: 80px; position: absolute; top: -25px; right: -25px; background: url(../resource/images/eventImg/event09/list01_icon05.png) no-repeat; color: #fff; align-items: center; justify-content: center; } 
 
 .eventWrap .whiteBox .listStyle02 li { display: flex; align-items: center; } 
@@ -32,7 +32,7 @@
 .eventWrap .whiteBox .listStyle03 .item span { display: block; margin-bottom: 22px; padding: 4px 22px; background: linear-gradient( 135deg, #26fffd 10%, #6915ff); color: #fff; font-size: 18px; border-radius: 30px; } 
 .eventWrap .whiteBox .listStyle03 p { color: #000; font-size: 24px; text-align: center; } 
 .eventWrap .whiteBox .linkBtn { margin: 40px 0 130px; } 
-.eventWrap .whiteBox .linkBtn a { display: flex; width: 608px; height: 98px; margin: 0 auto; background: #ff3b76; border: 2px solid #000; border-radius: 50px; align-items: center; justify-content: center; } 
+.eventWrap .whiteBox .linkBtn a { display: flex; max-width: 608px; width: 100%; height: 98px; margin: 0 auto; background: #ff3b76; border: 2px solid #000; border-radius: 50px; align-items: center; justify-content: center; } 
 .eventWrap .whiteBox .linkBtn span { margin-bottom: -10px; color: #fff; font-size: 48px; } 
 .eventWrap .whiteBox .tipWrap { padding: 56px 40px; position: relative; background: #f4f4f4; border-radius: 20px; border: 1px solid #bacde8; } 
 .eventWrap .whiteBox .tipWrap::before { content: ''; width: 490px; height: 38px; position: absolute; left: 50%; top: -38px; transform: translateX(-50%); background: #f4f4f4; border-radius: 50px 50px 0 0; border: 1px solid #bacde8; border-bottom: none; } 
@@ -92,11 +92,36 @@
 .eventWrap .event02 li:nth-child(2) a::before { content: ''; width: 133px; height: 102px; position: absolute; left: 50%; top: -74px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon03.png); } 
 
 .eventWrap .event03 { background: #001d4b; } 
-
 .eventWrap .event03 .innerSection { padding: 70px 0; } 
-
 .eventWrap .event03 h3 { margin-bottom: 10px; color: #fff; font-weight: 500; } 
-
 .eventWrap .event03 li::before { content: '\00B7'; position: absolute; left: 0; top: 0; color: #fff; } 
-
 .eventWrap .event03 li { position: relative; padding-left: 15px; margin-bottom: 6px; color: #fff; word-break: keep-all; } 
+
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 860px){
+ .eventWrap .eventMain .innerSection { padding: 56px 10px 160px; } 
+ .eventWrap .eventMain .mainVisual h2 img { transform: scale(0.8); } 
+ .eventWrap .whiteBox .listStyle01 { flex-wrap: wrap; gap: 30px 20px; } 
+ .eventWrap .whiteBox .listStyle01 li { width: calc(100% / 2 - 20px); } 
+ .eventWrap .whiteBox .listStyle01 .item { margin: 0 auto 10px; } 
+
+ .eventWrap .whiteBox .listStyle02 li { align-items: center; flex-direction: column; } 
+ .eventWrap .whiteBox .listStyle02 li span { margin-right: 0; margin-bottom: 10px; } 
+ .eventWrap .whiteBox .listStyle02 li p { text-align: center; } 
+ .eventWrap .whiteBox .listStyle03 { flex-direction: column; align-items: center; } 
+ .eventWrap .whiteBox .listStyle03 li + li::before { content: none; } 
+ .eventWrap .whiteBox .listStyle03 li + li { margin-top: 20px; }
+ 
+ .eventWrap .whiteBox .tipWrap::before {
+    width: 80%;
+ }
+ 
+ }
+
+@media all and (max-width: 640px) {
+.eventWrap .fs24 { font-size: 16px; } 
+.eventWrap .fs16 { font-size: 12px; } 
+}
