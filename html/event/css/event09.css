@@ -16,7 +16,7 @@
 .eventWrap .whiteBox .tit p::after { content: ''; width: 17px; height: 26px; position: absolute; top: -25px; right: 0; background: url(../resource/images/eventImg/event09/ev_icon02.png) no-repeat; } 
 .eventWrap .whiteBox .listStyle01 { display: flex; justify-content: space-between; gap: 0 40px; } 
 .eventWrap .whiteBox .listStyle01 li { width: 100%; } 
-.eventWrap .whiteBox .listStyle01 li p { color: #000; font-size: 24px; text-align: center; } 
+.eventWrap .whiteBox .listStyle01 li p { color: #000; font-size: 24px; text-align: center; text-shadow: 0 0 0 #000;} 
 .eventWrap .whiteBox .listStyle01 .item { display: flex; background: #ebf3ff; max-width: 163px; width: 100%; height: 104px; margin-bottom: 15px; position: relative; border: 1px solid #bacde8; border-radius: 30px; align-items: center; justify-content: center; } 
 .eventWrap .whiteBox .listStyle01 .item span { display: flex; width: 80px; height: 80px; position: absolute; top: -25px; right: -25px; background: url(../resource/images/eventImg/event09/list01_icon05.png) no-repeat; color: #fff; align-items: center; justify-content: center; } 
 
@@ -47,7 +47,7 @@
 .eventWrap .whiteBox.style02 .tipWrap { margin-top: 130px; background: #fff; } 
 .eventWrap .whiteBox.style02 .tipWrap::before { background: #fff; } 
 .eventWrap .whiteBox.style02 .title { margin-bottom: 156px; text-align: center; } 
-.eventWrap .whiteBox.style02 .title p { margin-top: 40px; color: #003483; font-size: 36px; } 
+.eventWrap .whiteBox.style02 .title p { margin-top: 40px; color: #003483; font-size: 36px; text-shadow: 0 0 0 #003483;} 
 .eventWrap .whiteBox .boxItem.icon01 { padding: 90px 25px 54px; } 
 .eventWrap .whiteBox .boxItem { padding: 54px 25px; margin-bottom: 44px; position: relative; background: #fff; border-radius: 20px; border: 1px solid #bacde8; } 
 .eventWrap .whiteBox .boxItem.icon01::before { content: ''; width: 196px; height: 142px; position: absolute; left: 50%; top: -117px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/box_img01.png) no-repeat; background-size: contain; } 
