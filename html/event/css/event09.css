@@ -85,7 +85,7 @@
 .eventWrap .event02 li a { display: block; width: 426px; height: 426px; padding: 40px 0; position: relative; border-radius: 50%; border: 1px solid #000; text-align: center; box-shadow: 0 3px 0 #000; } 
 .eventWrap .event02 li:nth-child(1) a { background: url(../resource/images/eventImg/event09/ev02_img01.png) bottom center #fdfdd4 no-repeat; } 
 .eventWrap .event02 li:nth-child(2) a { background: url(../resource/images/eventImg/event09/ev02_img02.png) bottom center #f5e8ec no-repeat; } 
-.eventWrap .event02 li a span { color: #000000; font-size: 22px; } 
+.eventWrap .event02 li a span { display: block; color: #000000; font-size: 22px; } 
 .eventWrap .event02 li a p { margin-top: 4px; color: #003483; font-size: 48px; } 
 .eventWrap .event02 li a::after { content: ''; width: 57px; height: 57px; position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_arrow.png) no-repeat; } 
 .eventWrap .event02 li:nth-child(1) a::before { content: ''; width: 92px; height: 93px; position: absolute; left: 50%; top: -72px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon02.png) no-repeat; background-size: contain; } 
@@ -101,7 +101,7 @@
 @media all and (max-width: 1024px) { } 
 
 @media all and (max-width: 860px){
-   .eventWrap .eventMain {background-size: cover;}
+ .eventWrap .eventMain { background-size: cover; } 
  .eventWrap .eventMain .innerSection { padding: 56px 10px 60px; } 
  .eventWrap .eventMain .mainVisual h2 img { transform: scale(0.8); } 
  .eventWrap .whiteBox .listStyle01 { flex-wrap: wrap; gap: 30px 20px; } 
@@ -118,7 +118,7 @@
  .eventWrap .whiteBox .tipWrap::before { width: 80%; } 
  .eventWrap .whiteBox .tipTit img { transform: scale(0.8); } 
 
- .eventWrap .event01 {background-size: cover;}
+ .eventWrap .event01 { background-size: cover; } 
  .eventWrap .event01 h3::after { content: none; } 
  .eventWrap .event01 h3 { display: block; margin: 0 0 20px; text-align: center; } 
 .eventWrap .whiteBox .listStyle04 li + li::before { content: none; } 
@@ -151,21 +151,58 @@
  .eventWrap .fs24 { font-size: 16px; } 
 .eventWrap .fs16 { font-size: 12px; } 
 
+.eventWrap .eventMain .innerSection { padding: 30px 10px; } 
+.eventWrap .whiteBox { margin-top: 50px; padding: 0px 15px 40px; border-radius: 30px; } 
+.eventWrap .whiteBox .tit { margin: -20px 0 30px; position: static; transform: none; } 
+.eventWrap .whiteBox .tit p { padding: 9px 0; width: 90%; font-size: 20px; } 
+.eventWrap .whiteBox .listStyle01 { gap: 10px 0; flex-direction: column; align-items: center; } 
+.eventWrap .whiteBox .listStyle01 li { width: 100%; } 
+.eventWrap .whiteBox .listStyle01 .item span { width: 40px; height: 40px; top: -12px; right: -10px; font-size: 10px; background-size: contain; } 
+.eventWrap .whiteBox .listStyle01 li p { font-size: 16px; } 
 
-.eventWrap .event02 ul::before {
-   content: none;
-}
-.eventWrap .event02 ul {
-   flex-direction: column;
-}
-.eventWrap .event02 ul {
-   margin: 0 auto;
-}
-.eventWrap .event02 li a {
-   width: 200px;
-   height: 200px;
-   padding: 30px 0;
-}
+.eventWrap .whiteBox .listStyle02 li span { width: 170px; height: 40px; padding-top: 4px; font-size: 18px; } 
+.eventWrap .whiteBox .listStyle02 li p { font-size: 18px; word-break: keep-all; } 
 
+.eventWrap .whiteBox .listStyle03 .item { width: 170px; height: 170px; margin: 0 auto 10px; } 
+.eventWrap .whiteBox .listStyle03 .item span { margin-bottom: 0; padding: 4px 14px; font-size: 12px; } 
+.eventWrap .whiteBox .listStyle03 .item img { transform: scale(0.6); } 
+.eventWrap .whiteBox .listStyle03 p { font-size: 16px; } 
 
+.eventWrap .whiteBox .linkBtn { margin: 20px 0 50px; } 
+.eventWrap .whiteBox .linkBtn span { margin-bottom: -4px; font-size: 22px; } 
+.eventWrap .whiteBox .linkBtn a { height: auto; padding: 10px 0; border: 1px solid #000; border-radius: 10px; } 
+
+.eventWrap .whiteBox .tipWrap { padding: 0 15px 20px; } 
+.eventWrap .whiteBox .tipWrap::before { content: none; } 
+.eventWrap .whiteBox .tipTit { margin: -36px 0 20px; } 
+.eventWrap .whiteBox .tipWrap li::before { width: 18px; height: 18px; top: 0; } 
+.eventWrap .whiteBox .tipWrap li { padding-left: 24px; font-size: 14px; } 
+.eventWrap .whiteBox .tipWrap li + li { margin-top: 15px; } 
+
+.eventWrap .event01 h3 img { transform: scale(0.8); } 
+.eventWrap .event01 h3::before { width: 100px; height: 16px; top: -20px; background-size: contain; } 
+.eventWrap .whiteBox.style02 { padding: 30px 15px 40px; margin: 0; } 
+.eventWrap .whiteBox.style02 .title { margin-bottom: 90px; } 
+.eventWrap .whiteBox.style02 .title img { transform: scale(0.7); } 
+.eventWrap .whiteBox.style02 .title p { margin-top: 20px; font-size: 22px; } 
+.eventWrap .whiteBox .boxItem.icon01::before { width: 120px; height: 87px; top: -72px; } 
+.eventWrap .whiteBox .listStyle04 p { font-size: 18px; } 
+.eventWrap .whiteBox .boxItem.icon01 { padding: 90px 25px 30px; } 
+.eventWrap .whiteBox .listStyle05 p { font-size: 18px; } 
+
+.eventWrap .event01 .innerSection { padding: 60px 10px 30px; } 
+.eventWrap .whiteBox.style02 .tipWrap { margin-top: 50px; } 
+
+.eventWrap .event02 .innerSection { padding: 30px 10px; } 
+.eventWrap .event02 h3 { margin-bottom: 30px; } 
+.eventWrap .event02 ul::before { content: none; } 
+.eventWrap .event02 ul { flex-direction: column; } 
+.eventWrap .event02 li { margin: 0 auto; } 
+.eventWrap .event02 li + li { margin-top: 30px; } 
+.eventWrap .event02 li a { width: 200px; height: 200px; } 
+.eventWrap .event02 li:nth-child(1) a::before { width: 42px; height: 43px; top: -20px; } 
+.eventWrap .event02 li:nth-child(2) a::before { width: 60px; height: 46px; top: -20px; } 
+.eventWrap .event02 li a span { font-size: 12px; } 
+.eventWrap .event02 li a p { margin-top: 0; font-size: 20px; } 
+.eventWrap .event02 li a::after { width: 25px; height: 25px; bottom: 8px; } 
  }
