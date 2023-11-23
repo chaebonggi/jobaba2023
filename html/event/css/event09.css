@@ -88,8 +88,8 @@
 .eventWrap .event02 li a span { color: #000000; font-size: 22px; } 
 .eventWrap .event02 li a p { margin-top: 4px; color: #003483; font-size: 48px; } 
 .eventWrap .event02 li a::after { content: ''; width: 57px; height: 57px; position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_arrow.png) no-repeat; } 
-.eventWrap .event02 li:nth-child(1) a::before { content: ''; width: 92px; height: 93px; position: absolute; left: 50%; top: -72px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon02.png); background-size: contain; } 
-.eventWrap .event02 li:nth-child(2) a::before { content: ''; width: 133px; height: 102px; position: absolute; left: 50%; top: -74px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon03.png); background-size: contain; } 
+.eventWrap .event02 li:nth-child(1) a::before { content: ''; width: 92px; height: 93px; position: absolute; left: 50%; top: -72px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon02.png) no-repeat; background-size: contain; } 
+.eventWrap .event02 li:nth-child(2) a::before { content: ''; width: 133px; height: 102px; position: absolute; left: 50%; top: -74px; transform: translateX(-50%); background: url(../resource/images/eventImg/event09/ev02_icon03.png) no-repeat; background-size: contain; } 
 
 .eventWrap .event03 { background: #001d4b; } 
 .eventWrap .event03 .innerSection { padding: 70px 0; } 
@@ -150,4 +150,22 @@
 @media all and (max-width: 640px){
  .eventWrap .fs24 { font-size: 16px; } 
 .eventWrap .fs16 { font-size: 12px; } 
+
+
+.eventWrap .event02 ul::before {
+   content: none;
+}
+.eventWrap .event02 ul {
+   flex-direction: column;
+}
+.eventWrap .event02 ul {
+   margin: 0 auto;
+}
+.eventWrap .event02 li a {
+   width: 200px;
+   height: 200px;
+   padding: 30px 0;
+}
+
+
  }
