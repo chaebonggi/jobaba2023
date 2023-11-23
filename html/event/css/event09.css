@@ -36,7 +36,7 @@
 .eventWrap .whiteBox .linkBtn span { margin-bottom: -10px; color: #fff; font-size: 48px; } 
 .eventWrap .whiteBox .tipWrap { padding: 0 40px 56px; position: relative; background: #f4f4f4; border-radius: 20px; border: 1px solid #bacde8; } 
 .eventWrap .whiteBox .tipWrap::before { content: ''; width: 490px; height: 38px; position: absolute; left: 50%; top: -38px; transform: translateX(-50%); background: #f4f4f4; border-radius: 50px 50px 0 0; border: 1px solid #bacde8; border-bottom: none; } 
-.eventWrap .whiteBox .tipTit { margin: -90px 0 56px; position: relative; text-align: center; } 
+.eventWrap .whiteBox .tipTit { margin: -90px 0 40px; position: relative; text-align: center; } 
 .eventWrap .whiteBox .tipWrap li::before { content: ''; display: block; width: 27px; height: 27px; position: absolute; left: 0; top: 2px; background: url(../resource/images/eventImg/event09/tip_check.png) no-repeat; background-size: contain; } 
 .eventWrap .whiteBox .tipWrap li { position: relative; padding-left: 41px; color: #000; font-size: 26px; letter-spacing: -0.5px; } 
 .eventWrap .whiteBox .tipWrap li + li { margin-top: 28px; } 
