@@ -46,13 +46,283 @@
 
 
 	<!-- 꿈날개 추가 css -->
-	<link rel="stylesheet" href="./css/topCompany.css">
+	<link rel='stylesheet' href='//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css'>
+
+	<link rel="stylesheet" href="./css/new_style.css">
 
 	
 </head>
+
 <body>
+<style>
 
+	.inner {
+		width: 1200px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.new_header .h_top { position: relative; background: #efefef; }
+	.new_header .h_top::after {
+		content: '';
+		width: 50%;
+		height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 50%;
+		background: #21add1;
+		z-index: 1;
+	}
+	.new_header .h_top .inner {
+		display: flex;		
+		height: 38px;
+	}
+	.new_header .h_top .h_left {
+		width: calc(100% - 294px);
+		position: relative;
+		background: #efefef;
+		z-index: 2;
+	}
+	.new_header .h_top ul {
+		display: flex;
+		height: 100%;
+		align-items: center;
+	}
+	.new_header .h_top ul li {
+		position: relative;
+		margin-right: 14px;
+    	padding-right: 14px;
+	}
+	.new_header .h_top ul li::before {
+		content: '';
+		display: block;
+		width: 1px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		background: #b4b4b4;
+		transform: translateY(-50%);
+	}
+	.new_header .h_top ul li:last-child::before {
+		content: none;
+	}
+	.new_header .h_top ul li a {
+		display: block;
+		color: #5c5c5c;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	#google_translate_element {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.new_header .h_top .h_right {
+		width: 294px;
+		margin-left: auto;
+		background: #21add1;
+		z-index: 2;
+	}
+	.new_header .h_top .h_right ul {
+		justify-content: flex-end;
+	}
+	.new_header .h_top .h_right ul li::before {
+		background: #fff;
+	}
+	.new_header .h_top .h_right ul li a {
+		color: #fff;
+	}
+	.new_header .h_top .h_right ul li a.util_login {
+		padding: 1px 18px;
+		border: 1px solid #fff;
+		border-radius: 20px;
+	}
+	.new_header .h_top .h_right ul li:first-child:before {
+		content: none;
+	}
+	.new_header .h_top .h_right ul li:first-child,
+	.new_header .h_top .h_right ul li:last-child {
+		margin-right: 0;
+	}
 
+</style>
+<header class="new_header">
+		<div class="h_top">
+			<div class="inner">
+				<div class="h_left">
+					<ul>
+						<li><a href="https://www.gg.go.kr/" target="_blank"><span>경기도</span></a></li>
+						<li><a href="https://www.gjf.or.kr/web/gjf/main" target="_blank"><span>경기도일자리재단</span></a></li>
+						<li><a href="https://www.jobaba.net/main/main.do" target="_blank"><span>잡아바</span></a></li>
+						<li><a href="https://www.dreammaru.or.kr/www/index.do" target="_blank"><span>꿈마루</span></a></li>
+					</ul>
+					<div id="google_translate_element" style="display: inline-block;">
+						<div class="skiptranslate goog-te-gadget" dir="ltr">
+							<div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap; background: #fff;">
+								<img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="width: 19px; height: 19px; vertical-align: middle; margin-left: 2px; margin-right: 2px; background-image: url(https://translate.googleapis.com/translate_static/img/te_ctrl3.gif); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="VIpgJd-ZVi9od-xl07Ob-lTBxed" href="#"><span>언어 선택</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">&ZeroWidthSpace;</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(155, 155, 155);">▼</span></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="h_right">
+					<ul>
+						<li><a href="" target="_blank" class="util_login"><span>로그인</span></a></li>
+						<li><a href="" target="_blank"><span>회원가입</span></a></li>
+						<li><a href="" target="_blank"><span>소속정보등록</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<style>
+			.new_header .gnb_wrap {
+				background: #fff;
+				border-bottom: 1px solid #cccccc;
+			}
+			.new_header .gnb_wrap .inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.new_header .gnb_wrap .gnb {
+				display: flex;
+				height: 86px;
+				margin-left: 24px;
+			}
+			.new_header .gnb_wrap .gnb > li {
+				position: relative;
+			}
+			.new_header .gnb_wrap .gnb > li > a {
+				display: flex;
+				height: 100%;
+				padding: 0 10px;
+				color: #000;
+				font-size: 19px;
+				align-items: center;
+			}
+			.new_header .gnb_wrap .gnb > li > a:hover {
+				font-weight: bold;
+			}
+			.new_header .gnb_wrap .gnb .depth_02 {
+				/* display: none; */
+				padding: 10px 0;
+				width: 200px;
+				position: absolute;
+				top: 76px;
+				left: 50%;
+				background: #fff;
+				transform: translateX(-50%);
+				border: 1px solid #efefef;
+				border-radius: 10px;
+				box-sizing: border-box;
+				text-align: center;
+				z-index: 1000;
+			}
+			.new_header .gnb_wrap .gnb .depth_02::before {
+				content: '';
+				width: 20px;
+				height: 15px;
+				position: absolute;
+				left: 50%;
+				top: -15px;
+				transform: translateX(-50%);
+				background: url(./images/dream/depth_ico.png) no-repeat;
+			}
+			.new_header .gnb_wrap .gnb .depth_02 a {
+				display: block;
+				padding: 6px 0;
+				color: #000;
+				font-size: 16px;
+			}
+			.new_header .gnb_wrap .gnb .depth_02 a:hover {
+				color: #21add1;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+			.new_header .gnb_wrap .all_menu {
+				margin-left: auto;
+			}
+			.new_header .gnb_wrap .all_menu a {
+				display: block;
+				width: 25px;
+				height: 17px;
+				background: url(./images/dream/all_menu_ico.png) no-repeat;
+			}
+			.new_header .gnb_wrap .seach_area {
+				width: 294px;
+				padding-left: 22px;
+			}
+			.new_header .gnb_wrap .seach_area .input_wrap {
+				display: flex;
+				width: 100%;
+				padding: 2px 20px;
+				border: 4px solid #21add1;
+				border-radius: 30px;
+				justify-content: space-between;
+				align-items: center;
+				overflow: hidden;
+			}
+			.new_header .gnb_wrap .seach_area .input_wrap input {
+				width: calc(100% - 30px);
+				font-size: 16px;
+				border: none;
+				outline: none;
+			}
+			.new_header .gnb_wrap .seach_area .input_wrap input::placeholder {
+				color: #21add1;
+			}
+			.new_header .gnb_wrap .seach_area .search_btn {
+				width: 24px;
+				height: 24px;
+				background: url(./images/dream/seach_ico.png) no-repeat center;
+			}
+		</style>
+		<!-- gnb -->
+		<div class="gnb_wrap">
+			<div class="inner">
+				<h1><a href="#none"><img src="./images/dream/logo.png" alt="경기도와 여성가족부가 함께하는 온라인 경력개발센터 꿈날개"></a></h1>
+				<ul class="gnb">
+					<li>
+						<a href=""><span>진단센터</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 진단센터</span></a></li>
+							<li><a href=""><span>진단센터 이용안내</span></a></li>
+							<li><a href=""><span>직업선호도검사</span></a></li>
+							<li><a href=""><span>취업준비도진단</span></a></li>
+							<li><a href=""><span>취업가능성진단</span></a></li>
+							<li><a href=""><span>징업역량진단</span></a></li>
+							<li><a href=""><span>NCS지겁역량진단</span></a></li>
+							<li><a href=""><span>이전직준비도진단</span></a></li>
+							<li><a href=""><span>창업적성검사</span></a></li>
+							<li><a href=""><span>창업력량검사</span></a></li>
+						</ul>
+					</li>
+					<li><a href=""><span>직업교육</span></a></li>
+					<li><a href=""><span>취업상담</span></a></li>
+					<li><a href=""><span>이력서클리닉</span></a></li>
+					<li><a href=""><span>모의면접</span></a></li>
+					<li><a href=""><span>직장적응상담</span></a></li>
+				</ul>
+				<div class="all_menu">
+					<a href="javascript:void(0);"><span class="blind">전체메뉴</span></a>
+				</div>
+				<div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <a href="javascript:void(0);" class="search_btn"><span class="blind">검색</span></a>
+                    </div>
+                </div>
+				
+			</div>
+		</div>
+
+	</div>
+</header>
+<div>
+	<div class="iner">
+		
+	</div>
+</div>
 
 
 <script>
