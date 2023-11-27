@@ -1,7 +1,11 @@
 html * { font-family: 'Nanum Gothic', Sans-Serif; } 
 
 .inner { width: 1200px; margin: 0 auto; position: relative; } 
-
+.inner.b_line {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
 .new_header .h_top { position: relative; background: #efefef; } 
 .new_header .h_top::after { content: ''; width: 50%; height: 100%; position: absolute; top: 0; left: 50%; background: #21add1; z-index: 1; } 
 .new_header .h_top .inner { display: flex; height: 38px; } 

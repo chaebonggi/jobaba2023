@@ -55,7 +55,9 @@
 .topCompany .cont02 h3 { max-width: 800px; } 
 
 .topCompany .cnt_wrap { margin-bottom: 30px; } 
+.topCompany .cnt_wrap .cnt {display: flex;}
 .topCompany .cnt_wrap .cnt p { font-size: 36px; font-weight: 500; } 
+.topCompany .selectWrap {margin-left: auto;}
 .topCompany .cnt_wrap .cnt p span { font-weight: 500; } 
 .topCompany .cnt_wrap .cnt .etc { display: block; margin-top: 4px; font-size: 24px; word-break: keep-all; } 
 .topCompany .cnt_wrap .cnt .etc b { font-weight: 500; } 
@@ -135,7 +137,7 @@
 .topCompany .choiceWrap { display: flex; margin-bottom: 30px; } 
 .topCompany .choiceWrap p { margin: 8px 10px 0 0; font-size: 18px; flex-shrink: 0; } 
 .topCompany .choiceWrap ul { display: flex; flex-wrap: wrap; gap: 10px; } 
-.topCompany .choiceWrap li { padding: 8px 20px; background: #fff; color: #a6a6a6; font-size: 16px; border: 1px solid #d7d7d7; flex-shrink: 0; } 
+.topCompany .choiceWrap li {display: flex; padding: 8px 10px; background: #fff; color: #a6a6a6; font-size: 16px; border: 1px solid #d7d7d7; flex-shrink: 0; align-items: center;} 
 .topCompany .choiceWrap li i { display: inline-block; width: 10px; height: 10px; margin-left: 10px; background: url(../images/topCompany/btn_close.png) no-repeat; cursor: pointer; } 
 
 .topCompany .cont04 .innerSection { padding: 70px 10px 50px; } 
@@ -155,7 +157,7 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
 .topCompany .infoWrap .radio + .radio { margin-top:14px; } 
 .topCompany .infoWrap .radio span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
 .topCompany .infoWrap .radio input[type="checkbox"]+span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
-.topCompany .infoWrap .radio input[type="checkbox"]:checked + span::before { content:"✔"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
+.topCompany .infoWrap .radio input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
 .topCompany .infoWrap .cateWrap { display:flex; border:1px solid #e7e7e7; border-radius: 6px; flex-wrap:wrap; overflow:hidden; } 
 .topCompany .infoWrap .cateWrap > div { flex-grow: 1; } 
 .topCompany .infoWrap .cateWrap .tit { background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0; text-align:center; font-weight:700; } 
@@ -320,7 +322,7 @@ input[type="checkbox"]:checked+label::after { content:"✔"; font-size:12px; lin
 .topCompany .infoWrap .cateWrap > div + div { border-left: none; } 
  
 .topCompany .cont04 .innerSection { padding: 30px 10px; } 
-.topCompany .cnt_wrap .cnt { font-size: 20px; } 
+.topCompany .cnt_wrap .cnt {flex-direction: column; font-size: 20px; } 
 .topCompany .rclist .rclistTit { margin: 20px 0 10px; font-size: 20px; } 
 .topCompany .rclist .item > div:nth-child(1) { padding: 16px 0 32px; margin-bottom: 24px; font-size: 20px; } 
 .topCompany .rclist .item .rctit { font-size: 16px; } 
