@@ -47,6 +47,8 @@
 
 	<!-- 꿈날개 추가 css -->
 	<link rel='stylesheet' href='//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css'>
+	<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<link rel="stylesheet" href="./css/new_style.css">
 
@@ -54,99 +56,6 @@
 </head>
 
 <body>
-<style>
-
-	.inner {
-		width: 1200px;
-		margin: 0 auto;
-		position: relative;
-	}
-	.new_header .h_top { position: relative; background: #efefef; }
-	.new_header .h_top::after {
-		content: '';
-		width: 50%;
-		height: 100%;
-    	position: absolute;
-    	top: 0;
-    	left: 50%;
-		background: #21add1;
-		z-index: 1;
-	}
-	.new_header .h_top .inner {
-		display: flex;		
-		height: 38px;
-	}
-	.new_header .h_top .h_left {
-		width: calc(100% - 294px);
-		position: relative;
-		background: #efefef;
-		z-index: 2;
-	}
-	.new_header .h_top ul {
-		display: flex;
-		height: 100%;
-		align-items: center;
-	}
-	.new_header .h_top ul li {
-		position: relative;
-		margin-right: 14px;
-    	padding-right: 14px;
-	}
-	.new_header .h_top ul li::before {
-		content: '';
-		display: block;
-		width: 1px;
-		height: 10px;
-		position: absolute;
-		top: 50%;
-		right: 0;
-		background: #b4b4b4;
-		transform: translateY(-50%);
-	}
-	.new_header .h_top ul li:last-child::before {
-		content: none;
-	}
-	.new_header .h_top ul li a {
-		display: block;
-		color: #5c5c5c;
-		font-size: 15px;
-		font-weight: 700;
-	}
-	#google_translate_element {
-		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	.new_header .h_top .h_right {
-		width: 294px;
-		margin-left: auto;
-		background: #21add1;
-		z-index: 2;
-	}
-	.new_header .h_top .h_right ul {
-		justify-content: flex-end;
-	}
-	.new_header .h_top .h_right ul li::before {
-		background: #fff;
-	}
-	.new_header .h_top .h_right ul li a {
-		color: #fff;
-	}
-	.new_header .h_top .h_right ul li a.util_login {
-		padding: 1px 18px;
-		border: 1px solid #fff;
-		border-radius: 20px;
-	}
-	.new_header .h_top .h_right ul li:first-child:before {
-		content: none;
-	}
-	.new_header .h_top .h_right ul li:first-child,
-	.new_header .h_top .h_right ul li:last-child {
-		margin-right: 0;
-	}
-
-</style>
 <header class="new_header">
 		<div class="h_top">
 			<div class="inner">
@@ -174,109 +83,6 @@
 				</div>
 			</div>
 		</div>
-		<style>
-			.new_header .gnb_wrap {
-				background: #fff;
-				border-bottom: 1px solid #cccccc;
-			}
-			.new_header .gnb_wrap .inner {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-			}
-			.new_header .gnb_wrap .gnb {
-				display: flex;
-				height: 86px;
-				margin-left: 24px;
-			}
-			.new_header .gnb_wrap .gnb > li {
-				position: relative;
-			}
-			.new_header .gnb_wrap .gnb > li > a {
-				display: flex;
-				height: 100%;
-				padding: 0 10px;
-				color: #000;
-				font-size: 19px;
-				align-items: center;
-			}
-			.new_header .gnb_wrap .gnb > li > a:hover {
-				font-weight: bold;
-			}
-			.new_header .gnb_wrap .gnb .depth_02 {
-				/* display: none; */
-				padding: 10px 0;
-				width: 200px;
-				position: absolute;
-				top: 76px;
-				left: 50%;
-				background: #fff;
-				transform: translateX(-50%);
-				border: 1px solid #efefef;
-				border-radius: 10px;
-				box-sizing: border-box;
-				text-align: center;
-				z-index: 1000;
-			}
-			.new_header .gnb_wrap .gnb .depth_02::before {
-				content: '';
-				width: 20px;
-				height: 15px;
-				position: absolute;
-				left: 50%;
-				top: -15px;
-				transform: translateX(-50%);
-				background: url(./images/dream/depth_ico.png) no-repeat;
-			}
-			.new_header .gnb_wrap .gnb .depth_02 a {
-				display: block;
-				padding: 6px 0;
-				color: #000;
-				font-size: 16px;
-			}
-			.new_header .gnb_wrap .gnb .depth_02 a:hover {
-				color: #21add1;
-				font-weight: 700;
-				text-decoration: underline;
-			}
-			.new_header .gnb_wrap .all_menu {
-				margin-left: auto;
-			}
-			.new_header .gnb_wrap .all_menu a {
-				display: block;
-				width: 25px;
-				height: 17px;
-				background: url(./images/dream/all_menu_ico.png) no-repeat;
-			}
-			.new_header .gnb_wrap .seach_area {
-				width: 294px;
-				padding-left: 22px;
-			}
-			.new_header .gnb_wrap .seach_area .input_wrap {
-				display: flex;
-				width: 100%;
-				padding: 2px 20px;
-				border: 4px solid #21add1;
-				border-radius: 30px;
-				justify-content: space-between;
-				align-items: center;
-				overflow: hidden;
-			}
-			.new_header .gnb_wrap .seach_area .input_wrap input {
-				width: calc(100% - 30px);
-				font-size: 16px;
-				border: none;
-				outline: none;
-			}
-			.new_header .gnb_wrap .seach_area .input_wrap input::placeholder {
-				color: #21add1;
-			}
-			.new_header .gnb_wrap .seach_area .search_btn {
-				width: 24px;
-				height: 24px;
-				background: url(./images/dream/seach_ico.png) no-repeat center;
-			}
-		</style>
 		<!-- gnb -->
 		<div class="gnb_wrap">
 			<div class="inner">
@@ -297,11 +103,59 @@
 							<li><a href=""><span>창업력량검사</span></a></li>
 						</ul>
 					</li>
-					<li><a href=""><span>직업교육</span></a></li>
-					<li><a href=""><span>취업상담</span></a></li>
-					<li><a href=""><span>이력서클리닉</span></a></li>
-					<li><a href=""><span>모의면접</span></a></li>
-					<li><a href=""><span>직장적응상담</span></a></li>
+					<li>
+						<a href=""><span>직업교육</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 강의실</span></a></li>
+							<li><a href=""><span>온라인과정</span></a></li>
+							<li><a href=""><span>오프라인과정</span></a></li>
+							<li><a href=""><span>열린과정</span></a></li>
+							<li><a href=""><span>테마과정</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>취업상담</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 취업상담</span></a></li>
+							<li><a href=""><span>취업상담 이용안내</span></a></li>
+							<li><a href=""><span>취업상담 신청</span></a></li>
+							<li><a href=""><span>취업상담 후기</span></a></li>
+							<li><a href=""><span>취업정보 및<br> 지원정책</span></a></li>
+							<li><a href=""><span>단기일자리정보</span></a></li>
+							<li><a href=""><span>기간제 채용관</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>이력서클리닉</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 이력서클리닉</span></a></li>
+							<li><a href=""><span>이력서클리닉<br> 이용안내</span></a></li>
+							<li><a href=""><span>이력서클리닉 신청</span></a></li>
+							<li><a href=""><span>공개이력서</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>모의면접</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 모의면접</span></a></li>
+							<li><a href=""><span>모의면접 이용안내</span></a></li>
+							<li><a href=""><span>화상면접 신청</span></a></li>
+							<li><a href=""><span>셀프면접(피드백)</span></a></li>
+							<li><a href=""><span>A.I 모의면접(피드백)</span></a></li>
+							<li><a href=""><span>면접 Skill Up</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>직장적응상담</span></a>
+						<ul class="depth_02">
+							<li><a href=""><span>나의 직장정응상담</span></a></li>
+							<li><a href=""><span>직장적응상담<br> 이용안내</span></a></li>
+							<li><a href=""><span>직장적응상담 신청</span></a></li>
+							<li><a href=""><span>직장적응상담 후기</span></a></li>
+							<li><a href=""><span>직장생활노하우</span></a></li>
+							<li><a href=""><span>직장멘토링</span></a></li>
+						</ul>
+					</li>
 				</ul>
 				<div class="all_menu">
 					<a href="javascript:void(0);"><span class="blind">전체메뉴</span></a>
@@ -318,14 +172,157 @@
 
 	</div>
 </header>
-<div>
-	<div class="iner">
-		
+<div class="main_contents">
+	<div class="inner">
+		<div class="visual_wrap">
+			<!-- 메인 컨텐츠 -->
+			<div class="main_visual">
+				<div class="swiper-container visual">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="">
+								<div class="img">
+									<img src="./images/dream/main_slide01.png" alt="꿈날개 우수코칭사례" class="pc">
+									<!-- <img src="https://www.dream.go.kr/upload/aImg/2023/11/24/9d4015cc-449e-4bec-8847-2c6b873503f8.png" alt="" class="mo"> -->
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<div class="img">
+									<img src="./images/dream/main_slide01.png" alt="꿈날개 우수코칭사례" class="pc">
+									<!-- <img src="https://www.dream.go.kr/upload/aImg/2023/11/24/9d4015cc-449e-4bec-8847-2c6b873503f8.png" alt="" class="mo"> -->
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- 공지사항 -->
+				<div class="main_notice">
+					<div class="notice_wrap">
+						<strong class="txt">공지사항</strong>
+						<div class="swiper-container notice_slide">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<a href="#" target="_blank" title="공지사항(새창열림)">LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)
+										LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)
+									</a>
+									<span class="notice_data">2023.11.03</span>
+								</li>
+								<li class="swiper-slide">
+									<a href="#" target="_blank" title="공지사항(새창열림)">LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)</a>
+									<span class="notice_data">2023.11.03</span>
+								</li>
+								<li class="swiper-slide">
+									<a href="#" target="_blank" title="공지사항(새창열림)">LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)</a>
+									<span class="notice_data">2023.11.03</span>
+								</li>
+								<li class="swiper-slide">
+									<a href="#" target="_blank" title="공지사항(새창열림)">LGU 휴대폰본인확인(SMS, LMS) 서비스 일시 중단 안내(11/22)</a>
+									<span class="notice_data">2023.11.03</span>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-button-prev"><span class="blind">공지사항 이전 공지</span></div>
+						<div class="swiper-button-next"><span class="blind">공지사항 다음 공지</span></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right_box">
+				<!-- 로그인 -->
+				<div class="main_login">
+					<div class="login_wrap">
+						<div class="t_login">
+							<p class="txt">로그인</p>
+							<div class="sns">
+								<a href="" target="_blank" title="페이스북 로그인 바로가기" class="btn_facebook"><span class="blind">페이스북 바로가기</span></a>
+								<a href="" target="_blank" title="네이버 로그인 바로가기" class="btn_naver"><span class="blind">네이버 바로가기</span></a>
+							</div>
+							<div class="check_area">
+								<input type="checkbox" id="saveId" title="아이디저장">
+								<label for="saveId">아이디 저장</label>
+							</div>
+						</div>
+						<div class="m_login">
+							<input type="text" id="loginId" name="loginId" placeholder="아이디" title="아이디" maxlength="15" autocomplete="off">
+							<input type="password" id="loginPwd" name="loginPwd"  placeholder="비밀번호" title="비밀번호입력" maxlength="50" autocomplete="off">
+							<input type="submit" value="로그인" title="로그인" class="btn_login">
+						</div>
+						<div class="b_login">
+							<ul>
+								<li><a href="/dreamfront/member/dreamMemberJoin.do?groupSeq=1"><span>회원가입</span></a></li>
+								<li><a href="http://www.dream.go.kr:/dreamfront/member/dreamMemberIdSearch.do?groupSeq=1"><span>아이디찾기</span></a></li>
+								<li><a href="http://www.dream.go.kr:/dreamfront/member/dreamMemberPwSearch.do?groupSeq=1"><span>비밀번호찾기</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="service_list">
+					<ul>
+						<li>
+							<a href="" target="_blank" class="icon01">
+								<span>학생진로교육</span>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank" class="icon02">
+								<span>학부모진로코치</span>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank" class="icon03">
+								<span>창업날개</span>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank" class="icon04">
+								<span>온라인플러스</span>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank" class="icon05">
+								<span>테마과정</span>
+							</a>
+						</li>
+						<li>
+							<a href="" target="_blank" class="icon06">
+								<span>단기일자리</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
+
 </div>
 
 
 <script>
+var visualSwiper = new Swiper(".visual", {
+	loop: true,                         
+	pagination: {                      
+		el: '.swiper-pagination',
+	},
+});
+
+var noticeSwiper = new Swiper(".notice_slide", {
+	slidesPerView: 1,
+	loop:true,
+	navigation: {
+		nextEl: ".notice_wrap .swiper-button-next",
+		prevEl: ".notice_wrap .swiper-button-prev",
+	},
+//   autoplay:{
+//       delay: 5000,
+//       disableOnInteraction: false,
+//   },
+});
 
 
 
