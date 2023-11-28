@@ -158,47 +158,7 @@
 				</li>
 			</ul>
 			<style>
-			.gnb_wrap .pc_btn {
-				position: relative;
-				width: 26px;
-				height: 16px;
-				cursor: pointer;
-			}
-			.gnb_wrap .pc_btn.mobile_menu {
-				display: none;
-			}
-			.gnb_wrap .pc_btn span {
-				position: absolute;
-				width: 26px;
-				height: 4px;
-				display: block;
-				background-color: #000;
-				transition: all 0.2s ease-in;
-			}
-			.gnb_wrap .pc_btn span:first-child {
-				top: 0;
-			}
-
-			.gnb_wrap .pc_btn span:nth-child(2) {
-				top: 50%;
-			}
-
-			.gnb_wrap .pc_btn span:last-child {
-				top: 100%;
-			}
-			.gnb_wrap .pc_btn.active span:first-child {
-				top: 50%;
-				transform: rotate(45deg);
-			}
-
-			.gnb_wrap .pc_btn.active span:nth-child(2) {
-				display: none;
-			}
-
-			.gnb_wrap .pc_btn.active span:last-child {
-				top: 50%;
-				transform: rotate(-45deg);
-			}
+			
 			</style>
 			<div class="all_menu">
 				<div class="pc_btn" onclick="allMenu();">
@@ -216,10 +176,84 @@
 					<input type="text" placeholder="검색어를 입력해 주세요.">
 					<a href="javascript:void(0);" class="search_btn"><span class="blind">검색</span></a>
 				</div>
+			</div>			
+		</div>
+
+		<div class="h_all_menu">
+			<div class="h_menu_list">
+				<div class="depth_01 double">
+					<a href="#" class="depth_tit"><span class="menu_tit">진단센터</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 진단센터</span></a></li>
+						<li><a href="#"><span>진단센터 이용안내</span></a></li>
+						<li><a href="#"><span>직업선호도 검사</span></a></li>
+						<li><a href="#"><span>취업준비도진단</span></a></li>
+						<li><a href="#"><span>취업가능성진단</span></a></li>
+						<li><a href="#"><span>직업역량진단</span></a></li>
+						<li><a href="#"><span>NCS직업역량진단</span></a></li>
+						<li><a href="#"><span>이전직준비도진단</span></a></li>
+						<li><a href="#"><span>직장적응진단</span></a></li>
+						<li><a href="#"><span>창업적성검사</span></a></li>
+						<li><a href="#"><span>창업역량진단</span></a></li>
+					</ul>
+				</div>
+				<div class="depth_01">
+					<a href="#" class="depth_tit"><span class="menu_tit">직업교육</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 강의식</span></a></li>
+						<li><a href="#"><span>온라인과정</span></a></li>
+						<li><a href="#"><span>오프라인과정</span></a></li>
+						<li><a href="#"><span>열린과정</span></a></li>
+						<li><a href="#"><span>테마과정</span></a></li>
+					</ul>
+				</div>
+				<div class="depth_01">
+					<a href="#" class="depth_tit"><span class="menu_tit">취업상담</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 취업상담</span></a></li>
+						<li><a href="#"><span>취업상담 이용안내</span></a></li>
+						<li><a href="#"><span>취업상담 신청</span></a></li>
+						<li><a href="#"><span>취업상담 후기</span></a></li>
+						<li><a href="#"><span>취업정보 및<br> 지원정책</span></a></li>
+						<li><a href="#"><span>단기일자리정보</span></a></li>
+						<li><a href="#"><span>기간제 채용관</span></a></li>
+					</ul>
+				</div>
+				<div class="depth_01">
+					<a href="#" class="depth_tit"><span class="menu_tit">이력서클리닉</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 이력서클리닉</span></a></li>
+						<li><a href="#"><span>이력서클리닉<br> 이용안내</span></a></li>
+						<li><a href="#"><span>이력서클리닉 신청</span></a></li>
+					</ul>
+				</div>
+				<div class="depth_01">
+					<a href="#" class="depth_tit"><span class="menu_tit">모의면접</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 모의면접</span></a></li>
+						<li><a href="#"><span>모의면접 이용안내</span></a></li>
+						<li><a href="#"><span>화상면접 신청</span></a></li>
+						<li><a href="#"><span>셀프면접(피드백)</span></a></li>
+						<li><a href="#"><span>A.I 모의면접(피드백)</span></a></li>
+						<li><a href="#"><span>면접 Skill Up</span></a></li>
+					</ul>
+				</div>
+				<div class="depth_01">
+					<a href="#" class="depth_tit"><span class="menu_tit">직장적응상담</span></a>
+					<ul class="depth_02">
+						<li><a href="#"><span>나의 직장적응상담</span></a></li>
+						<li><a href="#"><span>직장적응상담<br> 이용안내</span></a></li>
+						<li><a href="#"><span>직장적응상담 신청</span></a></li>
+						<li><a href="#"><span>직장적응상담 후기</span></a></li>
+						<li><a href="#"><span>직장생활노하우</span></a></li>
+						<li><a href="#"><span>직장멘토링</span></a></li>
+					</ul>
+				</div>
 			</div>
-			
 		</div>
 	</div>
+	
+	
 	<!-- 모바일 메뉴 -->
 	<div class="overlay"></div>
 	<div class="h_mobile">
@@ -446,6 +480,43 @@
 							</ul>
 						</div>
 					</div>
+
+					<!-- 로그인 후 (소속정보 미등록) -->
+					<!-- <div class="login_wrap on">
+						<div class="logout_wrap">
+							<p><span>채봉기</span>님</p>
+							<a href="#" class="btn_mypay"><span>마이페이지</span></a>
+							<a href="#" class="btn_logout">로그아웃</a>
+						</div>
+						<div class="etc_wrap">
+							<div class="link_box">
+								<p>소속정보등록 안내</p>
+								<a href="#" target="_blank"><span>소속정보 등록하러 가기</span></a>
+							</div>							
+							<p class="txt">꿈날개와 협약된 외부기관 및 사업참여자는<br>
+							<span>반드시 소속정보를 입력</span>해 주셔야 합니다.</p>
+						</div>
+					</div> -->
+
+					<!-- 로그인 후 (소속정보 등록) -->
+					<!-- <div class="login_wrap on">
+						<div class="logout_wrap">
+							<p><span>채봉기</span>님</p>
+							<a href="#" class="btn_mypay"><span>마이페이지</span></a>
+							<a href="#" class="btn_logout">로그아웃</a>
+						</div>
+						<div class="etc_wrap">
+							<div class="link_box">
+								<p>나의 소속정보</p>
+								<a href="#" target="_blank"><span>소속정보변경</span></a>
+							</div>
+							<ul>
+								<li><p>구분 : <span>기타</span></p></li>
+								<li><p>대분류 : <span>2023년 기타</span></p></li>
+								<li><p>소분류 : <span>기타</span></p></li>
+							</ul>
+						</div>
+					</div> -->
 				</div>
 				
 				<div class="service_list">
@@ -1117,7 +1188,7 @@ function slider() {
 
 // 전체 메뉴 버트
 function allMenu() {
-	$('.h_gnb_bg').stop().slideToggle(300);
+	$('.new_header .h_all_menu').stop().slideToggle(300);
 	$('.pc_btn').toggleClass('active');
 }
 // 모바일 메뉴 버튼
