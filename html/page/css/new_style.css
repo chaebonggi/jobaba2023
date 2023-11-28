@@ -326,6 +326,7 @@ html * {font-family: 'KoPubWorldDotum'; }
 .edu_wrap .edu_tit .edu_btn li a { font-size: 12px; } 
 .edu_wrap .edu_cont .edu_txt { padding: 4px 10px; text-align: center; } 
 .edu_wrap .edu_cont .edu_txt p { font-size: 12px; } 
+.edu_wrap .edu_cont .edu_img {height: auto;}
 
 .edu_wrap .edu_tit { flex-direction: column; } 
 .edu_wrap .edu_tit h2 { margin-bottom: 20px; } 
