@@ -90,6 +90,8 @@
 .themaWrap .cont01 .tabList li:nth-child(2) a::before { width: 60px; height: 88px; left: 52px; background: url(../resource/images/thema/231129/tab_list02.png) no-repeat; } 
 .themaWrap .cont01 .tabList li:nth-child(3) a::before { width: 96px; height: 91px; left: 26px; background: url(../resource/images/thema/231129/tab_list03.png) no-repeat; } 
 .themaWrap .cont01 .tabList li a span { display: block; margin-bottom: -9px; line-height: 1; } 
+.themaWrap .cont01 .tabBox {display: none;}
+.themaWrap .cont01 .tabBox.active {display: block;}
 .themaWrap .cont01 .tabCont { display: flex; margin-top: 48px; flex-wrap: wrap; justify-content: space-between; gap: 40px; } 
 .themaWrap .cont01 .tabCont > div { width: calc(100% / 2 - 20px); height: 540px; } 
 .themaWrap .cont01 .tabCont .tabTit { display: flex; padding: 60px 0 40px 30px; background: #4f99b8; flex-direction: column; justify-content: center; border-radius: 10px 150px 10px 10px; } 
