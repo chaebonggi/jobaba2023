@@ -1,0 +1,50 @@
+.themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
+.themaWrap .innerSection { max-width: 900px; margin: 0 auto; } 
+.gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; } 
+.themaWrap .fc01 { color: #000; } 
+.themaWrap .fc02 { color: #ff8400; } 
+
+.themaWrap .cont01 .slideList { display: flex; padding: 34px 40px; border: 10px solid #e8e8e8; border-radius: 20px; flex-wrap: wrap; justify-content: space-between; gap: 20px 16px; } 
+.themaWrap .cont01 .slideList li { width: calc(100% / 5 - 16px); } 
+.themaWrap .cont01 .slideList li a { display: flex; width: 148px; height: 96px; padding-top: 4px; margin: 0 auto; position: relative; background: #989898; color: #fff; font-size: 24px; border-radius: 20px; align-items: center; justify-content: center; text-align: center; } 
+.themaWrap .cont01 .slideList li.active a { background: #00a3af; border: 2px solid #003281; } 
+.themaWrap .cont01 .slideList li.active a::before { content: ''; width: 39px; height: 34px; position: absolute; left: 50%; top: -17px; transform: translateX(-50%); background: url(../resource/images/thema/231204/list_icon.png) no-repeat; } 
+.themaWrap .tabCont { position: relative; overflow: hidden; } 
+.themaWrap .tabItem { padding: 50px 75px 40px; background: #f3f3f3; text-align: center; } 
+.themaWrap .tabItem .tit { color: #00a3af; font-size: 64px; } 
+.themaWrap .tabItem .tagList { margin: 10px 0 20px; color: #777777; font-size: 22px; } 
+.themaWrap .tabItem .tagList span:not(:first-child) { display: inline-block; margin-left: 20px; } 
+.themaWrap .tabItem .tabBox { border-radius: 20px; border: 3px solid #00a3af; background: #00a3af; overflow: hidden;} 
+.themaWrap .tabItem .tabBox .tabTit { width: 100%; padding: 20px 0 16px; background: #00a3af; } 
+.themaWrap .tabItem .tabBox .tabTit p { color: #fff; font-size: 42px; } 
+.themaWrap .tabItem .tabBox .tabTit p span {font-size: 36px;}
+.themaWrap .tabItem .tabBox.bg01 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg01.png); background-position: bottom 30px right 20px; } 
+.themaWrap .tabItem .tabBox.bg02 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg02.png); background-position: bottom 30px right 20px; }
+.themaWrap .tabItem .tabBox.bg03 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg03.png); background-position: bottom 30px right 10px; }
+.themaWrap .tabItem .tabBox.bg04 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg04.png); background-position: bottom 30px right 10px; }
+.themaWrap .tabItem .tabBox.bg05 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg05.png); background-position: bottom 30px right 20px; }
+.themaWrap .tabItem .tabBox .tabTxt {min-height: 270px; padding: 34px 35px 0; background-repeat: no-repeat; background-color: #fff; } 
+.themaWrap .tabItem .tabBox .tabTxt p { font-size: 20px; text-align: left; line-height: 1.5; letter-spacing: -0.5px; } 
+.themaWrap .tabItem .tabList { display: flex; margin: 30px auto 0; justify-content: center; } 
+.themaWrap .tabItem .tabList li {width: calc(100% / 3);}
+.themaWrap .tabItem .tabList li::before { content: ''; display: block; width: 154px; height: 154px; margin: 0 auto 14px; background-color: #fff; background-repeat: no-repeat; border: 3px solid #00a3af; border-radius: 50%; } 
+.themaWrap .tabItem .tabList.icon01 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon01.png); background-position: top right -20px; } 
+.themaWrap .tabItem .tabList.icon01 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon02.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon01 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon02 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon02 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon02.png); background-position: top 20px center; } 
+.themaWrap .tabItem .tabList.icon02 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon03 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list03_icon01.png); background-position: bottom -10px center; } 
+.themaWrap .tabItem .tabList.icon03 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list03_icon02.png); background-position: top 20px center; } 
+.themaWrap .tabItem .tabList.icon04 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon04 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon02.png); background-position: bottom center; } 
+.themaWrap .tabItem .tabList.icon04 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon05 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon05 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon02.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon05 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon03.png); background-position: bottom 10px center}
+.themaWrap .tabItem .tabList li p { font-size: 26px; } 
+.themaWrap .tabItem .tabList li p span {font-size: 20px;}
+.themaWrap .tabCont .control { width: 100%; position: absolute; top: calc(50% - 100px); transform: translateY(-50%); z-index: 10; } 
+.themaWrap .tabCont .control span { display: block; width: 39px; height: 86px; position: absolute; cursor: pointer;} 
+.themaWrap .tabCont .control .btn_prev { left: 16px; background: url(../resource/images/thema/231204/prev_icon.png) no-repeat; background-size: contain; }
+.themaWrap .tabCont .control .btn_next { right: 16px; background: url(../resource/images/thema/231204/next_icon.png) no-repeat; background-size: contain; }
