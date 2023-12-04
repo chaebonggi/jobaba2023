@@ -3,48 +3,92 @@
 .gBold { font-family: 'GmarketSans','Noto Sans KR'; font-weight: 700; } 
 .themaWrap .fc01 { color: #000; } 
 .themaWrap .fc02 { color: #ff8400; } 
+.themaWrap .fc03 { color: #13a89e; } 
+.themaWrap .fc04 { color: #df504c; } 
 
-.themaWrap .cont01 .slideList { display: flex; padding: 34px 40px; border: 10px solid #e8e8e8; border-radius: 20px; flex-wrap: wrap; justify-content: space-between; gap: 20px 16px; } 
+.themaWrap .mainVisual { background: url(../resource/images/thema/231204/main_bg.png) top center no-repeat; } 
+.themaWrap .mainVisual .innerSection { padding: 36px 0 24px; } 
+.themaWrap .mainVisual h2 { padding-left: 75px; margin-bottom: 30px; position: relative; } 
+.themaWrap .mainVisual h2::after { content: ''; width: 322px; height: 654px; position: absolute; top: 0; right: 40px; background: url(../resource/images/thema/231204/main_img01.png) no-repeat; } 
+.themaWrap .mainVisual .txtWrap { position: relative; text-align: center; } 
+.themaWrap .cont01 .innerSection { padding: 76px 0; } 
+.themaWrap .cont01 .slideList { display: flex; padding: 34px 40px; margin-bottom: 40px; border: 10px solid #e8e8e8; border-radius: 20px; flex-wrap: wrap; justify-content: space-between; gap: 20px 16px; } 
 .themaWrap .cont01 .slideList li { width: calc(100% / 5 - 16px); } 
 .themaWrap .cont01 .slideList li a { display: flex; width: 148px; height: 96px; padding-top: 4px; margin: 0 auto; position: relative; background: #989898; color: #fff; font-size: 24px; border-radius: 20px; align-items: center; justify-content: center; text-align: center; } 
 .themaWrap .cont01 .slideList li.active a { background: #00a3af; border: 2px solid #003281; } 
 .themaWrap .cont01 .slideList li.active a::before { content: ''; width: 39px; height: 34px; position: absolute; left: 50%; top: -17px; transform: translateX(-50%); background: url(../resource/images/thema/231204/list_icon.png) no-repeat; } 
 .themaWrap .tabCont { position: relative; overflow: hidden; } 
-.themaWrap .tabItem { padding: 50px 75px 40px; background: #f3f3f3; text-align: center; } 
+.themaWrap .tabItem { padding: 50px 75px 40px; background: #f3f3f3; text-align: center; border-radius: 50px; } 
 .themaWrap .tabItem .tit { color: #00a3af; font-size: 64px; } 
 .themaWrap .tabItem .tagList { margin: 10px 0 20px; color: #777777; font-size: 22px; } 
 .themaWrap .tabItem .tagList span:not(:first-child) { display: inline-block; margin-left: 20px; } 
-.themaWrap .tabItem .tabBox { border-radius: 20px; border: 3px solid #00a3af; background: #00a3af; overflow: hidden;} 
+.themaWrap .tabItem .tabBox { border-radius: 20px; border: 3px solid #00a3af; background: #00a3af; overflow: hidden; } 
 .themaWrap .tabItem .tabBox .tabTit { width: 100%; padding: 20px 0 16px; background: #00a3af; } 
-.themaWrap .tabItem .tabBox .tabTit p { color: #fff; font-size: 42px; } 
-.themaWrap .tabItem .tabBox .tabTit p span {font-size: 36px;}
+.themaWrap .tabItem .tabBox .tabTit p { color: #fff; font-size: 42px; letter-spacing: -1px; } 
+.themaWrap .tabItem .tabBox .tabTit p span { font-size: 36px; } 
 .themaWrap .tabItem .tabBox.bg01 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg01.png); background-position: bottom 30px right 20px; } 
-.themaWrap .tabItem .tabBox.bg02 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg02.png); background-position: bottom 30px right 20px; }
-.themaWrap .tabItem .tabBox.bg03 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg03.png); background-position: bottom 30px right 10px; }
-.themaWrap .tabItem .tabBox.bg04 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg04.png); background-position: bottom 30px right 10px; }
-.themaWrap .tabItem .tabBox.bg05 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg05.png); background-position: bottom 30px right 20px; }
-.themaWrap .tabItem .tabBox .tabTxt {min-height: 270px; padding: 34px 35px 0; background-repeat: no-repeat; background-color: #fff; } 
+.themaWrap .tabItem .tabBox.bg02 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg02.png); background-position: bottom 30px right 20px; } 
+.themaWrap .tabItem .tabBox.bg03 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg03.png); background-position: bottom 30px right 10px; } 
+.themaWrap .tabItem .tabBox.bg04 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg04.png); background-position: bottom 30px right 10px; } 
+.themaWrap .tabItem .tabBox.bg05 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg05.png); background-position: bottom 30px right 20px; } 
+.themaWrap .tabItem .tabBox.bg06 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg06.png); background-position: bottom 30px right 20px; } 
+.themaWrap .tabItem .tabBox.bg07 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg07.png); background-position: bottom 20px right 10px; } 
+.themaWrap .tabItem .tabBox.bg08 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg08.png); background-position: bottom 20px right -1px; } 
+.themaWrap .tabItem .tabBox.bg09 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg09.png); background-position: bottom right 10px; } 
+.themaWrap .tabItem .tabBox.bg10 .tabTxt { background-image: url(../resource/images/thema/231204/tab_bg10.png); background-position: bottom right 20px; } 
+.themaWrap .tabItem .tabBox .tabTxt { min-height: 270px; padding: 34px 35px 0; background-repeat: no-repeat; background-color: #fff; } 
 .themaWrap .tabItem .tabBox .tabTxt p { font-size: 20px; text-align: left; line-height: 1.5; letter-spacing: -0.5px; } 
 .themaWrap .tabItem .tabList { display: flex; margin: 30px auto 0; justify-content: center; } 
-.themaWrap .tabItem .tabList li {width: calc(100% / 3);}
+.themaWrap .tabItem .tabList li { width: calc(100% / 3); } 
 .themaWrap .tabItem .tabList li::before { content: ''; display: block; width: 154px; height: 154px; margin: 0 auto 14px; background-color: #fff; background-repeat: no-repeat; border: 3px solid #00a3af; border-radius: 50%; } 
 .themaWrap .tabItem .tabList.icon01 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon01.png); background-position: top right -20px; } 
 .themaWrap .tabItem .tabList.icon01 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon02.png); background-position: center; } 
-.themaWrap .tabItem .tabList.icon01 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon01 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list01_icon03.png); background-position: center } 
 .themaWrap .tabItem .tabList.icon02 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon01.png); background-position: center; } 
 .themaWrap .tabItem .tabList.icon02 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon02.png); background-position: top 20px center; } 
-.themaWrap .tabItem .tabList.icon02 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon02 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list02_icon03.png); background-position: center } 
 .themaWrap .tabItem .tabList.icon03 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list03_icon01.png); background-position: bottom -10px center; } 
 .themaWrap .tabItem .tabList.icon03 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list03_icon02.png); background-position: top 20px center; } 
 .themaWrap .tabItem .tabList.icon04 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon01.png); background-position: center; } 
 .themaWrap .tabItem .tabList.icon04 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon02.png); background-position: bottom center; } 
-.themaWrap .tabItem .tabList.icon04 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon03.png); background-position: center}
+.themaWrap .tabItem .tabList.icon04 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list04_icon03.png); background-position: center } 
 .themaWrap .tabItem .tabList.icon05 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon01.png); background-position: center; } 
 .themaWrap .tabItem .tabList.icon05 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon02.png); background-position: center; } 
-.themaWrap .tabItem .tabList.icon05 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon03.png); background-position: bottom 10px center}
+.themaWrap .tabItem .tabList.icon05 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list05_icon03.png); background-position: bottom 10px center } 
+.themaWrap .tabItem .tabList.icon06 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list06_icon01.png); background-position: bottom 10px center; } 
+.themaWrap .tabItem .tabList.icon06 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list06_icon02.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon06 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list06_icon03.png); background-position: top 20px center } 
+.themaWrap .tabItem .tabList.icon07 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list07_icon01.png); background-position: top 30px center; } 
+.themaWrap .tabItem .tabList.icon07 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list07_icon02.png); background-position: top -10px center; } 
+.themaWrap .tabItem .tabList.icon07 li:nth-child(3)::before { background-image: url(../resource/images/thema/231204/tab_list07_icon03.png); background-position: top 10px center } 
+.themaWrap .tabItem .tabList.icon08 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list08_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon08 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list08_icon02.png); background-position: top 20px center; } 
+.themaWrap .tabItem .tabList.icon09 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list09_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon09 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list09_icon02.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon10 li:nth-child(1)::before { background-image: url(../resource/images/thema/231204/tab_list10_icon01.png); background-position: center; } 
+.themaWrap .tabItem .tabList.icon10 li:nth-child(2)::before { background-image: url(../resource/images/thema/231204/tab_list10_icon02.png); background-position: center; } 
 .themaWrap .tabItem .tabList li p { font-size: 26px; } 
-.themaWrap .tabItem .tabList li p span {font-size: 20px;}
+.themaWrap .tabItem .tabList li p span { font-size: 20px; } 
 .themaWrap .tabCont .control { width: 100%; position: absolute; top: calc(50% - 100px); transform: translateY(-50%); z-index: 10; } 
-.themaWrap .tabCont .control span { display: block; width: 39px; height: 86px; position: absolute; cursor: pointer;} 
-.themaWrap .tabCont .control .btn_prev { left: 16px; background: url(../resource/images/thema/231204/prev_icon.png) no-repeat; background-size: contain; }
-.themaWrap .tabCont .control .btn_next { right: 16px; background: url(../resource/images/thema/231204/next_icon.png) no-repeat; background-size: contain; }
+.themaWrap .tabCont .control span { display: block; width: 39px; height: 86px; position: absolute; cursor: pointer; } 
+.themaWrap .tabCont .control .btn_prev { left: 16px; background: url(../resource/images/thema/231204/prev_icon.png) no-repeat; background-size: contain; } 
+.themaWrap .tabCont .control .btn_next { right: 16px; background: url(../resource/images/thema/231204/next_icon.png) no-repeat; background-size: contain; } 
+
+.themaWrap .cont02 { background: url(../resource/images/thema/231204/cont02_bg.png) top center no-repeat; } 
+.themaWrap .cont02 .innerSection { padding: 100px 0 400px; } 
+.themaWrap .cont02 .tit { margin-right: 100px; text-align: right; } 
+.themaWrap .cont02 .tit p { display: inline-block; position: relative; color: #ff605d; font-size: 70px; line-height: 1.1; letter-spacing: -1px; } 
+.themaWrap .cont02 .tit p::before { content: ''; width: 260px; height: 264px; position: absolute; left: -300px; top: -10px; background: url(../resource/images/thema/231204/cont02_icon01.png) no-repeat; background-size: contain; } 
+.themaWrap .cont02 .tit p::after { content: ''; width: 328px; height: 96px; position: absolute; left: 50%; bottom: -120px; transform: translateX(-50%); background: url(../resource/images/thema/231204/cont02_icon02.png) no-repeat; background-size: contain; } 
+.themaWrap .cont02 .tit p span { font-size: 60px; } 
+.themaWrap .cont02 ul { margin: 175px 50px 0; } 
+.themaWrap .cont02 li { position: relative; background: #fff; border-radius: 100px; } 
+.themaWrap .cont02 li + li { margin-top: 70px; } 
+.themaWrap .cont02 li p { font-size: 28px; } 
+.themaWrap .cont02 li::before { content: ''; position: absolute; top: 50%; transform: translateY(-50%); } 
+.themaWrap .cont02 li:nth-child(1) { padding: 32px 0 28px 72px; border: 3px solid #13a89e; } 
+.themaWrap .cont02 li:nth-child(2) { padding: 32px 0 28px 266px; border: 3px solid #ff8a00; } 
+.themaWrap .cont02 li:nth-child(3) { padding: 32px 0 28px 72px; border: 3px solid #df504c; } 
+.themaWrap .cont02 li:nth-child(1):before { width: 225px; height: 226px; right: 46px; background: url(../resource/images/thema/231204/cont02_list01.png) no-repeat; } 
+.themaWrap .cont02 li:nth-child(2):before { width: 165px; height: 241px; left: 66px; background: url(../resource/images/thema/231204/cont02_list02.png) no-repeat; } 
+.themaWrap .cont02 li:nth-child(3):before { width: 194px; height: 215px; right: 0; background: url(../resource/images/thema/231204/cont02_list03.png) no-repeat; } 
