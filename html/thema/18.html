@@ -459,7 +459,7 @@
         //슬라이드 시작
         var swiper = new Swiper('.tabCont', {
             loop: true,
-			allowTouchMove: false,
+			allowTouchMove: true,
             slidesPerView: 1,
             // effect: 'fade',
             // fadeEffect: {
@@ -480,6 +480,11 @@
 					})
 				}
             },
+			breakpoints: {        
+				640: {
+					allowTouchMove: false,
+				},
+			},
         })
    
 

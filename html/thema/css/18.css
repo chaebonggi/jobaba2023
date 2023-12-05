@@ -92,3 +92,76 @@
 .themaWrap .cont02 li:nth-child(1):before { width: 225px; height: 226px; right: 46px; background: url(../resource/images/thema/231204/cont02_list01.png) no-repeat; } 
 .themaWrap .cont02 li:nth-child(2):before { width: 165px; height: 241px; left: 66px; background: url(../resource/images/thema/231204/cont02_list02.png) no-repeat; } 
 .themaWrap .cont02 li:nth-child(3):before { width: 194px; height: 215px; right: 0; background: url(../resource/images/thema/231204/cont02_list03.png) no-repeat; } 
+
+@media all and (max-width:860px){
+ .themaWrap .mainVisual .innerSection { padding: 36px 10px 24px; } 
+ .themaWrap .mainVisual h2 { padding-left: 0; margin-bottom: 0; text-align: center; } 
+ .themaWrap .mainVisual h2 img,
+ .themaWrap .mainVisual .txtWrap img { transform: scale(0.8); } 
+ .themaWrap .mainVisual h2::after { content: none; } 
+
+ .themaWrap .cont01 .innerSection { padding: 76px 10px; } 
+.themaWrap .cont01 .slideList li { width: calc(100% / 3 - 16px); } 
+.themaWrap .tabItem .tabBox .tabTxt { background-image: none !important; } 
+.themaWrap .tabCont .control span { width: 14px; height: 29px; } 
+.themaWrap .tabItem { padding: 50px 40px 40px; } 
+.themaWrap .tabItem .tabBox .tabTxt { padding: 30px 20px 30px; } 
+.themaWrap .tabItem .tit { font-size: 50px; } 
+.themaWrap .tabItem .tagList { font-size: 18px; } 
+.themaWrap .tabItem .tabBox .tabTit p { font-size: 30px; } 
+.themaWrap .tabItem .tabList li::before { width: 130px; height: 130px; } 
+.themaWrap .tabItem .tabList li p { font-size: 18px; } 
+
+.themaWrap .cont02 .innerSection { padding: 60px 10px 60px; } 
+.themaWrap .cont02 .tit { margin-right: 0; text-align: center; } 
+.themaWrap .cont02 .tit p::before { content: none; } 
+.themaWrap .cont02 .tit p { font-size: 60px; } 
+.themaWrap .cont02 .tit p span { font-size: 50px; } 
+.themaWrap .cont02 ul { margin: 175px 0 0; } 
+.themaWrap .cont02 li::before { content: none !important; } 
+.themaWrap .cont02 li + li { margin-top: 40px; } 
+.themaWrap .cont02 li { padding: 32px 10px 28px !important; text-align: center; } 
+.themaWrap .tabItem .tabList li::before { background-size: auto 70% !important; } 
+.themaWrap .tabItem .tabList.icon07 li:nth-child(2)::before { background-position: center; } 
+.themaWrap .tabItem .tabList.icon07 li:nth-child(3)::before { background-position: center; } 
+.themaWrap .tabItem .tabList.icon10 li:nth-child(1)::before { background-size: auto !important; } 
+.themaWrap .tabItem .tabList.icon10 li:nth-child(2)::before { background-size: auto !important; } 
+ }
+
+@media all and (max-width:640px){
+ .themaWrap .mainVisual .innerSection { padding: 20px 10px 20px; } 
+ .themaWrap .cont01 .innerSection { padding: 30px 10px; } 
+ .themaWrap .cont01 .slideList { padding: 20px 10px; margin-bottom: 40px; border: 2px solid #e8e8e8; gap: 10px 5px; } 
+ .themaWrap .cont01 .slideList li a { width: 100%; height: 80px; padding-top: 4px; font-size: 14px; } 
+ .themaWrap .cont01 .slideList li { width: calc(100% / 3 - 5px); } 
+ .themaWrap .cont01 .slideList li.active a::before { width: 26px; height: 23px; top: -10px; background-size: contain; } 
+
+ .themaWrap .tabItem .tit { font-size: 26px; } 
+.themaWrap .tabItem .tagList { font-size: 12px; } 
+.themaWrap .tabItem .tagList span:not(:first-child) { margin-left: 6px; } 
+
+.themaWrap .tabCont .control { display: none; } 
+.themaWrap .tabItem { padding: 20px 15px 20px; border-radius: 20px; } 
+.themaWrap .tabItem .tabBox .tabTit p { font-size: 18px; } 
+.themaWrap .tabItem .tabBox .tabTxt p { font-size: 14px; text-align: center; } 
+.themaWrap .tabItem .tabList li p { font-size: 14px; } 
+.themaWrap .tabItem .tabList li p span { font-size: 12px; } 
+.themaWrap .tabItem .tabBox .tabTit p span { font-size: 14px; } 
+.themaWrap .tabItem .tabList li::before { width: 90px; height: 90px; } 
+.themaWrap .tabItem .tabList { flex-wrap: wrap; } 
+.themaWrap .tabItem .tabList li { width: calc(100% / 2); } 
+.themaWrap .tabItem .tabBox .tabTxt { min-height: auto; padding: 20px 20px; } 
+
+.themaWrap .tabItem .tabList.icon10 li:nth-child(1)::before { background-size: auto 30% !important; } 
+.themaWrap .tabItem .tabList.icon10 li:nth-child(2)::before { background-size: auto 50% !important; } 
+.themaWrap .cont02 .innerSection { padding: 30px 10px; } 
+.themaWrap .cont02 .tit p { font-size: 30px; } 
+.themaWrap .cont02 .tit p span { font-size: 24px; } 
+.themaWrap .cont02 .tit p::after { width: 140px; height: 41px; bottom: -50px; } 
+.themaWrap .cont02 ul { margin: 80px 0 0; } 
+.themaWrap .cont02 li { border-radius: 30px; } 
+.themaWrap .cont02 li p { font-size: 16px; } 
+.themaWrap .cont02 li { padding: 22px 10px 18px !important; } 
+.themaWrap .cont02 li + li { margin-top: 20px; } 
+}
+
