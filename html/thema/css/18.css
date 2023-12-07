@@ -23,7 +23,7 @@
 .themaWrap .tabItem .tagList { margin: 10px 0 20px; color: #777777; font-size: 22px; } 
 .themaWrap .tabItem .tagList span:not(:first-child) { display: inline-block; margin-left: 20px; } 
 .themaWrap .tabItem .tabBox { border-radius: 20px; border: 3px solid #00a3af; background: #00a3af; overflow: hidden; } 
-.themaWrap .tabItem .tabBox .tabTit { width: 100%; padding: 20px 0 16px; background: #00a3af; } 
+.themaWrap .tabItem .tabBox .tabTit { width: 100%; padding: 20px 4px 16px; background: #00a3af; } 
 .themaWrap .tabItem .tabBox .tabTit p { color: #fff; font-size: 42px; letter-spacing: -1px; } 
 .themaWrap .tabItem .tabBox .tabTit p span { font-size: 36px; } 
 .themaWrap .tabItem .tabBox.bg01 .tabTxt { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231204/tab_bg01.png); background-position: bottom 30px right 20px; } 
@@ -93,7 +93,7 @@
 .themaWrap .cont02 li:nth-child(2):before { width: 165px; height: 241px; left: 66px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231204/cont02_list02.png) no-repeat; } 
 .themaWrap .cont02 li:nth-child(3):before { width: 194px; height: 215px; right: 0; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231204/cont02_list03.png) no-repeat; } 
 
-.themaWrap .etcTxt {text-align: right; margin-right: 30px; font-size: 16px;}
+.themaWrap .etcTxt { text-align: right; margin-right: 30px; font-size: 16px; } 
 @media all and (max-width:860px){
  .themaWrap .mainVisual .innerSection { padding: 36px 10px 24px; } 
  .themaWrap .mainVisual h2 { padding-left: 0; margin-bottom: 0; text-align: center; } 
@@ -137,15 +137,16 @@
  .themaWrap .cont01 .slideList li { width: calc(100% / 3 - 5px); } 
  .themaWrap .cont01 .slideList li.active a::before { width: 26px; height: 23px; top: -10px; background-size: contain; } 
 
- .themaWrap .tabItem .tit { font-size: 26px; } 
+ .themaWrap .tabItem .tit { font-size: 32px; word-break: keep-all; } 
 .themaWrap .tabItem .tagList { font-size: 12px; } 
 .themaWrap .tabItem .tagList span:not(:first-child) { margin-left: 6px; } 
 
 .themaWrap .tabCont .control { display: none; } 
 .themaWrap .tabItem { padding: 20px 15px 20px; border-radius: 20px; } 
-.themaWrap .tabItem .tabBox .tabTit p { font-size: 18px; } 
-.themaWrap .tabItem .tabBox .tabTxt p { font-size: 14px; text-align: center; } 
-.themaWrap .tabItem .tabList li p { font-size: 14px; } 
+.themaWrap .tabItem .tabBox .tabTit p { font-size: 20px; word-break: keep-all; } 
+.themaWrap .tabItem .tabBox .tabTxt p { font-size: 15px; text-align: center; line-height: 1.7; letter-spacing: -0.3px; word-break: keep-all; } 
+.themaWrap .tabItem .tabBox .tabTxt br { content: ''; display: inline-block; } 
+.themaWrap .tabItem .tabList li p { font-size: 15px; } 
 .themaWrap .tabItem .tabList li p span { font-size: 12px; } 
 .themaWrap .tabItem .tabBox .tabTit p span { font-size: 14px; } 
 .themaWrap .tabItem .tabList li::before { width: 90px; height: 90px; } 
@@ -160,11 +161,11 @@
 .themaWrap .cont02 .tit p span { font-size: 24px; } 
 .themaWrap .cont02 .tit p::after { width: 140px; height: 41px; bottom: -50px; } 
 .themaWrap .cont02 ul { margin: 80px 0 0; } 
-.themaWrap .cont02 li { border-radius: 30px; } 
-.themaWrap .cont02 li p { font-size: 16px; } 
-.themaWrap .cont02 li { padding: 22px 10px 18px !important; } 
+.themaWrap .cont02 li { border-radius: 20px; } 
+.themaWrap .cont02 li p { font-size: 16px; word-break: keep-all;} 
+.themaWrap .cont02 li p br {content: ''; display: inline-block;}
+.themaWrap .cont02 li { padding: 22px 20px 18px !important; } 
 .themaWrap .cont02 li + li { margin-top: 20px; } 
-.themaWrap .etcTxt {margin-right: 0; font-size: 10px;}
-
+.themaWrap .etcTxt { margin-right: 0; font-size: 10px; } 
 }
 
