@@ -22,7 +22,8 @@
 .themaWrap .cont01 .innerSection { padding: 74px 0 30px; } 
 .themaWrap .cont01 .linkList { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 50px 20px; } 
 .themaWrap .cont01 .linkList li { width: calc(100% / 2 - 10px); box-sizing: border-box; } 
-.themaWrap .cont01 .linkList li a { display: block; width: 100%; height: 100%; padding: 34px 26px 40px; position: relative; border-radius: 20px; text-align: center; } 
+.themaWrap .cont01 .linkList li a:hover { transform: scale(1.05); } 
+.themaWrap .cont01 .linkList li a { display: block; width: 100%; height: 100%; padding: 34px 26px 40px; position: relative; border-radius: 20px; text-align: center; transition: all 0.35s; } 
 .themaWrap .cont01 .linkList li:nth-child(1) a { background: url(../resource/images/thema/231212/cont01_list01.png) bottom 20px right 20px #f6f0c8 no-repeat; border: 6px solid #ffe19a; } 
 .themaWrap .cont01 .linkList li:nth-child(2) a { background: url(../resource/images/thema/231212/cont01_list02.png) bottom 10px right 10px #d4f9f7 no-repeat; border: 6px solid #a9d6d4; } 
 .themaWrap .cont01 .linkList li:nth-child(3) a { background: url(../resource/images/thema/231212/cont01_list03.png) bottom -4px right #d0eef9 no-repeat; border: 6px solid #afdaea; } 
@@ -67,7 +68,7 @@
 
 .themaWrap .cont02 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont02 .tit { padding-top: 290px; } 
-.themaWrap .cont02 .tit h3::before { content: ''; width: 286px; height: 223px; position: absolute; top: -213px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont02_tit.png) no-repeat; z-index: -1; } 
+.themaWrap .cont02 .tit h3::before { content: ''; width: 286px; height: 223px; position: absolute; top: -213px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont02_tit.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont02 .bg { background: url(../resource/images/thema/231212/cont02_bg.png) top center no-repeat; } 
 .themaWrap .etcBox { margin-bottom: 50px; text-align: center; } 
 .themaWrap .etcBox p { color: #000; font-size: 36px; letter-spacing: -1px; line-height: 1.4; } 
@@ -88,7 +89,7 @@
 
 .themaWrap .cont03 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont03 .tit { padding-top: 310px; } 
-.themaWrap .cont03 .tit h3::before { content: ''; width: 542px; height: 184px; position: absolute; top: -214px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont03_tit.png) no-repeat; z-index: -1; } 
+.themaWrap .cont03 .tit h3::before { content: ''; width: 542px; height: 184px; position: absolute; top: -214px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont03_tit.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont03 .bg { background: url(../resource/images/thema/231212/cont03_bg.png) top center no-repeat; } 
 .themaWrap .cont03 .etcBox a { background: #287975; } 
 .themaWrap .infoList.style03 { flex-wrap: wrap; justify-content: center; gap: 20px 20px; } 
@@ -98,7 +99,7 @@
 
 .themaWrap .cont04 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont04 .tit { padding-top: 340px; } 
-.themaWrap .cont04 .tit h3::before { content: ''; width: 430px; height: 340px; position: absolute; top: -224px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont04_tit.png) no-repeat; z-index: -1; } 
+.themaWrap .cont04 .tit h3::before { content: ''; width: 430px; height: 340px; position: absolute; top: -224px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont04_tit.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont04 .bg { background: url(../resource/images/thema/231212/cont04_bg.png) top center no-repeat; } 
 .themaWrap .cont04 .etcBox a { background: #1871a3; } 
 .themaWrap .infoList.style04 { max-width: 840px; } 
@@ -109,7 +110,7 @@
 
 .themaWrap .cont05 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont05 .tit { padding-top: 370px; } 
-.themaWrap .cont05 .tit h3::before { content: ''; width: 340px; height: 307px; position: absolute; top: -260px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont05_tit.png) no-repeat; z-index: -1; } 
+.themaWrap .cont05 .tit h3::before { content: ''; width: 340px; height: 307px; position: absolute; top: -260px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont05_tit.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont05 .bg { background: url(../resource/images/thema/231212/cont05_bg.png) top center no-repeat; } 
 .themaWrap .cont05 .etcBox a { background: #6464ba; } 
 
@@ -119,3 +120,80 @@
 .themaWrap .cont05 .txtBox p::after { content: ''; width: calc(100% + 10px); height: calc(100% + 10px); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../resource/images/thema/231212/txt_bg.png) no-repeat; background-size: contain; z-index: 1; } 
 .themaWrap .cont05 .txtBox::before { content: ''; width: 789px; height: 100px; position: absolute; left: 50%; top: -90px; transform: translateX(-50%); background: url(../resource/images/thema/231212/cont05_img.png) no-repeat; z-index: -1; } 
 .themaWrap .cont05 .txtBox p { display: flex; width: 824px; height: 276px; margin: 0 auto; padding-top: 8px; position: relative; background: #fff; font-size: 36px; line-height: 1.5; border-radius: 30px; align-items: center; justify-content: center; text-align: center; } 
+
+@media all and (max-width:1700px){
+ .themaWrap .leftMenu { display: none; } 
+ }
+
+@media all and (max-width:860px){
+ .themaWrap .mainVisual .innerSection { padding: 25px 10px 60px; } 
+.themaWrap .mainVisual h2 img { transform: scale(0.8); } 
+.themaWrap .mainVisual .txtWrap { padding-left: 0; margin-top: -20px; text-align: center; } 
+.themaWrap .mainVisual .txtWrap img { transform: scale(0.8); } 
+.themaWrap .mainVisual .txtWrap::before { width: 95px; height: 151px; bottom: -54px; } 
+.themaWrap .mainVisual .txtWrap::after { width: 170px; height: 146px; right: 16px; bottom: -66px; } 
+
+.themaWrap .cont01 .innerSection { padding: 74px 10px 30px; } 
+.themaWrap .cont01 .linkList li a:hover { transform: none; } 
+.themaWrap .cont01 .linkList { flex-direction: column; align-items: center; } 
+.themaWrap .cont01 .linkList li { max-width: 500px; width: 100%; } 
+
+.themaWrap .tit { margin: 0 10px -80px; } 
+.themaWrap .cont02 .innerSection { padding: 140px 10px 120px; } 
+
+.themaWrap .infoList.style02 li { width: calc(100% / 2 - 10px); } 
+.themaWrap .infoList { flex-wrap: wrap; justify-content: center; gap: 20px 10px; } 
+.themaWrap .infoList li { width: calc(100% / 2 - 10px); } 
+
+.themaWrap .cont03 .innerSection {
+    padding: 70px 10px 120px;
+}
+
+ }
+
+@media all and (max-width:640px){
+ .themaWrap .mainVisual .innerSection { padding: 25px 10px 30px; } 
+.themaWrap .mainVisual .txtWrap { display: none; } 
+
+.themaWrap .cont01 .innerSection { padding: 30px 10px 30px; } 
+.themaWrap .cont01 .linkList li a { background-image: none !important; border-width: 3px !important; padding: 20px 10px 30px; } 
+.themaWrap .cont01 .linkList li strong { font-size: 22px; } 
+.themaWrap .cont01 .linkList li .txt { font-size: 16px; text-align: center; word-break: keep-all; } 
+.themaWrap .forMobile { content: ''; display: inline-block; } 
+.themaWrap .cont01 .linkList li .linkBtn { bottom: -20px; } 
+.themaWrap .cont01 .linkList li .linkBtn p { height: 40px; font-size: 16px; border-width: 3px !important; } 
+
+.themaWrap .cont02 .innerSection { padding: 60px 10px 30px; } 
+.themaWrap .infoList.style02 li { width: 100%; } 
+.themaWrap .infoList li { width: 100%; } 
+.themaWrap .tit { margin: 0 10px -40px; } 
+.themaWrap .cont02 .tit { padding-top: 120px; } 
+.themaWrap .tit h3 { padding: 20px 10px 14px; font-size: 30px; border-width: 5px; border-radius: 20px; } 
+.themaWrap .cont02 .tit h3::before { width: 140px; height: 109px; top: -106px; } 
+.themaWrap .etcBox p { font-size: 20px; word-break: keep-all; } 
+.themaWrap .etcBox p br { content: ''; display: inline-block; } 
+.themaWrap .etcBox a { height: 46px; margin-top: 20px; font-size: 20px; } 
+.themaWrap .cont02 .infoBox .infoTit { margin-bottom: 10px; font-size: 28px; word-break: keep-all; } 
+.themaWrap .infoList a { padding: 15px 0 15px; } 
+.themaWrap .infoList .imgWrap { height: 30px; padding: 4px 0; margin-bottom: 10px; } 
+.themaWrap .infoList .imgWrap img { height: 100%; } 
+.themaWrap .infoList p { font-size: 16px; margin-bottom: 15px; } 
+.themaWrap .infoList .listBtn { height: 28px; font-size: 16px; } 
+
+.themaWrap .cont03 .innerSection {
+    padding: 60px 10px 30px;
+}
+.themaWrap .cont03 .tit h3::before {
+    width: 210px;
+    height: 72px;
+    top: -80px;
+}
+.themaWrap .cont03 .tit {
+    padding-top: 80px;
+}
+.themaWrap .infoList.style03 .imgWrap {
+    height: 40px;
+}
+
+
+}
