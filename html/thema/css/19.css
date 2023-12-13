@@ -60,7 +60,7 @@
 .themaWrap .menuList li:nth-child(4).active a { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/left_icon04.png); background-color: #6464ba; } 
 
 .themaWrap .tit { margin-bottom: -80px; } 
-.themaWrap .tit h3 { max-width: 900px; padding: 28px 10px 14px; margin: 0 auto; position: relative; background: #fff; font-size: 72px; border-width: 15px; border-style: solid; border-radius: 100px; text-align: center; box-sizing: border-box; letter-spacing: -1px; } 
+.themaWrap .tit h3 { max-width: 900px; padding: 28px 10px 14px; margin: 0 auto; position: relative; background: #fff; font-size: 72px; border-width: 15px; border-style: solid; border-radius: 100px; text-align: center; box-sizing: border-box; letter-spacing: -1px; z-index: 1;} 
 .themaWrap .cont02 .tit h3 { color: #e9a033; border-color: #ffe9b4; } 
 .themaWrap .cont03 .tit h3 { color: #287975; border-color: #90d3cf; } 
 .themaWrap .cont04 .tit h3 { color: #1871a3; border-color: #7bb4d5; } 
@@ -68,7 +68,7 @@
 
 .themaWrap .cont02 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont02 .tit { padding-top: 290px; } 
-.themaWrap .cont02 .tit h3::before { content: ''; width: 286px; height: 202px; position: absolute; top: -202px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont02_tit.png) no-repeat; background-size: contain; z-index: -1; } 
+.themaWrap .cont02 .tit h3::before { content: ''; width: 286px; height: 202px; position: absolute; top: -202px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont02_tit02.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont02 .bg { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont02_bg.png) top center no-repeat; background-size: cover; } 
 .themaWrap .etcBox { margin-bottom: 50px; text-align: center; } 
 .themaWrap .etcBox p { color: #000; font-size: 36px; letter-spacing: -1px; line-height: 1.4; } 
@@ -99,7 +99,7 @@
 
 .themaWrap .cont04 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont04 .tit { padding-top: 340px; } 
-.themaWrap .cont04 .tit h3::before { content: ''; width: 430px; height: 210px; position: absolute; top: -224px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont04_tit.png) no-repeat; background-size: contain; z-index: -1; } 
+.themaWrap .cont04 .tit h3::before { content: ''; width: 430px; height: 210px; position: absolute; top: -224px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont04_tit02.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont04 .bg { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont04_bg.png) top center no-repeat; background-size: cover; } 
 .themaWrap .cont04 .etcBox a { background: #1871a3; } 
 .themaWrap .infoList.style04 { max-width: 840px; } 
@@ -110,7 +110,7 @@
 
 .themaWrap .cont05 .innerSection { padding: 140px 0 120px; } 
 .themaWrap .cont05 .tit { padding-top: 370px; } 
-.themaWrap .cont05 .tit h3::before { content: ''; width: 340px; height: 242px; position: absolute; top: -242px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont05_tit.png) no-repeat; background-size: contain; z-index: -1; } 
+.themaWrap .cont05 .tit h3::before { content: ''; width: 340px; height: 242px; position: absolute; top: -242px; left: 50%; transform: translateX(-50%); background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont05_tit02.png) no-repeat; background-size: contain; z-index: -1; } 
 .themaWrap .cont05 .bg { background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231212/cont05_bg.png) top center no-repeat; background-size: cover; } 
 .themaWrap .cont05 .etcBox a { background: #6464ba; } 
 
