@@ -1,11 +1,14 @@
-.themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
-.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; } 
-.gBold { font-weight: 700; } 
-.oneMo { font-family: 'OneMobile','Noto Sans KR' !important; font-weight: 700; } 
-.themaWrap .fc01 { color: #dd7920; } 
-.themaWrap .fc02 { color: #2b7571; } 
-.themaWrap .fc03 { color: #3b6195; } 
-.themaWrap .fc04 { color: #524ea5; } 
+.themaWrap * { font-family: 'OneMobile','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
+.themaWrap .innerSection { max-width: 1000px; margin: 0 auto; }
+.gMid { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; } 
+.gBold { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 700; } 
+.oneMoBold { font-weight: 700; }
+.banHa { font-family: 'BMHANNA11yrsold','Noto Sans KR' !important; } 
+
+.themaWrap .fc03 { color: #dd7920; } 
+.themaWrap .fc04 { color: #2b7571; } 
+.themaWrap .fc05 { color: #3b6195; } 
+.themaWrap .fc06 { color: #524ea5; } 
 
 
 .themaWrap .cont05 { position: relative; background: url(../resource/images/thema/231215/cont05_bg.png) top center no-repeat;} 
