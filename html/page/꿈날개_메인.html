@@ -1146,10 +1146,11 @@ var noticeSwiper = new Swiper(".notice_slide", {
 		nextEl: ".notice_wrap .swiper-button-next",
 		prevEl: ".notice_wrap .swiper-button-prev",
 	},
-//   autoplay:{
-//       delay: 5000,
-//       disableOnInteraction: false,
-//   },
+	// autoplay 추가 5초마다 롤링
+	autoplay:{
+		delay: 1000,
+		disableOnInteraction: false,
+	},
 });
 
 // step 슬라이드
