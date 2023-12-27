@@ -63,7 +63,7 @@
 .themaWrap .policyList.style02 > li { background-color: #e0e9f9; } 
 .themaWrap .policyList.style03 > li { background-color: #f5e0eb; } 
 .themaWrap .policyList.style04 > li { background-color: #e3f2d8; } 
-.themaWrap .policyList li.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231227/policy_icon01.png); background-position: bottom left -10px; } 
+.themaWrap .policyList li.icon01 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231227/policy_icon01_01.png); background-position: bottom left -10px; } 
 .themaWrap .policyList li.icon02 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231227/policy_icon02.png); background-position: bottom left 35px; } 
 .themaWrap .policyList li.icon03 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231227/policy_icon03.png); background-position: bottom left 30px; } 
 .themaWrap .policyList li.icon04 { background-image: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2023/html/thema/resource/images/thema/231227/policy_icon04.png); background-position: bottom left 46px; } 
@@ -179,12 +179,12 @@
 .themaWrap .cont05 .txtWrap img { transform: scale(0.8); } 
 .themaWrap .cont05 .titWrap img { transform: scale(0.8); } 
 .themaWrap .cont05 .imgWrap img { transform: scale(0.8); } 
-}
+ }
 
 
 
 
-@media all and (max-width:640px){
+@media all and (max-width:640px) {.themaWrap .forPc { content: ''; display: inline-block; } 
  .themaWrap .mt40 { margin-top: 20px !important; } 
 .themaWrap .mt50 { margin-top: 20px !important; } 
 .themaWrap .mt60 { margin-top: 20px !important; } 
@@ -211,7 +211,7 @@
 .themaWrap h3 { margin: 130px 0 20px; font-size: 36px; } 
 .themaWrap .policyWrap .swiper-button-next, .themaWrap .policyWrap .swiper-button-prev { width: 37px; height: 37px; } 
 .themaWrap .policyWrap { padding: 0; } 
-.themaWrap .policyList h4 { font-size: 22px; } 
+.themaWrap .policyList h4 { padding: 6px 10px 2px; font-size: 22px; } 
 .themaWrap .policyList > li { padding: 20px 10px 10px; border-radius: 20px; } 
 .themaWrap .policyList .pList { margin-left: 10px; } 
 .themaWrap .policyList .pList > li { padding-left: 6px; font-size: 16px; } 
@@ -236,5 +236,7 @@
 .themaWrap .cont05 .titWrap img { transform: scale(0.7); } 
 .themaWrap .cont05 .titWrap { padding: 60px 0 120px; background-size: 120%; } 
 .themaWrap .cont05 .imgWrap { margin-top: -140px; } 
+.themaWrap .linkBtn a p { padding-top: 2px; } 
 
-}
+.themaWrap h3::before { left: calc(50% - -15px); } 
+ }
