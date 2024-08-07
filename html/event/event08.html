@@ -196,14 +196,6 @@
 					</a>
 					<div class="cursor"></div>
 					<div class="board_on obj">
-						<!-- <img src="./resource/images/eventImg/event08/gift1.png">
-						<img src="./resource/images/eventImg/event08/gift2.png">
-						<img src="./resource/images/eventImg/event08/gift3.png">
-						<img src="./resource/images/eventImg/event08/gift4.png">
-						<img src="./resource/images/eventImg/event08/gift5.png">
-						<img src="./resource/images/eventImg/event08/gift6.png">
-						<img src="./resource/images/eventImg/event08/gift7.png">
-						<img src="./resource/images/eventImg/event08/gift8.png"> -->
 					</div>
 					<div class="gameShadow"></div>
 				</div>
@@ -502,6 +494,9 @@
 			var pictures = "./resource/images/eventImg/event08/gift" + i + ".png";
 			$(".board_on").append('<img  src="' + pictures + '" />');
 		}
+		$(".join").on("mousedown", function() {
+			iniGame(Math.floor(Math.random() * 5));
+		});
 
 		//상품 수량체크
 		// if(eventGiftCnt == 0){//상품 X
