@@ -497,17 +497,29 @@
 			$("html, body").animate({ scrollTop: $(this.hash).offset().top}, 500);
 			e.preventDefault();
 		});	
-
-
-		// 룰렛
-		var gift;
-		var present = ['BHC 치킨세트', '롯데리아 햄버거 세트', '이디야 커피쿠폰', '바나나 우유','비타 500', '네이버 페이 20,000원']
-		var clicked = 0;
-		var rotationPos = new Array(60, 120, 180, 240, 300, 360);
+		//룰렛 상품 뿌리기
 		for (i = 1; i < 7; i++) {
 			var pictures = "./resource/images/eventImg/event08/gift" + i + ".png";
 			$(".board_on").append('<img  src="' + pictures + '" />');
 		}
+
+		//상품 수량체크
+		// if(eventGiftCnt == 0){//상품 X
+		// 	$("#popup_deadline").show();
+		// 	$(".shadow").show();
+		// }
+
+
+		// 룰렛
+		// var gift;
+		// var present = ['네이버 페이 20,000원', 'BHC 치킨세트', '롯데리아 햄버거 세트', '이디야 커피쿠폰', '바나나 우유', '비타 500'];
+		// var present = ['BHC 치킨세트', '롯데리아 햄버거 세트', '이디야 커피쿠폰', '바나나 우유','비타 500', '네이버 페이 20,000원'];
+		// var clicked = 0;
+		// var rotationPos = new Array(60, 120, 180, 240, 300, 360);
+		// for (i = 1; i < 7; i++) {
+		// 	var pictures = "./resource/images/eventImg/event08/gift" + i + ".png";
+		// 	$(".board_on").append('<img  src="' + pictures + '" />');
+		// }
 		// $(".join").on("mousedown", function() {
 		// 	if (clicked <= 0) {
 		// 		iniGame(Math.floor(Math.random() * 5));
@@ -523,39 +535,44 @@
 			iniGame(Math.floor(Math.random() * 5));
 		});
 
-		function iniGame(num) {
-			gift = num;
-			TweenLite.killTweensOf($(".board_on"));
-			TweenLite.to($(".board_on"), 0, {
-				css: {
-					rotation: rotationPos[gift]
-				}
-			});
-			TweenLite.from($(".board_on"), 6, {
-				css: {
-					rotation: -3000
-				},
-				onComplete: endGame,
-			});
-		}
-
-		function endGame() {
-			var copImg = "./resource/images/eventImg/event08/gift_icon0" + (gift + 1) + ".png";
-			$("#popup_gift .lottery_present .gift_end1").text(function() {
-				return "축하합니다."
-				});
-
-			$("#popup_gift .lottery_present .gift_end2").html(function() {
-				return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
-			});
-			$('<img  src="' + copImg + '" />').prependTo("#popup_gift .lottery_present");
-			setTimeout(function() {
-				openPopup("popup_gift");
-			}, 1000);
-		}
+		
 		
 	});
+	var gift;
+	var present = ['네이버 페이 20,000원', 'BHC 치킨세트', '롯데리아 햄버거 세트', '이디야 커피쿠폰', '바나나 우유', '비타 500']
+	var clicked = 0;
+	var rotationPos = new Array(60, 120, 180, 240, 300, 360);
 
+	function iniGame(num) {
+		gift = num;
+		TweenLite.killTweensOf($(".board_on"));
+		TweenLite.to($(".board_on"), 0, {
+			css: {
+				rotation: rotationPos[gift]
+			}
+		});
+		TweenLite.from($(".board_on"), 6, {
+			css: {
+				rotation: -3000
+			},
+			onComplete: endGame,
+		});
+	}
+
+	function endGame() {
+		var copImg = "./resource/images/eventImg/event08/gift_icon0" + (gift + 1) + ".png";
+		$("#popup_gift .lottery_present .gift_end1").text(function() {
+			return "축하합니다."
+			});
+
+		$("#popup_gift .lottery_present .gift_end2").html(function() {
+			return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
+		});
+		$('<img  src="' + copImg + '" />').prependTo("#popup_gift .lottery_present");
+		setTimeout(function() {
+			openPopup("popup_gift");
+		}, 1000);
+	}
 	function openPopup(id) {
 		$('.ev_pop').slideUp(0);
 		var popupid = id

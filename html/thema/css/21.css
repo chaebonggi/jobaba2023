@@ -3,7 +3,8 @@
 .gBold { font-weight: 700; } 
 .sbLight { font-family: 'SBAggro','Noto Sans KR' !important; font-weight: 300; } 
 .sbMedium { font-family: 'SBAggro','Noto Sans KR' !important; font-weight: 500; } 
-.sbBold { font-family: 'SBAggro','Noto Sans KR' !important; font-weight: 700; } 
+.sbBold { font-family: 'SBAggro','Noto Sans KR' !important; font-weight: 700; }
+.lh50 {line-height: 50px;}
 .themaWrap .forMo { content: ''; display: inline-block; } 
 .themaWrap .fc01 { color: #ff0000 !important; } 
 .themaWrap .mt10 { margin-top: 10px !important; } 
@@ -185,6 +186,7 @@
 
 
 @media all and (max-width:640px) {.themaWrap .forPc { content: ''; display: inline-block; } 
+.lh50 {line-height: 24px;}
  .themaWrap .mt40 { margin-top: 20px !important; } 
 .themaWrap .mt50 { margin-top: 20px !important; } 
 .themaWrap .mt60 { margin-top: 20px !important; } 
@@ -239,4 +241,5 @@
 .themaWrap .linkBtn a p { padding-top: 2px; } 
 
 .themaWrap h3::before { left: calc(50% - -15px); } 
+
  }
